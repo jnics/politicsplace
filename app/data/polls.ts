@@ -61,48 +61,9 @@ function raceKey(r: Pick<RacePolls, "raceType" | "state" | "district">): string 
   return `${r.raceType}:${r.state}:${r.district ?? ""}`;
 }
 
-/** Hand-seeded example races. `pnpm polls:pull` fills polls.generated.json,
- *  whose races override these by key. */
-const SEEDED: RacePolls[] = [
-  {
-    raceType: "senate",
-    state: "OH",
-    seatClass: 3,
-    special: true,
-    title: "Ohio Senate (special)",
-    candidates: [
-      { name: "Jon Husted", party: "R", incumbent: true },
-      { name: "Sherrod Brown", party: "D" },
-    ],
-    source: "RealClearPolling",
-    lastPulled: undefined,
-    polls: [
-      // EXAMPLE ROWS -- replace with a real RCP pull.
-      {
-        pollster: "Example Research (placeholder)",
-        startDate: "2026-08-01",
-        endDate: "2026-08-04",
-        sampleSize: 800,
-        population: "LV",
-        results: [
-          { candidate: "Sherrod Brown", party: "D", pct: 47 },
-          { candidate: "Jon Husted", party: "R", pct: 45 },
-        ],
-      },
-      {
-        pollster: "Example University Poll (placeholder)",
-        startDate: "2026-07-10",
-        endDate: "2026-07-15",
-        sampleSize: 1050,
-        population: "RV",
-        results: [
-          { candidate: "Jon Husted", party: "R", pct: 46 },
-          { candidate: "Sherrod Brown", party: "D", pct: 44 },
-        ],
-      },
-    ],
-  },
-];
+/** Hand-seeded races. Normally empty -- `pnpm polls:pull` fills
+ *  polls.generated.json, whose races override these by key. */
+const SEEDED: RacePolls[] = [];
 
 const GENERATED = (generated.races ?? []) as unknown as RacePolls[];
 

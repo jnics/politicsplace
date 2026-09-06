@@ -3,37 +3,198 @@
   "source": "RealClearPolling",
   "races": [
     {
-      "raceType": "senate",
-      "state": "OH",
-      "seatClass": 3,
-      "special": true,
-      "title": "Ohio Senate (special)",
-      "candidates": [
-        { "name": "Sherrod Brown", "party": "D" },
-        { "name": "Jon Husted", "party": "R", "incumbent": true }
-      ],
-      "source": "RealClearPolling",
-      "lastPulled": "2026-09-06",
-      "aggregateAverage": {
-        "spread": "Brown +2.6",
-        "period": "Jun 14 – Aug 10, 2026",
-        "results": [
-          { "candidate": "Sherrod Brown", "party": "D", "pct": 49.3 },
-          { "candidate": "Jon Husted", "party": "R", "pct": 46.7 }
-        ]
-      },
+      "raceType": "senate", "state": "AK", "seatClass": 2, "special": false,
+      "title": "Alaska Senate",
+      "candidates": [ { "name": "Peltola", "party": "D" }, { "name": "Sullivan", "party": "R", "incumbent": true } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Peltola +2.0", "period": "Jun 15 – Aug 23, 2026", "results": [ { "candidate": "Peltola", "party": "D", "pct": 49.7 }, { "candidate": "Sullivan", "party": "R", "pct": 47.7 } ] },
       "polls": [
-        { "pollster": "Fox News", "startDate": "2026-08-06", "endDate": "2026-08-10", "sampleSize": 1008, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 53 }, { "candidate": "Jon Husted", "party": "R", "pct": 45 } ] },
-        { "pollster": "NY Times/Siena", "startDate": "2026-06-15", "endDate": "2026-06-28", "sampleSize": 601, "population": "LV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 47 }, { "candidate": "Jon Husted", "party": "R", "pct": 50 } ] },
-        { "pollster": "Fabrizio/Anzalone", "startDate": "2026-06-14", "endDate": "2026-06-16", "sampleSize": 800, "population": "LV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 48 }, { "candidate": "Jon Husted", "party": "R", "pct": 45 } ] },
-        { "pollster": "Fox News", "startDate": "2026-05-28", "endDate": "2026-06-01", "sampleSize": 1105, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 53 }, { "candidate": "Jon Husted", "party": "R", "pct": 45 } ] },
-        { "pollster": "Bowling Green/YouGov", "startDate": "2026-04-07", "endDate": "2026-04-14", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 47 }, { "candidate": "Jon Husted", "party": "R", "pct": 50 } ] },
-        { "pollster": "Quantus Insights", "startDate": "2026-03-13", "endDate": "2026-03-14", "sampleSize": 784, "population": "LV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 44 }, { "candidate": "Jon Husted", "party": "R", "pct": 46 } ] },
-        { "pollster": "Emerson", "startDate": "2025-12-06", "endDate": "2025-12-08", "sampleSize": 850, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 46 }, { "candidate": "Jon Husted", "party": "R", "pct": 49 } ] },
-        { "pollster": "Bowling Green/YouGov", "startDate": "2025-10-02", "endDate": "2025-10-14", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 49 }, { "candidate": "Jon Husted", "party": "R", "pct": 48 } ] },
-        { "pollster": "Emerson", "startDate": "2025-08-18", "endDate": "2025-08-19", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 44 }, { "candidate": "Jon Husted", "party": "R", "pct": 50 } ] },
-        { "pollster": "Bowling Green/YouGov", "startDate": "2025-04-18", "endDate": "2025-04-24", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 46 }, { "candidate": "Jon Husted", "party": "R", "pct": 49 } ] },
-        { "pollster": "Bowling Green/YouGov", "startDate": "2025-02-14", "endDate": "2025-02-21", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 41 }, { "candidate": "Jon Husted", "party": "R", "pct": 47 } ] }
+        { "pollster": "Alaska Survey Research", "startDate": "2026-08-20", "endDate": "2026-08-23", "sampleSize": 1495, "population": "LV", "results": [ { "candidate": "Peltola", "party": "D", "pct": 51 }, { "candidate": "Sullivan", "party": "R", "pct": 49 } ] },
+        { "pollster": "Data for Progress (D)", "startDate": "2026-07-28", "endDate": "2026-08-04", "sampleSize": 605, "population": "LV", "results": [ { "candidate": "Peltola", "party": "D", "pct": 53 }, { "candidate": "Sullivan", "party": "R", "pct": 47 } ] },
+        { "pollster": "NY Times/Siena", "startDate": "2026-06-15", "endDate": "2026-06-29", "sampleSize": 593, "population": "LV", "results": [ { "candidate": "Peltola", "party": "D", "pct": 45 }, { "candidate": "Sullivan", "party": "R", "pct": 47 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "FL", "seatClass": 3, "special": true,
+      "title": "Florida Senate (special)",
+      "candidates": [ { "name": "Vindman", "party": "D" }, { "name": "Moody", "party": "R", "incumbent": true } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Moody +8.4", "period": "Mar 29 – Jul 17, 2026", "results": [ { "candidate": "Moody", "party": "R", "pct": 48.7 }, { "candidate": "Vindman", "party": "D", "pct": 40.3 } ] },
+      "polls": [
+        { "pollster": "Univ. of North Florida", "startDate": "2026-07-08", "endDate": "2026-07-17", "sampleSize": 848, "population": "LV", "results": [ { "candidate": "Moody", "party": "R", "pct": 50 }, { "candidate": "Vindman", "party": "D", "pct": 40 } ] },
+        { "pollster": "Echelon Insights", "startDate": "2026-04-03", "endDate": "2026-04-09", "sampleSize": 406, "population": "LV", "results": [ { "candidate": "Moody", "party": "R", "pct": 50 }, { "candidate": "Vindman", "party": "D", "pct": 43 } ] },
+        { "pollster": "Emerson", "startDate": "2026-03-29", "endDate": "2026-03-31", "sampleSize": 1125, "population": "LV", "results": [ { "candidate": "Moody", "party": "R", "pct": 46 }, { "candidate": "Vindman", "party": "D", "pct": 38 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "GA", "seatClass": 2, "special": false,
+      "title": "Georgia Senate",
+      "candidates": [ { "name": "Ossoff", "party": "D", "incumbent": true }, { "name": "Collins", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Ossoff +7.5", "period": "Feb 28 – Aug 17, 2026", "results": [ { "candidate": "Ossoff", "party": "D", "pct": 50.7 }, { "candidate": "Collins", "party": "R", "pct": 43.2 } ] },
+      "polls": [
+        { "pollster": "InsiderAdvantage", "startDate": "2026-08-16", "endDate": "2026-08-17", "sampleSize": 800, "population": "LV", "results": [ { "candidate": "Ossoff", "party": "D", "pct": 50 }, { "candidate": "Collins", "party": "R", "pct": 43 } ] },
+        { "pollster": "Fabrizio/Anzalone", "startDate": "2026-07-13", "endDate": "2026-07-16", "sampleSize": 1060, "population": "LV", "results": [ { "candidate": "Ossoff", "party": "D", "pct": 52 }, { "candidate": "Collins", "party": "R", "pct": 43 } ] },
+        { "pollster": "Wick", "startDate": "2026-06-27", "endDate": "2026-06-30", "sampleSize": 1175, "population": "LV", "results": [ { "candidate": "Ossoff", "party": "D", "pct": 47 }, { "candidate": "Collins", "party": "R", "pct": 43 } ] },
+        { "pollster": "Fox News", "startDate": "2026-06-23", "endDate": "2026-06-27", "sampleSize": 1002, "population": "RV", "results": [ { "candidate": "Ossoff", "party": "D", "pct": 56 }, { "candidate": "Collins", "party": "R", "pct": 43 } ] },
+        { "pollster": "Echelon Insights", "startDate": "2026-04-03", "endDate": "2026-04-09", "sampleSize": 407, "population": "LV", "results": [ { "candidate": "Ossoff", "party": "D", "pct": 51 }, { "candidate": "Collins", "party": "R", "pct": 44 } ] },
+        { "pollster": "Emerson", "startDate": "2026-02-28", "endDate": "2026-03-02", "sampleSize": 1000, "population": "LV", "results": [ { "candidate": "Ossoff", "party": "D", "pct": 48 }, { "candidate": "Collins", "party": "R", "pct": 43 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "IA", "seatClass": 2, "special": false,
+      "title": "Iowa Senate",
+      "candidates": [ { "name": "Turek", "party": "D" }, { "name": "Hinson", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Hinson +1.8", "period": "Jun 15 – Sep 1, 2026", "results": [ { "candidate": "Hinson", "party": "R", "pct": 47.0 }, { "candidate": "Turek", "party": "D", "pct": 45.2 } ] },
+      "polls": [
+        { "pollster": "Emerson", "startDate": "2026-08-31", "endDate": "2026-09-01", "sampleSize": 750, "population": "LV", "results": [ { "candidate": "Hinson", "party": "R", "pct": 50 }, { "candidate": "Turek", "party": "D", "pct": 45 } ] },
+        { "pollster": "Suffolk University", "startDate": "2026-08-20", "endDate": "2026-08-23", "sampleSize": 500, "population": "LV", "results": [ { "candidate": "Hinson", "party": "R", "pct": 45 }, { "candidate": "Turek", "party": "D", "pct": 41 } ] },
+        { "pollster": "Fox News", "startDate": "2026-06-23", "endDate": "2026-06-27", "sampleSize": 1003, "population": "RV", "results": [ { "candidate": "Hinson", "party": "R", "pct": 46 }, { "candidate": "Turek", "party": "D", "pct": 50 } ] },
+        { "pollster": "NY Times/Siena", "startDate": "2026-06-15", "endDate": "2026-06-27", "sampleSize": 600, "population": "LV", "results": [ { "candidate": "Hinson", "party": "R", "pct": 48 }, { "candidate": "Turek", "party": "D", "pct": 46 } ] },
+        { "pollster": "Cygnal", "startDate": "2026-06-16", "endDate": "2026-06-19", "sampleSize": 600, "population": "LV", "results": [ { "candidate": "Hinson", "party": "R", "pct": 46 }, { "candidate": "Turek", "party": "D", "pct": 44 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "ME", "seatClass": 2, "special": false,
+      "title": "Maine Senate",
+      "candidates": [ { "name": "Jackson", "party": "D" }, { "name": "Collins", "party": "R", "incumbent": true } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Jackson +2.3", "period": "Jul 7 – Aug 10, 2026", "results": [ { "candidate": "Jackson", "party": "D", "pct": 48.3 }, { "candidate": "Collins", "party": "R", "pct": 46.0 } ] },
+      "polls": [
+        { "pollster": "Fox News", "startDate": "2026-08-06", "endDate": "2026-08-10", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Jackson", "party": "D", "pct": 48 }, { "candidate": "Collins", "party": "R", "pct": 46 } ] },
+        { "pollster": "UNH", "startDate": "2026-07-15", "endDate": "2026-07-20", "sampleSize": 1178, "population": "LV", "results": [ { "candidate": "Jackson", "party": "D", "pct": 49 }, { "candidate": "Collins", "party": "R", "pct": 46 } ] },
+        { "pollster": "Z to A Research", "startDate": "2026-07-07", "endDate": "2026-07-08", "sampleSize": 988, "population": "LV", "results": [ { "candidate": "Jackson", "party": "D", "pct": 47 }, { "candidate": "Collins", "party": "R", "pct": 48 } ] },
+        { "pollster": "PPP", "startDate": "2026-07-07", "endDate": "2026-07-07", "sampleSize": 785, "population": "LV", "results": [ { "candidate": "Jackson", "party": "D", "pct": 49 }, { "candidate": "Collins", "party": "R", "pct": 44 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "MA", "seatClass": 2, "special": false,
+      "title": "Massachusetts Senate",
+      "candidates": [ { "name": "Markey", "party": "D", "incumbent": true }, { "name": "Deaton", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Markey +21.7", "period": "Jun 8 – Aug 24, 2026", "results": [ { "candidate": "Markey", "party": "D", "pct": 51.7 }, { "candidate": "Deaton", "party": "R", "pct": 30.0 } ] },
+      "polls": [
+        { "pollster": "UNH", "startDate": "2026-08-20", "endDate": "2026-08-24", "sampleSize": 881, "population": "LV", "results": [ { "candidate": "Markey", "party": "D", "pct": 49 }, { "candidate": "Deaton", "party": "R", "pct": 30 } ] },
+        { "pollster": "UMass Amherst", "startDate": "2026-08-05", "endDate": "2026-08-12", "sampleSize": 445, "population": "LV", "results": [ { "candidate": "Markey", "party": "D", "pct": 51 }, { "candidate": "Deaton", "party": "R", "pct": 30 } ] },
+        { "pollster": "Boston Globe/Suffolk", "startDate": "2026-06-08", "endDate": "2026-06-12", "sampleSize": 500, "population": "LV", "results": [ { "candidate": "Markey", "party": "D", "pct": 55 }, { "candidate": "Deaton", "party": "R", "pct": 30 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "MI", "seatClass": 2, "special": false,
+      "title": "Michigan Senate",
+      "candidates": [ { "name": "Stevens", "party": "D" }, { "name": "Rogers", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Stevens +1.7", "period": "May 20 – Jul 31, 2026", "results": [ { "candidate": "Stevens", "party": "D", "pct": 45.0 }, { "candidate": "Rogers", "party": "R", "pct": 43.3 } ] },
+      "polls": [
+        { "pollster": "EPIC-MRA", "startDate": "2026-07-24", "endDate": "2026-07-31", "sampleSize": 600, "population": "LV", "results": [ { "candidate": "Stevens", "party": "D", "pct": 44 }, { "candidate": "Rogers", "party": "R", "pct": 42 } ] },
+        { "pollster": "MIRS/Mitchell Research", "startDate": "2026-07-28", "endDate": "2026-07-29", "sampleSize": 672, "population": "LV", "results": [ { "candidate": "Stevens", "party": "D", "pct": 43 }, { "candidate": "Rogers", "party": "R", "pct": 46 } ] },
+        { "pollster": "Quantus Insights", "startDate": "2026-06-29", "endDate": "2026-06-30", "sampleSize": 947, "population": "LV", "results": [ { "candidate": "Stevens", "party": "D", "pct": 45 }, { "candidate": "Rogers", "party": "R", "pct": 44 } ] },
+        { "pollster": "TIPP", "startDate": "2026-05-20", "endDate": "2026-05-23", "sampleSize": 1154, "population": "LV", "results": [ { "candidate": "Stevens", "party": "D", "pct": 48 }, { "candidate": "Rogers", "party": "R", "pct": 41 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "MN", "seatClass": 2, "special": false,
+      "title": "Minnesota Senate",
+      "candidates": [ { "name": "Flanagan", "party": "D" }, { "name": "Tafoya", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Flanagan +5.5", "period": "Feb 6 – Aug 17, 2026", "results": [ { "candidate": "Flanagan", "party": "D", "pct": 46.5 }, { "candidate": "Tafoya", "party": "R", "pct": 41.0 } ] },
+      "polls": [
+        { "pollster": "KSTP/SurveyUSA", "startDate": "2026-08-13", "endDate": "2026-08-17", "sampleSize": 661, "population": "LV", "results": [ { "candidate": "Flanagan", "party": "D", "pct": 46 }, { "candidate": "Tafoya", "party": "R", "pct": 41 } ] },
+        { "pollster": "Emerson", "startDate": "2026-02-06", "endDate": "2026-02-08", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Flanagan", "party": "D", "pct": 47 }, { "candidate": "Tafoya", "party": "R", "pct": 41 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "NH", "seatClass": 2, "special": false,
+      "title": "New Hampshire Senate",
+      "candidates": [ { "name": "Pappas", "party": "D" }, { "name": "Brown", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Pappas +8.6", "period": "Mar 21 – Aug 24, 2026", "results": [ { "candidate": "Pappas", "party": "D", "pct": 47.3 }, { "candidate": "Brown", "party": "R", "pct": 38.7 } ] },
+      "polls": [
+        { "pollster": "UNH", "startDate": "2026-08-20", "endDate": "2026-08-24", "sampleSize": 1878, "population": "LV", "results": [ { "candidate": "Pappas", "party": "D", "pct": 45 }, { "candidate": "Brown", "party": "R", "pct": 40 } ] },
+        { "pollster": "St. Anselm", "startDate": "2026-08-17", "endDate": "2026-08-18", "sampleSize": 1411, "population": "LV", "results": [ { "candidate": "Pappas", "party": "D", "pct": 49 }, { "candidate": "Brown", "party": "R", "pct": 37 } ] },
+        { "pollster": "Emerson", "startDate": "2026-03-21", "endDate": "2026-03-23", "sampleSize": 1100, "population": "LV", "results": [ { "candidate": "Pappas", "party": "D", "pct": 48 }, { "candidate": "Brown", "party": "R", "pct": 39 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "NM", "seatClass": 2, "special": false,
+      "title": "New Mexico Senate",
+      "candidates": [ { "name": "Lujan", "party": "D", "incumbent": true }, { "name": "Marker", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "polls": [
+        { "pollster": "Albuquerque Journal", "startDate": "2026-08-21", "endDate": "2026-08-28", "sampleSize": 516, "population": "LV", "results": [ { "candidate": "Lujan", "party": "D", "pct": 53 }, { "candidate": "Marker", "party": "R", "pct": 38 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "NC", "seatClass": 2, "special": false,
+      "title": "North Carolina Senate",
+      "candidates": [ { "name": "Cooper", "party": "D" }, { "name": "Whatley", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Cooper +8.0", "period": "Jun 15 – Aug 12, 2026", "results": [ { "candidate": "Cooper", "party": "D", "pct": 50.9 }, { "candidate": "Whatley", "party": "R", "pct": 42.9 } ] },
+      "polls": [
+        { "pollster": "High Point University", "startDate": "2026-08-03", "endDate": "2026-08-12", "sampleSize": 660, "population": "LV", "results": [ { "candidate": "Cooper", "party": "D", "pct": 50 }, { "candidate": "Whatley", "party": "R", "pct": 45 } ] },
+        { "pollster": "Carolina Journal/Harper", "startDate": "2026-08-09", "endDate": "2026-08-10", "sampleSize": 600, "population": "LV", "results": [ { "candidate": "Cooper", "party": "D", "pct": 52 }, { "candidate": "Whatley", "party": "R", "pct": 39 } ] },
+        { "pollster": "Carolina Forward/Change Res.", "startDate": "2026-08-03", "endDate": "2026-08-06", "sampleSize": 915, "population": "LV", "results": [ { "candidate": "Cooper", "party": "D", "pct": 50 }, { "candidate": "Whatley", "party": "R", "pct": 43 } ] },
+        { "pollster": "Elon University", "startDate": "2026-07-23", "endDate": "2026-07-31", "sampleSize": 466, "population": "LV", "results": [ { "candidate": "Cooper", "party": "D", "pct": 53 }, { "candidate": "Whatley", "party": "R", "pct": 42 } ] },
+        { "pollster": "Fox News", "startDate": "2026-07-23", "endDate": "2026-07-27", "sampleSize": 1005, "population": "RV", "results": [ { "candidate": "Cooper", "party": "D", "pct": 53 }, { "candidate": "Whatley", "party": "R", "pct": 44 } ] },
+        { "pollster": "PPP", "startDate": "2026-07-10", "endDate": "2026-07-11", "sampleSize": 759, "population": "RV", "results": [ { "candidate": "Cooper", "party": "D", "pct": 48 }, { "candidate": "Whatley", "party": "R", "pct": 44 } ] },
+        { "pollster": "NY Times/Siena", "startDate": "2026-06-15", "endDate": "2026-06-29", "sampleSize": 601, "population": "LV", "results": [ { "candidate": "Cooper", "party": "D", "pct": 50 }, { "candidate": "Whatley", "party": "R", "pct": 43 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "OH", "seatClass": 3, "special": true,
+      "title": "Ohio Senate (special)",
+      "candidates": [ { "name": "Brown", "party": "D" }, { "name": "Husted", "party": "R", "incumbent": true } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Brown +2.6", "period": "Jun 14 – Aug 10, 2026", "results": [ { "candidate": "Brown", "party": "D", "pct": 49.3 }, { "candidate": "Husted", "party": "R", "pct": 46.7 } ] },
+      "polls": [
+        { "pollster": "Fox News", "startDate": "2026-08-06", "endDate": "2026-08-10", "sampleSize": 1008, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 53 }, { "candidate": "Husted", "party": "R", "pct": 45 } ] },
+        { "pollster": "NY Times/Siena", "startDate": "2026-06-15", "endDate": "2026-06-28", "sampleSize": 601, "population": "LV", "results": [ { "candidate": "Brown", "party": "D", "pct": 47 }, { "candidate": "Husted", "party": "R", "pct": 50 } ] },
+        { "pollster": "Fabrizio/Anzalone", "startDate": "2026-06-14", "endDate": "2026-06-16", "sampleSize": 800, "population": "LV", "results": [ { "candidate": "Brown", "party": "D", "pct": 48 }, { "candidate": "Husted", "party": "R", "pct": 45 } ] },
+        { "pollster": "Fox News", "startDate": "2026-05-28", "endDate": "2026-06-01", "sampleSize": 1105, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 53 }, { "candidate": "Husted", "party": "R", "pct": 45 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2026-04-07", "endDate": "2026-04-14", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 47 }, { "candidate": "Husted", "party": "R", "pct": 50 } ] },
+        { "pollster": "Quantus Insights", "startDate": "2026-03-13", "endDate": "2026-03-14", "sampleSize": 784, "population": "LV", "results": [ { "candidate": "Brown", "party": "D", "pct": 44 }, { "candidate": "Husted", "party": "R", "pct": 46 } ] },
+        { "pollster": "Emerson", "startDate": "2025-12-06", "endDate": "2025-12-08", "sampleSize": 850, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 46 }, { "candidate": "Husted", "party": "R", "pct": 49 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2025-10-02", "endDate": "2025-10-14", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 49 }, { "candidate": "Husted", "party": "R", "pct": 48 } ] },
+        { "pollster": "Emerson", "startDate": "2025-08-18", "endDate": "2025-08-19", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 44 }, { "candidate": "Husted", "party": "R", "pct": 50 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2025-04-18", "endDate": "2025-04-24", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 46 }, { "candidate": "Husted", "party": "R", "pct": 49 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2025-02-14", "endDate": "2025-02-21", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Brown", "party": "D", "pct": 41 }, { "candidate": "Husted", "party": "R", "pct": 47 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "RI", "seatClass": 2, "special": false,
+      "title": "Rhode Island Senate",
+      "candidates": [ { "name": "Reed", "party": "D", "incumbent": true }, { "name": "McKay", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "polls": [
+        { "pollster": "UNH", "startDate": "2026-08-20", "endDate": "2026-08-24", "sampleSize": 750, "population": "LV", "results": [ { "candidate": "Reed", "party": "D", "pct": 51 }, { "candidate": "McKay", "party": "R", "pct": 31 } ] },
+        { "pollster": "UNH", "startDate": "2026-06-18", "endDate": "2026-06-23", "sampleSize": 664, "population": "LV", "results": [ { "candidate": "Reed", "party": "D", "pct": 52 }, { "candidate": "McKay", "party": "R", "pct": 35 } ] },
+        { "pollster": "UNH", "startDate": "2026-04-16", "endDate": "2026-04-20", "sampleSize": 559, "population": "LV", "results": [ { "candidate": "Reed", "party": "D", "pct": 52 }, { "candidate": "McKay", "party": "R", "pct": 34 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "TN", "seatClass": 2, "special": false,
+      "title": "Tennessee Senate",
+      "candidates": [ { "name": "Bradshaw", "party": "D" }, { "name": "Hagerty", "party": "R", "incumbent": true } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "polls": [
+        { "pollster": "Beacon Center", "startDate": "2026-08-15", "endDate": "2026-08-26", "population": "LV", "results": [ { "candidate": "Hagerty", "party": "R", "pct": 58 }, { "candidate": "Bradshaw", "party": "D", "pct": 33 } ] }
+      ]
+    },
+    {
+      "raceType": "senate", "state": "TX", "seatClass": 2, "special": false,
+      "title": "Texas Senate",
+      "candidates": [ { "name": "Talarico", "party": "D" }, { "name": "Paxton", "party": "R" } ],
+      "source": "RealClearPolling", "lastPulled": "2026-09-06",
+      "aggregateAverage": { "spread": "Talarico +2.4", "period": "Jul 23 – Aug 26, 2026", "results": [ { "candidate": "Talarico", "party": "D", "pct": 47.3 }, { "candidate": "Paxton", "party": "R", "pct": 44.9 } ] },
+      "polls": [
+        { "pollster": "TPPF", "startDate": "2026-08-24", "endDate": "2026-08-26", "sampleSize": 1167, "population": "LV", "results": [ { "candidate": "Talarico", "party": "D", "pct": 50 }, { "candidate": "Paxton", "party": "R", "pct": 50 } ] },
+        { "pollster": "TPOR", "startDate": "2026-08-21", "endDate": "2026-08-24", "sampleSize": 1000, "population": "LV", "results": [ { "candidate": "Talarico", "party": "D", "pct": 48 }, { "candidate": "Paxton", "party": "R", "pct": 42 } ] },
+        { "pollster": "Emerson", "startDate": "2026-08-09", "endDate": "2026-08-10", "sampleSize": 1000, "population": "LV", "results": [ { "candidate": "Talarico", "party": "D", "pct": 46 }, { "candidate": "Paxton", "party": "R", "pct": 47 } ] },
+        { "pollster": "University of Texas", "startDate": "2026-08-05", "endDate": "2026-08-13", "sampleSize": 1218, "population": "LV", "results": [ { "candidate": "Talarico", "party": "D", "pct": 42 }, { "candidate": "Paxton", "party": "R", "pct": 39 } ] },
+        { "pollster": "Texas A&M/Siena", "startDate": "2026-07-27", "endDate": "2026-07-30", "sampleSize": 619, "population": "LV", "results": [ { "candidate": "Talarico", "party": "D", "pct": 47 }, { "candidate": "Paxton", "party": "R", "pct": 43 } ] },
+        { "pollster": "TSU/YouGov", "startDate": "2026-07-27", "endDate": "2026-07-30", "sampleSize": 1200, "population": "LV", "results": [ { "candidate": "Talarico", "party": "D", "pct": 47 }, { "candidate": "Paxton", "party": "R", "pct": 45 } ] },
+        { "pollster": "Fox News", "startDate": "2026-07-23", "endDate": "2026-07-27", "sampleSize": 1006, "population": "RV", "results": [ { "candidate": "Talarico", "party": "D", "pct": 51 }, { "candidate": "Paxton", "party": "R", "pct": 48 } ] }
       ]
     }
   ]
