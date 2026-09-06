@@ -1,35 +1,34 @@
 #!/usr/bin/env node
 /**
- * Slice one state's county geometry out of us-atlas and write a small,
- * pre-projected GeoJSON file the app can import directly.
+ * Slice one state's county geometry out of us-atlas, reproject it upright, and
+ * write a small file the app renders directly.
  *
  *   node scripts/extract-county-geo.mjs OH        # by USPS code
  *   node scripts/extract-county-geo.mjs 39        # or by state FIPS
  *
  * Output: app/data/geo/<USPS>.json
- *   { fips, usps, name, viewBox: "x y w h",
- *     counties: FeatureCollection,   // each feature id = 5-digit county FIPS
- *     borders:  MultiLineString,     // interior county borders (for thin strokes)
- *     outline:  Feature }            // the state's outer boundary
+ *   { fips, usps, name, viewBox,
+ *     counties: [{ fips, name, d }],   // d = SVG path, 5-digit county FIPS
+ *     bordersD,                        // interior county borders
+ *     outlineD }                       // the state's outer boundary
  *
- * us-atlas' *-albers-10m files are already projected to a ~975x610 plane, so the
- * app renders them with an identity projection and just sets the SVG viewBox to
- * the state's bounds.
+ * us-atlas' counties-10m.json is in lon/lat; we project each state on its own
+ * geoMercator fitted to a fixed width, so it renders straight (not tilted the
+ * way it is inside the national Albers-USA projection).
  */
 import { writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 import { createRequire } from "node:module";
-import { geoPath } from "d3-geo";
+import { geoMercator, geoPath } from "d3-geo";
 import { feature, mesh, merge } from "topojson-client";
 
 const require = createRequire(import.meta.url);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const counties = require("us-atlas/counties-albers-10m.json");
-const states = require("us-atlas/states-albers-10m.json");
+const topo = require("us-atlas/counties-10m.json");
+const statesTopo = require("us-atlas/states-10m.json");
 
-// USPS <-> FIPS (50 states + DC).
 const FIPS = {
   AL: "01", AK: "02", AZ: "04", AR: "05", CA: "06", CO: "08", CT: "09", DE: "10",
   DC: "11", FL: "12", GA: "13", HI: "15", ID: "16", IL: "17", IN: "18", IA: "19",
@@ -48,12 +47,11 @@ if (!fips || !FIPS_TO_USPS[fips]) {
   process.exit(1);
 }
 const usps = FIPS_TO_USPS[fips];
-
 const stateName =
-  states.objects.states.geometries.find((g) => g.id === fips)?.properties.name ?? usps;
+  statesTopo.objects.states.geometries.find((g) => g.id === fips)?.properties.name ??
+  usps;
 
-// County features for this state (5-digit id, first two digits = state FIPS).
-const allCounties = feature(counties, counties.objects.counties);
+const allCounties = feature(topo, topo.objects.counties);
 const stateCounties = {
   type: "FeatureCollection",
   features: allCounties.features.filter(
@@ -65,35 +63,34 @@ if (stateCounties.features.length === 0) {
   process.exit(1);
 }
 
-// Interior borders between this state's counties (thin lines, no double-drawing).
 const idSet = new Set(stateCounties.features.map((f) => String(f.id).padStart(5, "0")));
-const borders = mesh(
-  counties,
-  counties.objects.counties,
+const bordersMesh = mesh(
+  topo,
+  topo.objects.counties,
   (a, b) =>
     a !== b &&
     idSet.has(String(a.id).padStart(5, "0")) &&
     idSet.has(String(b.id).padStart(5, "0"))
 );
-
-// State outline = union of its counties.
 const outlineGeom = merge(
-  counties,
-  counties.objects.counties.geometries.filter((g) =>
+  topo,
+  topo.objects.counties.geometries.filter((g) =>
     idSet.has(String(g.id).padStart(5, "0"))
   )
 );
-const outline = { type: "Feature", properties: { name: stateName }, geometry: outlineGeom };
 
-// viewBox from the projected bounds, with a little padding.
-const path = geoPath(); // identity projection (data is pre-projected)
+// Upright per-state projection, fitted to a fixed width.
+const W = 800;
+const PAD = 8;
+const projection = geoMercator();
+projection.fitWidth(W - PAD * 2, stateCounties);
+const path = geoPath(projection);
 const [[x0, y0], [x1, y1]] = path.bounds(stateCounties);
-const pad = Math.max(x1 - x0, y1 - y0) * 0.03;
 const viewBox = [
-  +(x0 - pad).toFixed(1),
-  +(y0 - pad).toFixed(1),
-  +(x1 - x0 + pad * 2).toFixed(1),
-  +(y1 - y0 + pad * 2).toFixed(1),
+  +(x0 - PAD).toFixed(1),
+  +(y0 - PAD).toFixed(1),
+  +(x1 - x0 + PAD * 2).toFixed(1),
+  +(y1 - y0 + PAD * 2).toFixed(1),
 ].join(" ");
 
 const out = {
@@ -101,9 +98,13 @@ const out = {
   usps,
   name: stateName,
   viewBox,
-  counties: stateCounties,
-  borders,
-  outline,
+  counties: stateCounties.features.map((f) => ({
+    fips: String(f.id).padStart(5, "0"),
+    name: f.properties.name,
+    d: path(f),
+  })),
+  bordersD: path(bordersMesh) ?? "",
+  outlineD: path(outlineGeom) ?? "",
 };
 
 const dir = resolve(__dirname, "../app/data/geo");
@@ -111,5 +112,5 @@ await mkdir(dir, { recursive: true });
 const file = resolve(dir, `${usps}.json`);
 await writeFile(file, JSON.stringify(out));
 console.log(
-  `Wrote ${stateCounties.features.length} ${stateName} counties -> ${file} (viewBox "${viewBox}")`
+  `Wrote ${out.counties.length} ${stateName} counties -> ${file} (viewBox "${viewBox}")`
 );

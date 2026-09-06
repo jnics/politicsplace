@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { geoPath } from "d3-geo";
 import { loadStateGeo, type StateGeo } from "~/lib/stateGeo";
 import { countyResult } from "~/data/countyResults";
 import { HISTORICAL_COLORS, SHADE_COLORS } from "~/lib/shades";
@@ -14,7 +13,6 @@ const LAYERS: { id: Layer; label: string }[] = [
 ];
 
 export interface StateZoomProps {
-  /** USPS code of the state to show. */
   usps: string;
   stateName: string;
   /** "<year>-<office>", used to look up county results. */
@@ -28,8 +26,6 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
   const [hovered, setHovered] = useState<string | null>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
-
-  const path = useMemo(() => geoPath(), []);
 
   useEffect(() => {
     let live = true;
@@ -57,7 +53,9 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
       const party = res.winner === "D" ? "D" : "R";
       if (res.marginPct != null) {
         return {
-          fill: SHADE_COLORS[marginToShade(party, res.marginPct, { allowTossup: false })],
+          fill: SHADE_COLORS[
+            marginToShade(party, res.marginPct, { allowTossup: false })
+          ],
         };
       }
       return { fill: party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R };
@@ -65,10 +63,13 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
     [raceKey]
   );
 
-  const hoveredFeature =
-    hovered && geo
-      ? geo.counties.features.find((f) => String(f.id).padStart(5, "0") === hovered)
-      : null;
+  const hasCountyData = useMemo(
+    () => geo?.counties.some((c) => countyResult(raceKey, c.fips)) ?? false,
+    [geo, raceKey]
+  );
+
+  const hoveredCounty =
+    hovered && geo ? geo.counties.find((c) => c.fips === hovered) : null;
 
   return (
     <div>
@@ -109,52 +110,53 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
             viewBox={geo.viewBox}
             role="img"
             aria-label={`${stateName} county map`}
-            className="h-auto w-full select-none"
+            className="mx-auto h-auto max-h-[70vh] w-auto max-w-full select-none"
           >
-            {geo.counties.features.map((f) => {
-              const fips = String(f.id).padStart(5, "0");
-              const { fill, className } = countyFill(fips);
-              const isHovered = hovered === fips;
+            {geo.counties.map((c) => {
+              const { fill, className } = countyFill(c.fips);
+              const isHovered = hovered === c.fips;
               return (
                 <path
-                  key={fips}
-                  d={path(f) ?? undefined}
+                  key={c.fips}
+                  d={c.d}
                   fill={fill}
                   className={
-                    (className ?? "") +
-                    " transition-[filter] duration-100 cursor-pointer"
+                    (className ?? "") + " cursor-pointer transition-[filter] duration-100"
                   }
                   stroke="#ffffff"
-                  strokeWidth={isHovered ? 1.2 : 0.4}
-                  style={{
-                    filter: isHovered ? "brightness(1.12)" : undefined,
-                  }}
-                  onMouseEnter={() => setHovered(fips)}
+                  strokeWidth={isHovered ? 2 : 0.6}
+                  style={{ filter: isHovered ? "brightness(1.12)" : undefined }}
+                  onMouseEnter={() => setHovered(c.fips)}
                   onMouseMove={updatePos}
-                  onMouseLeave={() =>
-                    setHovered((h) => (h === fips ? null : h))
-                  }
+                  onMouseLeave={() => setHovered((h) => (h === c.fips ? null : h))}
                 >
-                  <title>{f.properties?.name}</title>
+                  <title>{c.name}</title>
                 </path>
               );
             })}
             <path
-              d={path(geo.borders) ?? undefined}
+              d={geo.bordersD}
               fill="none"
               stroke="#ffffff"
               strokeOpacity={0.5}
-              strokeWidth={0.3}
+              strokeWidth={0.5}
               pointerEvents="none"
             />
             <path
-              d={path(geo.outline) ?? undefined}
+              d={geo.outlineD}
               fill="none"
               className="stroke-gray-500 dark:stroke-gray-400"
-              strokeWidth={0.8}
+              strokeWidth={1.2}
               pointerEvents="none"
             />
           </svg>
+        )}
+
+        {geo && layer === "county" && !hasCountyData && (
+          <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
+            County-level results for {raceKey.replace("-", " ")} aren&rsquo;t loaded
+            yet &mdash; showing county shapes only.
+          </p>
         )}
 
         {layer !== "county" && geo && (
@@ -171,10 +173,10 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
           </div>
         )}
 
-        {hoveredFeature && layer === "county" && (
+        {hoveredCounty && layer === "county" && (
           <CountyTip
-            name={String(hoveredFeature.properties?.name ?? "")}
-            fips={String(hoveredFeature.id).padStart(5, "0")}
+            name={hoveredCounty.name}
+            fips={hoveredCounty.fips}
             raceKey={raceKey}
             x={pos.x}
             y={pos.y}
@@ -210,7 +212,12 @@ function CountyTip({
       ) : (
         <>
           <div>
-            Won by {res.winner === "D" ? "Democrats" : res.winner === "R" ? "Republicans" : res.winner}
+            Won by{" "}
+            {res.winner === "D"
+              ? "Democrats"
+              : res.winner === "R"
+              ? "Republicans"
+              : res.winner}
           </div>
           {res.marginPct != null && (
             <div className="text-gray-300 dark:text-gray-600">
