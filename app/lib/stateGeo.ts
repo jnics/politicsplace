@@ -12,6 +12,13 @@ export interface CountyShape {
   d: string;
 }
 
+export interface DistrictShape {
+  /** District number as a string ("1", "12"). */
+  id: string;
+  label: string;
+  d: string;
+}
+
 export interface StateGeo {
   fips: string;
   usps: string;
@@ -23,6 +30,8 @@ export interface StateGeo {
   bordersD: string;
   /** The state's outer boundary. */
   outlineD: string;
+  /** 119th-Congress districts, same projection as the counties. */
+  districts?: DistrictShape[];
 }
 
 /**

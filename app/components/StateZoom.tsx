@@ -68,8 +68,16 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
     [geo, raceKey]
   );
 
+  const districts = geo?.districts ?? [];
+  const showDistricts = layer === "district" && districts.length > 0;
+
   const hoveredCounty =
-    hovered && geo ? geo.counties.find((c) => c.fips === hovered) : null;
+    hovered && geo && layer === "county"
+      ? geo.counties.find((c) => c.fips === hovered)
+      : null;
+  const hoveredDistrict = showDistricts
+    ? districts.find((d) => d.id === hovered)
+    : null;
 
   return (
     <div>
@@ -109,39 +117,67 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
           <svg
             viewBox={geo.viewBox}
             role="img"
-            aria-label={`${stateName} county map`}
+            aria-label={`${stateName} ${layer} map`}
             className="mx-auto h-auto max-h-[70vh] w-auto max-w-full select-none"
           >
-            {geo.counties.map((c) => {
-              const { fill, className } = countyFill(c.fips);
-              const isHovered = hovered === c.fips;
-              return (
-                <path
-                  key={c.fips}
-                  d={c.d}
-                  fill={fill}
-                  className={
-                    (className ?? "") + " cursor-pointer transition-[filter] duration-100"
-                  }
-                  stroke="#ffffff"
-                  strokeWidth={isHovered ? 2 : 0.6}
-                  style={{ filter: isHovered ? "brightness(1.12)" : undefined }}
-                  onMouseEnter={() => setHovered(c.fips)}
-                  onMouseMove={updatePos}
-                  onMouseLeave={() => setHovered((h) => (h === c.fips ? null : h))}
-                >
-                  <title>{c.name}</title>
-                </path>
-              );
-            })}
-            <path
-              d={geo.bordersD}
-              fill="none"
-              stroke="#ffffff"
-              strokeOpacity={0.5}
-              strokeWidth={0.5}
-              pointerEvents="none"
-            />
+            {layer === "county" &&
+              geo.counties.map((c) => {
+                const { fill, className } = countyFill(c.fips);
+                const isHovered = hovered === c.fips;
+                return (
+                  <path
+                    key={c.fips}
+                    d={c.d}
+                    fill={fill}
+                    className={
+                      (className ?? "") +
+                      " cursor-pointer transition-[filter] duration-100"
+                    }
+                    stroke="#ffffff"
+                    strokeWidth={isHovered ? 2 : 0.6}
+                    style={{ filter: isHovered ? "brightness(1.12)" : undefined }}
+                    onMouseEnter={() => setHovered(c.fips)}
+                    onMouseMove={updatePos}
+                    onMouseLeave={() => setHovered((h) => (h === c.fips ? null : h))}
+                  >
+                    <title>{c.name}</title>
+                  </path>
+                );
+              })}
+
+            {showDistricts &&
+              districts.map((d) => {
+                const isHovered = hovered === d.id;
+                return (
+                  <path
+                    key={d.id}
+                    d={d.d}
+                    className={`cursor-pointer transition-colors duration-100 ${
+                      isHovered
+                        ? "fill-indigo-400 dark:fill-indigo-500"
+                        : "fill-gray-300 dark:fill-gray-600"
+                    }`}
+                    stroke="#ffffff"
+                    strokeWidth={isHovered ? 2 : 1.2}
+                    onMouseEnter={() => setHovered(d.id)}
+                    onMouseMove={updatePos}
+                    onMouseLeave={() => setHovered((h) => (h === d.id ? null : h))}
+                  >
+                    <title>{d.label}</title>
+                  </path>
+                );
+              })}
+
+            {layer === "county" && (
+              <path
+                d={geo.bordersD}
+                fill="none"
+                stroke="#ffffff"
+                strokeOpacity={0.5}
+                strokeWidth={0.5}
+                pointerEvents="none"
+              />
+            )}
             <path
               d={geo.outlineD}
               fill="none"
@@ -159,21 +195,38 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
           </p>
         )}
 
-        {layer !== "county" && geo && (
+        {geo && showDistricts && (
+          <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
+            {districts.length} congressional districts (119th Congress). House-race
+            results for this layer aren&rsquo;t wired up yet.
+          </p>
+        )}
+
+        {geo && layer === "precinct" && (
           <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-white/70 text-center text-sm text-gray-600 backdrop-blur-sm dark:bg-gray-950/70 dark:text-gray-300">
             <div className="max-w-xs px-4">
-              <p className="font-medium">
-                {layer === "district" ? "Congressional districts" : "Precincts"}
-              </p>
+              <p className="font-medium">Precincts</p>
               <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                Geometry and House-race data for this layer aren&rsquo;t wired up
-                yet &mdash; the county layer is the working one for now.
+                Precinct geometry (thousands per state) isn&rsquo;t bundled yet
+                &mdash; it&rsquo;ll load per county when House data lands.
               </p>
             </div>
           </div>
         )}
 
-        {hoveredCounty && layer === "county" && (
+        {geo && layer === "district" && districts.length === 0 && (
+          <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-white/70 text-center text-sm text-gray-600 backdrop-blur-sm dark:bg-gray-950/70 dark:text-gray-300">
+            <div className="max-w-xs px-4">
+              <p className="font-medium">Congressional districts</p>
+              <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                Re-run <code>pnpm geo:extract {geo.usps}</code> to pull district
+                shapes for this state.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {hoveredCounty && (
           <CountyTip
             name={hoveredCounty.name}
             fips={hoveredCounty.fips}
@@ -181,6 +234,15 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
             x={pos.x}
             y={pos.y}
           />
+        )}
+
+        {hoveredDistrict && (
+          <div
+            className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
+            style={{ left: pos.x, top: pos.y - 10 }}
+          >
+            {stateName} {hoveredDistrict.label}
+          </div>
         )}
       </div>
     </div>

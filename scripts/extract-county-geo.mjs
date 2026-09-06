@@ -10,11 +10,14 @@
  *   { fips, usps, name, viewBox,
  *     counties: [{ fips, name, d }],   // d = SVG path, 5-digit county FIPS
  *     bordersD,                        // interior county borders
- *     outlineD }                       // the state's outer boundary
+ *     outlineD,                        // the state's outer boundary
+ *     districts: [{ id, label, d }] }  // 119th-Congress districts (Census)
  *
  * us-atlas' counties-10m.json is in lon/lat; we project each state on its own
  * geoMercator fitted to a fixed width, so it renders straight (not tilted the
- * way it is inside the national Albers-USA projection).
+ * way it is inside the national Albers-USA projection). Congressional-district
+ * geometry comes from the Census TIGERweb GeoJSON API and is projected the same
+ * way so it lines up with the counties.
  */
 import { writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -85,12 +88,87 @@ const PAD = 8;
 const projection = geoMercator();
 projection.fitWidth(W - PAD * 2, stateCounties);
 const path = geoPath(projection);
-const [[x0, y0], [x1, y1]] = path.bounds(stateCounties);
+
+/** Reverse every ring of a Polygon/MultiPolygon geometry (winding fix). */
+function reverseRings(geom) {
+  const rev = (ring) => [...ring].reverse();
+  if (geom.type === "Polygon") {
+    return { ...geom, coordinates: geom.coordinates.map(rev) };
+  }
+  if (geom.type === "MultiPolygon") {
+    return {
+      ...geom,
+      coordinates: geom.coordinates.map((poly) => poly.map(rev)),
+    };
+  }
+  return geom;
+}
+
+// 119th-Congress district geometry from the Census TIGERweb GeoJSON API,
+// projected through the same `path` so it aligns with the counties.
+async function fetchDistricts() {
+  const url =
+    "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/4/query?" +
+    new URLSearchParams({
+      where: `STATE='${fips}'`,
+      outFields: "BASENAME,NAME,GEOID",
+      returnGeometry: "true",
+      geometryPrecision: "3",
+      maxAllowableOffset: "0.008", // ~0.9 km Douglas-Peucker, plenty for a state view
+      outSR: "4326",
+      f: "geojson",
+    });
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const fc = await res.json();
+    return (fc.features ?? [])
+      .map((f) => ({
+        id: f.properties.BASENAME,
+        label: f.properties.NAME,
+        // ArcGIS winds rings the way d3-geo reads as "everything outside", which
+        // paints a giant bounding rectangle. Reversing each ring fixes it.
+        d: path(reverseRings(f.geometry)),
+      }))
+      .filter((d) => d.d)
+      .sort((a, b) => Number(a.id) - Number(b.id) || a.id.localeCompare(b.id));
+  } catch (err) {
+    console.warn(`  (skipping districts: ${err.message})`);
+    return [];
+  }
+}
+
+const districts = await fetchDistricts();
+
+const countyShapes = stateCounties.features.map((f) => ({
+  fips: String(f.id).padStart(5, "0"),
+  name: f.properties.name,
+  d: path(f),
+}));
+const bordersD = path(bordersMesh) ?? "";
+const outlineD = path(outlineGeom) ?? "";
+
+// viewBox from the land area (counties). Congressional districts can extend a
+// little past this into open water (Census includes lake jurisdiction); that
+// sliver clips harmlessly rather than adding a big empty band to every view.
+let minX = Infinity;
+let minY = Infinity;
+let maxX = -Infinity;
+let maxY = -Infinity;
+for (const d of [...countyShapes.map((c) => c.d), outlineD]) {
+  const nums = (d.match(/-?\d+(?:\.\d+)?/g) ?? []).map(Number);
+  for (let i = 0; i + 1 < nums.length; i += 2) {
+    minX = Math.min(minX, nums[i]);
+    maxX = Math.max(maxX, nums[i]);
+    minY = Math.min(minY, nums[i + 1]);
+    maxY = Math.max(maxY, nums[i + 1]);
+  }
+}
 const viewBox = [
-  +(x0 - PAD).toFixed(1),
-  +(y0 - PAD).toFixed(1),
-  +(x1 - x0 + PAD * 2).toFixed(1),
-  +(y1 - y0 + PAD * 2).toFixed(1),
+  +(minX - PAD).toFixed(1),
+  +(minY - PAD).toFixed(1),
+  +(maxX - minX + PAD * 2).toFixed(1),
+  +(maxY - minY + PAD * 2).toFixed(1),
 ].join(" ");
 
 const out = {
@@ -98,13 +176,10 @@ const out = {
   usps,
   name: stateName,
   viewBox,
-  counties: stateCounties.features.map((f) => ({
-    fips: String(f.id).padStart(5, "0"),
-    name: f.properties.name,
-    d: path(f),
-  })),
-  bordersD: path(bordersMesh) ?? "",
-  outlineD: path(outlineGeom) ?? "",
+  counties: countyShapes,
+  bordersD,
+  outlineD,
+  districts,
 };
 
 const dir = resolve(__dirname, "../app/data/geo");
@@ -112,5 +187,5 @@ await mkdir(dir, { recursive: true });
 const file = resolve(dir, `${usps}.json`);
 await writeFile(file, JSON.stringify(out));
 console.log(
-  `Wrote ${out.counties.length} ${stateName} counties -> ${file} (viewBox "${viewBox}")`
+  `Wrote ${out.counties.length} ${stateName} counties + ${districts.length} districts -> ${file}`
 );
