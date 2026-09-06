@@ -36,7 +36,9 @@ export function computePresidentialView(year: PresidentialYear) {
       // 40-point blowout), the same convention most election-night maps use.
       const vote = votes?.[state];
       const shade = vote
-        ? marginToShade(result.party, Math.abs(vote.dPct - vote.rPct))
+        ? marginToShade(result.party, Math.abs(vote.dPct - vote.rPct), {
+            allowTossup: false,
+          })
         : result.party === "D"
         ? "safeD"
         : "safeR";
@@ -57,7 +59,9 @@ export function computePresidentialView(year: PresidentialYear) {
       const vote = votes?.[state];
       const majShade =
         vote && result.majorityParty
-          ? marginToShade(result.majorityParty, Math.abs(vote.dPct - vote.rPct))
+          ? marginToShade(result.majorityParty, Math.abs(vote.dPct - vote.rPct), {
+              allowTossup: false,
+            })
           : result.majorityParty === "D"
           ? "safeD"
           : "safeR";

@@ -3,6 +3,7 @@ import { SENATE_VOTES } from "~/data/senateVotes";
 import { SENATE_CHAMBER } from "~/data/senateChamber";
 import {
   HISTORICAL_COLORS,
+  INDEPENDENT_COLOR,
   SHADE_COLORS,
   shadeSide,
   emptyShadeTally,
@@ -19,9 +20,12 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
   const votes = SENATE_VOTES[year];
   const fills: Record<string, string> = {};
   const upStates = new Set<string>();
-  // Seats decided this cycle, split across the 7-point margin spectrum.
+  // Seats decided this cycle, split across the margin spectrum. A decided race
+  // never lands on "toss-up" (there's a winner) -- the closest bucket is "lean".
+  // Seats an independent won get their own colour, outside the spectrum.
   const shadeTally = emptyShadeTally();
   const shadeStates = emptyShadeStates();
+  const indStates: string[] = [];
   let dSeats = 0;
   let rSeats = 0;
   const seen = new Set<string>();
@@ -32,16 +36,27 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
     upStates.add(race.state);
 
     const vote = votes?.find((v) => v.state === race.state);
-    let shade: Shade;
-    if (vote && (race.party === "D" || race.party === "R")) {
-      shade = marginToShade(race.party, Math.abs(vote.winner.pct - vote.runnerUp.pct));
+
+    if (vote?.winner.party === "I") {
+      fills[race.state] = INDEPENDENT_COLOR;
+      indStates.push(race.state);
+    } else if (vote && (race.party === "D" || race.party === "R")) {
+      const shade = marginToShade(
+        race.party,
+        Math.abs(vote.winner.pct - vote.runnerUp.pct),
+        { allowTossup: false }
+      );
       fills[race.state] = SHADE_COLORS[shade];
+      shadeTally[shade] += 1;
+      shadeStates[shade].push(race.state);
     } else {
-      shade = race.party === "D" ? "safeD" : "safeR";
+      const shade: Shade = race.party === "D" ? "safeD" : "safeR";
       fills[race.state] = race.party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R;
+      shadeTally[shade] += 1;
+      shadeStates[shade].push(race.state);
     }
-    shadeTally[shade] += 1;
-    shadeStates[shade].push(race.state);
+
+    // Independents (King, Sanders) caucus with the Democrats for chamber math.
     if (race.party === "D") dSeats += 1;
     else rSeats += 1;
   }
@@ -60,6 +75,8 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
     upStates,
     shadeTally,
     shadeStates,
+    indStates,
+    indSeats: indStates.length,
     dSeats,
     rSeats,
     totalRaces: dSeats + rSeats,

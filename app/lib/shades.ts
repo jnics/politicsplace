@@ -74,6 +74,10 @@ export function cycleShade(shade: Shade, direction: 1 | -1): Shade {
   return SHADE_ORDER[next];
 }
 
+// A seat an independent actually won (Angus King, Bernie Sanders). Only used
+// on the historical maps -- distinct from the blue/red spectrum on purpose.
+export const INDEPENDENT_COLOR = "#16a34a"; // green-600
+
 // Solid colors used for READ-ONLY historical results (actual D/R outcomes,
 // not predictions) -- deliberately a different pair of tones from the
 // prediction spectrum so it's visually obvious "this happened" vs.

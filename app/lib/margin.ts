@@ -13,9 +13,15 @@ import type { Shade } from "~/lib/shades";
  *   6 pt  - 15 pt   -> likely
  *   margin >= 15 pt -> safe
  */
-export function marginToShade(party: "D" | "R", marginPct: number): Shade {
+export function marginToShade(
+  party: "D" | "R",
+  marginPct: number,
+  opts: { allowTossup?: boolean } = {}
+): Shade {
   const m = Math.abs(marginPct);
-  if (m < 1) return "tossup";
+  // Predictions can land on "toss-up"; a race that already happened cannot --
+  // there's a winner, so the closest a decided race gets is "lean".
+  if ((opts.allowTossup ?? true) && m < 1) return "tossup";
   const bucket = m < 6 ? "lean" : m < 15 ? "likely" : "safe";
   return `${bucket}${party}` as Shade;
 }

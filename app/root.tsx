@@ -25,20 +25,20 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        {/* Set the dark-mode class before first paint (and before hydration)
-            so there's no flash of the wrong theme. Reads the visitor's saved
-            choice, falling back to their OS preference. Kept as a tiny
-            inline script rather than a React effect specifically so it can
-            run before anything is painted. */}
+        {/* Dark mode is the default (the `dark` class is on <html> from SSR).
+            This tiny inline script runs before first paint to drop it only
+            when the visitor has explicitly saved a "light" choice, so there's
+            no flash. Kept inline rather than as a React effect so it beats
+            the first paint. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('pp-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();`,
+            __html: `(function(){try{var t=localStorage.getItem('pp-theme');if(t==='light')document.documentElement.classList.remove('dark');}catch(e){}})();`,
           }}
         />
       </head>

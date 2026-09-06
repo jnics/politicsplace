@@ -18,6 +18,7 @@ import { computePresidentialView, patternIdFor } from "~/lib/presidentialMap";
 import { computeSenateHistoricalView, computeSenate2026View } from "~/lib/senateMap";
 import {
   HISTORICAL_COLORS,
+  INDEPENDENT_COLOR,
   LOCKED_COLORS,
   SHADE_COLORS,
   SHADE_LABELS,
@@ -412,6 +413,12 @@ export function ElectionsExplorer() {
                       senateHistorical.shadeTally,
                       senateHistorical.shadeStates
                     ),
+                    {
+                      label: "Won by an independent",
+                      value: senateHistorical.indSeats,
+                      color: INDEPENDENT_COLOR,
+                      states: senateHistorical.indStates,
+                    },
                     {
                       label: "Held by Democrats (not up)",
                       value: senateHistorical.heldD,

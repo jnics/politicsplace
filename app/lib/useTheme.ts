@@ -5,7 +5,8 @@ const STORAGE_KEY = "pp-theme";
 export type Theme = "light" | "dark";
 
 function currentThemeFromDom(): Theme {
-  if (typeof document === "undefined") return "light";
+  // Dark is the default (see root.tsx), so assume it until the DOM says otherwise.
+  if (typeof document === "undefined") return "dark";
   return document.documentElement.classList.contains("dark") ? "dark" : "light";
 }
 
@@ -17,7 +18,7 @@ function currentThemeFromDom(): Theme {
  * the user clicks the toggle.
  */
 export function useTheme() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
     setTheme(currentThemeFromDom());

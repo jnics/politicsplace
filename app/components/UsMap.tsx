@@ -65,14 +65,15 @@ export function UsMap({
               stroke={spotlit ? "#111827" : "#ffffff"}
               strokeWidth={spotlit ? 2 : isHovered ? 2 : 1}
               className={
-                "transition-[filter,opacity] duration-100 " +
+                "transition-opacity duration-150 " +
                 (isInteractive ? "cursor-pointer" : "cursor-default")
               }
-              opacity={dimmed ? 0.25 : 1}
+              opacity={dimmed ? 0.3 : 1}
               style={{
-                filter: isHovered
-                  ? "brightness(1.12) saturate(1.05)"
-                  : undefined,
+                filter:
+                  isHovered || spotlit
+                    ? "brightness(1.12) saturate(1.05)"
+                    : undefined,
               }}
               onMouseEnter={() => setHovered(state.id)}
               onMouseMove={updatePos}
