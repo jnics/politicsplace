@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { UsMap } from "~/components/UsMap";
-import { DonutChart } from "~/components/DonutChart";
+import { DonutChart, type DonutSegment } from "~/components/DonutChart";
 import { ShadePalette } from "~/components/Legend";
 import { ThemeToggle } from "~/components/ThemeToggle";
 import { STATE_PATHS } from "~/data/statePaths";
@@ -17,11 +17,11 @@ import { SENATE_REASONS } from "~/data/senateReasons";
 import { computePresidentialView, patternIdFor } from "~/lib/presidentialMap";
 import { computeSenateHistoricalView, computeSenate2026View } from "~/lib/senateMap";
 import {
+  HISTORICAL_COLORS,
   LOCKED_COLORS,
   SHADE_COLORS,
   SHADE_LABELS,
   SHADE_ORDER,
-  SHADE_SHORT_LABELS,
   type Shade,
 } from "~/lib/shades";
 import { formatMargin, formatVotes } from "~/lib/margin";
@@ -39,13 +39,59 @@ const SEAT_CLASS_LABEL: Record<1 | 2 | 3, string> = {
   3: "Class 3",
 };
 
-/** Build donut segments for the 7-point margin spectrum from a shade tally. */
-function shadeSegments(tally: Record<Shade, number>) {
+const PARTY_NAME: Record<string, string> = {
+  D: "Democrats",
+  R: "Republicans",
+  I: "an Independent",
+};
+
+/** Donut segments for the 7-point margin spectrum, with the states in each bucket. */
+function shadeSegments(
+  tally: Record<Shade, number>,
+  statesByShade: Record<Shade, string[]>
+): DonutSegment[] {
   return SHADE_ORDER.map((shade) => ({
-    label: SHADE_SHORT_LABELS[shade],
+    label: SHADE_LABELS[shade],
     value: tally[shade],
     color: SHADE_COLORS[shade],
+    states: statesByShade[shade],
   }));
+}
+
+/** One "Name (P)   1,234 · 55.5%" row in a hover card. */
+function CandidateRow({
+  name,
+  party,
+  votes,
+  pct,
+}: {
+  name: string;
+  party: string;
+  votes: number;
+  pct: number;
+}) {
+  return (
+    <div className="flex items-baseline justify-between gap-2">
+      <span>
+        {name} ({party})
+      </span>
+      <span className="shrink-0 tabular-nums text-gray-300 dark:text-gray-600">
+        {formatVotes(votes)} &middot; {pct}%
+      </span>
+    </div>
+  );
+}
+
+/** Consistent shell for every hover card: bold state name + a muted subtitle. */
+function TipHeader({ name, sub }: { name: string; sub?: string }) {
+  return (
+    <div className="font-semibold">
+      {name}
+      {sub && (
+        <span className="font-normal text-gray-400 dark:text-gray-500"> &middot; {sub}</span>
+      )}
+    </div>
+  );
 }
 
 export function ElectionsExplorer() {
@@ -53,6 +99,7 @@ export function ElectionsExplorer() {
   const [presYear, setPresYear] = useState<PresidentialYear>(2024);
   const [senYear, setSenYear] = useState<SenateCycleYear | 2026>(2026);
   const [selectedShade, setSelectedShade] = useState<Shade>("tossup");
+  const [donutHighlight, setDonutHighlight] = useState<Set<string> | null>(null);
   const { picks, setPick, resetPicks, hydrated } = usePredictionPicks();
 
   const isActiveTab = raceType === "senate" && senYear === 2026;
@@ -89,6 +136,12 @@ export function ElectionsExplorer() {
 
   const hiddenStates = raceType === "senate" ? new Set(["DC"]) : undefined;
 
+  function handleSegmentHover(segment: DonutSegment | null) {
+    setDonutHighlight(
+      segment?.states && segment.states.length > 0 ? new Set(segment.states) : null
+    );
+  }
+
   function handleStateClick(state: string, direction: 1 | -1) {
     if (!senate2026?.activeStates.has(state)) return;
     // Left click paints with whatever color is selected in the palette;
@@ -100,28 +153,44 @@ export function ElectionsExplorer() {
     const name = STATE_NAMES[state] ?? state;
 
     if (presidentialView) {
-      const data = presidentialViewResultFor(state, presYear);
-      if (!data) return <div className="font-semibold">{name}</div>;
-      const votes = PRESIDENTIAL_VOTES[presYear]?.[state];
+      const result = PRESIDENTIAL_RESULTS[presYear][state];
+      if (!result) return <TipHeader name={name} />;
+      const votes =
+        result.party !== "split" ? PRESIDENTIAL_VOTES[presYear]?.[state] : undefined;
+      const sub =
+        result.party === "split"
+          ? `${presYear} · split`
+          : `${presYear} · Won by ${PARTY_NAME[result.party]}`;
       return (
-        <div className="space-y-0.5">
-          <div className="font-semibold">{name}</div>
-          <div>{data.summary}</div>
+        <div className="space-y-1">
+          <TipHeader name={name} sub={sub} />
+          <div className="text-gray-300 dark:text-gray-600">
+            {result.ev} electoral vote{result.ev === 1 ? "" : "s"}
+          </div>
+          {result.party === "split" && result.details && (
+            <div className="text-gray-300 dark:text-gray-600">{result.details}</div>
+          )}
           {votes && (
-            <>
-              <div>
-                D {formatVotes(votes.dVotes)} ({votes.dPct}%)
-              </div>
-              <div>
-                R {formatVotes(votes.rVotes)} ({votes.rPct}%)
-              </div>
-              <div className="text-gray-300 dark:text-gray-600">
+            <div className="space-y-0.5 border-t border-white/15 pt-1 dark:border-black/10">
+              <CandidateRow
+                name="Dem."
+                party="D"
+                votes={votes.dVotes}
+                pct={votes.dPct}
+              />
+              <CandidateRow
+                name="Rep."
+                party="R"
+                votes={votes.rVotes}
+                pct={votes.rPct}
+              />
+              <div className="pt-0.5 font-medium">
                 {formatMargin(
                   votes.dPct >= votes.rPct ? "D" : "R",
                   votes.dPct - votes.rPct
                 )}
               </div>
-            </>
+            </div>
           )}
         </div>
       );
@@ -129,71 +198,76 @@ export function ElectionsExplorer() {
 
     if (senateHistorical) {
       if (!senateHistorical.upStates.has(state)) {
-        return (
-          <div className="space-y-0.5">
-            <div className="font-semibold">{name}</div>
-            <div>No Senate race this cycle</div>
-          </div>
-        );
+        return <TipHeader name={name} sub={`no Senate race in ${senYear}`} />;
       }
       const vote = SENATE_VOTES[senYear]?.find((v) => v.state === state);
       const reason = SENATE_REASONS[senYear]?.[state];
-      const wonBy =
-        vote?.winner.party === "D"
-          ? "Democrats"
-          : vote?.winner.party === "R"
-          ? "Republicans"
-          : vote?.winner.party === "I"
-          ? "an Independent"
-          : null;
+      const wonBy = vote ? PARTY_NAME[vote.winner.party] ?? vote.winner.party : null;
       return (
-        <div className="space-y-0.5">
-          <div className="font-semibold">{name}</div>
-          {wonBy && <div>Won by {wonBy}</div>}
+        <div className="space-y-1">
+          <TipHeader
+            name={name}
+            sub={wonBy ? `${senYear} · Won by ${wonBy}` : String(senYear)}
+          />
           {vote && (
-            <>
-              <div>
-                {vote.winner.name} ({vote.winner.party}) {formatVotes(vote.winner.votes)} (
-                {vote.winner.pct}%)
-              </div>
-              <div>
-                {vote.runnerUp.name} ({vote.runnerUp.party}){" "}
-                {formatVotes(vote.runnerUp.votes)} ({vote.runnerUp.pct}%)
-              </div>
+            <div className="space-y-0.5">
+              <CandidateRow
+                name={lastName(vote.winner.name)}
+                party={vote.winner.party}
+                votes={vote.winner.votes}
+                pct={vote.winner.pct}
+              />
+              <CandidateRow
+                name={lastName(vote.runnerUp.name)}
+                party={vote.runnerUp.party}
+                votes={vote.runnerUp.votes}
+                pct={vote.runnerUp.pct}
+              />
               {(vote.winner.party === "D" || vote.winner.party === "R") && (
-                <div className="text-gray-300 dark:text-gray-600">
-                  {formatMargin(vote.winner.party, vote.winner.pct - vote.runnerUp.pct)}
+                <div className="pt-0.5 font-medium">
+                  {formatMargin(
+                    vote.winner.party,
+                    vote.winner.pct - vote.runnerUp.pct
+                  )}
                 </div>
               )}
-            </>
+            </div>
           )}
-          {reason && <div className="pt-1">{reason}</div>}
+          {reason && (
+            <div className="border-t border-white/15 pt-1 text-gray-200 dark:border-black/10 dark:text-gray-700">
+              {reason}
+            </div>
+          )}
         </div>
       );
     }
 
     if (senate2026) {
       const info = senate2026.stateInfo[state];
-      if (!info) return <div className="font-semibold">{name}</div>;
+      if (!info) return <TipHeader name={name} />;
       if (info.active && info.activeSeat) {
         const shade = picks[state] ?? "tossup";
         return (
-          <div className="space-y-0.5">
-            <div className="font-semibold">{name}</div>
-            <div>
-              {SEAT_CLASS_LABEL[info.activeSeat.seatClass]} seat
-              {info.activeSeat.special ? " (special election)" : ""}
-            </div>
+          <div className="space-y-1">
+            <TipHeader
+              name={name}
+              sub={`${SEAT_CLASS_LABEL[info.activeSeat.seatClass]}${
+                info.activeSeat.special ? " · special" : ""
+              }`}
+            />
             {info.activeSeat.incumbent && (
               <div>
-                Incumbent: {info.activeSeat.incumbent} (
-                {info.activeSeat.currentParty})
+                Incumbent: {info.activeSeat.incumbent} ({info.activeSeat.currentParty})
               </div>
             )}
             {info.activeSeat.note && (
-              <div className="text-gray-300 dark:text-gray-600">{info.activeSeat.note}</div>
+              <div className="text-gray-300 dark:text-gray-600">
+                {info.activeSeat.note}
+              </div>
             )}
-            <div className="pt-1 font-medium">Your pick: {SHADE_LABELS[shade]}</div>
+            <div className="border-t border-white/15 pt-1 font-medium dark:border-black/10">
+              Your pick: {SHADE_LABELS[shade]}
+            </div>
             <div className="text-gray-300 dark:text-gray-600">
               Click to apply selected color &middot; right-click to clear
             </div>
@@ -201,9 +275,8 @@ export function ElectionsExplorer() {
         );
       }
       return (
-        <div className="space-y-0.5">
-          <div className="font-semibold">{name}</div>
-          <div>No Senate race in 2026</div>
+        <div className="space-y-1">
+          <TipHeader name={name} sub="no race in 2026" />
           {info.seats.map((seat) => (
             <div key={seat.seatClass}>
               {SEAT_CLASS_LABEL[seat.seatClass]}: {seat.incumbent ?? "?"} (
@@ -214,18 +287,7 @@ export function ElectionsExplorer() {
       );
     }
 
-    return <div className="font-semibold">{name}</div>;
-  }
-
-  function presidentialViewResultFor(state: string, year: PresidentialYear) {
-    const result = PRESIDENTIAL_RESULTS[year][state];
-    if (!result) return null;
-    if (result.party === "split") {
-      return { summary: result.details ?? "Split electoral votes" };
-    }
-    return {
-      summary: `Won by ${result.party === "D" ? "Democrats" : "Republicans"} (${result.ev} EV)`,
-    };
+    return <TipHeader name={name} />;
   }
 
   const defs =
@@ -305,6 +367,7 @@ export function ElectionsExplorer() {
             onStateClick={handleStateClick}
             tooltip={tooltip}
             hiddenStates={hiddenStates}
+            highlightStates={donutHighlight}
             defs={defs}
           />
         </div>
@@ -320,31 +383,42 @@ export function ElectionsExplorer() {
             </h2>
 
             {presidentialView && (
-              <>
-                <DonutChart
-                  segments={shadeSegments(presidentialView.shadeTally)}
-                  centerPrimary={`${presidentialView.dEv}–${presidentialView.rEv}`}
-                  centerSecondary={
-                    presidentialView.dEv > presidentialView.rEv ? "Dem. win (D–R)" : "Rep. win (D–R)"
-                  }
-                  majorityFraction={270 / 538}
-                  majorityLabel="270 electoral votes to win"
-                />
-              </>
+              <DonutChart
+                segments={shadeSegments(
+                  presidentialView.shadeTally,
+                  presidentialView.shadeStates
+                )}
+                centerPrimary={`${presidentialView.dEv}–${presidentialView.rEv}`}
+                centerSecondary={
+                  presidentialView.dEv > presidentialView.rEv
+                    ? "Dem. win (D–R)"
+                    : "Rep. win (D–R)"
+                }
+                centerBar={[
+                  { label: "D", value: presidentialView.dEv, color: HISTORICAL_COLORS.D },
+                  { label: "R", value: presidentialView.rEv, color: HISTORICAL_COLORS.R },
+                ]}
+                majorityFraction={270 / 538}
+                majorityLabel="270 electoral votes to win"
+                onSegmentHover={handleSegmentHover}
+              />
             )}
 
             {senateHistorical && (
               <>
                 <DonutChart
                   segments={[
-                    ...shadeSegments(senateHistorical.shadeTally),
+                    ...shadeSegments(
+                      senateHistorical.shadeTally,
+                      senateHistorical.shadeStates
+                    ),
                     {
-                      label: "D held (not up)",
+                      label: "Held by Democrats (not up)",
                       value: senateHistorical.heldD,
                       color: LOCKED_COLORS.D,
                     },
                     {
-                      label: "R held (not up)",
+                      label: "Held by Republicans (not up)",
                       value: senateHistorical.heldR,
                       color: LOCKED_COLORS.R,
                     },
@@ -355,12 +429,31 @@ export function ElectionsExplorer() {
                       : `${senateHistorical.dSeats}–${senateHistorical.rSeats}`
                   }
                   centerSecondary={
-                    senateHistorical.chamber ? `Senate after ${senYear}` : `of ${senateHistorical.totalRaces} races`
+                    senateHistorical.chamber
+                      ? `Senate after ${senYear}`
+                      : `of ${senateHistorical.totalRaces} races`
+                  }
+                  centerBar={
+                    senateHistorical.chamber
+                      ? [
+                          {
+                            label: "D",
+                            value: senateHistorical.chamber.dCaucus,
+                            color: HISTORICAL_COLORS.D,
+                          },
+                          {
+                            label: "R",
+                            value: senateHistorical.chamber.rCaucus,
+                            color: HISTORICAL_COLORS.R,
+                          },
+                        ]
+                      : undefined
                   }
                   majorityFraction={senateHistorical.chamber ? 51 / 100 : undefined}
                   majorityLabel={
                     senateHistorical.chamber ? "51 seats for majority" : undefined
                   }
+                  onSegmentHover={handleSegmentHover}
                 />
                 <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
                   The ring is the full 100-seat Senate after {senYear}: the{" "}
@@ -374,13 +467,24 @@ export function ElectionsExplorer() {
             {senate2026 && (
               <>
                 <DonutChart
-                  segments={shadeSegments(senate2026.shadeTally)}
+                  segments={shadeSegments(
+                    senate2026.shadeTally,
+                    senate2026.shadeStates
+                  )}
                   centerPrimary={`${senate2026.d}–${senate2026.r}`}
                   centerSecondary={
-                    senate2026.tossup > 0 ? `+${senate2026.tossup} toss-up of 100` : "of 100 seats"
+                    senate2026.tossup > 0
+                      ? `+${senate2026.tossup} toss-up of 100`
+                      : "of 100 seats"
                   }
+                  centerBar={[
+                    { label: "D", value: senate2026.d, color: HISTORICAL_COLORS.D },
+                    { label: "Toss-up", value: senate2026.tossup, color: SHADE_COLORS.tossup },
+                    { label: "R", value: senate2026.r, color: HISTORICAL_COLORS.R },
+                  ]}
                   majorityFraction={51 / 100}
                   majorityLabel="51 seats for majority"
+                  onSegmentHover={handleSegmentHover}
                 />
                 <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
                   35 seats are up in 2026. Pick a color above, then click a
@@ -415,6 +519,16 @@ export function ElectionsExplorer() {
       </div>
     </div>
   );
+}
+
+/** "Raphael Warnock" -> "Warnock"; keeps multi-word surnames like "Van Hollen". */
+function lastName(full: string): string {
+  const parts = full.trim().split(/\s+/);
+  if (parts.length <= 1) return full;
+  const particles = new Set(["van", "de", "la", "di", "del"]);
+  let i = parts.length - 1;
+  while (i > 1 && particles.has(parts[i - 1].toLowerCase())) i -= 1;
+  return parts.slice(i).join(" ");
 }
 
 function YearTab({

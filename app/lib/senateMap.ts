@@ -6,6 +6,7 @@ import {
   SHADE_COLORS,
   shadeSide,
   emptyShadeTally,
+  emptyShadeStates,
   type Shade,
 } from "~/lib/shades";
 import { marginToShade } from "~/lib/margin";
@@ -20,6 +21,7 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
   const upStates = new Set<string>();
   // Seats decided this cycle, split across the 7-point margin spectrum.
   const shadeTally = emptyShadeTally();
+  const shadeStates = emptyShadeStates();
   let dSeats = 0;
   let rSeats = 0;
   const seen = new Set<string>();
@@ -39,6 +41,7 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
       fills[race.state] = race.party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R;
     }
     shadeTally[shade] += 1;
+    shadeStates[shade].push(race.state);
     if (race.party === "D") dSeats += 1;
     else rSeats += 1;
   }
@@ -56,6 +59,7 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
     fills,
     upStates,
     shadeTally,
+    shadeStates,
     dSeats,
     rSeats,
     totalRaces: dSeats + rSeats,
@@ -82,6 +86,7 @@ export function computeSenate2026View(picks: Record<string, Shade>) {
   // take the user's pick (default toss-up); the other 65 sit at "safe" for
   // whichever party holds them now.
   const shadeTally = emptyShadeTally();
+  const shadeStates = emptyShadeStates();
   let d = 0;
   let r = 0;
   let tossup = 0;
@@ -95,6 +100,7 @@ export function computeSenate2026View(picks: Record<string, Shade>) {
       const shade = picks[state] ?? "tossup";
       fills[state] = SHADE_COLORS[shade];
       shadeTally[shade] += 1;
+      shadeStates[shade].push(state);
       const side = shadeSide(shade);
       if (side === "D") d += 1;
       else if (side === "R") r += 1;
@@ -108,13 +114,25 @@ export function computeSenate2026View(picks: Record<string, Shade>) {
         if (seat.currentParty === "D") {
           d += 1;
           shadeTally.safeD += 1;
+          shadeStates.safeD.push(state);
         } else if (seat.currentParty === "R") {
           r += 1;
           shadeTally.safeR += 1;
+          shadeStates.safeR.push(state);
         }
       }
     }
   }
 
-  return { fills, activeStates, stateInfo, shadeTally, d, r, tossup, total: d + r + tossup };
+  return {
+    fills,
+    activeStates,
+    stateInfo,
+    shadeTally,
+    shadeStates,
+    d,
+    r,
+    tossup,
+    total: d + r + tossup,
+  };
 }

@@ -3,7 +3,12 @@ import {
   type PresidentialYear,
 } from "~/data/presidentialResults";
 import { PRESIDENTIAL_VOTES } from "~/data/presidentialVotes";
-import { HISTORICAL_COLORS, SHADE_COLORS, emptyShadeTally } from "~/lib/shades";
+import {
+  HISTORICAL_COLORS,
+  SHADE_COLORS,
+  emptyShadeTally,
+  emptyShadeStates,
+} from "~/lib/shades";
 import { marginToShade } from "~/lib/margin";
 
 export interface SplitStateInfo {
@@ -18,8 +23,10 @@ export function computePresidentialView(year: PresidentialYear) {
   const votes = PRESIDENTIAL_VOTES[year];
   const fills: Record<string, string> = {};
   const splitStates: SplitStateInfo[] = [];
-  // Electoral votes split across the 7-point margin spectrum, for the donut.
+  // Electoral votes split across the 7-point margin spectrum, for the donut,
+  // plus the list of states in each bucket (for map highlighting on hover).
   const shadeTally = emptyShadeTally();
+  const shadeStates = emptyShadeStates();
   let dEv = 0;
   let rEv = 0;
 
@@ -35,6 +42,7 @@ export function computePresidentialView(year: PresidentialYear) {
         : "safeR";
       fills[state] = SHADE_COLORS[shade];
       shadeTally[shade] += result.ev;
+      shadeStates[shade].push(state);
       if (result.party === "D") dEv += result.ev;
       else rEv += result.ev;
     } else {
@@ -54,6 +62,7 @@ export function computePresidentialView(year: PresidentialYear) {
           ? "safeD"
           : "safeR";
       shadeTally[majShade] += result.majorityEv ?? 0;
+      shadeStates[majShade].push(state);
       // A single congressional district that broke the other way is close by
       // definition -- bucket it as a "lean".
       if (result.minorityEv) {
@@ -67,7 +76,7 @@ export function computePresidentialView(year: PresidentialYear) {
     }
   }
 
-  return { fills, splitStates, shadeTally, dEv, rEv, total: dEv + rEv };
+  return { fills, splitStates, shadeTally, shadeStates, dEv, rEv, total: dEv + rEv };
 }
 
 export function patternIdFor(year: PresidentialYear, state: string) {

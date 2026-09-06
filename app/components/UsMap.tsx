@@ -12,6 +12,11 @@ export interface UsMapProps {
   tooltip?: (id: string) => React.ReactNode;
   /** States to omit entirely from the map (e.g. none, by default all 51 render). */
   hiddenStates?: Set<string>;
+  /**
+   * When set, these states are spotlit (kept at full strength with a dark
+   * outline) and every other state is dimmed. Used for donut-segment hover.
+   */
+  highlightStates?: Set<string> | null;
   /** Extra <defs> content (e.g. <pattern> elements for split-result states). */
   defs?: React.ReactNode;
   className?: string;
@@ -23,6 +28,7 @@ export function UsMap({
   onStateClick,
   tooltip,
   hiddenStates,
+  highlightStates,
   defs,
   className,
 }: UsMapProps) {
@@ -49,17 +55,20 @@ export function UsMap({
           const isInteractive = interactiveStates?.has(state.id) ?? false;
           const fill = fills[state.id] ?? "#e4e4e7";
           const isHovered = hovered === state.id;
+          const spotlit = highlightStates?.has(state.id) ?? false;
+          const dimmed = highlightStates != null && !spotlit;
           return (
             <path
               key={state.id}
               d={state.d}
               fill={fill}
-              stroke="#ffffff"
-              strokeWidth={isHovered ? 2 : 1}
+              stroke={spotlit ? "#111827" : "#ffffff"}
+              strokeWidth={spotlit ? 2 : isHovered ? 2 : 1}
               className={
-                "transition-[filter] duration-100 " +
+                "transition-[filter,opacity] duration-100 " +
                 (isInteractive ? "cursor-pointer" : "cursor-default")
               }
+              opacity={dimmed ? 0.25 : 1}
               style={{
                 filter: isHovered
                   ? "brightness(1.12) saturate(1.05)"
@@ -86,7 +95,7 @@ export function UsMap({
 
       {hovered && tooltip?.(hovered) && (
         <div
-          className="pointer-events-none absolute z-10 max-w-64 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
+          className="pointer-events-none absolute z-10 w-60 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
           style={{ left: pos.x, top: pos.y - 10 }}
         >
           {tooltip(hovered)}

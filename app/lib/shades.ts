@@ -47,6 +47,11 @@ export function emptyShadeTally(): Record<Shade, number> {
   return { safeD: 0, likelyD: 0, leanD: 0, tossup: 0, leanR: 0, likelyR: 0, safeR: 0 };
 }
 
+/** An empty per-shade list of state codes, ready to push into. */
+export function emptyShadeStates(): Record<Shade, string[]> {
+  return { safeD: [], likelyD: [], leanD: [], tossup: [], leanR: [], likelyR: [], safeR: [] };
+}
+
 // Fill colors for the interactive spectrum.
 export const SHADE_COLORS: Record<Shade, string> = {
   safeD: "#1d4ed8", // blue-700
