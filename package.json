@@ -7,7 +7,8 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "polls:pull": "node scripts/pull-polls.mjs"
   },
   "dependencies": {
     "@react-router/node": "^8",

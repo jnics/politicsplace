@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { UsMap } from "~/components/UsMap";
 import { DonutChart, type DonutSegment } from "~/components/DonutChart";
 import { ShadePalette } from "~/components/Legend";
-import { ThemeToggle } from "~/components/ThemeToggle";
 import { STATE_PATHS } from "~/data/statePaths";
 import {
   PRESIDENTIAL_RESULTS,
@@ -310,17 +309,14 @@ export function ElectionsExplorer() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-      <header className="mb-6 flex items-start justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-            PoliticsPlace Election Map
-          </h1>
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Explore presidential and Senate results since 2016 &mdash; and make your own
-            predictions for the 2026 Senate races.
-          </p>
-        </div>
-        <ThemeToggle />
+      <header className="mb-6">
+        <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
+          PoliticsPlace Election Map
+        </h1>
+        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          Explore presidential and Senate results since 2016 &mdash; and make your own
+          predictions for the 2026 Senate races.
+        </p>
       </header>
 
       <div className="mb-4 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
