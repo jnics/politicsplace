@@ -18,6 +18,8 @@ export interface DonutChartProps {
   majorityLabel?: string;
   size?: number;
   thickness?: number;
+  /** Show the swatch + value list under the ring (default true). */
+  showLegend?: boolean;
 }
 
 /**
@@ -33,6 +35,7 @@ export function DonutChart({
   majorityLabel,
   size = 176,
   thickness = 22,
+  showLegend = true,
 }: DonutChartProps) {
   const total = segments.reduce((sum, s) => sum + s.value, 0);
   const cx = size / 2;
@@ -115,7 +118,10 @@ export function DonutChart({
           {majorityLabel}
         </p>
       )}
-      <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs">
+      <div
+        className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs"
+        hidden={!showLegend}
+      >
         {segments
           .filter((s) => s.value > 0)
           .map((s) => (

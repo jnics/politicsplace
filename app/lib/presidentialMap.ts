@@ -3,7 +3,7 @@ import {
   type PresidentialYear,
 } from "~/data/presidentialResults";
 import { PRESIDENTIAL_VOTES } from "~/data/presidentialVotes";
-import { HISTORICAL_COLORS, SHADE_COLORS } from "~/lib/shades";
+import { HISTORICAL_COLORS, SHADE_COLORS, emptyShadeTally } from "~/lib/shades";
 import { marginToShade } from "~/lib/margin";
 
 export interface SplitStateInfo {
@@ -18,6 +18,8 @@ export function computePresidentialView(year: PresidentialYear) {
   const votes = PRESIDENTIAL_VOTES[year];
   const fills: Record<string, string> = {};
   const splitStates: SplitStateInfo[] = [];
+  // Electoral votes split across the 7-point margin spectrum, for the donut.
+  const shadeTally = emptyShadeTally();
   let dEv = 0;
   let rEv = 0;
 
@@ -32,6 +34,7 @@ export function computePresidentialView(year: PresidentialYear) {
         ? "safeD"
         : "safeR";
       fills[state] = SHADE_COLORS[shade];
+      shadeTally[shade] += result.ev;
       if (result.party === "D") dEv += result.ev;
       else rEv += result.ev;
     } else {
@@ -43,6 +46,20 @@ export function computePresidentialView(year: PresidentialYear) {
       const minorityColor =
         result.minorityParty === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R;
       splitStates.push({ state, majorityColor, minorityColor, detail: result.details });
+      const vote = votes?.[state];
+      const majShade =
+        vote && result.majorityParty
+          ? marginToShade(result.majorityParty, Math.abs(vote.dPct - vote.rPct))
+          : result.majorityParty === "D"
+          ? "safeD"
+          : "safeR";
+      shadeTally[majShade] += result.majorityEv ?? 0;
+      // A single congressional district that broke the other way is close by
+      // definition -- bucket it as a "lean".
+      if (result.minorityEv) {
+        shadeTally[result.minorityParty === "D" ? "leanD" : "leanR"] +=
+          result.minorityEv;
+      }
       if (result.majorityParty === "D") dEv += result.majorityEv ?? 0;
       else rEv += result.majorityEv ?? 0;
       if (result.minorityParty === "D") dEv += result.minorityEv ?? 0;
@@ -50,7 +67,7 @@ export function computePresidentialView(year: PresidentialYear) {
     }
   }
 
-  return { fills, splitStates, dEv, rEv, total: dEv + rEv };
+  return { fills, splitStates, shadeTally, dEv, rEv, total: dEv + rEv };
 }
 
 export function patternIdFor(year: PresidentialYear, state: string) {

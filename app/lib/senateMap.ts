@@ -1,6 +1,13 @@
 import { SENATE_RESULTS, type SenateCycleYear } from "~/data/senateResults";
 import { SENATE_VOTES } from "~/data/senateVotes";
-import { HISTORICAL_COLORS, SHADE_COLORS, shadeSide, type Shade } from "~/lib/shades";
+import { SENATE_CHAMBER } from "~/data/senateChamber";
+import {
+  HISTORICAL_COLORS,
+  SHADE_COLORS,
+  shadeSide,
+  emptyShadeTally,
+  type Shade,
+} from "~/lib/shades";
 import { marginToShade } from "~/lib/margin";
 import { buildSenateSeatContext, type SenateSeatContext } from "~/lib/senateComposition";
 
@@ -11,6 +18,8 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
   const votes = SENATE_VOTES[year];
   const fills: Record<string, string> = {};
   const upStates = new Set<string>();
+  // Seats decided this cycle, split across the 7-point margin spectrum.
+  const shadeTally = emptyShadeTally();
   let dSeats = 0;
   let rSeats = 0;
   const seen = new Set<string>();
@@ -21,17 +30,39 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
     upStates.add(race.state);
 
     const vote = votes?.find((v) => v.state === race.state);
+    let shade: Shade;
     if (vote && (race.party === "D" || race.party === "R")) {
-      const margin = Math.abs(vote.winner.pct - vote.runnerUp.pct);
-      fills[race.state] = SHADE_COLORS[marginToShade(race.party, margin)];
+      shade = marginToShade(race.party, Math.abs(vote.winner.pct - vote.runnerUp.pct));
+      fills[race.state] = SHADE_COLORS[shade];
     } else {
+      shade = race.party === "D" ? "safeD" : "safeR";
       fills[race.state] = race.party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R;
     }
+    shadeTally[shade] += 1;
     if (race.party === "D") dSeats += 1;
     else rSeats += 1;
   }
 
-  return { fills, upStates, dSeats, rSeats, totalRaces: dSeats + rSeats };
+  // Fill out the rest of the 100-seat chamber: the seats that weren't on the
+  // ballot this cycle, held by whichever party held them going into the next
+  // Congress. (dSeats/rSeats here count states, not seats, so a cycle with a
+  // concurrent special election is off by one -- the "held" bucket absorbs it
+  // and the D/R totals stay exact.)
+  const chamber = SENATE_CHAMBER[year];
+  const heldD = chamber ? Math.max(chamber.dCaucus - dSeats, 0) : 0;
+  const heldR = chamber ? Math.max(chamber.rCaucus - rSeats, 0) : 0;
+
+  return {
+    fills,
+    upStates,
+    shadeTally,
+    dSeats,
+    rSeats,
+    totalRaces: dSeats + rSeats,
+    chamber,
+    heldD,
+    heldR,
+  };
 }
 
 export interface Senate2026StateInfo {
@@ -47,6 +78,10 @@ export function computeSenate2026View(picks: Record<string, Shade>) {
   const activeStates = new Set<string>();
   const stateInfo: Record<string, Senate2026StateInfo> = {};
 
+  // All 100 seats spread across the 7-point spectrum: the 35 up-in-2026 seats
+  // take the user's pick (default toss-up); the other 65 sit at "safe" for
+  // whichever party holds them now.
+  const shadeTally = emptyShadeTally();
   let d = 0;
   let r = 0;
   let tossup = 0;
@@ -59,6 +94,7 @@ export function computeSenate2026View(picks: Record<string, Shade>) {
       activeStates.add(state);
       const shade = picks[state] ?? "tossup";
       fills[state] = SHADE_COLORS[shade];
+      shadeTally[shade] += 1;
       const side = shadeSide(shade);
       if (side === "D") d += 1;
       else if (side === "R") r += 1;
@@ -69,11 +105,16 @@ export function computeSenate2026View(picks: Record<string, Shade>) {
 
     for (const seat of seats) {
       if (!seat.upIn2026) {
-        if (seat.currentParty === "D") d += 1;
-        else if (seat.currentParty === "R") r += 1;
+        if (seat.currentParty === "D") {
+          d += 1;
+          shadeTally.safeD += 1;
+        } else if (seat.currentParty === "R") {
+          r += 1;
+          shadeTally.safeR += 1;
+        }
       }
     }
   }
 
-  return { fills, activeStates, stateInfo, d, r, tossup, total: d + r + tossup };
+  return { fills, activeStates, stateInfo, shadeTally, d, r, tossup, total: d + r + tossup };
 }

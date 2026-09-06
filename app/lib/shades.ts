@@ -31,6 +31,22 @@ export const SHADE_LABELS: Record<Shade, string> = {
   safeR: "Safe Republican",
 };
 
+// Compact labels for tight spots like the donut-chart legend.
+export const SHADE_SHORT_LABELS: Record<Shade, string> = {
+  safeD: "Safe D",
+  likelyD: "Likely D",
+  leanD: "Lean D",
+  tossup: "Toss-up",
+  leanR: "Lean R",
+  likelyR: "Likely R",
+  safeR: "Safe R",
+};
+
+/** An all-zero tally over the 7 shades, ready to accumulate into. */
+export function emptyShadeTally(): Record<Shade, number> {
+  return { safeD: 0, likelyD: 0, leanD: 0, tossup: 0, leanR: 0, likelyR: 0, safeR: 0 };
+}
+
 // Fill colors for the interactive spectrum.
 export const SHADE_COLORS: Record<Shade, string> = {
   safeD: "#1d4ed8", // blue-700

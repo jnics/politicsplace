@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { UsMap } from "~/components/UsMap";
 import { DonutChart } from "~/components/DonutChart";
-import { ShadePalette, ShadeGradientLegend } from "~/components/Legend";
+import { ShadePalette } from "~/components/Legend";
 import { ThemeToggle } from "~/components/ThemeToggle";
 import { STATE_PATHS } from "~/data/statePaths";
 import {
@@ -16,7 +16,14 @@ import { SENATE_VOTES } from "~/data/senateVotes";
 import { SENATE_REASONS } from "~/data/senateReasons";
 import { computePresidentialView, patternIdFor } from "~/lib/presidentialMap";
 import { computeSenateHistoricalView, computeSenate2026View } from "~/lib/senateMap";
-import { HISTORICAL_COLORS, SHADE_LABELS, type Shade } from "~/lib/shades";
+import {
+  LOCKED_COLORS,
+  SHADE_COLORS,
+  SHADE_LABELS,
+  SHADE_ORDER,
+  SHADE_SHORT_LABELS,
+  type Shade,
+} from "~/lib/shades";
 import { formatMargin, formatVotes } from "~/lib/margin";
 import { usePredictionPicks } from "~/lib/usePredictionPicks";
 
@@ -31,6 +38,15 @@ const SEAT_CLASS_LABEL: Record<1 | 2 | 3, string> = {
   2: "Class 2",
   3: "Class 3",
 };
+
+/** Build donut segments for the 7-point margin spectrum from a shade tally. */
+function shadeSegments(tally: Record<Shade, number>) {
+  return SHADE_ORDER.map((shade) => ({
+    label: SHADE_SHORT_LABELS[shade],
+    value: tally[shade],
+    color: SHADE_COLORS[shade],
+  }));
+}
 
 export function ElectionsExplorer() {
   const [raceType, setRaceType] = useState<RaceType>("senate");
@@ -306,21 +322,14 @@ export function ElectionsExplorer() {
             {presidentialView && (
               <>
                 <DonutChart
-                  segments={[
-                    { label: "Dem. EV", value: presidentialView.dEv, color: HISTORICAL_COLORS.D },
-                    { label: "Rep. EV", value: presidentialView.rEv, color: HISTORICAL_COLORS.R },
-                  ]}
-                  centerPrimary={`${Math.max(presidentialView.dEv, presidentialView.rEv)}–${Math.min(
-                    presidentialView.dEv,
-                    presidentialView.rEv
-                  )}`}
-                  centerSecondary={presidentialView.dEv > presidentialView.rEv ? "Dem. win" : "Rep. win"}
+                  segments={shadeSegments(presidentialView.shadeTally)}
+                  centerPrimary={`${presidentialView.dEv}–${presidentialView.rEv}`}
+                  centerSecondary={
+                    presidentialView.dEv > presidentialView.rEv ? "Dem. win (D–R)" : "Rep. win (D–R)"
+                  }
                   majorityFraction={270 / 538}
                   majorityLabel="270 electoral votes to win"
                 />
-                <div className="mt-4">
-                  <ShadeGradientLegend />
-                </div>
               </>
             )}
 
@@ -328,32 +337,48 @@ export function ElectionsExplorer() {
               <>
                 <DonutChart
                   segments={[
-                    { label: "D seats won", value: senateHistorical.dSeats, color: HISTORICAL_COLORS.D },
-                    { label: "R seats won", value: senateHistorical.rSeats, color: HISTORICAL_COLORS.R },
+                    ...shadeSegments(senateHistorical.shadeTally),
+                    {
+                      label: "D held (not up)",
+                      value: senateHistorical.heldD,
+                      color: LOCKED_COLORS.D,
+                    },
+                    {
+                      label: "R held (not up)",
+                      value: senateHistorical.heldR,
+                      color: LOCKED_COLORS.R,
+                    },
                   ]}
-                  centerPrimary={`${senateHistorical.dSeats}–${senateHistorical.rSeats}`}
-                  centerSecondary={`of ${senateHistorical.totalRaces} races`}
+                  centerPrimary={
+                    senateHistorical.chamber
+                      ? `${senateHistorical.chamber.dCaucus}–${senateHistorical.chamber.rCaucus}`
+                      : `${senateHistorical.dSeats}–${senateHistorical.rSeats}`
+                  }
+                  centerSecondary={
+                    senateHistorical.chamber ? `Senate after ${senYear}` : `of ${senateHistorical.totalRaces} races`
+                  }
+                  majorityFraction={senateHistorical.chamber ? 51 / 100 : undefined}
+                  majorityLabel={
+                    senateHistorical.chamber ? "51 seats for majority" : undefined
+                  }
                 />
                 <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-                  Showing only the {senateHistorical.totalRaces} races decided that
-                  November. States shown in light gray had no Senate race in {senYear}.
+                  The ring is the full 100-seat Senate after {senYear}: the{" "}
+                  {senateHistorical.totalRaces} seats decided that November shaded by
+                  margin, the other {senateHistorical.heldD + senateHistorical.heldR}{" "}
+                  muted. Gray states on the map had no race that cycle.
                 </p>
-                <div className="mt-4">
-                  <ShadeGradientLegend />
-                </div>
               </>
             )}
 
             {senate2026 && (
               <>
                 <DonutChart
-                  segments={[
-                    { label: "D / D-lean", value: senate2026.d, color: "#2563eb" },
-                    { label: "Toss-up", value: senate2026.tossup, color: "#d4d4d8" },
-                    { label: "R / R-lean", value: senate2026.r, color: "#dc2626" },
-                  ]}
+                  segments={shadeSegments(senate2026.shadeTally)}
                   centerPrimary={`${senate2026.d}–${senate2026.r}`}
-                  centerSecondary={senate2026.tossup > 0 ? `+${senate2026.tossup} toss-up` : "of 100 seats"}
+                  centerSecondary={
+                    senate2026.tossup > 0 ? `+${senate2026.tossup} toss-up of 100` : "of 100 seats"
+                  }
                   majorityFraction={51 / 100}
                   majorityLabel="51 seats for majority"
                 />
