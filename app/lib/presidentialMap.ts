@@ -2,7 +2,9 @@ import {
   PRESIDENTIAL_RESULTS,
   type PresidentialYear,
 } from "~/data/presidentialResults";
-import { HISTORICAL_COLORS } from "~/lib/shades";
+import { PRESIDENTIAL_VOTES } from "~/data/presidentialVotes";
+import { HISTORICAL_COLORS, SHADE_COLORS } from "~/lib/shades";
+import { marginToShade } from "~/lib/margin";
 
 export interface SplitStateInfo {
   state: string;
@@ -13,18 +15,25 @@ export interface SplitStateInfo {
 
 export function computePresidentialView(year: PresidentialYear) {
   const results = PRESIDENTIAL_RESULTS[year];
+  const votes = PRESIDENTIAL_VOTES[year];
   const fills: Record<string, string> = {};
   const splitStates: SplitStateInfo[] = [];
   let dEv = 0;
   let rEv = 0;
 
   for (const [state, result] of Object.entries(results)) {
-    if (result.party === "D") {
-      fills[state] = HISTORICAL_COLORS.D;
-      dEv += result.ev;
-    } else if (result.party === "R") {
-      fills[state] = HISTORICAL_COLORS.R;
-      rEv += result.ev;
+    if (result.party === "D" || result.party === "R") {
+      // Shade by actual margin (a 3-point squeaker looks different from a
+      // 40-point blowout), the same convention most election-night maps use.
+      const vote = votes?.[state];
+      const shade = vote
+        ? marginToShade(result.party, Math.abs(vote.dPct - vote.rPct))
+        : result.party === "D"
+        ? "safeD"
+        : "safeR";
+      fills[state] = SHADE_COLORS[shade];
+      if (result.party === "D") dEv += result.ev;
+      else rEv += result.ev;
     } else {
       // split
       const patternId = `split-${year}-${state}`;

@@ -1,15 +1,27 @@
 @import "tailwindcss";
 
+/* Make `dark:` utilities respond to a `.dark` class instead of only
+   `prefers-color-scheme`, so the toggle button (see ThemeToggle.tsx) can
+   override the system preference. The class is applied by a small blocking
+   script in app/root.tsx (before hydration, to avoid a flash of the wrong
+   theme) and then by the toggle itself; both persist the choice to
+   localStorage. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
 html,
 body {
   @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
 }

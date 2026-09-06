@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
 import { UsMap } from "~/components/UsMap";
-import { TallyBar } from "~/components/TallyBar";
-import { ShadeLegend, SimpleLegend } from "~/components/Legend";
+import { DonutChart } from "~/components/DonutChart";
+import { ShadePalette, ShadeGradientLegend } from "~/components/Legend";
+import { ThemeToggle } from "~/components/ThemeToggle";
 import { STATE_PATHS } from "~/data/statePaths";
 import {
   PRESIDENTIAL_RESULTS,
@@ -10,9 +11,12 @@ import {
 } from "~/data/presidentialResults";
 import { SENATE_CYCLE_YEARS, type SenateCycleYear } from "~/data/senateResults";
 import { SENATE_2026_NOTES } from "~/data/senate2026";
+import { PRESIDENTIAL_VOTES } from "~/data/presidentialVotes";
+import { SENATE_VOTES } from "~/data/senateVotes";
 import { computePresidentialView, patternIdFor } from "~/lib/presidentialMap";
 import { computeSenateHistoricalView, computeSenate2026View } from "~/lib/senateMap";
-import { HISTORICAL_COLORS, cycleShade, SHADE_LABELS } from "~/lib/shades";
+import { HISTORICAL_COLORS, SHADE_LABELS, type Shade } from "~/lib/shades";
+import { formatMargin, formatVotes } from "~/lib/margin";
 import { usePredictionPicks } from "~/lib/usePredictionPicks";
 
 const STATE_NAMES: Record<string, string> = Object.fromEntries(
@@ -31,6 +35,7 @@ export function ElectionsExplorer() {
   const [raceType, setRaceType] = useState<RaceType>("senate");
   const [presYear, setPresYear] = useState<PresidentialYear>(2024);
   const [senYear, setSenYear] = useState<SenateCycleYear | 2026>(2026);
+  const [selectedShade, setSelectedShade] = useState<Shade>("tossup");
   const { picks, setPick, resetPicks, hydrated } = usePredictionPicks();
 
   const isActiveTab = raceType === "senate" && senYear === 2026;
@@ -69,8 +74,9 @@ export function ElectionsExplorer() {
 
   function handleStateClick(state: string, direction: 1 | -1) {
     if (!senate2026?.activeStates.has(state)) return;
-    const current = picks[state] ?? "tossup";
-    setPick(state, cycleShade(current, direction));
+    // Left click paints with whatever color is selected in the palette;
+    // right click is a quick "clear back to toss-up" shortcut.
+    setPick(state, direction === 1 ? selectedShade : "tossup");
   }
 
   function tooltip(state: string) {
@@ -79,20 +85,55 @@ export function ElectionsExplorer() {
     if (presidentialView) {
       const data = presidentialViewResultFor(state, presYear);
       if (!data) return <div className="font-semibold">{name}</div>;
+      const votes = PRESIDENTIAL_VOTES[presYear]?.[state];
       return (
-        <div>
+        <div className="space-y-0.5">
           <div className="font-semibold">{name}</div>
           <div>{data.summary}</div>
+          {votes && (
+            <>
+              <div>
+                D {formatVotes(votes.dVotes)} ({votes.dPct}%)
+              </div>
+              <div>
+                R {formatVotes(votes.rVotes)} ({votes.rPct}%)
+              </div>
+              <div className="text-gray-300 dark:text-gray-600">
+                {formatMargin(
+                  votes.dPct >= votes.rPct ? "D" : "R",
+                  votes.dPct - votes.rPct
+                )}
+              </div>
+            </>
+          )}
         </div>
       );
     }
 
     if (senateHistorical) {
       const won = senateHistorical.upStates.has(state);
+      const vote = SENATE_VOTES[senYear]?.find((v) => v.state === state);
       return (
-        <div>
+        <div className="space-y-0.5">
           <div className="font-semibold">{name}</div>
           <div>{won ? `Won by ${senateHistorical.fills[state] === HISTORICAL_COLORS.D ? "Democrats" : "Republicans"}` : "No Senate race this cycle"}</div>
+          {vote && (
+            <>
+              <div>
+                {vote.winner.name} ({vote.winner.party}) {formatVotes(vote.winner.votes)} (
+                {vote.winner.pct}%)
+              </div>
+              <div>
+                {vote.runnerUp.name} ({vote.runnerUp.party}){" "}
+                {formatVotes(vote.runnerUp.votes)} ({vote.runnerUp.pct}%)
+              </div>
+              {(vote.winner.party === "D" || vote.winner.party === "R") && (
+                <div className="text-gray-300 dark:text-gray-600">
+                  {formatMargin(vote.winner.party, vote.winner.pct - vote.runnerUp.pct)}
+                </div>
+              )}
+            </>
+          )}
         </div>
       );
     }
@@ -120,7 +161,7 @@ export function ElectionsExplorer() {
             )}
             <div className="pt-1 font-medium">Your pick: {SHADE_LABELS[shade]}</div>
             <div className="text-gray-300 dark:text-gray-600">
-              Click to cycle &middot; right-click to go back
+              Click to apply selected color &middot; right-click to clear
             </div>
           </div>
         );
@@ -172,14 +213,17 @@ export function ElectionsExplorer() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-      <header className="mb-6">
-        <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-          PoliticsPlace Election Map
-        </h1>
-        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-          Explore presidential and Senate results since 2016 &mdash; and make your own
-          predictions for the 2026 Senate races.
-        </p>
+      <header className="mb-6 flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
+            PoliticsPlace Election Map
+          </h1>
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            Explore presidential and Senate results since 2016 &mdash; and make your own
+            predictions for the 2026 Senate races.
+          </p>
+        </div>
+        <ThemeToggle />
       </header>
 
       <div className="mb-4 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
@@ -216,6 +260,11 @@ export function ElectionsExplorer() {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900 lg:col-span-2">
+          {senate2026 && (
+            <div className="mb-4 flex justify-center">
+              <ShadePalette selected={selectedShade} onSelect={setSelectedShade} />
+            </div>
+          )}
           <UsMap
             fills={fills}
             interactiveStates={interactiveStates}
@@ -238,70 +287,64 @@ export function ElectionsExplorer() {
 
             {presidentialView && (
               <>
-                <TallyBar
-                  dCount={presidentialView.dEv}
-                  rCount={presidentialView.rEv}
-                  total={presidentialView.total}
-                  majorityMark={270}
-                  dCaption="Dem. EV"
-                  rCaption="Rep. EV"
+                <DonutChart
+                  segments={[
+                    { label: "Dem. EV", value: presidentialView.dEv, color: HISTORICAL_COLORS.D },
+                    { label: "Rep. EV", value: presidentialView.rEv, color: HISTORICAL_COLORS.R },
+                  ]}
+                  centerPrimary={`${Math.max(presidentialView.dEv, presidentialView.rEv)}–${Math.min(
+                    presidentialView.dEv,
+                    presidentialView.rEv
+                  )}`}
+                  centerSecondary={presidentialView.dEv > presidentialView.rEv ? "Dem. win" : "Rep. win"}
+                  majorityFraction={270 / 538}
+                  majorityLabel="270 electoral votes to win"
                 />
                 <div className="mt-4">
-                  <SimpleLegend
-                    items={[
-                      { color: HISTORICAL_COLORS.D, label: "Won by Democrats" },
-                      { color: HISTORICAL_COLORS.R, label: "Won by Republicans" },
-                    ]}
-                  />
+                  <ShadeGradientLegend />
                 </div>
               </>
             )}
 
             {senateHistorical && (
               <>
-                <TallyBar
-                  dCount={senateHistorical.dSeats}
-                  rCount={senateHistorical.rSeats}
-                  total={senateHistorical.totalRaces}
-                  dCaption="D seats won"
-                  rCaption="R seats won"
+                <DonutChart
+                  segments={[
+                    { label: "D seats won", value: senateHistorical.dSeats, color: HISTORICAL_COLORS.D },
+                    { label: "R seats won", value: senateHistorical.rSeats, color: HISTORICAL_COLORS.R },
+                  ]}
+                  centerPrimary={`${senateHistorical.dSeats}–${senateHistorical.rSeats}`}
+                  centerSecondary={`of ${senateHistorical.totalRaces} races`}
                 />
                 <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
                   Showing only the {senateHistorical.totalRaces} races decided that
                   November. States shown in light gray had no Senate race in {senYear}.
                 </p>
                 <div className="mt-4">
-                  <SimpleLegend
-                    items={[
-                      { color: HISTORICAL_COLORS.D, label: "Won by Democrats" },
-                      { color: HISTORICAL_COLORS.R, label: "Won by Republicans" },
-                      { color: "#e4e4e7", label: "No race this cycle" },
-                    ]}
-                  />
+                  <ShadeGradientLegend />
                 </div>
               </>
             )}
 
             {senate2026 && (
               <>
-                <TallyBar
-                  dCount={senate2026.d}
-                  rCount={senate2026.r}
-                  otherCount={senate2026.tossup}
-                  total={senate2026.total}
-                  majorityMark={51}
-                  dCaption="D / D-lean"
-                  rCaption="R / R-lean"
+                <DonutChart
+                  segments={[
+                    { label: "D / D-lean", value: senate2026.d, color: "#2563eb" },
+                    { label: "Toss-up", value: senate2026.tossup, color: "#d4d4d8" },
+                    { label: "R / R-lean", value: senate2026.r, color: "#dc2626" },
+                  ]}
+                  centerPrimary={`${senate2026.d}–${senate2026.r}`}
+                  centerSecondary={senate2026.tossup > 0 ? `+${senate2026.tossup} toss-up` : "of 100 seats"}
+                  majorityFraction={51 / 100}
+                  majorityLabel="51 seats for majority"
                 />
                 <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-                  35 seats are up in 2026 (33 regular + 2 specials). Click a state
-                  to set your prediction; right-click to go back a step. The other
-                  65 seats aren&rsquo;t up this cycle and are shown at their
+                  35 seats are up in 2026. Pick a color above, then click a
+                  state to apply it (right-click clears it). The other 65
+                  seats aren&rsquo;t up this cycle and are shown at their
                   current party.
                 </p>
-                <div className="mt-4">
-                  <ShadeLegend />
-                </div>
                 <button
                   onClick={resetPicks}
                   disabled={!hydrated || Object.keys(picks).length === 0}

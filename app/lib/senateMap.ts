@@ -1,11 +1,14 @@
 import { SENATE_RESULTS, type SenateCycleYear } from "~/data/senateResults";
+import { SENATE_VOTES } from "~/data/senateVotes";
 import { HISTORICAL_COLORS, SHADE_COLORS, shadeSide, type Shade } from "~/lib/shades";
+import { marginToShade } from "~/lib/margin";
 import { buildSenateSeatContext, type SenateSeatContext } from "~/lib/senateComposition";
 
 export const NOT_UP_COLOR = "#e4e4e7"; // zinc-200: no race this cycle
 
 export function computeSenateHistoricalView(year: SenateCycleYear) {
   const races = SENATE_RESULTS[year];
+  const votes = SENATE_VOTES[year];
   const fills: Record<string, string> = {};
   const upStates = new Set<string>();
   let dSeats = 0;
@@ -16,7 +19,14 @@ export function computeSenateHistoricalView(year: SenateCycleYear) {
     if (seen.has(race.state)) continue; // de-dupe same-seat regular+special pairs
     seen.add(race.state);
     upStates.add(race.state);
-    fills[race.state] = race.party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R;
+
+    const vote = votes?.find((v) => v.state === race.state);
+    if (vote && (race.party === "D" || race.party === "R")) {
+      const margin = Math.abs(vote.winner.pct - vote.runnerUp.pct);
+      fills[race.state] = SHADE_COLORS[marginToShade(race.party, margin)];
+    } else {
+      fills[race.state] = race.party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R;
+    }
     if (race.party === "D") dSeats += 1;
     else rSeats += 1;
   }
