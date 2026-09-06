@@ -8,6 +8,8 @@ export interface UsMapProps {
   interactiveStates?: Set<string>;
   /** Called when an interactive state is clicked. direction is -1 on right-click. */
   onStateClick?: (id: string, direction: 1 | -1) => void;
+  /** Called when a non-interactive state is clicked (e.g. to zoom into it). */
+  onStateSelect?: (id: string) => void;
   /** Tooltip body for a given state id -- return null to suppress the tooltip. */
   tooltip?: (id: string) => React.ReactNode;
   /** States to omit entirely from the map (e.g. none, by default all 51 render). */
@@ -26,6 +28,7 @@ export function UsMap({
   fills,
   interactiveStates,
   onStateClick,
+  onStateSelect,
   tooltip,
   hiddenStates,
   highlightStates,
@@ -53,6 +56,7 @@ export function UsMap({
         {defs && <defs>{defs}</defs>}
         {STATE_PATHS.filter((s) => !hiddenStates?.has(s.id)).map((state) => {
           const isInteractive = interactiveStates?.has(state.id) ?? false;
+          const isSelectable = !isInteractive && onStateSelect != null;
           const fill = fills[state.id] ?? "#e4e4e7";
           const isHovered = hovered === state.id;
           const spotlit = highlightStates?.has(state.id) ?? false;
@@ -66,7 +70,7 @@ export function UsMap({
               strokeWidth={spotlit ? 2 : isHovered ? 2 : 1}
               className={
                 "transition-opacity duration-150 " +
-                (isInteractive ? "cursor-pointer" : "cursor-default")
+                (isInteractive || isSelectable ? "cursor-pointer" : "cursor-default")
               }
               opacity={dimmed ? 0.3 : 1}
               style={{
@@ -80,6 +84,7 @@ export function UsMap({
               onMouseLeave={() => setHovered((h) => (h === state.id ? null : h))}
               onClick={() => {
                 if (isInteractive) onStateClick?.(state.id, 1);
+                else onStateSelect?.(state.id);
               }}
               onContextMenu={(e) => {
                 if (isInteractive) {

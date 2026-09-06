@@ -108,16 +108,30 @@ function RaceCard({ race }: { race: RacePolls }) {
         <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
           {race.title}
         </h3>
-        {margin != null && a && b && (
+        {race.aggregateAverage ? (
           <span className="text-xs text-gray-500 dark:text-gray-400">
-            Polling average:{" "}
+            {race.source} average:{" "}
             <span className="font-semibold text-gray-700 dark:text-gray-200">
-              {margin === 0
-                ? "Tied"
-                : `${(margin > 0 ? a : b).name} +${Math.abs(margin).toFixed(1)}`}
+              {race.aggregateAverage.spread}
             </span>{" "}
-            ({race.polls.length} poll{race.polls.length === 1 ? "" : "s"})
+            <span className="text-gray-400 dark:text-gray-500">
+              ({race.aggregateAverage.period})
+            </span>
           </span>
+        ) : (
+          margin != null &&
+          a &&
+          b && (
+            <span className="text-xs text-gray-500 dark:text-gray-400">
+              Polling average:{" "}
+              <span className="font-semibold text-gray-700 dark:text-gray-200">
+                {margin === 0
+                  ? "Tied"
+                  : `${(margin > 0 ? a : b).name} +${Math.abs(margin).toFixed(1)}`}
+              </span>{" "}
+              ({race.polls.length} poll{race.polls.length === 1 ? "" : "s"})
+            </span>
+          )
         )}
       </div>
 

@@ -43,6 +43,12 @@ export interface RacePolls {
   title: string;
   candidates: { name: string; party: PartyCode; incumbent?: boolean }[];
   polls: Poll[];
+  /** The aggregator's own headline average, if the source publishes one. */
+  aggregateAverage?: {
+    spread: string;
+    period: string;
+    results: PollResult[];
+  };
   /** Where the polls came from and when they were last refreshed. */
   source: string;
   lastPulled?: string;
@@ -98,7 +104,7 @@ const SEEDED: RacePolls[] = [
   },
 ];
 
-const GENERATED = (generated.races ?? []) as RacePolls[];
+const GENERATED = (generated.races ?? []) as unknown as RacePolls[];
 
 /** All races: a pulled race replaces the seeded example with the same key. */
 export const POLLS: RacePolls[] = (() => {

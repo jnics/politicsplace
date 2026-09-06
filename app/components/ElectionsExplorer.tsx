@@ -1,7 +1,9 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { UsMap } from "~/components/UsMap";
 import { DonutChart, type DonutSegment } from "~/components/DonutChart";
+import { StateZoom } from "~/components/StateZoom";
 import { ShadePalette } from "~/components/Legend";
+import { hasStateGeo } from "~/lib/stateGeo";
 import { STATE_PATHS } from "~/data/statePaths";
 import {
   PRESIDENTIAL_RESULTS,
@@ -100,9 +102,34 @@ export function ElectionsExplorer() {
   const [senYear, setSenYear] = useState<SenateCycleYear | 2026>(2026);
   const [selectedShade, setSelectedShade] = useState<Shade>("tossup");
   const [donutHighlight, setDonutHighlight] = useState<Set<string> | null>(null);
+  const [zoomState, setZoomState] = useState<string | null>(null);
+  const [zoomNote, setZoomNote] = useState<string | null>(null);
   const { picks, setPick, resetPicks, hydrated } = usePredictionPicks();
 
   const isActiveTab = raceType === "senate" && senYear === 2026;
+
+  // Leaving a map view drops any county zoom.
+  useEffect(() => {
+    setZoomState(null);
+    setZoomNote(null);
+  }, [raceType, presYear, senYear]);
+
+  /** "<year>-<office>" for county-result lookups; null when zoom isn't offered. */
+  const raceKey =
+    raceType === "president"
+      ? `${presYear}-president`
+      : senYear !== 2026
+      ? `${senYear}-senate`
+      : null;
+
+  function handleStateSelect(id: string) {
+    if (hasStateGeo(id)) {
+      setZoomState(id);
+      setZoomNote(null);
+    } else {
+      setZoomNote(`${STATE_NAMES[id] ?? id}: county map not available yet.`);
+    }
+  }
 
   const presidentialView = useMemo(
     () => (raceType === "president" ? computePresidentialView(presYear) : null),
@@ -353,20 +380,37 @@ export function ElectionsExplorer() {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900 lg:col-span-2">
-          {senate2026 && (
-            <div className="mb-4 flex justify-center">
-              <ShadePalette selected={selectedShade} onSelect={setSelectedShade} />
-            </div>
+          {zoomState && raceKey ? (
+            <StateZoom
+              usps={zoomState}
+              stateName={STATE_NAMES[zoomState] ?? zoomState}
+              raceKey={raceKey}
+              onBack={() => setZoomState(null)}
+            />
+          ) : (
+            <>
+              {senate2026 && (
+                <div className="mb-4 flex justify-center">
+                  <ShadePalette selected={selectedShade} onSelect={setSelectedShade} />
+                </div>
+              )}
+              <UsMap
+                fills={fills}
+                interactiveStates={interactiveStates}
+                onStateClick={handleStateClick}
+                onStateSelect={raceKey ? handleStateSelect : undefined}
+                tooltip={tooltip}
+                hiddenStates={hiddenStates}
+                highlightStates={donutHighlight}
+                defs={defs}
+              />
+              {raceKey && (
+                <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
+                  {zoomNote ?? "Click a state to zoom into its counties (Ohio available; more soon)."}
+                </p>
+              )}
+            </>
           )}
-          <UsMap
-            fills={fills}
-            interactiveStates={interactiveStates}
-            onStateClick={handleStateClick}
-            tooltip={tooltip}
-            hiddenStates={hiddenStates}
-            highlightStates={donutHighlight}
-            defs={defs}
-          />
         </div>
 
         <div className="space-y-4">

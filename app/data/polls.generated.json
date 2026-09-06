@@ -1,5 +1,40 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-09-06",
   "source": "RealClearPolling",
-  "races": []
+  "races": [
+    {
+      "raceType": "senate",
+      "state": "OH",
+      "seatClass": 3,
+      "special": true,
+      "title": "Ohio Senate (special)",
+      "candidates": [
+        { "name": "Sherrod Brown", "party": "D" },
+        { "name": "Jon Husted", "party": "R", "incumbent": true }
+      ],
+      "source": "RealClearPolling",
+      "lastPulled": "2026-09-06",
+      "aggregateAverage": {
+        "spread": "Brown +2.6",
+        "period": "Jun 14 – Aug 10, 2026",
+        "results": [
+          { "candidate": "Sherrod Brown", "party": "D", "pct": 49.3 },
+          { "candidate": "Jon Husted", "party": "R", "pct": 46.7 }
+        ]
+      },
+      "polls": [
+        { "pollster": "Fox News", "startDate": "2026-08-06", "endDate": "2026-08-10", "sampleSize": 1008, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 53 }, { "candidate": "Jon Husted", "party": "R", "pct": 45 } ] },
+        { "pollster": "NY Times/Siena", "startDate": "2026-06-15", "endDate": "2026-06-28", "sampleSize": 601, "population": "LV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 47 }, { "candidate": "Jon Husted", "party": "R", "pct": 50 } ] },
+        { "pollster": "Fabrizio/Anzalone", "startDate": "2026-06-14", "endDate": "2026-06-16", "sampleSize": 800, "population": "LV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 48 }, { "candidate": "Jon Husted", "party": "R", "pct": 45 } ] },
+        { "pollster": "Fox News", "startDate": "2026-05-28", "endDate": "2026-06-01", "sampleSize": 1105, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 53 }, { "candidate": "Jon Husted", "party": "R", "pct": 45 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2026-04-07", "endDate": "2026-04-14", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 47 }, { "candidate": "Jon Husted", "party": "R", "pct": 50 } ] },
+        { "pollster": "Quantus Insights", "startDate": "2026-03-13", "endDate": "2026-03-14", "sampleSize": 784, "population": "LV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 44 }, { "candidate": "Jon Husted", "party": "R", "pct": 46 } ] },
+        { "pollster": "Emerson", "startDate": "2025-12-06", "endDate": "2025-12-08", "sampleSize": 850, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 46 }, { "candidate": "Jon Husted", "party": "R", "pct": 49 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2025-10-02", "endDate": "2025-10-14", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 49 }, { "candidate": "Jon Husted", "party": "R", "pct": 48 } ] },
+        { "pollster": "Emerson", "startDate": "2025-08-18", "endDate": "2025-08-19", "sampleSize": 1000, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 44 }, { "candidate": "Jon Husted", "party": "R", "pct": 50 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2025-04-18", "endDate": "2025-04-24", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 46 }, { "candidate": "Jon Husted", "party": "R", "pct": 49 } ] },
+        { "pollster": "Bowling Green/YouGov", "startDate": "2025-02-14", "endDate": "2025-02-21", "sampleSize": 800, "population": "RV", "results": [ { "candidate": "Sherrod Brown", "party": "D", "pct": 41 }, { "candidate": "Jon Husted", "party": "R", "pct": 47 } ] }
+      ]
+    }
+  ]
 }

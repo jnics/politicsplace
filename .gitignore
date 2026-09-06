@@ -5,3 +5,6 @@
 # React Router
 /.react-router/
 /build/
+
+# playwright profile for scripts/pull-polls.mjs
+/.rcp-profile/
