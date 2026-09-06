@@ -13,6 +13,7 @@ import { SENATE_CYCLE_YEARS, type SenateCycleYear } from "~/data/senateResults";
 import { SENATE_2026_NOTES } from "~/data/senate2026";
 import { PRESIDENTIAL_VOTES } from "~/data/presidentialVotes";
 import { SENATE_VOTES } from "~/data/senateVotes";
+import { SENATE_REASONS } from "~/data/senateReasons";
 import { computePresidentialView, patternIdFor } from "~/lib/presidentialMap";
 import { computeSenateHistoricalView, computeSenate2026View } from "~/lib/senateMap";
 import { HISTORICAL_COLORS, SHADE_LABELS, type Shade } from "~/lib/shades";
@@ -111,12 +112,28 @@ export function ElectionsExplorer() {
     }
 
     if (senateHistorical) {
-      const won = senateHistorical.upStates.has(state);
+      if (!senateHistorical.upStates.has(state)) {
+        return (
+          <div className="space-y-0.5">
+            <div className="font-semibold">{name}</div>
+            <div>No Senate race this cycle</div>
+          </div>
+        );
+      }
       const vote = SENATE_VOTES[senYear]?.find((v) => v.state === state);
+      const reason = SENATE_REASONS[senYear]?.[state];
+      const wonBy =
+        vote?.winner.party === "D"
+          ? "Democrats"
+          : vote?.winner.party === "R"
+          ? "Republicans"
+          : vote?.winner.party === "I"
+          ? "an Independent"
+          : null;
       return (
         <div className="space-y-0.5">
           <div className="font-semibold">{name}</div>
-          <div>{won ? `Won by ${senateHistorical.fills[state] === HISTORICAL_COLORS.D ? "Democrats" : "Republicans"}` : "No Senate race this cycle"}</div>
+          {wonBy && <div>Won by {wonBy}</div>}
           {vote && (
             <>
               <div>
@@ -134,6 +151,7 @@ export function ElectionsExplorer() {
               )}
             </>
           )}
+          {reason && <div className="pt-1">{reason}</div>}
         </div>
       );
     }
