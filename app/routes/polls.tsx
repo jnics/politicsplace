@@ -196,26 +196,35 @@ function RaceCard({ race }: { race: RacePolls }) {
         <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
           {race.title}
         </h3>
-        {race.aggregateAverage ? (
-          <span className="text-xs text-gray-500 dark:text-gray-400">
-            {race.source} avg:{" "}
-            <span className={`font-semibold ${summary ? PARTY_TEXT[summary.party] : ""}`}>
-              {race.aggregateAverage.spread}
-            </span>{" "}
-            <span className="text-gray-400 dark:text-gray-500">
-              ({race.aggregateAverage.period})
+        <span className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+          {race.sourceNote && (
+            <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] font-medium text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+              via {race.sourceNote}
             </span>
-          </span>
-        ) : (
-          summary && (
-            <span className="text-xs text-gray-500 dark:text-gray-400">
-              Avg of {race.polls.length}:{" "}
-              <span className={`font-semibold ${PARTY_TEXT[summary.party]}`}>
-                {summary.text}
+          )}
+          {race.aggregateAverage ? (
+            <span>
+              {race.source} avg:{" "}
+              <span
+                className={`font-semibold ${summary ? PARTY_TEXT[summary.party] : ""}`}
+              >
+                {race.aggregateAverage.spread}
+              </span>{" "}
+              <span className="text-gray-400 dark:text-gray-500">
+                ({race.aggregateAverage.period})
               </span>
             </span>
-          )
-        )}
+          ) : (
+            summary && (
+              <span>
+                Avg of {race.polls.length}:{" "}
+                <span className={`font-semibold ${PARTY_TEXT[summary.party]}`}>
+                  {summary.text}
+                </span>
+              </span>
+            )
+          )}
+        </span>
       </div>
 
       <div className="overflow-x-auto">
@@ -259,6 +268,14 @@ function RaceCard({ race }: { race: RacePolls }) {
                     ) : (
                       <span className="text-gray-900 dark:text-gray-100">
                         {poll.pollster}
+                      </span>
+                    )}
+                    {poll.partisan && (
+                      <span
+                        className={`ml-1.5 align-middle text-[10px] font-medium ${PARTY_TEXT[poll.partisan]}`}
+                        title={poll.sponsor ? `Sponsor: ${poll.sponsor}` : "Partisan poll"}
+                      >
+                        ({poll.partisan}){poll.sponsor ? "*" : ""}
                       </span>
                     )}
                   </td>

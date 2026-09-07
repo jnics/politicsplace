@@ -13,8 +13,17 @@
  *
  * Candidate names + party are read straight from each race table's header
  * ("BROWN (D)", "HUSTED (R)"), so adding a race is just its RCP path.
+ *
+ * SOURCE PRIORITY (per-race): RealClearPolling first; where it has nothing
+ * (individual U.S. House districts, most notably), fall back to the New York
+ * Times district poll pages
+ *   https://www.nytimes.com/interactive/polls/<state>-us-house-<n>-polls-2026.html
+ * then VoteHub. Anything pulled from a fallback keeps a `sourceNote` so the page
+ * can label it. House scraping (NYT) is not automated here yet -- OH-07 is
+ * hand-entered in polls.generated.json from the NYT page; wire the NYT scraper
+ * in when more House districts are needed.
  */
-import { writeFile } from "node:fs/promises";
+import { writeFile, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 import { createInterface } from "node:readline/promises";
@@ -151,10 +160,24 @@ async function scrapeRace(page, race) {
     title: `${STATE_NAME[race.state] ?? race.state} Senate${race.special ? " (special)" : ""}`,
     candidates: cols.map((c) => ({ name: c.name, party: c.party })),
     aggregateAverage,
-    polls,
+    polls: latestPerPollster(polls),
     source: "RealClearPolling",
     lastPulled: new Date().toISOString().slice(0, 10),
   };
+}
+
+/** Keep only each pollster's most recent poll -- one stale Emerson from March
+ *  isn't telling you anything the August Emerson isn't. */
+function latestPerPollster(polls) {
+  const byPollster = new Map();
+  for (const p of polls) {
+    const key = p.pollster.toLowerCase();
+    const kept = byPollster.get(key);
+    if (!kept || p.endDate > kept.endDate) byPollster.set(key, p);
+  }
+  return [...byPollster.values()].sort((a, b) =>
+    b.endDate.localeCompare(a.endDate)
+  );
 }
 
 async function main() {
@@ -200,8 +223,26 @@ async function main() {
     console.error("\nNothing pulled. Leaving polls.generated.json untouched.");
     process.exit(1);
   }
-  out.races.sort((a, b) =>
-    (STATE_NAME[a.state] ?? a.state).localeCompare(STATE_NAME[b.state] ?? b.state)
+
+  // Keep races that came from a fallback source (NYT, VoteHub) -- this script
+  // only refreshes the RealClearPolling ones.
+  try {
+    const prev = JSON.parse(await readFile(OUT, "utf8"));
+    for (const race of prev.races ?? []) {
+      if (race.sourceNote && race.sourceNote !== "RealClearPolling") {
+        out.races.push(race);
+        console.log(`= kept ${race.title} (via ${race.sourceNote})`);
+      }
+    }
+  } catch {
+    // no previous file
+  }
+
+  out.races.sort(
+    (a, b) =>
+      (STATE_NAME[a.state] ?? a.state).localeCompare(
+        STATE_NAME[b.state] ?? b.state
+      ) || (a.district ?? 0) - (b.district ?? 0)
   );
   await writeFile(OUT, JSON.stringify(out, null, 2) + "\n");
   console.log(`\nWrote ${out.races.length}/${RACES.length} race(s) to ${OUT}`);

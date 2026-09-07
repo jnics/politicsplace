@@ -25,8 +25,12 @@ export interface Poll {
   endDate: string;
   sampleSize?: number;
   population?: PollPopulation;
-  /** Link to the poll or its RCP entry. */
+  /** Link to the poll or its source entry. */
   url?: string;
+  /** Who paid for the poll, when disclosed. */
+  sponsor?: string;
+  /** Set when the poll is from/for a campaign or partisan group. */
+  partisan?: PartyCode;
   results: PollResult[];
 }
 
@@ -43,6 +47,8 @@ export interface RacePolls {
   title: string;
   candidates: { name: string; party: PartyCode; incumbent?: boolean }[];
   polls: Poll[];
+  /** Aggregator this race's polls came from, if not the default RealClearPolling. */
+  sourceNote?: string;
   /** The aggregator's own headline average, if the source publishes one. */
   aggregateAverage?: {
     spread: string;
