@@ -348,14 +348,36 @@ function CountyTip({
             )}
           </div>
           {res.rPct != null && res.dPct != null && (
-            <div className="flex items-baseline justify-between gap-2 pt-0.5">
-              <span className="text-blue-300 dark:text-blue-700">D {res.dPct}%</span>
-              <span className="text-red-300 dark:text-red-700">R {res.rPct}%</span>
+            <div className="space-y-0.5 pt-0.5">
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="text-blue-300 dark:text-blue-700">
+                  D {res.dPct}%
+                </span>
+                <span className="tabular-nums text-gray-300 dark:text-gray-600">
+                  {res.dVotes != null
+                    ? formatVotes(res.dVotes)
+                    : res.totalVotes != null
+                    ? formatVotes(Math.round((res.totalVotes * res.dPct) / 100))
+                    : ""}
+                </span>
+              </div>
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="text-red-300 dark:text-red-700">
+                  R {res.rPct}%
+                </span>
+                <span className="tabular-nums text-gray-300 dark:text-gray-600">
+                  {res.rVotes != null
+                    ? formatVotes(res.rVotes)
+                    : res.totalVotes != null
+                    ? formatVotes(Math.round((res.totalVotes * res.rPct) / 100))
+                    : ""}
+                </span>
+              </div>
             </div>
           )}
           {res.totalVotes != null && (
             <div className="text-gray-300 dark:text-gray-600">
-              {formatVotes(res.totalVotes)} votes
+              {formatVotes(res.totalVotes)} total
             </div>
           )}
         </>

@@ -11,7 +11,7 @@
  *     counties: [{ fips, name, d }],   // d = SVG path, 5-digit county FIPS
  *     bordersD,                        // interior county borders
  *     outlineD,                        // the state's outer boundary
- *     districts: [{ id, label, d }] }  // 119th-Congress districts (Census)
+ *     districts: [{ id, label, d }] }  // 120th-Congress districts (Census)
  *
  * us-atlas' counties-10m.json is in lon/lat; we project each state on its own
  * geoMercator fitted to a fixed width, so it renders straight (not tilted the
@@ -104,11 +104,13 @@ function reverseRings(geom) {
   return geom;
 }
 
-// 119th-Congress district geometry from the Census TIGERweb GeoJSON API,
-// projected through the same `path` so it aligns with the counties.
+// Congressional-district geometry from the Census TIGERweb GeoJSON API,
+// projected through the same `path` so it aligns with the counties. Layer 0 is
+// the 120th Congress -- the lines the 2026 election uses (Ohio re-redistricted,
+// so this differs from the 119th/layer-4 map).
 async function fetchDistricts() {
   const url =
-    "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/4/query?" +
+    "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/0/query?" +
     new URLSearchParams({
       where: `STATE='${fips}'`,
       outFields: "BASENAME,NAME,GEOID",

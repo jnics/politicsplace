@@ -30,7 +30,7 @@ export interface StateGeo {
   bordersD: string;
   /** The state's outer boundary. */
   outlineD: string;
-  /** 119th-Congress districts, same projection as the counties. */
+  /** 120th-Congress districts, same projection as the counties. */
   districts?: DistrictShape[];
 }
 
