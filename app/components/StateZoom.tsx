@@ -7,7 +7,7 @@ import {
   type CountyPrecincts,
 } from "~/lib/stateGeo";
 import { countyResult } from "~/data/countyResults";
-import { districtResults } from "~/data/districtResults";
+import { districtResults, districtLean } from "~/data/districtResults";
 import { HISTORICAL_COLORS, SHADE_COLORS } from "~/lib/shades";
 import { marginToShade, formatMargin, formatVotes } from "~/lib/margin";
 
@@ -15,7 +15,7 @@ type Layer = "county" | "district" | "precinct";
 
 const LAYERS: { id: Layer; label: string }[] = [
   { id: "county", label: "Counties" },
-  { id: "district", label: "Cong. districts" },
+  { id: "district", label: "Districts" },
   { id: "precinct", label: "Precincts" },
 ];
 
@@ -40,6 +40,17 @@ function bboxOf(ds: string[], pad = 6): string {
   return `${x0 - pad} ${y0 - pad} ${x1 - x0 + 2 * pad} ${y1 - y0 + 2 * pad}`;
 }
 
+/** Fill for a county / precinct from its parent-race result. */
+function resultFill(fips: string, raceKey: string): { fill?: string; className?: string } {
+  const res = countyResult(raceKey, fips);
+  if (!res?.winner) return { className: "fill-gray-200 dark:fill-gray-700" };
+  const party = res.winner === "D" ? "D" : "R";
+  if (res.marginPct != null) {
+    return { fill: SHADE_COLORS[marginToShade(party, res.marginPct, { allowTossup: false })] };
+  }
+  return { fill: party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R };
+}
+
 export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) {
   const [geo, setGeo] = useState<StateGeo | null>(null);
   const [layer, setLayer] = useState<Layer>("county");
@@ -48,7 +59,10 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
   const [precincts, setPrecincts] = useState<CountyPrecincts | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
+  const [zoom, setZoom] = useState({ k: 1, x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
+  const drag = useRef<{ x: number; y: number; zx: number; zy: number } | null>(null);
 
   useEffect(() => {
     let live = true;
@@ -72,101 +86,124 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
     };
   }, [usps, focusCounty]);
 
+  // Reset zoom/pan whenever the view changes.
+  useEffect(() => {
+    setZoom({ k: 1, x: 0, y: 0 });
+  }, [layer, focusDistrict, focusCounty]);
+
   const updatePos = useCallback((e: React.MouseEvent) => {
     const rect = containerRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+    if (rect) setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
   }, []);
-
-  const countyFill = useCallback(
-    (fips: string): { fill?: string; className?: string } => {
-      const res = countyResult(raceKey, fips);
-      if (!res || !res.winner) {
-        return { className: "fill-gray-200 dark:fill-gray-700" };
-      }
-      const party = res.winner === "D" ? "D" : "R";
-      if (res.marginPct != null) {
-        return {
-          fill: SHADE_COLORS[marginToShade(party, res.marginPct, { allowTossup: false })],
-        };
-      }
-      return { fill: party === "D" ? HISTORICAL_COLORS.D : HISTORICAL_COLORS.R };
-    },
-    [raceKey]
-  );
-
-  const hasCountyData = useMemo(
-    () => geo?.counties.some((c) => countyResult(raceKey, c.fips)) ?? false,
-    [geo, raceKey]
-  );
 
   const districts = geo?.districts ?? [];
   const precinctsAvailable = hasPrecincts(usps);
 
-  // What the SVG shows right now.
   const focusedCounty = geo?.counties.find((c) => c.fips === focusCounty) ?? null;
   const focusedDistrict = districts.find((d) => d.id === focusDistrict) ?? null;
-  const showPrecincts = !!focusCounty;
-  const showDistricts = layer === "district" && !focusCounty && districts.length > 0;
-  const showCounties = !focusCounty && (layer === "county" || layer === "precinct");
 
-  const viewBox = focusedCounty
+  // Which layer's shapes are the SVG showing?
+  const view: Layer = focusCounty
+    ? "precinct"
+    : focusDistrict
+    ? "district"
+    : layer;
+
+  const baseViewBox = focusedCounty
     ? precincts?.viewBox ?? bboxOf([focusedCounty.d])
     : focusedDistrict
-    ? bboxOf([focusedDistrict.d])
+    ? bboxOf([focusedDistrict.d], 12)
     : geo?.viewBox ?? "0 0 800 600";
 
-  const hoveredCounty =
-    hovered && showCounties ? geo?.counties.find((c) => c.fips === hovered) : null;
-  const hoveredDistrict =
-    hovered && showDistricts ? districts.find((d) => d.id === hovered) : null;
-  const hoveredPrecinct =
-    hovered && showPrecincts ? precincts?.precincts.find((p) => p.id === hovered) : null;
+  // Apply zoom/pan by shrinking + translating the viewBox.
+  const viewBox = useMemo(() => {
+    const [x, y, w, h] = baseViewBox.split(" ").map(Number);
+    const k = zoom.k;
+    return `${x + zoom.x + (w * (1 - 1 / k)) / 2} ${
+      y + zoom.y + (h * (1 - 1 / k)) / 2
+    } ${w / k} ${h / k}`;
+  }, [baseViewBox, zoom]);
 
-  function countyClick(fips: string) {
-    // Clicking a county always drills to its precincts.
-    setFocusCounty(fips);
-    setHovered(null);
+  function onWheel(e: React.WheelEvent) {
+    e.preventDefault();
+    setZoom((z) => {
+      const k = Math.min(Math.max(z.k * (e.deltaY < 0 ? 1.2 : 1 / 1.2), 1), 16);
+      return { ...z, k };
+    });
   }
+  function onPointerDown(e: React.PointerEvent) {
+    if (e.button !== 0) return;
+    drag.current = { x: e.clientX, y: e.clientY, zx: zoom.x, zy: zoom.y };
+    (e.target as Element).setPointerCapture(e.pointerId);
+  }
+  function onPointerMove(e: React.PointerEvent) {
+    if (!drag.current || !svgRef.current) return;
+    const [, , w] = baseViewBox.split(" ").map(Number);
+    const scale = (w / zoom.k) / svgRef.current.clientWidth;
+    setZoom((z) => ({
+      ...z,
+      x: drag.current!.zx - (e.clientX - drag.current!.x) * scale,
+      y: drag.current!.zy - (e.clientY - drag.current!.y) * scale,
+    }));
+  }
+  function endDrag() {
+    drag.current = null;
+  }
+
+  const hoveredCounty =
+    hovered && view === "county" ? geo?.counties.find((c) => c.fips === hovered) : null;
+  const hoveredDistrict =
+    hovered && view === "district" && !focusDistrict
+      ? districts.find((d) => d.id === hovered)
+      : null;
+  const hoveredPrecinct =
+    hovered && view === "precinct"
+      ? precincts?.precincts.find((p) => p.id === hovered)
+      : null;
+
+  const districtCounties = useMemo(() => {
+    if (!focusedDistrict || !geo) return new Set<string>();
+    return new Set(
+      geo.counties
+        .filter((c) => bboxIntersect(c.d, focusedDistrict.d))
+        .map((c) => c.fips)
+    );
+  }, [focusedDistrict, geo]);
+
+  const zoomed = zoom.k > 1.01 || zoom.x !== 0 || zoom.y !== 0;
 
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <div className="flex items-center gap-1.5 text-xs">
-          <button
-            onClick={onBack}
-            className="rounded-md border border-gray-300 px-2 py-1 font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
-          >
-            &larr; U.S.
-          </button>
-          {(focusCounty || focusDistrict) && (
-            <button
+        <div className="flex flex-wrap items-center gap-1.5 text-xs">
+          <Crumb onClick={onBack}>&larr; U.S.</Crumb>
+          {(focusDistrict || focusCounty) && (
+            <Crumb
               onClick={() => {
-                setFocusCounty(null);
                 setFocusDistrict(null);
+                setFocusCounty(null);
               }}
-              className="rounded-md border border-gray-300 px-2 py-1 font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
             >
-              &larr; {stateName}
-            </button>
+              {stateName}
+            </Crumb>
+          )}
+          {focusedDistrict && focusCounty && (
+            <Crumb onClick={() => setFocusCounty(null)}>{focusedDistrict.label}</Crumb>
           )}
           {focusedDistrict && !focusCounty && (
-            <span className="text-gray-400 dark:text-gray-500">
-              &rsaquo; {focusedDistrict.label} &mdash; pick a county
+            <span className="text-gray-500 dark:text-gray-400">
+              {focusedDistrict.label}
             </span>
           )}
+          {focusedCounty && !focusedDistrict && (
+            <Crumb onClick={() => setFocusCounty(null)}>counties</Crumb>
+          )}
           {focusedCounty && (
-            <button
-              onClick={() => setFocusCounty(null)}
-              className="rounded-md border border-gray-300 px-2 py-1 font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
-            >
-              &larr; {focusedDistrict ? focusedDistrict.label : "counties"}
-            </button>
+            <span className="text-gray-500 dark:text-gray-400">
+              {focusedCounty.name} Co. precincts
+            </span>
           )}
         </div>
-        <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">
-          {focusedCounty ? `${focusedCounty.name} County` : stateName}
-        </span>
         <div className="inline-flex rounded-lg border border-gray-200 bg-gray-100 p-0.5 text-xs dark:border-gray-800 dark:bg-gray-900">
           {LAYERS.map((l) => (
             <button
@@ -177,7 +214,7 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
                 if (l.id !== "precinct") setFocusCounty(null);
               }}
               className={`rounded-md px-2.5 py-1 font-medium transition-colors ${
-                layer === l.id
+                view === l.id
                   ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
                   : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
               }`}
@@ -195,16 +232,25 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
           </div>
         ) : (
           <svg
+            ref={svgRef}
             viewBox={viewBox}
             role="img"
-            aria-label={`${stateName} ${focusCounty ? "precinct" : layer} map`}
-            className="mx-auto h-auto max-h-[70vh] w-auto max-w-full select-none"
+            aria-label={`${stateName} ${view} map`}
+            onWheel={onWheel}
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onPointerUp={endDrag}
+            onPointerLeave={endDrag}
+            className={`mx-auto h-auto max-h-[72vh] w-auto max-w-full touch-none select-none ${
+              drag.current ? "cursor-grabbing" : "cursor-grab"
+            }`}
           >
-            {showCounties &&
+            {/* COUNTY LAYER */}
+            {view === "county" &&
+              !focusCounty &&
               geo.counties.map((c) => {
-                const { fill, className } = countyFill(c.fips);
-                const dim =
-                  focusedDistrict != null && !countyTouchesDistrict(c, focusedDistrict);
+                const { fill, className } = resultFill(c.fips, raceKey);
+                const inDistrict = !focusedDistrict || districtCounties.has(c.fips);
                 return (
                   <path
                     key={c.fips}
@@ -213,57 +259,79 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
                     className={
                       (className ?? "") + " cursor-pointer transition-[filter] duration-100"
                     }
-                    stroke="#ffffff"
-                    strokeWidth={hovered === c.fips ? 2 : 0.6}
-                    opacity={dim ? 0.3 : 1}
+                    stroke={focusedDistrict ? "#111827" : "#ffffff"}
+                    strokeWidth={hovered === c.fips ? 2 : focusedDistrict ? 0.9 : 0.6}
+                    opacity={inDistrict ? 1 : 0.25}
                     style={{ filter: hovered === c.fips ? "brightness(1.12)" : undefined }}
                     onMouseEnter={() => setHovered(c.fips)}
                     onMouseMove={updatePos}
                     onMouseLeave={() => setHovered((h) => (h === c.fips ? null : h))}
-                    onClick={() => countyClick(c.fips)}
+                    onClick={() => {
+                      setFocusCounty(c.fips);
+                      setHovered(null);
+                    }}
                   >
                     <title>{c.name}</title>
                   </path>
                 );
               })}
 
-            {showDistricts &&
-              districts.map((d) => (
-                <path
-                  key={d.id}
-                  d={d.d}
-                  className={`cursor-pointer transition-colors duration-100 ${
-                    hovered === d.id
-                      ? "fill-indigo-400 dark:fill-indigo-500"
-                      : "fill-gray-300 dark:fill-gray-600"
-                  }`}
-                  stroke="#ffffff"
-                  strokeWidth={hovered === d.id ? 2 : 1.2}
-                  onMouseEnter={() => setHovered(d.id)}
-                  onMouseMove={updatePos}
-                  onMouseLeave={() => setHovered((h) => (h === d.id ? null : h))}
-                  onClick={() => {
-                    setFocusDistrict(d.id);
-                    setLayer("county");
-                    setHovered(null);
-                  }}
-                >
-                  <title>{d.label}</title>
-                </path>
-              ))}
+            {/* DISTRICT LAYER */}
+            {view === "district" &&
+              !focusCounty &&
+              districts.map((d) => {
+                const lean = districtLean(usps, Number(d.id), raceKey);
+                const fill = lean
+                  ? SHADE_COLORS[
+                      marginToShade(lean.winner, Math.abs(lean.rPct - lean.dPct), {
+                        allowTossup: false,
+                      })
+                    ]
+                  : undefined;
+                const isFocus = focusDistrict === d.id;
+                const faded = focusDistrict != null && !isFocus;
+                return (
+                  <path
+                    key={d.id}
+                    d={d.d}
+                    fill={fill}
+                    className={
+                      (fill ? "" : "fill-gray-300 dark:fill-gray-600") +
+                      " cursor-pointer transition-[filter,opacity] duration-100"
+                    }
+                    stroke="#ffffff"
+                    strokeWidth={hovered === d.id || isFocus ? 2 : 1.1}
+                    opacity={faded ? 0.15 : 1}
+                    style={{
+                      filter: hovered === d.id ? "brightness(1.1)" : undefined,
+                    }}
+                    onMouseEnter={() => setHovered(d.id)}
+                    onMouseMove={updatePos}
+                    onMouseLeave={() => setHovered((h) => (h === d.id ? null : h))}
+                    onClick={() => {
+                      setFocusDistrict((cur) => (cur === d.id ? null : d.id));
+                      setHovered(null);
+                    }}
+                  >
+                    <title>{d.label}</title>
+                  </path>
+                );
+              })}
 
-            {showPrecincts &&
+            {/* PRECINCT LAYER (a focused county) */}
+            {view === "precinct" &&
+              focusCounty &&
               precincts?.precincts.map((p) => {
-                const { fill, className } = countyFill(focusCounty!.slice(0, 5));
+                const { fill, className } = resultFill(focusCounty.slice(0, 5), raceKey);
                 return (
                   <path
                     key={p.id}
                     d={p.d}
                     fill={fill}
                     className={(className ?? "") + " transition-[filter] duration-100"}
-                    stroke="#ffffff"
-                    strokeWidth={hovered === p.id ? 1 : 0.25}
-                    style={{ filter: hovered === p.id ? "brightness(1.15)" : undefined }}
+                    stroke="#111827"
+                    strokeWidth={hovered === p.id ? 0.9 : 0.2}
+                    style={{ filter: hovered === p.id ? "brightness(1.2)" : undefined }}
                     onMouseEnter={() => setHovered(p.id)}
                     onMouseMove={updatePos}
                     onMouseLeave={() => setHovered((h) => (h === p.id ? null : h))}
@@ -273,7 +341,8 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
                 );
               })}
 
-            {showCounties && !focusedDistrict && (
+            {/* Overlays */}
+            {view === "county" && !focusCounty && !focusedDistrict && (
               <path
                 d={geo.bordersD}
                 fill="none"
@@ -287,8 +356,8 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
               <path
                 d={focusedDistrict.d}
                 fill="none"
-                className="stroke-indigo-500 dark:stroke-indigo-400"
-                strokeWidth={1.6}
+                className="stroke-gray-900 dark:stroke-white"
+                strokeWidth={2}
                 pointerEvents="none"
               />
             )}
@@ -304,36 +373,33 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
           </svg>
         )}
 
-        {geo && !focusCounty && layer === "county" && !hasCountyData && (
-          <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
-            County-level results for {raceKey.replace("-", " ")} aren&rsquo;t loaded
-            yet &mdash; showing shapes only.
-          </p>
+        {zoomed && (
+          <button
+            onClick={() => setZoom({ k: 1, x: 0, y: 0 })}
+            className="absolute right-2 top-2 rounded-md bg-white/90 px-2 py-1 text-[11px] font-medium text-gray-700 shadow dark:bg-gray-900/90 dark:text-gray-300"
+          >
+            Reset zoom
+          </button>
         )}
-        {geo && !focusCounty && (layer === "county" || layer === "precinct") && (
+
+        {geo && (
           <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
-            {precinctsAvailable
-              ? "Click a county to see its precincts."
+            {focusCounty
+              ? precincts
+                ? `${precincts.precincts.length} precincts — shaded at the county result. Scroll to zoom, drag to pan.`
+                : precinctsAvailable
+                ? "Loading precincts…"
+                : `No precinct geometry for ${stateName} yet.`
+              : focusedDistrict
+              ? `${focusedDistrict.label} — click a county to see its precincts.`
+              : view === "district"
+              ? `${districts.length} districts (2026 lines), shaded by ${raceKey.replace(
+                  "-",
+                  " "
+                )}. Click one to isolate it.`
+              : precinctsAvailable
+              ? "Click a county to drill into its precincts."
               : "Click a county to zoom in."}
-          </p>
-        )}
-        {geo && showDistricts && (
-          <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
-            {districts.length} districts (120th Congress) &mdash; click one to drill
-            into its counties. House results aren&rsquo;t wired up yet.
-          </p>
-        )}
-        {geo && focusCounty && !precincts && (
-          <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
-            {precinctsAvailable
-              ? "Loading precincts…"
-              : `No precinct geometry for ${stateName} yet.`}
-          </p>
-        )}
-        {geo && precincts && (
-          <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
-            {precincts.precincts.length} precincts &mdash; shaded at the county
-            result; precinct-level returns aren&rsquo;t loaded yet.
           </p>
         )}
 
@@ -351,6 +417,7 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
             usps={usps}
             label={hoveredDistrict.label}
             district={Number(hoveredDistrict.id)}
+            raceKey={raceKey}
             x={pos.x}
             y={pos.y}
           />
@@ -373,11 +440,24 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
   );
 }
 
-/** Cheap overlap test: does a county's bbox intersect a district's bbox? */
-function countyTouchesDistrict(
-  county: { d: string },
-  district: { d: string }
-): boolean {
+function Crumb({
+  children,
+  onClick,
+}: {
+  children: React.ReactNode;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="rounded-md border border-gray-300 px-2 py-1 font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+    >
+      {children}
+    </button>
+  );
+}
+
+function bboxIntersect(a: string, b: string): boolean {
   const box = (d: string) => {
     const n = (d.match(/-?\d+(?:\.\d+)?/g) ?? []).map(Number);
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
@@ -387,9 +467,9 @@ function countyTouchesDistrict(
     }
     return { x0, y0, x1, y1 };
   };
-  const a = box(county.d);
-  const b = box(district.d);
-  return a.x0 < b.x1 && a.x1 > b.x0 && a.y0 < b.y1 && a.y1 > b.y0;
+  const p = box(a);
+  const q = box(b);
+  return p.x0 < q.x1 && p.x1 > q.x0 && p.y0 < q.y1 && p.y1 > q.y0;
 }
 
 const RACE_LABEL: Record<string, string> = {
@@ -406,16 +486,19 @@ function DistrictTip({
   usps,
   label,
   district,
+  raceKey,
   x,
   y,
 }: {
   usps: string;
   label: string;
   district: number;
+  raceKey: string;
   x: number;
   y: number;
 }) {
   const hist = districtResults(usps, district);
+  const lean = districtLean(usps, district, raceKey);
   return (
     <div
       className="pointer-events-none absolute z-10 w-56 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
@@ -424,11 +507,17 @@ function DistrictTip({
       <div className="font-semibold">
         {usps} {label}
       </div>
-      {hist ? (
+      {lean && (
+        <div>
+          {lean.who ?? (lean.winner === "D" ? "Dem" : "Rep")}{" "}
+          {formatMargin(lean.winner, Math.abs(lean.rPct - lean.dPct)).replace(
+            /^[DR] /,
+            lean.winner + "+"
+          )}
+        </div>
+      )}
+      {hist && Object.keys(hist).length > 1 && (
         <div className="mt-0.5 space-y-0.5 border-t border-white/15 pt-1 dark:border-black/10">
-          <div className="text-gray-300 dark:text-gray-600">
-            How the current lines voted
-          </div>
           {Object.entries(hist).map(([key, r]) => (
             <div key={key} className="flex items-baseline justify-between gap-2">
               <span className="text-gray-300 dark:text-gray-600">
@@ -441,15 +530,10 @@ function DistrictTip({
                     : "text-red-300 dark:text-red-700"
                 }
               >
-                {r.who ?? r.winner} {r.winner === "D" ? "D" : "R"}+
-                {Math.abs(r.rPct - r.dPct)}
+                {r.who ?? r.winner} {r.winner}+{Math.abs(r.rPct - r.dPct)}
               </span>
             </div>
           ))}
-        </div>
-      ) : (
-        <div className="text-gray-300 dark:text-gray-600">
-          No district history loaded
         </div>
       )}
     </div>
