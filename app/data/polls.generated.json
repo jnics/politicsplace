@@ -857,6 +857,98 @@
     },
     {
       "raceType": "governor",
+      "state": "MN",
+      "title": "Minnesota Governor",
+      "candidates": [
+        {
+          "name": "Klobuchar",
+          "party": "D"
+        },
+        {
+          "name": "Demuth",
+          "party": "R"
+        }
+      ],
+      "aggregateAverage": {
+        "spread": "Klobuchar +12.0",
+        "period": "Feb 6 – Aug 17, 2026",
+        "results": [
+          {
+            "candidate": "Klobuchar",
+            "party": "D",
+            "pct": 50
+          },
+          {
+            "candidate": "Demuth",
+            "party": "R",
+            "pct": 38
+          }
+        ]
+      },
+      "source": "RealClearPolling",
+      "lastPulled": "2026-09-06",
+      "polls": [
+        {
+          "pollster": "KSTP/SurveyUSA",
+          "startDate": "2026-08-13",
+          "endDate": "2026-08-17",
+          "sampleSize": 661,
+          "population": "LV",
+          "results": [
+            {
+              "candidate": "Klobuchar",
+              "party": "D",
+              "pct": 51
+            },
+            {
+              "candidate": "Demuth",
+              "party": "R",
+              "pct": 36
+            }
+          ]
+        },
+        {
+          "pollster": "Star Tribune/Mason-Dixon",
+          "startDate": "2026-06-08",
+          "endDate": "2026-06-10",
+          "sampleSize": 800,
+          "population": "LV",
+          "results": [
+            {
+              "candidate": "Klobuchar",
+              "party": "D",
+              "pct": 48
+            },
+            {
+              "candidate": "Demuth",
+              "party": "R",
+              "pct": 40
+            }
+          ]
+        },
+        {
+          "pollster": "Emerson",
+          "startDate": "2026-02-06",
+          "endDate": "2026-02-08",
+          "sampleSize": 1000,
+          "population": "RV",
+          "results": [
+            {
+              "candidate": "Klobuchar",
+              "party": "D",
+              "pct": 51
+            },
+            {
+              "candidate": "Demuth",
+              "party": "R",
+              "pct": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "raceType": "governor",
       "state": "NH",
       "title": "New Hampshire Governor",
       "candidates": [
@@ -1059,6 +1151,98 @@
           }
         ]
       }
+    },
+    {
+      "raceType": "governor",
+      "state": "OH",
+      "title": "Ohio Governor",
+      "candidates": [
+        {
+          "name": "Acton",
+          "party": "D"
+        },
+        {
+          "name": "Ramaswamy",
+          "party": "R"
+        }
+      ],
+      "aggregateAverage": {
+        "spread": "Acton +0.3",
+        "period": "Jun 14 – Aug 10, 2026",
+        "results": [
+          {
+            "candidate": "Acton",
+            "party": "D",
+            "pct": 47.3
+          },
+          {
+            "candidate": "Ramaswamy",
+            "party": "R",
+            "pct": 47
+          }
+        ]
+      },
+      "source": "RealClearPolling",
+      "lastPulled": "2026-09-06",
+      "polls": [
+        {
+          "pollster": "Fox News",
+          "startDate": "2026-08-06",
+          "endDate": "2026-08-10",
+          "sampleSize": 1008,
+          "population": "RV",
+          "results": [
+            {
+              "candidate": "Acton",
+              "party": "D",
+              "pct": 48
+            },
+            {
+              "candidate": "Ramaswamy",
+              "party": "R",
+              "pct": 50
+            }
+          ]
+        },
+        {
+          "pollster": "NY Times/Siena",
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-28",
+          "sampleSize": 601,
+          "population": "LV",
+          "results": [
+            {
+              "candidate": "Acton",
+              "party": "D",
+              "pct": 47
+            },
+            {
+              "candidate": "Ramaswamy",
+              "party": "R",
+              "pct": 47
+            }
+          ]
+        },
+        {
+          "pollster": "Fabrizio/Anzalone",
+          "startDate": "2026-06-14",
+          "endDate": "2026-06-16",
+          "sampleSize": 800,
+          "population": "LV",
+          "results": [
+            {
+              "candidate": "Acton",
+              "party": "D",
+              "pct": 47
+            },
+            {
+              "candidate": "Ramaswamy",
+              "party": "R",
+              "pct": 44
+            }
+          ]
+        }
+      ]
     },
     {
       "raceType": "governor",
