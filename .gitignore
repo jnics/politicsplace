@@ -8,3 +8,6 @@
 
 # playwright profile for scripts/pull-polls.mjs
 /.rcp-profile/
+
+# Big Board live results (election2026)
+/board-data.json

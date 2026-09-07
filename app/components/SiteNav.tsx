@@ -4,7 +4,7 @@ import { ThemeToggle } from "~/components/ThemeToggle";
 const LINKS = [
   { to: "/", label: "Map", end: true },
   { to: "/polls", label: "Polls", end: false },
-  { to: "/election2026", label: "Big Board", end: false },
+  { to: "/election2026", label: "Election 26", end: false },
 ];
 
 export function SiteNav() {
