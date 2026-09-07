@@ -33,10 +33,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, "../app/data/polls.generated.json");
 
 const STATE_NAME = {
-  AK: "Alaska", FL: "Florida", GA: "Georgia", IA: "Iowa", ME: "Maine",
-  MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", NH: "New Hampshire",
-  NM: "New Mexico", NC: "North Carolina", OH: "Ohio", RI: "Rhode Island",
-  TN: "Tennessee", TX: "Texas",
+  AK: "Alaska", AZ: "Arizona", CA: "California", CT: "Connecticut", FL: "Florida",
+  GA: "Georgia", IA: "Iowa", ME: "Maine", MA: "Massachusetts", MI: "Michigan",
+  MN: "Minnesota", NH: "New Hampshire", NM: "New Mexico", NC: "North Carolina",
+  NY: "New York", OH: "Ohio", PA: "Pennsylvania", RI: "Rhode Island",
+  TN: "Tennessee", TX: "Texas", WI: "Wisconsin", WY: "Wyoming",
 };
 
 /**
@@ -60,6 +61,25 @@ const RACES = [
   { state: "RI", seatClass: 2, special: false, path: "polls/senate/general/2026/rhode-island/mckay-vs-reed" },
   { state: "TN", seatClass: 2, special: false, path: "polls/senate/general/2026/tennessee/hagerty-vs-bradshaw" },
   { state: "TX", seatClass: 2, special: false, path: "polls/senate/general/2026/texas/paxton-vs-talarico" },
+];
+
+/** 2026 Governor races with RCP head-to-head polling pages. */
+const GOV_RACES = [
+  { state: "AZ", path: "polls/governor/general/2026/arizona/hobbs-vs-biggs" },
+  { state: "CA", path: "polls/governor/general/2026/california/hilton-vs-becerra" },
+  { state: "CT", path: "polls/governor/general/2026/connecticut/fazio-vs-lamont" },
+  { state: "GA", path: "polls/governor/general/2026/georgia/lance-bottoms-vs-jackson" },
+  { state: "IA", path: "polls/governor/general/2026/iowa/lahn-vs-sand" },
+  { state: "MA", path: "polls/governor/general/2026/massachusetts/healey-vs-shortsleeve" },
+  { state: "ME", path: "polls/governor/general/2026/maine/charles-vs-pingree" },
+  { state: "MI", path: "polls/governor/general/2026/michigan/benson-vs-james" },
+  { state: "NH", path: "polls/governor/general/2026/new-hampshire/ayotte-vs-warmington" },
+  { state: "NM", path: "polls/governor/general/2026/new-mexico/hull-vs-haaland" },
+  { state: "NY", path: "polls/governor/general/2026/new-york/hochul-vs-blakeman" },
+  { state: "PA", path: "polls/governor/general/2026/pennsylvania/shapiro-vs-garrity" },
+  { state: "TN", path: "polls/governor/general/2026/tennessee/blackburn-vs-green" },
+  { state: "TX", path: "polls/governor/general/2026/texas/abbott-vs-hinojosa" },
+  { state: "WI", path: "polls/governor/general/2026/wisconsin/crowley-vs-tiffany" },
 ];
 
 /** "8/6 - 8/10" rows are newest-first; walk down, dropping a year each time the
@@ -152,12 +172,18 @@ async function scrapeRace(page, race) {
     });
   }
 
+  const name = STATE_NAME[race.state] ?? race.state;
+  const title =
+    race.office === "governor"
+      ? `${name} Governor`
+      : `${name} Senate${race.special ? " (special)" : ""}`;
   return {
-    raceType: "senate",
+    raceType: race.office === "governor" ? "governor" : "senate",
     state: race.state,
-    seatClass: race.seatClass,
-    special: race.special,
-    title: `${STATE_NAME[race.state] ?? race.state} Senate${race.special ? " (special)" : ""}`,
+    ...(race.office === "governor"
+      ? {}
+      : { seatClass: race.seatClass, special: race.special }),
+    title,
     candidates: cols.map((c) => ({ name: c.name, party: c.party })),
     aggregateAverage,
     polls: latestPerPollster(polls),
@@ -207,14 +233,18 @@ async function main() {
     races: [],
   };
   let failures = 0;
-  for (const race of RACES) {
+  const queue = [
+    ...RACES.map((r) => ({ ...r, office: "senate" })),
+    ...GOV_RACES.map((r) => ({ ...r, office: "governor" })),
+  ];
+  for (const race of queue) {
     try {
       const data = await scrapeRace(page, race);
       out.races.push(data);
       console.log(`✓ ${data.title}: ${data.polls.length} polls`);
     } catch (err) {
       failures += 1;
-      console.error(`✗ ${race.state}: ${err.message}`);
+      console.error(`✗ ${race.state} ${race.office}: ${err.message}`);
     }
   }
   await ctx.close();
@@ -240,12 +270,13 @@ async function main() {
 
   out.races.sort(
     (a, b) =>
+      a.raceType.localeCompare(b.raceType) ||
       (STATE_NAME[a.state] ?? a.state).localeCompare(
         STATE_NAME[b.state] ?? b.state
       ) || (a.district ?? 0) - (b.district ?? 0)
   );
   await writeFile(OUT, JSON.stringify(out, null, 2) + "\n");
-  console.log(`\nWrote ${out.races.length}/${RACES.length} race(s) to ${OUT}`);
+  console.log(`\nWrote ${out.races.length}/${queue.length} race(s) to ${OUT}`);
   process.exit(failures > 0 ? 1 : 0);
 }
 
