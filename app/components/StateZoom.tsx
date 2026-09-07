@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { loadStateGeo, type StateGeo } from "~/lib/stateGeo";
 import { countyResult } from "~/data/countyResults";
+import { districtResults } from "~/data/districtResults";
 import { HISTORICAL_COLORS, SHADE_COLORS } from "~/lib/shades";
 import { marginToShade, formatMargin, formatVotes } from "~/lib/margin";
 
@@ -237,14 +238,73 @@ export function StateZoom({ usps, stateName, raceKey, onBack }: StateZoomProps) 
         )}
 
         {hoveredDistrict && (
-          <div
-            className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
-            style={{ left: pos.x, top: pos.y - 10 }}
-          >
-            {stateName} {hoveredDistrict.label}
-          </div>
+          <DistrictTip
+            usps={usps}
+            label={hoveredDistrict.label}
+            district={Number(hoveredDistrict.id)}
+            x={pos.x}
+            y={pos.y}
+          />
         )}
       </div>
+    </div>
+  );
+}
+
+const RACE_LABEL: Record<string, string> = {
+  "2016-president": "2016 Pres.",
+  "2020-president": "2020 Pres.",
+  "2024-president": "2024 Pres.",
+  "2016-senate": "2016 Sen.",
+  "2018-senate": "2018 Sen.",
+  "2022-senate": "2022 Sen.",
+  "2024-senate": "2024 Sen.",
+};
+
+function DistrictTip({
+  usps,
+  label,
+  district,
+  x,
+  y,
+}: {
+  usps: string;
+  label: string;
+  district: number;
+  x: number;
+  y: number;
+}) {
+  const hist = districtResults(usps, district);
+  return (
+    <div
+      className="pointer-events-none absolute z-10 w-56 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
+      style={{ left: x, top: y - 10 }}
+    >
+      <div className="font-semibold">
+        {usps} {label}
+      </div>
+      {hist ? (
+        <div className="mt-0.5 space-y-0.5 border-t border-white/15 pt-1 dark:border-black/10">
+          <div className="text-gray-300 dark:text-gray-600">
+            How the current lines voted
+          </div>
+          {Object.entries(hist).map(([key, r]) => (
+            <div key={key} className="flex items-baseline justify-between gap-2">
+              <span className="text-gray-300 dark:text-gray-600">
+                {RACE_LABEL[key] ?? key}
+              </span>
+              <span className={r.winner === "D" ? "text-blue-300 dark:text-blue-700" : "text-red-300 dark:text-red-700"}>
+                {r.who ?? r.winner} {r.winner === "D" ? "D" : "R"}+
+                {Math.abs(r.rPct - r.dPct)}
+              </span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="text-gray-300 dark:text-gray-600">
+          No district history loaded
+        </div>
+      )}
     </div>
   );
 }
