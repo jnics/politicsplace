@@ -280,10 +280,17 @@ function CountyTip({
               : res.winner === "R"
               ? "Republicans"
               : res.winner}
+            {res.marginPct != null && (
+              <span className="text-gray-300 dark:text-gray-600">
+                {" "}
+                ({formatMargin(res.winner === "D" ? "D" : "R", res.marginPct)})
+              </span>
+            )}
           </div>
-          {res.marginPct != null && (
-            <div className="text-gray-300 dark:text-gray-600">
-              {formatMargin(res.winner === "D" ? "D" : "R", res.marginPct)}
+          {res.rPct != null && res.dPct != null && (
+            <div className="flex items-baseline justify-between gap-2 pt-0.5">
+              <span className="text-blue-300 dark:text-blue-700">D {res.dPct}%</span>
+              <span className="text-red-300 dark:text-red-700">R {res.rPct}%</span>
             </div>
           )}
           {res.totalVotes != null && (
