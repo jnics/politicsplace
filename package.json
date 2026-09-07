@@ -9,7 +9,8 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "polls:pull": "node scripts/pull-polls.mjs",
-    "geo:extract": "node scripts/extract-county-geo.mjs"
+    "geo:extract": "node scripts/extract-county-geo.mjs",
+    "geo:precincts": "node scripts/extract-precincts.mjs"
   },
   "dependencies": {
     "@react-router/node": "^8",

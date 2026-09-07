@@ -60,3 +60,49 @@ export async function loadStateGeo(usps: string): Promise<StateGeo | null> {
   cache.set(usps, mod.default);
   return mod.default;
 }
+
+export interface PrecinctShape {
+  /** VTD code. */
+  id: string;
+  name: string;
+  pop?: number;
+  d: string;
+}
+
+export interface CountyPrecincts {
+  /** 5-digit county FIPS. */
+  countyFips: string;
+  /** "x y w h" -- in the same projection as the parent StateGeo. */
+  viewBox: string;
+  precincts: PrecinctShape[];
+}
+
+// One file per county: app/data/geo/precincts/<USPS>/<countyFips>.json
+const PRECINCT_FILES = import.meta.glob("../data/geo/precincts/*/*.json");
+const precinctCache = new Map<string, CountyPrecincts>();
+
+function precinctLoader(usps: string, countyFips: string) {
+  const suffix = `/precincts/${usps}/${countyFips}.json`;
+  const key = Object.keys(PRECINCT_FILES).find((k) => k.endsWith(suffix));
+  return key ? PRECINCT_FILES[key] : undefined;
+}
+
+/** Load one county's precincts (lazy per-county chunk), or null if none. */
+export async function loadCountyPrecincts(
+  usps: string,
+  countyFips: string
+): Promise<CountyPrecincts | null> {
+  const cached = precinctCache.get(countyFips);
+  if (cached) return cached;
+  const loader = precinctLoader(usps, countyFips);
+  if (!loader) return null;
+  const mod = (await loader()) as { default: CountyPrecincts };
+  precinctCache.set(countyFips, mod.default);
+  return mod.default;
+}
+
+export function hasPrecincts(usps: string): boolean {
+  return Object.keys(PRECINCT_FILES).some((k) =>
+    k.includes(`/precincts/${usps}/`)
+  );
+}
