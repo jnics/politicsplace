@@ -12,6 +12,7 @@ import {
 } from "~/data/presidentialResults";
 import { SENATE_CYCLE_YEARS, type SenateCycleYear } from "~/data/senateResults";
 import { SENATE_2026_NOTES } from "~/data/senate2026";
+import { SENATE_2026_CANDIDATES } from "~/data/senate2026Candidates";
 import { PRESIDENTIAL_VOTES } from "~/data/presidentialVotes";
 import { SENATE_VOTES } from "~/data/senateVotes";
 import { SENATE_REASONS } from "~/data/senateReasons";
@@ -292,6 +293,22 @@ export function ElectionsExplorer() {
                 {info.activeSeat.note}
               </div>
             )}
+            {SENATE_2026_CANDIDATES[state]?.length ? (
+              <div className="border-t border-white/15 pt-1 dark:border-black/10">
+                <div className="text-gray-300 dark:text-gray-600">On the ballot</div>
+                {SENATE_2026_CANDIDATES[state].map((c) => (
+                  <div key={c.name} className="flex items-baseline justify-between gap-2">
+                    <span>
+                      {c.name}
+                      {c.incumbent ? " (inc.)" : ""}
+                    </span>
+                    <span className="shrink-0 text-gray-300 dark:text-gray-600">
+                      {c.party}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ) : null}
             <div className="border-t border-white/15 pt-1 font-medium dark:border-black/10">
               Your pick: {SHADE_LABELS[shade]}
             </div>
