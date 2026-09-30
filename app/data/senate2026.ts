@@ -39,9 +39,10 @@ export const SENATE_2026_RACES: Senate2026Race[] = [
   },
   {
     "state": "AK",
-    "incumbent": "Dan Sullivan",
+    "incumbent": "Dan S. Sullivan",
     "party": "R",
-    "special": false
+    "special": false,
+    "note": "Ranked-choice general vs. Mary Peltola (D) and a second candidate also named Sullivan (Daniel J. Sullivan Jr., no party on the ballot) — a distinct person, not the senator."
   },
   {
     "state": "AR",

@@ -18,9 +18,12 @@ export const SENATE_2026_CANDIDATES: Record<string, BallotCandidate[]> = {
     { name: "Everett Wess", party: "D" },
   ],
   AK: [
-    { name: "Dan Sullivan", party: "R", incumbent: true },
+    { name: "Dan S. Sullivan", party: "R", incumbent: true },
     { name: "Mary Peltola", party: "D" },
-    { name: "Gerald Heikes", party: "R" },
+    // Separate candidate (former Anchorage mayor), listed with no party on the
+    // ballot though he filed Republican — not the incumbent senator.
+    { name: "Daniel J. Sullivan Jr.", party: "I" },
+    { name: "Gerald L. Heikes", party: "R" },
   ],
   AR: [
     { name: "Tom Cotton", party: "R", incumbent: true },

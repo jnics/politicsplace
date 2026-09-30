@@ -50,6 +50,24 @@ if (!fips || !FIPS_TO_USPS[fips]) {
   process.exit(1);
 }
 const usps = FIPS_TO_USPS[fips];
+
+// TIGERweb Legislative layer for congressional districts. Layer 0 = 120th (the
+// 2027-2029 term, elected 2026) — right for states that redistricted for 2026
+// like Ohio. Layer 4 = 119th (2025-2027, elected 2024) — right for states whose
+// lines are unchanged for 2026 but whose 120th entry on TIGERweb is a stale or
+// placeholder map (North Carolina). Override with `--layer=N` or DISTRICT_LAYER.
+const DISTRICT_LAYER =
+  (process.argv.find((a) => a.startsWith("--layer=")) || "").split("=")[1] ??
+  process.env.DISTRICT_LAYER ??
+  // NC, TN and MO have a scrambled or stale layer-0 (120th) map on TIGERweb even
+  // though none redistricted for 2026 (TN put Nashville in the wrong seats; MO
+  // split Jackson County wrong). AL and LA redrew for 2024 (new court-ordered
+  // majority-Black AL-2 / LA-6) and TIGERweb's layer 0 still shows their OLD
+  // maps — all five take the 119th map they were elected to in 2024, which is
+  // also the map 2026 uses.
+  { NC: "4", TN: "4", MO: "4", AL: "4", LA: "4" }[usps] ??
+  "0";
+
 const stateName =
   statesTopo.objects.states.geometries.find((g) => g.id === fips)?.properties.name ??
   usps;
@@ -110,7 +128,7 @@ function reverseRings(geom) {
 // so this differs from the 119th/layer-4 map).
 async function fetchDistricts() {
   const url =
-    "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/0/query?" +
+    `https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/${DISTRICT_LAYER}/query?` +
     new URLSearchParams({
       where: `STATE='${fips}'`,
       outFields: "BASENAME,NAME,GEOID",
@@ -125,6 +143,14 @@ async function fetchDistricts() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const fc = await res.json();
     return (fc.features ?? [])
+      // TIGERweb returns a "Congressional Districts not defined" / "ZZ" feature
+      // for coastal water and unassigned area — drop it.
+      .filter(
+        (f) =>
+          f.properties.BASENAME &&
+          f.properties.BASENAME !== "ZZ" &&
+          !/not defined/i.test(f.properties.NAME ?? "")
+      )
       .map((f) => ({
         id: f.properties.BASENAME,
         label: f.properties.NAME,

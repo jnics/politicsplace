@@ -1,5 +1,7 @@
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useMemo } from "react";
 import { STATE_PATHS, US_MAP_VIEWBOX } from "~/data/statePaths";
+import { pathPoints, centroidOf } from "~/lib/svgGeometry";
+import { ShiftMark } from "~/components/ShiftMark";
 
 export interface UsMapProps {
   /** Fill color for each state, keyed by uppercase USPS code. */
@@ -8,7 +10,11 @@ export interface UsMapProps {
   interactiveStates?: Set<string>;
   /** Called when an interactive state is clicked. direction is -1 on right-click. */
   onStateClick?: (id: string, direction: 1 | -1) => void;
-  /** Called when a non-interactive state is clicked (e.g. to zoom into it). */
+  /**
+   * Called to zoom into a state: on a single click for non-interactive states,
+   * and on a double-click for any state (so interactive states can keep
+   * single-click for painting).
+   */
   onStateSelect?: (id: string) => void;
   /** Tooltip body for a given state id -- return null to suppress the tooltip. */
   tooltip?: (id: string) => React.ReactNode;
@@ -21,7 +27,22 @@ export interface UsMapProps {
   highlightStates?: Set<string> | null;
   /** Extra <defs> content (e.g. <pattern> elements for split-result states). */
   defs?: React.ReactNode;
+  /** Turnout overlay: a translucent circle per state, area ∝ `votes`. */
+  overlayCircles?: Record<string, { votes: number; color: string }>;
+  /** Shift overlay: a left/right arrow per state, length ∝ `pts`. `winner`
+   *  colors a zero-swing state's tick by who currently holds it, rather than
+   *  a neutral gray — a swing of exactly 0 has no sign of its own. */
+  overlayArrows?: Record<string, { pts: number; color: string; winner?: "D" | "R" }>;
   className?: string;
+}
+
+/** Same idea as StateZoom's per-county/district arrow + circle scaling, just
+ *  against the national viewBox and 50 states instead of one state's shapes. */
+function useOverlayScale() {
+  return useMemo(() => {
+    const [, , w, h] = US_MAP_VIEWBOX.split(" ").map(Number);
+    return Math.sqrt((w * h) / 50);
+  }, []);
 }
 
 export function UsMap({
@@ -33,11 +54,17 @@ export function UsMap({
   hiddenStates,
   highlightStates,
   defs,
+  overlayCircles,
+  overlayArrows,
   className,
 }: UsMapProps) {
   const [hovered, setHovered] = useState<string | null>(null);
   const [pos, setPos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
+  const unit = useOverlayScale();
+  const circleMax = overlayCircles
+    ? Math.max(...Object.values(overlayCircles).map((c) => c.votes))
+    : 0;
 
   const updatePos = useCallback((e: React.MouseEvent) => {
     const rect = containerRef.current?.getBoundingClientRect();
@@ -57,7 +84,7 @@ export function UsMap({
         {STATE_PATHS.filter((s) => !hiddenStates?.has(s.id)).map((state) => {
           const isInteractive = interactiveStates?.has(state.id) ?? false;
           const isSelectable = !isInteractive && onStateSelect != null;
-          const fill = fills[state.id] ?? "#e4e4e7";
+          const fill = fills[state.id] ?? "#ffffff";
           const isHovered = hovered === state.id;
           const spotlit = highlightStates?.has(state.id) ?? false;
           const dimmed = highlightStates != null && !spotlit;
@@ -66,7 +93,7 @@ export function UsMap({
               key={state.id}
               d={state.d}
               fill={fill}
-              stroke={spotlit ? "#111827" : "#ffffff"}
+              stroke="#000000"
               strokeWidth={spotlit ? 2 : isHovered ? 2 : 1}
               className={
                 "transition-opacity duration-150 " +
@@ -86,6 +113,7 @@ export function UsMap({
                 if (isInteractive) onStateClick?.(state.id, 1);
                 else onStateSelect?.(state.id);
               }}
+              onDoubleClick={() => onStateSelect?.(state.id)}
               onContextMenu={(e) => {
                 if (isInteractive) {
                   e.preventDefault();
@@ -97,6 +125,46 @@ export function UsMap({
             </path>
           );
         })}
+
+        {overlayCircles &&
+          circleMax > 0 &&
+          STATE_PATHS.filter((s) => !hiddenStates?.has(s.id) && overlayCircles[s.id]).map(
+            (state) => {
+              const { votes, color } = overlayCircles[state.id];
+              const [cx, cy] = centroidOf(pathPoints(state.d));
+              const r = Math.max(
+                unit * 0.05,
+                Math.sqrt(votes / circleMax) * unit * 0.42
+              );
+              return (
+                <circle
+                  key={`turnout-${state.id}`}
+                  cx={cx} cy={cy} r={r}
+                  fill={color} fillOpacity={0.35}
+                  stroke={color} strokeWidth={1}
+                  className="pointer-events-none"
+                />
+              );
+            }
+          )}
+
+        {overlayArrows &&
+          STATE_PATHS.filter((s) => !hiddenStates?.has(s.id) && overlayArrows[s.id]).map(
+            (state) => {
+              const { pts, winner } = overlayArrows[state.id];
+              const [cx, cy] = centroidOf(pathPoints(state.d));
+              return (
+                <ShiftMark
+                  key={`shift-${state.id}`}
+                  cx={cx}
+                  cy={cy}
+                  swing={pts}
+                  unit={unit}
+                  tieWinner={winner}
+                />
+              );
+            }
+          )}
       </svg>
 
       {hovered && tooltip?.(hovered) && (

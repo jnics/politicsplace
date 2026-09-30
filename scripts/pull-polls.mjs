@@ -4,7 +4,14 @@
  * app/data/polls.generated.json (which app/data/polls.ts merges over anything
  * hand-seeded, keyed by race).
  *
- *   pnpm polls:pull
+ *   pnpm polls:pull        # this script (RealClearPolling only)
+ *   pnpm polls:all         # 538 + Wikipedia + this, in that order
+ *
+ * This is ONE of three poll importers; each keeps only its own `source` rows, so
+ * they compose:
+ *   - scripts/import-538-polls.mjs      source "FiveThirtyEight"  (headless; 1998-2022)
+ *   - scripts/import-wikipedia-polls.mjs source "Wikipedia"       (headless; 2026 House/Gov/Sen)
+ *   - this script                        source "RealClearPolling" (needs Chrome + a human)
  *
  * RealClearPolling sits behind Cloudflare, which 403s plain fetch() and blocks
  * headless automation. This drives your installed Chrome (playwright-core, no
@@ -63,11 +70,54 @@ const RACES = [
   { state: "TX", seatClass: 2, special: false, path: "polls/senate/general/2026/texas/paxton-vs-talarico" },
 ];
 
+/**
+ * Historical race pages (completed cycles) so the Polls page's office-average
+ * bar has comparison years. RCP keeps old race pages up; the slug is usually
+ * `<year>/<state>/<loser>-vs-<winner>` or alphabetical. `year` + `office` are
+ * carried through to polls.generated.json; app/data/polls.ts keys races by year
+ * so these never collide with the 2026 rows. 2016-2020 RCP coverage is thin —
+ * add rows as pages are confirmed.
+ */
+const HIST_RACES = [
+  // 2024 Senate battlegrounds
+  { year: 2024, office: "senate", state: "AZ", path: "polls/senate/general/2024/arizona/lake-vs-gallego" },
+  { year: 2024, office: "senate", state: "MI", path: "polls/senate/general/2024/michigan/rogers-vs-slotkin" },
+  { year: 2024, office: "senate", state: "MT", path: "polls/senate/general/2024/montana/sheehy-vs-tester" },
+  { year: 2024, office: "senate", state: "NV", path: "polls/senate/general/2024/nevada/brown-vs-rosen" },
+  { year: 2024, office: "senate", state: "OH", path: "polls/senate/general/2024/ohio/moreno-vs-brown" },
+  { year: 2024, office: "senate", state: "PA", path: "polls/senate/general/2024/pennsylvania/mccormick-vs-casey" },
+  { year: 2024, office: "senate", state: "WI", path: "polls/senate/general/2024/wisconsin/hovde-vs-baldwin" },
+  { year: 2024, office: "senate", state: "TX", path: "polls/senate/general/2024/texas/cruz-vs-allred" },
+  { year: 2024, office: "senate", state: "FL", path: "polls/senate/general/2024/florida/scott-vs-mucarsel-powell" },
+  { year: 2024, office: "senate", state: "MD", path: "polls/senate/general/2024/maryland/hogan-vs-alsobrooks" },
+  { year: 2024, office: "senate", state: "NE", path: "polls/senate/general/2024/nebraska/fischer-vs-osborn" },
+  // 2024 Governor
+  { year: 2024, office: "governor", state: "NC", path: "polls/governor/general/2024/north-carolina/robinson-vs-stein" },
+  { year: 2024, office: "governor", state: "NH", path: "polls/governor/general/2024/new-hampshire/ayotte-vs-craig" },
+  // 2022 Senate battlegrounds
+  { year: 2022, office: "senate", state: "AZ", path: "polls/senate/general/2022/arizona/masters-vs-kelly" },
+  { year: 2022, office: "senate", state: "GA", path: "polls/senate/general/2022/georgia/walker-vs-warnock" },
+  { year: 2022, office: "senate", state: "NV", path: "polls/senate/general/2022/nevada/laxalt-vs-cortez-masto" },
+  { year: 2022, office: "senate", state: "PA", path: "polls/senate/general/2022/pennsylvania/oz-vs-fetterman" },
+  { year: 2022, office: "senate", state: "WI", path: "polls/senate/general/2022/wisconsin/johnson-vs-barnes" },
+  { year: 2022, office: "senate", state: "NH", path: "polls/senate/general/2022/new-hampshire/bolduc-vs-hassan" },
+  { year: 2022, office: "senate", state: "NC", path: "polls/senate/general/2022/north-carolina/budd-vs-beasley" },
+  { year: 2022, office: "senate", state: "OH", path: "polls/senate/general/2022/ohio/vance-vs-ryan" },
+  // 2022 Governor
+  { year: 2022, office: "governor", state: "AZ", path: "polls/governor/general/2022/arizona/lake-vs-hobbs" },
+  { year: 2022, office: "governor", state: "WI", path: "polls/governor/general/2022/wisconsin/michels-vs-evers" },
+  { year: 2022, office: "governor", state: "PA", path: "polls/governor/general/2022/pennsylvania/mastriano-vs-shapiro" },
+  { year: 2022, office: "governor", state: "MI", path: "polls/governor/general/2022/michigan/dixon-vs-whitmer" },
+  { year: 2022, office: "governor", state: "NV", path: "polls/governor/general/2022/nevada/lombardo-vs-sisolak" },
+  { year: 2022, office: "governor", state: "GA", path: "polls/governor/general/2022/georgia/kemp-vs-abrams" },
+];
+
 /** 2026 Governor races with RCP head-to-head polling pages. */
 const GOV_RACES = [
   { state: "AZ", path: "polls/governor/general/2026/arizona/hobbs-vs-biggs" },
   { state: "CA", path: "polls/governor/general/2026/california/hilton-vs-becerra" },
   { state: "CT", path: "polls/governor/general/2026/connecticut/fazio-vs-lamont" },
+  { state: "FL", path: "polls/governor/general/2026/florida/donalds-vs-jolly" },
   { state: "GA", path: "polls/governor/general/2026/georgia/lance-bottoms-vs-jackson" },
   { state: "IA", path: "polls/governor/general/2026/iowa/lahn-vs-sand" },
   { state: "MA", path: "polls/governor/general/2026/massachusetts/healey-vs-shortsleeve" },
@@ -175,13 +225,16 @@ async function scrapeRace(page, race) {
   }
 
   const name = STATE_NAME[race.state] ?? race.state;
+  const yr = race.year ?? 2026;
+  const yrPrefix = yr === 2026 ? "" : `${yr} `;
   const title =
     race.office === "governor"
-      ? `${name} Governor`
-      : `${name} Senate${race.special ? " (special)" : ""}`;
+      ? `${yrPrefix}${name} Governor`
+      : `${yrPrefix}${name} Senate${race.special ? " (special)" : ""}`;
   return {
     raceType: race.office === "governor" ? "governor" : "senate",
     state: race.state,
+    ...(yr === 2026 ? {} : { year: yr }),
     ...(race.office === "governor"
       ? {}
       : { seatClass: race.seatClass, special: race.special }),
@@ -238,6 +291,7 @@ async function main() {
   const queue = [
     ...RACES.map((r) => ({ ...r, office: "senate" })),
     ...GOV_RACES.map((r) => ({ ...r, office: "governor" })),
+    ...(process.env.PULL_SKIP_HISTORICAL === "1" ? [] : HIST_RACES),
   ];
   for (const race of queue) {
     try {

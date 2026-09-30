@@ -9,8 +9,8 @@
  *
  *   node scripts/extract-precincts.mjs OH
  *
- * Precinct geometry only -- election results are joined separately (see
- * app/data/precinctResults.ts once a source is wired in).
+ * Precinct geometry only. Run scripts/join-precinct-results.mjs afterwards to
+ * add per-precinct vote counts (`pr: [d, r, other]`) from VEST.
  */
 import { writeFile, mkdir, rm } from "node:fs/promises";
 import { fileURLToPath } from "node:url";

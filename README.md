@@ -60,3 +60,5 @@ The built-in app server is production-ready. Deploy the output of `pnpm build`:
 ## Styling
 
 Tailwind CSS is already configured. Global styles live in `app/app.css`; routes live under `app/routes/`.
+
+Login pass:ogZyGZ-zDpJ-

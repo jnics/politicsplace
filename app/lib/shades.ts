@@ -57,7 +57,7 @@ export const SHADE_COLORS: Record<Shade, string> = {
   safeD: "#1d4ed8", // blue-700
   likelyD: "#3b82f6", // blue-500
   leanD: "#93c5fd", // blue-300
-  tossup: "#d4d4d8", // zinc-300
+  tossup: "#ffffff", // white — neutral, not blue or red
   leanR: "#fca5a5", // red-300
   likelyR: "#ef4444", // red-500
   safeR: "#b91c1c", // red-700

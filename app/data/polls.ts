@@ -58,31 +58,90 @@ export interface RacePolls {
   /** Where the polls came from and when they were last refreshed. */
   source: string;
   lastPulled?: string;
+  /** Election year. Absent means 2026 (the current cycle). */
+  year?: number;
 }
 
 import generated from "~/data/polls.generated.json";
+import { SEEDED_RACES } from "~/data/pollsSeeded";
 
-/** A stable key for a race, so a real pull can replace the seeded example. */
-function raceKey(r: Pick<RacePolls, "raceType" | "state" | "district">): string {
-  return `${r.raceType}:${r.state}:${r.district ?? ""}`;
+/** Election year for a race — absent means the current 2026 cycle. */
+export function raceYear(r: Pick<RacePolls, "year">): number {
+  return r.year ?? 2026;
 }
 
-/** Hand-seeded races. Normally empty -- `pnpm polls:pull` fills
- *  polls.generated.json, whose races override these by key. */
-const SEEDED: RacePolls[] = [];
+/** A stable key for a race, so a real pull can replace the seeded example.
+ *  Includes `special` — Ohio's 2026 Senate ballot has both Sherrod Brown's
+ *  regular-seat race and a separate special election for the seat Husted
+ *  was appointed to; without `special` in the key they collide and the
+ *  second one silently disappears (last one merged into `POLLS` wins). */
+export function raceKey(
+  r: Pick<RacePolls, "raceType" | "state" | "district" | "year" | "special">
+): string {
+  return `${raceYear(r)}:${r.raceType}:${r.state}:${r.district ?? ""}:${
+    r.special ? "special" : ""
+  }`;
+}
+
+/** Hand-seeded races (mostly U.S. House districts RCP has no page for).
+ *  `pnpm polls:pull` fills polls.generated.json, whose races override these by
+ *  key if a real pull ever covers them. */
+const SEEDED: RacePolls[] = SEEDED_RACES;
 
 const GENERATED = (generated.races ?? []) as unknown as RacePolls[];
+
+/** When a pollster has more than one poll of a race, keep only their most recent
+ *  (by field end date, then start date) — a fresh release supersedes the old
+ *  one, so we don't show or average both. Input order is otherwise preserved. */
+function latestPerPollster(polls: Poll[]): Poll[] {
+  const key = (p: Poll) => p.pollster.trim().toLowerCase();
+  const best = new Map<string, Poll>();
+  for (const p of polls) {
+    const cur = best.get(key(p));
+    if (
+      !cur ||
+      p.endDate > cur.endDate ||
+      (p.endDate === cur.endDate && (p.startDate ?? "") > (cur.startDate ?? ""))
+    ) {
+      best.set(key(p), p);
+    }
+  }
+  return polls.filter((p) => best.get(key(p)) === p);
+}
 
 /** All races: a pulled race replaces the seeded example with the same key. */
 export const POLLS: RacePolls[] = (() => {
   const byKey = new Map<string, RacePolls>();
   for (const race of SEEDED) byKey.set(raceKey(race), race);
   for (const race of GENERATED) byKey.set(raceKey(race), race);
-  return [...byKey.values()];
+  return [...byKey.values()].map((race) => ({
+    ...race,
+    polls: latestPerPollster(race.polls),
+  }));
 })();
 
 /** When the generated data was last pulled, if ever. */
 export const POLLS_GENERATED_AT: string | null = generated.generatedAt ?? null;
+
+/**
+ * Fold polls submitted by hand at /polls/submit (read from D1 at request
+ * time by /polls's own loader) into `POLLS`, keyed the same way — a
+ * submission for a race not in `POLLS` at all is silently dropped (the
+ * submit form only offers races already tracked here, so this shouldn't
+ * happen in practice). Re-runs `latestPerPollster` on any race that gained
+ * polls, same rule as the SEEDED/GENERATED merge above.
+ */
+export function mergeManualPolls(
+  base: RacePolls[],
+  manualByKey: Record<string, Poll[]>
+): RacePolls[] {
+  if (Object.keys(manualByKey).length === 0) return base;
+  return base.map((race) => {
+    const extra = manualByKey[raceKey(race)];
+    if (!extra || extra.length === 0) return race;
+    return { ...race, polls: latestPerPollster([...race.polls, ...extra]) };
+  });
+}
 
 /** Most recent poll end date across a race, for sorting. */
 export function latestPollDate(race: RacePolls): string {

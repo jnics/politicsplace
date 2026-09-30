@@ -1,0 +1,2461 @@
+{
+ "district": "OH-7",
+ "generatedAt": "2026-09-07",
+ "pollingPlaceCount": 166,
+ "precinctCount": 545,
+ "towns": [
+  {
+   "town": "Ashland City",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:ashland-city-schools-district1407-claremont-ave-ashland",
+     "name": "Ashland City Schools District",
+     "address": "1407 Claremont Ave, Ashland",
+     "county": "Ashland",
+     "precincts": [
+      "Ashland City 1-A",
+      "Ashland City 1-B",
+      "Ashland City 1-C",
+      "Ashland City 1-D",
+      "Ashland City 2-A",
+      "Ashland City 2-B",
+      "Ashland City 2-C",
+      "Montgomery 3"
+     ],
+     "town": "Ashland City"
+    },
+    {
+     "id": "ashland:eagles-club400-eastlake-dr-ashland",
+     "name": "Eagles Club",
+     "address": "400 Eastlake Dr, Ashland",
+     "county": "Ashland",
+     "precincts": [
+      "Ashland City 3-A",
+      "Ashland City 3-B",
+      "Ashland City 3-C",
+      "Ashland City 3-D",
+      "Ashland City 4-A",
+      "Ashland City 4-B",
+      "Ashland City 4-C",
+      "Montgomery 1",
+      "Montgomery 2"
+     ],
+     "town": "Ashland City"
+    }
+   ]
+  },
+  {
+   "town": "Bay Village",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:1100",
+     "name": "Bay Presbyterian Church",
+     "address": "25415 Lake Road, Bay Village",
+     "town": "Bay Village",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C",
+      "2B"
+     ]
+    },
+    {
+     "id": "cuya:8254",
+     "name": "Bay United Methodist Church",
+     "address": "29931 Lake Road, Bay Village",
+     "town": "Bay Village",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3B",
+      "3C"
+     ]
+    },
+    {
+     "id": "cuya:8013",
+     "name": "Bay Village Middle School",
+     "address": "27725 Wolf Road, Bay Village",
+     "town": "Bay Village",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2C"
+     ]
+    },
+    {
+     "id": "cuya:1030",
+     "name": "St Barnabas Episcopal Church",
+     "address": "468 Bradley Road, Bay Village",
+     "town": "Bay Village",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4B",
+      "4C"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Bentleyville",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:1390",
+     "name": "Bentleyville Village Hall",
+     "address": "6253 Chagrin River Road, Bentleyville",
+     "town": "Bentleyville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Berea",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8275",
+     "name": "Berea Branch Library",
+     "address": "7 Berea Commons, Berea",
+     "town": "Berea",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4B"
+     ]
+    },
+    {
+     "id": "cuya:8296",
+     "name": "Berea Recreation Center",
+     "address": "451 Front Street, Berea",
+     "town": "Berea",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "2A",
+      "2B.01",
+      "2B.02",
+      "2C"
+     ]
+    },
+    {
+     "id": "cuya:1350",
+     "name": "Heritage Congregational Church",
+     "address": "485 West Street, Berea",
+     "town": "Berea",
+     "county": "Cuyahoga",
+     "precincts": [
+      "5A",
+      "5B",
+      "5C"
+     ]
+    },
+    {
+     "id": "cuya:8129",
+     "name": "St Marys Catholic Church",
+     "address": "250 Kraft Street, Berea",
+     "town": "Berea",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3B"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Brecksville",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:1540",
+     "name": "Brecksville Community Center",
+     "address": "1 Community Drive, Brecksville",
+     "town": "Brecksville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "C",
+      "D",
+      "E",
+      "G"
+     ]
+    },
+    {
+     "id": "cuya:1550",
+     "name": "Cuyahoga Valley Career Center",
+     "address": "8001 Brecksville Road, Brecksville",
+     "town": "Brecksville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A",
+      "B"
+     ]
+    },
+    {
+     "id": "cuya:8329",
+     "name": "South Suburban Montessori School",
+     "address": "4450 Oakes Road, Brecksville",
+     "town": "Brecksville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "F",
+      "H",
+      "I",
+      "J"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Broadview Heights",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8206",
+     "name": "Broadview Hts Baptist Church",
+     "address": "9850 Broadview Road, Broadview Heights",
+     "town": "Broadview Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1B",
+      "4A",
+      "4C",
+      "4D"
+     ]
+    },
+    {
+     "id": "cuya:1400",
+     "name": "Broadview Hts Community Building",
+     "address": "9543 Broadview Road, Broadview Heights",
+     "town": "Broadview Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1C",
+      "3A",
+      "3B",
+      "3C",
+      "4B"
+     ]
+    },
+    {
+     "id": "cuya:1430",
+     "name": "St Michaels Woodside Hall",
+     "address": "5025 East Mill Road, Broadview Heights",
+     "town": "Broadview Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2C",
+      "2D"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Brook Park",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:1460",
+     "name": "Brook Park Recreation Center",
+     "address": "17400 Holland Road, Brook Park",
+     "town": "Brook Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C",
+      "4A",
+      "4B",
+      "4C"
+     ]
+    },
+    {
+     "id": "cuya:1510",
+     "name": "Brook Park United Methodist Church",
+     "address": "6220 Smith Road, Brook Park",
+     "town": "Brook Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2C"
+     ]
+    },
+    {
+     "id": "cuya:8117",
+     "name": "Uaw Hall Local 1250",
+     "address": "17250 Hummel Road, Brook Park",
+     "town": "Brook Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A.01",
+      "3A.02",
+      "3B",
+      "3C"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Brooklyn",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:1630",
+     "name": "Brooklyn Senior Community Center",
+     "address": "7727 Memphis Avenue, Brooklyn",
+     "town": "Brooklyn",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A",
+      "B",
+      "E",
+      "F"
+     ]
+    },
+    {
+     "id": "cuya:1600",
+     "name": "Dr Martin Luther Evangelical Lutheran Ch",
+     "address": "4470 Ridge Road, Brooklyn",
+     "town": "Brooklyn",
+     "county": "Cuyahoga",
+     "precincts": [
+      "C",
+      "D",
+      "G",
+      "H"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Brooklyn Heights",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:1000",
+     "name": "Brooklyn Hts Community Center",
+     "address": "225 Tuxedo Avenue, Brooklyn Heights",
+     "town": "Brooklyn Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Brunswick City",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:applewood-sch3891-applewood-dr-brunswick",
+     "name": "Applewood Sch",
+     "address": "3891 Applewood Dr, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick City 2-A",
+      "Brunswick City 2-B",
+      "Brunswick City 2-E",
+      "Brunswick Hills Twp A",
+      "Brunswick Hills Twp B"
+     ],
+     "town": "Brunswick City"
+    },
+    {
+     "id": "medina:bruns-city-hall4095-center-rd-brunswick",
+     "name": "Bruns City Hall",
+     "address": "4095 Center Rd, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick City 4-C",
+      "Brunswick City 4-D"
+     ],
+     "town": "Brunswick City"
+    },
+    {
+     "id": "medina:crestview-sch300-w-130th-st-brunswick",
+     "name": "Crestview Sch",
+     "address": "300 W 130th St, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick City 1-C",
+      "Brunswick City 1-D"
+     ],
+     "town": "Brunswick City"
+    },
+    {
+     "id": "medina:huntington-sch1931-huntington-cir-brunswick",
+     "name": "Huntington Sch",
+     "address": "1931 Huntington Cir, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick City 1-A",
+      "Brunswick City 1-E",
+      "Brunswick City 2-C",
+      "Brunswick City 2-D",
+      "Brunswick City 2-F"
+     ],
+     "town": "Brunswick City"
+    },
+    {
+     "id": "medina:kidder-sch3650-grafton-rd-brunswick",
+     "name": "Kidder Sch",
+     "address": "3650 Grafton Rd, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick City 1-B",
+      "Brunswick City 1-F",
+      "Brunswick City 3-C",
+      "Brunswick City 4-E"
+     ],
+     "town": "Brunswick City"
+    },
+    {
+     "id": "medina:memorial-sch3845-magnolia-dr-brunswick",
+     "name": "Memorial Sch",
+     "address": "3845 Magnolia Dr, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick City 3-E",
+      "Brunswick City 3-F"
+     ],
+     "town": "Brunswick City"
+    },
+    {
+     "id": "medina:st-ambrose-sch929-pearl-rd-brunswick",
+     "name": "St Ambrose Sch",
+     "address": "929 Pearl Rd, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick City 3-A",
+      "Brunswick City 3-B",
+      "Brunswick City 3-D",
+      "Brunswick City 4-A",
+      "Brunswick City 4-B",
+      "Brunswick Hills Twp F",
+      "Brunswick Hills Twp G"
+     ],
+     "town": "Brunswick City"
+    }
+   ]
+  },
+  {
+   "town": "Brunswick Hills Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:st-emilian-ch1231-substation-rd-brunswick",
+     "name": "St Emilian Ch",
+     "address": "1231 Substation Rd, Brunswick",
+     "county": "Medina",
+     "precincts": [
+      "Brunswick Hills Twp C",
+      "Brunswick Hills Twp D",
+      "Brunswick Hills Twp E"
+     ],
+     "town": "Brunswick Hills Twp"
+    }
+   ]
+  },
+  {
+   "town": "Canaan Twp",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:canaan-free-will-baptist-church12723-cleveland-rd-creston",
+     "name": "Canaan Free Will Baptist Church",
+     "address": "12723 Cleveland Rd, Creston",
+     "county": "Wayne",
+     "precincts": [
+      "Canaan Twp 1",
+      "Canaan Twp 2",
+      "Canaan Twp 3"
+     ],
+     "town": "Canaan Twp"
+    }
+   ]
+  },
+  {
+   "town": "Chagrin Falls Village",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:1670",
+     "name": "Chagrin Falls High School",
+     "address": "400 East Washington Street, Chagrin Falls Village",
+     "town": "Chagrin Falls Village",
+     "county": "Cuyahoga",
+     "precincts": [
+      "D"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Chatham Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:lmre1-cooperative-way-spencer",
+     "name": "Lmre",
+     "address": "1 Cooperative Way, Spencer",
+     "county": "Medina",
+     "precincts": [
+      "Chatham Twp A",
+      "Chatham Twp B",
+      "Litchfield Twp A",
+      "Litchfield Twp B",
+      "Spencer Twp",
+      "Spencer Village"
+     ],
+     "town": "Chatham Twp"
+    }
+   ]
+  },
+  {
+   "town": "Chester Twp",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:emanuel-old-stone-church6000-congress-rd-wooster",
+     "name": "Emanuel Old Stone Church",
+     "address": "6000 Congress Rd, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Chester Twp 1",
+      "Congress Twp 3"
+     ],
+     "town": "Chester Twp"
+    },
+    {
+     "id": "wayne:st-peter-lutheran-church9451-ashland-rd-wooster",
+     "name": "St Peter Lutheran Church",
+     "address": "9451 Ashland Rd, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Chester Twp 2"
+     ],
+     "town": "Chester Twp"
+    }
+   ]
+  },
+  {
+   "town": "Chippewa Lake Village",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:chlk-twn-hall24-circle-crest-dr-chippewa-lake",
+     "name": "Chlk Twn Hall",
+     "address": "24 Circle Crest Dr, Chippewa Lake",
+     "county": "Medina",
+     "precincts": [
+      "Chippewa Lake Village",
+      "Gloria Glens Park Village"
+     ],
+     "town": "Chippewa Lake Village"
+    }
+   ]
+  },
+  {
+   "town": "Chippewa Twp",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:crossroads-community-church700-gates-st-doylestown",
+     "name": "Crossroads Community Church",
+     "address": "700 Gates St, Doylestown",
+     "county": "Wayne",
+     "precincts": [
+      "Chippewa Twp 2",
+      "Chippewa Twp 4 Dtown",
+      "Chippewa Twp 5 Dtown",
+      "Chippewa Twp 6"
+     ],
+     "town": "Chippewa Twp"
+    },
+    {
+     "id": "wayne:klusch-hall48-park-st-marshallville",
+     "name": "Klusch Hall",
+     "address": "48 Park St, Marshallville",
+     "county": "Wayne",
+     "precincts": [
+      "Chippewa Twp 1"
+     ],
+     "town": "Chippewa Twp"
+    },
+    {
+     "id": "wayne:zion-lutheran-church65-w-clinton-st-doylestown",
+     "name": "Zion Lutheran Church",
+     "address": "65 W Clinton St, Doylestown",
+     "county": "Wayne",
+     "precincts": [
+      "Chippewa Twp 3"
+     ],
+     "town": "Chippewa Twp"
+    }
+   ]
+  },
+  {
+   "town": "Clear Creek",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:bethel-baptist-church575-n-us-250-savannah",
+     "name": "Bethel Baptist Church",
+     "address": "575 N Us 250, Savannah",
+     "county": "Ashland",
+     "precincts": [
+      "Clear Creek",
+      "Ruggles",
+      "Troy"
+     ],
+     "town": "Clear Creek"
+    }
+   ]
+  },
+  {
+   "town": "Congress Twp",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:st-stephens-church44-w-britton-st-west-salem",
+     "name": "St Stephens Church",
+     "address": "44 W Britton St, West Salem",
+     "county": "Wayne",
+     "precincts": [
+      "Congress Twp 1 W Salem",
+      "Congress Twp 2"
+     ],
+     "town": "Congress Twp"
+    }
+   ]
+  },
+  {
+   "town": "Fairview Park",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8306",
+     "name": "American Legion Post 738",
+     "address": "19311 Lorain Road, Fairview Park",
+     "town": "Fairview Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C"
+     ]
+    },
+    {
+     "id": "cuya:5210",
+     "name": "Fairview Park City Hall",
+     "address": "20777 Lorain Road, Fairview Park",
+     "town": "Fairview Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3B"
+     ]
+    },
+    {
+     "id": "cuya:8032",
+     "name": "Fairview Park Regional Library",
+     "address": "21255 Lorain Road, Fairview Park",
+     "town": "Fairview Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4B"
+     ]
+    },
+    {
+     "id": "cuya:8322",
+     "name": "New Hope Church",
+     "address": "22960 Lorain Road, Fairview Park",
+     "town": "Fairview Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "5A",
+      "5B.01",
+      "5B.02"
+     ]
+    },
+    {
+     "id": "cuya:8258",
+     "name": "The Gemini Center",
+     "address": "21225 Lorain Road, Fairview Park",
+     "town": "Fairview Park",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2C"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Glenwillow",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:5410",
+     "name": "Glenwillow Village Hall",
+     "address": "29555 Pettibone Road, Glenwillow",
+     "town": "Glenwillow",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "2A",
+      "3A"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Granger Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:mcbdd-achievement-ctr4691-windfall-rd-medina",
+     "name": "Mcbdd Achievement Ctr",
+     "address": "4691 Windfall Rd, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Granger Twp A",
+      "Granger Twp B",
+      "Granger Twp C",
+      "Granger Twp D",
+      "Medina Twp G"
+     ],
+     "town": "Granger Twp"
+    }
+   ]
+  },
+  {
+   "town": "Green Twp",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:smithville-brethren-church193-e-main-st-smithville",
+     "name": "Smithville Brethren Church",
+     "address": "193 E Main St, Smithville",
+     "county": "Wayne",
+     "precincts": [
+      "Green Twp 2",
+      "Green Twp 3 Smithville"
+     ],
+     "town": "Green Twp"
+    }
+   ]
+  },
+  {
+   "town": "Guilford Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:guilford-twn-hall3800-greenwich-rd-seville",
+     "name": "Guilford Twn Hall",
+     "address": "3800 Greenwich Rd, Seville",
+     "county": "Medina",
+     "precincts": [
+      "Guilford Twp A",
+      "Guilford Twp B"
+     ],
+     "town": "Guilford Twp"
+    }
+   ]
+  },
+  {
+   "town": "Hinckley Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:hinckley-twn-hall1410-ridge-rd-hinckley",
+     "name": "Hinckley Twn Hall",
+     "address": "1410 Ridge Rd, Hinckley",
+     "county": "Medina",
+     "precincts": [
+      "Hinckley Twp D",
+      "Hinckley Twp E"
+     ],
+     "town": "Hinckley Twp"
+    },
+    {
+     "id": "medina:our-saviour-ch1605-center-rd-hinckley",
+     "name": "Our Saviour Ch",
+     "address": "1605 Center Rd, Hinckley",
+     "county": "Medina",
+     "precincts": [
+      "Hinckley Twp A",
+      "Hinckley Twp B",
+      "Hinckley Twp C",
+      "Hinckley Twp F"
+     ],
+     "town": "Hinckley Twp"
+    }
+   ]
+  },
+  {
+   "town": "Independence",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8233",
+     "name": "Independence Civic Center",
+     "address": "6363 Selig Drive, Independence",
+     "town": "Independence",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Jackson",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:cinnamon-lake-lodge1443-laurel-dr-west-salem",
+     "name": "Cinnamon Lake Lodge",
+     "address": "1443 Laurel Dr, West Salem",
+     "county": "Ashland",
+     "precincts": [
+      "Jackson 1"
+     ],
+     "town": "Jackson"
+    },
+    {
+     "id": "ashland:polk-fire-station209-e-congress-st-polk",
+     "name": "Polk Fire Station",
+     "address": "209 E Congress St, Polk",
+     "county": "Ashland",
+     "precincts": [
+      "Jackson 2"
+     ],
+     "town": "Jackson"
+    }
+   ]
+  },
+  {
+   "town": "Jeromesville",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:jeromesville-fire-station1-n-alley-st-jeromesville",
+     "name": "Jeromesville Fire Station",
+     "address": "1 N Alley St, Jeromesville",
+     "county": "Ashland",
+     "precincts": [
+      "Jeromesville",
+      "Perry"
+     ],
+     "town": "Jeromesville"
+    }
+   ]
+  },
+  {
+   "town": "Lake",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:lake-township-house2499-cr-175-loudonville",
+     "name": "Lake Township House",
+     "address": "2499 Cr 175, Loudonville",
+     "county": "Ashland",
+     "precincts": [
+      "Lake"
+     ],
+     "town": "Lake"
+    }
+   ]
+  },
+  {
+   "town": "Linndale",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:2340",
+     "name": "Second Calvary Baptist Church",
+     "address": "12017 Emery Avenue, Linndale",
+     "town": "Linndale",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Liverpool Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:liverpool-muni-bldg6801-school-st-valley-city",
+     "name": "Liverpool Muni Bldg",
+     "address": "6801 School St, Valley City",
+     "county": "Medina",
+     "precincts": [
+      "Liverpool Twp A",
+      "Liverpool Twp B",
+      "Liverpool Twp C",
+      "Liverpool Twp D"
+     ],
+     "town": "Liverpool Twp"
+    }
+   ]
+  },
+  {
+   "town": "Lodi Village",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:lodi-library635-wooster-st-lodi",
+     "name": "Lodi Library",
+     "address": "635 Wooster St, Lodi",
+     "county": "Medina",
+     "precincts": [
+      "Harrisville Twp A",
+      "Homer Twp",
+      "Lodi Village A",
+      "Lodi Village B"
+     ],
+     "town": "Lodi Village"
+    }
+   ]
+  },
+  {
+   "town": "Loudonville",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:american-legion-post-257131-s-water-st-loudonville",
+     "name": "American Legion Post 257",
+     "address": "131 S Water St, Loudonville",
+     "county": "Ashland",
+     "precincts": [
+      "Green 1",
+      "Green 2",
+      "Loudonville 1",
+      "Loudonville 2"
+     ],
+     "town": "Loudonville"
+    }
+   ]
+  },
+  {
+   "town": "Medina City",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:fairgrounds-comm-ctr735-lafayette-rd-medina",
+     "name": "Fairgrounds Comm Ctr",
+     "address": "735 Lafayette Rd, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Lafayette Twp A",
+      "Lafayette Twp B",
+      "Lafayette Twp C",
+      "Lafayette Twp D",
+      "Medina City 1-A",
+      "Medina City 1-D",
+      "Medina City 3-B",
+      "Medina City 3-C",
+      "Medina City 3-D",
+      "Medina City 4-A",
+      "Medina City 4-B",
+      "Medina City 4-C",
+      "Medina City 4-D"
+     ],
+     "town": "Medina City"
+    },
+    {
+     "id": "medina:medina-fire-sta-1300-w-reagan-pkwy-medina",
+     "name": "Medina Fire Sta 1",
+     "address": "300 W Reagan Pkwy, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Medina City 1-B",
+      "Medina City 1-C",
+      "Medina City 2-B"
+     ],
+     "town": "Medina City"
+    },
+    {
+     "id": "medina:medina-rec-ctr855-weymouth-rd-medina",
+     "name": "Medina Rec Ctr",
+     "address": "855 Weymouth Rd, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Medina City 2-A",
+      "Medina City 2-C",
+      "Medina City 3-A"
+     ],
+     "town": "Medina City"
+    }
+   ]
+  },
+  {
+   "town": "Medina Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:cornerstone3939-granger-rd-medina",
+     "name": "Cornerstone",
+     "address": "3939 Granger Rd, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Medina City 2-D",
+      "Medina Twp A",
+      "Medina Twp B",
+      "Medina Twp C",
+      "Medina Twp D",
+      "Medina Twp E",
+      "Medina Twp F"
+     ],
+     "town": "Medina Twp"
+    }
+   ]
+  },
+  {
+   "town": "Middleburg Heights",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8028",
+     "name": "Grace Christian Missionary Alliance Ch",
+     "address": "7393 Pearl Road, Middleburg Heights",
+     "town": "Middleburg Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2B",
+      "2C",
+      "3B"
+     ]
+    },
+    {
+     "id": "cuya:8244",
+     "name": "Middleburg Hts Branch Library",
+     "address": "16699 East Bagley Road, Middleburg Heights",
+     "town": "Middleburg Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1B",
+      "2A"
+     ]
+    },
+    {
+     "id": "cuya:6065",
+     "name": "Middleburg Hts Community Center",
+     "address": "16000 East Bagley Road, Middleburg Heights",
+     "town": "Middleburg Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1C",
+      "3A",
+      "3C"
+     ]
+    },
+    {
+     "id": "cuya:8135",
+     "name": "Trinity Church",
+     "address": "14040 East Bagley Road, Middleburg Heights",
+     "town": "Middleburg Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4B"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Milton",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:ashland-church-of-christ1185-cr-1356-ashland",
+     "name": "Ashland Church Of Christ",
+     "address": "1185 Cr 1356, Ashland",
+     "county": "Ashland",
+     "precincts": [
+      "Milton 1",
+      "Milton 3"
+     ],
+     "town": "Milton"
+    }
+   ]
+  },
+  {
+   "town": "Milton Twp",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:grace-church-co-line-campus14960-seville-rd-sterling",
+     "name": "Grace Church Co Line Campus",
+     "address": "14960 Seville Rd, Sterling",
+     "county": "Wayne",
+     "precincts": [
+      "Milton Twp 2"
+     ],
+     "town": "Milton Twp"
+    },
+    {
+     "id": "wayne:the-old-schoolhouse9540-benner-rd-rittman",
+     "name": "The Old Schoolhouse",
+     "address": "9540 Benner Rd, Rittman",
+     "county": "Wayne",
+     "precincts": [
+      "Milton Twp 1"
+     ],
+     "town": "Milton Twp"
+    }
+   ]
+  },
+  {
+   "town": "Mohican",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:mohican-township-house2008-sr-89-jeromesville",
+     "name": "Mohican Township House",
+     "address": "2008 Sr 89, Jeromesville",
+     "county": "Ashland",
+     "precincts": [
+      "Mohican"
+     ],
+     "town": "Mohican"
+    }
+   ]
+  },
+  {
+   "town": "Montville",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:montville-twp6665-wadsworth-rd-medina",
+     "name": "Montville Twp",
+     "address": "6665 Wadsworth Rd, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Montville I"
+     ],
+     "town": "Montville"
+    }
+   ]
+  },
+  {
+   "town": "Montville Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:blue-heron3227-blue-heron-trce-medina",
+     "name": "Blue Heron",
+     "address": "3227 Blue Heron Trce, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Montville Twp C",
+      "Montville Twp D",
+      "Montville Twp E",
+      "Montville Twp F",
+      "Montville Twp G"
+     ],
+     "town": "Montville Twp"
+    },
+    {
+     "id": "medina:ch-of-the-nazarene-med6901-wooster-pike-medina",
+     "name": "Ch Of The Nazarene Med",
+     "address": "6901 Wooster Pike, Medina",
+     "county": "Medina",
+     "precincts": [
+      "Montville Twp A",
+      "Montville Twp B",
+      "Montville Twp H"
+     ],
+     "town": "Montville Twp"
+    }
+   ]
+  },
+  {
+   "town": "North Olmsted",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:6320",
+     "name": "Church Of St Clarence",
+     "address": "30106 Lorain Road, North Olmsted",
+     "town": "North Olmsted",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1D",
+      "3B",
+      "3C",
+      "3D",
+      "3F"
+     ]
+    },
+    {
+     "id": "cuya:6330",
+     "name": "Clague Road United Church Of Christ",
+     "address": "3650 Clague Road, North Olmsted",
+     "town": "North Olmsted",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4B",
+      "4C"
+     ]
+    },
+    {
+     "id": "cuya:6250",
+     "name": "John Knox Presbyterian Church",
+     "address": "25200 Lorain Road, North Olmsted",
+     "town": "North Olmsted",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2D",
+      "2E",
+      "4E"
+     ]
+    },
+    {
+     "id": "cuya:6240",
+     "name": "Maple Elementary School",
+     "address": "24101 Maple Ridge Road, North Olmsted",
+     "town": "North Olmsted",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2C"
+     ]
+    },
+    {
+     "id": "cuya:6280",
+     "name": "North Olmsted Branch Library",
+     "address": "27403 Lorain Road, North Olmsted",
+     "town": "North Olmsted",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3E",
+      "4D"
+     ]
+    },
+    {
+     "id": "cuya:6300",
+     "name": "North Olmsted Community Cabin",
+     "address": "28114 Lorain Road North Olmsted, North Olmsted",
+     "town": "North Olmsted",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C",
+      "1E"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "North Royalton",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8162",
+     "name": "North Royalton Branch Library",
+     "address": "5071 Wallings Road, North Royalton",
+     "town": "North Royalton",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2C",
+      "2D"
+     ]
+    },
+    {
+     "id": "cuya:8237",
+     "name": "North Royalton City Hall",
+     "address": "14600 State Road, North Royalton",
+     "town": "North Royalton",
+     "county": "Cuyahoga",
+     "precincts": [
+      "6A",
+      "6B",
+      "6C",
+      "6D"
+     ]
+    },
+    {
+     "id": "cuya:8312",
+     "name": "North Royalton Elementary School",
+     "address": "16400 State Road, North Royalton",
+     "town": "North Royalton",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4B",
+      "4C",
+      "4D",
+      "5A",
+      "5B",
+      "5C",
+      "5D"
+     ]
+    },
+    {
+     "id": "cuya:6410",
+     "name": "North Royalton Senior Center",
+     "address": "13220 Ridge Road, North Royalton",
+     "town": "North Royalton",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C",
+      "3A",
+      "3B",
+      "3C",
+      "3D"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Oakwood",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:6532",
+     "name": "Oakwood Community Center",
+     "address": "23035 Broadway Avenue, Oakwood",
+     "town": "Oakwood",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "2A",
+      "3A",
+      "4A",
+      "5A"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Olmsted Falls",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:6510",
+     "name": "Falls Lenox Primary School",
+     "address": "26450 Bagley Road, Olmsted Falls",
+     "town": "Olmsted Falls",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "2A",
+      "2B.01",
+      "2B.02",
+      "3A",
+      "3B",
+      "4A",
+      "4B"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Olmsted Township",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8293",
+     "name": "Community Room In Olmsted Township",
+     "address": "7900 Fitch Road, Olmsted Township",
+     "town": "Olmsted Township",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A",
+      "B.01",
+      "B.02",
+      "I"
+     ]
+    },
+    {
+     "id": "cuya:8156",
+     "name": "Olmsted Falls Intermediate School",
+     "address": "27043 Bagley Road, Olmsted Township",
+     "town": "Olmsted Township",
+     "county": "Cuyahoga",
+     "precincts": [
+      "C",
+      "D.01",
+      "D.02",
+      "G"
+     ]
+    },
+    {
+     "id": "cuya:8106",
+     "name": "Olmsted Falls Middle School",
+     "address": "27045 Bagley Road, Olmsted Township",
+     "town": "Olmsted Township",
+     "county": "Cuyahoga",
+     "precincts": [
+      "E",
+      "F",
+      "H"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Orange",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:trinity-baptist-church891-sr-511-ashland",
+     "name": "Trinity Baptist Church",
+     "address": "891 Sr 511, Ashland",
+     "county": "Ashland",
+     "precincts": [
+      "Orange 1",
+      "Orange 2"
+     ],
+     "town": "Orange"
+    }
+   ]
+  },
+  {
+   "town": "Orrville City",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:aultman-orrville-hospital832-s-main-st-orrville",
+     "name": "Aultman Orrville Hospital",
+     "address": "832 S Main St, Orrville",
+     "county": "Wayne",
+     "precincts": [
+      "Orrville City 2"
+     ],
+     "town": "Orrville City"
+    },
+    {
+     "id": "wayne:orrville-christian-church925-n-elm-st-orrville",
+     "name": "Orrville Christian Church",
+     "address": "925 N Elm St, Orrville",
+     "county": "Wayne",
+     "precincts": [
+      "Green Twp 1",
+      "Orrville City 3",
+      "Orrville City 4-A",
+      "Orrville City 4-B"
+     ],
+     "town": "Orrville City"
+    },
+    {
+     "id": "wayne:orrville-public-library230-n-main-st-orrville",
+     "name": "Orrville Public Library",
+     "address": "230 N Main St, Orrville",
+     "county": "Wayne",
+     "precincts": [
+      "Orrville City 1"
+     ],
+     "town": "Orrville City"
+    }
+   ]
+  },
+  {
+   "town": "Parma",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8115",
+     "name": "American Legion Post 572",
+     "address": "6483 State Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3D"
+     ]
+    },
+    {
+     "id": "cuya:8112",
+     "name": "Bethel Christian",
+     "address": "12901 West Pleasant Valley Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "7A",
+      "7D",
+      "7F"
+     ]
+    },
+    {
+     "id": "cuya:6750",
+     "name": "Dentzler Elementary School",
+     "address": "3600 Dentzler Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "5C",
+      "5E",
+      "5F",
+      "6A",
+      "6B"
+     ]
+    },
+    {
+     "id": "cuya:6680",
+     "name": "Donna Smallwood Activities Center",
+     "address": "7001 West Ridgewood Drive, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "8B",
+      "8D",
+      "8E"
+     ]
+    },
+    {
+     "id": "cuya:6720",
+     "name": "Elks Hall",
+     "address": "2300 Snow Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "9B",
+      "9C"
+     ]
+    },
+    {
+     "id": "cuya:6730",
+     "name": "Green Valley Elementary School",
+     "address": "2401 West Pleasant Valley Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "6C",
+      "6E"
+     ]
+    },
+    {
+     "id": "cuya:6630",
+     "name": "Greenbriar Middle School Annex",
+     "address": "11810 Huffman Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C"
+     ]
+    },
+    {
+     "id": "cuya:6700",
+     "name": "John Muir Elementary School",
+     "address": "5531 West 24th Street, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4E"
+     ]
+    },
+    {
+     "id": "cuya:6770",
+     "name": "Michael A Ries Rink",
+     "address": "5000 Forestwood Drive, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2C",
+      "2D"
+     ]
+    },
+    {
+     "id": "cuya:6740",
+     "name": "Normandy High School",
+     "address": "2500 West Pleasant Valley Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "6D",
+      "9E"
+     ]
+    },
+    {
+     "id": "cuya:6790",
+     "name": "Parma Evangelical Lutheran Church",
+     "address": "5280 Broadview Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4B",
+      "4D"
+     ]
+    },
+    {
+     "id": "cuya:6930",
+     "name": "Parma Library",
+     "address": "6996 Powers Boulevard, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "5B",
+      "5D",
+      "9A"
+     ]
+    },
+    {
+     "id": "cuya:6940",
+     "name": "Pleasant Valley Elementary School",
+     "address": "9906 West Pleasant Valley Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "5A",
+      "7B",
+      "7C",
+      "7E"
+     ]
+    },
+    {
+     "id": "cuya:6710",
+     "name": "Ridge-Brook Elementary School",
+     "address": "7915 Manhattan Avenue, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1D",
+      "1E",
+      "1F"
+     ]
+    },
+    {
+     "id": "cuya:6890",
+     "name": "Ridgewood United Methodist Church",
+     "address": "6330 Ridge Road, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2E",
+      "8A",
+      "8C"
+     ]
+    },
+    {
+     "id": "cuya:6880",
+     "name": "Shiloh Middle School",
+     "address": "2303 Grantwood Drive, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4C",
+      "9D"
+     ]
+    },
+    {
+     "id": "cuya:6810",
+     "name": "Thoreau Park Elementary School",
+     "address": "5401 West 54th Street, Parma",
+     "town": "Parma",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3B",
+      "3C",
+      "3E"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Parma Heights",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:6660",
+     "name": "Cross Of Hope Church",
+     "address": "8971 West Ridgewood Drive, Parma Heights",
+     "town": "Parma Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2C",
+      "4A",
+      "4B",
+      "4C"
+     ]
+    },
+    {
+     "id": "cuya:8340",
+     "name": "Parma Hts Branch Library",
+     "address": "6188 Pearl Road, Parma Heights",
+     "town": "Parma Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C"
+     ]
+    },
+    {
+     "id": "cuya:6670",
+     "name": "Valley Forge High School",
+     "address": "9999 Independence Boulevard, Parma Heights",
+     "town": "Parma Heights",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3B",
+      "3C"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Rittman City",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:life-ministries-tabernacle9878-krabill-rd-rittman",
+     "name": "Life Ministries Tabernacle",
+     "address": "9878 Krabill Rd, Rittman",
+     "county": "Wayne",
+     "precincts": [
+      "Rittman City 4"
+     ],
+     "town": "Rittman City"
+    },
+    {
+     "id": "wayne:rittman-public-library75-n-main-st-rittman",
+     "name": "Rittman Public Library",
+     "address": "75 N Main St, Rittman",
+     "county": "Wayne",
+     "precincts": [
+      "Rittman City 1"
+     ],
+     "town": "Rittman City"
+    },
+    {
+     "id": "wayne:rittman-recreation-center200-saurer-st-rittman",
+     "name": "Rittman Recreation Center",
+     "address": "200 Saurer St, Rittman",
+     "county": "Wayne",
+     "precincts": [
+      "Rittman City 2",
+      "Rittman City 3"
+     ],
+     "town": "Rittman City"
+    }
+   ]
+  },
+  {
+   "town": "Rocky River",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:7050",
+     "name": "Rocky River Civic Center",
+     "address": "21016 Hilliard Boulevard, Rocky River",
+     "town": "Rocky River",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "2D",
+      "4A",
+      "4B",
+      "4C",
+      "4D"
+     ]
+    },
+    {
+     "id": "cuya:7070",
+     "name": "Rocky River Presbyterian Church",
+     "address": "21750 Detroit Road, Rocky River",
+     "town": "Rocky River",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1B",
+      "1C",
+      "1D",
+      "2C"
+     ]
+    },
+    {
+     "id": "cuya:7030",
+     "name": "Rocky River United Methodist Church",
+     "address": "19414 Detroit Road, Rocky River",
+     "town": "Rocky River",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "3A",
+      "3B",
+      "3C",
+      "3D"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Seven Hills",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8316",
+     "name": "Seven Hills Recreation Center",
+     "address": "7777 Summitview Drive, Seven Hills",
+     "town": "Seven Hills",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3B",
+      "4A",
+      "4B"
+     ]
+    },
+    {
+     "id": "cuya:7240",
+     "name": "St Peter United Church Of Christ",
+     "address": "125 East Ridgewood Drive, Seven Hills",
+     "town": "Seven Hills",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "2A",
+      "2B"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Seville Village",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:seville-presbyterian101-center-st-seville",
+     "name": "Seville Presbyterian",
+     "address": "101 Center St, Seville",
+     "county": "Medina",
+     "precincts": [
+      "Seville Village A",
+      "Seville Village B"
+     ],
+     "town": "Seville Village"
+    }
+   ]
+  },
+  {
+   "town": "Sharon Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:sharon-maint-bldg6801-ridge-rd-wadsworth",
+     "name": "Sharon Maint Bldg",
+     "address": "6801 Ridge Rd, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Sharon Twp B",
+      "Sharon Twp C"
+     ],
+     "town": "Sharon Twp"
+    },
+    {
+     "id": "medina:sharon-twn-hall1323-sharon-copley-rd-wadsworth",
+     "name": "Sharon Twn Hall",
+     "address": "1323 Sharon Copley Rd, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Sharon Twp A",
+      "Sharon Twp D"
+     ],
+     "town": "Sharon Twp"
+    }
+   ]
+  },
+  {
+   "town": "Solon",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:7470",
+     "name": "Advent Lutheran Church Solon",
+     "address": "5525 Harper Road, Solon",
+     "town": "Solon",
+     "county": "Cuyahoga",
+     "precincts": [
+      "5A.",
+      "5B",
+      "5C"
+     ]
+    },
+    {
+     "id": "cuya:7485",
+     "name": "Grantwood Golf Course",
+     "address": "38855 Aurora Road, Solon",
+     "town": "Solon",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C"
+     ]
+    },
+    {
+     "id": "cuya:8079",
+     "name": "Solon City Hall",
+     "address": "34200 Bainbridge Road, Solon",
+     "town": "Solon",
+     "county": "Cuyahoga",
+     "precincts": [
+      "6A",
+      "6B",
+      "6C"
+     ]
+    },
+    {
+     "id": "cuya:8249",
+     "name": "Solon Community Center",
+     "address": "35000 Portz Parkway, Solon",
+     "town": "Solon",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2B",
+      "3A",
+      "3B",
+      "4A",
+      "4B",
+      "4C",
+      "7A",
+      "7B"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Strongsville",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:7615",
+     "name": "Bessie Kinsner Elementary School",
+     "address": "19091 Waterford Parkway, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2F",
+      "2I",
+      "4C",
+      "4E"
+     ]
+    },
+    {
+     "id": "cuya:7550",
+     "name": "Edith Whitney Elementary School",
+     "address": "13548 Whitney Road, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1C",
+      "1D",
+      "1F"
+     ]
+    },
+    {
+     "id": "cuya:7620",
+     "name": "Edna Surrarrer Elementary School",
+     "address": "9306 Priem Road, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3E",
+      "3F",
+      "3G"
+     ]
+    },
+    {
+     "id": "cuya:8188",
+     "name": "Ehrnfelt Recreation Senior Center",
+     "address": "18100 Royalton Road, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1B",
+      "1E",
+      "1G",
+      "1H"
+     ]
+    },
+    {
+     "id": "cuya:7560",
+     "name": "Howard Chapman Elementary School",
+     "address": "13883 Drake Road, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2A",
+      "2C",
+      "2D",
+      "2H"
+     ]
+    },
+    {
+     "id": "cuya:8208",
+     "name": "Strongsville City Schools Admin Offices",
+     "address": "18199 Cook Avenue, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2B",
+      "2E",
+      "2G",
+      "4A",
+      "4H"
+     ]
+    },
+    {
+     "id": "cuya:7540",
+     "name": "Strongsville Community Library",
+     "address": "18700 Westwood Drive, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3A",
+      "3D",
+      "3H",
+      "4F"
+     ]
+    },
+    {
+     "id": "cuya:7600",
+     "name": "Strongsville High School",
+     "address": "20025 Lunn Road, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4B",
+      "4D",
+      "4G"
+     ]
+    },
+    {
+     "id": "cuya:7530",
+     "name": "Strongsville Middle School",
+     "address": "13200 Pearl Road, Strongsville",
+     "town": "Strongsville",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3B",
+      "3C"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Sullivan",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:1st-congregational-church503-us-224-sullivan",
+     "name": "1st Congregational Church",
+     "address": "503 Us 224, Sullivan",
+     "county": "Ashland",
+     "precincts": [
+      "Sullivan 1",
+      "Sullivan 2"
+     ],
+     "town": "Sullivan"
+    }
+   ]
+  },
+  {
+   "town": "Valley View",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:7710",
+     "name": "Valley View Community Center",
+     "address": "6828 Hathaway Road, Valley View",
+     "town": "Valley View",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A",
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Vermillion",
+   "county": "Ashland",
+   "pollingPlaces": [
+    {
+     "id": "ashland:hayesville-methodist-church44-s-mechanic-st-hayesville",
+     "name": "Hayesville Methodist Church",
+     "address": "44 S Mechanic St, Hayesville",
+     "county": "Ashland",
+     "precincts": [
+      "Vermillion 1",
+      "Vermillion 2"
+     ],
+     "town": "Vermillion"
+    }
+   ]
+  },
+  {
+   "town": "Wadsworth City",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:ella-everhard-libr132-broad-st-wadsworth",
+     "name": "Ella Everhard Libr",
+     "address": "132 Broad St, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Wadsworth City 2-C",
+      "Wadsworth City 3-B"
+     ],
+     "town": "Wadsworth City"
+    },
+    {
+     "id": "medina:grace-evang-lutheran146-high-st-wadsworth",
+     "name": "Grace Evang Lutheran",
+     "address": "146 High St, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Wadsworth City 2-A",
+      "Wadsworth City 3-C"
+     ],
+     "town": "Wadsworth City"
+    },
+    {
+     "id": "medina:masonic-temple660-high-st-wadsworth",
+     "name": "Masonic Temple",
+     "address": "660 High St, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Wadsworth City 1-A",
+      "Wadsworth City 1-B",
+      "Wadsworth City 2-B"
+     ],
+     "town": "Wadsworth City"
+    },
+    {
+     "id": "medina:mosaic-wadsworth118-high-st-wadsworth",
+     "name": "Mosaic Wadsworth",
+     "address": "118 High St, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Wadsworth City 1-C",
+      "Wadsworth City 1-D",
+      "Wadsworth City 1-E",
+      "Wadsworth City 2-D"
+     ],
+     "town": "Wadsworth City"
+    },
+    {
+     "id": "medina:wads-city-hall120-maple-st-wadsworth",
+     "name": "Wads City Hall",
+     "address": "120 Maple St, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Wadsworth City 3-A",
+      "Wadsworth City 4-A"
+     ],
+     "town": "Wadsworth City"
+    }
+   ]
+  },
+  {
+   "town": "Wadsworth Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:radiant-life-ch844-hartman-rd-wadsworth",
+     "name": "Radiant Life Ch",
+     "address": "844 Hartman Rd, Wadsworth",
+     "county": "Medina",
+     "precincts": [
+      "Wadsworth City 4-B",
+      "Wadsworth City 4-C",
+      "Wadsworth Twp A",
+      "Wadsworth Twp B",
+      "Wadsworth Twp C"
+     ],
+     "town": "Wadsworth Twp"
+    }
+   ]
+  },
+  {
+   "town": "Walton Hills",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:8333",
+     "name": "Walton Hills Community Event Center",
+     "address": "14660 Alexander Road, Walton Hills",
+     "town": "Walton Hills",
+     "county": "Cuyahoga",
+     "precincts": [
+      "A",
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Wayne Twp",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:church-of-the-cross-umc5100-cleveland-rd-wooster",
+     "name": "Church Of The Cross Umc",
+     "address": "5100 Cleveland Rd, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Wayne Twp 1",
+      "Wayne Twp 3"
+     ],
+     "town": "Wayne Twp"
+    }
+   ]
+  },
+  {
+   "town": "Westfield Center Village",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:westfield-ctr-muni-bldg6701-greenwich-rd-westfield-center",
+     "name": "Westfield Ctr Muni Bldg",
+     "address": "6701 Greenwich Rd, Westfield Center",
+     "county": "Medina",
+     "precincts": [
+      "Westfield Center Village"
+     ],
+     "town": "Westfield Center Village"
+    }
+   ]
+  },
+  {
+   "town": "Westfield Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:westfield-twp-hall6699-buffham-rd-seville",
+     "name": "Westfield Twp Hall",
+     "address": "6699 Buffham Rd, Seville",
+     "county": "Medina",
+     "precincts": [
+      "Westfield Twp A",
+      "Westfield Twp B"
+     ],
+     "town": "Westfield Twp"
+    }
+   ]
+  },
+  {
+   "town": "Westlake",
+   "county": "Cuyahoga",
+   "pollingPlaces": [
+    {
+     "id": "cuya:7870",
+     "name": "Clague Cabin",
+     "address": "1500 Clague Road, Westlake",
+     "town": "Westlake",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1A",
+      "1B",
+      "1C"
+     ]
+    },
+    {
+     "id": "cuya:7890",
+     "name": "St Ladislas Church",
+     "address": "2345 Bassett Road, Westlake",
+     "town": "Westlake",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3B",
+      "5A",
+      "5B",
+      "5C",
+      "5D"
+     ]
+    },
+    {
+     "id": "cuya:8321",
+     "name": "Westlake Boe At Hilliard",
+     "address": "24365 Hilliard Boulevard, Westlake",
+     "town": "Westlake",
+     "county": "Cuyahoga",
+     "precincts": [
+      "1D",
+      "2A",
+      "2C",
+      "3A"
+     ]
+    },
+    {
+     "id": "cuya:8056",
+     "name": "Westlake City Hall",
+     "address": "27700 Hilliard Boulevard, Westlake",
+     "town": "Westlake",
+     "county": "Cuyahoga",
+     "precincts": [
+      "3C",
+      "3D"
+     ]
+    },
+    {
+     "id": "cuya:8313",
+     "name": "Westlake Ctr For Community Services",
+     "address": "28975 Hilliard Boulevard, Westlake",
+     "town": "Westlake",
+     "county": "Cuyahoga",
+     "precincts": [
+      "2B",
+      "2D",
+      "6A",
+      "6B",
+      "6C",
+      "6D"
+     ]
+    },
+    {
+     "id": "cuya:8196",
+     "name": "Westlake Recreation Center",
+     "address": "28955 Hilliard Boulevard, Westlake",
+     "town": "Westlake",
+     "county": "Cuyahoga",
+     "precincts": [
+      "4A",
+      "4B",
+      "4C",
+      "4D"
+     ]
+    }
+   ]
+  },
+  {
+   "town": "Wooster City",
+   "county": "Wayne",
+   "pollingPlaces": [
+    {
+     "id": "wayne:church-of-the-nazarene3100-oak-hill-rd-wooster",
+     "name": "Church Of The Nazarene",
+     "address": "3100 Oak Hill Rd, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Wayne Twp 2",
+      "Wooster City 4-B",
+      "Wooster City 4-C"
+     ],
+     "town": "Wooster City"
+    },
+    {
+     "id": "wayne:connection-church1633-portage-rd-wooster",
+     "name": "Connection Church",
+     "address": "1633 Portage Rd, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Wooster City 2-A",
+      "Wooster City 2-D",
+      "Wooster City 3-A",
+      "Wooster City 3-D"
+     ],
+     "town": "Wooster City"
+    },
+    {
+     "id": "wayne:first-presbyterian-church621-college-ave-wooster",
+     "name": "First Presbyterian Church",
+     "address": "621 College Ave, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Wooster City 1-C",
+      "Wooster City 2-B",
+      "Wooster City 2-C"
+     ],
+     "town": "Wooster City"
+    },
+    {
+     "id": "wayne:foursquare-gospel-church3670-friendsville-rd-wooster",
+     "name": "Foursquare Gospel Church",
+     "address": "3670 Friendsville Rd, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Wooster City 3-B",
+      "Wooster City 3-C"
+     ],
+     "town": "Wooster City"
+    },
+    {
+     "id": "wayne:parkview-christian-church1912-burbank-rd-wooster",
+     "name": "Parkview Christian Church",
+     "address": "1912 Burbank Rd, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Wooster City 4-A",
+      "Wooster City 4-D"
+     ],
+     "town": "Wooster City"
+    },
+    {
+     "id": "wayne:wayne-county-fair-event-center199-vanover-st-wooster",
+     "name": "Wayne County Fair Event Center",
+     "address": "199 Vanover St, Wooster",
+     "county": "Wayne",
+     "precincts": [
+      "Wooster City 1-B"
+     ],
+     "town": "Wooster City"
+    }
+   ]
+  },
+  {
+   "town": "York Twp",
+   "county": "Medina",
+   "pollingPlaces": [
+    {
+     "id": "medina:york-twp-hall6609-norwalk-rd-medina",
+     "name": "York Twp Hall",
+     "address": "6609 Norwalk Rd, Medina",
+     "county": "Medina",
+     "precincts": [
+      "York Twp A",
+      "York Twp B",
+      "York Twp C"
+     ],
+     "town": "York Twp"
+    }
+   ]
+  }
+ ]
+}

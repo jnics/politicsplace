@@ -1,0 +1,5455 @@
+{
+ "note": "OH U.S. House vote by party aggregated onto the 2027-2033 district lines from precinct returns. 2022 + 2024 (MEDSL) are on the same 2022-2032 map as their election and back the old-vs-new redraw comparison. 2016-2020 (OpenElections, joined by precinct code) were run on the 16-seat 2012-2020 map, so only their current-lines aggregate is kept. Two-party shares only.",
+ "OH": {
+  "1": {
+   "2016": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "marginPct": 18.8
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 48.7,
+    "rPct": 51.3,
+    "marginPct": 2.6
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 46.7,
+    "rPct": 53.3,
+    "marginPct": 6.6
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "marginPct": 2.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 50.2,
+    "rPct": 49.8,
+    "marginPct": 0.4
+   }
+  },
+  "2": {
+   "2016": {
+    "winner": "R",
+    "dPct": 29.6,
+    "rPct": 70.4,
+    "marginPct": 40.8
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 32.5,
+    "rPct": 67.5,
+    "marginPct": 35
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 27.8,
+    "rPct": 72.2,
+    "marginPct": 44.4
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 30.2,
+    "rPct": 69.8,
+    "marginPct": 39.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.5,
+    "rPct": 69.5,
+    "marginPct": 39
+   }
+  },
+  "3": {
+   "2016": {
+    "winner": "D",
+    "dPct": 61.7,
+    "rPct": 38.3,
+    "marginPct": 23.4
+   },
+   "2018": {
+    "winner": "D",
+    "dPct": 71.2,
+    "rPct": 28.8,
+    "marginPct": 42.4
+   },
+   "2020": {
+    "winner": "D",
+    "dPct": 68.9,
+    "rPct": 31.1,
+    "marginPct": 37.8
+   },
+   "2022": {
+    "winner": "D",
+    "dPct": 70.5,
+    "rPct": 29.5,
+    "marginPct": 41
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.8,
+    "rPct": 29.2,
+    "marginPct": 41.6
+   }
+  },
+  "4": {
+   "2016": {
+    "winner": "R",
+    "dPct": 25.8,
+    "rPct": 74.2,
+    "marginPct": 48.4
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 31.4,
+    "rPct": 68.6,
+    "marginPct": 37.2
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 27.5,
+    "rPct": 72.5,
+    "marginPct": 45
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 24.9,
+    "rPct": 75.1,
+    "marginPct": 50.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 25.6,
+    "rPct": 74.4,
+    "marginPct": 48.8
+   }
+  },
+  "5": {
+   "2016": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "marginPct": 22
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 43.7,
+    "rPct": 56.3,
+    "marginPct": 12.6
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 37.1,
+    "rPct": 62.9,
+    "marginPct": 25.8
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 32.9,
+    "rPct": 67.1,
+    "marginPct": 34.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.9,
+    "rPct": 69.1,
+    "marginPct": 38.2
+   }
+  },
+  "6": {
+   "2016": {
+    "winner": "R",
+    "dPct": 39.8,
+    "rPct": 60.2,
+    "marginPct": 20.4
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 41.2,
+    "rPct": 58.8,
+    "marginPct": 17.6
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 33.6,
+    "rPct": 66.4,
+    "marginPct": 32.8
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 37.8,
+    "rPct": 62.2,
+    "marginPct": 24.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.3,
+    "rPct": 61.7,
+    "marginPct": 23.4
+   }
+  },
+  "7": {
+   "2016": {
+    "winner": "R",
+    "dPct": 38.8,
+    "rPct": 61.2,
+    "marginPct": 22.4
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 46.8,
+    "rPct": 53.2,
+    "marginPct": 6.4
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "marginPct": 19.4
+   },
+   "2022": {
+    "winner": "D",
+    "dPct": 50.9,
+    "rPct": 49.1,
+    "marginPct": 1.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "marginPct": 4.2
+   }
+  },
+  "8": {
+   "2016": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "marginPct": 33.4
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 40.9,
+    "rPct": 59.1,
+    "marginPct": 18.2
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "marginPct": 20.6
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 43.7,
+    "rPct": 56.3,
+    "marginPct": 12.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 46.1,
+    "rPct": 53.9,
+    "marginPct": 7.8
+   }
+  },
+  "9": {
+   "2016": {
+    "winner": "R",
+    "dPct": 46.5,
+    "rPct": 53.5,
+    "marginPct": 7
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 49.6,
+    "rPct": 50.4,
+    "marginPct": 0.8
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 44.9,
+    "rPct": 55.1,
+    "marginPct": 10.2
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "marginPct": 23.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "marginPct": 36
+   }
+  },
+  "10": {
+   "2016": {
+    "winner": "R",
+    "dPct": 33.8,
+    "rPct": 66.2,
+    "marginPct": 32.4
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 42.8,
+    "rPct": 57.2,
+    "marginPct": 14.4
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 41.7,
+    "rPct": 58.3,
+    "marginPct": 16.6
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 38.3,
+    "rPct": 61.7,
+    "marginPct": 23.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "marginPct": 19
+   }
+  },
+  "11": {
+   "2016": {
+    "winner": "D",
+    "dPct": 78.6,
+    "rPct": 21.4,
+    "marginPct": 57.2
+   },
+   "2018": {
+    "winner": "D",
+    "dPct": 81.3,
+    "rPct": 18.7,
+    "marginPct": 62.6
+   },
+   "2020": {
+    "winner": "D",
+    "dPct": 78.3,
+    "rPct": 21.7,
+    "marginPct": 56.6
+   },
+   "2022": {
+    "winner": "D",
+    "dPct": 77.8,
+    "rPct": 22.2,
+    "marginPct": 55.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 80,
+    "rPct": 20,
+    "marginPct": 60
+   }
+  },
+  "12": {
+   "2016": {
+    "winner": "R",
+    "dPct": 26.2,
+    "rPct": 73.8,
+    "marginPct": 47.6
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 36.4,
+    "rPct": 63.6,
+    "marginPct": 27.2
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 31.3,
+    "rPct": 68.7,
+    "marginPct": 37.4
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 32.1,
+    "rPct": 67.9,
+    "marginPct": 35.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "marginPct": 32.6
+   }
+  },
+  "13": {
+   "2016": {
+    "winner": "D",
+    "dPct": 52,
+    "rPct": 48,
+    "marginPct": 4
+   },
+   "2018": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "marginPct": 12.4
+   },
+   "2020": {
+    "winner": "D",
+    "dPct": 50.6,
+    "rPct": 49.4,
+    "marginPct": 1.2
+   },
+   "2022": {
+    "winner": "D",
+    "dPct": 55.9,
+    "rPct": 44.1,
+    "marginPct": 11.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "marginPct": 8.8
+   }
+  },
+  "14": {
+   "2016": {
+    "winner": "R",
+    "dPct": 44.5,
+    "rPct": 55.5,
+    "marginPct": 11
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "marginPct": 9.4
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 38.8,
+    "rPct": 61.2,
+    "marginPct": 22.4
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 41.8,
+    "rPct": 58.2,
+    "marginPct": 16.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "marginPct": 19.2
+   }
+  },
+  "15": {
+   "2016": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "marginPct": 24.8
+   },
+   "2018": {
+    "winner": "R",
+    "dPct": 45.5,
+    "rPct": 54.5,
+    "marginPct": 9
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 42.4,
+    "rPct": 57.6,
+    "marginPct": 15.2
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 46.1,
+    "rPct": 53.9,
+    "marginPct": 7.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 46.4,
+    "rPct": 53.6,
+    "marginPct": 7.2
+   }
+  }
+ },
+ "NC": {
+  "1": {
+   "2016": {
+    "winner": "D",
+    "dPct": 52.9,
+    "rPct": 47.1,
+    "marginPct": 5.8
+   },
+   "2020": {
+    "winner": "D",
+    "dPct": 50.6,
+    "rPct": 49.4,
+    "marginPct": 1.2
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "marginPct": 4.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 50.8,
+    "rPct": 49.2,
+    "marginPct": 1.6
+   }
+  },
+  "2": {
+   "2016": {
+    "winner": "D",
+    "dPct": 59.9,
+    "rPct": 40.1,
+    "marginPct": 19.8
+   },
+   "2020": {
+    "winner": "D",
+    "dPct": 63.3,
+    "rPct": 36.7,
+    "marginPct": 26.6
+   },
+   "2022": {
+    "winner": "D",
+    "dPct": 65.7,
+    "rPct": 34.3,
+    "marginPct": 31.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 64.1,
+    "rPct": 35.9,
+    "marginPct": 28.2
+   }
+  },
+  "3": {
+   "2016": {
+    "winner": "R",
+    "dPct": 36.1,
+    "rPct": 63.9,
+    "marginPct": 27.8
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "marginPct": 20.6
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "marginPct": 23.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0.1,
+    "rPct": 99.9,
+    "marginPct": 99.8
+   }
+  },
+  "4": {
+   "2016": {
+    "winner": "D",
+    "dPct": 70.3,
+    "rPct": 29.7,
+    "marginPct": 40.6
+   },
+   "2020": {
+    "winner": "D",
+    "dPct": 73.5,
+    "rPct": 26.5,
+    "marginPct": 47
+   },
+   "2022": {
+    "winner": "D",
+    "dPct": 73.7,
+    "rPct": 26.3,
+    "marginPct": 47.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 73.4,
+    "rPct": 26.6,
+    "marginPct": 46.8
+   }
+  },
+  "5": {
+   "2016": {
+    "winner": "R",
+    "dPct": 42.6,
+    "rPct": 57.4,
+    "marginPct": 14.8
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "marginPct": 18.8
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "marginPct": 21.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.5,
+    "rPct": 63.5,
+    "marginPct": 27
+   }
+  },
+  "6": {
+   "2016": {
+    "winner": "R",
+    "dPct": 38.9,
+    "rPct": 61.1,
+    "marginPct": 22.2
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "marginPct": 19
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "marginPct": 22
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 10.2,
+    "rPct": 89.8,
+    "marginPct": 79.6
+   }
+  },
+  "7": {
+   "2016": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "marginPct": 15.4
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 43.1,
+    "rPct": 56.9,
+    "marginPct": 13.8
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "marginPct": 15.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 41.3,
+    "rPct": 58.7,
+    "marginPct": 17.4
+   }
+  },
+  "8": {
+   "2016": {
+    "winner": "R",
+    "dPct": 38.3,
+    "rPct": 61.7,
+    "marginPct": 23.4
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 42.6,
+    "rPct": 57.4,
+    "marginPct": 14.8
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "marginPct": 20.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.9,
+    "rPct": 61.1,
+    "marginPct": 22.2
+   }
+  },
+  "9": {
+   "2016": {
+    "winner": "R",
+    "dPct": 40.8,
+    "rPct": 59.2,
+    "marginPct": 18.4
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 45.4,
+    "rPct": 54.6,
+    "marginPct": 9.2
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 41.4,
+    "rPct": 58.6,
+    "marginPct": 17.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.9,
+    "rPct": 59.1,
+    "marginPct": 18.2
+   }
+  },
+  "10": {
+   "2016": {
+    "winner": "R",
+    "dPct": 39.8,
+    "rPct": 60.2,
+    "marginPct": 20.4
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "marginPct": 18.8
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 38.3,
+    "rPct": 61.7,
+    "marginPct": 23.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "marginPct": 20.6
+   }
+  },
+  "11": {
+   "2016": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "marginPct": 15.8
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 44.3,
+    "rPct": 55.7,
+    "marginPct": 11.4
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 44.9,
+    "rPct": 55.1,
+    "marginPct": 10.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "marginPct": 13.6
+   }
+  },
+  "12": {
+   "2016": {
+    "winner": "D",
+    "dPct": 69.6,
+    "rPct": 30.4,
+    "marginPct": 39.2
+   },
+   "2020": {
+    "winner": "D",
+    "dPct": 92.1,
+    "rPct": 7.9,
+    "marginPct": 84.2
+   },
+   "2022": {
+    "winner": "D",
+    "dPct": 73.9,
+    "rPct": 26.1,
+    "marginPct": 47.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 73.7,
+    "rPct": 26.3,
+    "marginPct": 47.4
+   }
+  },
+  "13": {
+   "2016": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "marginPct": 16.2
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 45.1,
+    "rPct": 54.9,
+    "marginPct": 9.8
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "marginPct": 12.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 44.3,
+    "rPct": 55.7,
+    "marginPct": 11.4
+   }
+  },
+  "14": {
+   "2016": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "marginPct": 24.8
+   },
+   "2020": {
+    "winner": "R",
+    "dPct": 49,
+    "rPct": 51,
+    "marginPct": 2
+   },
+   "2022": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "marginPct": 18
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42,
+    "rPct": 58,
+    "marginPct": 16
+   }
+  }
+ },
+ "MI": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "marginPct": 23.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "marginPct": 21.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35,
+    "rPct": 65,
+    "marginPct": 30
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 32.7,
+    "rPct": 67.3,
+    "marginPct": 34.6
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.7,
+    "rPct": 43.3,
+    "marginPct": 13.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 55.1,
+    "rPct": 44.9,
+    "marginPct": 10.2
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "marginPct": 12.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 44.1,
+    "rPct": 55.9,
+    "marginPct": 11.8
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.9,
+    "rPct": 64.1,
+    "marginPct": 28.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "marginPct": 33.4
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 65.9,
+    "rPct": 34.1,
+    "marginPct": 31.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 63.9,
+    "rPct": 36.1,
+    "marginPct": 27.8
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 52.8,
+    "rPct": 47.2,
+    "marginPct": 5.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 48.1,
+    "rPct": 51.9,
+    "marginPct": 3.8
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.3,
+    "rPct": 43.7,
+    "marginPct": 12.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 53.5,
+    "rPct": 46.5,
+    "marginPct": 7
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "R",
+    "dPct": 34.2,
+    "rPct": 65.8,
+    "marginPct": 31.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.6,
+    "rPct": 69.4,
+    "marginPct": 38.8
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "R",
+    "dPct": 49.7,
+    "rPct": 50.3,
+    "marginPct": 0.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 46.8,
+    "rPct": 53.2,
+    "marginPct": 6.4
+   }
+  },
+  "11": {
+   "2022": {
+    "winner": "D",
+    "dPct": 61.3,
+    "rPct": 38.7,
+    "marginPct": 22.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 59.5,
+    "rPct": 40.5,
+    "marginPct": 19
+   }
+  },
+  "12": {
+   "2022": {
+    "winner": "D",
+    "dPct": 73,
+    "rPct": 27,
+    "marginPct": 46
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 73.3,
+    "rPct": 26.7,
+    "marginPct": 46.6
+   }
+  },
+  "13": {
+   "2022": {
+    "winner": "D",
+    "dPct": 74.8,
+    "rPct": 25.2,
+    "marginPct": 49.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 73.7,
+    "rPct": 26.3,
+    "marginPct": 47.4
+   }
+  }
+ },
+ "GA": {
+  "1": {
+   "2024": {
+    "winner": "R",
+    "dPct": 38,
+    "rPct": 62,
+    "marginPct": 24
+   }
+  },
+  "2": {
+   "2024": {
+    "winner": "D",
+    "dPct": 56.3,
+    "rPct": 43.7,
+    "marginPct": 12.6
+   }
+  },
+  "3": {
+   "2024": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "marginPct": 32.6
+   }
+  },
+  "4": {
+   "2024": {
+    "winner": "D",
+    "dPct": 75.6,
+    "rPct": 24.4,
+    "marginPct": 51.2
+   }
+  },
+  "5": {
+   "2024": {
+    "winner": "D",
+    "dPct": 85.7,
+    "rPct": 14.3,
+    "marginPct": 71.4
+   }
+  },
+  "6": {
+   "2024": {
+    "winner": "D",
+    "dPct": 74.7,
+    "rPct": 25.3,
+    "marginPct": 49.4
+   }
+  },
+  "7": {
+   "2024": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "marginPct": 29.8
+   }
+  },
+  "8": {
+   "2024": {
+    "winner": "R",
+    "dPct": 31.1,
+    "rPct": 68.9,
+    "marginPct": 37.8
+   }
+  },
+  "9": {
+   "2024": {
+    "winner": "R",
+    "dPct": 31,
+    "rPct": 69,
+    "marginPct": 38
+   }
+  },
+  "10": {
+   "2024": {
+    "winner": "R",
+    "dPct": 36.9,
+    "rPct": 63.1,
+    "marginPct": 26.2
+   }
+  },
+  "11": {
+   "2024": {
+    "winner": "R",
+    "dPct": 32.7,
+    "rPct": 67.3,
+    "marginPct": 34.6
+   }
+  },
+  "12": {
+   "2024": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "marginPct": 20.6
+   }
+  },
+  "13": {
+   "2024": {
+    "winner": "D",
+    "dPct": 71.8,
+    "rPct": 28.2,
+    "marginPct": 43.6
+   }
+  },
+  "14": {
+   "2024": {
+    "winner": "R",
+    "dPct": 35.6,
+    "rPct": 64.4,
+    "marginPct": 28.8
+   }
+  }
+ },
+ "PA": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 45.1,
+    "rPct": 54.9,
+    "marginPct": 9.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.6,
+    "rPct": 56.4,
+    "marginPct": 12.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 75.6,
+    "rPct": 24.4,
+    "marginPct": 51.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 71.4,
+    "rPct": 28.6,
+    "marginPct": 42.8
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 61.3,
+    "rPct": 38.7,
+    "marginPct": 22.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 59.1,
+    "rPct": 40.9,
+    "marginPct": 18.2
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "D",
+    "dPct": 65,
+    "rPct": 35,
+    "marginPct": 30
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 65.3,
+    "rPct": 34.7,
+    "marginPct": 30.6
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "marginPct": 16.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "marginPct": 12.4
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 51,
+    "rPct": 49,
+    "marginPct": 2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 49.5,
+    "rPct": 50.5,
+    "marginPct": 1
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "marginPct": 2.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 49.2,
+    "rPct": 50.8,
+    "marginPct": 1.6
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "R",
+    "dPct": 30.7,
+    "rPct": 69.3,
+    "marginPct": 38.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 29.5,
+    "rPct": 70.5,
+    "marginPct": 41
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "R",
+    "dPct": 46.2,
+    "rPct": 53.8,
+    "marginPct": 7.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 49.4,
+    "rPct": 50.6,
+    "marginPct": 1.2
+   }
+  },
+  "11": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "marginPct": 23
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37.1,
+    "rPct": 62.9,
+    "marginPct": 25.8
+   }
+  },
+  "12": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "marginPct": 12.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.4,
+    "rPct": 43.6,
+    "marginPct": 12.8
+   }
+  },
+  "13": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 25.8,
+    "rPct": 74.2,
+    "marginPct": 48.4
+   }
+  },
+  "14": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.4,
+    "rPct": 66.6,
+    "marginPct": 33.2
+   }
+  },
+  "15": {
+   "2022": {
+    "winner": "R",
+    "dPct": 30.1,
+    "rPct": 69.9,
+    "marginPct": 39.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 28.5,
+    "rPct": 71.5,
+    "marginPct": 43
+   }
+  },
+  "16": {
+   "2022": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "marginPct": 18.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.3,
+    "rPct": 63.7,
+    "marginPct": 27.4
+   }
+  },
+  "17": {
+   "2022": {
+    "winner": "D",
+    "dPct": 53.4,
+    "rPct": 46.6,
+    "marginPct": 6.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 53.9,
+    "rPct": 46.1,
+    "marginPct": 7.8
+   }
+  }
+ },
+ "AZ": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 49.6,
+    "rPct": 50.4,
+    "marginPct": 0.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 48.1,
+    "rPct": 51.9,
+    "marginPct": 3.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 46.1,
+    "rPct": 53.9,
+    "marginPct": 7.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 45.6,
+    "rPct": 54.4,
+    "marginPct": 8.8
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 77,
+    "rPct": 23,
+    "marginPct": 54
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 72.7,
+    "rPct": 27.3,
+    "marginPct": 45.4
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.1,
+    "rPct": 43.9,
+    "marginPct": 12.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 53.7,
+    "rPct": 46.3,
+    "marginPct": 7.4
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "marginPct": 20.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "marginPct": 20.8
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 49.3,
+    "rPct": 50.7,
+    "marginPct": 1.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 48.7,
+    "rPct": 51.3,
+    "marginPct": 2.6
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 64.6,
+    "rPct": 35.4,
+    "marginPct": 29.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 63.4,
+    "rPct": 36.6,
+    "marginPct": 26.8
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.5,
+    "rPct": 56.5,
+    "marginPct": 13
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 34.7,
+    "rPct": 65.3,
+    "marginPct": 30.6
+   }
+  }
+ },
+ "WI": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 45.5,
+    "rPct": 54.5,
+    "marginPct": 9
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "marginPct": 10.4
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 72.5,
+    "rPct": 27.5,
+    "marginPct": 45
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.1,
+    "rPct": 29.9,
+    "marginPct": 40.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 48.1,
+    "rPct": 51.9,
+    "marginPct": 3.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "marginPct": 2.8
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 76.9,
+    "rPct": 23.1,
+    "marginPct": 53.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 76.9,
+    "rPct": 23.1,
+    "marginPct": 53.8
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.6,
+    "rPct": 64.4,
+    "marginPct": 28.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.5,
+    "rPct": 64.5,
+    "marginPct": 29
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.7,
+    "rPct": 61.3,
+    "marginPct": 22.6
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "marginPct": 23.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.4,
+    "rPct": 63.6,
+    "marginPct": 27.2
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 1.4,
+    "rPct": 98.6,
+    "marginPct": 97.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.7,
+    "rPct": 57.3,
+    "marginPct": 14.6
+   }
+  }
+ },
+ "NV": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 52.9,
+    "rPct": 47.1,
+    "marginPct": 5.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 53.9,
+    "rPct": 46.1,
+    "marginPct": 7.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38.8,
+    "rPct": 61.2,
+    "marginPct": 22.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 52,
+    "rPct": 48,
+    "marginPct": 4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 51.4,
+    "rPct": 48.6,
+    "marginPct": 2.8
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 52.4,
+    "rPct": 47.6,
+    "marginPct": 4.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.2,
+    "rPct": 45.8,
+    "marginPct": 8.4
+   }
+  }
+ },
+ "TX": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 21.9,
+    "rPct": 78.1,
+    "marginPct": 56.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 4.1,
+    "rPct": 95.9,
+    "marginPct": 91.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 34.2,
+    "rPct": 65.8,
+    "marginPct": 31.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.9,
+    "rPct": 66.1,
+    "marginPct": 32.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.8,
+    "rPct": 64.2,
+    "marginPct": 28.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.2,
+    "rPct": 64.8,
+    "marginPct": 29.6
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32.1,
+    "rPct": 67.9,
+    "marginPct": 35.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.2,
+    "rPct": 64.8,
+    "marginPct": 29.6
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.9,
+    "rPct": 64.1,
+    "marginPct": 28.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37.9,
+    "rPct": 62.1,
+    "marginPct": 24.2
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 6.5,
+    "rPct": 93.5,
+    "marginPct": 87
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 29,
+    "rPct": 71,
+    "marginPct": 42
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 61.2,
+    "rPct": 38.8,
+    "marginPct": 22.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 61.4,
+    "rPct": 38.6,
+    "marginPct": 22.8
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "marginPct": 32
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "marginPct": 29.8
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "marginPct": 12.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "marginPct": 14.2
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "marginPct": 9.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "marginPct": 15.4
+   }
+  },
+  "11": {
+   "2022": {
+    "winner": "R",
+    "dPct": 18.3,
+    "rPct": 81.7,
+    "marginPct": 63.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 17.2,
+    "rPct": 82.8,
+    "marginPct": 65.6
+   }
+  },
+  "12": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.3,
+    "rPct": 64.7,
+    "marginPct": 29.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.7,
+    "rPct": 64.3,
+    "marginPct": 28.6
+   }
+  },
+  "13": {
+   "2022": {
+    "winner": "R",
+    "dPct": 16.8,
+    "rPct": 83.2,
+    "marginPct": 66.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 12.2,
+    "rPct": 87.8,
+    "marginPct": 75.6
+   }
+  },
+  "14": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.4,
+    "rPct": 64.6,
+    "marginPct": 29.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.2,
+    "rPct": 63.8,
+    "marginPct": 27.6
+   }
+  },
+  "15": {
+   "2022": {
+    "winner": "R",
+    "dPct": 46.4,
+    "rPct": 53.6,
+    "marginPct": 7.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.6,
+    "rPct": 56.4,
+    "marginPct": 12.8
+   }
+  },
+  "16": {
+   "2022": {
+    "winner": "D",
+    "dPct": 63.5,
+    "rPct": 36.5,
+    "marginPct": 27
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 59.3,
+    "rPct": 40.7,
+    "marginPct": 18.6
+   }
+  },
+  "17": {
+   "2022": {
+    "winner": "R",
+    "dPct": 24.8,
+    "rPct": 75.2,
+    "marginPct": 50.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "marginPct": 29.8
+   }
+  },
+  "18": {
+   "2022": {
+    "winner": "D",
+    "dPct": 65.8,
+    "rPct": 34.2,
+    "marginPct": 31.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.1,
+    "rPct": 29.9,
+    "marginPct": 40.2
+   }
+  },
+  "19": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "20": {
+   "2022": {
+    "winner": "D",
+    "dPct": 70,
+    "rPct": 30,
+    "marginPct": 40
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 82.6,
+    "rPct": 17.4,
+    "marginPct": 65.2
+   }
+  },
+  "21": {
+   "2022": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "marginPct": 22
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.2,
+    "rPct": 59.8,
+    "marginPct": 19.6
+   }
+  },
+  "22": {
+   "2022": {
+    "winner": "R",
+    "dPct": 37.8,
+    "rPct": 62.2,
+    "marginPct": 24.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "marginPct": 20.6
+   }
+  },
+  "23": {
+   "2022": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "marginPct": 15.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "marginPct": 16.2
+   }
+  },
+  "24": {
+   "2022": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "marginPct": 17
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 41.1,
+    "rPct": 58.9,
+    "marginPct": 17.8
+   }
+  },
+  "25": {
+   "2022": {
+    "winner": "R",
+    "dPct": 23.7,
+    "rPct": 76.3,
+    "marginPct": 52.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 23.8,
+    "rPct": 76.2,
+    "marginPct": 52.4
+   }
+  },
+  "26": {
+   "2022": {
+    "winner": "R",
+    "dPct": 12.7,
+    "rPct": 87.3,
+    "marginPct": 74.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 32.2,
+    "rPct": 67.8,
+    "marginPct": 35.6
+   }
+  },
+  "27": {
+   "2022": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "marginPct": 24.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37.3,
+    "rPct": 62.7,
+    "marginPct": 25.4
+   }
+  },
+  "28": {
+   "2022": {
+    "winner": "D",
+    "dPct": 60.3,
+    "rPct": 39.7,
+    "marginPct": 20.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54,
+    "rPct": 46,
+    "marginPct": 8
+   }
+  },
+  "29": {
+   "2022": {
+    "winner": "D",
+    "dPct": 67.5,
+    "rPct": 32.5,
+    "marginPct": 35
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 63.6,
+    "rPct": 36.4,
+    "marginPct": 27.2
+   }
+  },
+  "30": {
+   "2022": {
+    "winner": "D",
+    "dPct": 69,
+    "rPct": 31,
+    "marginPct": 38
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 81.2,
+    "rPct": 18.8,
+    "marginPct": 62.4
+   }
+  },
+  "31": {
+   "2022": {
+    "winner": "R",
+    "dPct": 5.1,
+    "rPct": 94.9,
+    "marginPct": 89.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 31.3,
+    "rPct": 68.7,
+    "marginPct": 37.4
+   }
+  },
+  "32": {
+   "2022": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "marginPct": 20.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37.3,
+    "rPct": 62.7,
+    "marginPct": 25.4
+   }
+  },
+  "33": {
+   "2022": {
+    "winner": "D",
+    "dPct": 67.6,
+    "rPct": 32.4,
+    "marginPct": 35.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 73,
+    "rPct": 27,
+    "marginPct": 46
+   }
+  },
+  "34": {
+   "2022": {
+    "winner": "R",
+    "dPct": 48.3,
+    "rPct": 51.7,
+    "marginPct": 3.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 45.8,
+    "rPct": 54.2,
+    "marginPct": 8.4
+   }
+  },
+  "35": {
+   "2022": {
+    "winner": "R",
+    "dPct": 46.7,
+    "rPct": 53.3,
+    "marginPct": 6.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 47.2,
+    "rPct": 52.8,
+    "marginPct": 5.6
+   }
+  },
+  "36": {
+   "2022": {
+    "winner": "R",
+    "dPct": 36.4,
+    "rPct": 63.6,
+    "marginPct": 27.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.7,
+    "rPct": 61.3,
+    "marginPct": 22.6
+   }
+  },
+  "37": {
+   "2022": {
+    "winner": "D",
+    "dPct": 73.9,
+    "rPct": 26.1,
+    "marginPct": 47.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.7,
+    "rPct": 29.3,
+    "marginPct": 41.4
+   }
+  },
+  "38": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "marginPct": 23.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "marginPct": 21.4
+   }
+  }
+ },
+ "VA": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 43.4,
+    "rPct": 56.6,
+    "marginPct": 13.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.6,
+    "rPct": 56.4,
+    "marginPct": 12.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 48.3,
+    "rPct": 51.7,
+    "marginPct": 3.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 48,
+    "rPct": 52,
+    "marginPct": 4
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 67.4,
+    "rPct": 32.6,
+    "marginPct": 34.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.1,
+    "rPct": 29.9,
+    "marginPct": 40.2
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 65,
+    "rPct": 35,
+    "marginPct": 30
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 67.5,
+    "rPct": 32.5,
+    "marginPct": 35
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "marginPct": 15.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.5,
+    "rPct": 57.5,
+    "marginPct": 15
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.5,
+    "rPct": 64.5,
+    "marginPct": 29
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.5,
+    "rPct": 64.5,
+    "marginPct": 29
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 52.3,
+    "rPct": 47.7,
+    "marginPct": 4.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 51.3,
+    "rPct": 48.7,
+    "marginPct": 2.6
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 74.8,
+    "rPct": 25.2,
+    "marginPct": 49.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 74.4,
+    "rPct": 25.6,
+    "marginPct": 48.8
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "R",
+    "dPct": 26.6,
+    "rPct": 73.4,
+    "marginPct": 46.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 27.4,
+    "rPct": 72.6,
+    "marginPct": 45.2
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "D",
+    "dPct": 53.3,
+    "rPct": 46.7,
+    "marginPct": 6.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 52.3,
+    "rPct": 47.7,
+    "marginPct": 4.6
+   }
+  },
+  "11": {
+   "2022": {
+    "winner": "D",
+    "dPct": 66.9,
+    "rPct": 33.1,
+    "marginPct": 33.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 67,
+    "rPct": 33,
+    "marginPct": 34
+   }
+  }
+ },
+ "NH": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 54.1,
+    "rPct": 45.9,
+    "marginPct": 8.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54,
+    "rPct": 46,
+    "marginPct": 8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55.9,
+    "rPct": 44.1,
+    "marginPct": 11.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 53,
+    "rPct": 47,
+    "marginPct": 6
+   }
+  }
+ },
+ "MN": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 41.4,
+    "rPct": 58.6,
+    "marginPct": 17.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.9,
+    "rPct": 43.1,
+    "marginPct": 13.8
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 58.5,
+    "rPct": 41.5,
+    "marginPct": 17
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 67.4,
+    "rPct": 32.6,
+    "marginPct": 34.8
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 75.2,
+    "rPct": 24.8,
+    "marginPct": 50.4
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37.5,
+    "rPct": 62.5,
+    "marginPct": 25
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 29.5,
+    "rPct": 70.5,
+    "marginPct": 41
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42,
+    "rPct": 58,
+    "marginPct": 16
+   }
+  }
+ },
+ "CO": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 82.1,
+    "rPct": 17.9,
+    "marginPct": 64.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 78,
+    "rPct": 22,
+    "marginPct": 56
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 71.4,
+    "rPct": 28.6,
+    "marginPct": 42.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.3,
+    "rPct": 29.7,
+    "marginPct": 40.6
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 49.9,
+    "rPct": 50.1,
+    "marginPct": 0.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 47.4,
+    "rPct": 52.6,
+    "marginPct": 5.2
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 37.5,
+    "rPct": 62.5,
+    "marginPct": 25
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "marginPct": 12.2
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "marginPct": 16.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.8,
+    "rPct": 57.2,
+    "marginPct": 14.4
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 61.8,
+    "rPct": 38.2,
+    "marginPct": 23.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 60.5,
+    "rPct": 39.5,
+    "marginPct": 21
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 57.7,
+    "rPct": 42.3,
+    "marginPct": 15.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "marginPct": 14.8
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "marginPct": 0.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 49.6,
+    "rPct": 50.4,
+    "marginPct": 0.8
+   }
+  }
+ },
+ "NM": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "marginPct": 11.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.4,
+    "rPct": 43.6,
+    "marginPct": 12.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 50.3,
+    "rPct": 49.7,
+    "marginPct": 0.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 52.1,
+    "rPct": 47.9,
+    "marginPct": 4.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 58.2,
+    "rPct": 41.8,
+    "marginPct": 16.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.3,
+    "rPct": 43.7,
+    "marginPct": 12.6
+   }
+  }
+ },
+ "KS": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32.3,
+    "rPct": 67.7,
+    "marginPct": 35.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.9,
+    "rPct": 69.1,
+    "marginPct": 38.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 42.4,
+    "rPct": 57.6,
+    "marginPct": 15.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.1,
+    "rPct": 59.9,
+    "marginPct": 19.8
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "marginPct": 12.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 55.6,
+    "rPct": 44.4,
+    "marginPct": 11.2
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 36.7,
+    "rPct": 63.3,
+    "marginPct": 26.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35,
+    "rPct": 65,
+    "marginPct": 30
+   }
+  }
+ },
+ "IA": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 46.6,
+    "rPct": 53.4,
+    "marginPct": 6.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 49.9,
+    "rPct": 50.1,
+    "marginPct": 0.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 45.9,
+    "rPct": 54.1,
+    "marginPct": 8.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "marginPct": 15.8
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 49.7,
+    "rPct": 50.3,
+    "marginPct": 0.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 48.1,
+    "rPct": 51.9,
+    "marginPct": 3.8
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 31.1,
+    "rPct": 68.9,
+    "marginPct": 37.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 32.8,
+    "rPct": 67.2,
+    "marginPct": 34.4
+   }
+  }
+ },
+ "ME": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 62.9,
+    "rPct": 37.1,
+    "marginPct": 25.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 61.5,
+    "rPct": 38.5,
+    "marginPct": 23
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 51.9,
+    "rPct": 48.1,
+    "marginPct": 3.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 50.1,
+    "rPct": 49.9,
+    "marginPct": 0.2
+   }
+  }
+ },
+ "MT": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 48.4,
+    "rPct": 51.6,
+    "marginPct": 3.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 46,
+    "rPct": 54,
+    "marginPct": 8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 26.3,
+    "rPct": 73.7,
+    "marginPct": 47.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "marginPct": 32
+   }
+  }
+ },
+ "NE": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "marginPct": 15.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "marginPct": 20.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 48.7,
+    "rPct": 51.3,
+    "marginPct": 2.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 49.1,
+    "rPct": 50.9,
+    "marginPct": 1.8
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 16.8,
+    "rPct": 83.2,
+    "marginPct": 66.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 19.6,
+    "rPct": 80.4,
+    "marginPct": 60.8
+   }
+  }
+ },
+ "OR": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 68,
+    "rPct": 32,
+    "marginPct": 36
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.9,
+    "rPct": 29.1,
+    "marginPct": 41.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32.3,
+    "rPct": 67.7,
+    "marginPct": 35.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.1,
+    "rPct": 63.9,
+    "marginPct": 27.8
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 72.7,
+    "rPct": 27.3,
+    "marginPct": 45.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 72.9,
+    "rPct": 27.1,
+    "marginPct": 45.8
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "marginPct": 8.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.1,
+    "rPct": 45.9,
+    "marginPct": 8.2
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 49,
+    "rPct": 51,
+    "marginPct": 2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 50.9,
+    "rPct": 49.1,
+    "marginPct": 1.8
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 51.3,
+    "rPct": 48.7,
+    "marginPct": 2.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 53.4,
+    "rPct": 46.6,
+    "marginPct": 6.8
+   }
+  }
+ },
+ "AK": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55,
+    "rPct": 45,
+    "marginPct": 9.9
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "marginPct": 2.6
+   }
+  }
+ },
+ "SC": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 43,
+    "rPct": 57,
+    "marginPct": 14
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "marginPct": 17
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "marginPct": 20.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "marginPct": 23.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 25.9,
+    "rPct": 74.1,
+    "marginPct": 48.2
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "marginPct": 23
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35,
+    "rPct": 65,
+    "marginPct": 30
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.3,
+    "rPct": 64.7,
+    "marginPct": 29.4
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 62.1,
+    "rPct": 37.9,
+    "marginPct": 24.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 61.2,
+    "rPct": 38.8,
+    "marginPct": 22.4
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "marginPct": 29.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.9,
+    "rPct": 64.1,
+    "marginPct": 28.2
+   }
+  }
+ },
+ "IN": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55.7,
+    "rPct": 44.3,
+    "marginPct": 11.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.3,
+    "rPct": 45.7,
+    "marginPct": 8.6
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 19.9,
+    "rPct": 80.1,
+    "marginPct": 60.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.5,
+    "rPct": 57.5,
+    "marginPct": 15
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 21.8,
+    "rPct": 78.2,
+    "marginPct": 56.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 34.1,
+    "rPct": 65.9,
+    "marginPct": 31.8
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 29.2,
+    "rPct": 70.8,
+    "marginPct": 41.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 26.4,
+    "rPct": 73.6,
+    "marginPct": 47.2
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "marginPct": 21.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "marginPct": 19
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 31.3,
+    "rPct": 68.7,
+    "marginPct": 37.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.9,
+    "rPct": 66.1,
+    "marginPct": 32.2
+   }
+  },
+  "7": {
+   "2024": {
+    "winner": "D",
+    "dPct": 70.2,
+    "rPct": 29.8,
+    "marginPct": 40.4
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 27.3,
+    "rPct": 72.7,
+    "marginPct": 45.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 31.2,
+    "rPct": 68.8,
+    "marginPct": 37.6
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "R",
+    "dPct": 27.9,
+    "rPct": 72.1,
+    "marginPct": 44.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 21.7,
+    "rPct": 78.3,
+    "marginPct": 56.6
+   }
+  }
+ },
+ "WA": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 63.6,
+    "rPct": 36.4,
+    "marginPct": 27.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 63.2,
+    "rPct": 36.8,
+    "marginPct": 26.4
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 60.2,
+    "rPct": 39.8,
+    "marginPct": 20.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 64,
+    "rPct": 36,
+    "marginPct": 28
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "marginPct": 0.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 52,
+    "rPct": 48,
+    "marginPct": 4
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "marginPct": 36
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "marginPct": 19.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.4,
+    "rPct": 60.6,
+    "marginPct": 21.2
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 60.1,
+    "rPct": 39.9,
+    "marginPct": 20.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.8,
+    "rPct": 43.2,
+    "marginPct": 13.6
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 85.7,
+    "rPct": 14.3,
+    "marginPct": 71.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 84.2,
+    "rPct": 15.8,
+    "marginPct": 68.4
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "marginPct": 8.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.1,
+    "rPct": 45.9,
+    "marginPct": 8.2
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "D",
+    "dPct": 71.7,
+    "rPct": 28.3,
+    "marginPct": 43.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "D",
+    "dPct": 57.1,
+    "rPct": 42.9,
+    "marginPct": 14.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 58.7,
+    "rPct": 41.3,
+    "marginPct": 17.4
+   }
+  }
+ },
+ "CT": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 62,
+    "rPct": 38,
+    "marginPct": 24
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 64.5,
+    "rPct": 35.5,
+    "marginPct": 29
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 59.2,
+    "rPct": 40.8,
+    "marginPct": 18.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 58,
+    "rPct": 42,
+    "marginPct": 16
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "marginPct": 16.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 58.9,
+    "rPct": 41.1,
+    "marginPct": 17.8
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 59.4,
+    "rPct": 40.6,
+    "marginPct": 18.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 62.1,
+    "rPct": 37.9,
+    "marginPct": 24.2
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "marginPct": 0.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 53.4,
+    "rPct": 46.6,
+    "marginPct": 6.8
+   }
+  }
+ },
+ "TN": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 20.1,
+    "rPct": 79.9,
+    "marginPct": 59.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 19.9,
+    "rPct": 80.1,
+    "marginPct": 60.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32.1,
+    "rPct": 67.9,
+    "marginPct": 35.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.7,
+    "rPct": 69.3,
+    "marginPct": 38.6
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 30.6,
+    "rPct": 69.4,
+    "marginPct": 38.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.3,
+    "rPct": 69.7,
+    "marginPct": 39.4
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 26.7,
+    "rPct": 73.3,
+    "marginPct": 46.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 27.7,
+    "rPct": 72.3,
+    "marginPct": 44.6
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 43.1,
+    "rPct": 56.9,
+    "marginPct": 13.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "marginPct": 18
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "marginPct": 32.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "marginPct": 36
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38.9,
+    "rPct": 61.1,
+    "marginPct": 22.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "marginPct": 22
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 24.7,
+    "rPct": 75.3,
+    "marginPct": 50.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 26.1,
+    "rPct": 73.9,
+    "marginPct": 47.8
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "D",
+    "dPct": 72.8,
+    "rPct": 27.2,
+    "marginPct": 45.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 73.5,
+    "rPct": 26.5,
+    "marginPct": 47
+   }
+  }
+ },
+ "MD": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "marginPct": 12.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37.9,
+    "rPct": 62.1,
+    "marginPct": 24.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 59.6,
+    "rPct": 40.4,
+    "marginPct": 19.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 58,
+    "rPct": 42,
+    "marginPct": 16
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 59.8,
+    "rPct": 40.2,
+    "marginPct": 19.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 60.4,
+    "rPct": 39.6,
+    "marginPct": 20.8
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 89.8,
+    "rPct": 10.2,
+    "marginPct": 79.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 88.1,
+    "rPct": 11.9,
+    "marginPct": 76.2
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "D",
+    "dPct": 66.1,
+    "rPct": 33.9,
+    "marginPct": 32.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 66.5,
+    "rPct": 33.5,
+    "marginPct": 33
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 54.8,
+    "rPct": 45.2,
+    "marginPct": 9.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 51.6,
+    "rPct": 48.4,
+    "marginPct": 3.2
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 82,
+    "rPct": 18,
+    "marginPct": 64
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 81.6,
+    "rPct": 18.4,
+    "marginPct": 63.2
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 81.5,
+    "rPct": 18.5,
+    "marginPct": 63
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 77.5,
+    "rPct": 22.5,
+    "marginPct": 55
+   }
+  }
+ },
+ "MO": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 75,
+    "rPct": 25,
+    "marginPct": 50
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 80.5,
+    "rPct": 19.5,
+    "marginPct": 61
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 44,
+    "rPct": 56,
+    "marginPct": 12
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.8,
+    "rPct": 56.2,
+    "marginPct": 12.4
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 34.9,
+    "rPct": 65.1,
+    "marginPct": 30.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.5,
+    "rPct": 63.5,
+    "marginPct": 27
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 26.9,
+    "rPct": 73.1,
+    "marginPct": 46.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 27.1,
+    "rPct": 72.9,
+    "marginPct": 45.8
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "D",
+    "dPct": 62.6,
+    "rPct": 37.4,
+    "marginPct": 25.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 62.3,
+    "rPct": 37.7,
+    "marginPct": 24.6
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 28.1,
+    "rPct": 71.9,
+    "marginPct": 43.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 27.6,
+    "rPct": 72.4,
+    "marginPct": 44.8
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "R",
+    "dPct": 27.4,
+    "rPct": 72.6,
+    "marginPct": 45.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 26.9,
+    "rPct": 73.1,
+    "marginPct": 46.2
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 22.4,
+    "rPct": 77.6,
+    "marginPct": 55.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 22.3,
+    "rPct": 77.7,
+    "marginPct": 55.4
+   }
+  }
+ },
+ "UT": {},
+ "KY": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 25.1,
+    "rPct": 74.9,
+    "marginPct": 49.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 25.3,
+    "rPct": 74.7,
+    "marginPct": 49.4
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 28.1,
+    "rPct": 71.9,
+    "marginPct": 43.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 26.9,
+    "rPct": 73.1,
+    "marginPct": 46.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 62,
+    "rPct": 38,
+    "marginPct": 24
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 62,
+    "rPct": 38,
+    "marginPct": 24
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32.3,
+    "rPct": 67.7,
+    "marginPct": 35.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 17.8,
+    "rPct": 82.2,
+    "marginPct": 64.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 34.9,
+    "rPct": 65.1,
+    "marginPct": 30.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37,
+    "rPct": 63,
+    "marginPct": 26
+   }
+  }
+ },
+ "AR": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 24,
+    "rPct": 76,
+    "marginPct": 52
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 25.6,
+    "rPct": 74.4,
+    "marginPct": 48.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 34.4,
+    "rPct": 65.6,
+    "marginPct": 31.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "marginPct": 19
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 31,
+    "rPct": 69,
+    "marginPct": 38
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 32.5,
+    "rPct": 67.5,
+    "marginPct": 35
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 25.2,
+    "rPct": 74.8,
+    "marginPct": 49.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 27.2,
+    "rPct": 72.8,
+    "marginPct": 45.6
+   }
+  }
+ },
+ "WV": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 30.2,
+    "rPct": 69.8,
+    "marginPct": 39.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 28.3,
+    "rPct": 71.7,
+    "marginPct": 43.4
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 34.4,
+    "rPct": 65.6,
+    "marginPct": 31.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 29.2,
+    "rPct": 70.8,
+    "marginPct": 41.6
+   }
+  }
+ },
+ "ID": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 26.9,
+    "rPct": 73.1,
+    "marginPct": 46.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 26.4,
+    "rPct": 73.6,
+    "marginPct": 47.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 36.5,
+    "rPct": 63.5,
+    "marginPct": 27
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.5,
+    "rPct": 66.5,
+    "marginPct": 33
+   }
+  }
+ },
+ "SD": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 28,
+    "rPct": 72,
+    "marginPct": 44
+   }
+  }
+ },
+ "ND": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.5,
+    "rPct": 69.5,
+    "marginPct": 39
+   }
+  }
+ },
+ "DE": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.4,
+    "rPct": 43.6,
+    "marginPct": 12.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 57.9,
+    "rPct": 42.1,
+    "marginPct": 15.8
+   }
+  }
+ },
+ "VT": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 69.2,
+    "rPct": 30.8,
+    "marginPct": 38.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 67.6,
+    "rPct": 32.4,
+    "marginPct": 35.2
+   }
+  }
+ },
+ "WY": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 24.8,
+    "rPct": 75.2,
+    "marginPct": 50.4
+   }
+  }
+ },
+ "RI": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 64.2,
+    "rPct": 35.8,
+    "marginPct": 28.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 66.2,
+    "rPct": 33.8,
+    "marginPct": 32.4
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 51.9,
+    "rPct": 48.1,
+    "marginPct": 3.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "marginPct": 16.6
+   }
+  }
+ },
+ "MS": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 27,
+    "rPct": 73,
+    "marginPct": 46
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.2,
+    "rPct": 69.8,
+    "marginPct": 39.6
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 59.7,
+    "rPct": 40.3,
+    "marginPct": 19.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 62,
+    "rPct": 38,
+    "marginPct": 24
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 29.3,
+    "rPct": 70.7,
+    "marginPct": 41.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 25.1,
+    "rPct": 74.9,
+    "marginPct": 49.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 26.1,
+    "rPct": 73.9,
+    "marginPct": 47.8
+   }
+  }
+ },
+ "OK": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "marginPct": 29.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.4,
+    "rPct": 63.6,
+    "marginPct": 27.2
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 23.5,
+    "rPct": 76.5,
+    "marginPct": 53
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 22.4,
+    "rPct": 77.6,
+    "marginPct": 55.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 24.9,
+    "rPct": 75.1,
+    "marginPct": 50.2
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32.4,
+    "rPct": 67.6,
+    "marginPct": 35.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 30.2,
+    "rPct": 69.8,
+    "marginPct": 39.6
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38,
+    "rPct": 62,
+    "marginPct": 24
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "marginPct": 21.4
+   }
+  }
+ },
+ "HI": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 73.7,
+    "rPct": 26.3,
+    "marginPct": 47.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 71.8,
+    "rPct": 28.2,
+    "marginPct": 43.6
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 63.8,
+    "rPct": 36.2,
+    "marginPct": 27.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 68.8,
+    "rPct": 31.2,
+    "marginPct": 37.6
+   }
+  }
+ },
+ "NJ": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 61.8,
+    "rPct": 38.2,
+    "marginPct": 23.6
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "marginPct": 21.4
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55.2,
+    "rPct": 44.8,
+    "marginPct": 10.4
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 31.9,
+    "rPct": 68.1,
+    "marginPct": 36.2
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "D",
+    "dPct": 57.7,
+    "rPct": 42.3,
+    "marginPct": 15.4
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "marginPct": 16.6
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "R",
+    "dPct": 49.6,
+    "rPct": 50.4,
+    "marginPct": 0.8
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 74.9,
+    "rPct": 25.1,
+    "marginPct": 49.8
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55.6,
+    "rPct": 44.4,
+    "marginPct": 11.2
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "D",
+    "dPct": 74.3,
+    "rPct": 25.7,
+    "marginPct": 48.6
+   }
+  },
+  "11": {
+   "2022": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "marginPct": 14.8
+   }
+  },
+  "12": {
+   "2022": {
+    "winner": "D",
+    "dPct": 61.2,
+    "rPct": 38.8,
+    "marginPct": 22.4
+   }
+  }
+ },
+ "MA": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 61.6,
+    "rPct": 38.4,
+    "marginPct": 23.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 66.3,
+    "rPct": 33.7,
+    "marginPct": 32.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 63.6,
+    "rPct": 36.4,
+    "marginPct": 27.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "D",
+    "dPct": 74,
+    "rPct": 26,
+    "marginPct": 48
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 64.1,
+    "rPct": 35.9,
+    "marginPct": 28.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 84.8,
+    "rPct": 15.2,
+    "marginPct": 69.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 69.8,
+    "rPct": 30.2,
+    "marginPct": 39.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 70.6,
+    "rPct": 29.4,
+    "marginPct": 41.2
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "D",
+    "dPct": 59.2,
+    "rPct": 40.8,
+    "marginPct": 18.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.5,
+    "rPct": 43.5,
+    "marginPct": 13
+   }
+  }
+ },
+ "AL": {
+  "1": {
+   "2024": {
+    "winner": "R",
+    "dPct": 21.2,
+    "rPct": 78.8,
+    "marginPct": 57.6
+   }
+  },
+  "2": {
+   "2024": {
+    "winner": "D",
+    "dPct": 54.1,
+    "rPct": 45.9,
+    "marginPct": 8.2
+   }
+  },
+  "3": {
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "4": {
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "5": {
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "6": {
+   "2024": {
+    "winner": "R",
+    "dPct": 29.6,
+    "rPct": 70.4,
+    "marginPct": 40.8
+   }
+  },
+  "7": {
+   "2024": {
+    "winner": "D",
+    "dPct": 63.6,
+    "rPct": 36.4,
+    "marginPct": 27.2
+   }
+  }
+ },
+ "LA": {
+  "1": {
+   "2024": {
+    "winner": "R",
+    "dPct": 23.6,
+    "rPct": 76.4,
+    "marginPct": 52.8
+   }
+  },
+  "2": {
+   "2024": {
+    "winner": "D",
+    "dPct": 70.4,
+    "rPct": 29.6,
+    "marginPct": 40.8
+   }
+  },
+  "3": {
+   "2024": {
+    "winner": "R",
+    "dPct": 26.5,
+    "rPct": 73.5,
+    "marginPct": 47
+   }
+  },
+  "4": {
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "5": {
+   "2024": {
+    "winner": "R",
+    "dPct": 26.5,
+    "rPct": 73.5,
+    "marginPct": 47
+   }
+  },
+  "6": {
+   "2024": {
+    "winner": "D",
+    "dPct": 63.6,
+    "rPct": 36.4,
+    "marginPct": 27.2
+   }
+  }
+ },
+ "FL": {
+  "1": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32.1,
+    "rPct": 67.9,
+    "marginPct": 35.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "marginPct": 32
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "R",
+    "dPct": 40.2,
+    "rPct": 59.8,
+    "marginPct": 19.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "marginPct": 23.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "R",
+    "dPct": 36.7,
+    "rPct": 63.3,
+    "marginPct": 26.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "marginPct": 23.2
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "marginPct": 21
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 42.7,
+    "rPct": 57.3,
+    "marginPct": 14.6
+   }
+  },
+  "5": {
+   "2024": {
+    "winner": "R",
+    "dPct": 36.9,
+    "rPct": 63.1,
+    "marginPct": 26.2
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.5,
+    "rPct": 66.5,
+    "marginPct": 33
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "marginPct": 17
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.5,
+    "rPct": 56.5,
+    "marginPct": 13
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "marginPct": 29.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 37.8,
+    "rPct": 62.2,
+    "marginPct": 24.4
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "D",
+    "dPct": 53.6,
+    "rPct": 46.4,
+    "marginPct": 7.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 56.4,
+    "rPct": 43.6,
+    "marginPct": 12.8
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "D",
+    "dPct": 59.9,
+    "rPct": 40.1,
+    "marginPct": 19.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 62.4,
+    "rPct": 37.6,
+    "marginPct": 24.8
+   }
+  },
+  "11": {
+   "2022": {
+    "winner": "R",
+    "dPct": 36,
+    "rPct": 64,
+    "marginPct": 28
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "marginPct": 20.8
+   }
+  },
+  "12": {
+   "2022": {
+    "winner": "R",
+    "dPct": 29.6,
+    "rPct": 70.4,
+    "marginPct": 40.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 29,
+    "rPct": 71,
+    "marginPct": 42
+   }
+  },
+  "13": {
+   "2022": {
+    "winner": "R",
+    "dPct": 45.9,
+    "rPct": 54.1,
+    "marginPct": 8.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 45.2,
+    "rPct": 54.8,
+    "marginPct": 9.6
+   }
+  },
+  "14": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.9,
+    "rPct": 43.1,
+    "marginPct": 13.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 57.8,
+    "rPct": 42.2,
+    "marginPct": 15.6
+   }
+  },
+  "15": {
+   "2022": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "marginPct": 17
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 43.8,
+    "rPct": 56.2,
+    "marginPct": 12.4
+   }
+  },
+  "16": {
+   "2022": {
+    "winner": "R",
+    "dPct": 37.9,
+    "rPct": 62.1,
+    "marginPct": 24.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "marginPct": 19
+   }
+  },
+  "17": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.8,
+    "rPct": 64.2,
+    "marginPct": 28.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.1,
+    "rPct": 63.9,
+    "marginPct": 27.8
+   }
+  },
+  "18": {
+   "2022": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 34.7,
+    "rPct": 65.3,
+    "marginPct": 30.6
+   }
+  },
+  "19": {
+   "2022": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "marginPct": 36
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "marginPct": 32.6
+   }
+  },
+  "20": {
+   "2022": {
+    "winner": "D",
+    "dPct": 72.3,
+    "rPct": 27.7,
+    "marginPct": 44.6
+   }
+  },
+  "21": {
+   "2022": {
+    "winner": "R",
+    "dPct": 36.5,
+    "rPct": 63.5,
+    "marginPct": 27
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 38.2,
+    "rPct": 61.8,
+    "marginPct": 23.6
+   }
+  },
+  "22": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55.1,
+    "rPct": 44.9,
+    "marginPct": 10.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 55,
+    "rPct": 45,
+    "marginPct": 10
+   }
+  },
+  "23": {
+   "2022": {
+    "winner": "D",
+    "dPct": 52.4,
+    "rPct": 47.6,
+    "marginPct": 4.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 52.4,
+    "rPct": 47.6,
+    "marginPct": 4.8
+   }
+  },
+  "24": {
+   "2022": {
+    "winner": "D",
+    "dPct": 71.8,
+    "rPct": 28.2,
+    "marginPct": 43.6
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 68.2,
+    "rPct": 31.8,
+    "marginPct": 36.4
+   }
+  },
+  "25": {
+   "2022": {
+    "winner": "D",
+    "dPct": 55.1,
+    "rPct": 44.9,
+    "marginPct": 10.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.5,
+    "rPct": 45.5,
+    "marginPct": 9
+   }
+  },
+  "26": {
+   "2022": {
+    "winner": "R",
+    "dPct": 29.1,
+    "rPct": 70.9,
+    "marginPct": 41.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 29.1,
+    "rPct": 70.9,
+    "marginPct": 41.8
+   }
+  },
+  "27": {
+   "2022": {
+    "winner": "R",
+    "dPct": 42.7,
+    "rPct": 57.3,
+    "marginPct": 14.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "marginPct": 20.8
+   }
+  },
+  "28": {
+   "2022": {
+    "winner": "R",
+    "dPct": 36.3,
+    "rPct": 63.7,
+    "marginPct": 27.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 35.4,
+    "rPct": 64.6,
+    "marginPct": 29.2
+   }
+  }
+ },
+ "IL": {
+  "1": {
+   "2022": {
+    "winner": "D",
+    "dPct": 67,
+    "rPct": 33,
+    "marginPct": 34
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 65.9,
+    "rPct": 34.1,
+    "marginPct": 31.8
+   }
+  },
+  "2": {
+   "2022": {
+    "winner": "D",
+    "dPct": 67.1,
+    "rPct": 32.9,
+    "marginPct": 34.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 67.6,
+    "rPct": 32.4,
+    "marginPct": 35.2
+   }
+  },
+  "3": {
+   "2022": {
+    "winner": "D",
+    "dPct": 68.5,
+    "rPct": 31.5,
+    "marginPct": 37
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 67.3,
+    "rPct": 32.7,
+    "marginPct": 34.6
+   }
+  },
+  "4": {
+   "2022": {
+    "winner": "D",
+    "dPct": 70.9,
+    "rPct": 29.1,
+    "marginPct": 41.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 71.2,
+    "rPct": 28.8,
+    "marginPct": 42.4
+   }
+  },
+  "5": {
+   "2022": {
+    "winner": "D",
+    "dPct": 70.7,
+    "rPct": 29.3,
+    "marginPct": 41.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 69,
+    "rPct": 31,
+    "marginPct": 38
+   }
+  },
+  "6": {
+   "2022": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "marginPct": 8.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.2,
+    "rPct": 45.8,
+    "marginPct": 8.4
+   }
+  },
+  "7": {
+   "2022": {
+    "winner": "D",
+    "dPct": 100,
+    "rPct": 0,
+    "marginPct": 100
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 83.3,
+    "rPct": 16.7,
+    "marginPct": 66.6
+   }
+  },
+  "8": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.9,
+    "rPct": 43.1,
+    "marginPct": 13.8
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 57.1,
+    "rPct": 42.9,
+    "marginPct": 14.2
+   }
+  },
+  "9": {
+   "2022": {
+    "winner": "D",
+    "dPct": 71.7,
+    "rPct": 28.3,
+    "marginPct": 43.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 68.4,
+    "rPct": 31.6,
+    "marginPct": 36.8
+   }
+  },
+  "10": {
+   "2022": {
+    "winner": "D",
+    "dPct": 63,
+    "rPct": 37,
+    "marginPct": 26
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 60,
+    "rPct": 40,
+    "marginPct": 20
+   }
+  },
+  "11": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.5,
+    "rPct": 43.5,
+    "marginPct": 13
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 55.6,
+    "rPct": 44.4,
+    "marginPct": 11.2
+   }
+  },
+  "12": {
+   "2022": {
+    "winner": "R",
+    "dPct": 25,
+    "rPct": 75,
+    "marginPct": 50
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 25.8,
+    "rPct": 74.2,
+    "marginPct": 48.4
+   }
+  },
+  "13": {
+   "2022": {
+    "winner": "D",
+    "dPct": 56.6,
+    "rPct": 43.4,
+    "marginPct": 13.2
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 58.1,
+    "rPct": 41.9,
+    "marginPct": 16.2
+   }
+  },
+  "14": {
+   "2022": {
+    "winner": "D",
+    "dPct": 54.2,
+    "rPct": 45.8,
+    "marginPct": 8.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 55.1,
+    "rPct": 44.9,
+    "marginPct": 10.2
+   }
+  },
+  "15": {
+   "2022": {
+    "winner": "R",
+    "dPct": 28.9,
+    "rPct": 71.1,
+    "marginPct": 42.2
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "16": {
+   "2022": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "marginPct": 32.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 0,
+    "rPct": 100,
+    "marginPct": 100
+   }
+  },
+  "17": {
+   "2022": {
+    "winner": "D",
+    "dPct": 52,
+    "rPct": 48,
+    "marginPct": 4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "marginPct": 8.8
+   }
+  }
+ },
+ "NY": {
+  "1": {
+   "2024": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "marginPct": 10.4
+   }
+  },
+  "2": {
+   "2024": {
+    "winner": "R",
+    "dPct": 40.2,
+    "rPct": 59.8,
+    "marginPct": 19.6
+   }
+  },
+  "3": {
+   "2024": {
+    "winner": "D",
+    "dPct": 51.8,
+    "rPct": 48.2,
+    "marginPct": 3.6
+   }
+  },
+  "4": {
+   "2024": {
+    "winner": "D",
+    "dPct": 51.1,
+    "rPct": 48.9,
+    "marginPct": 2.2
+   }
+  },
+  "5": {
+   "2024": {
+    "winner": "D",
+    "dPct": 72.9,
+    "rPct": 27.1,
+    "marginPct": 45.8
+   }
+  },
+  "6": {
+   "2024": {
+    "winner": "D",
+    "dPct": 61.7,
+    "rPct": 38.3,
+    "marginPct": 23.4
+   }
+  },
+  "7": {
+   "2024": {
+    "winner": "D",
+    "dPct": 78.1,
+    "rPct": 21.9,
+    "marginPct": 56.2
+   }
+  },
+  "8": {
+   "2024": {
+    "winner": "D",
+    "dPct": 75.4,
+    "rPct": 24.6,
+    "marginPct": 50.8
+   }
+  },
+  "9": {
+   "2024": {
+    "winner": "D",
+    "dPct": 74.3,
+    "rPct": 25.7,
+    "marginPct": 48.6
+   }
+  },
+  "10": {
+   "2024": {
+    "winner": "D",
+    "dPct": 84.6,
+    "rPct": 15.4,
+    "marginPct": 69.2
+   }
+  },
+  "11": {
+   "2024": {
+    "winner": "R",
+    "dPct": 35.9,
+    "rPct": 64.1,
+    "marginPct": 28.2
+   }
+  },
+  "12": {
+   "2024": {
+    "winner": "D",
+    "dPct": 80.5,
+    "rPct": 19.5,
+    "marginPct": 61
+   }
+  },
+  "13": {
+   "2024": {
+    "winner": "D",
+    "dPct": 83.5,
+    "rPct": 16.5,
+    "marginPct": 67
+   }
+  },
+  "14": {
+   "2024": {
+    "winner": "D",
+    "dPct": 69.2,
+    "rPct": 30.8,
+    "marginPct": 38.4
+   }
+  },
+  "15": {
+   "2024": {
+    "winner": "D",
+    "dPct": 78.4,
+    "rPct": 21.6,
+    "marginPct": 56.8
+   }
+  },
+  "16": {
+   "2024": {
+    "winner": "D",
+    "dPct": 71.6,
+    "rPct": 28.4,
+    "marginPct": 43.2
+   }
+  },
+  "17": {
+   "2024": {
+    "winner": "R",
+    "dPct": 47,
+    "rPct": 53,
+    "marginPct": 6
+   }
+  },
+  "18": {
+   "2024": {
+    "winner": "D",
+    "dPct": 57.2,
+    "rPct": 42.8,
+    "marginPct": 14.4
+   }
+  },
+  "19": {
+   "2022": {
+    "winner": "D",
+    "dPct": 57.7,
+    "rPct": 42.3,
+    "marginPct": 15.4
+   },
+   "2024": {
+    "winner": "D",
+    "dPct": 51.5,
+    "rPct": 48.5,
+    "marginPct": 3
+   }
+  },
+  "20": {
+   "2024": {
+    "winner": "D",
+    "dPct": 61.4,
+    "rPct": 38.6,
+    "marginPct": 22.8
+   }
+  },
+  "21": {
+   "2022": {
+    "winner": "D",
+    "dPct": 50.7,
+    "rPct": 49.3,
+    "marginPct": 1.4
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 36.7,
+    "rPct": 63.3,
+    "marginPct": 26.6
+   }
+  },
+  "22": {
+   "2024": {
+    "winner": "D",
+    "dPct": 54.6,
+    "rPct": 45.4,
+    "marginPct": 9.2
+   }
+  },
+  "23": {
+   "2022": {
+    "winner": "R",
+    "dPct": 35.7,
+    "rPct": 64.3,
+    "marginPct": 28.6
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 34.8,
+    "rPct": 65.2,
+    "marginPct": 30.4
+   }
+  },
+  "24": {
+   "2022": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "marginPct": 23.8
+   },
+   "2024": {
+    "winner": "R",
+    "dPct": 34.3,
+    "rPct": 65.7,
+    "marginPct": 31.4
+   }
+  },
+  "25": {
+   "2024": {
+    "winner": "D",
+    "dPct": 62.3,
+    "rPct": 37.7,
+    "marginPct": 24.6
+   }
+  },
+  "26": {
+   "2024": {
+    "winner": "D",
+    "dPct": 65.2,
+    "rPct": 34.8,
+    "marginPct": 30.4
+   }
+  }
+ },
+ "CA": {}
+}

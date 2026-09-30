@@ -6,21 +6,31 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
+    "preview": "wrangler dev",
+    "deploy": "pnpm build && wrangler deploy",
     "typecheck": "react-router typegen && tsc",
+    "cf:types": "wrangler types",
+    "db:local": "wrangler d1 execute politicsplace --local --file=./schema.sql",
+    "db:remote": "wrangler d1 execute politicsplace --remote --file=./schema.sql",
     "polls:pull": "node scripts/pull-polls.mjs",
+    "polls:538": "node scripts/import-538-polls.mjs",
+    "polls:wikipedia": "node scripts/import-wikipedia-polls.mjs",
+    "polls:all": "node scripts/polls-all.mjs",
     "geo:extract": "node scripts/extract-county-geo.mjs",
-    "geo:precincts": "node scripts/extract-precincts.mjs"
+    "geo:precincts": "node scripts/extract-precincts.mjs",
+    "geo:precinct-results": "node scripts/join-precinct-results.mjs",
+    "geo:districts": "node scripts/assign-precincts-to-districts.mjs",
+    "oh7:precincts": "node scripts/build-oh7-precincts.mjs"
   },
   "dependencies": {
-    "@react-router/node": "^8",
-    "@react-router/serve": "^8",
     "isbot": "^5.1.36",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router": "^8"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.56.0",
+    "@cloudflare/workers-types": "^5.20260919.1",
     "@react-router/dev": "^8",
     "@tailwindcss/vite": "^4.2.2",
     "@types/d3-geo": "^3.1.1",
@@ -31,10 +41,13 @@
     "@types/topojson-client": "^3.1.5",
     "d3-geo": "^3.1.1",
     "playwright-core": "^1.63.0",
+    "proj4": "^2.22.0",
+    "shapefile": "^0.6.6",
     "tailwindcss": "^4.2.2",
     "topojson-client": "^3.1.0",
     "typescript": "^5.9.3",
     "us-atlas": "^3.0.1",
-    "vite": "^8.0.3"
+    "vite": "^8.0.3",
+    "wrangler": "^4.135.0"
   }
 }

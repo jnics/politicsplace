@@ -1,0 +1,3048 @@
+{
+ "source": "CuyahogaGIS Voting_Precincts_region FeatureServer, Congressio=7",
+ "pulled": "2026-09-07",
+ "rows": [
+  {
+   "poll_id": 6790,
+   "location": "PARMA EVANGELICAL LUTHERAN CHURCH",
+   "address": "5280 BROADVIEW ROAD",
+   "city": "Parma",
+   "ward": "4",
+   "label": "4D",
+   "precinct": "PARMA04D"
+  },
+  {
+   "poll_id": 6700,
+   "location": "JOHN MUIR ELEMENTARY SCHOOL",
+   "address": "5531 WEST 24TH STREET",
+   "city": "Parma",
+   "ward": "4",
+   "label": "4E",
+   "precinct": "PARMA04E"
+  },
+  {
+   "poll_id": 6940,
+   "location": "PLEASANT VALLEY ELEMENTARY SCHOOL",
+   "address": "9906 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "5",
+   "label": "5A",
+   "precinct": "PARMA05A"
+  },
+  {
+   "poll_id": 6930,
+   "location": "PARMA LIBRARY",
+   "address": "6996 POWERS BOULEVARD",
+   "city": "Parma",
+   "ward": "5",
+   "label": "5B",
+   "precinct": "PARMA05B"
+  },
+  {
+   "poll_id": 6750,
+   "location": "DENTZLER ELEMENTARY SCHOOL",
+   "address": "3600 DENTZLER ROAD",
+   "city": "Parma",
+   "ward": "5",
+   "label": "5C",
+   "precinct": "PARMA05C"
+  },
+  {
+   "poll_id": 6930,
+   "location": "PARMA LIBRARY",
+   "address": "6996 POWERS BOULEVARD",
+   "city": "Parma",
+   "ward": "5",
+   "label": "5D",
+   "precinct": "PARMA05D"
+  },
+  {
+   "poll_id": 6750,
+   "location": "DENTZLER ELEMENTARY SCHOOL",
+   "address": "3600 DENTZLER ROAD",
+   "city": "Parma",
+   "ward": "5",
+   "label": "5E",
+   "precinct": "PARMA05E"
+  },
+  {
+   "poll_id": 6750,
+   "location": "DENTZLER ELEMENTARY SCHOOL",
+   "address": "3600 DENTZLER ROAD",
+   "city": "Parma",
+   "ward": "5",
+   "label": "5F",
+   "precinct": "PARMA05F"
+  },
+  {
+   "poll_id": 6750,
+   "location": "DENTZLER ELEMENTARY SCHOOL",
+   "address": "3600 DENTZLER ROAD",
+   "city": "Parma",
+   "ward": "6",
+   "label": "6A",
+   "precinct": "PARMA06A"
+  },
+  {
+   "poll_id": 6750,
+   "location": "DENTZLER ELEMENTARY SCHOOL",
+   "address": "3600 DENTZLER ROAD",
+   "city": "Parma",
+   "ward": "6",
+   "label": "6B",
+   "precinct": "PARMA06B"
+  },
+  {
+   "poll_id": 6730,
+   "location": "GREEN VALLEY ELEMENTARY SCHOOL",
+   "address": "2401 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "6",
+   "label": "6C",
+   "precinct": "PARMA06C"
+  },
+  {
+   "poll_id": 6730,
+   "location": "GREEN VALLEY ELEMENTARY SCHOOL",
+   "address": "2401 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "6",
+   "label": "6E",
+   "precinct": "PARMA06E"
+  },
+  {
+   "poll_id": 6740,
+   "location": "NORMANDY HIGH SCHOOL",
+   "address": "2500 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "6",
+   "label": "6D",
+   "precinct": "PARMA06D"
+  },
+  {
+   "poll_id": 8112,
+   "location": "BETHEL CHRISTIAN",
+   "address": "12901 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "7",
+   "label": "7A",
+   "precinct": "PARMA07A"
+  },
+  {
+   "poll_id": 6940,
+   "location": "PLEASANT VALLEY ELEMENTARY SCHOOL",
+   "address": "9906 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "7",
+   "label": "7B",
+   "precinct": "PARMA07B"
+  },
+  {
+   "poll_id": 6940,
+   "location": "PLEASANT VALLEY ELEMENTARY SCHOOL",
+   "address": "9906 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "7",
+   "label": "7C",
+   "precinct": "PARMA07C"
+  },
+  {
+   "poll_id": 8112,
+   "location": "BETHEL CHRISTIAN",
+   "address": "12901 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "7",
+   "label": "7D",
+   "precinct": "PARMA07D"
+  },
+  {
+   "poll_id": 6940,
+   "location": "PLEASANT VALLEY ELEMENTARY SCHOOL",
+   "address": "9906 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "7",
+   "label": "7E",
+   "precinct": "PARMA07E"
+  },
+  {
+   "poll_id": 8112,
+   "location": "BETHEL CHRISTIAN",
+   "address": "12901 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "7",
+   "label": "7F",
+   "precinct": "PARMA07F"
+  },
+  {
+   "poll_id": 6890,
+   "location": "RIDGEWOOD UNITED METHODIST CHURCH",
+   "address": "6330 RIDGE ROAD",
+   "city": "Parma",
+   "ward": "8",
+   "label": "8A",
+   "precinct": "PARMA08A"
+  },
+  {
+   "poll_id": 6680,
+   "location": "DONNA SMALLWOOD ACTIVITIES CENTER",
+   "address": "7001 WEST RIDGEWOOD DRIVE",
+   "city": "Parma",
+   "ward": "8",
+   "label": "8B",
+   "precinct": "PARMA08B"
+  },
+  {
+   "poll_id": 6890,
+   "location": "RIDGEWOOD UNITED METHODIST CHURCH",
+   "address": "6330 RIDGE ROAD",
+   "city": "Parma",
+   "ward": "8",
+   "label": "8C",
+   "precinct": "PARMA08C"
+  },
+  {
+   "poll_id": 6680,
+   "location": "DONNA SMALLWOOD ACTIVITIES CENTER",
+   "address": "7001 WEST RIDGEWOOD DRIVE",
+   "city": "Parma",
+   "ward": "8",
+   "label": "8D",
+   "precinct": "PARMA08D"
+  },
+  {
+   "poll_id": 6680,
+   "location": "DONNA SMALLWOOD ACTIVITIES CENTER",
+   "address": "7001 WEST RIDGEWOOD DRIVE",
+   "city": "Parma",
+   "ward": "8",
+   "label": "8E",
+   "precinct": "PARMA08E"
+  },
+  {
+   "poll_id": 6930,
+   "location": "PARMA LIBRARY",
+   "address": "6996 POWERS BOULEVARD",
+   "city": "Parma",
+   "ward": "9",
+   "label": "9A",
+   "precinct": "PARMA09A"
+  },
+  {
+   "poll_id": 6720,
+   "location": "ELKS HALL",
+   "address": "2300 SNOW ROAD",
+   "city": "Parma",
+   "ward": "9",
+   "label": "9B",
+   "precinct": "PARMA09B"
+  },
+  {
+   "poll_id": 6720,
+   "location": "ELKS HALL",
+   "address": "2300 SNOW ROAD",
+   "city": "Parma",
+   "ward": "9",
+   "label": "9C",
+   "precinct": "PARMA09C"
+  },
+  {
+   "poll_id": 6740,
+   "location": "NORMANDY HIGH SCHOOL",
+   "address": "2500 WEST PLEASANT VALLEY ROAD",
+   "city": "Parma",
+   "ward": "9",
+   "label": "9E",
+   "precinct": "PARMA09E"
+  },
+  {
+   "poll_id": 6880,
+   "location": "SHILOH MIDDLE SCHOOL",
+   "address": "2303 GRANTWOOD DRIVE",
+   "city": "Parma",
+   "ward": "9",
+   "label": "9D",
+   "precinct": "PARMA09D"
+  },
+  {
+   "poll_id": 7030,
+   "location": "ROCKY RIVER UNITED METHODIST CHURCH",
+   "address": "19414 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "RRIV01A"
+  },
+  {
+   "poll_id": 7070,
+   "location": "ROCKY RIVER PRESBYTERIAN CHURCH",
+   "address": "21750 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "RRIV01B"
+  },
+  {
+   "poll_id": 7070,
+   "location": "ROCKY RIVER PRESBYTERIAN CHURCH",
+   "address": "21750 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "RRIV01C"
+  },
+  {
+   "poll_id": 7070,
+   "location": "ROCKY RIVER PRESBYTERIAN CHURCH",
+   "address": "21750 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "1",
+   "label": "1D",
+   "precinct": "RRIV01D"
+  },
+  {
+   "poll_id": 7050,
+   "location": "ROCKY RIVER CIVIC CENTER",
+   "address": "21016 HILLIARD BOULEVARD",
+   "city": "Rocky River",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "RRIV02A"
+  },
+  {
+   "poll_id": 7050,
+   "location": "ROCKY RIVER CIVIC CENTER",
+   "address": "21016 HILLIARD BOULEVARD",
+   "city": "Rocky River",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "RRIV02B"
+  },
+  {
+   "poll_id": 7070,
+   "location": "ROCKY RIVER PRESBYTERIAN CHURCH",
+   "address": "21750 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "RRIV02C"
+  },
+  {
+   "poll_id": 7050,
+   "location": "ROCKY RIVER CIVIC CENTER",
+   "address": "21016 HILLIARD BOULEVARD",
+   "city": "Rocky River",
+   "ward": "2",
+   "label": "2D",
+   "precinct": "RRIV02D"
+  },
+  {
+   "poll_id": 7030,
+   "location": "ROCKY RIVER UNITED METHODIST CHURCH",
+   "address": "19414 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "RRIV03A"
+  },
+  {
+   "poll_id": 7030,
+   "location": "ROCKY RIVER UNITED METHODIST CHURCH",
+   "address": "19414 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "RRIV03B"
+  },
+  {
+   "poll_id": 7030,
+   "location": "ROCKY RIVER UNITED METHODIST CHURCH",
+   "address": "19414 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "RRIV03C"
+  },
+  {
+   "poll_id": 7030,
+   "location": "ROCKY RIVER UNITED METHODIST CHURCH",
+   "address": "19414 DETROIT ROAD",
+   "city": "Rocky River",
+   "ward": "3",
+   "label": "3D",
+   "precinct": "RRIV03D"
+  },
+  {
+   "poll_id": 7050,
+   "location": "ROCKY RIVER CIVIC CENTER",
+   "address": "21016 HILLIARD BOULEVARD",
+   "city": "Rocky River",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "RRIV04A"
+  },
+  {
+   "poll_id": 7050,
+   "location": "ROCKY RIVER CIVIC CENTER",
+   "address": "21016 HILLIARD BOULEVARD",
+   "city": "Rocky River",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "RRIV04B"
+  },
+  {
+   "poll_id": 7050,
+   "location": "ROCKY RIVER CIVIC CENTER",
+   "address": "21016 HILLIARD BOULEVARD",
+   "city": "Rocky River",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "RRIV04C"
+  },
+  {
+   "poll_id": 7050,
+   "location": "ROCKY RIVER CIVIC CENTER",
+   "address": "21016 HILLIARD BOULEVARD",
+   "city": "Rocky River",
+   "ward": "4",
+   "label": "4D",
+   "precinct": "RRIV04D"
+  },
+  {
+   "poll_id": 7240,
+   "location": "ST PETER UNITED CHURCH OF CHRIST",
+   "address": "125 EAST RIDGEWOOD DRIVE",
+   "city": "Seven Hills",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "SHV01A"
+  },
+  {
+   "poll_id": 7240,
+   "location": "ST PETER UNITED CHURCH OF CHRIST",
+   "address": "125 EAST RIDGEWOOD DRIVE",
+   "city": "Seven Hills",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "SHV01B"
+  },
+  {
+   "poll_id": 7240,
+   "location": "ST PETER UNITED CHURCH OF CHRIST",
+   "address": "125 EAST RIDGEWOOD DRIVE",
+   "city": "Seven Hills",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "SHV02A"
+  },
+  {
+   "poll_id": 7240,
+   "location": "ST PETER UNITED CHURCH OF CHRIST",
+   "address": "125 EAST RIDGEWOOD DRIVE",
+   "city": "Seven Hills",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "SHV02B"
+  },
+  {
+   "poll_id": 8316,
+   "location": "SEVEN HILLS RECREATION CENTER",
+   "address": "7777 SUMMITVIEW DRIVE",
+   "city": "Seven Hills",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "SHV03A"
+  },
+  {
+   "poll_id": 8316,
+   "location": "SEVEN HILLS RECREATION CENTER",
+   "address": "7777 SUMMITVIEW DRIVE",
+   "city": "Seven Hills",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "SHV03B"
+  },
+  {
+   "poll_id": 8316,
+   "location": "SEVEN HILLS RECREATION CENTER",
+   "address": "7777 SUMMITVIEW DRIVE",
+   "city": "Seven Hills",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "SHV04A"
+  },
+  {
+   "poll_id": 8316,
+   "location": "SEVEN HILLS RECREATION CENTER",
+   "address": "7777 SUMMITVIEW DRIVE",
+   "city": "Seven Hills",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "SHV04B"
+  },
+  {
+   "poll_id": 7485,
+   "location": "GRANTWOOD GOLF COURSE",
+   "address": "38855 AURORA ROAD",
+   "city": "Solon",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "SOLON01A"
+  },
+  {
+   "poll_id": 7485,
+   "location": "GRANTWOOD GOLF COURSE",
+   "address": "38855 AURORA ROAD",
+   "city": "Solon",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "SOLON01B"
+  },
+  {
+   "poll_id": 8249,
+   "location": "SOLON COMMUNITY CENTER",
+   "address": "35000 PORTZ PARKWAY",
+   "city": "Solon",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "SOLON02A"
+  },
+  {
+   "poll_id": 8249,
+   "location": "SOLON COMMUNITY CENTER",
+   "address": "35000 PORTZ PARKWAY",
+   "city": "Solon",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "SOLON02B"
+  },
+  {
+   "poll_id": 8249,
+   "location": "SOLON COMMUNITY CENTER",
+   "address": "35000 PORTZ PARKWAY",
+   "city": "Solon",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "SOLON03A"
+  },
+  {
+   "poll_id": 8249,
+   "location": "SOLON COMMUNITY CENTER",
+   "address": "35000 PORTZ PARKWAY",
+   "city": "Solon",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "SOLON03B"
+  },
+  {
+   "poll_id": 8249,
+   "location": "CHURCH OF THE RESURRECTION",
+   "address": "32001 CANNON ROAD",
+   "city": "Solon",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "SOLON04A"
+  },
+  {
+   "poll_id": 8249,
+   "location": "CHURCH OF THE RESURRECTION",
+   "address": "32001 CANNON ROAD",
+   "city": "Solon",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "SOLON04B"
+  },
+  {
+   "poll_id": 8249,
+   "location": "CHURCH OF THE RESURRECTION",
+   "address": "32001 CANNON ROAD",
+   "city": "Solon",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "SOLON04C"
+  },
+  {
+   "poll_id": 7470,
+   "location": "ADVENT LUTHERAN CHURCH SOLON",
+   "address": "5525 HARPER ROAD",
+   "city": "Solon",
+   "ward": "5",
+   "label": "5A.",
+   "precinct": "SOLON05A"
+  },
+  {
+   "poll_id": 7470,
+   "location": "ADVENT LUTHERAN CHURCH SOLON",
+   "address": "5525 HARPER ROAD",
+   "city": "Solon",
+   "ward": "5",
+   "label": "5C",
+   "precinct": "SOLON05C"
+  },
+  {
+   "poll_id": 7470,
+   "location": "ADVENT LUTHERAN CHURCH SOLON",
+   "address": "5525 HARPER ROAD",
+   "city": "Solon",
+   "ward": "5",
+   "label": "5B",
+   "precinct": "SOLON05B"
+  },
+  {
+   "poll_id": 8079,
+   "location": "SOLON CITY HALL",
+   "address": "34200 BAINBRIDGE ROAD",
+   "city": "Solon",
+   "ward": "6",
+   "label": "6A",
+   "precinct": "SOLON06A"
+  },
+  {
+   "poll_id": 8079,
+   "location": "SOLON CITY HALL",
+   "address": "34200 BAINBRIDGE ROAD",
+   "city": "Solon",
+   "ward": "6",
+   "label": "6B",
+   "precinct": "SOLON06B"
+  },
+  {
+   "poll_id": 8249,
+   "location": "SOLON COMMUNITY CENTER",
+   "address": "35000 PORTZ PARKWAY",
+   "city": "Solon",
+   "ward": "7",
+   "label": "7A",
+   "precinct": "SOLON07A"
+  },
+  {
+   "poll_id": 8249,
+   "location": "SOLON COMMUNITY CENTER",
+   "address": "35000 PORTZ PARKWAY",
+   "city": "Solon",
+   "ward": "7",
+   "label": "7B",
+   "precinct": "SOLON07B"
+  },
+  {
+   "poll_id": 7550,
+   "location": "EDITH WHITNEY ELEMENTARY SCHOOL",
+   "address": "13548 WHITNEY ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "STRNG01A"
+  },
+  {
+   "poll_id": 8188,
+   "location": "EHRNFELT RECREATION SENIOR CENTER",
+   "address": "18100 ROYALTON ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "STRNG01B"
+  },
+  {
+   "poll_id": 7550,
+   "location": "EDITH WHITNEY ELEMENTARY SCHOOL",
+   "address": "13548 WHITNEY ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "STRNG01C"
+  },
+  {
+   "poll_id": 7550,
+   "location": "EDITH WHITNEY ELEMENTARY SCHOOL",
+   "address": "13548 WHITNEY ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1D",
+   "precinct": "STRNG01D"
+  },
+  {
+   "poll_id": 8188,
+   "location": "EHRNFELT RECREATION SENIOR CENTER",
+   "address": "18100 ROYALTON ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1E",
+   "precinct": "STRNG01E"
+  },
+  {
+   "poll_id": 7550,
+   "location": "EDITH WHITNEY ELEMENTARY SCHOOL",
+   "address": "13548 WHITNEY ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1F",
+   "precinct": "STRNG01F"
+  },
+  {
+   "poll_id": 8188,
+   "location": "EHRNFELT RECREATION SENIOR CENTER",
+   "address": "18100 ROYALTON ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1G",
+   "precinct": "STRNG01G"
+  },
+  {
+   "poll_id": 7560,
+   "location": "HOWARD CHAPMAN ELEMENTARY SCHOOL",
+   "address": "13883 DRAKE ROAD",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "STRNG02A"
+  },
+  {
+   "poll_id": 8208,
+   "location": "STRONGSVILLE CITY SCHOOLS ADMIN OFFICES",
+   "address": "18199 COOK AVENUE",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "STRNG02B"
+  },
+  {
+   "poll_id": 7560,
+   "location": "HOWARD CHAPMAN ELEMENTARY SCHOOL",
+   "address": "13883 DRAKE ROAD",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "STRNG02C"
+  },
+  {
+   "poll_id": 7560,
+   "location": "HOWARD CHAPMAN ELEMENTARY SCHOOL",
+   "address": "13883 DRAKE ROAD",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2D",
+   "precinct": "STRNG02D"
+  },
+  {
+   "poll_id": 8208,
+   "location": "STRONGSVILLE CITY SCHOOLS ADMIN OFFICES",
+   "address": "18199 COOK AVENUE",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2E",
+   "precinct": "STRNG02E"
+  },
+  {
+   "poll_id": 7615,
+   "location": "BESSIE KINSNER ELEMENTARY SCHOOL",
+   "address": "19091 WATERFORD PARKWAY",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2F",
+   "precinct": "STRNG02F"
+  },
+  {
+   "poll_id": 8208,
+   "location": "STRONGSVILLE CITY SCHOOLS ADMIN OFFICES",
+   "address": "18199 COOK AVENUE",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2G",
+   "precinct": "STRNG02G"
+  },
+  {
+   "poll_id": 7560,
+   "location": "HOWARD CHAPMAN ELEMENTARY SCHOOL",
+   "address": "13883 DRAKE ROAD",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2H",
+   "precinct": "STRNG02H"
+  },
+  {
+   "poll_id": 7615,
+   "location": "BESSIE KINSNER ELEMENTARY SCHOOL",
+   "address": "19091 WATERFORD PARKWAY",
+   "city": "Strongsville",
+   "ward": "2",
+   "label": "2I",
+   "precinct": "STRNG02I"
+  },
+  {
+   "poll_id": 7540,
+   "location": "STRONGSVILLE COMMUNITY LIBRARY",
+   "address": "18700 WESTWOOD DRIVE",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "STRNG03A"
+  },
+  {
+   "poll_id": 7530,
+   "location": "STRONGSVILLE MIDDLE SCHOOL",
+   "address": "13200 PEARL ROAD",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "STRNG03B"
+  },
+  {
+   "poll_id": 7530,
+   "location": "STRONGSVILLE MIDDLE SCHOOL",
+   "address": "13200 PEARL ROAD",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "STRNG03C"
+  },
+  {
+   "poll_id": 7540,
+   "location": "STRONGSVILLE COMMUNITY LIBRARY",
+   "address": "18700 WESTWOOD DRIVE",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3D",
+   "precinct": "STRNG03D"
+  },
+  {
+   "poll_id": 7620,
+   "location": "EDNA SURRARRER ELEMENTARY SCHOOL",
+   "address": "9306 PRIEM ROAD",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3E",
+   "precinct": "STRNG03E"
+  },
+  {
+   "poll_id": 7620,
+   "location": "EDNA SURRARRER ELEMENTARY SCHOOL",
+   "address": "9306 PRIEM ROAD",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3F",
+   "precinct": "STRNG03F"
+  },
+  {
+   "poll_id": 7620,
+   "location": "EDNA SURRARRER ELEMENTARY SCHOOL",
+   "address": "9306 PRIEM ROAD",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3G",
+   "precinct": "STRNG03G"
+  },
+  {
+   "poll_id": 8208,
+   "location": "STRONGSVILLE CITY SCHOOLS ADMIN OFFICES",
+   "address": "18199 COOK AVENUE",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "STRNG04A"
+  },
+  {
+   "poll_id": 7600,
+   "location": "STRONGSVILLE HIGH SCHOOL",
+   "address": "20025 LUNN ROAD",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "STRNG04B"
+  },
+  {
+   "poll_id": 7615,
+   "location": "BESSIE KINSNER ELEMENTARY SCHOOL",
+   "address": "19091 WATERFORD PARKWAY",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "STRNG04C"
+  },
+  {
+   "poll_id": 7600,
+   "location": "STRONGSVILLE HIGH SCHOOL",
+   "address": "20025 LUNN ROAD",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4D",
+   "precinct": "STRNG04D"
+  },
+  {
+   "poll_id": 7615,
+   "location": "BESSIE KINSNER ELEMENTARY SCHOOL",
+   "address": "19091 WATERFORD PARKWAY",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4E",
+   "precinct": "STRNG04E"
+  },
+  {
+   "poll_id": 7540,
+   "location": "STRONGSVILLE COMMUNITY LIBRARY",
+   "address": "18700 WESTWOOD DRIVE",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4F",
+   "precinct": "STRNG04F"
+  },
+  {
+   "poll_id": 7600,
+   "location": "STRONGSVILLE HIGH SCHOOL",
+   "address": "20025 LUNN ROAD",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4G",
+   "precinct": "STRNG04G"
+  },
+  {
+   "poll_id": 7710,
+   "location": "VALLEY VIEW COMMUNITY CENTER",
+   "address": "6828 HATHAWAY ROAD",
+   "city": "Valley View",
+   "ward": "00",
+   "label": "A",
+   "precinct": "VALV00A"
+  },
+  {
+   "poll_id": 7710,
+   "location": "VALLEY VIEW COMMUNITY CENTER",
+   "address": "6828 HATHAWAY ROAD",
+   "city": "Valley View",
+   "ward": "00",
+   "label": "B",
+   "precinct": "VALV00B"
+  },
+  {
+   "poll_id": 8333,
+   "location": "WALTON HILLS COMMUNITY EVENT CENTER",
+   "address": "14660 ALEXANDER ROAD",
+   "city": "Walton Hills",
+   "ward": "00",
+   "label": "A",
+   "precinct": "WALTN00A"
+  },
+  {
+   "poll_id": 8333,
+   "location": "WALTON HILLS COMMUNITY EVENT CENTER",
+   "address": "14660 ALEXANDER ROAD",
+   "city": "Walton Hills",
+   "ward": "00",
+   "label": "B",
+   "precinct": "WALTN00B"
+  },
+  {
+   "poll_id": 7870,
+   "location": "CLAGUE CABIN",
+   "address": "1500 CLAGUE ROAD",
+   "city": "Westlake",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "WLKV01A"
+  },
+  {
+   "poll_id": 7870,
+   "location": "CLAGUE CABIN",
+   "address": "1500 CLAGUE ROAD",
+   "city": "Westlake",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "WLKV01B"
+  },
+  {
+   "poll_id": 7870,
+   "location": "CLAGUE CABIN",
+   "address": "1500 CLAGUE ROAD",
+   "city": "Westlake",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "WLKV01C"
+  },
+  {
+   "poll_id": 8321,
+   "location": "WESTLAKE BOE AT HILLIARD",
+   "address": "24365 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "1",
+   "label": "1D",
+   "precinct": "WLKV01D"
+  },
+  {
+   "poll_id": 8321,
+   "location": "WESTLAKE BOE AT HILLIARD",
+   "address": "24365 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "WLKV02A"
+  },
+  {
+   "poll_id": 8313,
+   "location": "WESTLAKE CTR FOR COMMUNITY SERVICES",
+   "address": "28975 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "WLKV02B"
+  },
+  {
+   "poll_id": 8321,
+   "location": "WESTLAKE BOE AT HILLIARD",
+   "address": "24365 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "WLKV02C"
+  },
+  {
+   "poll_id": 8313,
+   "location": "WESTLAKE CTR FOR COMMUNITY SERVICES",
+   "address": "28975 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "2",
+   "label": "2D",
+   "precinct": "WLKV02D"
+  },
+  {
+   "poll_id": 8321,
+   "location": "WESTLAKE BOE AT HILLIARD",
+   "address": "24365 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "WLKV03A"
+  },
+  {
+   "poll_id": 7890,
+   "location": "ST LADISLAS CHURCH",
+   "address": "2345 BASSETT ROAD",
+   "city": "Westlake",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "WLKV03B"
+  },
+  {
+   "poll_id": 8056,
+   "location": "WESTLAKE CITY HALL",
+   "address": "27700 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "WLKV03C"
+  },
+  {
+   "poll_id": 8056,
+   "location": "WESTLAKE CITY HALL",
+   "address": "27700 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "3",
+   "label": "3D",
+   "precinct": "WLKV03D"
+  },
+  {
+   "poll_id": 8196,
+   "location": "WESTLAKE RECREATION CENTER",
+   "address": "28955 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "WLKV04A"
+  },
+  {
+   "poll_id": 8196,
+   "location": "WESTLAKE RECREATION CENTER",
+   "address": "28955 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "WLKV04B"
+  },
+  {
+   "poll_id": 8196,
+   "location": "WESTLAKE RECREATION CENTER",
+   "address": "28955 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "WLKV04C"
+  },
+  {
+   "poll_id": 8196,
+   "location": "WESTLAKE RECREATION CENTER",
+   "address": "28955 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "4",
+   "label": "4D",
+   "precinct": "WLKV04D"
+  },
+  {
+   "poll_id": 7890,
+   "location": "ST LADISLAS CHURCH",
+   "address": "2345 BASSETT ROAD",
+   "city": "Westlake",
+   "ward": "5",
+   "label": "5A",
+   "precinct": "WLKV05A"
+  },
+  {
+   "poll_id": 7890,
+   "location": "ST LADISLAS CHURCH",
+   "address": "2345 BASSETT ROAD",
+   "city": "Westlake",
+   "ward": "5",
+   "label": "5B",
+   "precinct": "WLKV05B"
+  },
+  {
+   "poll_id": 7890,
+   "location": "ST LADISLAS CHURCH",
+   "address": "2345 BASSETT ROAD",
+   "city": "Westlake",
+   "ward": "5",
+   "label": "5C",
+   "precinct": "WLKV05C"
+  },
+  {
+   "poll_id": 7890,
+   "location": "ST LADISLAS CHURCH",
+   "address": "2345 BASSETT ROAD",
+   "city": "Westlake",
+   "ward": "5",
+   "label": "5D",
+   "precinct": "WLKV05D"
+  },
+  {
+   "poll_id": 8313,
+   "location": "WESTLAKE CTR FOR COMMUNITY SERVICES",
+   "address": "28975 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "6",
+   "label": "6A",
+   "precinct": "WLKV06A"
+  },
+  {
+   "poll_id": 8313,
+   "location": "WESTLAKE CTR FOR COMMUNITY SERVICES",
+   "address": "28975 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "6",
+   "label": "6B",
+   "precinct": "WLKV06B"
+  },
+  {
+   "poll_id": 8313,
+   "location": "WESTLAKE CTR FOR COMMUNITY SERVICES",
+   "address": "28975 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "6",
+   "label": "6C",
+   "precinct": "WLKV06C"
+  },
+  {
+   "poll_id": 8313,
+   "location": "WESTLAKE CTR FOR COMMUNITY SERVICES",
+   "address": "28975 HILLIARD BOULEVARD",
+   "city": "Westlake",
+   "ward": "6",
+   "label": "6D",
+   "precinct": "WLKV06D"
+  },
+  {
+   "poll_id": 1100,
+   "location": "BAY PRESBYTERIAN CHURCH",
+   "address": "25415 LAKE ROAD",
+   "city": "Bay Village",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "BAYV01A"
+  },
+  {
+   "poll_id": 8306,
+   "location": "AMERICAN LEGION POST 738",
+   "address": "19311 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "FAPK01A"
+  },
+  {
+   "poll_id": 8306,
+   "location": "AMERICAN LEGION POST 738",
+   "address": "19311 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "FAPK01B"
+  },
+  {
+   "poll_id": 8306,
+   "location": "AMERICAN LEGION POST 738",
+   "address": "19311 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "FAPK01C"
+  },
+  {
+   "poll_id": 8258,
+   "location": "THE GEMINI CENTER",
+   "address": "21225 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "FAPK02A"
+  },
+  {
+   "poll_id": 8258,
+   "location": "THE GEMINI CENTER",
+   "address": "21225 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "FAPK02B"
+  },
+  {
+   "poll_id": 8258,
+   "location": "THE GEMINI CENTER",
+   "address": "21225 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "FAPK02C"
+  },
+  {
+   "poll_id": 5210,
+   "location": "FAIRVIEW PARK CITY HALL",
+   "address": "20777 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "FAPK03A"
+  },
+  {
+   "poll_id": 5210,
+   "location": "FAIRVIEW PARK CITY HALL",
+   "address": "20777 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "FAPK03B"
+  },
+  {
+   "poll_id": 8032,
+   "location": "FAIRVIEW PARK REGIONAL LIBRARY",
+   "address": "21255 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "FAPK04A"
+  },
+  {
+   "poll_id": 8032,
+   "location": "FAIRVIEW PARK REGIONAL LIBRARY",
+   "address": "21255 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "FAPK04B"
+  },
+  {
+   "poll_id": 8322,
+   "location": "NEW HOPE CHURCH",
+   "address": "22960 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "5",
+   "label": "5A",
+   "precinct": "FAPK05A"
+  },
+  {
+   "poll_id": 8322,
+   "location": "NEW HOPE CHURCH",
+   "address": "22960 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "5",
+   "label": "5B.01",
+   "precinct": "FAPK05B"
+  },
+  {
+   "poll_id": 5410,
+   "location": "GLENWILLOW VILLAGE HALL",
+   "address": "29555 PETTIBONE ROAD",
+   "city": "Glenwillow",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "GLNV01A"
+  },
+  {
+   "poll_id": 5410,
+   "location": "GLENWILLOW VILLAGE HALL",
+   "address": "29555 PETTIBONE ROAD",
+   "city": "Glenwillow",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "GLNV02A"
+  },
+  {
+   "poll_id": 5410,
+   "location": "GLENWILLOW VILLAGE HALL",
+   "address": "29555 PETTIBONE ROAD",
+   "city": "Glenwillow",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "GLNV03A"
+  },
+  {
+   "poll_id": 8233,
+   "location": "INDEPENDENCE CIVIC CENTER",
+   "address": "6363 SELIG DRIVE",
+   "city": "Independence",
+   "ward": "00",
+   "label": "A",
+   "precinct": "INDV00A"
+  },
+  {
+   "poll_id": 8233,
+   "location": "INDEPENDENCE CIVIC CENTER",
+   "address": "6363 SELIG DRIVE",
+   "city": "Independence",
+   "ward": "00",
+   "label": "B",
+   "precinct": "INDV00B"
+  },
+  {
+   "poll_id": 8233,
+   "location": "INDEPENDENCE CIVIC CENTER",
+   "address": "6363 SELIG DRIVE",
+   "city": "Independence",
+   "ward": "00",
+   "label": "C",
+   "precinct": "INDV00C"
+  },
+  {
+   "poll_id": 8233,
+   "location": "INDEPENDENCE CIVIC CENTER",
+   "address": "6363 SELIG DRIVE",
+   "city": "Independence",
+   "ward": "00",
+   "label": "D",
+   "precinct": "INDV00D"
+  },
+  {
+   "poll_id": 8233,
+   "location": "INDEPENDENCE CIVIC CENTER",
+   "address": "6363 SELIG DRIVE",
+   "city": "Independence",
+   "ward": "00",
+   "label": "E",
+   "precinct": "INDV00E"
+  },
+  {
+   "poll_id": 2340,
+   "location": "SECOND CALVARY BAPTIST CHURCH",
+   "address": "12017 EMERY AVENUE",
+   "city": "Linndale",
+   "ward": "00",
+   "label": "A",
+   "precinct": "LINDL00A"
+  },
+  {
+   "poll_id": 6065,
+   "location": "MIDDLEBURG HTS COMMUNITY CENTER",
+   "address": "16000 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "MIDH01A"
+  },
+  {
+   "poll_id": 8244,
+   "location": "MIDDLEBURG HTS BRANCH LIBRARY",
+   "address": "16699 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "MIDH01B"
+  },
+  {
+   "poll_id": 6065,
+   "location": "MIDDLEBURG HTS COMMUNITY CENTER",
+   "address": "16000 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "MIDH01C"
+  },
+  {
+   "poll_id": 8244,
+   "location": "MIDDLEBURG HTS BRANCH LIBRARY",
+   "address": "16699 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "MIDH02A"
+  },
+  {
+   "poll_id": 8028,
+   "location": "GRACE CHRISTIAN MISSIONARY ALLIANCE CH",
+   "address": "7393 PEARL ROAD",
+   "city": "Middleburg Heights",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "MIDH02B"
+  },
+  {
+   "poll_id": 8028,
+   "location": "GRACE CHRISTIAN MISSIONARY ALLIANCE CH",
+   "address": "7393 PEARL ROAD",
+   "city": "Middleburg Heights",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "MIDH02C"
+  },
+  {
+   "poll_id": 6065,
+   "location": "MIDDLEBURG HTS COMMUNITY CENTER",
+   "address": "16000 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "MIDH03A"
+  },
+  {
+   "poll_id": 8028,
+   "location": "GRACE CHRISTIAN MISSIONARY ALLIANCE CH",
+   "address": "7393 PEARL ROAD",
+   "city": "Middleburg Heights",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "MIDH03B"
+  },
+  {
+   "poll_id": 6065,
+   "location": "MIDDLEBURG HTS COMMUNITY CENTER",
+   "address": "16000 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "MIDH03C"
+  },
+  {
+   "poll_id": 8135,
+   "location": "TRINITY CHURCH",
+   "address": "14040 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "MIDH04A"
+  },
+  {
+   "poll_id": 8135,
+   "location": "TRINITY CHURCH",
+   "address": "14040 EAST BAGLEY ROAD",
+   "city": "Middleburg Heights",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "MIDH04B"
+  },
+  {
+   "poll_id": 6300,
+   "location": "NORTH OLMSTED COMMUNITY CABIN",
+   "address": "28114 LORAIN ROAD NORTH OLMSTED",
+   "city": "North Olmsted",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "NOLM01A"
+  },
+  {
+   "poll_id": 6300,
+   "location": "JOHN KNOX PRESBYTERIAN CHURCH",
+   "address": "25200 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "NOLM01B"
+  },
+  {
+   "poll_id": 6300,
+   "location": "NORTH OLMSTED COMMUNITY CABIN",
+   "address": "28114 LORAIN ROAD NORTH OLMSTED",
+   "city": "North Olmsted",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "NOLM01C"
+  },
+  {
+   "poll_id": 6320,
+   "location": "CHURCH OF ST CLARENCE",
+   "address": "30106 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "1",
+   "label": "1D",
+   "precinct": "NOLM01D"
+  },
+  {
+   "poll_id": 6300,
+   "location": "NORTH OLMSTED COMMUNITY CABIN",
+   "address": "28114 LORAIN ROAD NORTH OLMSTED",
+   "city": "North Olmsted",
+   "ward": "1",
+   "label": "1E",
+   "precinct": "NOLM01E"
+  },
+  {
+   "poll_id": 6240,
+   "location": "MAPLE ELEMENTARY SCHOOL",
+   "address": "24101 MAPLE RIDGE ROAD",
+   "city": "North Olmsted",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "NOLM02A"
+  },
+  {
+   "poll_id": 6240,
+   "location": "MAPLE ELEMENTARY SCHOOL",
+   "address": "24101 MAPLE RIDGE ROAD",
+   "city": "North Olmsted",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "NOLM02B"
+  },
+  {
+   "poll_id": 6240,
+   "location": "MAPLE ELEMENTARY SCHOOL",
+   "address": "24101 MAPLE RIDGE ROAD",
+   "city": "North Olmsted",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "NOLM02C"
+  },
+  {
+   "poll_id": 6250,
+   "location": "JOHN KNOX PRESBYTERIAN CHURCH",
+   "address": "25200 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "2",
+   "label": "2D",
+   "precinct": "NOLM02D"
+  },
+  {
+   "poll_id": 6250,
+   "location": "JOHN KNOX PRESBYTERIAN CHURCH",
+   "address": "25200 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "2",
+   "label": "2E",
+   "precinct": "NOLM02E"
+  },
+  {
+   "poll_id": 6280,
+   "location": "NORTH OLMSTED BRANCH LIBRARY",
+   "address": "27403 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "NOLM03A"
+  },
+  {
+   "poll_id": 6320,
+   "location": "CHURCH OF ST CLARENCE",
+   "address": "30106 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "NOLM03B"
+  },
+  {
+   "poll_id": 6320,
+   "location": "CHURCH OF ST CLARENCE",
+   "address": "30106 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "NOLM03C"
+  },
+  {
+   "poll_id": 6320,
+   "location": "CHURCH OF ST CLARENCE",
+   "address": "30106 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "3",
+   "label": "3D",
+   "precinct": "NOLM03D"
+  },
+  {
+   "poll_id": 6280,
+   "location": "NORTH OLMSTED BRANCH LIBRARY",
+   "address": "27403 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "3",
+   "label": "3E",
+   "precinct": "NOLM03E"
+  },
+  {
+   "poll_id": 6320,
+   "location": "CHURCH OF ST CLARENCE",
+   "address": "30106 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "3",
+   "label": "3F",
+   "precinct": "NOLM03F"
+  },
+  {
+   "poll_id": 6330,
+   "location": "CLAGUE ROAD UNITED CHURCH OF CHRIST",
+   "address": "3650 CLAGUE ROAD",
+   "city": "North Olmsted",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "NOLM04A"
+  },
+  {
+   "poll_id": 6330,
+   "location": "CLAGUE ROAD UNITED CHURCH OF CHRIST",
+   "address": "3650 CLAGUE ROAD",
+   "city": "North Olmsted",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "NOLM04B"
+  },
+  {
+   "poll_id": 6330,
+   "location": "CLAGUE ROAD UNITED CHURCH OF CHRIST",
+   "address": "3650 CLAGUE ROAD",
+   "city": "North Olmsted",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "NOLM04C"
+  },
+  {
+   "poll_id": 6280,
+   "location": "NORTH OLMSTED BRANCH LIBRARY",
+   "address": "27403 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "4",
+   "label": "4D",
+   "precinct": "NOLM04D"
+  },
+  {
+   "poll_id": 6250,
+   "location": "JOHN KNOX PRESBYTERIAN CHURCH",
+   "address": "25200 LORAIN ROAD",
+   "city": "North Olmsted",
+   "ward": "4",
+   "label": "4E",
+   "precinct": "NOLM04E"
+  },
+  {
+   "poll_id": 6532,
+   "location": "OAKWOOD COMMUNITY CENTER",
+   "address": "23035 BROADWAY AVENUE",
+   "city": "Oakwood",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "OAKV01A"
+  },
+  {
+   "poll_id": 6532,
+   "location": "OAKWOOD COMMUNITY CENTER",
+   "address": "23035 BROADWAY AVENUE",
+   "city": "Oakwood",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "OAKV02A"
+  },
+  {
+   "poll_id": 6532,
+   "location": "OAKWOOD COMMUNITY CENTER",
+   "address": "23035 BROADWAY AVENUE",
+   "city": "Oakwood",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "OAKV03A"
+  },
+  {
+   "poll_id": 6532,
+   "location": "OAKWOOD COMMUNITY CENTER",
+   "address": "23035 BROADWAY AVENUE",
+   "city": "Oakwood",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "OAKV04A"
+  },
+  {
+   "poll_id": 6532,
+   "location": "OAKWOOD COMMUNITY CENTER",
+   "address": "23035 BROADWAY AVENUE",
+   "city": "Oakwood",
+   "ward": "5",
+   "label": "5A",
+   "precinct": "OAKV05A"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "OFV01A"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "OFV01B"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "OFV02A"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "2",
+   "label": "2B.01",
+   "precinct": "OFV02B"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "2",
+   "label": "2B.02",
+   "precinct": "OFV02B"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "OFV03A"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "OFV03B"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "OFV04A"
+  },
+  {
+   "poll_id": 6510,
+   "location": "FALLS LENOX PRIMARY SCHOOL",
+   "address": "26450 BAGLEY ROAD",
+   "city": "Olmsted Falls",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "OFV04B"
+  },
+  {
+   "poll_id": 8293,
+   "location": "COMMUNITY ROOM IN OLMSTED TOWNSHIP",
+   "address": "7900 FITCH ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "A",
+   "precinct": "OLMST00A"
+  },
+  {
+   "poll_id": 8293,
+   "location": "COMMUNITY ROOM IN OLMSTED TOWNSHIP",
+   "address": "7900 FITCH ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "B.01",
+   "precinct": "OLMST00B"
+  },
+  {
+   "poll_id": 8156,
+   "location": "OLMSTED FALLS INTERMEDIATE SCHOOL",
+   "address": "27043 BAGLEY ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "C",
+   "precinct": "OLMST00C"
+  },
+  {
+   "poll_id": 8156,
+   "location": "OLMSTED FALLS INTERMEDIATE SCHOOL",
+   "address": "27043 BAGLEY ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "D.01",
+   "precinct": "OLMST00D"
+  },
+  {
+   "poll_id": 8106,
+   "location": "OLMSTED FALLS MIDDLE SCHOOL",
+   "address": "27045 BAGLEY ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "E",
+   "precinct": "OLMST00E"
+  },
+  {
+   "poll_id": 8106,
+   "location": "OLMSTED FALLS MIDDLE SCHOOL",
+   "address": "27045 BAGLEY ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "F",
+   "precinct": "OLMST00F"
+  },
+  {
+   "poll_id": 8156,
+   "location": "OLMSTED FALLS INTERMEDIATE SCHOOL",
+   "address": "27043 BAGLEY ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "G",
+   "precinct": "OLMST00G"
+  },
+  {
+   "poll_id": 8106,
+   "location": "OLMSTED FALLS MIDDLE SCHOOL",
+   "address": "27045 BAGLEY ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "H",
+   "precinct": "OLMST00H"
+  },
+  {
+   "poll_id": 8293,
+   "location": "COMMUNITY ROOM IN OLMSTED TOWNSHIP",
+   "address": "7900 FITCH ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "I",
+   "precinct": "OLMST00I"
+  },
+  {
+   "poll_id": 8340,
+   "location": "PARMA HTS BRANCH LIBRARY",
+   "address": "6188 PEARL ROAD",
+   "city": "Parma Heights",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "PAHT01A"
+  },
+  {
+   "poll_id": 8340,
+   "location": "PARMA HTS BRANCH LIBRARY",
+   "address": "6188 PEARL ROAD",
+   "city": "Parma Heights",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "PAHT01B"
+  },
+  {
+   "poll_id": 8340,
+   "location": "PARMA HTS BRANCH LIBRARY",
+   "address": "6188 PEARL ROAD",
+   "city": "Parma Heights",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "PAHT01C"
+  },
+  {
+   "poll_id": 6660,
+   "location": "CROSS OF HOPE CHURCH",
+   "address": "8971 WEST RIDGEWOOD DRIVE",
+   "city": "Parma Heights",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "PAHT02A"
+  },
+  {
+   "poll_id": 6660,
+   "location": "CROSS OF HOPE CHURCH",
+   "address": "8971 WEST RIDGEWOOD DRIVE",
+   "city": "Parma Heights",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "PAHT02B"
+  },
+  {
+   "poll_id": 6660,
+   "location": "CROSS OF HOPE CHURCH",
+   "address": "8971 WEST RIDGEWOOD DRIVE",
+   "city": "Parma Heights",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "PAHT02C"
+  },
+  {
+   "poll_id": 6670,
+   "location": "VALLEY FORGE HIGH SCHOOL",
+   "address": "9999 INDEPENDENCE BOULEVARD",
+   "city": "Parma Heights",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "PAHT03A"
+  },
+  {
+   "poll_id": 6670,
+   "location": "VALLEY FORGE HIGH SCHOOL",
+   "address": "9999 INDEPENDENCE BOULEVARD",
+   "city": "Parma Heights",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "PAHT03B"
+  },
+  {
+   "poll_id": 6670,
+   "location": "VALLEY FORGE HIGH SCHOOL",
+   "address": "9999 INDEPENDENCE BOULEVARD",
+   "city": "Parma Heights",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "PAHT03C"
+  },
+  {
+   "poll_id": 6660,
+   "location": "CROSS OF HOPE CHURCH",
+   "address": "8971 WEST RIDGEWOOD DRIVE",
+   "city": "Parma Heights",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "PAHT04A"
+  },
+  {
+   "poll_id": 6660,
+   "location": "CROSS OF HOPE CHURCH",
+   "address": "8971 WEST RIDGEWOOD DRIVE",
+   "city": "Parma Heights",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "PAHT04B"
+  },
+  {
+   "poll_id": 6660,
+   "location": "CROSS OF HOPE CHURCH",
+   "address": "8971 WEST RIDGEWOOD DRIVE",
+   "city": "Parma Heights",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "PAHT04C"
+  },
+  {
+   "poll_id": 6630,
+   "location": "GREENBRIAR MIDDLE SCHOOL ANNEX",
+   "address": "11810 HUFFMAN ROAD",
+   "city": "Parma",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "PARMA01A"
+  },
+  {
+   "poll_id": 6630,
+   "location": "GREENBRIAR MIDDLE SCHOOL ANNEX",
+   "address": "11810 HUFFMAN ROAD",
+   "city": "Parma",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "PARMA01B"
+  },
+  {
+   "poll_id": 6630,
+   "location": "GREENBRIAR MIDDLE SCHOOL ANNEX",
+   "address": "11810 HUFFMAN ROAD",
+   "city": "Parma",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "PARMA01C"
+  },
+  {
+   "poll_id": 6710,
+   "location": "RIDGE-BROOK ELEMENTARY SCHOOL",
+   "address": "7915 MANHATTAN AVENUE",
+   "city": "Parma",
+   "ward": "1",
+   "label": "1D",
+   "precinct": "PARMA01D"
+  },
+  {
+   "poll_id": 6710,
+   "location": "RIDGE-BROOK ELEMENTARY SCHOOL",
+   "address": "7915 MANHATTAN AVENUE",
+   "city": "Parma",
+   "ward": "1",
+   "label": "1E",
+   "precinct": "PARMA01E"
+  },
+  {
+   "poll_id": 6710,
+   "location": "RIDGE-BROOK ELEMENTARY SCHOOL",
+   "address": "7915 MANHATTAN AVENUE",
+   "city": "Parma",
+   "ward": "1",
+   "label": "1F",
+   "precinct": "PARMA01F"
+  },
+  {
+   "poll_id": 6770,
+   "location": "MICHAEL A RIES RINK",
+   "address": "5000 FORESTWOOD DRIVE",
+   "city": "Parma",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "PARMA02A"
+  },
+  {
+   "poll_id": 6770,
+   "location": "MICHAEL A RIES RINK",
+   "address": "5000 FORESTWOOD DRIVE",
+   "city": "Parma",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "PARMA02B"
+  },
+  {
+   "poll_id": 6770,
+   "location": "MICHAEL A RIES RINK",
+   "address": "5000 FORESTWOOD DRIVE",
+   "city": "Parma",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "PARMA02C"
+  },
+  {
+   "poll_id": 6770,
+   "location": "MICHAEL A RIES RINK",
+   "address": "5000 FORESTWOOD DRIVE",
+   "city": "Parma",
+   "ward": "2",
+   "label": "2D",
+   "precinct": "PARMA02D"
+  },
+  {
+   "poll_id": 6890,
+   "location": "RIDGEWOOD UNITED METHODIST CHURCH",
+   "address": "6330 RIDGE ROAD",
+   "city": "Parma",
+   "ward": "2",
+   "label": "2E",
+   "precinct": "PARMA02E"
+  },
+  {
+   "poll_id": 8115,
+   "location": "AMERICAN LEGION POST 572",
+   "address": "6483 STATE ROAD",
+   "city": "Parma",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "PARMA03A"
+  },
+  {
+   "poll_id": 6810,
+   "location": "THOREAU PARK ELEMENTARY SCHOOL",
+   "address": "5401 WEST 54TH STREET",
+   "city": "Parma",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "PARMA03B"
+  },
+  {
+   "poll_id": 6810,
+   "location": "THOREAU PARK ELEMENTARY SCHOOL",
+   "address": "5401 WEST 54TH STREET",
+   "city": "Parma",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "PARMA03C"
+  },
+  {
+   "poll_id": 8115,
+   "location": "AMERICAN LEGION POST 572",
+   "address": "6483 STATE ROAD",
+   "city": "Parma",
+   "ward": "3",
+   "label": "3D",
+   "precinct": "PARMA03D"
+  },
+  {
+   "poll_id": 6810,
+   "location": "THOREAU PARK ELEMENTARY SCHOOL",
+   "address": "5401 WEST 54TH STREET",
+   "city": "Parma",
+   "ward": "3",
+   "label": "3E",
+   "precinct": "PARMA03E"
+  },
+  {
+   "poll_id": 6700,
+   "location": "JOHN MUIR ELEMENTARY SCHOOL",
+   "address": "5531 WEST 24TH STREET",
+   "city": "Parma",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "PARMA04A"
+  },
+  {
+   "poll_id": 6790,
+   "location": "PARMA EVANGELICAL LUTHERAN CHURCH",
+   "address": "5280 BROADVIEW ROAD",
+   "city": "Parma",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "PARMA04B"
+  },
+  {
+   "poll_id": 6880,
+   "location": "SHILOH MIDDLE SCHOOL",
+   "address": "2303 GRANTWOOD DRIVE",
+   "city": "Parma",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "PARMA04C"
+  },
+  {
+   "poll_id": 1100,
+   "location": "BAY PRESBYTERIAN CHURCH",
+   "address": "25415 LAKE ROAD",
+   "city": "Bay Village",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "BAYV01B"
+  },
+  {
+   "poll_id": 1100,
+   "location": "BAY PRESBYTERIAN CHURCH",
+   "address": "25415 LAKE ROAD",
+   "city": "Bay Village",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "BAYV01C"
+  },
+  {
+   "poll_id": 8013,
+   "location": "BAY VILLAGE MIDDLE SCHOOL",
+   "address": "27725 WOLF ROAD",
+   "city": "Bay Village",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "BAYV02A"
+  },
+  {
+   "poll_id": 1100,
+   "location": "BAY PRESBYTERIAN CHURCH",
+   "address": "25415 LAKE ROAD",
+   "city": "Bay Village",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "BAYV02B"
+  },
+  {
+   "poll_id": 8013,
+   "location": "BAY VILLAGE MIDDLE SCHOOL",
+   "address": "27725 WOLF ROAD",
+   "city": "Bay Village",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "BAYV02C"
+  },
+  {
+   "poll_id": 8254,
+   "location": "BAY UNITED METHODIST CHURCH",
+   "address": "29931 LAKE ROAD",
+   "city": "Bay Village",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "BAYV03A"
+  },
+  {
+   "poll_id": 8254,
+   "location": "BAY UNITED METHODIST CHURCH",
+   "address": "29931 LAKE ROAD",
+   "city": "Bay Village",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "BAYV03B"
+  },
+  {
+   "poll_id": 8254,
+   "location": "BAY UNITED METHODIST CHURCH",
+   "address": "29931 LAKE ROAD",
+   "city": "Bay Village",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "BAYV03C"
+  },
+  {
+   "poll_id": 1030,
+   "location": "ST BARNABAS EPISCOPAL CHURCH",
+   "address": "468 BRADLEY ROAD",
+   "city": "Bay Village",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "BAYV04A"
+  },
+  {
+   "poll_id": 1030,
+   "location": "ST BARNABAS EPISCOPAL CHURCH",
+   "address": "468 BRADLEY ROAD",
+   "city": "Bay Village",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "BAYV04B"
+  },
+  {
+   "poll_id": 1030,
+   "location": "ST BARNABAS EPISCOPAL CHURCH",
+   "address": "468 BRADLEY ROAD",
+   "city": "Bay Village",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "BAYV04C"
+  },
+  {
+   "poll_id": 8296,
+   "location": "BEREA RECREATION CENTER",
+   "address": "451 FRONT STREET",
+   "city": "Berea",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "BEREA01A"
+  },
+  {
+   "poll_id": 8296,
+   "location": "BEREA RECREATION CENTER",
+   "address": "451 FRONT STREET",
+   "city": "Berea",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "BEREA01B"
+  },
+  {
+   "poll_id": 8296,
+   "location": "BEREA RECREATION CENTER",
+   "address": "451 FRONT STREET",
+   "city": "Berea",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "BEREA02A"
+  },
+  {
+   "poll_id": 8296,
+   "location": "BEREA RECREATION CENTER",
+   "address": "451 FRONT STREET",
+   "city": "Berea",
+   "ward": "2",
+   "label": "2B.01",
+   "precinct": "BEREA02B"
+  },
+  {
+   "poll_id": 8129,
+   "location": "ST MARYS CATHOLIC CHURCH",
+   "address": "250 KRAFT STREET",
+   "city": "Berea",
+   "ward": "2",
+   "label": "3A",
+   "precinct": "BEREA03A"
+  },
+  {
+   "poll_id": 8296,
+   "location": "BEREA RECREATION CENTER",
+   "address": "451 FRONT STREET",
+   "city": "Berea",
+   "ward": "2",
+   "label": "2B.02",
+   "precinct": "BEREA02B"
+  },
+  {
+   "poll_id": 8129,
+   "location": "ST MARYS CATHOLIC CHURCH",
+   "address": "250 KRAFT STREET",
+   "city": "Berea",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "BEREA03B"
+  },
+  {
+   "poll_id": 1350,
+   "location": "HERITAGE CONGREGATIONAL CHURCH",
+   "address": "485 WEST STREET",
+   "city": "Berea",
+   "ward": "5",
+   "label": "5C",
+   "precinct": "BEREA05C"
+  },
+  {
+   "poll_id": 8275,
+   "location": "BEREA BRANCH LIBRARY",
+   "address": "7 BEREA COMMONS",
+   "city": "Berea",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "BEREA04A"
+  },
+  {
+   "poll_id": 8275,
+   "location": "BEREA BRANCH LIBRARY",
+   "address": "7 BEREA COMMONS",
+   "city": "Berea",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "BEREA04B"
+  },
+  {
+   "poll_id": 1350,
+   "location": "HERITAGE CONGREGATIONAL CHURCH",
+   "address": "485 WEST STREET",
+   "city": "Berea",
+   "ward": "5",
+   "label": "5A",
+   "precinct": "BEREA05A"
+  },
+  {
+   "poll_id": 1350,
+   "location": "HERITAGE CONGREGATIONAL CHURCH",
+   "address": "485 WEST STREET",
+   "city": "Berea",
+   "ward": "5",
+   "label": "5B",
+   "precinct": "BEREA05B"
+  },
+  {
+   "poll_id": 1000,
+   "location": "BROOKLYN HTS COMMUNITY CENTER",
+   "address": "225 TUXEDO AVENUE",
+   "city": "Brooklyn Heights",
+   "ward": "00",
+   "label": "A",
+   "precinct": "BHV00A"
+  },
+  {
+   "poll_id": 1390,
+   "location": "BENTLEYVILLE VILLAGE HALL",
+   "address": "6253 CHAGRIN RIVER ROAD",
+   "city": "Bentleyville",
+   "ward": "00",
+   "label": "A",
+   "precinct": "BNTLY00A"
+  },
+  {
+   "poll_id": 1550,
+   "location": "CUYAHOGA VALLEY CAREER CENTER",
+   "address": "8001 BRECKSVILLE ROAD",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "A",
+   "precinct": "BRECK00A"
+  },
+  {
+   "poll_id": 1550,
+   "location": "CUYAHOGA VALLEY CAREER CENTER",
+   "address": "8001 BRECKSVILLE ROAD",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "B",
+   "precinct": "BRECK00B"
+  },
+  {
+   "poll_id": 1540,
+   "location": "BRECKSVILLE COMMUNITY CENTER",
+   "address": "1 COMMUNITY DRIVE",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "C",
+   "precinct": "BRECK00C"
+  },
+  {
+   "poll_id": 1540,
+   "location": "BRECKSVILLE COMMUNITY CENTER",
+   "address": "1 COMMUNITY DRIVE",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "D",
+   "precinct": "BRECK00D"
+  },
+  {
+   "poll_id": 1540,
+   "location": "BRECKSVILLE COMMUNITY CENTER",
+   "address": "1 COMMUNITY DRIVE",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "E",
+   "precinct": "BRECK00E"
+  },
+  {
+   "poll_id": 8329,
+   "location": "SOUTH SUBURBAN MONTESSORI SCHOOL",
+   "address": "4450 OAKES ROAD",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "F",
+   "precinct": "BRECK00F"
+  },
+  {
+   "poll_id": 1540,
+   "location": "BRECKSVILLE COMMUNITY CENTER",
+   "address": "1 COMMUNITY DRIVE",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "G",
+   "precinct": "BRECK00G"
+  },
+  {
+   "poll_id": 8329,
+   "location": "SOUTH SUBURBAN MONTESSORI SCHOOL",
+   "address": "4450 OAKES ROAD",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "H",
+   "precinct": "BRECK00H"
+  },
+  {
+   "poll_id": 8329,
+   "location": "SOUTH SUBURBAN MONTESSORI SCHOOL",
+   "address": "4450 OAKES ROAD",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "I",
+   "precinct": "BRECK00I"
+  },
+  {
+   "poll_id": 8329,
+   "location": "SOUTH SUBURBAN MONTESSORI SCHOOL",
+   "address": "4450 OAKES ROAD",
+   "city": "Brecksville",
+   "ward": "00",
+   "label": "J",
+   "precinct": "BRECK00J"
+  },
+  {
+   "poll_id": 1400,
+   "location": "BROADVIEW HTS COMMUNITY BUILDING",
+   "address": "9543 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "BRHT01A"
+  },
+  {
+   "poll_id": 8206,
+   "location": "BROADVIEW HTS BAPTIST CHURCH",
+   "address": "9850 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "BRHT01B"
+  },
+  {
+   "poll_id": 1400,
+   "location": "BROADVIEW HTS COMMUNITY BUILDING",
+   "address": "9543 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "BRHT01C"
+  },
+  {
+   "poll_id": 1430,
+   "location": "ST MICHAELS WOODSIDE HALL",
+   "address": "5025 EAST MILL ROAD",
+   "city": "Broadview Heights",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "BRHT02A"
+  },
+  {
+   "poll_id": 1430,
+   "location": "ST MICHAELS WOODSIDE HALL",
+   "address": "5025 EAST MILL ROAD",
+   "city": "Broadview Heights",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "BRHT02B"
+  },
+  {
+   "poll_id": 1430,
+   "location": "ST MICHAELS WOODSIDE HALL",
+   "address": "5025 EAST MILL ROAD",
+   "city": "Broadview Heights",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "BRHT02C"
+  },
+  {
+   "poll_id": 1400,
+   "location": "BROADVIEW HTS COMMUNITY BUILDING",
+   "address": "9543 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "BRHT03A"
+  },
+  {
+   "poll_id": 1400,
+   "location": "BROADVIEW HTS COMMUNITY BUILDING",
+   "address": "9543 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "BRHT03B"
+  },
+  {
+   "poll_id": 1400,
+   "location": "BROADVIEW HTS COMMUNITY BUILDING",
+   "address": "9543 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "BRHT03C"
+  },
+  {
+   "poll_id": 1430,
+   "location": "ST MICHAELS WOODSIDE HALL",
+   "address": "5025 EAST MILL ROAD",
+   "city": "Broadview Heights",
+   "ward": "3",
+   "label": "2D",
+   "precinct": "BRHT02D"
+  },
+  {
+   "poll_id": 8206,
+   "location": "BROADVIEW HTS BAPTIST CHURCH",
+   "address": "9850 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "BRHT04A"
+  },
+  {
+   "poll_id": 1400,
+   "location": "BROADVIEW HTS COMMUNITY BUILDING",
+   "address": "9543 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "BRHT04B"
+  },
+  {
+   "poll_id": 8206,
+   "location": "BROADVIEW HTS BAPTIST CHURCH",
+   "address": "9850 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "BRHT04C"
+  },
+  {
+   "poll_id": 8206,
+   "location": "BROADVIEW HTS BAPTIST CHURCH",
+   "address": "9850 BROADVIEW ROAD",
+   "city": "Broadview Heights",
+   "ward": "4",
+   "label": "4D",
+   "precinct": "BRHT04D"
+  },
+  {
+   "poll_id": 1630,
+   "location": "BROOKLYN SENIOR COMMUNITY CENTER",
+   "address": "7727 MEMPHIS AVENUE",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "A",
+   "precinct": "BRKV00A"
+  },
+  {
+   "poll_id": 1630,
+   "location": "BROOKLYN SENIOR COMMUNITY CENTER",
+   "address": "7727 MEMPHIS AVENUE",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "B",
+   "precinct": "BRKV00B"
+  },
+  {
+   "poll_id": 1600,
+   "location": "DR MARTIN LUTHER EVANGELICAL LUTHERAN CH",
+   "address": "4470 RIDGE ROAD",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "C",
+   "precinct": "BRKV00C"
+  },
+  {
+   "poll_id": 1600,
+   "location": "DR MARTIN LUTHER EVANGELICAL LUTHERAN CH",
+   "address": "4470 RIDGE ROAD",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "D",
+   "precinct": "BRKV00D"
+  },
+  {
+   "poll_id": 1630,
+   "location": "BROOKLYN SENIOR COMMUNITY CENTER",
+   "address": "7727 MEMPHIS AVENUE",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "E",
+   "precinct": "BRKV00E"
+  },
+  {
+   "poll_id": 1630,
+   "location": "BROOKLYN SENIOR COMMUNITY CENTER",
+   "address": "7727 MEMPHIS AVENUE",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "F",
+   "precinct": "BRKV00F"
+  },
+  {
+   "poll_id": 1600,
+   "location": "DR MARTIN LUTHER EVANGELICAL LUTHERAN CH",
+   "address": "4470 RIDGE ROAD",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "G",
+   "precinct": "BRKV00G"
+  },
+  {
+   "poll_id": 1600,
+   "location": "DR MARTIN LUTHER EVANGELICAL LUTHERAN CH",
+   "address": "4470 RIDGE ROAD",
+   "city": "Brooklyn",
+   "ward": "00",
+   "label": "H",
+   "precinct": "BRKV00H"
+  },
+  {
+   "poll_id": 1460,
+   "location": "BROOK PARK RECREATION CENTER",
+   "address": "17400 HOLLAND ROAD",
+   "city": "Brook Park",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "BRPK01A"
+  },
+  {
+   "poll_id": 1460,
+   "location": "BROOK PARK RECREATION CENTER",
+   "address": "17400 HOLLAND ROAD",
+   "city": "Brook Park",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "BRPK01B"
+  },
+  {
+   "poll_id": 1460,
+   "location": "BROOK PARK RECREATION CENTER",
+   "address": "17400 HOLLAND ROAD",
+   "city": "Brook Park",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "BRPK01C"
+  },
+  {
+   "poll_id": 1510,
+   "location": "BROOK PARK UNITED METHODIST CHURCH",
+   "address": "6220 SMITH ROAD",
+   "city": "Brook Park",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "BRPK02A"
+  },
+  {
+   "poll_id": 1510,
+   "location": "BROOK PARK UNITED METHODIST CHURCH",
+   "address": "6220 SMITH ROAD",
+   "city": "Brook Park",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "BRPK02B"
+  },
+  {
+   "poll_id": 1510,
+   "location": "BROOK PARK UNITED METHODIST CHURCH",
+   "address": "6220 SMITH ROAD",
+   "city": "Brook Park",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "BRPK02C"
+  },
+  {
+   "poll_id": 8117,
+   "location": "UAW HALL LOCAL 1250",
+   "address": "17250 HUMMEL ROAD",
+   "city": "Brook Park",
+   "ward": "3",
+   "label": "3A.01",
+   "precinct": "BRPK03A"
+  },
+  {
+   "poll_id": 8117,
+   "location": "UAW HALL LOCAL 1250",
+   "address": "17250 HUMMEL ROAD",
+   "city": "Brook Park",
+   "ward": "3",
+   "label": "3A.02",
+   "precinct": "BRPK03A"
+  },
+  {
+   "poll_id": 8117,
+   "location": "UAW HALL LOCAL 1250",
+   "address": "17250 HUMMEL ROAD",
+   "city": "Brook Park",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "BRPK03B"
+  },
+  {
+   "poll_id": 8117,
+   "location": "UAW HALL LOCAL 1250",
+   "address": "17250 HUMMEL ROAD",
+   "city": "Brook Park",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "BRPK03C"
+  },
+  {
+   "poll_id": 1460,
+   "location": "BROOK PARK RECREATION CENTER",
+   "address": "17400 HOLLAND ROAD",
+   "city": "Brook Park",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "BRPK04A"
+  },
+  {
+   "poll_id": 1460,
+   "location": "BROOK PARK RECREATION CENTER",
+   "address": "17400 HOLLAND ROAD",
+   "city": "Brook Park",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "BRPK04B"
+  },
+  {
+   "poll_id": 1460,
+   "location": "BROOK PARK RECREATION CENTER",
+   "address": "17400 HOLLAND ROAD",
+   "city": "Brook Park",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "BRPK04C"
+  },
+  {
+   "poll_id": 1670,
+   "location": "CHAGRIN FALLS HIGH SCHOOL",
+   "address": "400 EAST WASHINGTON STREET",
+   "city": "Chagrin Falls Village",
+   "ward": "00",
+   "label": "D",
+   "precinct": "CFV00D"
+  },
+  {
+   "poll_id": 8293,
+   "location": "COMMUNITY ROOM IN OLMSTED TOWNSHIP",
+   "address": "7900 FITCH ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "B.02",
+   "precinct": "OLMST00B"
+  },
+  {
+   "poll_id": 8322,
+   "location": "NEW HOPE CHURCH",
+   "address": "22960 LORAIN ROAD",
+   "city": "Fairview Park",
+   "ward": "5",
+   "label": "5B.02",
+   "precinct": "FAPK05B"
+  },
+  {
+   "poll_id": 8079,
+   "location": "SOLON CITY HALL",
+   "address": "34200 BAINBRIDGE ROAD",
+   "city": "Solon",
+   "ward": "6",
+   "label": "6C",
+   "precinct": "SOLON06C"
+  },
+  {
+   "poll_id": 7485,
+   "location": "GRANTWOOD GOLF COURSE",
+   "address": "38855 AURORA ROAD",
+   "city": "Solon",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "SOLON01C"
+  },
+  {
+   "poll_id": 8156,
+   "location": "OLMSTED FALLS INTERMEDIATE SCHOOL",
+   "address": "27043 BAGLEY ROAD",
+   "city": "Olmsted Township",
+   "ward": "00",
+   "label": "D.02",
+   "precinct": "OLMST00D"
+  },
+  {
+   "poll_id": 8296,
+   "location": "BEREA RECREATION CENTER",
+   "address": "451 FRONT STREET",
+   "city": "Berea",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "BEREA02C"
+  },
+  {
+   "poll_id": 7540,
+   "location": "STRONGSVILLE COMMUNITY LIBRARY",
+   "address": "18700 WESTWOOD DRIVE",
+   "city": "Strongsville",
+   "ward": "3",
+   "label": "3H",
+   "precinct": "STRNG03H"
+  },
+  {
+   "poll_id": 8188,
+   "location": "EHRNFELT RECREATION SENIOR CENTER",
+   "address": "18100 ROYALTON ROAD",
+   "city": "Strongsville",
+   "ward": "1",
+   "label": "1H",
+   "precinct": "STRNG01H"
+  },
+  {
+   "poll_id": 8208,
+   "location": "STRONGSVILLE CITY SCHOOLS ADMIN OFFICES",
+   "address": "18199 COOK AVENUE",
+   "city": "Strongsville",
+   "ward": "4",
+   "label": "4H",
+   "precinct": "STRNG04H"
+  },
+  {
+   "poll_id": 6410,
+   "location": "NORTH ROYALTON SENIOR CENTER",
+   "address": "13220 RIDGE ROAD",
+   "city": "North Royalton",
+   "ward": "1",
+   "label": "1A",
+   "precinct": "NROY01A"
+  },
+  {
+   "poll_id": 6410,
+   "location": "NORTH ROYALTON SENIOR CENTER",
+   "address": "13220 RIDGE ROAD",
+   "city": "North Royalton",
+   "ward": "1",
+   "label": "1B",
+   "precinct": "NROY01B"
+  },
+  {
+   "poll_id": 6410,
+   "location": "NORTH ROYALTON SENIOR CENTER",
+   "address": "13220 RIDGE ROAD",
+   "city": "North Royalton",
+   "ward": "1",
+   "label": "1C",
+   "precinct": "NROY01C"
+  },
+  {
+   "poll_id": 8162,
+   "location": "NORTH ROYALTON BRANCH LIBRARY",
+   "address": "5071 WALLINGS ROAD",
+   "city": "North Royalton",
+   "ward": "2",
+   "label": "2A",
+   "precinct": "NROY02A"
+  },
+  {
+   "poll_id": 8162,
+   "location": "NORTH ROYALTON BRANCH LIBRARY",
+   "address": "5071 WALLINGS ROAD",
+   "city": "North Royalton",
+   "ward": "2",
+   "label": "2B",
+   "precinct": "NROY02B"
+  },
+  {
+   "poll_id": 8162,
+   "location": "NORTH ROYALTON BRANCH LIBRARY",
+   "address": "5071 WALLINGS ROAD",
+   "city": "North Royalton",
+   "ward": "2",
+   "label": "2C",
+   "precinct": "NROY02C"
+  },
+  {
+   "poll_id": 8162,
+   "location": "NORTH ROYALTON BRANCH LIBRARY",
+   "address": "5071 WALLINGS ROAD",
+   "city": "North Royalton",
+   "ward": "2",
+   "label": "2D",
+   "precinct": "NROY02D"
+  },
+  {
+   "poll_id": 6410,
+   "location": "NORTH ROYALTON SENIOR CENTER",
+   "address": "13220 RIDGE ROAD",
+   "city": "North Royalton",
+   "ward": "3",
+   "label": "3A",
+   "precinct": "NROY03A"
+  },
+  {
+   "poll_id": 6410,
+   "location": "NORTH ROYALTON SENIOR CENTER",
+   "address": "13220 RIDGE ROAD",
+   "city": "North Royalton",
+   "ward": "3",
+   "label": "3B",
+   "precinct": "NROY03B"
+  },
+  {
+   "poll_id": 6410,
+   "location": "NORTH ROYALTON SENIOR CENTER",
+   "address": "13220 RIDGE ROAD",
+   "city": "North Royalton",
+   "ward": "3",
+   "label": "3C",
+   "precinct": "NROY03C"
+  },
+  {
+   "poll_id": 6410,
+   "location": "NORTH ROYALTON SENIOR CENTER",
+   "address": "13220 RIDGE ROAD",
+   "city": "North Royalton",
+   "ward": "3",
+   "label": "3D",
+   "precinct": "NROY03D"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "4",
+   "label": "4A",
+   "precinct": "NROY04A"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "4",
+   "label": "4B",
+   "precinct": "NROY04B"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "4",
+   "label": "4C",
+   "precinct": "NROY04C"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "4",
+   "label": "4D",
+   "precinct": "NROY04D"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "5",
+   "label": "5A",
+   "precinct": "NROY05A"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "5",
+   "label": "5B",
+   "precinct": "NROY05B"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "5",
+   "label": "5C",
+   "precinct": "NROY05C"
+  },
+  {
+   "poll_id": 8312,
+   "location": "NORTH ROYALTON ELEMENTARY SCHOOL",
+   "address": "16400 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "5",
+   "label": "5D",
+   "precinct": "NROY05D"
+  },
+  {
+   "poll_id": 8237,
+   "location": "NORTH ROYALTON CITY HALL",
+   "address": "14600 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "6",
+   "label": "6A",
+   "precinct": "NROY06A"
+  },
+  {
+   "poll_id": 8237,
+   "location": "NORTH ROYALTON CITY HALL",
+   "address": "14600 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "6",
+   "label": "6B",
+   "precinct": "NROY06B"
+  },
+  {
+   "poll_id": 8237,
+   "location": "NORTH ROYALTON CITY HALL",
+   "address": "14600 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "6",
+   "label": "6C",
+   "precinct": "NROY06C"
+  },
+  {
+   "poll_id": 8237,
+   "location": "NORTH ROYALTON CITY HALL",
+   "address": "14600 STATE ROAD",
+   "city": "North Royalton",
+   "ward": "6",
+   "label": "6D",
+   "precinct": "NROY06D"
+  }
+ ]
+}

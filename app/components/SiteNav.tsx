@@ -5,6 +5,8 @@ const LINKS = [
   { to: "/", label: "Map", end: true },
   { to: "/polls", label: "Polls", end: false },
   { to: "/election2026", label: "Election 26", end: false },
+  { to: "/results", label: "OH-7 Night", end: false },
+  { to: "/chase", label: "Chase", end: false },
 ];
 
 export function SiteNav() {

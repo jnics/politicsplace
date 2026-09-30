@@ -13,7 +13,7 @@ import {
 import { marginToShade } from "~/lib/margin";
 import { buildSenateSeatContext, type SenateSeatContext } from "~/lib/senateComposition";
 
-export const NOT_UP_COLOR = "#e4e4e7"; // zinc-200: no race this cycle
+export const NOT_UP_COLOR = "#ffffff"; // white: no race this cycle — stays neutral, isn't blue or red
 
 export function computeSenateHistoricalView(year: SenateCycleYear) {
   const races = SENATE_RESULTS[year];

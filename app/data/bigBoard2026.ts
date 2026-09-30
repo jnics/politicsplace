@@ -42,18 +42,17 @@ export const BIG_BOARD_2026: BoardRace[] = [
         "name": "Everett Wess",
         "party": "D"
       }
-    ],
-    "note": "Progressive except for Palestine"
+    ]
   },
   {
     "chamber": "senate",
     "place": "Alaska",
     "state": "AK",
-    "incumbent": "Dan Sullivan",
+    "incumbent": "Dan S. Sullivan",
     "incumbentParty": "R",
     "candidates": [
       {
-        "name": "Dan Sullivan",
+        "name": "Dan S. Sullivan",
         "party": "R",
         "incumbent": true
       },
@@ -62,11 +61,15 @@ export const BIG_BOARD_2026: BoardRace[] = [
         "party": "D"
       },
       {
-        "name": "The Other Dan Sullivan",
+        "name": "Daniel J. Sullivan Jr.",
+        "party": "I"
+      },
+      {
+        "name": "Gerald L. Heikes",
         "party": "R"
       }
     ],
-    "note": "Lefty"
+    "note": "Ranked-choice general. \"Daniel J. Sullivan Jr.\" is a separate candidate from Petersburg (former Anchorage mayor), listed with no party on the ballot though he filed as a Republican — not the incumbent senator."
   },
   {
     "chamber": "senate",

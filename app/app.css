@@ -25,3 +25,16 @@ html,
 body {
   @apply bg-white dark:bg-gray-950;
 }
+
+/* Walk-sheet printing (/chase?sheet=1): drop the app chrome and force a plain
+   light layout so canvassers get a clean paper list. */
+@media print {
+  nav,
+  .no-print {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+}

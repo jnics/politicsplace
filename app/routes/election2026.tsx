@@ -1,5 +1,6 @@
 import type { Route } from "./+types/election2026";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { cloudflareContext } from "~/lib/context.server";
+import { useMemo, useRef, useState } from "react";
 import { useFetcher, data } from "react-router";
 import {
   BOARD_SENATE,
@@ -10,6 +11,8 @@ import {
 import { raceId, type BoardResult } from "~/data/boardResults";
 import { STATE_PATHS } from "~/data/statePaths";
 import { readStore, saveResult } from "~/lib/board.server";
+import { editorFromRequest, tryLogin } from "~/lib/auth.server";
+import { LoginForm } from "~/components/LoginForm";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -21,18 +24,27 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export async function loader({}: Route.LoaderArgs) {
-  const store = await readStore();
-  return { results: store.results as Record<string, BoardResult> };
+export async function loader({ request, context }: Route.LoaderArgs) {
+  const store = await readStore(context.get(cloudflareContext).env.DB);
+  return {
+    results: store.results as Record<string, BoardResult>,
+    editor: editorFromRequest(request),
+  };
 }
 
-export async function action({ request }: Route.ActionArgs) {
+export async function action({ request, context }: Route.ActionArgs) {
   const form = await request.formData();
+
+  const login = tryLogin(form);
+  if (login) return login;
+
+  const editor = editorFromRequest(request);
+  if (!editor) return data({ error: "Sign in first." }, { status: 401 });
+
   if (form.get("intent") !== "result") {
     return data({ error: "Unknown action." }, { status: 400 });
   }
   const id = String(form.get("raceId"));
-  const by = String(form.get("by") ?? "").trim() || "anon";
   const reportedPct = Math.max(
     0,
     Math.min(100, Number(form.get("reportedPct")) || 0)
@@ -46,7 +58,7 @@ export async function action({ request }: Route.ActionArgs) {
   const called = ["D", "R", "I", "L", "G", "O"].includes(calledRaw)
     ? (calledRaw as BoardParty)
     : undefined;
-  await saveResult(id, { reportedPct, votes, called }, by);
+  await saveResult(context.get(cloudflareContext).env.DB, id, { reportedPct, votes, called }, editor);
   return data({ ok: true });
 }
 
@@ -105,22 +117,9 @@ function tally(races: BoardRace[], results: Record<string, BoardResult>) {
 }
 
 export default function Election2026({ loaderData }: Route.ComponentProps) {
-  const { results } = loaderData;
+  const { results, editor } = loaderData;
   const [chamber, setChamber] = useState<"senate" | "house">("senate");
   const [houseFilter, setHouseFilter] = useState<"all" | "flippable">("all");
-  const [editorName, setEditorName] = useState("");
-
-  useEffect(() => {
-    try {
-      setEditorName(localStorage.getItem("board-editor") ?? "");
-    } catch {}
-  }, []);
-  function updateEditorName(v: string) {
-    setEditorName(v);
-    try {
-      localStorage.setItem("board-editor", v);
-    } catch {}
-  }
 
   const senT = useMemo(() => tally(BOARD_SENATE, results), [results]);
   const houseT = useMemo(() => tally(BOARD_HOUSE, results), [results]);
@@ -144,26 +143,28 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-      <header className="mb-4 flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-            2026 Election Night
-          </h1>
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Every Senate and House race. Type counts straight into a row &mdash; it
-            saves as you go and updates for everyone.
+      <header className="mb-4">
+        <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
+          2026 Election Night
+        </h1>
+        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          Every Senate and House race. Type counts straight into a row &mdash; it
+          saves as you go and updates for everyone.
+        </p>
+      </header>
+
+      {!editor ? (
+        <div className="mb-5">
+          <LoginForm title="Sign in to enter results" />
+          <p className="mt-2 text-center text-xs text-gray-400 dark:text-gray-500">
+            Everyone can watch the board update live below — just not edit it.
           </p>
         </div>
-        <label className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400">
-          your name
-          <input
-            value={editorName}
-            onChange={(e) => updateEditorName(e.target.value)}
-            placeholder="optional"
-            className="w-28 rounded border border-gray-300 bg-white px-2 py-1 dark:border-gray-700 dark:bg-gray-900"
-          />
-        </label>
-      </header>
+      ) : (
+        <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
+          Signed in as <span className="font-medium">{editor}</span>.
+        </p>
+      )}
 
       <div className="mb-5 grid grid-cols-2 gap-3">
         <ControlCard title="Senate" t={senT} />
@@ -190,7 +191,7 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
       </div>
 
       {chamber === "senate" ? (
-        <div className="divide-y divide-gray-100 overflow-hidden rounded-xl border border-gray-200 dark:divide-gray-800 dark:border-gray-800">
+        <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
           {[...BOARD_SENATE]
             .sort((a, b) => a.place.localeCompare(b.place))
             .map((race) => (
@@ -198,7 +199,7 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
                 key={race.place}
                 race={race}
                 res={results[raceId(race)]}
-                editorName={editorName}
+                editable={!!editor}
               />
             ))}
         </div>
@@ -246,14 +247,14 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
                       {shown.length} seat{shown.length === 1 ? "" : "s"}
                     </span>
                   </summary>
-                  <div className="divide-y divide-gray-100 border-t border-gray-100 dark:divide-gray-800 dark:border-gray-800">
+                  <div className="grid grid-cols-1 gap-px border-t border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
                     {shown.map((race) => (
                       <RaceRow
                         key={race.place}
                         race={race}
                         res={results[raceId(race)]}
-                        editorName={editorName}
                         compact
+                        editable={!!editor}
                       />
                     ))}
                   </div>
@@ -306,13 +307,13 @@ function ControlCard({
 function RaceRow({
   race,
   res,
-  editorName,
   compact,
+  editable,
 }: {
   race: BoardRace;
   res?: BoardResult;
-  editorName: string;
   compact?: boolean;
+  editable: boolean;
 }) {
   const fetcher = useFetcher();
   const formRef = useRef<HTMLFormElement>(null);
@@ -321,8 +322,10 @@ function RaceRow({
   const totalVotes = res ? Object.values(res.votes).reduce((s, v) => s + v, 0) : 0;
   const saving = fetcher.state !== "idle";
 
-  // Debounced auto-save on any input change.
+  // Debounced auto-save on any input change. Not signed in -> the server
+  // would 401 anyway, so don't even try.
   function scheduleSave() {
+    if (!editable) return;
     if (timer.current) clearTimeout(timer.current);
     timer.current = setTimeout(() => {
       if (formRef.current) fetcher.submit(formRef.current);
@@ -332,7 +335,7 @@ function RaceRow({
   const cands = race.candidates.slice(0, 3);
 
   return (
-    <div className="px-4 py-2.5">
+    <div className="bg-white px-4 py-2.5 dark:bg-gray-900">
       <div className="flex items-start gap-3">
         <div className={compact ? "w-12 shrink-0 pt-0.5" : "w-24 shrink-0 pt-0.5"}>
           <div className="text-sm font-medium text-gray-900 dark:text-gray-100">
@@ -348,7 +351,6 @@ function RaceRow({
         >
           <input type="hidden" name="intent" value="result" />
           <input type="hidden" name="raceId" value={raceId(race)} />
-          <input type="hidden" name="by" value={editorName} />
 
           {cands.map((c) => {
             const v = res?.votes[c.name] ?? 0;
@@ -365,9 +367,10 @@ function RaceRow({
                   type="number"
                   min={0}
                   inputMode="numeric"
+                  disabled={!editable}
                   defaultValue={res?.votes[c.name] ?? ""}
                   placeholder="votes"
-                  className="w-24 rounded border border-gray-200 bg-white px-1.5 py-0.5 tabular-nums dark:border-gray-700 dark:bg-gray-900"
+                  className="w-24 rounded border border-gray-200 bg-white px-1.5 py-0.5 tabular-nums disabled:opacity-50 dark:border-gray-700 dark:bg-gray-900"
                 />
                 <span
                   className={`ml-auto w-10 shrink-0 text-right tabular-nums ${PARTY_TEXT[c.party]}`}
@@ -386,16 +389,18 @@ function RaceRow({
                 type="number"
                 min={0}
                 max={100}
+                disabled={!editable}
                 defaultValue={res?.reportedPct ?? ""}
-                className="w-14 rounded border border-gray-200 bg-white px-1.5 py-0.5 tabular-nums dark:border-gray-700 dark:bg-gray-900"
+                className="w-14 rounded border border-gray-200 bg-white px-1.5 py-0.5 tabular-nums disabled:opacity-50 dark:border-gray-700 dark:bg-gray-900"
               />
             </label>
             <label className="flex items-center gap-1">
               call
               <select
                 name="called"
+                disabled={!editable}
                 defaultValue={res?.called ?? ""}
-                className="rounded border border-gray-200 bg-white px-1 py-0.5 dark:border-gray-700 dark:bg-gray-900"
+                className="rounded border border-gray-200 bg-white px-1 py-0.5 disabled:opacity-50 dark:border-gray-700 dark:bg-gray-900"
               >
                 <option value="">—</option>
                 <option value="D">D</option>

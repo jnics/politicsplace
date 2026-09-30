@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "politicsplace",
+  "main": "./workers/app.ts",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"],
+  // Static build output — Workers serves these directly and only invokes the
+  // Worker (SSR) for anything that isn't a matching file.
+  "assets": {
+    "directory": "./build/client"
+  },
+  // Created by `wrangler d1 create politicsplace` — see README-deploy.md.
+  // Fill in database_id with the id that command prints before deploying;
+  // local `pnpm dev` doesn't need it filled in (the Cloudflare Vite plugin
+  // simulates D1 locally from this same binding name regardless).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "politicsplace",
+      "database_id": "7330d8b0-4ec1-4e1c-b88e-77a5aaf03f5c"
+    }
+  ]
+}

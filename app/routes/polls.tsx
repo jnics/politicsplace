@@ -1,15 +1,28 @@
 import type { Route } from "./+types/polls";
+import { cloudflareContext } from "~/lib/context.server";
 import { useMemo, useState } from "react";
 import {
   POLLS,
   POLLS_GENERATED_AT,
   averageMargin,
   latestPollDate,
+  mergeManualPolls,
+  raceKey,
+  raceYear,
   type PartyCode,
   type RaceType,
   type RacePolls,
 } from "~/data/polls";
 import { STATE_PATHS } from "~/data/statePaths";
+import { GENERIC_BALLOT } from "~/data/genericBallot";
+import { readManualPollsFor } from "~/lib/pollsManual.server";
+
+const ALL_RACE_KEYS = POLLS.map((r) => raceKey(r));
+
+export async function loader({ context }: Route.LoaderArgs) {
+  const manualByKey = await readManualPollsFor(context.get(cloudflareContext).env.DB, ALL_RACE_KEYS);
+  return { manualByKey };
+}
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -17,7 +30,7 @@ export function meta({}: Route.MetaArgs) {
     {
       name: "description",
       content:
-        "Latest 2026 U.S. Senate polling by state and race, sourced from RealClearPolling.",
+        "2026 U.S. Senate, House, Governor and President polling by state and race, plus the generic congressional ballot, sourced from RealClearPolling.",
     },
   ];
 }
@@ -46,6 +59,192 @@ function fmtDate(iso: string): string {
   return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
+/** Years we have any polling for a given office. */
+function officeYears(allRaces: RacePolls[], office: RaceType): number[] {
+  const ys = new Set<number>();
+  for (const r of allRaces)
+    if (r.raceType === office && r.polls.length > 0) ys.add(raceYear(r));
+  return [...ys].sort((a, b) => a - b);
+}
+
+/** This tab's own aggregate: the mean D% and R% across every polled race of
+ *  that office in a year. */
+function officeAverage(
+  allRaces: RacePolls[],
+  office: RaceType,
+  year: number
+): { d: number; r: number; spread: string; n: number } | null {
+  const races = allRaces.filter(
+    (x) => x.raceType === office && raceYear(x) === year && x.polls.length > 0
+  );
+  const ds: number[] = [];
+  const rs: number[] = [];
+  for (const race of races) {
+    let d = 0, nd = 0, r = 0, nr = 0;
+    for (const poll of race.polls) {
+      const pd = poll.results.find((x) => x.party === "D")?.pct;
+      const pr = poll.results.find((x) => x.party === "R")?.pct;
+      if (pd != null) { d += pd; nd += 1; }
+      if (pr != null) { r += pr; nr += 1; }
+    }
+    if (nd) ds.push(d / nd);
+    if (nr) rs.push(r / nr);
+  }
+  if (!ds.length || !rs.length) return null;
+  const dAvg = ds.reduce((s, x) => s + x, 0) / ds.length;
+  const rAvg = rs.reduce((s, x) => s + x, 0) / rs.length;
+  const m = dAvg - rAvg;
+  return {
+    d: Math.round(dAvg * 10) / 10,
+    r: Math.round(rAvg * 10) / 10,
+    spread: `${m >= 0 ? "D" : "R"}+${Math.abs(m).toFixed(1)}`,
+    n: races.length,
+  };
+}
+
+const OFFICE_LABEL: Record<RaceType, string> = {
+  senate: "Senate",
+  house: "House",
+  governor: "Governor",
+  president: "President",
+};
+
+const ALL_BALLOT_YEARS = [2016, 2018, 2020, 2022, 2024, 2026];
+
+interface BallotData {
+  d: number;
+  r: number;
+  spread: string;
+  /** Right-aligned meta line. */
+  sub: string;
+  note?: string;
+}
+
+/** The D-vs-R figure for one tab in one year. House uses the RCP generic
+ *  congressional ballot; the other offices use the mean of that office's polled
+ *  races (see officeAverage). */
+function ballotFor(allRaces: RacePolls[], tab: RaceType, year: number): BallotData | null {
+  if (tab === "house") {
+    const g = GENERIC_BALLOT.find((x) => x.year === year);
+    if (!g) return null;
+    return {
+      d: g.d,
+      r: g.r,
+      spread: g.spread,
+      sub: year === 2026 ? `RCP average · ${fmtDate(g.asOf)}` : "RCP final average",
+      note: g.note,
+    };
+  }
+  const agg = officeAverage(allRaces, tab, year);
+  if (!agg) return null;
+  return {
+    d: agg.d,
+    r: agg.r,
+    spread: agg.spread,
+    sub: `mean of ${agg.n} race${agg.n === 1 ? "" : "s"} · ${year}`,
+    note: `Unweighted mean of the D and R polling average across every ${year} ${OFFICE_LABEL[tab].toLowerCase()} race with polls on this page.`,
+  };
+}
+
+/** Years a tab has a ballot figure for. */
+function ballotYears(allRaces: RacePolls[], tab: RaceType): number[] {
+  return tab === "house"
+    ? GENERIC_BALLOT.map((g) => g.year)
+    : officeYears(allRaces, tab);
+}
+
+/** One D-vs-R summary bar with year pills — used on every tab. */
+function BallotCard({
+  allRaces,
+  tab,
+  year,
+  onYear,
+}: {
+  allRaces: RacePolls[];
+  tab: RaceType;
+  year: number;
+  onYear: (y: number) => void;
+}) {
+  const data = ballotFor(allRaces, tab, year);
+  const have = new Set(ballotYears(allRaces, tab));
+  return (
+    <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+          {tab === "house"
+            ? "Generic congressional ballot"
+            : `${OFFICE_LABEL[tab]} polling average`}
+        </h2>
+        <span className="text-xs text-gray-400 dark:text-gray-500">
+          {data ? data.sub : "—"}
+        </span>
+      </div>
+
+      <div className="mt-2.5 flex flex-wrap gap-1.5">
+        {ALL_BALLOT_YEARS.map((y) => {
+          const enabled = have.has(y);
+          return (
+            <button
+              key={y}
+              disabled={!enabled}
+              onClick={() => onYear(y)}
+              title={
+                enabled
+                  ? undefined
+                  : "No polling pulled for this year yet — run pnpm polls:pull"
+              }
+              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                y === year
+                  ? "bg-gray-900 text-white shadow-sm dark:bg-gray-100 dark:text-gray-900"
+                  : enabled
+                  ? "border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+                  : "border border-gray-200 text-gray-300 dark:border-gray-800 dark:text-gray-600"
+              }`}
+            >
+              {y}
+            </button>
+          );
+        })}
+      </div>
+
+      {data ? (
+        <>
+          <div className="mt-3 flex items-baseline justify-between text-sm">
+            <span className="font-semibold text-blue-600 dark:text-blue-400">
+              D {data.d}%
+            </span>
+            <span
+              className={`font-bold ${
+                data.spread.startsWith("D")
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-red-600 dark:text-red-400"
+              }`}
+            >
+              {data.spread}
+            </span>
+            <span className="font-semibold text-red-600 dark:text-red-400">
+              R {data.r}%
+            </span>
+          </div>
+          <div className="mt-1.5 flex h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-800">
+            <span className="bg-blue-500" style={{ width: `${data.d}%` }} />
+            <span className="ml-auto bg-red-500" style={{ width: `${data.r}%` }} />
+          </div>
+          {data.note && (
+            <p className="mt-2.5 text-[11px] leading-relaxed text-gray-400 dark:text-gray-500">
+              {data.note}
+            </p>
+          )}
+        </>
+      ) : (
+        <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+          No {year} {OFFICE_LABEL[tab].toLowerCase()} polling loaded.
+        </p>
+      )}
+    </div>
+  );
+}
+
 /** Leader + margin summary for a race, preferring the source's own average. */
 function raceSummary(race: RacePolls): { text: string; party: PartyCode } | null {
   if (race.aggregateAverage) {
@@ -63,13 +262,30 @@ function raceSummary(race: RacePolls): { text: string; party: PartyCode } | null
   };
 }
 
-export default function Polls() {
+export default function Polls({ loaderData }: Route.ComponentProps) {
   const [tab, setTab] = useState<RaceType>("senate");
+  const [ballotYear, setBallotYear] = useState(2026);
+
+  // POLLS is the static SEEDED+GENERATED base (unchanged, build-time); the
+  // manual submissions the loader just fetched from D1 fold in on top of it
+  // here, live, on every request — see mergeManualPolls in ~/data/polls.
+  const allRaces = useMemo(
+    () => mergeManualPolls(POLLS, loaderData.manualByKey),
+    [loaderData.manualByKey]
+  );
+
+  // Keep the year valid for the tab (House ballot has 2022/24/26; the office
+  // averages only have years their race polls were pulled for).
+  const validYears = ballotYears(allRaces, tab);
+  const year = validYears.includes(ballotYear)
+    ? ballotYear
+    : validYears[validYears.length - 1] ?? 2026;
 
   const byState = useMemo(() => {
     const groups = new Map<string, RacePolls[]>();
-    for (const race of POLLS) {
+    for (const race of allRaces) {
       if (race.raceType !== tab) continue;
+      if (raceYear(race) !== year) continue;
       const list = groups.get(race.state) ?? [];
       list.push(race);
       groups.set(race.state, list);
@@ -86,23 +302,31 @@ export default function Polls() {
           STATE_NAMES[b.state] ?? b.state
         )
       );
-  }, [tab]);
+  }, [allRaces, tab, year]);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-      <header className="mb-5">
-        <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-          Polls
-        </h1>
-        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-          2026 polling by state and race, sourced from RealClearPolling
-          {POLLS_GENERATED_AT ? ` · updated ${POLLS_GENERATED_AT}` : ""}.
-        </p>
+      <header className="mb-5 flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
+            Polls
+          </h1>
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            2026 polling by state and race, sourced from RealClearPolling
+            {POLLS_GENERATED_AT ? ` · updated ${POLLS_GENERATED_AT}` : ""}.
+          </p>
+        </div>
+        <a
+          href="/polls/submit"
+          className="mt-1 shrink-0 rounded-md border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+        >
+          + Add a poll
+        </a>
       </header>
 
       <div className="mb-6 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
         {TABS.map((t) => {
-          const count = POLLS.filter((r) => r.raceType === t.id).length;
+          const count = allRaces.filter((r) => r.raceType === t.id).length;
           return (
             <button
               key={t.id}
@@ -124,15 +348,23 @@ export default function Polls() {
         })}
       </div>
 
+      <div className="mb-4">
+        <BallotCard allRaces={allRaces} tab={tab} year={year} onYear={setBallotYear} />
+      </div>
+
       {byState.length === 0 ? (
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          No {tab} polling loaded yet.
+          No {year} {tab} race polling loaded
+          {tab === "house" ? " — the bar above is the national generic ballot" : ""}.
         </p>
       ) : (
         <div className="space-y-2">
           {byState.map(({ state, races }) => {
             const primary = races[0];
-            const summary = primary ? raceSummary(primary) : null;
+            const racesWithPolls = races.filter((r) => r.polls.length > 0).length;
+            // One race: show its leading margin. Several: just the count.
+            const summary =
+              primary && racesWithPolls <= 1 ? raceSummary(primary) : null;
             const pollCount = races.reduce((n, r) => n + r.polls.length, 0);
             return (
               <details
@@ -158,10 +390,16 @@ export default function Polls() {
                     )}
                   </span>
                   <span className="flex items-center gap-3 text-xs">
-                    {summary && (
+                    {summary ? (
                       <span className={`font-semibold ${PARTY_TEXT[summary.party]}`}>
                         {summary.text}
                       </span>
+                    ) : (
+                      racesWithPolls > 1 && (
+                        <span className="text-gray-500 dark:text-gray-400">
+                          {racesWithPolls} races
+                        </span>
+                      )
                     )}
                     <span className="text-gray-400 dark:text-gray-500">
                       {pollCount} poll{pollCount === 1 ? "" : "s"}
@@ -185,6 +423,7 @@ export default function Polls() {
     </div>
   );
 }
+
 
 function RaceCard({ race }: { race: RacePolls }) {
   const polls = [...race.polls].sort((p, q) => q.endDate.localeCompare(p.endDate));

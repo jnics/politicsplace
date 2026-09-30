@@ -1,0 +1,1374 @@
+{
+ "source": "lookup.boe.ohio.gov Precinct and Polling Locations screen reports (Ashland, Medina, Wayne), pulled via browser",
+ "pulled": "2026-09-07",
+ "rows": [
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 1-A",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 1-B",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 1-C",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 1-D",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 2-A",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 2-B",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 2-C",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 3-A",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 3-B",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 3-C",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 3-D",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 4-A",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 4-B",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ashland City 4-C",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Clear Creek",
+   "location": "Bethel Baptist Church",
+   "address": "575 N Us 250, Savannah"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Loudonville 1",
+   "location": "American Legion Post 257",
+   "address": "131 S Water St, Loudonville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Green 1",
+   "location": "American Legion Post 257",
+   "address": "131 S Water St, Loudonville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Green 2",
+   "location": "American Legion Post 257",
+   "address": "131 S Water St, Loudonville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Loudonville 2",
+   "location": "American Legion Post 257",
+   "address": "131 S Water St, Loudonville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Jackson 1",
+   "location": "Cinnamon Lake Lodge",
+   "address": "1443 Laurel Dr, West Salem"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Jackson 2",
+   "location": "Polk Fire Station",
+   "address": "209 E Congress St, Polk"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Lake",
+   "location": "Lake Township House",
+   "address": "2499 Cr 175, Loudonville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Milton 1",
+   "location": "Ashland Church Of Christ",
+   "address": "1185 Cr 1356, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Milton 3",
+   "location": "Ashland Church Of Christ",
+   "address": "1185 Cr 1356, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Jeromesville",
+   "location": "Jeromesville Fire Station",
+   "address": "1 N Alley St, Jeromesville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Mohican",
+   "location": "Mohican Township House",
+   "address": "2008 Sr 89, Jeromesville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Montgomery 1",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Montgomery 2",
+   "location": "Eagles Club",
+   "address": "400 Eastlake Dr, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Montgomery 3",
+   "location": "Ashland City Schools District",
+   "address": "1407 Claremont Ave, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Orange 1",
+   "location": "Trinity Baptist Church",
+   "address": "891 Sr 511, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Orange 2",
+   "location": "Trinity Baptist Church",
+   "address": "891 Sr 511, Ashland"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Perry",
+   "location": "Jeromesville Fire Station",
+   "address": "1 N Alley St, Jeromesville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Ruggles",
+   "location": "Bethel Baptist Church",
+   "address": "575 N Us 250, Savannah"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Sullivan 1",
+   "location": "1st Congregational Church",
+   "address": "503 Us 224, Sullivan"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Sullivan 2",
+   "location": "1st Congregational Church",
+   "address": "503 Us 224, Sullivan"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Troy",
+   "location": "Bethel Baptist Church",
+   "address": "575 N Us 250, Savannah"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Vermillion 1",
+   "location": "Hayesville Methodist Church",
+   "address": "44 S Mechanic St, Hayesville"
+  },
+  {
+   "county": "Ashland",
+   "precinct": "Vermillion 2",
+   "location": "Hayesville Methodist Church",
+   "address": "44 S Mechanic St, Hayesville"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 1-A",
+   "location": "Huntington Sch",
+   "address": "1931 Huntington Cir, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 1-B",
+   "location": "Kidder Sch",
+   "address": "3650 Grafton Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 1-C",
+   "location": "Crestview Sch",
+   "address": "300 W 130th St, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 1-D",
+   "location": "Crestview Sch",
+   "address": "300 W 130th St, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 1-E",
+   "location": "Huntington Sch",
+   "address": "1931 Huntington Cir, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 1-F",
+   "location": "Kidder Sch",
+   "address": "3650 Grafton Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 2-A",
+   "location": "Applewood Sch",
+   "address": "3891 Applewood Dr, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 2-B",
+   "location": "Applewood Sch",
+   "address": "3891 Applewood Dr, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 2-C",
+   "location": "Huntington Sch",
+   "address": "1931 Huntington Cir, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 2-D",
+   "location": "Huntington Sch",
+   "address": "1931 Huntington Cir, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 2-E",
+   "location": "Applewood Sch",
+   "address": "3891 Applewood Dr, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 3-A",
+   "location": "St Ambrose Sch",
+   "address": "929 Pearl Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 3-B",
+   "location": "St Ambrose Sch",
+   "address": "929 Pearl Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 3-C",
+   "location": "Kidder Sch",
+   "address": "3650 Grafton Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 3-D",
+   "location": "St Ambrose Sch",
+   "address": "929 Pearl Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 3-E",
+   "location": "Memorial Sch",
+   "address": "3845 Magnolia Dr, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 3-F",
+   "location": "Memorial Sch",
+   "address": "3845 Magnolia Dr, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 4-A",
+   "location": "St Ambrose Sch",
+   "address": "929 Pearl Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 4-B",
+   "location": "St Ambrose Sch",
+   "address": "929 Pearl Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 4-C",
+   "location": "Bruns City Hall",
+   "address": "4095 Center Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 4-D",
+   "location": "Bruns City Hall",
+   "address": "4095 Center Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 4-E",
+   "location": "Kidder Sch",
+   "address": "3650 Grafton Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 1-A",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 1-B",
+   "location": "Medina Fire Sta 1",
+   "address": "300 W Reagan Pkwy, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 1-C",
+   "location": "Medina Fire Sta 1",
+   "address": "300 W Reagan Pkwy, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 1-D",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 2-A",
+   "location": "Medina Rec Ctr",
+   "address": "855 Weymouth Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 2-B",
+   "location": "Medina Fire Sta 1",
+   "address": "300 W Reagan Pkwy, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 2-C",
+   "location": "Medina Rec Ctr",
+   "address": "855 Weymouth Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 2-D",
+   "location": "Cornerstone",
+   "address": "3939 Granger Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 3-A",
+   "location": "Medina Rec Ctr",
+   "address": "855 Weymouth Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 3-B",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 3-C",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 3-D",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 4-A",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 4-B",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 4-C",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina City 4-D",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 1-A",
+   "location": "Masonic Temple",
+   "address": "660 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 1-B",
+   "location": "Masonic Temple",
+   "address": "660 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 1-C",
+   "location": "Mosaic Wadsworth",
+   "address": "118 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 1-D",
+   "location": "Mosaic Wadsworth",
+   "address": "118 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 1-E",
+   "location": "Mosaic Wadsworth",
+   "address": "118 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 2-A",
+   "location": "Grace Evang Lutheran",
+   "address": "146 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 2-B",
+   "location": "Masonic Temple",
+   "address": "660 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 2-C",
+   "location": "Ella Everhard Libr",
+   "address": "132 Broad St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 2-D",
+   "location": "Mosaic Wadsworth",
+   "address": "118 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 3-A",
+   "location": "Wads City Hall",
+   "address": "120 Maple St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 3-B",
+   "location": "Ella Everhard Libr",
+   "address": "132 Broad St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 3-C",
+   "location": "Grace Evang Lutheran",
+   "address": "146 High St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 4-A",
+   "location": "Wads City Hall",
+   "address": "120 Maple St, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 4-B",
+   "location": "Radiant Life Ch",
+   "address": "844 Hartman Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth City 4-C",
+   "location": "Radiant Life Ch",
+   "address": "844 Hartman Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brhills Tp A",
+   "location": "Applewood Sch",
+   "address": "3891 Applewood Dr, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brhills Tp B",
+   "location": "Applewood Sch",
+   "address": "3891 Applewood Dr, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brhills Tp C",
+   "location": "St Emilian Ch",
+   "address": "1231 Substation Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brhills Tp D",
+   "location": "St Emilian Ch",
+   "address": "1231 Substation Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brhills Tp E",
+   "location": "St Emilian Ch",
+   "address": "1231 Substation Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brhills Tp F",
+   "location": "St Ambrose Sch",
+   "address": "929 Pearl Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Chatham Tp A",
+   "location": "Lmre",
+   "address": "1 Cooperative Way, Spencer"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Chatham Tp B",
+   "location": "Lmre",
+   "address": "1 Cooperative Way, Spencer"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Chippewa Lake Vil",
+   "location": "Chlk Twn Hall",
+   "address": "24 Circle Crest Dr, Chippewa Lake"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Gloria Glens Pk Vil",
+   "location": "Chlk Twn Hall",
+   "address": "24 Circle Crest Dr, Chippewa Lake"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Granger Tp A",
+   "location": "Mcbdd Achievement Ctr",
+   "address": "4691 Windfall Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Granger Tp B",
+   "location": "Mcbdd Achievement Ctr",
+   "address": "4691 Windfall Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Granger Tp C",
+   "location": "Mcbdd Achievement Ctr",
+   "address": "4691 Windfall Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Granger Tp D",
+   "location": "Mcbdd Achievement Ctr",
+   "address": "4691 Windfall Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Guilford Tp A",
+   "location": "Guilford Twn Hall",
+   "address": "3800 Greenwich Rd, Seville"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Guilford Tp B",
+   "location": "Guilford Twn Hall",
+   "address": "3800 Greenwich Rd, Seville"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Harrisvl Tp A",
+   "location": "Lodi Library",
+   "address": "635 Wooster St, Lodi"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Hinckley Tp A",
+   "location": "Our Saviour Ch",
+   "address": "1605 Center Rd, Hinckley"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Hinckley Tp B",
+   "location": "Our Saviour Ch",
+   "address": "1605 Center Rd, Hinckley"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Hinckley Tp C",
+   "location": "Our Saviour Ch",
+   "address": "1605 Center Rd, Hinckley"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Hinckley Tp D",
+   "location": "Hinckley Twn Hall",
+   "address": "1410 Ridge Rd, Hinckley"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Hinckley Tp E",
+   "location": "Hinckley Twn Hall",
+   "address": "1410 Ridge Rd, Hinckley"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Homer Twp",
+   "location": "Lodi Library",
+   "address": "635 Wooster St, Lodi"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Lafayette Tp A",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Lafayette Tp B",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Lafayette Tp C",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Lafayette Tp D",
+   "location": "Fairgrounds Comm Ctr",
+   "address": "735 Lafayette Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Litchfield Tp A",
+   "location": "Lmre",
+   "address": "1 Cooperative Way, Spencer"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Litchfield Tp B",
+   "location": "Lmre",
+   "address": "1 Cooperative Way, Spencer"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Liverpool Tp A",
+   "location": "Liverpool Muni Bldg",
+   "address": "6801 School St, Valley City"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Liverpool Tp B",
+   "location": "Liverpool Muni Bldg",
+   "address": "6801 School St, Valley City"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Liverpool Tp C",
+   "location": "Liverpool Muni Bldg",
+   "address": "6801 School St, Valley City"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Liverpool Tp D",
+   "location": "Liverpool Muni Bldg",
+   "address": "6801 School St, Valley City"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Lodi Vil A",
+   "location": "Lodi Library",
+   "address": "635 Wooster St, Lodi"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Lodi Vil B",
+   "location": "Lodi Library",
+   "address": "635 Wooster St, Lodi"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina Tp A",
+   "location": "Cornerstone",
+   "address": "3939 Granger Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina Tp B",
+   "location": "Cornerstone",
+   "address": "3939 Granger Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina Tp C",
+   "location": "Cornerstone",
+   "address": "3939 Granger Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina Tp D",
+   "location": "Cornerstone",
+   "address": "3939 Granger Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina Tp E",
+   "location": "Cornerstone",
+   "address": "3939 Granger Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina Tp F",
+   "location": "Cornerstone",
+   "address": "3939 Granger Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Medina Tp G",
+   "location": "Mcbdd Achievement Ctr",
+   "address": "4691 Windfall Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp A",
+   "location": "Ch Of The Nazarene Med",
+   "address": "6901 Wooster Pike, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp B",
+   "location": "Ch Of The Nazarene Med",
+   "address": "6901 Wooster Pike, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp C",
+   "location": "Blue Heron",
+   "address": "3227 Blue Heron Trce, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp D",
+   "location": "Blue Heron",
+   "address": "3227 Blue Heron Trce, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp E",
+   "location": "Blue Heron",
+   "address": "3227 Blue Heron Trce, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp F",
+   "location": "Blue Heron",
+   "address": "3227 Blue Heron Trce, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp G",
+   "location": "Blue Heron",
+   "address": "3227 Blue Heron Trce, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville Tp H",
+   "location": "Ch Of The Nazarene Med",
+   "address": "6901 Wooster Pike, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Seville Vil A",
+   "location": "Seville Presbyterian",
+   "address": "101 Center St, Seville"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Seville Vil B",
+   "location": "Seville Presbyterian",
+   "address": "101 Center St, Seville"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Sharon Tp A",
+   "location": "Sharon Twn Hall",
+   "address": "1323 Sharon Copley Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Sharon Tp B",
+   "location": "Sharon Maint Bldg",
+   "address": "6801 Ridge Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Sharon Tp C",
+   "location": "Sharon Maint Bldg",
+   "address": "6801 Ridge Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Sharon Tp D",
+   "location": "Sharon Twn Hall",
+   "address": "1323 Sharon Copley Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Spencer Tp",
+   "location": "Lmre",
+   "address": "1 Cooperative Way, Spencer"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Spencer Vil",
+   "location": "Lmre",
+   "address": "1 Cooperative Way, Spencer"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth Tp A",
+   "location": "Radiant Life Ch",
+   "address": "844 Hartman Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth Tp B",
+   "location": "Radiant Life Ch",
+   "address": "844 Hartman Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Wadsworth Tp C",
+   "location": "Radiant Life Ch",
+   "address": "844 Hartman Rd, Wadsworth"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Westfield Center Vil",
+   "location": "Westfield Ctr Muni Bldg",
+   "address": "6701 Greenwich Rd, Westfield Center"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Westfield Tp A",
+   "location": "Westfield Twp Hall",
+   "address": "6699 Buffham Rd, Seville"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Westfield Tp B",
+   "location": "Westfield Twp Hall",
+   "address": "6699 Buffham Rd, Seville"
+  },
+  {
+   "county": "Medina",
+   "precinct": "York Tp A",
+   "location": "York Twp Hall",
+   "address": "6609 Norwalk Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "York Tp B",
+   "location": "York Twp Hall",
+   "address": "6609 Norwalk Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "York Tp C",
+   "location": "York Twp Hall",
+   "address": "6609 Norwalk Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Montville I",
+   "location": "Montville Twp",
+   "address": "6665 Wadsworth Rd, Medina"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brunswick City 2-F",
+   "location": "Huntington Sch",
+   "address": "1931 Huntington Cir, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Brhills Tp G",
+   "location": "St Ambrose Sch",
+   "address": "929 Pearl Rd, Brunswick"
+  },
+  {
+   "county": "Medina",
+   "precinct": "Hinckley Tp F",
+   "location": "Our Saviour Ch",
+   "address": "1605 Center Rd, Hinckley"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Orrville City 1",
+   "location": "Orrville Public Library",
+   "address": "230 N Main St, Orrville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Orrville City 2",
+   "location": "Aultman Orrville Hospital",
+   "address": "832 S Main St, Orrville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Orrville City 3",
+   "location": "Orrville Christian Church",
+   "address": "925 N Elm St, Orrville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Orrville City 4-A",
+   "location": "Orrville Christian Church",
+   "address": "925 N Elm St, Orrville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Orrville City 4-B",
+   "location": "Orrville Christian Church",
+   "address": "925 N Elm St, Orrville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Rittman City 1",
+   "location": "Rittman Public Library",
+   "address": "75 N Main St, Rittman"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Rittman City 2",
+   "location": "Rittman Recreation Center",
+   "address": "200 Saurer St, Rittman"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Rittman City 3",
+   "location": "Rittman Recreation Center",
+   "address": "200 Saurer St, Rittman"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Rittman City 4",
+   "location": "Life Ministries Tabernacle",
+   "address": "9878 Krabill Rd, Rittman"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 1-A",
+   "location": "Wayne County Fair Event Center",
+   "address": "199 Vanover St, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 1-B",
+   "location": "Wayne County Fair Event Center",
+   "address": "199 Vanover St, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 1-C",
+   "location": "First Presbyterian Church",
+   "address": "621 College Ave, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 2-A",
+   "location": "Connection Church",
+   "address": "1633 Portage Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 2-B",
+   "location": "First Presbyterian Church",
+   "address": "621 College Ave, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 2-C",
+   "location": "First Presbyterian Church",
+   "address": "621 College Ave, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 2-D",
+   "location": "Connection Church",
+   "address": "1633 Portage Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 3-A",
+   "location": "Connection Church",
+   "address": "1633 Portage Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 3-B",
+   "location": "Foursquare Gospel Church",
+   "address": "3670 Friendsville Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 3-C",
+   "location": "Foursquare Gospel Church",
+   "address": "3670 Friendsville Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 3-D",
+   "location": "Connection Church",
+   "address": "1633 Portage Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 4-A",
+   "location": "Parkview Christian Church",
+   "address": "1912 Burbank Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 4-B",
+   "location": "Church Of The Nazarene",
+   "address": "3100 Oak Hill Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 4-C",
+   "location": "Church Of The Nazarene",
+   "address": "3100 Oak Hill Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 4-D",
+   "location": "Parkview Christian Church",
+   "address": "1912 Burbank Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster City 4-E",
+   "location": "Church Of The Nazarene",
+   "address": "3100 Oak Hill Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Baughman Twp 1",
+   "location": "Baughman Township Office",
+   "address": "3470 N Mt Eaton Rd, Orrville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Baughman Twp 2",
+   "location": "Klusch Hall",
+   "address": "48 Park St, Marshallville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Canaan Twp 1",
+   "location": "Canaan Free Will Baptist Church",
+   "address": "12723 Cleveland Rd, Creston"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Canaan Twp 2",
+   "location": "Canaan Free Will Baptist Church",
+   "address": "12723 Cleveland Rd, Creston"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Canaan Twp 3",
+   "location": "Canaan Free Will Baptist Church",
+   "address": "12723 Cleveland Rd, Creston"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chester Twp 1",
+   "location": "Emanuel Old Stone Church",
+   "address": "6000 Congress Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chester Twp 2",
+   "location": "St Peter Lutheran Church",
+   "address": "9451 Ashland Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chippewa Twp 1",
+   "location": "Klusch Hall",
+   "address": "48 Park St, Marshallville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chippewa Twp 2",
+   "location": "Crossroads Community Church",
+   "address": "700 Gates St, Doylestown"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chippewa Twp 3",
+   "location": "Zion Lutheran Church",
+   "address": "65 W Clinton St, Doylestown"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chippewa Twp 4 Dtown",
+   "location": "Crossroads Community Church",
+   "address": "700 Gates St, Doylestown"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chippewa Twp 5 Dtown",
+   "location": "Crossroads Community Church",
+   "address": "700 Gates St, Doylestown"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Chippewa Twp 6",
+   "location": "Crossroads Community Church",
+   "address": "700 Gates St, Doylestown"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Clinton Twp 1",
+   "location": "Shreve Community Church",
+   "address": "430 N Main St, Shreve"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Clinton Twp 2 Shreve",
+   "location": "Shreve Community Church",
+   "address": "430 N Main St, Shreve"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Congress Twp 1 W Salem",
+   "location": "St Stephens Church",
+   "address": "44 W Britton St, West Salem"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Congress Twp 2",
+   "location": "St Stephens Church",
+   "address": "44 W Britton St, West Salem"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Congress Twp 3",
+   "location": "Emanuel Old Stone Church",
+   "address": "6000 Congress Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "East Union Twp 1",
+   "location": "Wayne County Regional Training",
+   "address": "2725 Millborne Road, Apple Creek"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "East Union Twp 2",
+   "location": "Wayne County Regional Training",
+   "address": "2725 Millborne Road, Apple Creek"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "East Union Twp 3",
+   "location": "Apple Creek Historical Society",
+   "address": "185 Church St, Apple Creek"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Franklin Twp 1",
+   "location": "Franklin Township Building",
+   "address": "132 W Moreland Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Franklin Twp 2",
+   "location": "Wayne County Fair Event Center",
+   "address": "199 Vanover St, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Green Twp 1",
+   "location": "Orrville Christian Church",
+   "address": "925 N Elm St, Orrville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Green Twp 2",
+   "location": "Smithville Brethren Church",
+   "address": "193 E Main St, Smithville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Green Twp 3 Smithville",
+   "location": "Smithville Brethren Church",
+   "address": "193 E Main St, Smithville"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Milton Twp 1",
+   "location": "The Old Schoolhouse",
+   "address": "9540 Benner Rd, Rittman"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Milton Twp 2",
+   "location": "Grace Church Co Line Campus",
+   "address": "14960 Seville Rd, Sterling"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Paint Twp 1",
+   "location": "New Leaf Community Center",
+   "address": "16014 E Chestnut St, Mount Eaton"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Plain Twp 1",
+   "location": "Blachleyville Church Of Christ",
+   "address": "8482 Blachleyville Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Plain Twp 2",
+   "location": "Wayne County Fair Event Center",
+   "address": "199 Vanover St, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Salt Creek Twp 1",
+   "location": "Fredericksburg Presbyterian Ch",
+   "address": "201 N Mill St, Fredericksburg"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Sugar Creek Twp 1",
+   "location": "Kidron Park Community Center",
+   "address": "4434 Kidron Rd, Kidron"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Sugar Creek Twp 2",
+   "location": "Lincway",
+   "address": "258 N Kurzen Rd, Dalton"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Sugar Creek Twp 3 Dalton",
+   "location": "Dalton Public Library",
+   "address": "127 S Church St, Dalton"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wayne Twp 1",
+   "location": "Church Of The Cross Umc",
+   "address": "5100 Cleveland Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wayne Twp 2",
+   "location": "Church Of The Nazarene",
+   "address": "3100 Oak Hill Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wayne Twp 3",
+   "location": "Church Of The Cross Umc",
+   "address": "5100 Cleveland Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster Twp 1",
+   "location": "Wayne County Fair Event Center",
+   "address": "199 Vanover St, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster Twp 2",
+   "location": "New Hope Church",
+   "address": "969 Blachleyville Rd, Wooster"
+  },
+  {
+   "county": "Wayne",
+   "precinct": "Wooster Twp 3",
+   "location": "New Hope Church",
+   "address": "969 Blachleyville Rd, Wooster"
+  }
+ ]
+}

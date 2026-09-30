@@ -1,0 +1,9136 @@
+{
+ "NC": {
+  "1": {
+   "2016-president": {
+    "winner": "D",
+    "dPct": 52.4,
+    "rPct": 47.6,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 52,
+    "rPct": 48,
+    "who": "Ross"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 51.6,
+    "rPct": 48.4,
+    "who": "Cunningham"
+   },
+   "2020-president": {
+    "winner": "D",
+    "dPct": 50.8,
+    "rPct": 49.2,
+    "who": "Biden"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 47,
+    "rPct": 53,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 48.4,
+    "rPct": 51.6,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 59.1,
+    "rPct": 40.9,
+    "who": "Ross"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 62.6,
+    "rPct": 37.4,
+    "who": "Clinton"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 62,
+    "rPct": 38,
+    "who": "Cunningham"
+   },
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64.2,
+    "rPct": 35.8,
+    "who": "Biden"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 65.7,
+    "rPct": 34.3,
+    "who": "Beasley"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 64,
+    "rPct": 36,
+    "who": "Harris"
+   }
+  },
+  "3": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "who": "Burr"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.2,
+    "rPct": 58.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.7,
+    "rPct": 58.3,
+    "who": "Tillis"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2016-president": {
+    "winner": "D",
+    "dPct": 72.9,
+    "rPct": 27.1,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 69.3,
+    "rPct": 30.7,
+    "who": "Ross"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 72.3,
+    "rPct": 27.7,
+    "who": "Cunningham"
+   },
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74,
+    "rPct": 26,
+    "who": "Biden"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 74.7,
+    "rPct": 25.3,
+    "who": "Beasley"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 73.1,
+    "rPct": 26.9,
+    "who": "Harris"
+   }
+  },
+  "5": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 42.6,
+    "rPct": 57.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 42.2,
+    "rPct": 57.8,
+    "who": "Burr"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "who": "Tillis"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Trump"
+   }
+  },
+  "6": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "who": "Burr"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "who": "Tillis"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 41.2,
+    "rPct": 58.8,
+    "who": "Trump"
+   }
+  },
+  "7": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 43.8,
+    "rPct": 56.2,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Burr"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.3,
+    "rPct": 55.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Tillis"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "who": "Trump"
+   }
+  },
+  "8": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Burr"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.6,
+    "rPct": 58.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.9,
+    "rPct": 59.1,
+    "who": "Tillis"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "who": "Trump"
+   }
+  },
+  "9": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 41.7,
+    "rPct": 58.3,
+    "who": "Burr"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 45.8,
+    "rPct": 54.2,
+    "who": "Tillis"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.4,
+    "rPct": 54.6,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 43.8,
+    "rPct": 56.2,
+    "who": "Trump"
+   }
+  },
+  "10": {
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "who": "Burr"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Trump"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.7,
+    "rPct": 58.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "who": "Tillis"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 40,
+    "rPct": 60,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.9,
+    "rPct": 59.1,
+    "who": "Trump"
+   }
+  },
+  "11": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 41.6,
+    "rPct": 58.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 43,
+    "rPct": 57,
+    "who": "Burr"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "who": "Tillis"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 45.5,
+    "rPct": 54.5,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45.2,
+    "rPct": 54.8,
+    "who": "Trump"
+   }
+  },
+  "12": {
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 69.9,
+    "rPct": 30.1,
+    "who": "Ross"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 73.8,
+    "rPct": 26.2,
+    "who": "Clinton"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 72.3,
+    "rPct": 27.7,
+    "who": "Cunningham"
+   },
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74.6,
+    "rPct": 25.4,
+    "who": "Biden"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 74.4,
+    "rPct": 25.6,
+    "who": "Beasley"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 73.2,
+    "rPct": 26.8,
+    "who": "Harris"
+   }
+  },
+  "13": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 42.6,
+    "rPct": 57.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "who": "Burr"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "Tillis"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.2,
+    "rPct": 54.8,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 43.8,
+    "rPct": 56.2,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Trump"
+   }
+  },
+  "14": {
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "who": "Burr"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.7,
+    "rPct": 58.3,
+    "who": "Tillis"
+   },
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 41.8,
+    "rPct": 58.2,
+    "who": "Budd"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42.5,
+    "rPct": 57.5,
+    "who": "Trump"
+   }
+  }
+ },
+ "MI": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40,
+    "rPct": 60,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "James"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 43.6,
+    "rPct": 56.4,
+    "who": "James"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "who": "Rogers"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 35.5,
+    "rPct": 64.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 35.4,
+    "rPct": 64.6,
+    "who": "James"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.2,
+    "rPct": 61.8,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "who": "James"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 37.9,
+    "rPct": 62.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Rogers"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 46.6,
+    "rPct": 53.4,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 48.7,
+    "rPct": 51.3,
+    "who": "James"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50.1,
+    "rPct": 49.9,
+    "who": "Slotkin"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "James"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 46.6,
+    "rPct": 53.4,
+    "who": "James"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 46.1,
+    "rPct": 53.9,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 45.8,
+    "rPct": 54.2,
+    "who": "Rogers"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "who": "James"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.2,
+    "rPct": 61.8,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 42.5,
+    "rPct": 57.5,
+    "who": "James"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 38,
+    "rPct": 62,
+    "who": "Rogers"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.5,
+    "rPct": 36.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 61.7,
+    "rPct": 38.3,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 69.1,
+    "rPct": 30.9,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 70.1,
+    "rPct": 29.9,
+    "who": "Stabenow"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 68.1,
+    "rPct": 31.9,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 68.7,
+    "rPct": 31.3,
+    "who": "Slotkin"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 50.5,
+    "rPct": 49.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 50,
+    "rPct": 50,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 52.8,
+    "rPct": 47.2,
+    "who": "Stabenow"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 49.9,
+    "rPct": 50.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "Slotkin"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 51,
+    "rPct": 49,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 52.1,
+    "rPct": 47.9,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 53.9,
+    "rPct": 46.1,
+    "who": "Stabenow"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50.5,
+    "rPct": 49.5,
+    "who": "Slotkin"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 35.8,
+    "rPct": 64.2,
+    "who": "James"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 47.1,
+    "rPct": 52.9,
+    "who": "James"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.2,
+    "rPct": 59.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 41.8,
+    "rPct": 58.2,
+    "who": "Rogers"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 49.5,
+    "rPct": 50.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 51.7,
+    "rPct": 48.3,
+    "who": "Stabenow"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 44.5,
+    "rPct": 55.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 46.4,
+    "rPct": 53.6,
+    "who": "Rogers"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60,
+    "rPct": 40,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 58.5,
+    "rPct": 41.5,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 54.3,
+    "rPct": 45.7,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 57,
+    "rPct": 43,
+    "who": "Stabenow"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 55.4,
+    "rPct": 44.6,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "who": "Slotkin"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74.5,
+    "rPct": 25.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 74.6,
+    "rPct": 25.4,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 67.2,
+    "rPct": 32.8,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 68.4,
+    "rPct": 31.6,
+    "who": "Stabenow"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 63.5,
+    "rPct": 36.5,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 64.9,
+    "rPct": 35.1,
+    "who": "Slotkin"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 75.1,
+    "rPct": 24.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 75.1,
+    "rPct": 24.9,
+    "who": "Peters"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 69.4,
+    "rPct": 30.6,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 70.5,
+    "rPct": 29.5,
+    "who": "Stabenow"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 65,
+    "rPct": 35,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 66.5,
+    "rPct": 33.5,
+    "who": "Slotkin"
+   }
+  }
+ },
+ "GA": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 42.7,
+    "rPct": 57.3,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 41.6,
+    "rPct": 58.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 37.4,
+    "rPct": 62.6,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 43.3,
+    "rPct": 56.7,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42,
+    "rPct": 58,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.2,
+    "rPct": 44.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 54.3,
+    "rPct": 45.7,
+    "who": "Ossoff"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 47.1,
+    "rPct": 52.9,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 51.6,
+    "rPct": 48.4,
+    "who": "Warnock"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 51,
+    "rPct": 49,
+    "who": "Harris"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 35,
+    "rPct": 65,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 34.1,
+    "rPct": 65.9,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 34.4,
+    "rPct": 65.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 31.5,
+    "rPct": 68.5,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 37.1,
+    "rPct": 62.9,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 79.2,
+    "rPct": 20.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 78.3,
+    "rPct": 21.7,
+    "who": "Ossoff"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 74.3,
+    "rPct": 25.7,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 67.5,
+    "rPct": 32.5,
+    "who": "Barksdale"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 78.6,
+    "rPct": 21.4,
+    "who": "Warnock"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 75.1,
+    "rPct": 24.9,
+    "who": "Harris"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 86.8,
+    "rPct": 13.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 85.6,
+    "rPct": 14.4,
+    "who": "Ossoff"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 77.9,
+    "rPct": 22.1,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 69.9,
+    "rPct": 30.1,
+    "who": "Barksdale"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 80.8,
+    "rPct": 19.2,
+    "who": "Warnock"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 78,
+    "rPct": 22,
+    "who": "Harris"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74.9,
+    "rPct": 25.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 73.4,
+    "rPct": 26.6,
+    "who": "Ossoff"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 60.8,
+    "rPct": 39.2,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 53.2,
+    "rPct": 46.8,
+    "who": "Barksdale"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 66.8,
+    "rPct": 33.2,
+    "who": "Warnock"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 65.4,
+    "rPct": 34.6,
+    "who": "Harris"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 45.6,
+    "rPct": 54.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 49.7,
+    "rPct": 50.3,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "who": "Trump"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.1,
+    "rPct": 63.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 35.2,
+    "rPct": 64.8,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 36.4,
+    "rPct": 63.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 33.2,
+    "rPct": 66.8,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 36.2,
+    "rPct": 63.8,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 36,
+    "rPct": 64,
+    "who": "Trump"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 33.8,
+    "rPct": 66.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 32.8,
+    "rPct": 67.2,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 31.9,
+    "rPct": 68.1,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 29.2,
+    "rPct": 70.8,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 35,
+    "rPct": 65,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 34.6,
+    "rPct": 65.4,
+    "who": "Trump"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.3,
+    "rPct": 61.7,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 35.8,
+    "rPct": 64.2,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 42.2,
+    "rPct": 57.8,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "who": "Trump"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37.5,
+    "rPct": 62.5,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 35.6,
+    "rPct": 64.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 31.4,
+    "rPct": 68.6,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 40.8,
+    "rPct": 59.2,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "who": "Trump"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 43.8,
+    "rPct": 56.2,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 43.1,
+    "rPct": 56.9,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 43.3,
+    "rPct": 56.7,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "who": "Trump"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 70.1,
+    "rPct": 29.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 69.9,
+    "rPct": 30.1,
+    "who": "Ossoff"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 59.7,
+    "rPct": 40.3,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 55.6,
+    "rPct": 44.4,
+    "who": "Barksdale"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 67.4,
+    "rPct": 32.6,
+    "who": "Warnock"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 65.5,
+    "rPct": 34.5,
+    "who": "Harris"
+   }
+  },
+  "14": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.2,
+    "rPct": 68.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 30.6,
+    "rPct": 69.4,
+    "who": "Perdue"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 29.8,
+    "rPct": 70.2,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 27.7,
+    "rPct": 72.3,
+    "who": "Isakson"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 34.3,
+    "rPct": 65.7,
+    "who": "Walker"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 33.6,
+    "rPct": 66.4,
+    "who": "Trump"
+   }
+  }
+ },
+ "PA": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 52.4,
+    "rPct": 47.6,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 52,
+    "rPct": 48,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 48.5,
+    "rPct": 51.5,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 58.5,
+    "rPct": 41.5,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 55.4,
+    "rPct": 44.6,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 51.7,
+    "rPct": 48.3,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 51.9,
+    "rPct": 48.1,
+    "who": "Casey"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 72.6,
+    "rPct": 27.4,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 84.1,
+    "rPct": 15.9,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 82.5,
+    "rPct": 17.5,
+    "who": "McGinty"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 87.6,
+    "rPct": 12.4,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 83.8,
+    "rPct": 16.2,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 79.5,
+    "rPct": 20.5,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 80.5,
+    "rPct": 19.5,
+    "who": "Casey"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 90.1,
+    "rPct": 9.9,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 84.2,
+    "rPct": 15.8,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 82.6,
+    "rPct": 17.4,
+    "who": "McGinty"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 87.7,
+    "rPct": 12.3,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 83.9,
+    "rPct": 16.1,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 79.6,
+    "rPct": 20.4,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 80.6,
+    "rPct": 19.4,
+    "who": "Casey"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.3,
+    "rPct": 40.7,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 58.9,
+    "rPct": 41.1,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 54.3,
+    "rPct": 45.7,
+    "who": "McGinty"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 64.5,
+    "rPct": 35.5,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 62.3,
+    "rPct": 37.7,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 59,
+    "rPct": 41,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 59.2,
+    "rPct": 40.8,
+    "who": "Casey"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66.6,
+    "rPct": 33.4,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 63.3,
+    "rPct": 36.7,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "who": "McGinty"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 67.6,
+    "rPct": 32.4,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 65.7,
+    "rPct": 34.3,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 63.2,
+    "rPct": 36.8,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 63.1,
+    "rPct": 36.9,
+    "who": "Casey"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.3,
+    "rPct": 42.7,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 52.3,
+    "rPct": 47.7,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 47.8,
+    "rPct": 52.2,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 58.2,
+    "rPct": 41.8,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 56,
+    "rPct": 44,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 53.9,
+    "rPct": 46.1,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 53.6,
+    "rPct": 46.4,
+    "who": "Casey"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 50.3,
+    "rPct": 49.7,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 48,
+    "rPct": 52,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 55.4,
+    "rPct": 44.6,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 52.6,
+    "rPct": 47.4,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 48.7,
+    "rPct": 51.3,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 49.5,
+    "rPct": 50.5,
+    "who": "McCormick"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 44.7,
+    "rPct": 55.3,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 49.2,
+    "rPct": 50.8,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 51.9,
+    "rPct": 48.1,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 49.4,
+    "rPct": 50.6,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 44.6,
+    "rPct": 55.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 46.5,
+    "rPct": 53.5,
+    "who": "McCormick"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.5,
+    "rPct": 68.5,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 30.9,
+    "rPct": 69.1,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 34.7,
+    "rPct": 65.3,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 38.6,
+    "rPct": 61.4,
+    "who": "Barletta"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 35.6,
+    "rPct": 64.4,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 32.1,
+    "rPct": 67.9,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 33.5,
+    "rPct": 66.5,
+    "who": "McCormick"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 41.7,
+    "rPct": 58.3,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Barletta"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 47.7,
+    "rPct": 52.3,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45.5,
+    "rPct": 54.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 46,
+    "rPct": 54,
+    "who": "McCormick"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.3,
+    "rPct": 61.7,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 44.7,
+    "rPct": 55.3,
+    "who": "Barletta"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 41.1,
+    "rPct": 58.9,
+    "who": "McCormick"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.1,
+    "rPct": 39.9,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 55.1,
+    "rPct": 44.9,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 54.8,
+    "rPct": 45.2,
+    "who": "McGinty"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 63.8,
+    "rPct": 36.2,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 60.9,
+    "rPct": 39.1,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 56.6,
+    "rPct": 43.4,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "who": "Casey"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 27.1,
+    "rPct": 72.9,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 26.4,
+    "rPct": 73.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 29.2,
+    "rPct": 70.8,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "who": "Barletta"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 30.1,
+    "rPct": 69.9,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 27.5,
+    "rPct": 72.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 29,
+    "rPct": 71,
+    "who": "McCormick"
+   }
+  },
+  "14": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 34.1,
+    "rPct": 65.9,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 37.3,
+    "rPct": 62.7,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "Barletta"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 38.7,
+    "rPct": 61.3,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 35.2,
+    "rPct": 64.8,
+    "who": "McCormick"
+   }
+  },
+  "15": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.3,
+    "rPct": 68.7,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 31.6,
+    "rPct": 68.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Barletta"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 34.9,
+    "rPct": 65.1,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 31.4,
+    "rPct": 68.6,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 32.5,
+    "rPct": 67.5,
+    "who": "McCormick"
+   }
+  },
+  "16": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Toomey"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "who": "Barletta"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 43,
+    "rPct": 57,
+    "who": "Oz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "who": "McCormick"
+   }
+  },
+  "17": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 52.8,
+    "rPct": 47.2,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 54.7,
+    "rPct": 45.3,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 54.8,
+    "rPct": 45.2,
+    "who": "McGinty"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 63.7,
+    "rPct": 36.3,
+    "who": "Casey"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 60.5,
+    "rPct": 39.5,
+    "who": "Fetterman"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 55.7,
+    "rPct": 44.3,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 56.7,
+    "rPct": 43.3,
+    "who": "Casey"
+   }
+  }
+ },
+ "AZ": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 50.8,
+    "rPct": 49.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 50.8,
+    "rPct": 49.2,
+    "who": "Kelly"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.9,
+    "rPct": 54.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 47.3,
+    "rPct": 52.7,
+    "who": "McSally"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 75.1,
+    "rPct": 24.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 76.1,
+    "rPct": 23.9,
+    "who": "Kelly"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55,
+    "rPct": 45,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "who": "Kelly"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.8,
+    "rPct": 58.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "who": "McSally"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 50.1,
+    "rPct": 49.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 50.6,
+    "rPct": 49.4,
+    "who": "Kelly"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66.4,
+    "rPct": 33.6,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 67.9,
+    "rPct": 32.1,
+    "who": "Kelly"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 43.1,
+    "rPct": 56.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.5,
+    "rPct": 55.5,
+    "who": "McSally"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 37,
+    "rPct": 63,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "who": "McSally"
+   }
+  }
+ },
+ "WI": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 48.9,
+    "rPct": 51.1,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 52.6,
+    "rPct": 47.4,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 51.1,
+    "rPct": 48.9,
+    "who": "Feingold"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 57.8,
+    "rPct": 42.2,
+    "who": "Baldwin"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "Barnes"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 50.9,
+    "rPct": 49.1,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 51.8,
+    "rPct": 48.2,
+    "who": "Baldwin"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71.2,
+    "rPct": 28.8,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 70.3,
+    "rPct": 29.7,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 69.5,
+    "rPct": 30.5,
+    "who": "Feingold"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 74.2,
+    "rPct": 25.8,
+    "who": "Baldwin"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 72.1,
+    "rPct": 27.9,
+    "who": "Barnes"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 70.6,
+    "rPct": 29.4,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 71.2,
+    "rPct": 28.8,
+    "who": "Baldwin"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 47.6,
+    "rPct": 52.4,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 47.2,
+    "rPct": 52.8,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 48.4,
+    "rPct": 51.6,
+    "who": "Johnson"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 56.1,
+    "rPct": 43.9,
+    "who": "Baldwin"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 46.8,
+    "rPct": 53.2,
+    "who": "Johnson"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45.9,
+    "rPct": 54.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 47.6,
+    "rPct": 52.4,
+    "who": "Hovde"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 76.8,
+    "rPct": 23.2,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 69.6,
+    "rPct": 30.4,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 65.2,
+    "rPct": 34.8,
+    "who": "Feingold"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 71.5,
+    "rPct": 28.5,
+    "who": "Baldwin"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 70.2,
+    "rPct": 29.8,
+    "who": "Barnes"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 69.6,
+    "rPct": 30.4,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 70.5,
+    "rPct": 29.5,
+    "who": "Baldwin"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 37.4,
+    "rPct": 62.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "who": "Johnson"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Vukmir"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 38,
+    "rPct": 62,
+    "who": "Johnson"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.1,
+    "rPct": 59.9,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "who": "Hovde"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "who": "Johnson"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 47,
+    "rPct": 53,
+    "who": "Vukmir"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "who": "Johnson"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 41.4,
+    "rPct": 58.6,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 42.2,
+    "rPct": 57.8,
+    "who": "Hovde"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "who": "Johnson"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 48.1,
+    "rPct": 51.9,
+    "who": "Vukmir"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "who": "Johnson"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "Hovde"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.9,
+    "rPct": 59.1,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Johnson"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 48.7,
+    "rPct": 51.3,
+    "who": "Vukmir"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 41.1,
+    "rPct": 58.9,
+    "who": "Johnson"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 41.8,
+    "rPct": 58.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 42.7,
+    "rPct": 57.3,
+    "who": "Hovde"
+   }
+  }
+ },
+ "NV": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.3,
+    "rPct": 45.7,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 55.7,
+    "rPct": 44.3,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 56,
+    "rPct": 44,
+    "who": "Cortez Masto"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "who": "Rosen"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 54,
+    "rPct": 46,
+    "who": "Cortez Masto"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 51.3,
+    "rPct": 48.7,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 53.9,
+    "rPct": 46.1,
+    "who": "Rosen"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.3,
+    "rPct": 55.7,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 42.7,
+    "rPct": 57.3,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "who": "Heck"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "who": "Heller"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 44.2,
+    "rPct": 55.8,
+    "who": "Laxalt"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 45.2,
+    "rPct": 54.8,
+    "who": "Brown"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.4,
+    "rPct": 46.6,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 55.7,
+    "rPct": 44.3,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 56,
+    "rPct": 44,
+    "who": "Cortez Masto"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "who": "Rosen"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 54,
+    "rPct": 46,
+    "who": "Cortez Masto"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 51.3,
+    "rPct": 48.7,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 53.9,
+    "rPct": 46.1,
+    "who": "Rosen"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.2,
+    "rPct": 45.8,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 53.1,
+    "rPct": 46.9,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 53.7,
+    "rPct": 46.3,
+    "who": "Cortez Masto"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 54.8,
+    "rPct": 45.2,
+    "who": "Rosen"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 51.5,
+    "rPct": 48.5,
+    "who": "Cortez Masto"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 49.2,
+    "rPct": 50.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 51.7,
+    "rPct": 48.3,
+    "who": "Rosen"
+   }
+  }
+ },
+ "TX": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 27.8,
+    "rPct": 72.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 27.1,
+    "rPct": 72.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 25.9,
+    "rPct": 74.1,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 27.9,
+    "rPct": 72.1,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 24.8,
+    "rPct": 75.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 25.8,
+    "rPct": 74.2,
+    "who": "Cruz"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.9,
+    "rPct": 61.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 36.7,
+    "rPct": 63.3,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.2,
+    "rPct": 59.8,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 43,
+    "rPct": 57,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 38.6,
+    "rPct": 61.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "who": "Cruz"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37.8,
+    "rPct": 62.2,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 36.9,
+    "rPct": 63.1,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 42.4,
+    "rPct": 57.6,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "who": "Cruz"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.2,
+    "rPct": 58.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 33.9,
+    "rPct": 66.1,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 36.4,
+    "rPct": 63.6,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39,
+    "rPct": 61,
+    "who": "Cruz"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.2,
+    "rPct": 57.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 43.6,
+    "rPct": 56.4,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42.5,
+    "rPct": 57.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 45.2,
+    "rPct": 54.8,
+    "who": "Cruz"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 44.9,
+    "rPct": 55.1,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 41.6,
+    "rPct": 58.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Cruz"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66,
+    "rPct": 34,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 62.5,
+    "rPct": 37.5,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 57.8,
+    "rPct": 42.2,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 52.3,
+    "rPct": 47.7,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 55.3,
+    "rPct": 44.7,
+    "who": "Allred"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.8,
+    "rPct": 59.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.8,
+    "rPct": 59.2,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 43.5,
+    "rPct": 56.5,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "who": "Cruz"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.6,
+    "rPct": 54.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 52.2,
+    "rPct": 47.8,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 51.5,
+    "rPct": 48.5,
+    "who": "Allred"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 49.7,
+    "rPct": 50.3,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 45,
+    "rPct": 55,
+    "who": "Cruz"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 34.2,
+    "rPct": 65.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 32.7,
+    "rPct": 67.3,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 38.6,
+    "rPct": 61.4,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 35.6,
+    "rPct": 64.4,
+    "who": "Cruz"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.3,
+    "rPct": 61.7,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.8,
+    "rPct": 60.2,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 44.3,
+    "rPct": 55.7,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 42.9,
+    "rPct": 57.1,
+    "who": "Cruz"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 27.5,
+    "rPct": 72.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 26.1,
+    "rPct": 73.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 22,
+    "rPct": 78,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 26.3,
+    "rPct": 73.7,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 24.9,
+    "rPct": 75.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 26.5,
+    "rPct": 73.5,
+    "who": "Cruz"
+   }
+  },
+  "14": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.6,
+    "rPct": 61.4,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 37.2,
+    "rPct": 62.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Cruz"
+   }
+  },
+  "15": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 49.2,
+    "rPct": 50.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 48.5,
+    "rPct": 51.5,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 56.6,
+    "rPct": 43.4,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 55.3,
+    "rPct": 44.7,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 44.7,
+    "rPct": 55.3,
+    "who": "Cruz"
+   }
+  },
+  "16": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 68.1,
+    "rPct": 31.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 67.5,
+    "rPct": 32.5,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 72.7,
+    "rPct": 27.3,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 74.8,
+    "rPct": 25.2,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 57.7,
+    "rPct": 42.3,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 60.4,
+    "rPct": 39.6,
+    "who": "Allred"
+   }
+  },
+  "17": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.2,
+    "rPct": 57.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 36.1,
+    "rPct": 63.9,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "who": "Cruz"
+   }
+  },
+  "18": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 81.1,
+    "rPct": 18.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 79.6,
+    "rPct": 20.4,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 55.5,
+    "rPct": 44.5,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 57.6,
+    "rPct": 42.4,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 52.1,
+    "rPct": 47.9,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 55.2,
+    "rPct": 44.8,
+    "who": "Allred"
+   }
+  },
+  "19": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 26.5,
+    "rPct": 73.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 24.9,
+    "rPct": 75.1,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 24.5,
+    "rPct": 75.5,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 27.9,
+    "rPct": 72.1,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 23.9,
+    "rPct": 76.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 25.2,
+    "rPct": 74.8,
+    "who": "Cruz"
+   }
+  },
+  "20": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 70.5,
+    "rPct": 29.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 68.2,
+    "rPct": 31.8,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 57.1,
+    "rPct": 42.9,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 60,
+    "rPct": 40,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 54.9,
+    "rPct": 45.1,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 58.2,
+    "rPct": 41.8,
+    "who": "Allred"
+   }
+  },
+  "21": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.3,
+    "rPct": 58.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 41.6,
+    "rPct": 58.4,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Cruz"
+   }
+  },
+  "22": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 50.6,
+    "rPct": 49.4,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 53.4,
+    "rPct": 46.6,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 48.9,
+    "rPct": 51.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 51.9,
+    "rPct": 48.1,
+    "who": "Allred"
+   }
+  },
+  "23": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.8,
+    "rPct": 53.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.6,
+    "rPct": 55.4,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 56.1,
+    "rPct": 43.9,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 47,
+    "rPct": 53,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "who": "Allred"
+   }
+  },
+  "24": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 50.5,
+    "rPct": 49.5,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 54.9,
+    "rPct": 45.1,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 51,
+    "rPct": 49,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 53.8,
+    "rPct": 46.2,
+    "who": "Allred"
+   }
+  },
+  "25": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.5,
+    "rPct": 57.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.1,
+    "rPct": 58.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 36.3,
+    "rPct": 63.7,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 32.9,
+    "rPct": 67.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 35.3,
+    "rPct": 64.7,
+    "who": "Cruz"
+   }
+  },
+  "26": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.8,
+    "rPct": 59.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37.8,
+    "rPct": 62.2,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 35.8,
+    "rPct": 64.2,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.6,
+    "rPct": 60.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 42,
+    "rPct": 58,
+    "who": "Cruz"
+   }
+  },
+  "27": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 42.2,
+    "rPct": 57.8,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Cruz"
+   }
+  },
+  "28": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.8,
+    "rPct": 45.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.1,
+    "rPct": 43.9,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 68.8,
+    "rPct": 31.2,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 66.2,
+    "rPct": 33.8,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45,
+    "rPct": 55,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50.3,
+    "rPct": 49.7,
+    "who": "Allred"
+   }
+  },
+  "29": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71.7,
+    "rPct": 28.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 70.4,
+    "rPct": 29.6,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 56.5,
+    "rPct": 43.5,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 58.4,
+    "rPct": 41.6,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 52.8,
+    "rPct": 47.2,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "who": "Allred"
+   }
+  },
+  "30": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 78.9,
+    "rPct": 21.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 77.6,
+    "rPct": 22.4,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 61.1,
+    "rPct": 38.9,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 59.3,
+    "rPct": 40.7,
+    "who": "Allred"
+   }
+  },
+  "31": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.9,
+    "rPct": 61.1,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 43.7,
+    "rPct": 56.3,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 43,
+    "rPct": 57,
+    "who": "Cruz"
+   }
+  },
+  "32": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.7,
+    "rPct": 55.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 45.7,
+    "rPct": 54.3,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 49.5,
+    "rPct": 50.5,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 45.9,
+    "rPct": 54.1,
+    "who": "Cruz"
+   }
+  },
+  "33": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 72.7,
+    "rPct": 27.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 69.9,
+    "rPct": 30.1,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 63.7,
+    "rPct": 36.3,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 66.6,
+    "rPct": 33.4,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 61.3,
+    "rPct": 38.7,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 64.6,
+    "rPct": 35.4,
+    "who": "Allred"
+   }
+  },
+  "34": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 51.6,
+    "rPct": 48.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 51,
+    "rPct": 49,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 56.9,
+    "rPct": 43.1,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45.7,
+    "rPct": 54.3,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 49.9,
+    "rPct": 50.1,
+    "who": "Cruz"
+   }
+  },
+  "35": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 49.2,
+    "rPct": 50.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 47,
+    "rPct": 53,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.2,
+    "rPct": 51.8,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 46.4,
+    "rPct": 53.6,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 49.4,
+    "rPct": 50.6,
+    "who": "Cruz"
+   }
+  },
+  "36": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.3,
+    "rPct": 60.7,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 38.7,
+    "rPct": 61.3,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "who": "Cruz"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 36,
+    "rPct": 64,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "who": "Cruz"
+   }
+  },
+  "37": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 81.5,
+    "rPct": 18.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 78.9,
+    "rPct": 21.1,
+    "who": "Hegar"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 70.6,
+    "rPct": 29.4,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 75,
+    "rPct": 25,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 69.9,
+    "rPct": 30.1,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 72,
+    "rPct": 28,
+    "who": "Allred"
+   }
+  },
+  "38": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.4,
+    "rPct": 58.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "who": "Cornyn"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 56.5,
+    "rPct": 43.5,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 58.4,
+    "rPct": 41.6,
+    "who": "O'Rourke"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 52.8,
+    "rPct": 47.2,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "who": "Allred"
+   }
+  }
+ },
+ "VA": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.5,
+    "rPct": 53.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 47,
+    "rPct": 53,
+    "who": "Gade"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 45.7,
+    "rPct": 54.3,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 51.5,
+    "rPct": 48.5,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 49.1,
+    "rPct": 50.9,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50,
+    "rPct": 50,
+    "who": "Kaine"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 52.3,
+    "rPct": 47.7,
+    "who": "Warner"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 55.2,
+    "rPct": 44.8,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 52.7,
+    "rPct": 47.3,
+    "who": "Kaine"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 69.4,
+    "rPct": 30.6,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 70.3,
+    "rPct": 29.7,
+    "who": "Warner"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 65.7,
+    "rPct": 34.3,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 70.4,
+    "rPct": 29.6,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 65.8,
+    "rPct": 34.2,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 67.1,
+    "rPct": 32.9,
+    "who": "Kaine"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 68.1,
+    "rPct": 31.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 68.6,
+    "rPct": 31.4,
+    "who": "Warner"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 62.6,
+    "rPct": 37.4,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 66.8,
+    "rPct": 33.2,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 63.6,
+    "rPct": 36.4,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 64.6,
+    "rPct": 35.4,
+    "who": "Kaine"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.8,
+    "rPct": 54.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 47.7,
+    "rPct": 52.3,
+    "who": "Gade"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 44.1,
+    "rPct": 55.9,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "who": "Stewart"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "Cao"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.7,
+    "rPct": 61.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.5,
+    "rPct": 58.5,
+    "who": "Gade"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 36.6,
+    "rPct": 63.4,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 42.4,
+    "rPct": 57.6,
+    "who": "Stewart"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 38.2,
+    "rPct": 61.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 41,
+    "rPct": 59,
+    "who": "Cao"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.6,
+    "rPct": 46.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 54.3,
+    "rPct": 45.7,
+    "who": "Warner"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 54.5,
+    "rPct": 45.5,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 49.7,
+    "rPct": 50.3,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 51.5,
+    "rPct": 48.5,
+    "who": "Kaine"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 78.3,
+    "rPct": 21.7,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 76.3,
+    "rPct": 23.7,
+    "who": "Warner"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 75.8,
+    "rPct": 24.2,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 78.5,
+    "rPct": 21.5,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 74.3,
+    "rPct": 25.7,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 73.6,
+    "rPct": 26.4,
+    "who": "Kaine"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.7,
+    "rPct": 71.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 33.9,
+    "rPct": 66.1,
+    "who": "Gade"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 28.2,
+    "rPct": 71.8,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 34.5,
+    "rPct": 65.5,
+    "who": "Stewart"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 27.6,
+    "rPct": 72.4,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 32.7,
+    "rPct": 67.3,
+    "who": "Cao"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.6,
+    "rPct": 40.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 59.2,
+    "rPct": 40.8,
+    "who": "Warner"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 57.3,
+    "rPct": 42.7,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 62.8,
+    "rPct": 37.2,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 56.5,
+    "rPct": 43.5,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 57.3,
+    "rPct": 42.7,
+    "who": "Kaine"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 70.9,
+    "rPct": 29.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 69.5,
+    "rPct": 30.5,
+    "who": "Warner"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 69.2,
+    "rPct": 30.8,
+    "who": "Clinton"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 72.5,
+    "rPct": 27.5,
+    "who": "Kaine"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 68,
+    "rPct": 32,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 67.9,
+    "rPct": 32.1,
+    "who": "Kaine"
+   }
+  }
+ },
+ "NH": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.1,
+    "rPct": 46.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 57.3,
+    "rPct": 42.7,
+    "who": "Shaheen"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.7,
+    "rPct": 51.3,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 46.4,
+    "rPct": 53.6,
+    "who": "Ayotte"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 53.3,
+    "rPct": 46.7,
+    "who": "Hassan"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "who": "Harris"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.5,
+    "rPct": 45.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 58.8,
+    "rPct": 41.2,
+    "who": "Shaheen"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 51.8,
+    "rPct": 48.2,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "who": "Ayotte"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 56,
+    "rPct": 44,
+    "who": "Hassan"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 52.5,
+    "rPct": 47.5,
+    "who": "Harris"
+   }
+  }
+ },
+ "MN": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 46.1,
+    "rPct": 53.9,
+    "who": "Lewis"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.7,
+    "rPct": 46.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 51.9,
+    "rPct": 48.1,
+    "who": "Smith"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.5,
+    "rPct": 39.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 57.7,
+    "rPct": 42.3,
+    "who": "Smith"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 69.4,
+    "rPct": 30.6,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 67.7,
+    "rPct": 32.3,
+    "who": "Smith"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 82.2,
+    "rPct": 17.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 80.3,
+    "rPct": 19.7,
+    "who": "Smith"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.9,
+    "rPct": 59.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.2,
+    "rPct": 59.8,
+    "who": "Lewis"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 33,
+    "rPct": 67,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 34.8,
+    "rPct": 65.2,
+    "who": "Lewis"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.1,
+    "rPct": 55.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.6,
+    "rPct": 55.4,
+    "who": "Lewis"
+   }
+  }
+ },
+ "CO": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 81.3,
+    "rPct": 18.7,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 79.2,
+    "rPct": 20.8,
+    "who": "Hickenlooper"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 79,
+    "rPct": 21,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 76.5,
+    "rPct": 23.5,
+    "who": "Bennet"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 81.1,
+    "rPct": 18.9,
+    "who": "Bennet"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 78.4,
+    "rPct": 21.6,
+    "who": "Harris"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 70.3,
+    "rPct": 29.7,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 67.9,
+    "rPct": 32.1,
+    "who": "Hickenlooper"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 64.4,
+    "rPct": 35.6,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 63.1,
+    "rPct": 36.9,
+    "who": "Bennet"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 68.6,
+    "rPct": 31.4,
+    "who": "Bennet"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 67.7,
+    "rPct": 32.3,
+    "who": "Harris"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.8,
+    "rPct": 54.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "who": "Gardner"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 42.4,
+    "rPct": 57.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 45.9,
+    "rPct": 54.1,
+    "who": "Glenn"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 49.4,
+    "rPct": 50.6,
+    "who": "O'Dea"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45,
+    "rPct": 55,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Gardner"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "who": "Glenn"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "O'Dea"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 44.1,
+    "rPct": 55.9,
+    "who": "Trump"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Gardner"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 38.2,
+    "rPct": 61.8,
+    "who": "Glenn"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "O'Dea"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45,
+    "rPct": 55,
+    "who": "Trump"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 62.3,
+    "rPct": 37.7,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 59.5,
+    "rPct": 40.5,
+    "who": "Hickenlooper"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 56.7,
+    "rPct": 43.3,
+    "who": "Bennet"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 61.6,
+    "rPct": 38.4,
+    "who": "Bennet"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 60.1,
+    "rPct": 39.9,
+    "who": "Harris"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.2,
+    "rPct": 42.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 55,
+    "rPct": 45,
+    "who": "Hickenlooper"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 50.8,
+    "rPct": 49.2,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 51.4,
+    "rPct": 48.6,
+    "who": "Bennet"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 57.8,
+    "rPct": 42.2,
+    "who": "Bennet"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 56.9,
+    "rPct": 43.1,
+    "who": "Harris"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 52.5,
+    "rPct": 47.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 51,
+    "rPct": 49,
+    "who": "Hickenlooper"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 50.5,
+    "rPct": 49.5,
+    "who": "Bennet"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 51.6,
+    "rPct": 48.4,
+    "who": "Bennet"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 48.9,
+    "rPct": 51.1,
+    "who": "Trump"
+   }
+  }
+ },
+ "NM": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.4,
+    "rPct": 42.6,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 53.3,
+    "rPct": 46.7,
+    "who": "Luján"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 52.8,
+    "rPct": 47.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 51.4,
+    "rPct": 48.6,
+    "who": "Luján"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.6,
+    "rPct": 44.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "who": "Luján"
+   }
+  }
+ },
+ "KS": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37,
+    "rPct": 63,
+    "who": "Marshall"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.4,
+    "rPct": 58.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 43.7,
+    "rPct": 56.3,
+    "who": "Marshall"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 52.2,
+    "rPct": 47.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 52.4,
+    "rPct": 47.6,
+    "who": "Bollier"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.9,
+    "rPct": 61.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.8,
+    "rPct": 59.2,
+    "who": "Marshall"
+   }
+  }
+ },
+ "IA": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 49.6,
+    "rPct": 50.4,
+    "who": "Ernst"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.4,
+    "rPct": 51.6,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 47,
+    "rPct": 53,
+    "who": "Grassley"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45.7,
+    "rPct": 54.3,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 47.8,
+    "rPct": 52.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Ernst"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 47.5,
+    "rPct": 52.5,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 45.4,
+    "rPct": 54.6,
+    "who": "Grassley"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 44.9,
+    "rPct": 55.1,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 49.8,
+    "rPct": 50.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 49.8,
+    "rPct": 50.2,
+    "who": "Ernst"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 48.4,
+    "rPct": 51.6,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 48.6,
+    "rPct": 51.4,
+    "who": "Grassley"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 47.8,
+    "rPct": 52.2,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.8,
+    "rPct": 63.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.2,
+    "rPct": 61.8,
+    "who": "Ernst"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 35.6,
+    "rPct": 64.4,
+    "who": "Trump"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "who": "Grassley"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "who": "Trump"
+   }
+  }
+ },
+ "ME": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 61.7,
+    "rPct": 38.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 52.3,
+    "rPct": 47.7,
+    "who": "Gideon"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.9,
+    "rPct": 53.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 37.8,
+    "rPct": 62.2,
+    "who": "Collins"
+   }
+  }
+ },
+ "MT": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.5,
+    "rPct": 53.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 49.4,
+    "rPct": 50.6,
+    "who": "Daines"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 43.5,
+    "rPct": 56.5,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 55.3,
+    "rPct": 44.7,
+    "who": "Tester"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 44,
+    "rPct": 56,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50.3,
+    "rPct": 49.7,
+    "who": "Tester"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.2,
+    "rPct": 63.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.1,
+    "rPct": 59.9,
+    "who": "Daines"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 34.1,
+    "rPct": 65.9,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 48.1,
+    "rPct": 51.9,
+    "who": "Rosendale"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 34.8,
+    "rPct": 65.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 41.8,
+    "rPct": 58.2,
+    "who": "Sheehy"
+   }
+  }
+ },
+ "NE": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.3,
+    "rPct": 55.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 30.6,
+    "rPct": 69.4,
+    "who": "Sasse"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 39.8,
+    "rPct": 60.2,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Fischer"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42.8,
+    "rPct": 57.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Ricketts"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.1,
+    "rPct": 46.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 36.7,
+    "rPct": 63.3,
+    "who": "Sasse"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 49.2,
+    "rPct": 50.8,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 50.1,
+    "rPct": 49.9,
+    "who": "Raybould"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 52.9,
+    "rPct": 47.1,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50.4,
+    "rPct": 49.6,
+    "who": "Love"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 23.6,
+    "rPct": 76.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 17.7,
+    "rPct": 82.3,
+    "who": "Sasse"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 21.7,
+    "rPct": 78.3,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 25.8,
+    "rPct": 74.2,
+    "who": "Fischer"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 22.8,
+    "rPct": 77.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 20.8,
+    "rPct": 79.2,
+    "who": "Ricketts"
+   }
+  }
+ },
+ "OR": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 70.6,
+    "rPct": 29.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 70.7,
+    "rPct": 29.3,
+    "who": "Merkley"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 37.4,
+    "rPct": 62.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Perkins"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74.1,
+    "rPct": 25.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 74.8,
+    "rPct": 25.2,
+    "who": "Merkley"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 56.8,
+    "rPct": 43.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "who": "Merkley"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.2,
+    "rPct": 45.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 54.8,
+    "rPct": 45.2,
+    "who": "Merkley"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 56.6,
+    "rPct": 43.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.8,
+    "rPct": 43.2,
+    "who": "Merkley"
+   }
+  }
+ },
+ "AK": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.7,
+    "rPct": 55.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 43.3,
+    "rPct": 56.7,
+    "who": "Sullivan"
+   }
+  }
+ },
+ "SC": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.7,
+    "rPct": 54.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 45.7,
+    "rPct": 54.3,
+    "who": "Graham"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 45.1,
+    "rPct": 54.9,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 36.7,
+    "rPct": 63.3,
+    "who": "Scott"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 40.1,
+    "rPct": 59.9,
+    "who": "Scott"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 45,
+    "rPct": 55,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.5,
+    "rPct": 55.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 44.9,
+    "rPct": 55.1,
+    "who": "Graham"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Scott"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "who": "Scott"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 44.6,
+    "rPct": 55.4,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31,
+    "rPct": 69,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "who": "Graham"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 30.8,
+    "rPct": 69.2,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 27.7,
+    "rPct": 72.3,
+    "who": "Scott"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 25.2,
+    "rPct": 74.8,
+    "who": "Scott"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 28.6,
+    "rPct": 71.4,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.2,
+    "rPct": 58.8,
+    "who": "Graham"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 36,
+    "rPct": 64,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 30.9,
+    "rPct": 69.1,
+    "who": "Scott"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 32.1,
+    "rPct": 67.9,
+    "who": "Scott"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 36.6,
+    "rPct": 63.4,
+    "who": "Trump"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.9,
+    "rPct": 59.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 42.2,
+    "rPct": 57.8,
+    "who": "Graham"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 41.3,
+    "rPct": 58.7,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.8,
+    "rPct": 60.2,
+    "who": "Scott"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 36.2,
+    "rPct": 63.8,
+    "who": "Scott"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.8,
+    "rPct": 60.2,
+    "who": "Trump"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66,
+    "rPct": 34,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 66.6,
+    "rPct": 33.4,
+    "who": "Harrison"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 58.5,
+    "rPct": 41.5,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 51.5,
+    "rPct": 48.5,
+    "who": "Dixon"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 51.3,
+    "rPct": 48.7,
+    "who": "Matthews"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 55.5,
+    "rPct": 44.5,
+    "who": "Harris"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.6,
+    "rPct": 58.4,
+    "who": "Graham"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 37.7,
+    "rPct": 62.3,
+    "who": "Scott"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 33.5,
+    "rPct": 66.5,
+    "who": "Scott"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 36.8,
+    "rPct": 63.2,
+    "who": "Trump"
+   }
+  }
+ },
+ "IN": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.3,
+    "rPct": 45.7,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 55.7,
+    "rPct": 44.3,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 59.8,
+    "rPct": 40.2,
+    "who": "Bayh"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 61.4,
+    "rPct": 38.6,
+    "who": "Donnelly"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 49.7,
+    "rPct": 50.3,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 50.6,
+    "rPct": 49.4,
+    "who": "McCormick"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 37.2,
+    "rPct": 62.8,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Young"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 46.3,
+    "rPct": 53.7,
+    "who": "Braun"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 40.8,
+    "rPct": 59.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39.8,
+    "rPct": 60.2,
+    "who": "Banks"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 34.7,
+    "rPct": 65.3,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 31.8,
+    "rPct": 68.2,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 37.6,
+    "rPct": 62.4,
+    "who": "Young"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 38.4,
+    "rPct": 61.6,
+    "who": "Braun"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 34.1,
+    "rPct": 65.9,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 32.5,
+    "rPct": 67.5,
+    "who": "Banks"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 35.1,
+    "rPct": 64.9,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 31.7,
+    "rPct": 68.3,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 36.1,
+    "rPct": 63.9,
+    "who": "Young"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 38.8,
+    "rPct": 61.2,
+    "who": "Braun"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 35.8,
+    "rPct": 64.2,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 34.3,
+    "rPct": 65.7,
+    "who": "Banks"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 37.4,
+    "rPct": 62.6,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 40.3,
+    "rPct": 59.7,
+    "who": "Young"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 44.7,
+    "rPct": 55.3,
+    "who": "Braun"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 41.4,
+    "rPct": 58.6,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 39.4,
+    "rPct": 60.6,
+    "who": "Banks"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 33.7,
+    "rPct": 66.3,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 37.5,
+    "rPct": 62.5,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 41.8,
+    "rPct": 58.2,
+    "who": "Young"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 44.5,
+    "rPct": 55.5,
+    "who": "Braun"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 38.7,
+    "rPct": 61.3,
+    "who": "Banks"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71.6,
+    "rPct": 28.4,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 62,
+    "rPct": 38,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 61.9,
+    "rPct": 38.1,
+    "who": "Bayh"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 66.8,
+    "rPct": 33.2,
+    "who": "Donnelly"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 64.1,
+    "rPct": 35.9,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 63.2,
+    "rPct": 36.8,
+    "who": "McCormick"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 43.5,
+    "rPct": 56.5,
+    "who": "Young"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "who": "Braun"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 31.7,
+    "rPct": 68.3,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "who": "Banks"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36,
+    "rPct": 64,
+    "who": "Trump"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 35.2,
+    "rPct": 64.8,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Young"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 42.5,
+    "rPct": 57.5,
+    "who": "Braun"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 31.1,
+    "rPct": 68.9,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 31.4,
+    "rPct": 68.6,
+    "who": "Banks"
+   }
+  }
+ },
+ "WA": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 65.7,
+    "rPct": 34.3,
+    "who": "Biden"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 61.8,
+    "rPct": 38.2,
+    "who": "Biden"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 47.9,
+    "rPct": 52.1,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.3,
+    "rPct": 58.7,
+    "who": "Trump"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.9,
+    "rPct": 55.1,
+    "who": "Trump"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 58.9,
+    "rPct": 41.1,
+    "who": "Biden"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 88.5,
+    "rPct": 11.5,
+    "who": "Biden"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.4,
+    "rPct": 46.6,
+    "who": "Biden"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 72.6,
+    "rPct": 27.4,
+    "who": "Biden"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59,
+    "rPct": 41,
+    "who": "Biden"
+   }
+  }
+ },
+ "CT": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.9,
+    "rPct": 36.1,
+    "who": "Biden"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.9,
+    "rPct": 44.1,
+    "who": "Biden"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.7,
+    "rPct": 40.3,
+    "who": "Biden"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66.4,
+    "rPct": 33.6,
+    "who": "Biden"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.5,
+    "rPct": 44.5,
+    "who": "Biden"
+   }
+  }
+ },
+ "TN": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 22.4,
+    "rPct": 77.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 21.2,
+    "rPct": 78.8,
+    "who": "Hagerty"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 35.2,
+    "rPct": 64.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 33,
+    "rPct": 67,
+    "who": "Hagerty"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 26.7,
+    "rPct": 73.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 25.1,
+    "rPct": 74.9,
+    "who": "Hagerty"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.2,
+    "rPct": 63.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 34.6,
+    "rPct": 65.4,
+    "who": "Hagerty"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "who": "Hagerty"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 35.6,
+    "rPct": 64.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "who": "Hagerty"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.4,
+    "rPct": 57.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40,
+    "rPct": 60,
+    "who": "Hagerty"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.1,
+    "rPct": 68.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 28.4,
+    "rPct": 71.6,
+    "who": "Hagerty"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 73.6,
+    "rPct": 26.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 72,
+    "rPct": 28,
+    "who": "Bradshaw"
+   }
+  }
+ },
+ "MD": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.6,
+    "rPct": 57.4,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.7,
+    "rPct": 39.3,
+    "who": "Biden"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63,
+    "rPct": 37,
+    "who": "Biden"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 91,
+    "rPct": 9,
+    "who": "Biden"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 69.1,
+    "rPct": 30.9,
+    "who": "Biden"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.1,
+    "rPct": 44.9,
+    "who": "Biden"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 82.7,
+    "rPct": 17.3,
+    "who": "Biden"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 81.8,
+    "rPct": 18.2,
+    "who": "Biden"
+   }
+  }
+ },
+ "MO": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 79.5,
+    "rPct": 20.5,
+    "who": "Biden"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46,
+    "rPct": 54,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.8,
+    "rPct": 63.2,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 29.6,
+    "rPct": 70.4,
+    "who": "Trump"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.3,
+    "rPct": 36.7,
+    "who": "Biden"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.1,
+    "rPct": 68.9,
+    "who": "Trump"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.9,
+    "rPct": 71.1,
+    "who": "Trump"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 24,
+    "rPct": 76,
+    "who": "Trump"
+   }
+  }
+ },
+ "UT": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 62.8,
+    "rPct": 37.2,
+    "who": "Biden"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 34.1,
+    "rPct": 65.9,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.7,
+    "rPct": 71.3,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 32.9,
+    "rPct": 67.1,
+    "who": "Trump"
+   }
+  }
+ },
+ "KY": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.3,
+    "rPct": 71.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 31.9,
+    "rPct": 68.1,
+    "who": "McConnell"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 27,
+    "rPct": 73,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 36.5,
+    "rPct": 63.5,
+    "who": "Paul"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 29,
+    "rPct": 71,
+    "who": "Paul"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 26.1,
+    "rPct": 73.9,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.5,
+    "rPct": 68.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 35.2,
+    "rPct": 64.8,
+    "who": "McConnell"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 30.2,
+    "rPct": 69.8,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 39.9,
+    "rPct": 60.1,
+    "who": "Paul"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 33.1,
+    "rPct": 66.9,
+    "who": "Paul"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 29.7,
+    "rPct": 70.3,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 61.5,
+    "rPct": 38.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 62.7,
+    "rPct": 37.3,
+    "who": "McGrath"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 57,
+    "rPct": 43,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 58.9,
+    "rPct": 41.1,
+    "who": "Gray"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 59.1,
+    "rPct": 40.9,
+    "who": "Booker"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 58.4,
+    "rPct": 41.6,
+    "who": "Harris"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 36.8,
+    "rPct": 63.2,
+    "who": "McConnell"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 30.6,
+    "rPct": 69.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 34,
+    "rPct": 66,
+    "who": "Paul"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 34.5,
+    "rPct": 65.5,
+    "who": "Paul"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "who": "Trump"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 20,
+    "rPct": 80,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 24,
+    "rPct": 76,
+    "who": "McConnell"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 19,
+    "rPct": 81,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "R",
+    "dPct": 34.9,
+    "rPct": 65.1,
+    "who": "Paul"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 24.5,
+    "rPct": 75.5,
+    "who": "Paul"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 17.6,
+    "rPct": 82.4,
+    "who": "Trump"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.4,
+    "rPct": 55.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 46,
+    "rPct": 54,
+    "who": "McConnell"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 40.6,
+    "rPct": 59.4,
+    "who": "Trump"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 50.6,
+    "rPct": 49.4,
+    "who": "Gray"
+   },
+   "2022-senate": {
+    "winner": "R",
+    "dPct": 45.5,
+    "rPct": 54.5,
+    "who": "Paul"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 42.3,
+    "rPct": 57.7,
+    "who": "Trump"
+   }
+  }
+ },
+ "AR": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.8,
+    "rPct": 71.2,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38,
+    "rPct": 62,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.9,
+    "rPct": 68.1,
+    "who": "Trump"
+   }
+  }
+ },
+ "WV": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 29.2,
+    "rPct": 70.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 27.3,
+    "rPct": 72.7,
+    "who": "Capito"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 31.1,
+    "rPct": 68.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 28.2,
+    "rPct": 71.8,
+    "who": "Capito"
+   }
+  }
+ },
+ "ID": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 30.4,
+    "rPct": 69.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 30.8,
+    "rPct": 69.2,
+    "who": "Risch"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.8,
+    "rPct": 61.2,
+    "who": "Risch"
+   }
+  }
+ },
+ "SD": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.6,
+    "rPct": 63.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 34.3,
+    "rPct": 65.7,
+    "who": "Rounds"
+   }
+  }
+ },
+ "ND": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 32.7,
+    "rPct": 67.3,
+    "who": "Trump"
+   }
+  }
+ },
+ "DE": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.6,
+    "rPct": 40.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 61.1,
+    "rPct": 38.9,
+    "who": "Coons"
+   }
+  }
+ },
+ "VT": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 68.4,
+    "rPct": 31.6,
+    "who": "Biden"
+   },
+   "2016-president": {
+    "winner": "D",
+    "dPct": 65.2,
+    "rPct": 34.8,
+    "who": "Clinton"
+   },
+   "2016-senate": {
+    "winner": "D",
+    "dPct": 65,
+    "rPct": 35,
+    "who": "Leahy"
+   },
+   "2018-senate": {
+    "winner": "D",
+    "dPct": 71.1,
+    "rPct": 28.9,
+    "who": "Sanders"
+   },
+   "2022-senate": {
+    "winner": "D",
+    "dPct": 70.9,
+    "rPct": 29.1,
+    "who": "Welch"
+   },
+   "2024-president": {
+    "winner": "D",
+    "dPct": 66.4,
+    "rPct": 33.6,
+    "who": "Harris"
+   },
+   "2024-senate": {
+    "winner": "D",
+    "dPct": 66.3,
+    "rPct": 33.7,
+    "who": "Sanders"
+   }
+  }
+ },
+ "WY": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 27.5,
+    "rPct": 72.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 26.9,
+    "rPct": 73.1,
+    "who": "Lummis"
+   },
+   "2016-president": {
+    "winner": "R",
+    "dPct": 24.3,
+    "rPct": 75.7,
+    "who": "Trump"
+   },
+   "2018-senate": {
+    "winner": "R",
+    "dPct": 31,
+    "rPct": 69,
+    "who": "Barrasso"
+   },
+   "2024-president": {
+    "winner": "R",
+    "dPct": 26.5,
+    "rPct": 73.5,
+    "who": "Trump"
+   },
+   "2024-senate": {
+    "winner": "R",
+    "dPct": 24.3,
+    "rPct": 75.7,
+    "who": "Barrasso"
+   }
+  }
+ },
+ "RI": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64.9,
+    "rPct": 35.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 70.5,
+    "rPct": 29.5,
+    "who": "Reed"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 56.8,
+    "rPct": 43.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 63.2,
+    "rPct": 36.8,
+    "who": "Reed"
+   }
+  }
+ },
+ "MS": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 33.9,
+    "rPct": 66.1,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38,
+    "rPct": 62,
+    "who": "Hyde-Smith"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63,
+    "rPct": 37,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 65.3,
+    "rPct": 34.7,
+    "who": "Espy"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38,
+    "rPct": 62,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.4,
+    "rPct": 59.6,
+    "who": "Hyde-Smith"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 30.7,
+    "rPct": 69.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 34.9,
+    "rPct": 65.1,
+    "who": "Hyde-Smith"
+   }
+  }
+ },
+ "OK": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.1,
+    "rPct": 60.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 40.1,
+    "rPct": 59.9,
+    "who": "Inhofe"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 22.8,
+    "rPct": 77.2,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 25.2,
+    "rPct": 74.8,
+    "who": "Inhofe"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.1,
+    "rPct": 71.9,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 29.3,
+    "rPct": 70.7,
+    "who": "Inhofe"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 34.2,
+    "rPct": 65.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 34.6,
+    "rPct": 65.4,
+    "who": "Inhofe"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.5,
+    "rPct": 59.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 41.2,
+    "rPct": 58.8,
+    "who": "Inhofe"
+   }
+  }
+ },
+ "HI": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 65,
+    "rPct": 35,
+    "who": "Biden"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 65.1,
+    "rPct": 34.9,
+    "who": "Biden"
+   }
+  }
+ },
+ "NJ": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 62.3,
+    "rPct": 37.7,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 62.5,
+    "rPct": 37.5,
+    "who": "Booker"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 47.4,
+    "rPct": 52.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 47.8,
+    "rPct": 52.2,
+    "who": "Mehta"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.1,
+    "rPct": 42.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.4,
+    "rPct": 43.6,
+    "who": "Booker"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.6,
+    "rPct": 61.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 38.5,
+    "rPct": 61.5,
+    "who": "Mehta"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.3,
+    "rPct": 43.7,
+    "who": "Booker"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.8,
+    "rPct": 40.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 60.7,
+    "rPct": 39.3,
+    "who": "Booker"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 51.9,
+    "rPct": 48.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 50.1,
+    "rPct": 49.9,
+    "who": "Booker"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 73,
+    "rPct": 27,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 75.6,
+    "rPct": 24.4,
+    "who": "Booker"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.7,
+    "rPct": 40.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 63.2,
+    "rPct": 36.8,
+    "who": "Booker"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 80.3,
+    "rPct": 19.7,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 82.1,
+    "rPct": 17.9,
+    "who": "Booker"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 58.7,
+    "rPct": 41.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 58.3,
+    "rPct": 41.7,
+    "who": "Booker"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 67.6,
+    "rPct": 32.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 66.8,
+    "rPct": 33.2,
+    "who": "Booker"
+   }
+  }
+ },
+ "MA": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 61.1,
+    "rPct": 38.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 61.2,
+    "rPct": 38.8,
+    "who": "Markey"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 65.8,
+    "rPct": 34.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 65.1,
+    "rPct": 34.9,
+    "who": "Markey"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64,
+    "rPct": 36,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 64.2,
+    "rPct": 35.8,
+    "who": "Markey"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.6,
+    "rPct": 36.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 62.6,
+    "rPct": 37.4,
+    "who": "Markey"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 75.8,
+    "rPct": 24.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 75.3,
+    "rPct": 24.7,
+    "who": "Markey"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64.1,
+    "rPct": 35.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 63.8,
+    "rPct": 36.2,
+    "who": "Markey"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 86.8,
+    "rPct": 13.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 86.7,
+    "rPct": 13.3,
+    "who": "Markey"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 67.8,
+    "rPct": 32.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 67,
+    "rPct": 33,
+    "who": "Markey"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.2,
+    "rPct": 40.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 58.6,
+    "rPct": 41.4,
+    "who": "Markey"
+   }
+  }
+ },
+ "AL": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 25.5,
+    "rPct": 74.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 29,
+    "rPct": 71,
+    "who": "Tuberville"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 58.1,
+    "rPct": 41.9,
+    "who": "Jones"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 29.4,
+    "rPct": 70.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "who": "Tuberville"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 19.5,
+    "rPct": 80.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 22.7,
+    "rPct": 77.3,
+    "who": "Tuberville"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.3,
+    "rPct": 63.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.5,
+    "rPct": 60.5,
+    "who": "Tuberville"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 30.7,
+    "rPct": 69.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "who": "Tuberville"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 65.1,
+    "rPct": 34.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 66.7,
+    "rPct": 33.3,
+    "who": "Jones"
+   }
+  }
+ },
+ "LA": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 30.4,
+    "rPct": 69.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 16.6,
+    "rPct": 83.4,
+    "who": "Cassidy"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 67.7,
+    "rPct": 32.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 49.8,
+    "rPct": 50.2,
+    "who": "Cassidy"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.6,
+    "rPct": 71.4,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 13.4,
+    "rPct": 86.6,
+    "who": "Cassidy"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 25.4,
+    "rPct": 74.6,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 15.1,
+    "rPct": 84.9,
+    "who": "Cassidy"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 32.7,
+    "rPct": 67.3,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 17.3,
+    "rPct": 82.7,
+    "who": "Cassidy"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.9,
+    "rPct": 40.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 42.7,
+    "rPct": 57.3,
+    "who": "Cassidy"
+   }
+  }
+ },
+ "FL": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 33.4,
+    "rPct": 66.6,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.7,
+    "rPct": 55.3,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.8,
+    "rPct": 57.2,
+    "who": "Trump"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.4,
+    "rPct": 53.6,
+    "who": "Trump"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.1,
+    "rPct": 57.9,
+    "who": "Trump"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.1,
+    "rPct": 61.9,
+    "who": "Trump"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 47.5,
+    "rPct": 52.5,
+    "who": "Trump"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.6,
+    "rPct": 55.4,
+    "who": "Trump"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.6,
+    "rPct": 53.4,
+    "who": "Trump"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66.8,
+    "rPct": 33.2,
+    "who": "Biden"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.3,
+    "rPct": 54.7,
+    "who": "Trump"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.8,
+    "rPct": 53.2,
+    "who": "Trump"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.1,
+    "rPct": 53.9,
+    "who": "Trump"
+   }
+  },
+  "14": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 48.5,
+    "rPct": 51.5,
+    "who": "Trump"
+   }
+  },
+  "15": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.8,
+    "rPct": 55.2,
+    "who": "Trump"
+   }
+  },
+  "16": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.9,
+    "rPct": 53.1,
+    "who": "Trump"
+   }
+  },
+  "17": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 43.2,
+    "rPct": 56.8,
+    "who": "Trump"
+   }
+  },
+  "18": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 44.9,
+    "rPct": 55.1,
+    "who": "Trump"
+   }
+  },
+  "19": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 38.9,
+    "rPct": 61.1,
+    "who": "Trump"
+   }
+  },
+  "20": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74.2,
+    "rPct": 25.8,
+    "who": "Biden"
+   }
+  },
+  "21": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.6,
+    "rPct": 54.4,
+    "who": "Trump"
+   }
+  },
+  "22": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 51.2,
+    "rPct": 48.8,
+    "who": "Biden"
+   }
+  },
+  "23": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.4,
+    "rPct": 36.6,
+    "who": "Biden"
+   }
+  },
+  "24": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 78.6,
+    "rPct": 21.4,
+    "who": "Biden"
+   }
+  },
+  "25": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 52.6,
+    "rPct": 47.4,
+    "who": "Biden"
+   }
+  },
+  "26": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 49.7,
+    "rPct": 50.3,
+    "who": "Trump"
+   }
+  },
+  "27": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 50,
+    "rPct": 50,
+    "who": "Biden"
+   }
+  },
+  "28": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.5,
+    "rPct": 53.5,
+    "who": "Trump"
+   }
+  }
+ },
+ "IL": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71.3,
+    "rPct": 28.7,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 70.5,
+    "rPct": 29.5,
+    "who": "Durbin"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 70.5,
+    "rPct": 29.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 70.8,
+    "rPct": 29.2,
+    "who": "Durbin"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71.6,
+    "rPct": 28.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 72.8,
+    "rPct": 27.2,
+    "who": "Durbin"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 73.2,
+    "rPct": 26.8,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 75.6,
+    "rPct": 24.4,
+    "who": "Durbin"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 69.9,
+    "rPct": 30.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 68.7,
+    "rPct": 31.3,
+    "who": "Durbin"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.5,
+    "rPct": 44.5,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "who": "Durbin"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 87.4,
+    "rPct": 12.6,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 86.5,
+    "rPct": 13.5,
+    "who": "Durbin"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.9,
+    "rPct": 42.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 58.1,
+    "rPct": 41.9,
+    "who": "Durbin"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71,
+    "rPct": 29,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 70.8,
+    "rPct": 29.2,
+    "who": "Durbin"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.1,
+    "rPct": 36.9,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 59.8,
+    "rPct": 40.2,
+    "who": "Durbin"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.9,
+    "rPct": 42.1,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.2,
+    "rPct": 43.8,
+    "who": "Durbin"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 28.5,
+    "rPct": 71.5,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 32,
+    "rPct": 68,
+    "who": "Curran"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.6,
+    "rPct": 44.4,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.6,
+    "rPct": 43.4,
+    "who": "Durbin"
+   }
+  },
+  "14": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 56.1,
+    "rPct": 43.9,
+    "who": "Durbin"
+   }
+  },
+  "15": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 30.3,
+    "rPct": 69.7,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 33.3,
+    "rPct": 66.7,
+    "who": "Curran"
+   }
+  },
+  "16": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.2,
+    "rPct": 60.8,
+    "who": "Trump"
+   },
+   "2020-senate": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "who": "Curran"
+   }
+  },
+  "17": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.7,
+    "rPct": 46.3,
+    "who": "Biden"
+   },
+   "2020-senate": {
+    "winner": "D",
+    "dPct": 54.4,
+    "rPct": 45.6,
+    "who": "Durbin"
+   }
+  }
+ },
+ "NY": {
+  "1": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 49.1,
+    "rPct": 50.9,
+    "who": "Trump"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 48.8,
+    "rPct": 51.2,
+    "who": "Trump"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.6,
+    "rPct": 44.4,
+    "who": "Biden"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.2,
+    "rPct": 42.8,
+    "who": "Biden"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 81.8,
+    "rPct": 18.2,
+    "who": "Biden"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 65.7,
+    "rPct": 34.3,
+    "who": "Biden"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 79.8,
+    "rPct": 20.2,
+    "who": "Biden"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 77.4,
+    "rPct": 22.6,
+    "who": "Biden"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74.9,
+    "rPct": 25.1,
+    "who": "Biden"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 86.5,
+    "rPct": 13.5,
+    "who": "Biden"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 45.7,
+    "rPct": 54.3,
+    "who": "Trump"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 86.2,
+    "rPct": 13.8,
+    "who": "Biden"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 88.9,
+    "rPct": 11.1,
+    "who": "Biden"
+   }
+  },
+  "14": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 77.9,
+    "rPct": 22.1,
+    "who": "Biden"
+   }
+  },
+  "15": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 85.2,
+    "rPct": 14.8,
+    "who": "Biden"
+   }
+  },
+  "16": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 72.6,
+    "rPct": 27.4,
+    "who": "Biden"
+   }
+  },
+  "17": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55,
+    "rPct": 45,
+    "who": "Biden"
+   }
+  },
+  "18": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 54.6,
+    "rPct": 45.4,
+    "who": "Biden"
+   }
+  },
+  "19": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 52.3,
+    "rPct": 47.7,
+    "who": "Biden"
+   }
+  },
+  "20": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.7,
+    "rPct": 40.3,
+    "who": "Biden"
+   }
+  },
+  "21": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 41.9,
+    "rPct": 58.1,
+    "who": "Trump"
+   }
+  },
+  "22": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.8,
+    "rPct": 44.2,
+    "who": "Biden"
+   }
+  },
+  "23": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 40.7,
+    "rPct": 59.3,
+    "who": "Trump"
+   }
+  },
+  "24": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 39.7,
+    "rPct": 60.3,
+    "who": "Trump"
+   }
+  },
+  "25": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.5,
+    "rPct": 39.5,
+    "who": "Biden"
+   }
+  },
+  "26": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 62.8,
+    "rPct": 37.2,
+    "who": "Biden"
+   }
+  }
+ },
+ "CA": {
+  "1": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.2,
+    "rPct": 40.8,
+    "who": "Biden"
+   }
+  },
+  "2": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64.6,
+    "rPct": 35.4,
+    "who": "Biden"
+   }
+  },
+  "3": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.3,
+    "rPct": 42.7,
+    "who": "Biden"
+   }
+  },
+  "4": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.8,
+    "rPct": 39.2,
+    "who": "Biden"
+   }
+  },
+  "5": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 42.6,
+    "rPct": 57.4,
+    "who": "Trump"
+   }
+  },
+  "6": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 56.5,
+    "rPct": 43.5,
+    "who": "Biden"
+   }
+  },
+  "7": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.8,
+    "rPct": 40.2,
+    "who": "Biden"
+   }
+  },
+  "8": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71.6,
+    "rPct": 28.4,
+    "who": "Biden"
+   }
+  },
+  "9": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.4,
+    "rPct": 36.6,
+    "who": "Biden"
+   }
+  },
+  "10": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 69.7,
+    "rPct": 30.3,
+    "who": "Biden"
+   }
+  },
+  "11": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 88,
+    "rPct": 12,
+    "who": "Biden"
+   }
+  },
+  "12": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 91.3,
+    "rPct": 8.7,
+    "who": "Biden"
+   }
+  },
+  "13": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 59.1,
+    "rPct": 40.9,
+    "who": "Biden"
+   }
+  },
+  "14": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 73.2,
+    "rPct": 26.8,
+    "who": "Biden"
+   }
+  },
+  "15": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 79.2,
+    "rPct": 20.8,
+    "who": "Biden"
+   }
+  },
+  "16": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 77,
+    "rPct": 23,
+    "who": "Biden"
+   }
+  },
+  "17": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 74.6,
+    "rPct": 25.4,
+    "who": "Biden"
+   }
+  },
+  "18": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 71.9,
+    "rPct": 28.1,
+    "who": "Biden"
+   }
+  },
+  "19": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 70.4,
+    "rPct": 29.6,
+    "who": "Biden"
+   }
+  },
+  "20": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 36.6,
+    "rPct": 63.4,
+    "who": "Trump"
+   }
+  },
+  "21": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.9,
+    "rPct": 39.1,
+    "who": "Biden"
+   }
+  },
+  "22": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 58.5,
+    "rPct": 41.5,
+    "who": "Biden"
+   }
+  },
+  "23": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 43.9,
+    "rPct": 56.1,
+    "who": "Trump"
+   }
+  },
+  "24": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64.7,
+    "rPct": 35.3,
+    "who": "Biden"
+   }
+  },
+  "25": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 58.1,
+    "rPct": 41.9,
+    "who": "Biden"
+   }
+  },
+  "26": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 61.5,
+    "rPct": 38.5,
+    "who": "Biden"
+   }
+  },
+  "27": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.1,
+    "rPct": 39.9,
+    "who": "Biden"
+   }
+  },
+  "28": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66.6,
+    "rPct": 33.4,
+    "who": "Biden"
+   }
+  },
+  "29": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 75.5,
+    "rPct": 24.5,
+    "who": "Biden"
+   }
+  },
+  "30": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 72.6,
+    "rPct": 27.4,
+    "who": "Biden"
+   }
+  },
+  "31": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 62.8,
+    "rPct": 37.2,
+    "who": "Biden"
+   }
+  },
+  "32": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 67.3,
+    "rPct": 32.7,
+    "who": "Biden"
+   }
+  },
+  "33": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.4,
+    "rPct": 36.6,
+    "who": "Biden"
+   }
+  },
+  "34": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 82.8,
+    "rPct": 17.2,
+    "who": "Biden"
+   }
+  },
+  "35": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 62.1,
+    "rPct": 37.9,
+    "who": "Biden"
+   }
+  },
+  "36": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 72.5,
+    "rPct": 27.5,
+    "who": "Biden"
+   }
+  },
+  "37": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 87.3,
+    "rPct": 12.7,
+    "who": "Biden"
+   }
+  },
+  "38": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64.5,
+    "rPct": 35.5,
+    "who": "Biden"
+   }
+  },
+  "39": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.3,
+    "rPct": 36.7,
+    "who": "Biden"
+   }
+  },
+  "40": {
+   "2020-president": {
+    "winner": "R",
+    "dPct": 46.1,
+    "rPct": 53.9,
+    "who": "Trump"
+   }
+  },
+  "41": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 63.1,
+    "rPct": 36.9,
+    "who": "Biden"
+   }
+  },
+  "42": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 60.1,
+    "rPct": 39.9,
+    "who": "Biden"
+   }
+  },
+  "43": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 82.6,
+    "rPct": 17.4,
+    "who": "Biden"
+   }
+  },
+  "44": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 77.1,
+    "rPct": 22.9,
+    "who": "Biden"
+   }
+  },
+  "45": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 55.4,
+    "rPct": 44.6,
+    "who": "Biden"
+   }
+  },
+  "46": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 64.4,
+    "rPct": 35.6,
+    "who": "Biden"
+   }
+  },
+  "47": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 58.2,
+    "rPct": 41.8,
+    "who": "Biden"
+   }
+  },
+  "48": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 53.4,
+    "rPct": 46.6,
+    "who": "Biden"
+   }
+  },
+  "49": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 57.7,
+    "rPct": 42.3,
+    "who": "Biden"
+   }
+  },
+  "50": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 61.4,
+    "rPct": 38.6,
+    "who": "Biden"
+   }
+  },
+  "51": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 61.9,
+    "rPct": 38.1,
+    "who": "Biden"
+   }
+  },
+  "52": {
+   "2020-president": {
+    "winner": "D",
+    "dPct": 66.5,
+    "rPct": 33.5,
+    "who": "Biden"
+   }
+  }
+ }
+}

@@ -1,0 +1,354 @@
+{
+ "OH": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "MI": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "PA": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "WI": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "NV": [
+  "2016-president",
+  "2016-senate",
+  "2018-house",
+  "2018-senate",
+  "2020-president",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "AZ": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "TX": [
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "VA": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "NH": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president"
+ ],
+ "MN": [
+  "2016-president",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "CO": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president"
+ ],
+ "NM": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "KS": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president"
+ ],
+ "IA": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president"
+ ],
+ "MT": [
+  "2016-house",
+  "2016-president",
+  "2018-house",
+  "2018-senate",
+  "2020-house",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "NE": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2024-house",
+  "2024-president"
+ ],
+ "AK": [
+  "2016-house",
+  "2016-president",
+  "2018-house",
+  "2020-house",
+  "2020-president",
+  "2020-senate"
+ ],
+ "GA": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "SC": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president"
+ ],
+ "IN": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president"
+ ],
+ "WA": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president",
+  "2022-house",
+  "2022-senate",
+  "2024-house",
+  "2024-president",
+  "2024-senate"
+ ],
+ "CT": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president"
+ ],
+ "TN": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "MD": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president"
+ ],
+ "UT": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president"
+ ],
+ "MO": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president"
+ ],
+ "KY": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "AR": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "WV": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "ID": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "SD": [
+  "2016-house",
+  "2016-president",
+  "2016-senate",
+  "2018-house",
+  "2020-house",
+  "2020-president",
+  "2020-senate"
+ ],
+ "ND": [
+  "2016-house",
+  "2016-president",
+  "2016-senate",
+  "2018-house",
+  "2018-senate",
+  "2020-house",
+  "2020-president"
+ ],
+ "DE": [
+  "2016-house",
+  "2016-president",
+  "2018-house",
+  "2018-senate",
+  "2020-house",
+  "2020-president",
+  "2020-senate"
+ ],
+ "VT": [
+  "2016-president",
+  "2016-senate",
+  "2018-house",
+  "2020-president"
+ ],
+ "WY": [
+  "2016-house",
+  "2016-president",
+  "2018-house",
+  "2018-senate",
+  "2020-house",
+  "2020-president",
+  "2020-senate"
+ ],
+ "RI": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "MS": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "OK": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "NJ": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "MA": [
+  "2016-president",
+  "2018-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "AL": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "LA": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "FL": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president"
+ ],
+ "IL": [
+  "2016-president",
+  "2016-senate",
+  "2020-president",
+  "2020-senate"
+ ],
+ "NY": [
+  "2016-president",
+  "2016-senate",
+  "2018-senate",
+  "2020-president"
+ ]
+}
