@@ -18,6 +18,8 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function loader({ request, context }: Route.LoaderArgs) {
+  const editor = editorFromRequest(request);
+  if (!editor) return { editor: null };
   const races = POLLS.map((r) => ({
     key: raceKey(r),
     title: r.title,
@@ -28,13 +30,13 @@ export async function loader({ request, context }: Route.LoaderArgs) {
     candidates: r.candidates,
   })).sort((a, b) => a.title.localeCompare(b.title));
   const log = await readSubmissionLog(context.get(cloudflareContext).env.DB);
-  return { races, log, editor: editorFromRequest(request) };
+  return { races, log, editor };
 }
 
 export async function action({ request, context }: Route.ActionArgs) {
   const form = await request.formData();
 
-  const login = tryLogin(form);
+  const login = await tryLogin(request, context.get(cloudflareContext).env.DB, form);
   if (login) return login;
 
   const editor = editorFromRequest(request);
@@ -114,7 +116,11 @@ function fmtWhen(iso: string): string {
 }
 
 export default function PollsSubmit({ loaderData }: Route.ComponentProps) {
-  const { races, log, editor } = loaderData;
+  const editor = loaderData.editor;
+  // Hooks must run unconditionally (same count every render) even though the
+  // whole page is gated below -- falls back to empty lists pre-login.
+  const races = loaderData.editor ? loaderData.races : [];
+  const log = loaderData.editor ? loaderData.log : [];
   const fetcher = useFetcher<typeof action>();
   const [raceKeySel, setRaceKeySel] = useState("");
 
@@ -304,30 +310,30 @@ export default function PollsSubmit({ loaderData }: Route.ComponentProps) {
               )}
             </div>
           </fetcher.Form>
-        </>
-      )}
 
-      {log.length > 0 && (
-        <div className="mt-8">
-          <h2 className="mb-2 text-sm font-semibold text-gray-900 dark:text-gray-100">
-            Recently submitted
-          </h2>
-          <ul className="space-y-1.5 text-xs text-gray-600 dark:text-gray-400">
-            {log.slice(0, 30).map((e, i) => (
-              <li key={i} className="flex items-baseline justify-between gap-2">
-                <span>
-                  <span className="font-medium text-gray-900 dark:text-gray-100">
-                    {e.raceTitle}
-                  </span>{" "}
-                  — {e.poll.pollster} ({e.poll.results.map((r) => `${r.candidate} ${r.pct}%`).join(", ")})
-                </span>
-                <span className="shrink-0 tabular-nums text-gray-400 dark:text-gray-500">
-                  {e.by} · {fmtWhen(e.at)}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
+          {log.length > 0 && (
+            <div className="mt-8">
+              <h2 className="mb-2 text-sm font-semibold text-gray-900 dark:text-gray-100">
+                Recently submitted
+              </h2>
+              <ul className="space-y-1.5 text-xs text-gray-600 dark:text-gray-400">
+                {log.slice(0, 30).map((e, i) => (
+                  <li key={i} className="flex items-baseline justify-between gap-2">
+                    <span>
+                      <span className="font-medium text-gray-900 dark:text-gray-100">
+                        {e.raceTitle}
+                      </span>{" "}
+                      — {e.poll.pollster} ({e.poll.results.map((r) => `${r.candidate} ${r.pct}%`).join(", ")})
+                    </span>
+                    <span className="shrink-0 tabular-nums text-gray-400 dark:text-gray-500">
+                      {e.by} · {fmtWhen(e.at)}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </>
       )}
     </div>
   );

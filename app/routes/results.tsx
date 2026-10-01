@@ -1,6 +1,6 @@
 import type { Route } from "./+types/results";
 import { cloudflareContext } from "~/lib/context.server";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useFetcher, data } from "react-router";
 import {
   OH7_CANDIDATES,
@@ -29,18 +29,16 @@ const PLACE_IDS = new Set(
 );
 
 export async function loader({ request, context }: Route.LoaderArgs) {
+  const editor = editorFromRequest(request);
+  if (!editor) return { editor: null };
   const store = await readOh7(context.get(cloudflareContext).env.DB);
-  return {
-    results: store.results,
-    updatedAt: store.updatedAt,
-    editor: editorFromRequest(request),
-  };
+  return { editor, results: store.results, updatedAt: store.updatedAt };
 }
 
 export async function action({ request, context }: Route.ActionArgs) {
   const form = await request.formData();
 
-  const login = tryLogin(form);
+  const login = await tryLogin(request, context.get(cloudflareContext).env.DB, form);
   if (login) return login;
 
   if (!editorFromRequest(request)) {
@@ -110,7 +108,11 @@ function tallyOf(
 }
 
 export default function Results({ loaderData }: Route.ComponentProps) {
-  const { results, updatedAt, editor } = loaderData;
+  const editor = loaderData.editor;
+  // Hooks must run unconditionally (same count every render) even though the
+  // whole page is gated below -- falls back to an empty tally pre-login.
+  const results = loaderData.editor ? loaderData.results : {};
+  const updatedAt = loaderData.editor ? loaderData.updatedAt : null;
 
   // Live tally: seed from the server, then update as numbers are typed so the
   // totals move without waiting for the save round-trip.
@@ -124,6 +126,22 @@ export default function Results({ loaderData }: Route.ComponentProps) {
   const setRow = (id: string, next: Row) =>
     setRows((prev) => ({ ...prev, [id]: next }));
 
+  // Pre-login the loader never sends real results (see below), so once a
+  // login succeeds and the loader revalidates with the real tally, reseed
+  // `rows` -- the useState initializer above only ran once, against the
+  // empty pre-login placeholder.
+  useEffect(() => {
+    if (!editor) return;
+    setRows(() => {
+      const m: Record<string, Row> = {};
+      for (const [id, r] of Object.entries(results)) {
+        m[id] = { votes: { ...emptyRow().votes, ...r.votes }, final: !!r.final };
+      }
+      return m;
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [editor]);
+
   const allPlaces = useMemo(
     () => OH7_TOWNS.flatMap((t) => t.pollingPlaces),
     []
@@ -134,6 +152,22 @@ export default function Results({ loaderData }: Route.ComponentProps) {
   const dLead = totals.v[D_KEY] - totals.v[R_KEY];
   const pctIn = Math.round((totals.reporting / OH7_PLACE_COUNT) * 100);
   const pct = (k: string) => (grand ? (totals.v[k] / grand) * 100 : 0);
+
+  if (!editor) {
+    return (
+      <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+        <header className="mb-5">
+          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
+            OH-7 Election Night
+          </h1>
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            Sign in to view the live tally.
+          </p>
+        </header>
+        <LoginForm title="Sign in to view the tally" />
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
@@ -155,15 +189,9 @@ export default function Results({ loaderData }: Route.ComponentProps) {
         </p>
       </header>
 
-      {!editor ? (
-        <div className="mb-4">
-          <LoginForm title="Sign in to enter counts" />
-        </div>
-      ) : (
-        <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
-          Signed in as <span className="font-medium">{editor}</span>.
-        </p>
-      )}
+      <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
+        Signed in as <span className="font-medium">{editor}</span>.
+      </p>
 
       {/* grand total */}
       <div className="mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900">

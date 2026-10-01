@@ -83,13 +83,20 @@ const HOUSE = [
 // those stay on best-guess frontrunners and may return no general-election
 // polling yet).
 const SENATE = [
-  // state, D surname, R surname
+  // state, D surname, R surname, special (omit/false for a regular-cycle seat)
   ["ME", "Platner|Mills", "Collins"],
   ["NC", "Cooper", "Whatley"],
   ["GA", "Ossoff", "Dooley|King|Carter"],
   ["MI", "El-Sayed", "Rogers"], // Whitmer is term-limited, not on this ballot
   ["TX", "Talarico", "Paxton"], // Paxton upset Cornyn in the May runoff
-  ["OH", "Brown", "Husted|Moreno"],
+  // Ohio's only 2026 Senate race IS the special election for the seat J.D.
+  // Vance vacated (became VP); Husted was appointed to hold it. Brown lost
+  // re-election to his OTHER (regular, not-up-until-2030) seat in 2024 and
+  // is challenging Husted for this one. Must be tagged special so its
+  // raceKey doesn't collide with a stale non-special row for the same seat
+  // (see the politicsplace-election-night / raceKey memory on this exact
+  // collision class).
+  ["OH", "Brown", "Husted|Moreno", true],
   ["MN", "Flanagan", "Tafoya"], // Smith retiring; not the MN governor race
   ["NH", "Pappas", "Sununu"],
   ["IA", "Hart|Wahls", "Ernst|Feenstra"],
@@ -97,7 +104,7 @@ const SENATE = [
   ["KY", "Booker", "Barr"], // McConnell retiring; Booker beat McGrath in the primary
   ["LA", "Davis", "Letlow"], // Cassidy lost/exited; Letlow is the GOP nominee
   ["SC", "Andrews", "Graham"], // Lindsey Graham died 2026-07-11; sister Darline Graham nominated
-  ["FL", "Nixon", "Moody"], // special election for Rubio's seat (he resigned to be Sec. of State)
+  ["FL", "Nixon", "Moody", true], // special election for Rubio's seat (he resigned to be Sec. of State)
   ["CO", "Hickenlooper", "Baisley"],
   ["NJ", "Booker", "Murphy"],
   ["NM", "Lujan", "Marker"], // Luján's seat, not Heinrich's — safe D, may have no polling
@@ -143,10 +150,11 @@ const RACES = [
     d: RE(dn),
     r: RE(rn),
   })),
-  ...SENATE.map(([st, dn, rn]) => ({
-    id: `${st}-sen`,
+  ...SENATE.map(([st, dn, rn, special]) => ({
+    id: `${st}-sen${special ? "-special" : ""}`,
     raceType: "senate",
     state: st,
+    special: !!special,
     article: `2026 United States Senate election in ${STATE_NAME[st]}`,
     d: RE(dn),
     r: RE(rn),
@@ -202,6 +210,11 @@ function endDate(s) {
 }
 
 const AGG = /average|aggregat|rcp\b|270 ?to ?win|polling average|projection/i;
+
+// Earliest field-end date kept for a 2026-cycle poll -- see the comment at
+// its one call site in scrapeRace(). Historical (538) years are untouched;
+// this only ever applies to raceType/state pairs pulled by THIS script.
+const MIN_2026_POLL_DATE = "2026-07-01";
 
 // ── per-race scrape ──────────────────────────────────────────────────
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -317,6 +330,12 @@ function scrapeRace(html, race) {
 
       const end = endDate(flat[1] || "");
       if (!end) continue;
+      // Drop stale pre-nominee/early-cycle polling for the current 2026
+      // races — by September the real field is settled and a February
+      // head-to-head (often against a different opponent, pre-primary) is
+      // no longer representative. Specific to this cycle; reconsider the
+      // cutoff for a future one, not a permanent "always skip Jan-Jun" rule.
+      if (end < MIN_2026_POLL_DATE) continue;
 
       const key = `${pollsterRaw.toLowerCase().replace(/\W+/g, "")}|${end}|${dHdr}`;
       if (seen.has(key)) continue;
@@ -376,11 +395,14 @@ async function main() {
       const title =
         race.raceType === "house"
           ? `${STATE_NAME[race.state]} ${ORD(race.district)} District`
-          : `${STATE_NAME[race.state]} ${race.raceType === "senate" ? "Senate" : "Governor"}`;
+          : `${STATE_NAME[race.state]} ${race.raceType === "senate" ? "Senate" : "Governor"}${
+              race.special ? " (special)" : ""
+            }`;
       imported.push({
         raceType: race.raceType,
         state: race.state,
         ...(race.district ? { district: race.district } : {}),
+        ...(race.special ? { special: true } : {}),
         title,
         candidates: [
           { name: dName, party: "D" },

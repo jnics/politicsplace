@@ -56,7 +56,13 @@ export function ShiftMark({
       ? "#1d4ed8"
       : "#71717a";
   if (Math.abs(swing) < 0.3) {
-    const h = Math.max(u * 0.25, 5);
+    // 5 is a nice visible minimum for a normal-sized shape, but `unit` is now
+    // sized per-shape (see countyArrowUnit/precinctArrowUnit callers), so a
+    // genuinely tiny shape (a dense urban precinct, a small county) can have
+    // a `u` well under 5 -- an unconditional 5-unit floor would then draw a
+    // tick bigger than the shape it's sitting on. Cap it at a multiple of
+    // the shape's own unit so it shrinks gracefully instead.
+    const h = Math.min(Math.max(u * 0.25, 5), u * 1.5);
     return (
       <line
         x1={cx}

@@ -2,9 +2,13 @@ import type { Route } from "./+types/chase.export";
 import { cloudflareContext } from "~/lib/context.server";
 import { SUPPORTERS, SUPPORT_LABELS, CHASE_LOCATIONS } from "~/data/supporters";
 import { readChase } from "~/lib/chase.server";
+import { editorFromRequest } from "~/lib/auth.server";
 
 /** CSV walk/call sheet of the current chase list. Resource route (no UI). */
 export async function loader({ request, context }: Route.LoaderArgs) {
+  if (!editorFromRequest(request)) {
+    return new Response("Sign in on /chase first.", { status: 401 });
+  }
   const url = new URL(request.url);
   const location =
     url.searchParams.get("location") || CHASE_LOCATIONS[0]?.id || "";

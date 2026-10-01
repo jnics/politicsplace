@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { UsMap } from "~/components/UsMap";
 import { DonutChart, type DonutSegment } from "~/components/DonutChart";
 import { StateZoom, type ZoomContext } from "~/components/StateZoom";
+import { EarlyVoteBlock } from "~/components/EarlyVoteBlock";
 import { ShadePalette } from "~/components/Legend";
 import { GenericBallotChart } from "~/components/GenericBallotChart";
 import { hasStateGeo, hasPrecinctRace, precinctRaceKeys } from "~/lib/stateGeo";
@@ -683,6 +684,7 @@ export function ElectionsExplorer() {
               Click to apply selected color &middot; right-click to clear
               {hasStateGeo(state) && " · double-click to drill in"}
             </div>
+            <EarlyVoteBlock state={state} />
           </div>
         );
       }
@@ -695,6 +697,7 @@ export function ElectionsExplorer() {
               {seat.currentParty})
             </div>
           ))}
+          <EarlyVoteBlock state={state} />
         </div>
       );
     }

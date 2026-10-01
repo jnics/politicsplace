@@ -8,4 +8,9 @@ export default [
   route("results", "routes/results.tsx"),
   route("chase", "routes/chase.tsx"),
   route("chase/export", "routes/chase.export.tsx"),
+  route("fundraising", "routes/fundraising.tsx"),
+  route("fundraising/donor-details/:candidateId", "routes/fundraising.donor-details.tsx"),
+  route("ratings", "routes/ratings.tsx"),
+  route("calendar", "routes/calendar.tsx"),
+  route("about", "routes/about.tsx"),
 ] satisfies RouteConfig;

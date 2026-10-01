@@ -112,3 +112,22 @@ export function centroidOf(pts: [number, number][]): [number, number] {
   }
   return [x / pts.length, y / pts.length];
 }
+
+/** Polygon area via the shoelace formula (always positive, winding-order
+ *  independent). Used to size one shape's own shift-arrow/turnout-circle to
+ *  ITS OWN area rather than a shared average across every shape in the
+ *  view — a single state- or district-wide average unit looks right only
+ *  when every shape in the group is close to the same size, and badly
+ *  oversizes arrows on small counties sitting next to one much bigger one
+ *  (an anchor county like Fulton next to several small suburban counties,
+ *  the exact case that surfaced this). Multiple subpaths (an interior hole,
+ *  or an island county) are summed, not just the first. */
+export function polygonArea(pts: [number, number][]): number {
+  let area = 0;
+  for (let i = 0; i < pts.length; i++) {
+    const [x1, y1] = pts[i];
+    const [x2, y2] = pts[(i + 1) % pts.length];
+    area += x1 * y2 - x2 * y1;
+  }
+  return Math.abs(area) / 2;
+}

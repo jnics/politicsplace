@@ -4,9 +4,13 @@ import { ThemeToggle } from "~/components/ThemeToggle";
 const LINKS = [
   { to: "/", label: "Map", end: true },
   { to: "/polls", label: "Polls", end: false },
+  { to: "/fundraising", label: "Fundraising", end: false },
+  { to: "/ratings", label: "Ratings", end: false },
+  { to: "/calendar", label: "Calendar", end: false },
   { to: "/election2026", label: "Election 26", end: false },
   { to: "/results", label: "OH-7 Night", end: false },
   { to: "/chase", label: "Chase", end: false },
+  { to: "/about", label: "About", end: false },
 ];
 
 export function SiteNav() {

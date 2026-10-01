@@ -12,7 +12,7 @@ import {
 } from "~/lib/stateGeo";
 import { ShadePalette } from "~/components/Legend";
 import { ShiftMark } from "~/components/ShiftMark";
-import { pathPoints, centroidOf } from "~/lib/svgGeometry";
+import { pathPoints, centroidOf, polygonArea } from "~/lib/svgGeometry";
 import { countyResult, COUNTY_RESULTS } from "~/data/countyResults";
 import { STATE_FIPS } from "~/data/stateFips";
 import {
@@ -412,12 +412,11 @@ export function StateZoom({
   }, [geo, usps, raceKey, prevRaceKey, isHouseRace]);
   // Scale arrow length to the shapes actually on screen, not a fixed pixel
   // count, so it looks right whether a county view has 8 shapes or 250.
-  const countyArrowUnit = geo
-    ? (() => {
-        const [, , w, h] = geo.viewBox.split(" ").map(Number);
-        return Math.sqrt((w * h) / Math.max(geo.counties.length, 1));
-      })()
-    : 0;
+  // districtArrowUnit is only ever drawn at the whole-state district overview
+  // (showDistricts requires !focusDistrict), so the state-wide geo.viewBox is
+  // always the right denominator for it -- unlike countyArrowUnit below,
+  // which is ALSO drawn once a district is focused (the "district-focused
+  // county layer"), where it needs baseViewBox instead: see that definition.
   const districtArrowUnit = geo
     ? (() => {
         const [, , w, h] = geo.viewBox.split(" ").map(Number);
@@ -494,12 +493,26 @@ export function StateZoom({
   // where `districtCounty`'s per-district slice (only built for OH so far)
   // stands in so a split county's arrow/circle reflects just its part of the
   // district, not the whole county bleeding in from its other district(s).
+  /** The counties that make up the focused district (accurate, from the map).
+   *  Defined up here (not just below, by districtCountyPrecincts) because
+   *  districtCountySwings/districtCountyTurnout need it too: without this
+   *  filter they fell back to a STATEWIDE county result for any county
+   *  missing a district-specific slice, which included neighboring counties
+   *  outside the district entirely -- drawing a shift arrow (sized, after
+   *  the per-county area fix, for that neighbor's own full extent) on a
+   *  county only partially visible at the edge of the focused crop, reading
+   *  as wildly oversized relative to what's actually on screen. */
+  const districtCountyFips = useMemo(
+    () => (districtMap ? new Set(Object.keys(districtMap)) : null),
+    [districtMap]
+  );
   const districtCountySwings = useMemo(() => {
     if (!geo || !focusedDistrict || !prevRaceKey) return null;
     const curByCd = districtCounty?.[raceKey]?.[focusedDistrict.id];
     const prevByCd = districtCounty?.[prevRaceKey]?.[focusedDistrict.id];
     const out: Record<string, number> = {};
     for (const c of geo.counties) {
+      if (!districtCountyFips?.has(c.fips)) continue;
       const curArr = curByCd?.[c.fips];
       const prevArr = prevByCd?.[c.fips];
       const cur = curArr ? sumShade({ c: curArr }) : countyResult(raceKey, c.fips);
@@ -509,18 +522,19 @@ export function StateZoom({
       out[c.fips] = cur.dPct - cur.rPct - (prev.dPct - prev.rPct);
     }
     return Object.keys(out).length ? out : null;
-  }, [geo, focusedDistrict, prevRaceKey, districtCounty, raceKey, sumShade]);
+  }, [geo, focusedDistrict, prevRaceKey, districtCounty, raceKey, sumShade, districtCountyFips]);
   const districtCountyTurnout = useMemo(() => {
     if (!geo || !focusedDistrict) return null;
     const curByCd = districtCounty?.[raceKey]?.[focusedDistrict.id];
     const out: Record<string, number> = {};
     for (const c of geo.counties) {
+      if (!districtCountyFips?.has(c.fips)) continue;
       const arr = curByCd?.[c.fips];
       const votes = arr ? arr[0] + arr[1] + arr[2] : countyResult(raceKey, c.fips)?.totalVotes;
       if (votes) out[c.fips] = votes;
     }
     return Object.keys(out).length ? out : null;
-  }, [geo, focusedDistrict, districtCounty, raceKey]);
+  }, [geo, focusedDistrict, districtCounty, raceKey, districtCountyFips]);
   const districtCountyTurnoutMax = districtCountyTurnout
     ? Math.max(...Object.values(districtCountyTurnout))
     : 0;
@@ -551,12 +565,6 @@ export function StateZoom({
   const showDistricts = !focusCounty && layer === "district" && !focusDistrict;
   const showCounties = !focusCounty && !showDistricts;
 
-  /** The counties that make up the focused district (accurate, from the map). */
-  const districtCountyFips = useMemo(
-    () => (districtMap ? new Set(Object.keys(districtMap)) : null),
-    [districtMap]
-  );
-
   /** In-district precinct shapes for the drilled-into county. */
   const districtCountyPrecincts = useMemo(() => {
     if (!showDistrictCountyPx || !precincts || !inDistrictIds) return null;
@@ -577,6 +585,21 @@ export function StateZoom({
         )
       : bboxOf([focusedDistrict.d], 12)
     : geo?.viewBox ?? "0 0 800 600";
+
+  // County shift-arrow/turnout-circle unit: baseViewBox already tightens to
+  // just the focused district's bounding box (see above), so this needs the
+  // SAME tightened area and the count of counties actually inside that box
+  // -- not the whole state's -- or arrows drawn on a handful of counties in
+  // a small, zoomed-in district read oversized relative to the shapes they
+  // sit on. Mirrors precinctArrowUnit below exactly, one drill level up.
+  const countyArrowUnit = useMemo(() => {
+    if (!geo) return 0;
+    const [, , w, h] = baseViewBox.split(" ").map(Number);
+    const count = focusedDistrict
+      ? Math.max(districtCountyFips?.size ?? 0, 1)
+      : Math.max(geo.counties.length, 1);
+    return Math.sqrt((w * h) / count);
+  }, [geo, baseViewBox, focusedDistrict, districtCountyFips]);
 
   // Apply zoom/pan by shrinking + translating the viewBox.
   const viewBox = useMemo(() => {
@@ -1111,8 +1134,14 @@ export function StateZoom({
               geo.counties.map((c) => {
                 const votes = activeCountyTurnout[c.fips];
                 if (!votes) return null;
-                const [cx, cy] = centroidOf(pathPoints(c.d));
-                const r = turnoutRadius(countyArrowUnit, votes, activeCountyTurnoutMax);
+                const pts = pathPoints(c.d);
+                const [cx, cy] = centroidOf(pts);
+                // This county's OWN size, not a state/district-wide average —
+                // see countyArrowUnit's comment for why: one big anchor county
+                // (Fulton, Cook, ...) next to several small ones otherwise
+                // skews every county in the group to the big one's scale.
+                const unit = Math.sqrt(polygonArea(pts)) || countyArrowUnit;
+                const r = turnoutRadius(unit, votes, activeCountyTurnoutMax);
                 const dcArr = focusedDistrict
                   ? districtCounty?.[raceKey]?.[focusedDistrict.id]?.[c.fips]
                   : undefined;
@@ -1147,7 +1176,11 @@ export function StateZoom({
               geo.counties.map((c) => {
                 const swing = activeCountySwings[c.fips];
                 if (swing == null) return null;
-                const [cx, cy] = centroidOf(pathPoints(c.d));
+                const pts = pathPoints(c.d);
+                const [cx, cy] = centroidOf(pts);
+                // Per-county, not a group average -- see the turnout circle
+                // above and countyArrowUnit's comment for why.
+                const unit = Math.sqrt(polygonArea(pts)) || countyArrowUnit;
                 const dcArr = focusedDistrict
                   ? districtCounty?.[raceKey]?.[focusedDistrict.id]?.[c.fips]
                   : undefined;
@@ -1164,7 +1197,7 @@ export function StateZoom({
                     cx={cx}
                     cy={cy}
                     swing={swing}
-                    unit={countyArrowUnit}
+                    unit={unit}
                     tieWinner={tieWinner}
                   />
                 );
@@ -1387,14 +1420,14 @@ export function StateZoom({
               activePrecincts.map((p) => {
                 const votes = precinctTurnout[p.id];
                 if (!votes) return null;
-                const [cx, cy] = centroidOf(pathPoints(p.d));
-                const r = turnoutRadius(
-                  precinctArrowUnit,
-                  votes,
-                  precinctTurnoutMax,
-                  0.28,
-                  0.035
-                );
+                const pts = pathPoints(p.d);
+                const [cx, cy] = centroidOf(pts);
+                // This precinct's OWN size, not a county-wide average -- see
+                // countyArrowUnit's comment; the same "one big shape skews
+                // every small one" problem shows up here too (a rural
+                // township precinct next to a dense downtown precinct).
+                const unit = Math.sqrt(polygonArea(pts)) || precinctArrowUnit;
+                const r = turnoutRadius(unit, votes, precinctTurnoutMax, 0.28, 0.035);
                 const winner = precinctVote(precinctRaceVote(p))?.winner;
                 const color =
                   winner === "D"
@@ -1419,7 +1452,9 @@ export function StateZoom({
               activePrecincts.map((p) => {
                 const swing = precinctSwings[p.id];
                 if (swing == null) return null;
-                const [cx, cy] = centroidOf(pathPoints(p.d));
+                const pts = pathPoints(p.d);
+                const [cx, cy] = centroidOf(pts);
+                const unit = Math.sqrt(polygonArea(pts)) || precinctArrowUnit;
                 const tieWinner = precinctVote(precinctRaceVote(p))?.winner;
                 return (
                   <ShiftMark
@@ -1428,7 +1463,7 @@ export function StateZoom({
                     cy={cy}
                     tieWinner={tieWinner}
                     swing={swing}
-                    unit={precinctArrowUnit}
+                    unit={unit}
                     scale={0.6}
                   />
                 );

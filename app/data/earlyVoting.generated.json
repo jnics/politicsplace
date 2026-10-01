@@ -1,0 +1,784 @@
+{
+  "generatedAt": "2026-09-30T15:20:36.736Z",
+  "source": "Google Civic Information API (Voting Information Project)",
+  "electionId": "12000",
+  "statesPublished": 13,
+  "byState": {
+    "AL": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "AK": {
+      "hasData": true,
+      "admin": {
+        "name": "Alaska Division of Elections",
+        "electionInfoUrl": "https://www.elections.alaska.gov/",
+        "electionRegistrationUrl": "https://voterregistration.alaska.gov/",
+        "electionRegistrationConfirmationUrl": "https://myvoterportal.alaska.gov/",
+        "absenteeVotingInfoUrl": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
+        "votingLocationFinderUrl": "https://www.elections.alaska.gov/election-polls/",
+        "ballotInfoUrl": "https://www.elections.alaska.gov/sample-ballots/",
+        "correspondenceAddress": {
+          "line1": "PO Box 110017",
+          "line2": "Juneau, AK 99811-0017",
+          "addressLine": [
+            "PO Box 110017",
+            "Juneau, AK 99811-0017"
+          ]
+        },
+        "electionOfficials": [
+          {
+            "officePhoneNumber": "(907) 465-4611",
+            "faxNumber": "(907) 465-3203",
+            "emailAddress": "elections@alaska.gov"
+          }
+        ]
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "AZ": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "AR": {
+      "hasData": true,
+      "admin": {
+        "name": "Leslie Bellamy",
+        "physicalAddress": {
+          "line1": "Elections Division",
+          "line2": "State Capitol",
+          "line3": "Little Rock, AR 72201-1094",
+          "addressLine": [
+            "Elections Division",
+            "State Capitol",
+            "Little Rock, AR 72201-1094"
+          ]
+        },
+        "electionOfficials": [
+          {
+            "officePhoneNumber": "(501)683-3733",
+            "emailAddress": "voterservices@sos.arkansas.gov"
+          }
+        ]
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "CA": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "CO": {
+      "hasData": true,
+      "admin": {
+        "electionInfoUrl": "https://coloradosos.gov/",
+        "electionRegistrationUrl": "https://www.govotecolorado.gov",
+        "electionRegistrationConfirmationUrl": "https://www.govotecolorado.gov",
+        "votingLocationFinderUrl": "https://www.govotecolorado.gov",
+        "ballotInfoUrl": "https://www.coloradosos.gov/voter/pages/pub/olvr/findVoterReg.xhtml",
+        "electionRulesUrl": "https://www.coloradosos.gov/pubs/elections/lawsRulesResources.html?menuheaders=5"
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "CT": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "DE": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "FL": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "GA": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "HI": {
+      "hasData": true,
+      "admin": {
+        "electionInfoUrl": "https://elections.hawaii.gov/",
+        "electionRegistrationConfirmationUrl": "https://olvr.hawaii.gov/",
+        "absenteeVotingInfoUrl": "https://elections.hawaii.gov/voting/absentee-voting/",
+        "votingLocationFinderUrl": "https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/"
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "ID": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "IL": {
+      "hasData": true,
+      "admin": {
+        "electionInfoUrl": "http://www.elections.il.gov/"
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "IN": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "IA": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "KS": {
+      "hasData": true,
+      "admin": {
+        "name": "Bryan Caskey",
+        "physicalAddress": {
+          "line1": "Secretary of State, Docking State Office Building",
+          "line2": "915 SW Harrison St.",
+          "line3": "Topeka, KS 66612",
+          "addressLine": [
+            "Secretary of State, Docking State Office Building",
+            "915 SW Harrison St.",
+            "Topeka, KS 66612"
+          ]
+        },
+        "electionOfficials": [
+          {
+            "officePhoneNumber": "785-296-4561",
+            "emailAddress": "Bryan.Caskey@ks.gov"
+          }
+        ]
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "KY": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "LA": {
+      "hasData": true,
+      "admin": {
+        "name": "Sherri Hadskey",
+        "electionRegistrationConfirmationUrl": "https://voterportal.sos.la.gov",
+        "absenteeVotingInfoUrl": "https://www.sos.la.gov/elections-voting/ways-to-vote#vote-absentee",
+        "votingLocationFinderUrl": "https://voterportal.sos.la.gov",
+        "ballotInfoUrl": "https://voterportal.sos.la.gov",
+        "electionOfficials": [
+          {
+            "officePhoneNumber": "(800) 883-2805"
+          }
+        ]
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "ME": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "MD": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "MA": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "MI": {
+      "hasData": true,
+      "admin": {
+        "name": "ALL",
+        "electionInfoUrl": "http://www.michigan.gov/sos/0,1607,7-127-1633---,00.html",
+        "electionRegistrationUrl": "https://mvic.sos.state.mi.us/RegisterVoter/Index",
+        "electionRegistrationConfirmationUrl": "https://mvic.sos.state.mi.us/Voter/Index",
+        "absenteeVotingInfoUrl": "https://mvic.sos.state.mi.us/AVApplication/Index",
+        "votingLocationFinderUrl": "https://mvic.sos.state.mi.us/Voter/Index",
+        "ballotInfoUrl": "https://mvic.sos.state.mi.us/PublicBallot/Index",
+        "physicalAddress": {
+          "line1": "430 W ALLEGAN ST",
+          "line2": "LANSING, MI 48918",
+          "addressLine": [
+            "430 W ALLEGAN ST",
+            "LANSING, MI 48918"
+          ]
+        },
+        "electionOfficials": [
+          {
+            "officePhoneNumber": "5173353234",
+            "faxNumber": "5173353235",
+            "emailAddress": "SOS.ELECTIONS@MICHIGAN.GOV"
+          }
+        ]
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "MN": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "MS": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "MO": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "MT": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "NE": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "NV": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "NH": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "NJ": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "NM": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "NY": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "NC": {
+      "hasData": true,
+      "admin": {
+        "electionInfoUrl": "https://www.ncsbe.gov/about-elections",
+        "electionRegistrationUrl": "https://www.ncsbe.gov/about-elections",
+        "electionRegistrationConfirmationUrl": "https://vt.ncsbe.gov/RegLkup/",
+        "absenteeVotingInfoUrl": "https://www.ncsbe.gov/voting/vote-mail",
+        "votingLocationFinderUrl": "https://www.ncsbe.gov/voting",
+        "ballotInfoUrl": "https://vt.ncsbe.gov/RegLkup/",
+        "electionRulesUrl": "http://www.ncsbe.gov"
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "ND": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": [
+        {
+          "address": {
+            "locationName": "Bismarck Event Center - Main Arena",
+            "line1": "315 South 5th Street",
+            "addressLine": [
+              "315 South 5th Street"
+            ],
+            "city": "Bismarck",
+            "state": "ND",
+            "zip": "58504"
+          },
+          "notes": "Voters please enter using Door A1 (west side) & park in Lots B, C, or D.",
+          "pollingHours": "Thu, Oct 22: 12:00 pm - 5:30 pm\nFri, Oct 23: 9:00 am - 5:30 pm\nSat, Oct 24: 9 am - 1 pm\nMon, Oct 26: 9:00 am - 5:30 pm\nTue, Oct 27: 9:00 am - 5:30 pm\nWed, Oct 28: 9:00 am - 5:30 pm\nThu, Oct 29: 9:00 am - 5:30 pm\nFri, Oct 30: 9:00 am - 5:30 pm\nSat, Oct 31: 9 am - 1 pm\nMon, Nov 2: 9 am - 5 pm",
+          "latitude": 46.80332561770714,
+          "longitude": -100.78342434156922,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "City/County Building",
+            "line1": "221 N 5th St",
+            "addressLine": [
+              "221 N 5th St"
+            ],
+            "city": "Bismarck",
+            "state": "ND",
+            "zip": "58501"
+          },
+          "notes": "Ballots must be placed in the secure dropbox by 7:00pm on Tuesday, November 3rd, 2026.",
+          "pollingHours": "Thu, Sep 24: 12:00 am - 11:59 pm\nFri, Sep 25: 12:00 am - 11:59 pm\nSat, Sep 26: 12:00 am - 11:59 pm\nSun, Sep 27: 12:00 am - 11:59 pm\nMon, Sep 28: 12:00 am - 11:59 pm\nTue, Sep 29: 12:00 am - 11:59 pm\nWed, Sep 30: 12:00 am - 11:59 pm\nThu, Oct 1: 12:00 am - 11:59 pm\nFri, Oct 2: 12:00 am - 11:59 pm\nSat, Oct 3: 12:00 am - 11:59 pm\nSun, Oct 4: 12:00 am - 11:59 pm\nMon, Oct 5: 12:00 am - 11:59 pm\nTue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
+          "latitude": 46.80678952607566,
+          "longitude": -100.7842330740757,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
+      "pollingLocations": [
+        {
+          "address": {
+            "locationName": "Good Shepherd Church",
+            "line1": "106 Osage Ave",
+            "addressLine": [
+              "106 Osage Ave"
+            ],
+            "city": "Bismarck",
+            "state": "ND",
+            "zip": "58501"
+          },
+          "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
+          "latitude": 46.823329386895274,
+          "longitude": -100.79272031035447,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Bismarck Event Center-Main Arena",
+            "line1": "315 South 5th Street",
+            "addressLine": [
+              "315 South 5th Street"
+            ],
+            "city": "Bismarck",
+            "state": "ND",
+            "zip": "58504"
+          },
+          "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
+          "latitude": 46.80332561770714,
+          "longitude": -100.78342434156922,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ]
+    },
+    "OH": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "OK": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "OR": {
+      "hasData": true,
+      "admin": {
+        "electionInfoUrl": "https://sos.oregon.gov/voting-elections/Pages/default.aspx",
+        "electionRegistrationUrl": "https://sos.oregon.gov/voting/Pages/registration.aspx",
+        "ballotInfoUrl": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do",
+        "electionRulesUrl": "https://sos.oregon.gov/elections/Pages/laws-rules-publications.aspx"
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "PA": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "RI": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "SC": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "SD": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "TN": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "TX": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "UT": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "VT": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "VA": {
+      "hasData": true,
+      "admin": {
+        "name": "Virginia Deparment of Elections",
+        "electionInfoUrl": "https://elections.virginia.gov/",
+        "electionRegistrationUrl": "https://www.elections.virginia.gov/registration/",
+        "electionRegistrationConfirmationUrl": "https://vote.elections.virginia.gov/VoterInformation",
+        "absenteeVotingInfoUrl": "https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/",
+        "electionRulesUrl": "https://elections.virginia.gov/",
+        "physicalAddress": {
+          "line1": "Washington Building First Floor",
+          "line2": "1100 Bank Street",
+          "line3": "Richmond, VA 23219",
+          "addressLine": [
+            "Washington Building First Floor",
+            "1100 Bank Street",
+            "Richmond, VA 23219"
+          ]
+        },
+        "electionOfficials": [
+          {
+            "officePhoneNumber": "800-552-9745",
+            "emailAddress": "info@elections.virginia.gov"
+          }
+        ]
+      },
+      "earlyVoteSites": [
+        {
+          "address": {
+            "locationName": "City Hall",
+            "line1": "900 East Broad Street",
+            "addressLine": [
+              "900 East Broad Street"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23221"
+          },
+          "pollingHours": "Sun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nSat, Oct 31: 9 am - 5 pm",
+          "latitude": 37.54127931271678,
+          "longitude": -77.43272757964098,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Richmond City Registrar",
+            "line1": "2134 West Laburnum Avenue",
+            "addressLine": [
+              "2134 West Laburnum Avenue"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23227"
+          },
+          "pollingHours": "Fri, Sep 18: 8:30 am - 5:00 pm\nMon, Sep 21: 8:30 am - 5:00 pm\nTue, Sep 22: 8:30 am - 5:00 pm\nWed, Sep 23: 8:30 am - 5:00 pm\nThu, Sep 24: 8:30 am - 5:00 pm\nFri, Sep 25: 8:30 am - 5:00 pm\nMon, Sep 28: 8:30 am - 5:00 pm\nTue, Sep 29: 8:30 am - 5:00 pm\nWed, Sep 30: 8:30 am - 5:00 pm\nThu, Oct 1: 8:30 am - 5:00 pm\nFri, Oct 2: 8:30 am - 5:00 pm\nMon, Oct 5: 8:30 am - 5:00 pm\nTue, Oct 6: 8:30 am - 5:00 pm\nWed, Oct 7: 8:30 am - 5:00 pm\nThu, Oct 8: 8:30 am - 5:00 pm\nFri, Oct 9: 8:30 am - 5:00 pm\nTue, Oct 13: 8:30 am - 5:00 pm\nWed, Oct 14: 8:30 am - 5:00 pm\nThu, Oct 15: 8:30 am - 5:00 pm\nFri, Oct 16: 8:30 am - 5:00 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nSat, Oct 31: 9 am - 5 pm",
+          "latitude": 37.58404372087896,
+          "longitude": -77.47520267512806,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Hickory Hill Community Center",
+            "line1": "3000 East Belt Boulevard",
+            "addressLine": [
+              "3000 East Belt Boulevard"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23234"
+          },
+          "pollingHours": "Sun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nSat, Oct 31: 9 am - 5 pm",
+          "latitude": 37.47948700446044,
+          "longitude": -77.46127487691362,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "City Hall",
+            "line1": "900 East Broad Street",
+            "addressLine": [
+              "900 East Broad Street"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23221"
+          },
+          "pollingHours": "Sun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nSat, Oct 31: 9 am - 5 pm",
+          "latitude": 37.54127931271678,
+          "longitude": -77.43272757964098,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "MAIN LIBRARY",
+            "line1": "101 East Franklin Street",
+            "addressLine": [
+              "101 East Franklin Street"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23219"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
+          "latitude": 37.54285792281945,
+          "longitude": -77.44246163900532,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Richmond City Registrar",
+            "line1": "2134 West Laburnum Avenue",
+            "addressLine": [
+              "2134 West Laburnum Avenue"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23227"
+          },
+          "pollingHours": "Fri, Sep 18: 8:30 am - 5:00 pm\nMon, Sep 21: 8:30 am - 5:00 pm\nTue, Sep 22: 8:30 am - 5:00 pm\nWed, Sep 23: 8:30 am - 5:00 pm\nThu, Sep 24: 8:30 am - 5:00 pm\nFri, Sep 25: 8:30 am - 5:00 pm\nMon, Sep 28: 8:30 am - 5:00 pm\nTue, Sep 29: 8:30 am - 5:00 pm\nWed, Sep 30: 8:30 am - 5:00 pm\nThu, Oct 1: 8:30 am - 5:00 pm\nFri, Oct 2: 8:30 am - 5:00 pm\nMon, Oct 5: 8:30 am - 5:00 pm\nTue, Oct 6: 8:30 am - 5:00 pm\nWed, Oct 7: 8:30 am - 5:00 pm\nThu, Oct 8: 8:30 am - 5:00 pm\nFri, Oct 9: 8:30 am - 5:00 pm\nTue, Oct 13: 8:30 am - 5:00 pm\nWed, Oct 14: 8:30 am - 5:00 pm\nThu, Oct 15: 8:30 am - 5:00 pm\nFri, Oct 16: 8:30 am - 5:00 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nSat, Oct 31: 9 am - 5 pm",
+          "latitude": 37.58404372087896,
+          "longitude": -77.47520267512806,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Hickory Hill Community Center",
+            "line1": "3000 East Belt Boulevard",
+            "addressLine": [
+              "3000 East Belt Boulevard"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23234"
+          },
+          "pollingHours": "Sun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nSat, Oct 31: 9 am - 5 pm",
+          "latitude": 37.47948700446044,
+          "longitude": -77.46127487691362,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
+      "pollingLocations": [
+        {
+          "address": {
+            "locationName": "MAIN LIBRARY",
+            "line1": "101 East Franklin Street",
+            "addressLine": [
+              "101 East Franklin Street"
+            ],
+            "city": "Richmond",
+            "state": "VA",
+            "zip": "23219"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
+          "latitude": 37.54285792281945,
+          "longitude": -77.44246163900532,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ]
+    },
+    "WA": {
+      "hasData": true,
+      "admin": {
+        "electionInfoUrl": "https://www.sos.wa.gov/elections/",
+        "electionRegistrationUrl": "https://voter.votewa.gov/",
+        "electionRegistrationConfirmationUrl": "https://voter.votewa.gov/",
+        "absenteeVotingInfoUrl": "https://voter.votewa.gov/",
+        "votingLocationFinderUrl": "https://voter.votewa.gov/",
+        "electionRulesUrl": "https://voter.votewa.gov/"
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "WV": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "WI": {
+      "hasData": false,
+      "admin": null,
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    },
+    "WY": {
+      "hasData": true,
+      "admin": {
+        "name": "Wyoming Secretary of State’s Office",
+        "electionInfoUrl": "https://sos.wyo.gov/Elections",
+        "physicalAddress": {
+          "line1": "122 W 25TH ST, SUITE 100",
+          "line2": "CHEYENNE. WY 82002",
+          "addressLine": [
+            "122 W 25TH ST, SUITE 100",
+            "CHEYENNE. WY 82002"
+          ]
+        },
+        "electionOfficials": [
+          {
+            "officePhoneNumber": "307-777-5860"
+          }
+        ]
+      },
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": null
+    }
+  }
+}

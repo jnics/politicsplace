@@ -1,5 +1,6 @@
 import { createHmac } from "node:crypto";
 import { data } from "react-router";
+import { readBlob, writeBlob } from "~/lib/db.server";
 
 /**
  * One shared pseudo-auth for every write surface on the site (Big Board,
@@ -54,6 +55,76 @@ export function editorFromRequest(request: Request): string | null {
   return unsign(decodeURIComponent(match[1]));
 }
 
+// --- login-attempt rate limiting -------------------------------------------
+//
+// The edit password is a single shared secret and this site is now on the
+// open internet, so an unlimited-attempts login is brute-forceable. Failed
+// attempts are counted per IP in the same kv_store blob store the other
+// features use (see db.server.ts) — no new table needed. 5 wrong passwords
+// from one IP locks that IP out of logging in for 15 minutes; a correct
+// password clears its own counter.
+const MAX_ATTEMPTS = 5;
+const WINDOW_MS = 15 * 60 * 1000;
+const ATTEMPTS_STORE = "loginAttempts";
+
+interface AttemptEntry {
+  count: number;
+  windowStart: number;
+}
+
+function clientIp(request: Request): string {
+  return (
+    request.headers.get("CF-Connecting-IP") ??
+    request.headers.get("X-Forwarded-For") ??
+    "unknown"
+  );
+}
+
+/** Returns remaining lockout seconds if `ip` is currently locked out, else 0. */
+async function lockoutSecondsRemaining(
+  db: D1Database,
+  ip: string
+): Promise<number> {
+  const attempts = await readBlob<Record<string, AttemptEntry>>(
+    db,
+    ATTEMPTS_STORE,
+    {}
+  );
+  const entry = attempts[ip];
+  if (!entry) return 0;
+  const elapsed = Date.now() - entry.windowStart;
+  if (elapsed >= WINDOW_MS) return 0;
+  if (entry.count < MAX_ATTEMPTS) return 0;
+  return Math.ceil((WINDOW_MS - elapsed) / 1000);
+}
+
+async function recordFailedAttempt(db: D1Database, ip: string): Promise<void> {
+  const attempts = await readBlob<Record<string, AttemptEntry>>(
+    db,
+    ATTEMPTS_STORE,
+    {}
+  );
+  const entry = attempts[ip];
+  const now = Date.now();
+  if (!entry || now - entry.windowStart >= WINDOW_MS) {
+    attempts[ip] = { count: 1, windowStart: now };
+  } else {
+    attempts[ip] = { count: entry.count + 1, windowStart: entry.windowStart };
+  }
+  await writeBlob(db, ATTEMPTS_STORE, attempts);
+}
+
+async function clearAttempts(db: D1Database, ip: string): Promise<void> {
+  const attempts = await readBlob<Record<string, AttemptEntry>>(
+    db,
+    ATTEMPTS_STORE,
+    {}
+  );
+  if (!(ip in attempts)) return;
+  delete attempts[ip];
+  await writeBlob(db, ATTEMPTS_STORE, attempts);
+}
+
 /**
  * Every write-gated route's action should call this FIRST, before its own
  * write logic: if the submission was a login attempt (the shared
@@ -61,12 +132,30 @@ export function editorFromRequest(request: Request): string | null {
  * completely and returns the Response to send back. Otherwise it returns
  * null and the caller's own action logic continues as normal.
  */
-export function tryLogin(form: FormData) {
+export async function tryLogin(
+  request: Request,
+  db: D1Database,
+  form: FormData
+) {
   if (form.get("intent") !== "login") return null;
+  const ip = clientIp(request);
+
+  const lockedFor = await lockoutSecondsRemaining(db, ip);
+  if (lockedFor > 0) {
+    const minutes = Math.ceil(lockedFor / 60);
+    return data(
+      { error: `Too many attempts. Try again in ${minutes} minute${minutes === 1 ? "" : "s"}.` },
+      { status: 429 }
+    );
+  }
+
   const password = String(form.get("password") ?? "");
   if (!checkPassword(password)) {
+    await recordFailedAttempt(db, ip);
     return data({ error: "Wrong password." }, { status: 401 });
   }
+
+  await clearAttempts(db, ip);
   const name = String(form.get("name") ?? "").trim() || "anon";
   return data(
     { ok: true, editor: name },

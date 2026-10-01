@@ -4,6 +4,12 @@
   "main": "./workers/app.ts",
   "compatibility_date": "2026-09-20",
   "compatibility_flags": ["nodejs_compat"],
+  // Workers Logs — free-tier persistent request/console logging, so a
+  // production error is visible in the dashboard instead of only through a
+  // live `wrangler tail` session that has to already be running.
+  "observability": {
+    "enabled": true
+  },
   // Static build output — Workers serves these directly and only invokes the
   // Worker (SSR) for anything that isn't a matching file.
   "assets": {

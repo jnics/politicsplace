@@ -7,8 +7,8 @@
  * requests.
  *
  * Every loader/action that needs one of these passes its own D1 binding in
- * (`context.cloudflare.env.DB`) rather than this module reaching for one
- * globally — there's no ambient "the" database on Workers the way
+ * (`context.get(cloudflareContext).env.DB`) rather than this module reaching
+ * for one globally — there's no ambient "the" database on Workers the way
  * `process.cwd()` pointed at "the" file before.
  */
 
