@@ -341,6 +341,7 @@ export function ElectionsExplorer() {
 
   // ── National shift / turnout overlay — the same idea as StateZoom's, one
   // level up: a swing arrow / turnout circle per STATE instead of per county.
+  const [overlaySlot, setOverlaySlot] = useState<HTMLDivElement | null>(null);
   const [showNatShift, setShowNatShift] = useState(false);
   const [showNatTurnout, setShowNatTurnout] = useState(false);
   const [showNatBaseFill, setShowNatBaseFill] = useState(true);
@@ -941,6 +942,7 @@ export function ElectionsExplorer() {
               onViewChange={setZoomView}
               onContext={setZoomContext}
               spotlightParty={zoomContext ? zoomSpotlight : null}
+              overlaySlot={overlaySlot}
             />
           ) : (
             <>
@@ -950,51 +952,6 @@ export function ElectionsExplorer() {
                 </div>
               )}
               <div className="relative">
-                {/* Shift / Turnout / Plain map — floating pills over the
-                    map's own left edge, matching StateZoom's drill-in map. */}
-                {!isActiveTab && natHasPrevData && (
-                  <div className="pointer-events-none absolute left-2 top-2 z-10 flex flex-col items-start gap-1.5">
-                    <button
-                      onClick={() => setShowNatShift((v) => !v)}
-                      title="Shift arrows: swing from each state's previous same-office election"
-                      className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
-                        showNatShift
-                          ? "bg-indigo-600 text-white"
-                          : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
-                      }`}
-                    >
-                      Shift ↔
-                    </button>
-                    <button
-                      onClick={() => setShowNatTurnout((v) => !v)}
-                      title="Turnout: circle size is how many votes were cast in that state"
-                      className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
-                        showNatTurnout
-                          ? "bg-indigo-600 text-white"
-                          : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
-                      }`}
-                    >
-                      Turnout ○
-                    </button>
-                    {(showNatShift || showNatTurnout) && (
-                      <button
-                        onClick={() => setShowNatBaseFill((v) => !v)}
-                        title={
-                          showNatBaseFill
-                            ? "Hide the state colors so the overlay stands out on its own"
-                            : "Show the state colors again"
-                        }
-                        className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
-                          !showNatBaseFill
-                            ? "bg-indigo-600 text-white"
-                            : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
-                        }`}
-                      >
-                        Plain map
-                      </button>
-                    )}
-                  </div>
-                )}
                 <UsMap
                   fills={natFlattenFill ? {} : fills}
                   interactiveStates={interactiveStates}
@@ -1020,6 +977,56 @@ export function ElectionsExplorer() {
 
           <div className="flex w-full shrink-0 justify-end lg:w-[168px]">
            <div className="flex flex-col items-center gap-3">
+            {/* Shift / Turnout / Plain map pills, above the donut. StateZoom
+                portals its own in here while zoomed into a state. */}
+            <div
+              ref={setOverlaySlot}
+              className="flex flex-wrap justify-center gap-1.5 empty:hidden"
+            >
+              {!zoomState && !isActiveTab && natHasPrevData && (
+                <>
+                <button
+                  onClick={() => setShowNatShift((v) => !v)}
+                  title="Shift arrows: swing from each state's previous same-office election"
+                  className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
+                    showNatShift
+                      ? "bg-indigo-600 text-white"
+                      : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
+                  }`}
+                >
+                  Shift ↔
+                </button>
+                <button
+                  onClick={() => setShowNatTurnout((v) => !v)}
+                  title="Turnout: circle size is how many votes were cast in that state"
+                  className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
+                    showNatTurnout
+                      ? "bg-indigo-600 text-white"
+                      : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
+                  }`}
+                >
+                  Turnout ○
+                </button>
+                {(showNatShift || showNatTurnout) && (
+                  <button
+                    onClick={() => setShowNatBaseFill((v) => !v)}
+                    title={
+                      showNatBaseFill
+                        ? "Hide the state colors so the overlay stands out on its own"
+                        : "Show the state colors again"
+                    }
+                    className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
+                      !showNatBaseFill
+                        ? "bg-indigo-600 text-white"
+                        : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
+                    }`}
+                  >
+                    Plain map
+                  </button>
+                )}
+                </>
+              )}
+            </div>
             {zoomState && zoomContext && (
               <ContextDonut ctx={zoomContext} onHoverParty={setZoomSpotlight} />
             )}

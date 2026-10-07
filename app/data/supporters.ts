@@ -133,5 +133,5 @@ export function precinctsFor(location: string): string[] {
   for (const s of SUPPORTERS) {
     if (s.location === location) seen.add(s.precinct);
   }
-  return [...seen];
+  return [...seen].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 }

@@ -46,10 +46,6 @@ const FORECASTER_ORDER = [
   "splitTicket", "fiftyPlusOne", "foxNews", "silverBulletin", "rcp",
 ];
 
-const RATING_RANK: Record<string, number> = {
-  Safe: 0, Solid: 0, Likely: 1, Lean: 2, Tilt: 3, Tossup: 4,
-};
-
 const PARTY_BG: Record<string, string> = {
   D: "bg-blue-600",
   R: "bg-red-600",
@@ -96,14 +92,10 @@ export default function Ratings() {
 
   const races = useMemo(() => {
     const list = DATA.byRace[tab] ?? [];
-    return [...list].sort((a, b) => {
-      const ca = consensusOf(a.ratings);
-      const cb = consensusOf(b.ratings);
-      const ra = ca ? RATING_RANK[ca.label] ?? 5 : 5;
-      const rb = cb ? RATING_RANK[cb.label] ?? 5 : 5;
-      if (ra !== rb) return ra - rb;
-      return a.label.localeCompare(b.label);
-    });
+    // A–Z by state name; numeric so "Ohio 2" sorts before "Ohio 10".
+    return [...list].sort((a, b) =>
+      a.label.localeCompare(b.label, undefined, { numeric: true })
+    );
   }, [tab]);
 
   function toggle(label: string) {

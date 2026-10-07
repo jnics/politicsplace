@@ -293,8 +293,11 @@ export default function Polls({ loaderData }: Route.ComponentProps) {
     return [...groups.entries()]
       .map(([state, races]) => ({
         state,
-        races: [...races].sort((a, b) =>
-          latestPollDate(b).localeCompare(latestPollDate(a))
+        // Districts in number order; anything else newest poll first.
+        races: [...races].sort(
+          (a, b) =>
+            (a.district ?? 0) - (b.district ?? 0) ||
+            latestPollDate(b).localeCompare(latestPollDate(a))
         ),
       }))
       .sort((a, b) =>
@@ -324,14 +327,16 @@ export default function Polls({ loaderData }: Route.ComponentProps) {
         </a>
       </header>
 
-      <div className="mb-6 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
+      {/* Full width on phones (four equal tabs, count under the label) so the
+          bar never pushes the page sideways; a compact inline bar from sm up. */}
+      <div className="mb-6 flex w-full rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900 sm:inline-flex sm:w-auto">
         {TABS.map((t) => {
           const count = allRaces.filter((r) => r.raceType === t.id).length;
           return (
             <button
               key={t.id}
               onClick={() => setTab(t.id)}
-              className={`rounded-md px-3.5 py-1.5 text-sm font-medium transition-colors ${
+              className={`flex flex-1 flex-col items-center rounded-md px-1.5 py-1.5 text-sm font-medium transition-colors sm:flex-none sm:flex-row sm:px-3.5 ${
                 tab === t.id
                   ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
                   : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -339,7 +344,7 @@ export default function Polls({ loaderData }: Route.ComponentProps) {
             >
               {t.label}
               {count > 0 && (
-                <span className="ml-1.5 text-xs text-gray-400 dark:text-gray-500">
+                <span className="text-xs text-gray-400 dark:text-gray-500 sm:ml-1.5">
                   {count}
                 </span>
               )}

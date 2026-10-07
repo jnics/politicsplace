@@ -25,10 +25,11 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function loader({ request, context }: Route.LoaderArgs) {
-  const editor = editorFromRequest(request);
-  if (!editor) return { editor: null };
   const store = await readStore(context.get(cloudflareContext).env.DB);
-  return { editor, results: store.results as Record<string, BoardResult> };
+  return {
+    results: store.results as Record<string, BoardResult>,
+    editor: editorFromRequest(request),
+  };
 }
 
 export async function action({ request, context }: Route.ActionArgs) {
@@ -116,10 +117,7 @@ function tally(races: BoardRace[], results: Record<string, BoardResult>) {
 }
 
 export default function Election2026({ loaderData }: Route.ComponentProps) {
-  const editor = loaderData.editor;
-  // Hooks must run unconditionally (same count every render) even though the
-  // whole page is gated below -- falls back to an empty board pre-login.
-  const results = loaderData.editor ? loaderData.results : ({} as Record<string, BoardResult>);
+  const { results, editor } = loaderData;
   const [chamber, setChamber] = useState<"senate" | "house">("senate");
   const [houseFilter, setHouseFilter] = useState<"all" | "flippable">("all");
 
@@ -143,22 +141,6 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
       );
   }, []);
 
-  if (!editor) {
-    return (
-      <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-        <header className="mb-4">
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-            2026 Election Night
-          </h1>
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Sign in to view the board.
-          </p>
-        </header>
-        <LoginForm title="Sign in to view results" />
-      </div>
-    );
-  }
-
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
       <header className="mb-4">
@@ -171,9 +153,18 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
         </p>
       </header>
 
-      <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
-        Signed in as <span className="font-medium">{editor}</span>.
-      </p>
+      {!editor ? (
+        <div className="mb-5">
+          <LoginForm title="Sign in to enter results" />
+          <p className="mt-2 text-center text-xs text-gray-400 dark:text-gray-500">
+            Everyone can watch the board update live below — just not edit it.
+          </p>
+        </div>
+      ) : (
+        <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
+          Signed in as <span className="font-medium">{editor}</span>.
+        </p>
+      )}
 
       <div className="mb-5 grid grid-cols-2 gap-3">
         <ControlCard title="Senate" t={senT} />

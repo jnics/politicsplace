@@ -1,8 +1,11 @@
-import { readBlob, writeBlob } from "~/lib/db.server";
-
 /**
- * Server-only store for the /results OH-7 polling-place tally — kept in D1
- * (see schema.sql's `kv_store`) under the "oh7" key.
+ * Server-only store for the /results OH-7 election-night tally — kept in D1's
+ * `oh7_rows` table (see schema.sql), one row per polling place and one per
+ * Medina County race (the county-wide count), and one per race at each Medina
+ * polling place. Each save changes one field of its own row inside a
+ * single SQL statement, so several people entering counts at once can't
+ * overwrite each other the way they could when the whole tally was a single
+ * read-modify-write blob in `kv_store`.
  */
 
 export interface PlaceResult {
@@ -12,32 +15,84 @@ export interface PlaceResult {
   final?: boolean;
 }
 
+export interface RaceResult {
+  /** Votes by candidate key (see ~/data/medinaRaces). */
+  votes: Record<string, number>;
+  /** Precincts counted so far for this race. */
+  reporting?: number;
+  final?: boolean;
+}
+
 export interface Oh7Store {
   results: Record<string, PlaceResult>;
+  /** County-wide results for the other Medina County races, by race id. */
+  races: Record<string, RaceResult>;
+  /** Votes for one race at one Medina polling place, by "<placeId>|<raceId>". */
+  placeRaces: Record<string, Record<string, number>>;
   updatedAt: string | null;
 }
 
-const EMPTY: Oh7Store = { results: {}, updatedAt: null };
+export type Kind = "place" | "race" | "placeRace";
 
 export async function readOh7(db: D1Database): Promise<Oh7Store> {
-  const raw = await readBlob<Partial<Oh7Store>>(db, "oh7", EMPTY);
-  return { results: raw.results ?? {}, updatedAt: raw.updatedAt ?? null };
+  const { results: rows } = await db
+    .prepare("SELECT kind, id, value, updated_at FROM oh7_rows")
+    .all<{ kind: Kind; id: string; value: string; updated_at: string }>();
+  const store: Oh7Store = { results: {}, races: {}, placeRaces: {}, updatedAt: null };
+  for (const row of rows) {
+    let value;
+    try {
+      value = JSON.parse(row.value);
+    } catch {
+      continue;
+    }
+    if (row.kind === "place") store.results[row.id] = value;
+    else if (row.kind === "race") store.races[row.id] = value;
+    else if (row.kind === "placeRace") store.placeRaces[row.id] = value.votes ?? {};
+    if (!store.updatedAt || row.updated_at > store.updatedAt)
+      store.updatedAt = row.updated_at;
+  }
+  return store;
 }
 
-/** Upsert one polling place's result. An all-zero, not-final entry is dropped. */
-export async function saveOh7Result(
+export type Oh7Change =
+  /** Add `amount` (may be negative) to a numeric field, clamped to 0..max. */
+  | { op: "add"; amount: number; max: number }
+  /** Overwrite the field: a number (0 = reset) or the `final` flag. */
+  | { op: "set"; value: number | boolean };
+
+/**
+ * Apply one change to one field of one row, in a single statement — the add
+ * happens inside SQLite, so two people adding to the same field at the same
+ * moment both count. `path` is a JSON path into the row's value:
+ * "$.votes.<candidateKey>", "$.reporting" or "$.final".
+ */
+export async function changeOh7(
   db: D1Database,
-  placeId: string,
-  result: PlaceResult
-): Promise<Oh7Store> {
-  const store = await readOh7(db);
-  const total = Object.values(result.votes).reduce((s, n) => s + (n || 0), 0);
-  if (total === 0 && !result.final) {
-    delete store.results[placeId];
-  } else {
-    store.results[placeId] = result;
+  kind: Kind,
+  id: string,
+  path: string,
+  change: Oh7Change
+): Promise<void> {
+  const now = new Date().toISOString();
+  if (change.op === "add") {
+    await db
+      .prepare(
+        "INSERT INTO oh7_rows (kind, id, value, updated_at) " +
+          "VALUES (?1, ?2, json_set('{\"votes\":{}}', ?3, CAST(min(?5, max(0, ?4)) AS INTEGER)), ?6) " +
+          "ON CONFLICT(kind, id) DO UPDATE SET value = json_set(oh7_rows.value, ?3, " +
+          "CAST(min(?5, max(0, coalesce(json_extract(oh7_rows.value, ?3), 0) + ?4)) AS INTEGER)), updated_at = ?6"
+      )
+      .bind(kind, id, path, change.amount, change.max, now)
+      .run();
+    return;
   }
-  store.updatedAt = new Date().toISOString();
-  await writeBlob(db, "oh7", store);
-  return store;
+  await db
+    .prepare(
+      "INSERT INTO oh7_rows (kind, id, value, updated_at) " +
+        "VALUES (?1, ?2, json_set('{\"votes\":{}}', ?3, json(?4)), ?5) " +
+        "ON CONFLICT(kind, id) DO UPDATE SET value = json_set(oh7_rows.value, ?3, json(?4)), updated_at = ?5"
+    )
+    .bind(kind, id, path, JSON.stringify(change.value), now)
+    .run();
 }

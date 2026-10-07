@@ -26,10 +26,8 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function loader({ request, context }: Route.LoaderArgs) {
-  const editor = editorFromRequest(request);
-  if (!editor) return { editor: null };
   const store = await readChase(context.get(cloudflareContext).env.DB);
-  return { voted: store.voted, editor };
+  return { voted: store.voted, editor: editorFromRequest(request) };
 }
 
 export async function action({ request, context }: Route.ActionArgs) {
@@ -65,11 +63,7 @@ type Scoped = {
 };
 
 export default function Chase({ loaderData }: Route.ComponentProps) {
-  const editor = loaderData.editor;
-  // Hooks must run unconditionally (same count every render) even though the
-  // whole page -- supporter names, addresses, phone numbers -- is gated
-  // below, before any of this ever reaches the DOM pre-login.
-  const voted = loaderData.editor ? loaderData.voted : {};
+  const { voted, editor } = loaderData;
   const [params, setParams] = useSearchParams();
 
   const location = params.get("location") || CHASE_LOCATIONS[0]?.id || "";
@@ -126,22 +120,6 @@ export default function Chase({ loaderData }: Route.ComponentProps) {
   const locLabel =
     CHASE_LOCATIONS.find((l) => l.id === location)?.label ?? location;
 
-  if (!editor) {
-    return (
-      <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-        <header className="mb-5">
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-            Voter Chase
-          </h1>
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Sign in to view the chase list.
-          </p>
-        </header>
-        <LoginForm title="Sign in to mark voters" />
-      </div>
-    );
-  }
-
   if (sheet) {
     return (
       <WalkSheet
@@ -165,9 +143,15 @@ export default function Chase({ loaderData }: Route.ComponentProps) {
         </p>
       </header>
 
-      <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
-        Signed in as <span className="font-medium">{editor}</span>.
-      </p>
+      {!editor ? (
+        <div className="mb-4">
+          <LoginForm title="Sign in to mark voters" />
+        </div>
+      ) : (
+        <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
+          Signed in as <span className="font-medium">{editor}</span>.
+        </p>
+      )}
 
       {/* location / precinct / support — the layer between place and data */}
       <div className="mb-4 flex flex-wrap items-end gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900">

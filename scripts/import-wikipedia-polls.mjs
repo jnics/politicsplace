@@ -427,12 +427,17 @@ async function main() {
   const touched = new Set(
     wanted.map((r) => `${r.raceType}:${r.state}:${r.district ?? ""}`)
   );
-  const kept = (prev.races ?? []).filter(
-    (r) =>
-      r.source !== "Wikipedia" ||
-      (only.length &&
-        !touched.has(`${r.raceType}:${r.state}:${r.district ?? ""}`))
+  // A race that came back with no poll table this run keeps its previous
+  // entry (often a zero-poll stub) instead of vanishing — pull-fundraising
+  // reads its race list from this file.
+  const got = new Set(
+    imported.map((r) => `${r.raceType}:${r.state}:${r.district ?? ""}`)
   );
+  const kept = (prev.races ?? []).filter((r) => {
+    if (r.source !== "Wikipedia") return true;
+    const key = `${r.raceType}:${r.state}:${r.district ?? ""}`;
+    return touched.has(key) ? !got.has(key) : only.length > 0;
+  });
   const out = {
     ...prev,
     races: [...kept, ...imported].sort(

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   loadStateGeo,
   loadCountyPrecincts,
@@ -59,6 +60,9 @@ export interface StateZoomProps {
   onViewChange?: (view: Layer) => void;
   /** When set, spotlight shapes that party won and mute the rest (donut hover). */
   spotlightParty?: "D" | "R" | null;
+  /** Where the Shift / Turnout / Plain map pills render (the sidebar, above
+   *  the donut). Without it they float over the map's top-left corner. */
+  overlaySlot?: HTMLElement | null;
   /**
    * Prediction painting (2026). When `painting` is on, the shading race is only a
    * backdrop: left-click a shape paints it with `selectedShade`, right-click
@@ -187,6 +191,7 @@ export function StateZoom({
   onContext,
   onViewChange,
   spotlightParty,
+  overlaySlot,
   painting = false,
   selectedShade = "tossup",
   onSelectShade,
@@ -851,6 +856,67 @@ export function StateZoom({
 
   useEffect(() => () => onContext?.(null), [onContext]);
 
+  // Shift / Turnout / Plain map pills — rendered above the sidebar donut via
+  // `overlaySlot`, or floating over the map's top-left corner without one.
+  const overlayPills = (
+    <>
+        {!painting &&
+          ((!focusedCounty &&
+            !focusedDistrict &&
+            (view === "county" || view === "district") &&
+            prevRaceKey) ||
+            (focusedDistrict && !focusCounty && districtCountySwings) ||
+            (focusCounty && precinctSwings)) && (
+            <button
+              onClick={() => setShowShift((v) => !v)}
+              title={`Shift arrows: swing from ${prevRaceKey} to ${raceKey}`}
+              className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
+                showShift
+                  ? "bg-indigo-600 text-white"
+                  : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
+              }`}
+            >
+              Shift ↔
+            </button>
+          )}
+        {!painting &&
+          ((!focusedCounty &&
+            !focusedDistrict &&
+            (view === "county" ? countyTurnout : view === "district" ? districtTurnout : null)) ||
+            (focusedDistrict && !focusCounty && districtCountyTurnout) ||
+            (focusCounty && precinctTurnout)) && (
+            <button
+              onClick={() => setShowTurnout((v) => !v)}
+              title="Turnout: circle size is how many votes were cast, for the selected race/year"
+              className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
+                showTurnout
+                  ? "bg-indigo-600 text-white"
+                  : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
+              }`}
+            >
+              Turnout ○
+            </button>
+          )}
+        {!painting && (showShift || showTurnout) && (
+          <button
+            onClick={() => setShowBaseFill((v) => !v)}
+            title={
+              showBaseFill
+                ? "Hide the county/district colors so the overlay stands out on its own"
+                : "Show the county/district colors again"
+            }
+            className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
+              !showBaseFill
+                ? "bg-indigo-600 text-white"
+                : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
+            }`}
+          >
+            Plain map
+          </button>
+        )}
+    </>
+  );
+
   return (
     <div>
       {painting && onSelectShade && (
@@ -910,65 +976,13 @@ export function StateZoom({
       </div>
 
       <div ref={containerRef} className="relative">
-        {/* Shift / Turnout / Plain map — floating pills over the map's own
-            left edge, next to the zoom control, instead of crowding the
-            layer-selector row above. */}
-        <div className="pointer-events-none absolute left-2 top-2 z-10 flex flex-col items-start gap-1.5">
-          {!painting &&
-            ((!focusedCounty &&
-              !focusedDistrict &&
-              (view === "county" || view === "district") &&
-              prevRaceKey) ||
-              (focusedDistrict && !focusCounty && districtCountySwings) ||
-              (focusCounty && precinctSwings)) && (
-              <button
-                onClick={() => setShowShift((v) => !v)}
-                title={`Shift arrows: swing from ${prevRaceKey} to ${raceKey}`}
-                className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
-                  showShift
-                    ? "bg-indigo-600 text-white"
-                    : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
-                }`}
-              >
-                Shift ↔
-              </button>
-            )}
-          {!painting &&
-            ((!focusedCounty &&
-              !focusedDistrict &&
-              (view === "county" ? countyTurnout : view === "district" ? districtTurnout : null)) ||
-              (focusedDistrict && !focusCounty && districtCountyTurnout) ||
-              (focusCounty && precinctTurnout)) && (
-              <button
-                onClick={() => setShowTurnout((v) => !v)}
-                title="Turnout: circle size is how many votes were cast, for the selected race/year"
-                className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
-                  showTurnout
-                    ? "bg-indigo-600 text-white"
-                    : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
-                }`}
-              >
-                Turnout ○
-              </button>
-            )}
-          {!painting && (showShift || showTurnout) && (
-            <button
-              onClick={() => setShowBaseFill((v) => !v)}
-              title={
-                showBaseFill
-                  ? "Hide the county/district colors so the overlay stands out on its own"
-                  : "Show the county/district colors again"
-              }
-              className={`pointer-events-auto rounded-full px-3 py-1 text-[11px] font-medium shadow transition-colors ${
-                !showBaseFill
-                  ? "bg-indigo-600 text-white"
-                  : "bg-white/90 text-gray-700 hover:bg-white dark:bg-gray-900/90 dark:text-gray-300 dark:hover:bg-gray-900"
-              }`}
-            >
-              Plain map
-            </button>
-          )}
-        </div>
+        {overlaySlot !== undefined ? (
+          overlaySlot && createPortal(overlayPills, overlaySlot)
+        ) : (
+          <div className="pointer-events-none absolute left-2 top-2 z-10 flex flex-col items-start gap-1.5">
+            {overlayPills}
+          </div>
+        )}
 
         {!geo ? (
           <div className="flex h-64 items-center justify-center text-sm text-gray-400">

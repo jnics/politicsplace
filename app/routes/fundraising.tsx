@@ -117,8 +117,9 @@ export default function Fundraising() {
     }
     return [...byRace.values()].sort((a, b) => {
       if (a.raceType !== b.raceType) return a.raceType === "senate" ? -1 : 1;
-      if (a.state !== b.state) return a.state.localeCompare(b.state);
-      return (a.district ?? 0) - (b.district ?? 0);
+      // By title ("Alabama …", "Alaska …") so states read A–Z by name, not by
+      // postal code; numeric so the 2nd District sorts before the 10th.
+      return a.title.localeCompare(b.title, undefined, { numeric: true });
     });
   }, []);
 

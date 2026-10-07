@@ -1,25 +1,35 @@
 import type { Route } from "./+types/results";
 import { cloudflareContext } from "~/lib/context.server";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { useFetcher, data } from "react-router";
 import {
   OH7_CANDIDATES,
   OH7_TITLE,
   OH7_TOWNS,
   OH7_PLACE_COUNT,
+  type Oh7PollingPlace,
+  type Oh7Town,
   type PartyCode,
 } from "~/data/oh7";
-import { readOh7, saveOh7Result } from "~/lib/oh7.server";
+import {
+  MEDINA_PRECINCT_COUNT,
+  MEDINA_RACES,
+  MEDINA_RACE_GROUPS,
+  racesForPrecincts,
+  type CountyRace,
+  type RaceParty,
+} from "~/data/medinaRaces";
+import { changeOh7, readOh7, type Oh7Change } from "~/lib/oh7.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
 import { LoginForm } from "~/components/LoginForm";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "PoliticsPlace — OH-7 Election Night" },
+    { title: "PoliticsPlace — OH-7 / Medina Election Night" },
     {
       name: "description",
       content:
-        "Polling-place election-night tally for Ohio's 7th Congressional District (Poindexter vs. Miller).",
+        "Polling-place election-night tally for Ohio's 7th Congressional District (Poindexter vs. Miller), plus every Medina County race.",
     },
   ];
 }
@@ -27,12 +37,20 @@ export function meta({}: Route.MetaArgs) {
 const PLACE_IDS = new Set(
   OH7_TOWNS.flatMap((t) => t.pollingPlaces.map((p) => p.id))
 );
+const RACES_BY_ID = new Map(MEDINA_RACES.map((r) => [r.id, r]));
+
+/** Ceiling for any one vote field — far above a real count, stops a typo. */
+const MAX_VOTES = 10_000_000;
 
 export async function loader({ request, context }: Route.LoaderArgs) {
-  const editor = editorFromRequest(request);
-  if (!editor) return { editor: null };
   const store = await readOh7(context.get(cloudflareContext).env.DB);
-  return { editor, results: store.results, updatedAt: store.updatedAt };
+  return {
+    results: store.results,
+    races: store.races,
+    placeRaces: store.placeRaces,
+    updatedAt: store.updatedAt,
+    editor: editorFromRequest(request),
+  };
 }
 
 export async function action({ request, context }: Route.ActionArgs) {
@@ -45,18 +63,66 @@ export async function action({ request, context }: Route.ActionArgs) {
     return data({ error: "Sign in first." }, { status: 401 });
   }
 
+  // One change to one field per submit: which row, which field, and either
+  // an amount to add or a reset/flag to set.
+  const raceId = form.get("raceId");
+  const race = raceId != null ? RACES_BY_ID.get(String(raceId)) : undefined;
   const placeId = String(form.get("placeId") ?? "");
-  if (!PLACE_IDS.has(placeId)) {
-    return data({ error: "Unknown polling place." }, { status: 400 });
+  // Both ids = that race's count at that one polling place, which must be a
+  // place whose ballot carries the race.
+  const atPlace = raceId != null && form.has("placeId");
+  const onBallot =
+    atPlace &&
+    !!race &&
+    racesForPrecincts(RACE_PLACES.get(placeId)?.precincts ?? []).includes(race) &&
+    RACE_PLACES.has(placeId);
+  if (atPlace ? !onBallot : raceId != null ? !race : !PLACE_IDS.has(placeId)) {
+    return data({ error: "Unknown race or polling place." }, { status: 400 });
   }
-  const votes: Record<string, number> = {};
-  for (const c of OH7_CANDIDATES) {
-    votes[c.key] = Math.max(0, Math.round(Number(form.get(`v:${c.key}`)) || 0));
+  const keys = (race ? race.candidates : OH7_CANDIDATES).map((c) => c.key);
+
+  const field = String(form.get("field") ?? "");
+  let path: string;
+  let max = MAX_VOTES;
+  if (atPlace && !field.startsWith("v:")) {
+    return data({ error: "Unknown field." }, { status: 400 });
+  } else if (field === "final") path = "$.final";
+  else if (field === "reporting" && race) {
+    path = "$.reporting";
+    max = MEDINA_PRECINCT_COUNT;
+  } else if (field.startsWith("v:") && keys.includes(field.slice(2))) {
+    path = `$.votes.${field.slice(2)}`;
+  } else {
+    return data({ error: "Unknown field." }, { status: 400 });
   }
-  await saveOh7Result(context.get(cloudflareContext).env.DB, placeId, {
-    votes,
-    final: form.get("final") === "1",
-  });
+
+  let change: Oh7Change;
+  const op = form.get("op");
+  if (field === "final") {
+    change = { op: "set", value: form.get("value") === "1" };
+  } else if (op === "reset") {
+    change = { op: "set", value: 0 };
+  } else if (op === "set") {
+    const amount = Math.round(Number(form.get("amount")));
+    if (!Number.isFinite(amount) || amount < 0) {
+      return data({ error: "Not a count." }, { status: 400 });
+    }
+    change = { op: "set", value: Math.min(max, amount) };
+  } else {
+    const amount = Math.round(Number(form.get("amount")));
+    if (op !== "add" || !Number.isFinite(amount) || amount === 0) {
+      return data({ error: "Nothing to add." }, { status: 400 });
+    }
+    change = { op: "add", amount, max };
+  }
+
+  await changeOh7(
+    context.get(cloudflareContext).env.DB,
+    atPlace ? "placeRace" : race ? "race" : "place",
+    atPlace ? prKey(placeId, race!.id) : race ? race.id : placeId,
+    path,
+    change
+  );
   return data({ ok: true });
 }
 
@@ -107,40 +173,152 @@ function tallyOf(
   return { v, reporting, done };
 }
 
-export default function Results({ loaderData }: Route.ComponentProps) {
-  const editor = loaderData.editor;
-  // Hooks must run unconditionally (same count every render) even though the
-  // whole page is gated below -- falls back to an empty tally pre-login.
-  const results = loaderData.editor ? loaderData.results : {};
-  const updatedAt = loaderData.editor ? loaderData.updatedAt : null;
+/** Towns grouped under their county, counties A–Z. */
+const COUNTIES: { county: string; towns: Oh7Town[] }[] = [];
+for (const t of OH7_TOWNS) {
+  const c = COUNTIES.find((x) => x.county === t.county);
+  if (c) c.towns.push(t);
+  else COUNTIES.push({ county: t.county, towns: [t] });
+}
+COUNTIES.sort((a, b) => a.county.localeCompare(b.county));
 
-  // Live tally: seed from the server, then update as numbers are typed so the
+/** The county whose full ballot (MEDINA_RACE_GROUPS) is tracked. */
+const RACES_COUNTY = "Medina";
+
+/** That county's polling places — the only ones that carry its other races. */
+const RACE_PLACES = new Map(
+  OH7_TOWNS.filter((t) => t.county === RACES_COUNTY).flatMap((t) =>
+    t.pollingPlaces.map((p) => [p.id, p] as const)
+  )
+);
+
+/** Store id for one race's count at one polling place. */
+const prKey = (placeId: string, raceId: string) => `${placeId}|${raceId}`;
+
+type VoteMap = Record<string, number>;
+
+/** Race-at-polling-place counts, shared by the race cards (which sum them)
+ *  and the polling-place rows (which enter them). */
+const PlaceRaceCtx = createContext<{
+  votes: Record<string, VoteMap>;
+  set: (id: string, next: VoteMap) => void;
+}>({ votes: {}, set: () => {} });
+
+interface RaceRow {
+  votes: Record<string, number>;
+  reporting: number;
+  final: boolean;
+}
+
+const emptyRaceRow = (): RaceRow => ({ votes: {}, reporting: 0, final: false });
+
+/** One edit to one field of a row — what a submit sends to the action. */
+type FieldEdit =
+  | { field: string; op: "set"; amount: number }
+  | { field: string; op: "add"; amount: number }
+  | { field: string; op: "reset" }
+  | { field: "final"; value: boolean };
+
+/** What a count box reports: a new total, an amount to add, or a reset. */
+type Entry =
+  | { op: "set"; amount: number }
+  | { op: "add"; amount: number }
+  | { op: "reset" };
+
+/** How a typed number is read: as the field's new total, or added to it. */
+type EntryMode = "set" | "add";
+const EntryModeCtx = createContext<EntryMode>("set");
+
+function editForm(target: "placeId" | "raceId", id: string, e: FieldEdit): FormData {
+  const fd = new FormData();
+  fd.set(target, id);
+  fd.set("field", e.field);
+  if ("value" in e) fd.set("value", e.value ? "1" : "0");
+  else {
+    fd.set("op", e.op);
+    if (e.op !== "reset") fd.set("amount", String(e.amount));
+  }
+  return fd;
+}
+
+/** A vote field's next value after an edit (mirrors the server's clamping). */
+const applied = (current: number, e: FieldEdit, max: number) => {
+  if (!("op" in e) || e.op === "reset") return 0;
+  const next = e.op === "add" ? current + e.amount : e.amount;
+  return Math.min(max, Math.max(0, next));
+};
+
+/** Last name for the headline: "Amy Acton / David Pepper" → "Acton". */
+const shortName = (c: { key: string; name: string }) =>
+  c.key === "other" ? "Other" : c.name.split(" / ")[0].split(" ").pop()!;
+
+const toRows = (results: Record<string, { votes: Record<string, number>; final?: boolean }>) => {
+  const m: Record<string, Row> = {};
+  for (const [id, r] of Object.entries(results)) {
+    m[id] = { votes: { ...emptyRow().votes, ...r.votes }, final: !!r.final };
+  }
+  return m;
+};
+const toRaceRows = (
+  races: Record<string, { votes: Record<string, number>; reporting?: number; final?: boolean }>
+) => {
+  const m: Record<string, RaceRow> = {};
+  for (const [id, r] of Object.entries(races)) {
+    m[id] = { votes: { ...r.votes }, reporting: r.reporting || 0, final: !!r.final };
+  }
+  return m;
+};
+
+const RACE_TEXT: Record<RaceParty, string> = {
+  D: PARTY_TEXT.D,
+  R: PARTY_TEXT.R,
+  O: PARTY_TEXT.O,
+  L: "text-yellow-600 dark:text-yellow-400",
+  Y: "text-emerald-600 dark:text-emerald-400",
+  N: "text-amber-600 dark:text-amber-400",
+};
+const RACE_BAR: Record<RaceParty, string> = {
+  D: "bg-blue-500",
+  R: "bg-red-500",
+  O: "bg-gray-400",
+  L: "bg-yellow-500",
+  Y: "bg-emerald-500",
+  N: "bg-amber-500",
+};
+/** Bar order: Democrats left, Republicans right, everyone else between. */
+const BAR_ORDER: Record<RaceParty, number> = { D: 0, Y: 0, L: 1, O: 2, N: 3, R: 3 };
+
+export default function Results({ loaderData }: Route.ComponentProps) {
+  const { results, races, placeRaces, updatedAt, editor } = loaderData;
+  const [mode, setMode] = useState<EntryMode>("set");
+
+  // Live tally: seed from the server, then update as counts are added so the
   // totals move without waiting for the save round-trip.
-  const [rows, setRows] = useState<Record<string, Row>>(() => {
-    const m: Record<string, Row> = {};
-    for (const [id, r] of Object.entries(results)) {
-      m[id] = { votes: { ...emptyRow().votes, ...r.votes }, final: !!r.final };
-    }
-    return m;
-  });
+  const [rows, setRows] = useState<Record<string, Row>>(() => toRows(results));
   const setRow = (id: string, next: Row) =>
     setRows((prev) => ({ ...prev, [id]: next }));
 
-  // Pre-login the loader never sends real results (see below), so once a
-  // login succeeds and the loader revalidates with the real tally, reseed
-  // `rows` -- the useState initializer above only ran once, against the
-  // empty pre-login placeholder.
-  useEffect(() => {
-    if (!editor) return;
-    setRows(() => {
-      const m: Record<string, Row> = {};
-      for (const [id, r] of Object.entries(results)) {
-        m[id] = { votes: { ...emptyRow().votes, ...r.votes }, final: !!r.final };
-      }
-      return m;
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [editor]);
+  const [raceRows, setRaceRows] = useState<Record<string, RaceRow>>(() =>
+    toRaceRows(races)
+  );
+  const setRaceRow = (id: string, next: RaceRow) =>
+    setRaceRows((prev) => ({ ...prev, [id]: next }));
+
+  // Every save revalidates the loader, so take the server's totals whenever
+  // they come back — that also picks up what other people have added.
+  useEffect(() => setRows(toRows(results)), [results]);
+  useEffect(() => setRaceRows(toRaceRows(races)), [races]);
+
+  const [placeRaceVotes, setPlaceRaceVotes] = useState(placeRaces);
+  useEffect(() => setPlaceRaceVotes(placeRaces), [placeRaces]);
+  const placeRaceCtx = useMemo(
+    () => ({
+      votes: placeRaceVotes,
+      set: (id: string, next: VoteMap) =>
+        setPlaceRaceVotes((prev) => ({ ...prev, [id]: next })),
+    }),
+    [placeRaceVotes]
+  );
 
   const allPlaces = useMemo(
     () => OH7_TOWNS.flatMap((t) => t.pollingPlaces),
@@ -153,31 +331,16 @@ export default function Results({ loaderData }: Route.ComponentProps) {
   const pctIn = Math.round((totals.reporting / OH7_PLACE_COUNT) * 100);
   const pct = (k: string) => (grand ? (totals.v[k] / grand) * 100 : 0);
 
-  if (!editor) {
-    return (
-      <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-        <header className="mb-5">
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-            OH-7 Election Night
-          </h1>
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Sign in to view the live tally.
-          </p>
-        </header>
-        <LoginForm title="Sign in to view the tally" />
-      </div>
-    );
-  }
-
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
       <header className="mb-5">
         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-3xl">
-          OH-7 Election Night
+          OH-7 / Medina Election Night
         </h1>
         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-          {OH7_TITLE} &mdash; type each polling place&rsquo;s count into its row.
-          It saves as you go and totals for everyone.
+          {OH7_TITLE} &mdash; type each count into its field. It saves when
+          you press Enter or leave the field, and totals for everyone. Enter 0
+          to reset a field.
           {updatedAt
             ? ` Last edit ${new Date(updatedAt).toLocaleString()}.`
             : ""}
@@ -185,13 +348,47 @@ export default function Results({ loaderData }: Route.ComponentProps) {
         <p className="mt-1 text-xs text-gray-400 dark:text-gray-500">
           {OH7_PLACE_COUNT} polling places across Cuyahoga (split), Medina,
           Ashland and the OH-7 part of Wayne &mdash; locations from the county
-          boards of elections.
+          boards of elections. Medina&rsquo;s section also carries every other
+          race on the county ballot: entered at each Medina polling place, plus
+          a county-wide count for early and absentee votes.
         </p>
       </header>
 
-      <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
-        Signed in as <span className="font-medium">{editor}</span>.
-      </p>
+      {!editor ? (
+        <div className="mb-4">
+          <LoginForm title="Sign in to enter counts" />
+        </div>
+      ) : (
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-400 dark:text-gray-500">
+          <span>
+            Signed in as <span className="font-medium">{editor}</span>.
+          </span>
+          <span className="flex items-center gap-1.5">
+            Entry
+            {(
+              [
+                ["set", "Type totals", "A typed number replaces the field's total"],
+                ["add", "Add to totals", "A typed number is added to the field's total; 0 still resets it"],
+              ] as const
+            ).map(([m, label, title]) => (
+              <button
+                key={m}
+                type="button"
+                title={title}
+                aria-pressed={mode === m}
+                onClick={() => setMode(m)}
+                className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                  mode === m
+                    ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
+                    : "border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </span>
+        </div>
+      )}
 
       {/* grand total */}
       <div className="mb-5 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900">
@@ -232,57 +429,455 @@ export default function Results({ loaderData }: Route.ComponentProps) {
         </div>
       </div>
 
-      <div className="space-y-2">
-        {OH7_TOWNS.map((t) => (
-          <TownSection
-            key={`${t.county}-${t.town}`}
-            town={t.town}
-            county={t.county}
-            places={t.pollingPlaces}
+      <EntryModeCtx.Provider value={mode}>
+      <PlaceRaceCtx.Provider value={placeRaceCtx}>
+      <div className="space-y-3">
+        {COUNTIES.map((c) => (
+          <CountySection
+            key={c.county}
+            county={c.county}
+            towns={c.towns}
             rows={rows}
             onRow={setRow}
+            raceRows={raceRows}
+            onRaceRow={setRaceRow}
             editable={!!editor}
           />
         ))}
       </div>
+      </PlaceRaceCtx.Provider>
+      </EntryModeCtx.Provider>
+    </div>
+  );
+}
+
+function CountySection({
+  county,
+  towns,
+  rows,
+  onRow,
+  raceRows,
+  onRaceRow,
+  editable,
+}: {
+  county: string;
+  towns: Oh7Town[];
+  rows: Record<string, Row>;
+  onRow: (id: string, next: Row) => void;
+  raceRows: Record<string, RaceRow>;
+  onRaceRow: (id: string, next: RaceRow) => void;
+  editable: boolean;
+}) {
+  const places = useMemo(() => towns.flatMap((t) => t.pollingPlaces), [towns]);
+  const sub = useMemo(() => tallyOf(places, rows), [places, rows]);
+  const total = sub.v[D_KEY] + sub.v[R_KEY] + sub.v[O_KEY];
+  const pct = (k: string) => (total ? (sub.v[k] / total) * 100 : 0);
+  const hasRaces = county === RACES_COUNTY;
+
+  const { votes: placeRaceVotes } = useContext(PlaceRaceCtx);
+  const placeSums = useMemo(() => {
+    const sums: Record<string, VoteMap> = {};
+    if (!hasRaces) return sums;
+    for (const p of places) {
+      for (const r of MEDINA_RACES) {
+        const v = placeRaceVotes[prKey(p.id, r.id)];
+        if (!v) continue;
+        const t = (sums[r.id] ??= {});
+        for (const [k, n] of Object.entries(v)) t[k] = (t[k] || 0) + (n || 0);
+      }
+    }
+    return sums;
+  }, [hasRaces, places, placeRaceVotes]);
+
+  return (
+    <details className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900">
+      <summary className="cursor-pointer list-none px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800/50">
+        <div className="flex items-center justify-between gap-3">
+          <span className="flex items-center gap-2">
+            <svg
+              viewBox="0 0 12 12"
+              className="h-3 w-3 shrink-0 text-gray-400 transition-transform group-open:rotate-90"
+              fill="currentColor"
+            >
+              <path d="M4 2l4 4-4 4z" />
+            </svg>
+            <span className="text-base font-semibold text-gray-900 dark:text-gray-100">
+              {county} County
+            </span>
+          </span>
+          <span className="flex items-center gap-3 text-xs">
+            {total > 0 && (
+              <span
+                className={`font-semibold ${
+                  sub.v[D_KEY] >= sub.v[R_KEY] ? PARTY_TEXT.D : PARTY_TEXT.R
+                }`}
+              >
+                {leadLabel(sub.v[D_KEY], sub.v[R_KEY])}
+              </span>
+            )}
+            <span className="text-gray-400 dark:text-gray-500">
+              {sub.reporting}/{places.length} polling places
+            </span>
+          </span>
+        </div>
+        <div className="mt-2 flex h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-800">
+          <span className="bg-blue-500" style={{ width: `${pct(D_KEY)}%` }} />
+          <span className="bg-gray-400" style={{ width: `${pct(O_KEY)}%` }} />
+          <span className="ml-auto bg-red-500" style={{ width: `${pct(R_KEY)}%` }} />
+        </div>
+        <div className="mt-1 h-1 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800/60">
+          <span
+            className="block h-full bg-gray-500 dark:bg-gray-400"
+            style={{ width: `${(sub.reporting / places.length) * 100}%` }}
+          />
+        </div>
+      </summary>
+
+      <div className="space-y-4 border-t border-gray-100 p-3 dark:border-gray-800">
+        {hasRaces && (
+          <details
+            open
+            className="group/races overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800"
+          >
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <span className="flex items-center gap-2">
+                <svg
+                  viewBox="0 0 12 12"
+                  className="h-3 w-3 shrink-0 text-gray-400 transition-transform group-open/races:rotate-90"
+                  fill="currentColor"
+                >
+                  <path d="M4 2l4 4-4 4z" />
+                </svg>
+                <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                  {county} County races
+                </span>
+              </span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">
+                {MEDINA_RACES.filter((r) => raceRows[r.id]?.final).length}/
+                {MEDINA_RACES.length} final
+              </span>
+            </summary>
+            <div className="space-y-3 border-t border-gray-100 p-3 dark:border-gray-800">
+              <p className="text-[11px] text-gray-400 dark:text-gray-500">
+                Each total is what was entered at the polling places below plus
+                the county-wide count (early and absentee votes).
+              </p>
+              {MEDINA_RACE_GROUPS.map((g) => (
+                <details key={g.label} open className="group/set">
+                  <summary className="mb-1 flex cursor-pointer list-none items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">
+                    <svg
+                      viewBox="0 0 12 12"
+                      className="h-2.5 w-2.5 shrink-0 transition-transform group-open/set:rotate-90"
+                      fill="currentColor"
+                    >
+                      <path d="M4 2l4 4-4 4z" />
+                    </svg>
+                    {g.label}
+                  </summary>
+                  <div className="space-y-2">
+                    {g.races.map((r) => (
+                      <RaceCard
+                        key={r.id}
+                        race={r}
+                        row={raceRows[r.id]}
+                        placeVotes={placeSums[r.id]}
+                        onRow={onRaceRow}
+                        editable={editable}
+                      />
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </details>
+        )}
+
+        <div>
+          <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+            {hasRaces ? "All races by polling place" : "Polling places"}
+          </h3>
+          <div className="space-y-2">
+            {towns.map((t) => (
+              <TownSection
+                key={t.town}
+                town={t.town}
+                places={t.pollingPlaces}
+                rows={rows}
+                onRow={onRow}
+                withRaces={hasRaces}
+                editable={editable}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </details>
+  );
+}
+
+/**
+ * A count box. It shows the field's total and is typed into directly; the
+ * entry is saved on Enter or when the field is left. 0 always resets the
+ * field. In "add" mode (EntryModeCtx) the box clears on focus and the typed
+ * number is added to the total instead of replacing it — a negative number
+ * subtracts, for fixing a mistyped batch.
+ */
+function CountInput({
+  value,
+  label,
+  onEdit,
+  disabled,
+  className = "w-20",
+}: {
+  value: number;
+  label: string;
+  onEdit: (e: Entry) => void;
+  disabled?: boolean;
+  className?: string;
+}) {
+  const mode = useContext(EntryModeCtx);
+  // null = not being edited, so the box shows the saved total. The ref is
+  // what commit() trusts: Enter commits and then blurs, and the blur must
+  // not commit the same text a second time.
+  const [text, setText] = useState<string | null>(null);
+  const draft = useRef<string | null>(null);
+  const edit = (t: string | null) => {
+    draft.current = t;
+    setText(t);
+  };
+
+  function commit() {
+    const t = draft.current;
+    edit(null);
+    if (t == null || !t.trim()) return;
+    const n = Math.round(Number(t));
+    if (!Number.isFinite(n)) return;
+    if (n === 0) {
+      if (value !== 0) onEdit({ op: "reset" });
+    } else if (mode === "add") onEdit({ op: "add", amount: n });
+    else if (n > 0 && n !== value) onEdit({ op: "set", amount: n });
+  }
+
+  const saved = value ? String(value) : "";
+  return (
+    <input
+      type="number"
+      inputMode="numeric"
+      aria-label={label}
+      title={
+        disabled
+          ? "Sign in at the top of the page to enter counts."
+          : mode === "add"
+          ? "Type a count and press Enter to add it to this total. 0 resets."
+          : "Type this field's total. 0 resets."
+      }
+      disabled={disabled}
+      value={text ?? saved}
+      placeholder={text != null && mode === "add" ? "+ add" : "0"}
+      onFocus={(e) => {
+        edit(mode === "add" ? "" : saved);
+        e.currentTarget.select();
+      }}
+      onChange={(e) => edit(e.target.value)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          commit();
+          e.currentTarget.blur();
+        }
+      }}
+      onBlur={commit}
+      className={`${className} rounded border border-gray-200 bg-white px-1.5 py-1 text-right text-sm font-normal tabular-nums disabled:opacity-50 dark:border-gray-700 dark:bg-gray-900`}
+    />
+  );
+}
+
+function RaceCard({
+  race,
+  row,
+  placeVotes,
+  onRow,
+  editable,
+}: {
+  race: CountyRace;
+  row?: RaceRow;
+  /** This race's votes summed over the county's polling places. */
+  placeVotes?: VoteMap;
+  onRow: (id: string, next: RaceRow) => void;
+  editable: boolean;
+}) {
+  const fetcher = useFetcher();
+  const r = row ?? emptyRaceRow();
+  // r.votes is the county-wide count; the card shows that plus polling places.
+  const votes = (k: string) => (r.votes[k] || 0) + (placeVotes?.[k] || 0);
+  const total = race.candidates.reduce((s, c) => s + votes(c.key), 0);
+  const saving = fetcher.state !== "idle";
+  const pct = (k: string) => (total ? (votes(k) / total) * 100 : 0);
+
+  function send(e: FieldEdit) {
+    if (!editable) return;
+    if (e.field === "final") onRow(race.id, { ...r, final: "value" in e && e.value });
+    else if (e.field === "reporting")
+      onRow(race.id, { ...r, reporting: applied(r.reporting, e, MEDINA_PRECINCT_COUNT) });
+    else {
+      const key = e.field.slice(2);
+      onRow(race.id, {
+        ...r,
+        votes: { ...r.votes, [key]: applied(r.votes[key] || 0, e, MAX_VOTES) },
+      });
+    }
+    fetcher.submit(editForm("raceId", race.id, e), { method: "post" });
+  }
+
+  const [first, second] = [...race.candidates].sort(
+    (a, b) => votes(b.key) - votes(a.key)
+  );
+  const margin = votes(first.key) - (second ? votes(second.key) : 0);
+  const bar = [...race.candidates].sort(
+    (a, b) => BAR_ORDER[a.party] - BAR_ORDER[b.party]
+  );
+
+  return (
+    <div
+      className={`rounded-lg border border-gray-200 p-3 dark:border-gray-800 ${
+        r.final ? "bg-green-50/50 dark:bg-green-950/20" : ""
+      }`}
+    >
+      <div className="flex items-baseline justify-between gap-3">
+        <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+          {race.title}
+          {saving && (
+            <span className="ml-1.5 text-[10px] font-normal text-gray-400 dark:text-gray-500">
+              saving…
+            </span>
+          )}
+        </span>
+        <span className="shrink-0 text-xs text-gray-400 dark:text-gray-500">
+          {r.reporting}/{MEDINA_PRECINCT_COUNT} precincts reporting
+          {r.final ? " · final" : ""}
+        </span>
+      </div>
+      {race.note && (
+        <div className="text-[11px] text-gray-400 dark:text-gray-500">{race.note}</div>
+      )}
+
+      {/* same headline + bars as the District total card */}
+      <div className="mt-2 flex flex-wrap items-baseline gap-x-4 gap-y-1 text-lg font-bold">
+        {race.candidates.map((c) => (
+          <span key={c.key} className={RACE_TEXT[c.party]} title={c.name}>
+            {shortName(c)} {fmt(votes(c.key))}
+            {total > 0 && (
+              <span className="ml-1 text-xs font-medium text-gray-400 dark:text-gray-500">
+                {pct(c.key).toFixed(1)}%
+              </span>
+            )}
+          </span>
+        ))}
+        <span className={`ml-auto ${RACE_TEXT[first.party]}`}>
+          {margin === 0 ? "Tied" : `${shortName(first)} +${fmt(margin)}`}
+        </span>
+      </div>
+      <div className="mt-2 flex h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-800">
+        {bar.map((c) => (
+          <span
+            key={c.key}
+            className={`${RACE_BAR[c.party]} ${
+              c.party === "R" || c.party === "N" ? "ml-auto" : ""
+            }`}
+            style={{ width: `${pct(c.key)}%` }}
+          />
+        ))}
+      </div>
+      <div className="mt-1.5 h-1 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800/60">
+        <span
+          className="block h-full bg-gray-500 dark:bg-gray-400"
+          style={{ width: `${(r.reporting / MEDINA_PRECINCT_COUNT) * 100}%` }}
+        />
+      </div>
+
+      {editable && (
+        <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs">
+          <span
+            className="w-full text-[10px] font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500"
+            title="Votes not tied to a polling place. Election-day counts go in each polling place's row below."
+          >
+            County-wide (early / absentee)
+          </span>
+          {race.candidates.map((c) => (
+            <label key={c.key} className="flex items-center gap-1.5">
+              <span className={RACE_TEXT[c.party]}>
+                {c.name}
+                {c.incumbent && <span className="ml-1 text-[10px] opacity-70">(i)</span>}
+              </span>
+              <CountInput
+                value={r.votes[c.key] || 0}
+                label={`County-wide votes for ${c.name}`}
+                onEdit={(e) => send({ field: `v:${c.key}`, ...e })}
+              />
+            </label>
+          ))}
+          <label className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
+            Precincts
+            <CountInput
+              value={r.reporting}
+              label={`Precincts reporting for ${race.title}`}
+              className="w-16"
+              onEdit={(e) => send({ field: "reporting", ...e })}
+            />
+          </label>
+          <label className="ml-auto flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
+            <input
+              type="checkbox"
+              checked={r.final}
+              onChange={(e) => send({ field: "final", value: e.target.checked })}
+              className="h-4 w-4 accent-green-600"
+            />
+            Final
+          </label>
+        </div>
+      )}
     </div>
   );
 }
 
 function TownSection({
   town,
-  county,
   places,
   rows,
   onRow,
+  withRaces,
   editable,
 }: {
   town: string;
-  county: string;
-  places: import("~/data/oh7").Oh7PollingPlace[];
+  places: Oh7PollingPlace[];
   rows: Record<string, Row>;
   onRow: (id: string, next: Row) => void;
+  /** Polling places here also take counts for the county's other races. */
+  withRaces: boolean;
   editable: boolean;
 }) {
   const sub = useMemo(() => tallyOf(places, rows), [places, rows]);
   const anyVotes = sub.v[D_KEY] + sub.v[R_KEY] + sub.v[O_KEY] > 0;
+  // Polling places render only while the town is open — a Medina place is a
+  // line per race, so rendering every town up front would be thousands of inputs.
+  const [open, setOpen] = useState(false);
 
   return (
-    <details className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900">
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800/50">
+    <details
+      onToggle={(e) => setOpen(e.currentTarget.open)}
+      className="group/town overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800"
+    >
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-800/50">
         <span className="flex items-center gap-2">
           <svg
             viewBox="0 0 12 12"
-            className="h-3 w-3 shrink-0 text-gray-400 transition-transform group-open:rotate-90"
+            className="h-3 w-3 shrink-0 text-gray-400 transition-transform group-open/town:rotate-90"
             fill="currentColor"
           >
             <path d="M4 2l4 4-4 4z" />
           </svg>
           <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">
             {town}
-          </span>
-          <span className="text-[10px] font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">
-            {county}
           </span>
         </span>
         <span className="flex items-center gap-3 text-xs">
@@ -301,69 +896,156 @@ function TownSection({
         </span>
       </summary>
 
-      <div className="overflow-x-auto border-t border-gray-100 dark:border-gray-800">
-        <table className="w-full text-left text-sm">
-          <thead className="text-xs text-gray-500 dark:text-gray-400">
-            <tr className="border-b border-gray-100 dark:border-gray-800">
-              <th className="px-3 py-2 font-medium">Polling place</th>
-              {OH7_CANDIDATES.map((c) => (
-                <th
-                  key={c.key}
-                  className={`px-2 py-2 text-right font-medium ${PARTY_TEXT[c.party]}`}
-                >
-                  {c.short}
-                </th>
-              ))}
-              <th className="px-2 py-2 text-right font-medium">Total</th>
-              <th className="px-2 py-2 text-center font-medium">Final</th>
-            </tr>
-          </thead>
-          <tbody>
-            {places.map((p) => (
-              <PlaceRow
-                key={p.id}
-                place={p}
-                row={rows[p.id]}
-                onRow={onRow}
-                editable={editable}
-              />
-            ))}
-          </tbody>
-        </table>
-      </div>
+      {open && (
+        <div className="divide-y divide-gray-100 border-t border-gray-100 dark:divide-gray-800 dark:border-gray-800">
+          {places.map((p) => (
+            <PlaceBlock
+              key={p.id}
+              place={p}
+              row={rows[p.id]}
+              onRow={onRow}
+              withRaces={withRaces}
+              editable={editable}
+            />
+          ))}
+        </div>
+      )}
     </details>
   );
 }
 
-function PlaceRow({
+/** One race at one polling place: a count box per candidate. */
+function RaceLine({
+  title,
+  saving,
+  candidates,
+  votes,
+  where,
+  editable,
+  onEdit,
+}: {
+  title: string;
+  saving: boolean;
+  candidates: { key: string; label: string; name: string; text: string }[];
+  votes: VoteMap;
+  /** Polling place name, for the inputs' accessible labels. */
+  where: string;
+  editable: boolean;
+  onEdit: (key: string, e: Entry) => void;
+}) {
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 py-1.5 text-xs">
+      <span className="w-full font-medium text-gray-700 dark:text-gray-300 lg:w-60">
+        {title}
+        {saving && (
+          <span className="ml-1.5 text-[10px] font-normal text-gray-400 dark:text-gray-500">
+            saving…
+          </span>
+        )}
+      </span>
+      {candidates.map((c) => (
+        <label key={c.key} className="flex items-center gap-1.5" title={c.name}>
+          <span className={c.text}>{c.label}</span>
+          <CountInput
+            value={votes[c.key] || 0}
+            label={`Votes for ${c.name}, ${title}, at ${where}`}
+            disabled={!editable}
+            className="w-16"
+            onEdit={(e) => onEdit(c.key, e)}
+          />
+        </label>
+      ))}
+    </div>
+  );
+}
+
+const OH7_LINE = OH7_CANDIDATES.map((c) => ({
+  key: c.key,
+  label: c.short,
+  name: c.name,
+  text: PARTY_TEXT[c.party],
+}));
+
+/** One of the county's other races at one polling place. */
+function PlaceRaceLine({
   place,
-  row,
-  onRow,
+  race,
   editable,
 }: {
-  place: import("~/data/oh7").Oh7PollingPlace;
-  row?: Row;
-  onRow: (id: string, next: Row) => void;
+  place: Oh7PollingPlace;
+  race: CountyRace;
   editable: boolean;
 }) {
   const fetcher = useFetcher();
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { votes, set } = useContext(PlaceRaceCtx);
+  const id = prKey(place.id, race.id);
+  const v = votes[id] ?? {};
+  const candidates = useMemo(
+    () =>
+      race.candidates.map((c) => ({
+        key: c.key,
+        label: shortName(c),
+        name: c.name,
+        text: RACE_TEXT[c.party],
+      })),
+    [race]
+  );
+
+  function send(key: string, e: Entry) {
+    const change = { field: `v:${key}`, ...e };
+    set(id, { ...v, [key]: applied(v[key] || 0, change, MAX_VOTES) });
+    const fd = editForm("placeId", place.id, change);
+    fd.set("raceId", race.id);
+    fetcher.submit(fd, { method: "post" });
+  }
+
+  return (
+    <RaceLine
+      title={race.title}
+      saving={fetcher.state !== "idle"}
+      candidates={candidates}
+      votes={v}
+      where={place.name}
+      editable={editable}
+      onEdit={send}
+    />
+  );
+}
+
+/** A polling place: its OH-7 count, then (in the county whose whole ballot is
+ *  tracked) every other race on its ballot, each entered the same way. */
+function PlaceBlock({
+  place,
+  row,
+  onRow,
+  withRaces,
+  editable,
+}: {
+  place: Oh7PollingPlace;
+  row?: Row;
+  onRow: (id: string, next: Row) => void;
+  withRaces: boolean;
+  editable: boolean;
+}) {
+  const fetcher = useFetcher();
   const r = row ?? emptyRow();
   const total = rowTotal(r);
-  const saving = fetcher.state !== "idle";
+  const races = useMemo(
+    () => (withRaces ? racesForPrecincts(place.precincts) : []),
+    [withRaces, place]
+  );
 
-  function push(next: Row) {
+  function send(e: FieldEdit) {
     if (!editable) return;
-    onRow(place.id, next);
-    if (timer.current) clearTimeout(timer.current);
-    timer.current = setTimeout(() => {
-      const fd = new FormData();
-      fd.set("placeId", place.id);
-      for (const c of OH7_CANDIDATES)
-        fd.set(`v:${c.key}`, String(next.votes[c.key] || 0));
-      if (next.final) fd.set("final", "1");
-      fetcher.submit(fd, { method: "post" });
-    }, 600);
+    if (e.field === "final") onRow(place.id, { ...r, final: "value" in e && e.value });
+    else {
+      const key = e.field.slice(2);
+      onRow(place.id, {
+        ...r,
+        votes: { ...r.votes, [key]: applied(r.votes[key] || 0, e, MAX_VOTES) },
+      });
+    }
+    fetcher.submit(editForm("placeId", place.id, e), { method: "post" });
   }
 
   const nP = place.precincts.length;
@@ -372,56 +1054,42 @@ function PlaceRow({
     `${nP} precinct${nP === 1 ? "" : "s"}`;
 
   return (
-    <tr
-      className={`border-b border-gray-50 last:border-0 dark:border-gray-800/60 ${
-        r.final ? "bg-green-50/50 dark:bg-green-950/20" : ""
-      }`}
-    >
-      <td className="px-3 py-1.5">
-        <div className="font-medium text-gray-800 dark:text-gray-200">
-          {place.name}
-          {saving && (
-            <span className="ml-1.5 text-[10px] text-gray-400 dark:text-gray-500">
-              saving…
-            </span>
-          )}
+    <div className={`px-3 py-2 ${r.final ? "bg-green-50/50 dark:bg-green-950/20" : ""}`}>
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <div className="text-sm font-medium text-gray-800 dark:text-gray-200">
+            {place.name}
+          </div>
+          <div className="text-[11px] text-gray-400 dark:text-gray-500">{sub}</div>
         </div>
-        <div className="text-[11px] text-gray-400 dark:text-gray-500">{sub}</div>
-      </td>
-      {OH7_CANDIDATES.map((c) => (
-        <td key={c.key} className="px-2 py-1.5 text-right align-top">
+        <label className="flex shrink-0 items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400">
+          <span className="mr-2 tabular-nums">
+            OH-7 total {total ? fmt(total) : "—"}
+          </span>
           <input
-            type="number"
-            min={0}
-            inputMode="numeric"
+            type="checkbox"
+            checked={r.final}
             disabled={!editable}
-            value={r.votes[c.key] || ""}
-            placeholder="0"
-            onChange={(e) =>
-              push({
-                ...r,
-                votes: {
-                  ...r.votes,
-                  [c.key]: Math.max(0, Math.round(Number(e.target.value) || 0)),
-                },
-              })
-            }
-            className="w-20 rounded border border-gray-200 bg-white px-1.5 py-1 text-right tabular-nums disabled:opacity-50 dark:border-gray-700 dark:bg-gray-900"
+            onChange={(e) => send({ field: "final", value: e.target.checked })}
+            className="h-4 w-4 accent-green-600 disabled:opacity-50"
           />
-        </td>
-      ))}
-      <td className="px-2 py-1.5 text-right align-top tabular-nums font-medium text-gray-900 dark:text-gray-100">
-        {total ? fmt(total) : "—"}
-      </td>
-      <td className="px-2 py-1.5 text-center align-top">
-        <input
-          type="checkbox"
-          checked={r.final}
-          disabled={!editable}
-          onChange={(e) => push({ ...r, final: e.target.checked })}
-          className="h-4 w-4 accent-green-600 disabled:opacity-50"
+          Final
+        </label>
+      </div>
+      <div className="mt-1 divide-y divide-gray-100 dark:divide-gray-800/60">
+        <RaceLine
+          title="U.S. House, 7th District"
+          saving={fetcher.state !== "idle"}
+          candidates={OH7_LINE}
+          votes={r.votes}
+          where={place.name}
+          editable={editable}
+          onEdit={(key, e) => send({ field: `v:${key}`, ...e })}
         />
-      </td>
-    </tr>
+        {races.map((race) => (
+          <PlaceRaceLine key={race.id} place={place} race={race} editable={editable} />
+        ))}
+      </div>
+    </div>
   );
 }
