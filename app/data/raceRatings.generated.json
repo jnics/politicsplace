@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-30",
+ "generatedAt": "2026-10-09",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -400,7 +400,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -527,7 +527,7 @@
       "flip": true
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": true
      },
@@ -685,8 +685,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "sabato": {
@@ -741,7 +741,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -990,9 +990,9 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "foxNews": {
       "label": "Lean",
@@ -1005,8 +1005,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      }
     }
@@ -1311,7 +1311,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -1341,8 +1341,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      }
     }
@@ -1479,12 +1479,12 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -1581,7 +1581,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -1606,8 +1606,8 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "foxNews": {
@@ -1922,9 +1922,9 @@
       "flip": true
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "economist": {
       "label": "Tossup",
@@ -1978,8 +1978,8 @@
       "flip": false
      },
      "sabato": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "economist": {
@@ -2188,7 +2188,7 @@
     }
    },
    {
-    "label": "Georgia 10",
+    "label": "Georgia 7",
     "raceType": "house",
     "ratings": {
      "cook": {
@@ -2244,6 +2244,118 @@
     }
    },
    {
+    "label": "Georgia 10",
+    "raceType": "house",
+    "ratings": {
+     "cook": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "economist": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "splitTicket": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "ddhq": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "fiftyPlusOne": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     }
+    }
+   },
+   {
+    "label": "Georgia 11",
+    "raceType": "house",
+    "ratings": {
+     "cook": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "economist": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "splitTicket": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "ddhq": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "fiftyPlusOne": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     }
+    }
+   },
+   {
     "label": "Georgia 12",
     "raceType": "house",
     "ratings": {
@@ -2263,7 +2375,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -2416,7 +2528,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -2472,14 +2584,14 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -2528,8 +2640,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {
@@ -2548,9 +2660,9 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "ddhq": {
       "label": "Tossup",
@@ -2584,14 +2696,14 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Tossup",
@@ -2599,7 +2711,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -2752,12 +2864,12 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -2767,8 +2879,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "splitTicket": {
@@ -2808,7 +2920,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": true
      },
@@ -2838,8 +2950,8 @@
       "flip": true
      },
      "fiftyPlusOne": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "foxNews": {
@@ -3032,12 +3144,12 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -3230,7 +3342,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -3281,7 +3393,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -3469,8 +3581,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      }
     }
@@ -3485,7 +3597,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -3551,7 +3663,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -3592,7 +3704,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -3602,7 +3714,7 @@
       "flip": true
      },
      "sabato": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -3749,8 +3861,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      }
     }
@@ -3760,7 +3872,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -3887,12 +3999,12 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": false
      },
@@ -3999,7 +4111,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -4055,7 +4167,7 @@
       "flip": true
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -4320,7 +4432,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -4335,7 +4447,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": false
      },
@@ -4376,7 +4488,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -4477,9 +4589,9 @@
       "flip": true
      },
      "rcp": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      }
     }
    },
@@ -4549,7 +4661,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -4564,7 +4676,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -4656,9 +4768,9 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "insideElections": {
       "label": "Tilt",
@@ -4900,7 +5012,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -5078,7 +5190,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5180,7 +5292,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -5292,7 +5404,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": false
      },
@@ -5302,7 +5414,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": false
      },
@@ -5414,7 +5526,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5613,7 +5725,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5689,7 +5801,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -5832,7 +5944,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -5888,9 +6000,9 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "insideElections": {
       "label": "Tossup",
@@ -5903,9 +6015,9 @@
       "flip": true
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "splitTicket": {
       "label": "Likely",
@@ -5974,7 +6086,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -6000,9 +6112,9 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "insideElections": {
       "label": "Tossup",
@@ -6086,7 +6198,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Solid",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -6157,8 +6269,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      }
     }
@@ -6412,7 +6524,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": true
      },
@@ -6468,7 +6580,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -6687,14 +6799,14 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "R",
-      "flip": false
-     },
-     "splitTicket": {
       "label": "Tossup",
       "party": null,
       "flip": false
+     },
+     "splitTicket": {
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "ddhq": {
       "label": "Tossup",
@@ -7196,7 +7308,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": true
      },
@@ -7400,8 +7512,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {
@@ -7420,17 +7532,17 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "ddhq": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -7476,7 +7588,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -7517,7 +7629,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -7527,7 +7639,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -7557,8 +7669,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      }
     }
@@ -7624,8 +7736,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "insideElections": {
@@ -7802,7 +7914,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -7873,12 +7985,12 @@
       "flip": true
      },
      "ddhq": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
      "fiftyPlusOne": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -8066,62 +8178,6 @@
       "flip": false
      }
     }
-   },
-   {
-    "label": "Overall",
-    "raceType": "house",
-    "ratings": {
-     "cook": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "insideElections": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "economist": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "splitTicket": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "fiftyPlusOne": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "silverBulletin": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     }
-    }
    }
   ],
   "senate": [
@@ -8211,8 +8267,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "rcp": {
@@ -8221,14 +8277,14 @@
       "flip": false
      },
      "sabato": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "silverBulletin": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "splitTicket": {
       "label": "Lean",
@@ -8420,7 +8476,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -8491,7 +8547,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -8506,12 +8562,12 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "D",
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": false
      }
@@ -8532,12 +8588,12 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -8690,12 +8746,12 @@
     "raceType": "senate",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "ddhq": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -8705,8 +8761,8 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "foxNews": {
@@ -8730,8 +8786,8 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "splitTicket": {
@@ -8995,8 +9051,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Tilt",
+      "party": "D",
       "flip": false
      },
      "rcp": {
@@ -9051,7 +9107,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -9219,7 +9275,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -9234,7 +9290,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -9250,8 +9306,8 @@
     "raceType": "senate",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "ddhq": {
@@ -9418,7 +9474,7 @@
     "raceType": "senate",
     "ratings": {
      "cook": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -9438,17 +9494,17 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
      "insideElections": {
-      "label": "Tilt",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
      "rcp": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -9458,12 +9514,12 @@
       "flip": true
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "D",
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": true
      }
@@ -9519,9 +9575,9 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      }
     }
    },
@@ -9718,7 +9774,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9733,7 +9789,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9769,7 +9825,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -9799,7 +9855,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      }
@@ -9891,7 +9947,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -10084,62 +10140,6 @@
       "flip": false
      }
     }
-   },
-   {
-    "label": "Overall",
-    "raceType": "senate",
-    "ratings": {
-     "cook": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "economist": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "fiftyPlusOne": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "insideElections": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "silverBulletin": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     },
-     "splitTicket": {
-      "label": "Tossup",
-      "party": "D",
-      "flip": false
-     }
-    }
    }
   ],
   "governor": [
@@ -10152,7 +10152,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -10162,23 +10177,8 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "R",
       "flip": false
      }
@@ -10193,12 +10193,17 @@
       "party": null,
       "flip": false
      },
-     "insideElections": {
-      "label": "Lean",
-      "party": "R",
+     "ddhq": {
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
-     "sabato": {
+     "foxNews": {
+      "label": "Tossup",
+      "party": null,
+      "flip": false
+     },
+     "insideElections": {
       "label": "Tossup",
       "party": null,
       "flip": false
@@ -10208,20 +10213,15 @@
       "party": "D",
       "flip": true
      },
-     "foxNews": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
-     },
-     "silverBulletin": {
-      "label": "Safe",
+     "sabato": {
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
-     "ddhq": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+     "silverBulletin": {
+      "label": "Likely",
+      "party": "D",
+      "flip": true
      }
     }
    },
@@ -10234,17 +10234,7 @@
       "party": "D",
       "flip": false
      },
-     "insideElections": {
-      "label": "Tilt",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Lean",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Lean",
       "party": "D",
       "flip": false
@@ -10254,13 +10244,23 @@
       "party": "D",
       "flip": false
      },
-     "silverBulletin": {
-      "label": "Likely",
+     "insideElections": {
+      "label": "Tilt",
       "party": "D",
       "flip": false
      },
-     "ddhq": {
+     "rcp": {
       "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Likely",
       "party": "D",
       "flip": false
      }
@@ -10275,7 +10275,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -10285,23 +10300,8 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "R",
       "flip": false
      }
@@ -10316,7 +10316,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -10326,23 +10341,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "D",
       "flip": false
      }
@@ -10357,7 +10357,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Likely",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -10367,23 +10382,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Likely",
       "party": "D",
       "flip": false
      }
@@ -10398,7 +10398,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Likely",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -10408,23 +10423,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Likely",
       "party": "D",
       "flip": false
      }
@@ -10435,6 +10435,16 @@
     "raceType": "governor",
     "ratings": {
      "cook": {
+      "label": "Lean",
+      "party": "R",
+      "flip": false
+     },
+     "ddhq": {
+      "label": "Lean",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
       "label": "Likely",
       "party": "R",
       "flip": false
@@ -10444,29 +10454,19 @@
       "party": "R",
       "flip": false
      },
-     "sabato": {
-      "label": "Lean",
-      "party": "R",
-      "flip": false
-     },
      "rcp": {
       "label": "Tossup",
       "party": null,
       "flip": false
      },
-     "foxNews": {
-      "label": "Solid",
+     "sabato": {
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
      "silverBulletin": {
       "label": "Lean",
       "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Tossup",
-      "party": null,
       "flip": false
      }
     }
@@ -10480,17 +10480,7 @@
       "party": null,
       "flip": false
      },
-     "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
-     },
-     "sabato": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Tossup",
       "party": null,
       "flip": false
@@ -10500,12 +10490,22 @@
       "party": null,
       "flip": false
      },
-     "silverBulletin": {
-      "label": "Likely",
-      "party": "D",
-      "flip": true
+     "insideElections": {
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
-     "ddhq": {
+     "rcp": {
+      "label": "Tossup",
+      "party": null,
+      "flip": false
+     },
+     "sabato": {
+      "label": "Tossup",
+      "party": null,
+      "flip": false
+     },
+     "silverBulletin": {
       "label": "Lean",
       "party": "D",
       "flip": true
@@ -10521,7 +10521,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -10531,23 +10546,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "D",
       "flip": false
      }
@@ -10562,7 +10562,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -10572,23 +10587,8 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "R",
       "flip": false
      }
@@ -10603,7 +10603,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Likely",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -10613,23 +10628,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Likely",
       "party": "D",
       "flip": false
      }
@@ -10644,8 +10644,23 @@
       "party": "D",
       "flip": true
      },
+     "ddhq": {
+      "label": "Lean",
+      "party": "D",
+      "flip": true
+     },
+     "foxNews": {
+      "label": "Lean",
+      "party": "D",
+      "flip": true
+     },
      "insideElections": {
       "label": "Tilt",
+      "party": "D",
+      "flip": true
+     },
+     "rcp": {
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -10654,23 +10669,8 @@
       "party": "D",
       "flip": true
      },
-     "rcp": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
-     },
      "silverBulletin": {
-      "label": "Likely",
-      "party": "D",
-      "flip": true
-     },
-     "ddhq": {
-      "label": "Lean",
+      "label": "Solid",
       "party": "D",
       "flip": true
      }
@@ -10685,13 +10685,18 @@
       "party": "R",
       "flip": true
      },
-     "insideElections": {
-      "label": "Tilt",
+     "ddhq": {
+      "label": "Lean",
       "party": "R",
       "flip": true
      },
-     "sabato": {
+     "foxNews": {
       "label": "Lean",
+      "party": "R",
+      "flip": true
+     },
+     "insideElections": {
+      "label": "Tilt",
       "party": "R",
       "flip": true
      },
@@ -10700,17 +10705,12 @@
       "party": null,
       "flip": false
      },
-     "foxNews": {
+     "sabato": {
       "label": "Lean",
       "party": "R",
       "flip": true
      },
      "silverBulletin": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
-     },
-     "ddhq": {
       "label": "Lean",
       "party": "R",
       "flip": true
@@ -10726,17 +10726,7 @@
       "party": "D",
       "flip": false
      },
-     "insideElections": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Likely",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Likely",
       "party": "D",
       "flip": false
@@ -10746,13 +10736,23 @@
       "party": "D",
       "flip": false
      },
-     "silverBulletin": {
+     "insideElections": {
       "label": "Solid",
       "party": "D",
       "flip": false
      },
-     "ddhq": {
+     "rcp": {
       "label": "Likely",
+      "party": "D",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Likely",
+      "party": "D",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
       "party": "D",
       "flip": false
      }
@@ -10767,7 +10767,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -10777,23 +10792,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "D",
       "flip": false
      }
@@ -10808,7 +10808,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -10818,23 +10833,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "D",
       "flip": false
      }
@@ -10849,17 +10849,7 @@
       "party": "D",
       "flip": false
      },
-     "insideElections": {
-      "label": "Tilt",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Lean",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Lean",
       "party": "D",
       "flip": false
@@ -10869,13 +10859,23 @@
       "party": "D",
       "flip": false
      },
-     "silverBulletin": {
-      "label": "Likely",
+     "insideElections": {
+      "label": "Tilt",
       "party": "D",
       "flip": false
      },
-     "ddhq": {
+     "rcp": {
       "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Likely",
       "party": "D",
       "flip": false
      }
@@ -10890,17 +10890,7 @@
       "party": "D",
       "flip": false
      },
-     "insideElections": {
-      "label": "Likely",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Safe",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Likely",
       "party": "D",
       "flip": false
@@ -10910,13 +10900,23 @@
       "party": "D",
       "flip": false
      },
-     "silverBulletin": {
-      "label": "Solid",
+     "insideElections": {
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
-     "ddhq": {
+     "rcp": {
       "label": "Likely",
+      "party": "D",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
       "party": "D",
       "flip": false
      }
@@ -10931,7 +10931,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -10941,22 +10956,7 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
       "label": "Likely",
       "party": "R",
       "flip": false
@@ -10972,17 +10972,7 @@
       "party": null,
       "flip": false
      },
-     "insideElections": {
-      "label": "Tilt",
-      "party": "R",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Tossup",
       "party": null,
       "flip": false
@@ -10992,12 +10982,22 @@
       "party": null,
       "flip": false
      },
-     "silverBulletin": {
+     "insideElections": {
+      "label": "Tilt",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Tossup",
       "party": null,
       "flip": false
      },
-     "ddhq": {
+     "sabato": {
+      "label": "Tossup",
+      "party": null,
+      "flip": false
+     },
+     "silverBulletin": {
       "label": "Tossup",
       "party": null,
       "flip": false
@@ -11013,17 +11013,7 @@
       "party": "R",
       "flip": false
      },
-     "insideElections": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Likely",
-      "party": "R",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Lean",
       "party": "R",
       "flip": false
@@ -11033,13 +11023,23 @@
       "party": "R",
       "flip": false
      },
-     "silverBulletin": {
-      "label": "Safe",
+     "insideElections": {
+      "label": "Solid",
       "party": "R",
       "flip": false
      },
-     "ddhq": {
+     "rcp": {
       "label": "Lean",
+      "party": "R",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Likely",
       "party": "R",
       "flip": false
      }
@@ -11054,17 +11054,7 @@
       "party": "D",
       "flip": false
      },
-     "insideElections": {
-      "label": "Likely",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Safe",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Likely",
       "party": "D",
       "flip": false
@@ -11074,13 +11064,23 @@
       "party": "D",
       "flip": false
      },
-     "silverBulletin": {
-      "label": "Solid",
+     "insideElections": {
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
-     "ddhq": {
-      "label": "Likely",
+     "rcp": {
+      "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
       "party": "D",
       "flip": false
      }
@@ -11095,18 +11095,8 @@
       "party": "D",
       "flip": false
      },
-     "insideElections": {
+     "ddhq": {
       "label": "Likely",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Safe",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
-      "label": "Solid",
       "party": "D",
       "flip": false
      },
@@ -11115,13 +11105,23 @@
       "party": "D",
       "flip": false
      },
-     "silverBulletin": {
+     "insideElections": {
+      "label": "Likely",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
      },
-     "ddhq": {
-      "label": "Likely",
+     "sabato": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
       "party": "D",
       "flip": false
      }
@@ -11136,12 +11136,17 @@
       "party": null,
       "flip": false
      },
-     "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+     "ddhq": {
+      "label": "Lean",
+      "party": "D",
+      "flip": true
+     },
+     "foxNews": {
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
-     "sabato": {
+     "insideElections": {
       "label": "Tossup",
       "party": null,
       "flip": false
@@ -11151,20 +11156,15 @@
       "party": null,
       "flip": false
      },
-     "foxNews": {
+     "sabato": {
       "label": "Tossup",
       "party": null,
       "flip": false
      },
      "silverBulletin": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
-     },
-     "ddhq": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
      }
     }
    },
@@ -11177,7 +11177,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -11187,23 +11202,8 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      }
@@ -11218,32 +11218,32 @@
       "party": "D",
       "flip": false
      },
-     "insideElections": {
-      "label": "Lean",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Likely",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Likely",
       "party": "D",
       "flip": false
      },
      "foxNews": {
-      "label": "Likely",
+      "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "insideElections": {
+      "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
+      "label": "Lean",
+      "party": "D",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
       "label": "Likely",
       "party": "D",
       "flip": false
@@ -11259,7 +11259,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -11269,23 +11284,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Likely",
       "party": "D",
       "flip": false
      }
@@ -11300,7 +11300,22 @@
       "party": "D",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "D",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "D",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "D",
       "flip": false
@@ -11310,23 +11325,8 @@
       "party": "D",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "D",
       "flip": false
      }
@@ -11341,18 +11341,8 @@
       "party": "R",
       "flip": false
      },
-     "insideElections": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Safe",
-      "party": "R",
-      "flip": false
-     },
-     "rcp": {
-      "label": "Likely",
+     "ddhq": {
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -11361,13 +11351,23 @@
       "party": "R",
       "flip": false
      },
-     "silverBulletin": {
+     "insideElections": {
       "label": "Solid",
       "party": "R",
       "flip": false
      },
-     "ddhq": {
+     "rcp": {
       "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
       "party": "R",
       "flip": false
      }
@@ -11382,7 +11382,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -11392,23 +11407,8 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "R",
       "flip": false
      }
@@ -11423,7 +11423,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -11433,23 +11448,8 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Likely",
       "party": "R",
       "flip": false
      }
@@ -11460,7 +11460,17 @@
     "raceType": "governor",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
+      "party": "R",
+      "flip": false
+     },
+     "ddhq": {
+      "label": "Lean",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -11469,27 +11479,17 @@
       "party": "R",
       "flip": false
      },
-     "sabato": {
-      "label": "Lean",
-      "party": "R",
-      "flip": false
-     },
      "rcp": {
       "label": "Tossup",
       "party": null,
       "flip": false
      },
-     "foxNews": {
+     "sabato": {
       "label": "Lean",
       "party": "R",
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
       "label": "Lean",
       "party": "R",
       "flip": false
@@ -11505,13 +11505,18 @@
       "party": "R",
       "flip": false
      },
-     "insideElections": {
-      "label": "Solid",
+     "ddhq": {
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
-     "sabato": {
+     "foxNews": {
       "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "insideElections": {
+      "label": "Solid",
       "party": "R",
       "flip": false
      },
@@ -11520,18 +11525,13 @@
       "party": "R",
       "flip": false
      },
-     "foxNews": {
-      "label": "Solid",
+     "sabato": {
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
      "silverBulletin": {
       "label": "Likely",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "R",
       "flip": false
      }
@@ -11546,17 +11546,7 @@
       "party": null,
       "flip": false
      },
-     "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
-     },
-     "sabato": {
-      "label": "Lean",
-      "party": "D",
-      "flip": false
-     },
-     "rcp": {
+     "ddhq": {
       "label": "Lean",
       "party": "D",
       "flip": false
@@ -11566,12 +11556,22 @@
       "party": null,
       "flip": false
      },
-     "silverBulletin": {
+     "insideElections": {
+      "label": "Tossup",
+      "party": null,
+      "flip": false
+     },
+     "rcp": {
+      "label": "Tossup",
+      "party": null,
+      "flip": false
+     },
+     "sabato": {
       "label": "Lean",
       "party": "D",
       "flip": false
      },
-     "ddhq": {
+     "silverBulletin": {
       "label": "Lean",
       "party": "D",
       "flip": false
@@ -11587,7 +11587,22 @@
       "party": "R",
       "flip": false
      },
+     "ddhq": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
      "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
       "label": "Solid",
       "party": "R",
       "flip": false
@@ -11597,23 +11612,8 @@
       "party": "R",
       "flip": false
      },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
      "silverBulletin": {
       "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
       "party": "R",
       "flip": false
      }

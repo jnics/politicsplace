@@ -184,6 +184,8 @@ function scrapeRatingsTable(html, raceType) {
       // First non-empty, non-rating cell is the district/state label.
       const label = looksLikeRating(flat[0]) ? lastLabel : flat[0];
       if (!label) continue;
+      // The tables' own summary row ("Overall" seat tally) is not a race.
+      if (/^(overall|total)\b/i.test(decode(label).trim())) continue;
       lastLabel = label;
 
       const ratings = {};
