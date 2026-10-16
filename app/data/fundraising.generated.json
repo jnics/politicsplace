@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T22:23:23.017Z",
+  "generatedAt": "2026-10-16T15:44:12.616Z",
   "source": "FEC (api.open.fec.gov)",
   "requestsThisRun": 273,
   "totalRequestsLogged": 273,
@@ -22,7 +22,7 @@
   ],
   "requestLog": [
     {
-      "at": "2026-10-15T22:12:33.680Z",
+      "at": "2026-10-16T15:33:04.492Z",
       "label": "search: Jonathan Nez (AZ-02)",
       "path": "candidates/search/",
       "params": {
@@ -33,7 +33,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:36.578Z",
+      "at": "2026-10-16T15:33:07.738Z",
       "label": "totals: Jonathan Nez (Arizona 2nd District)",
       "path": "candidate/H4AZ02184/totals/",
       "params": {
@@ -41,7 +41,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:38.701Z",
+      "at": "2026-10-16T15:33:09.894Z",
       "label": "search: Eli Crane (AZ-02)",
       "path": "candidates/search/",
       "params": {
@@ -52,7 +52,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:40.870Z",
+      "at": "2026-10-16T15:33:12.086Z",
       "label": "totals: Eli Crane (Arizona 2nd District)",
       "path": "candidate/H2AZ01354/totals/",
       "params": {
@@ -60,7 +60,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:43.769Z",
+      "at": "2026-10-16T15:33:14.634Z",
       "label": "search: JoAnna Mendoza (AZ-06)",
       "path": "candidates/search/",
       "params": {
@@ -71,7 +71,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:45.923Z",
+      "at": "2026-10-16T15:33:16.824Z",
       "label": "totals: JoAnna Mendoza (Arizona 6th District)",
       "path": "candidate/H6AZ06099/totals/",
       "params": {
@@ -79,7 +79,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:48.060Z",
+      "at": "2026-10-16T15:33:18.988Z",
       "label": "search: Juan Ciscomani (AZ-06)",
       "path": "candidates/search/",
       "params": {
@@ -90,7 +90,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:50.230Z",
+      "at": "2026-10-16T15:33:21.235Z",
       "label": "totals: Juan Ciscomani (Arizona 6th District)",
       "path": "candidate/H2AZ02360/totals/",
       "params": {
@@ -98,7 +98,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:52.372Z",
+      "at": "2026-10-16T15:33:23.408Z",
       "label": "search: Dwayne Romero (CO-03)",
       "path": "candidates/search/",
       "params": {
@@ -109,7 +109,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:54.574Z",
+      "at": "2026-10-16T15:33:25.596Z",
       "label": "totals: Dwayne Romero (Colorado 3rd District)",
       "path": "candidate/H6CO03253/totals/",
       "params": {
@@ -117,7 +117,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:56.701Z",
+      "at": "2026-10-16T15:33:27.753Z",
       "label": "search: Jeff Hurd (CO-03)",
       "path": "candidates/search/",
       "params": {
@@ -128,7 +128,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:12:58.874Z",
+      "at": "2026-10-16T15:33:29.986Z",
       "label": "totals: Jeff Hurd (Colorado 3rd District)",
       "path": "candidate/H4CO03357/totals/",
       "params": {
@@ -136,7 +136,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:00.997Z",
+      "at": "2026-10-16T15:33:32.161Z",
       "label": "search: Jessica Killin (CO-05)",
       "path": "candidates/search/",
       "params": {
@@ -147,7 +147,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:03.173Z",
+      "at": "2026-10-16T15:33:34.366Z",
       "label": "totals: Jessica Killin (Colorado 5th District)",
       "path": "candidate/H6CO05324/totals/",
       "params": {
@@ -155,7 +155,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:05.300Z",
+      "at": "2026-10-16T15:33:36.515Z",
       "label": "search: Jeff Crank (CO-05)",
       "path": "candidates/search/",
       "params": {
@@ -166,7 +166,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:07.537Z",
+      "at": "2026-10-16T15:33:38.710Z",
       "label": "totals: Jeff Crank (Colorado 5th District)",
       "path": "candidate/H6CO05142/totals/",
       "params": {
@@ -174,7 +174,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:09.674Z",
+      "at": "2026-10-16T15:33:40.856Z",
       "label": "search: Christina Bohannan (IA-01)",
       "path": "candidates/search/",
       "params": {
@@ -185,7 +185,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:11.828Z",
+      "at": "2026-10-16T15:33:43.058Z",
       "label": "totals: Christina Bohannan (Iowa 1st District)",
       "path": "candidate/H2IA02111/totals/",
       "params": {
@@ -193,7 +193,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:13.952Z",
+      "at": "2026-10-16T15:33:45.226Z",
       "label": "search: Mariannette Miller-Meeks (IA-01)",
       "path": "candidates/search/",
       "params": {
@@ -204,7 +204,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:16.645Z",
+      "at": "2026-10-16T15:33:47.414Z",
       "label": "totals: Mariannette Miller-Meeks (Iowa 1st District)",
       "path": "candidate/H8IA02043/totals/",
       "params": {
@@ -212,7 +212,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:18.766Z",
+      "at": "2026-10-16T15:33:49.572Z",
       "label": "search: Lindsay James (IA-02)",
       "path": "candidates/search/",
       "params": {
@@ -223,7 +223,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:20.940Z",
+      "at": "2026-10-16T15:33:51.748Z",
       "label": "totals: Lindsay James (Iowa 2nd District)",
       "path": "candidate/H6IA02211/totals/",
       "params": {
@@ -231,7 +231,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:23.075Z",
+      "at": "2026-10-16T15:33:53.909Z",
       "label": "search: Joe Mitchell (IA-02)",
       "path": "candidates/search/",
       "params": {
@@ -242,7 +242,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:25.233Z",
+      "at": "2026-10-16T15:33:56.225Z",
       "label": "totals: Joe Mitchell (Iowa 2nd District)",
       "path": "candidate/H6IA02237/totals/",
       "params": {
@@ -250,7 +250,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:27.360Z",
+      "at": "2026-10-16T15:33:58.401Z",
       "label": "search: Sarah Trone Garriott (IA-03)",
       "path": "candidates/search/",
       "params": {
@@ -261,7 +261,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:29.521Z",
+      "at": "2026-10-16T15:34:00.589Z",
       "label": "totals: Sarah Trone Garriott (Iowa 3rd District)",
       "path": "candidate/H6IA03268/totals/",
       "params": {
@@ -269,7 +269,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:31.660Z",
+      "at": "2026-10-16T15:34:02.759Z",
       "label": "search: Zach Nunn (IA-03)",
       "path": "candidates/search/",
       "params": {
@@ -280,7 +280,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:33.801Z",
+      "at": "2026-10-16T15:34:04.960Z",
       "label": "totals: Zach Nunn (Iowa 3rd District)",
       "path": "candidate/H2IA03119/totals/",
       "params": {
@@ -288,7 +288,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:35.922Z",
+      "at": "2026-10-16T15:34:07.195Z",
       "label": "search: J.D. Ford (IN-05)",
       "path": "candidates/search/",
       "params": {
@@ -299,7 +299,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:38.089Z",
+      "at": "2026-10-16T15:34:11.161Z",
       "label": "totals: J.D. Ford (Indiana 5th District)",
       "path": "candidate/H6IN05307/totals/",
       "params": {
@@ -307,7 +307,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:40.220Z",
+      "at": "2026-10-16T15:34:13.323Z",
       "label": "search: Victoria Spartz (IN-05)",
       "path": "candidates/search/",
       "params": {
@@ -318,7 +318,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:42.377Z",
+      "at": "2026-10-16T15:34:15.497Z",
       "label": "totals: Victoria Spartz (Indiana 5th District)",
       "path": "candidate/H0IN05326/totals/",
       "params": {
@@ -326,7 +326,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:44.532Z",
+      "at": "2026-10-16T15:34:22.394Z",
       "label": "search: Matt Dunlap (ME-02)",
       "path": "candidates/search/",
       "params": {
@@ -337,7 +337,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:46.689Z",
+      "at": "2026-10-16T15:34:24.589Z",
       "label": "totals: Matt Dunlap (Maine 2nd District)",
       "path": "candidate/H6ME02171/totals/",
       "params": {
@@ -345,7 +345,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:49.350Z",
+      "at": "2026-10-16T15:34:26.734Z",
       "label": "search: Paul LePage (ME-02)",
       "path": "candidates/search/",
       "params": {
@@ -356,7 +356,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:51.528Z",
+      "at": "2026-10-16T15:34:28.951Z",
       "label": "totals: Paul LePage (Maine 2nd District)",
       "path": "candidate/H6ME02148/totals/",
       "params": {
@@ -364,7 +364,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:53.676Z",
+      "at": "2026-10-16T15:34:31.461Z",
       "label": "search: Sean McCann (MI-04)",
       "path": "candidates/search/",
       "params": {
@@ -375,7 +375,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:55.842Z",
+      "at": "2026-10-16T15:34:33.648Z",
       "label": "totals: Sean McCann (Michigan 4th District)",
       "path": "candidate/H6MI04204/totals/",
       "params": {
@@ -383,7 +383,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:13:57.980Z",
+      "at": "2026-10-16T15:34:35.802Z",
       "label": "search: Bill Huizenga (MI-04)",
       "path": "candidates/search/",
       "params": {
@@ -394,7 +394,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:00.086Z",
+      "at": "2026-10-16T15:34:37.975Z",
       "label": "search: William Lawrence (MI-07)",
       "path": "candidates/search/",
       "params": {
@@ -405,7 +405,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:02.259Z",
+      "at": "2026-10-16T15:34:40.158Z",
       "label": "totals: William Lawrence (Michigan 7th District)",
       "path": "candidate/H6MI07298/totals/",
       "params": {
@@ -413,7 +413,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:04.400Z",
+      "at": "2026-10-16T15:34:42.321Z",
       "label": "search: Tom Barrett (MI-07)",
       "path": "candidates/search/",
       "params": {
@@ -424,7 +424,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:06.547Z",
+      "at": "2026-10-16T15:34:44.482Z",
       "label": "search: Christina Hines (MI-10)",
       "path": "candidates/search/",
       "params": {
@@ -435,7 +435,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:08.710Z",
+      "at": "2026-10-16T15:34:46.696Z",
       "label": "totals: Christina Hines (Michigan 10th District)",
       "path": "candidate/H6MI10276/totals/",
       "params": {
@@ -443,7 +443,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:10.836Z",
+      "at": "2026-10-16T15:34:48.864Z",
       "label": "search: Mike Bouchard Jr. (MI-10)",
       "path": "candidates/search/",
       "params": {
@@ -454,7 +454,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:12.970Z",
+      "at": "2026-10-16T15:34:52.065Z",
       "label": "search: Jake Johnson (MN-01)",
       "path": "candidates/search/",
       "params": {
@@ -465,7 +465,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:15.113Z",
+      "at": "2026-10-16T15:34:54.266Z",
       "label": "search: Brad Finstad (MN-01)",
       "path": "candidates/search/",
       "params": {
@@ -476,7 +476,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:17.291Z",
+      "at": "2026-10-16T15:34:56.448Z",
       "label": "totals: Brad Finstad (Minnesota 1st District)",
       "path": "candidate/H2MN01223/totals/",
       "params": {
@@ -484,7 +484,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:19.432Z",
+      "at": "2026-10-16T15:34:59.304Z",
       "label": "search: Matt Little (MN-02)",
       "path": "candidates/search/",
       "params": {
@@ -495,7 +495,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:21.585Z",
+      "at": "2026-10-16T15:35:01.505Z",
       "label": "totals: Matt Little (Minnesota 2nd District)",
       "path": "candidate/H6MN02230/totals/",
       "params": {
@@ -503,7 +503,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:23.711Z",
+      "at": "2026-10-16T15:35:03.655Z",
       "label": "search: Eric Pratt (MN-02)",
       "path": "candidates/search/",
       "params": {
@@ -514,7 +514,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:25.871Z",
+      "at": "2026-10-16T15:35:05.844Z",
       "label": "totals: Eric Pratt (Minnesota 2nd District)",
       "path": "candidate/H6MN02263/totals/",
       "params": {
@@ -522,7 +522,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:28.000Z",
+      "at": "2026-10-16T15:35:07.999Z",
       "label": "search: Sam Forstag (MT-01)",
       "path": "candidates/search/",
       "params": {
@@ -533,7 +533,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:30.155Z",
+      "at": "2026-10-16T15:35:10.266Z",
       "label": "totals: Sam Forstag (Montana 1st District)",
       "path": "candidate/H6MT01137/totals/",
       "params": {
@@ -541,7 +541,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:32.279Z",
+      "at": "2026-10-16T15:35:12.425Z",
       "label": "search: Aaron Flint (MT-01)",
       "path": "candidates/search/",
       "params": {
@@ -552,7 +552,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:34.512Z",
+      "at": "2026-10-16T15:35:14.648Z",
       "label": "totals: Aaron Flint (Montana 1st District)",
       "path": "candidate/H6MT01152/totals/",
       "params": {
@@ -560,7 +560,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:36.661Z",
+      "at": "2026-10-16T15:35:16.821Z",
       "label": "search: Don Davis (NC-01)",
       "path": "candidates/search/",
       "params": {
@@ -571,7 +571,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:38.823Z",
+      "at": "2026-10-16T15:35:19.022Z",
       "label": "totals: Don Davis (North Carolina 1st District)",
       "path": "candidate/H2NC02287/totals/",
       "params": {
@@ -579,7 +579,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:41.105Z",
+      "at": "2026-10-16T15:35:21.189Z",
       "label": "search: Laurie Buckhout (NC-01)",
       "path": "candidates/search/",
       "params": {
@@ -590,7 +590,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:43.257Z",
+      "at": "2026-10-16T15:35:23.391Z",
       "label": "totals: Laurie Buckhout (North Carolina 1st District)",
       "path": "candidate/H4NC01137/totals/",
       "params": {
@@ -598,7 +598,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:45.398Z",
+      "at": "2026-10-16T15:35:25.558Z",
       "label": "search: Raymond Smith Jr. (NC-03)",
       "path": "candidates/search/",
       "params": {
@@ -609,7 +609,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:47.556Z",
+      "at": "2026-10-16T15:35:27.734Z",
       "label": "totals: Raymond Smith Jr. (North Carolina 3rd District)",
       "path": "candidate/H6NC03229/totals/",
       "params": {
@@ -617,7 +617,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:49.709Z",
+      "at": "2026-10-16T15:35:29.918Z",
       "label": "search: Greg Murphy (NC-03)",
       "path": "candidates/search/",
       "params": {
@@ -628,7 +628,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:51.865Z",
+      "at": "2026-10-16T15:35:32.086Z",
       "label": "totals: Greg Murphy (North Carolina 3rd District)",
       "path": "candidate/H0NC03172/totals/",
       "params": {
@@ -636,7 +636,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:53.983Z",
+      "at": "2026-10-16T15:35:34.238Z",
       "label": "search: Kimberly Hardy (NC-07)",
       "path": "candidates/search/",
       "params": {
@@ -647,7 +647,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:56.152Z",
+      "at": "2026-10-16T15:35:36.426Z",
       "label": "totals: Kimberly Hardy (North Carolina 7th District)",
       "path": "candidate/H6NC07196/totals/",
       "params": {
@@ -655,7 +655,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:14:58.258Z",
+      "at": "2026-10-16T15:35:38.587Z",
       "label": "search: David Rouzer (NC-07)",
       "path": "candidates/search/",
       "params": {
@@ -666,7 +666,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:00.423Z",
+      "at": "2026-10-16T15:35:40.862Z",
       "label": "totals: David Rouzer (North Carolina 7th District)",
       "path": "candidate/H2NC07096/totals/",
       "params": {
@@ -674,7 +674,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:02.578Z",
+      "at": "2026-10-16T15:35:43.026Z",
       "label": "search: Ashley Bell (NC-10)",
       "path": "candidates/search/",
       "params": {
@@ -685,7 +685,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:04.759Z",
+      "at": "2026-10-16T15:35:45.227Z",
       "label": "totals: Ashley Bell (North Carolina 10th District)",
       "path": "candidate/H6NC10174/totals/",
       "params": {
@@ -693,7 +693,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:06.911Z",
+      "at": "2026-10-16T15:35:47.403Z",
       "label": "search: Pat Harrigan (NC-10)",
       "path": "candidates/search/",
       "params": {
@@ -704,7 +704,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:09.072Z",
+      "at": "2026-10-16T15:35:49.577Z",
       "label": "totals: Pat Harrigan (North Carolina 10th District)",
       "path": "candidate/H2NC13243/totals/",
       "params": {
@@ -712,7 +712,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:11.206Z",
+      "at": "2026-10-16T15:35:51.749Z",
       "label": "search: Jamie Ager (NC-11)",
       "path": "candidates/search/",
       "params": {
@@ -723,7 +723,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:13.367Z",
+      "at": "2026-10-16T15:35:57.973Z",
       "label": "totals: Jamie Ager (North Carolina 11th District)",
       "path": "candidate/H6NC11248/totals/",
       "params": {
@@ -731,7 +731,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:15.507Z",
+      "at": "2026-10-16T15:36:00.118Z",
       "label": "search: Chuck Edwards (NC-11)",
       "path": "candidates/search/",
       "params": {
@@ -742,7 +742,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:17.666Z",
+      "at": "2026-10-16T15:36:02.288Z",
       "label": "totals: Chuck Edwards (North Carolina 11th District)",
       "path": "candidate/H2NC14050/totals/",
       "params": {
@@ -750,7 +750,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:19.786Z",
+      "at": "2026-10-16T15:36:04.557Z",
       "label": "search: LaKesha Womack (NC-14)",
       "path": "candidates/search/",
       "params": {
@@ -761,7 +761,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:21.944Z",
+      "at": "2026-10-16T15:36:06.732Z",
       "label": "totals: LaKesha Womack (North Carolina 14th District)",
       "path": "candidate/H6NC14069/totals/",
       "params": {
@@ -769,7 +769,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:24.072Z",
+      "at": "2026-10-16T15:36:08.932Z",
       "label": "search: Tim Moore (NC-14)",
       "path": "candidates/search/",
       "params": {
@@ -780,7 +780,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:26.230Z",
+      "at": "2026-10-16T15:36:11.124Z",
       "label": "totals: Tim Moore (North Carolina 14th District)",
       "path": "candidate/H4NC14015/totals/",
       "params": {
@@ -788,7 +788,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:28.377Z",
+      "at": "2026-10-16T15:36:13.269Z",
       "label": "search: Chris Backemeyer (NE-01)",
       "path": "candidates/search/",
       "params": {
@@ -799,7 +799,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:30.562Z",
+      "at": "2026-10-16T15:36:15.446Z",
       "label": "totals: Chris Backemeyer (Nebraska 1st District)",
       "path": "candidate/H6NE01143/totals/",
       "params": {
@@ -807,7 +807,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:32.701Z",
+      "at": "2026-10-16T15:36:17.610Z",
       "label": "search: Mike Flood (NE-01)",
       "path": "candidates/search/",
       "params": {
@@ -818,7 +818,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:40.181Z",
+      "at": "2026-10-16T15:36:19.786Z",
       "label": "totals: Mike Flood (Nebraska 1st District)",
       "path": "candidate/H2NE01118/totals/",
       "params": {
@@ -826,7 +826,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:42.305Z",
+      "at": "2026-10-16T15:36:21.960Z",
       "label": "search: Maggie Goodlander (NH-02)",
       "path": "candidates/search/",
       "params": {
@@ -837,7 +837,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:44.437Z",
+      "at": "2026-10-16T15:36:24.139Z",
       "label": "totals: Maggie Goodlander (New Hampshire 2nd District)",
       "path": "candidate/H4NH02399/totals/",
       "params": {
@@ -845,7 +845,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:46.575Z",
+      "at": "2026-10-16T15:36:26.284Z",
       "label": "search: Lily Tang Williams (NH-02)",
       "path": "candidates/search/",
       "params": {
@@ -856,7 +856,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:48.727Z",
+      "at": "2026-10-16T15:36:28.474Z",
       "label": "totals: Lily Tang Williams (New Hampshire 2nd District)",
       "path": "candidate/H2NH02260/totals/",
       "params": {
@@ -864,7 +864,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:50.884Z",
+      "at": "2026-10-16T15:36:30.646Z",
       "label": "search: Gabe Vasquez (NM-02)",
       "path": "candidates/search/",
       "params": {
@@ -875,7 +875,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:53.465Z",
+      "at": "2026-10-16T15:36:32.804Z",
       "label": "search: Greg Cunningham (NM-02)",
       "path": "candidates/search/",
       "params": {
@@ -886,7 +886,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:55.636Z",
+      "at": "2026-10-16T15:36:35.009Z",
       "label": "totals: Greg Cunningham (New Mexico 2nd District)",
       "path": "candidate/H6NM02127/totals/",
       "params": {
@@ -894,7 +894,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:57.782Z",
+      "at": "2026-10-16T15:36:37.183Z",
       "label": "search: Teresa Benitez-Thompson (NV-02)",
       "path": "candidates/search/",
       "params": {
@@ -905,7 +905,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:15:59.932Z",
+      "at": "2026-10-16T15:36:39.389Z",
       "label": "totals: Teresa Benitez-Thompson (Nevada 2nd District)",
       "path": "candidate/H6NV02362/totals/",
       "params": {
@@ -913,7 +913,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:02.059Z",
+      "at": "2026-10-16T15:36:41.565Z",
       "label": "search: David Flippo (NV-02)",
       "path": "candidates/search/",
       "params": {
@@ -924,7 +924,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:04.219Z",
+      "at": "2026-10-16T15:36:43.769Z",
       "label": "totals: David Flippo (Nevada 2nd District)",
       "path": "candidate/H4NV04108/totals/",
       "params": {
@@ -932,7 +932,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:06.341Z",
+      "at": "2026-10-16T15:36:45.916Z",
       "label": "search: Greg Landsman (OH-01)",
       "path": "candidates/search/",
       "params": {
@@ -943,7 +943,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:08.513Z",
+      "at": "2026-10-16T15:36:48.108Z",
       "label": "totals: Greg Landsman (Ohio 1st District)",
       "path": "candidate/H2OH01194/totals/",
       "params": {
@@ -951,7 +951,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:10.649Z",
+      "at": "2026-10-16T15:36:50.280Z",
       "label": "search: Eric Conroy (OH-01)",
       "path": "candidates/search/",
       "params": {
@@ -962,7 +962,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:12.818Z",
+      "at": "2026-10-16T15:36:52.473Z",
       "label": "totals: Eric Conroy (Ohio 1st District)",
       "path": "candidate/H6OH01138/totals/",
       "params": {
@@ -970,7 +970,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:14.956Z",
+      "at": "2026-10-16T15:36:54.631Z",
       "label": "search: Brian Poindexter (OH-07)",
       "path": "candidates/search/",
       "params": {
@@ -981,7 +981,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:17.212Z",
+      "at": "2026-10-16T15:36:56.994Z",
       "label": "totals: Brian Poindexter (Ohio 7th District)",
       "path": "candidate/H6OH07168/totals/",
       "params": {
@@ -989,7 +989,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:19.355Z",
+      "at": "2026-10-16T15:36:59.141Z",
       "label": "search: Max Miller (OH-07)",
       "path": "candidates/search/",
       "params": {
@@ -1000,7 +1000,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:21.528Z",
+      "at": "2026-10-16T15:37:01.350Z",
       "label": "totals: Max Miller (Ohio 7th District)",
       "path": "candidate/H2OH16051/totals/",
       "params": {
@@ -1008,7 +1008,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:23.657Z",
+      "at": "2026-10-16T15:37:03.512Z",
       "label": "search: Marcy Kaptur (OH-09)",
       "path": "candidates/search/",
       "params": {
@@ -1019,7 +1019,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:25.793Z",
+      "at": "2026-10-16T15:37:05.702Z",
       "label": "totals: Marcy Kaptur (Ohio 9th District)",
       "path": "candidate/H2OH09031/totals/",
       "params": {
@@ -1027,7 +1027,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:27.945Z",
+      "at": "2026-10-16T15:37:07.864Z",
       "label": "search: Derek Merrin (OH-09)",
       "path": "candidates/search/",
       "params": {
@@ -1038,7 +1038,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:30.087Z",
+      "at": "2026-10-16T15:37:10.068Z",
       "label": "totals: Derek Merrin (Ohio 9th District)",
       "path": "candidate/H4OH09169/totals/",
       "params": {
@@ -1046,7 +1046,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:32.229Z",
+      "at": "2026-10-16T15:37:12.212Z",
       "label": "search: Kristina Knickerbocker (OH-10)",
       "path": "candidates/search/",
       "params": {
@@ -1057,7 +1057,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:34.388Z",
+      "at": "2026-10-16T15:37:14.886Z",
       "label": "totals: Kristina Knickerbocker (Ohio 10th District)",
       "path": "candidate/H6OH10121/totals/",
       "params": {
@@ -1065,7 +1065,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:36.532Z",
+      "at": "2026-10-16T15:37:17.064Z",
       "label": "search: Mike Turner (OH-10)",
       "path": "candidates/search/",
       "params": {
@@ -1076,7 +1076,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:38.670Z",
+      "at": "2026-10-16T15:37:19.287Z",
       "label": "search: Don Leonard (OH-15)",
       "path": "candidates/search/",
       "params": {
@@ -1087,7 +1087,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:40.820Z",
+      "at": "2026-10-16T15:37:21.933Z",
       "label": "totals: Don Leonard (Ohio 15th District)",
       "path": "candidate/H6OH15112/totals/",
       "params": {
@@ -1095,7 +1095,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:42.959Z",
+      "at": "2026-10-16T15:37:24.104Z",
       "label": "search: Mike Carey (OH-15)",
       "path": "candidates/search/",
       "params": {
@@ -1106,7 +1106,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:45.097Z",
+      "at": "2026-10-16T15:37:26.304Z",
       "label": "totals: Mike Carey (Ohio 15th District)",
       "path": "candidate/H2OH15228/totals/",
       "params": {
@@ -1114,7 +1114,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:47.228Z",
+      "at": "2026-10-16T15:37:28.461Z",
       "label": "search: Bob Harvie (PA-01)",
       "path": "candidates/search/",
       "params": {
@@ -1125,7 +1125,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:49.353Z",
+      "at": "2026-10-16T15:37:30.633Z",
       "label": "search: Brian Fitzpatrick (PA-01)",
       "path": "candidates/search/",
       "params": {
@@ -1136,7 +1136,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:51.511Z",
+      "at": "2026-10-16T15:37:32.806Z",
       "label": "totals: Brian Fitzpatrick (Pennsylvania 1st District)",
       "path": "candidate/H6PA08277/totals/",
       "params": {
@@ -1144,7 +1144,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:53.609Z",
+      "at": "2026-10-16T15:37:34.982Z",
       "label": "search: Bob Brooks (PA-07)",
       "path": "candidates/search/",
       "params": {
@@ -1155,7 +1155,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:55.766Z",
+      "at": "2026-10-16T15:37:37.184Z",
       "label": "totals: Bob Brooks (Pennsylvania 7th District)",
       "path": "candidate/H6PA07188/totals/",
       "params": {
@@ -1163,7 +1163,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:16:57.985Z",
+      "at": "2026-10-16T15:37:39.354Z",
       "label": "search: Ryan Mackenzie (PA-07)",
       "path": "candidates/search/",
       "params": {
@@ -1174,7 +1174,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:00.158Z",
+      "at": "2026-10-16T15:37:41.545Z",
       "label": "totals: Ryan Mackenzie (Pennsylvania 7th District)",
       "path": "candidate/H8PA15195/totals/",
       "params": {
@@ -1182,7 +1182,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:02.268Z",
+      "at": "2026-10-16T15:37:43.703Z",
       "label": "search: Paige Cognetti (PA-08)",
       "path": "candidates/search/",
       "params": {
@@ -1193,7 +1193,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:04.736Z",
+      "at": "2026-10-16T15:37:45.895Z",
       "label": "totals: Paige Cognetti (Pennsylvania 8th District)",
       "path": "candidate/H6PA08293/totals/",
       "params": {
@@ -1201,7 +1201,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:06.870Z",
+      "at": "2026-10-16T15:37:48.083Z",
       "label": "search: Rob Bresnahan (PA-08)",
       "path": "candidates/search/",
       "params": {
@@ -1212,7 +1212,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:09.027Z",
+      "at": "2026-10-16T15:37:50.253Z",
       "label": "totals: Rob Bresnahan (Pennsylvania 8th District)",
       "path": "candidate/H4PA08124/totals/",
       "params": {
@@ -1220,7 +1220,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:11.161Z",
+      "at": "2026-10-16T15:37:52.463Z",
       "label": "search: Janelle Stelson (PA-10)",
       "path": "candidates/search/",
       "params": {
@@ -1231,7 +1231,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:13.315Z",
+      "at": "2026-10-16T15:37:54.654Z",
       "label": "totals: Janelle Stelson (Pennsylvania 10th District)",
       "path": "candidate/H4PA10104/totals/",
       "params": {
@@ -1239,7 +1239,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:15.502Z",
+      "at": "2026-10-16T15:37:56.829Z",
       "label": "search: Scott Perry (PA-10)",
       "path": "candidates/search/",
       "params": {
@@ -1250,7 +1250,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:17.658Z",
+      "at": "2026-10-16T15:37:59.035Z",
       "label": "totals: Scott Perry (Pennsylvania 10th District)",
       "path": "candidate/H2PA04135/totals/",
       "params": {
@@ -1258,7 +1258,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:19.808Z",
+      "at": "2026-10-16T15:38:01.200Z",
       "label": "search: Nancy Lacore (SC-01)",
       "path": "candidates/search/",
       "params": {
@@ -1269,7 +1269,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:22.153Z",
+      "at": "2026-10-16T15:38:03.421Z",
       "label": "totals: Nancy Lacore (South Carolina 1st District)",
       "path": "candidate/H6SC01359/totals/",
       "params": {
@@ -1277,7 +1277,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:25.239Z",
+      "at": "2026-10-16T15:38:05.592Z",
       "label": "search: Jenny Costa Honeycutt (SC-01)",
       "path": "candidates/search/",
       "params": {
@@ -1288,7 +1288,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:27.413Z",
+      "at": "2026-10-16T15:38:07.799Z",
       "label": "totals: Jenny Costa Honeycutt (South Carolina 1st District)",
       "path": "candidate/H6SC01334/totals/",
       "params": {
@@ -1296,7 +1296,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:29.527Z",
+      "at": "2026-10-16T15:38:09.988Z",
       "label": "search: John Vincent (SC-07)",
       "path": "candidates/search/",
       "params": {
@@ -1307,7 +1307,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:31.692Z",
+      "at": "2026-10-16T15:38:12.153Z",
       "label": "totals: John Vincent (South Carolina 7th District)",
       "path": "candidate/H6SC07034/totals/",
       "params": {
@@ -1315,7 +1315,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:33.849Z",
+      "at": "2026-10-16T15:38:14.324Z",
       "label": "search: Russell Fry (SC-07)",
       "path": "candidates/search/",
       "params": {
@@ -1326,7 +1326,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:36.012Z",
+      "at": "2026-10-16T15:38:16.527Z",
       "label": "totals: Russell Fry (South Carolina 7th District)",
       "path": "candidate/H2SC07280/totals/",
       "params": {
@@ -1334,7 +1334,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:49.379Z",
+      "at": "2026-10-16T15:38:18.702Z",
       "label": "search: Bobby Pulido (TX-15)",
       "path": "candidates/search/",
       "params": {
@@ -1345,7 +1345,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:51.558Z",
+      "at": "2026-10-16T15:38:20.922Z",
       "label": "totals: Bobby Pulido (Texas 15th District)",
       "path": "candidate/H6TX15246/totals/",
       "params": {
@@ -1353,7 +1353,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:53.680Z",
+      "at": "2026-10-16T15:38:23.096Z",
       "label": "search: Monica De La Cruz (TX-15)",
       "path": "candidates/search/",
       "params": {
@@ -1364,7 +1364,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:55.875Z",
+      "at": "2026-10-16T15:38:25.318Z",
       "label": "totals: Monica De La Cruz (Texas 15th District)",
       "path": "candidate/H0TX15124/totals/",
       "params": {
@@ -1372,7 +1372,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:17:57.996Z",
+      "at": "2026-10-16T15:38:27.488Z",
       "label": "search: Katy Padilla Stout (TX-23)",
       "path": "candidates/search/",
       "params": {
@@ -1383,7 +1383,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:00.853Z",
+      "at": "2026-10-16T15:38:29.662Z",
       "label": "totals: Katy Padilla Stout (Texas 23th District)",
       "path": "candidate/H6TX23273/totals/",
       "params": {
@@ -1391,7 +1391,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:02.995Z",
+      "at": "2026-10-16T15:38:32.151Z",
       "label": "search: Brandon Herrera (TX-23)",
       "path": "candidates/search/",
       "params": {
@@ -1402,7 +1402,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:05.174Z",
+      "at": "2026-10-16T15:38:34.344Z",
       "label": "totals: Brandon Herrera (Texas 23th District)",
       "path": "candidate/H4TX23120/totals/",
       "params": {
@@ -1410,7 +1410,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:07.303Z",
+      "at": "2026-10-16T15:38:36.518Z",
       "label": "search: Henry Cuellar (TX-28)",
       "path": "candidates/search/",
       "params": {
@@ -1421,7 +1421,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:09.477Z",
+      "at": "2026-10-16T15:38:38.723Z",
       "label": "totals: Henry Cuellar (Texas 28th District)",
       "path": "candidate/H2TX23082/totals/",
       "params": {
@@ -1429,7 +1429,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:11.587Z",
+      "at": "2026-10-16T15:38:40.870Z",
       "label": "search: Tano Tijerina (TX-28)",
       "path": "candidates/search/",
       "params": {
@@ -1440,7 +1440,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:13.735Z",
+      "at": "2026-10-16T15:38:43.070Z",
       "label": "totals: Tano Tijerina (Texas 28th District)",
       "path": "candidate/H6TX28124/totals/",
       "params": {
@@ -1448,7 +1448,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:15.879Z",
+      "at": "2026-10-16T15:38:45.239Z",
       "label": "search: Vicente Gonzalez (TX-34)",
       "path": "candidates/search/",
       "params": {
@@ -1459,7 +1459,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:18.034Z",
+      "at": "2026-10-16T15:38:47.659Z",
       "label": "totals: Vicente Gonzalez (Texas 34th District)",
       "path": "candidate/H6TX15162/totals/",
       "params": {
@@ -1467,7 +1467,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:20.155Z",
+      "at": "2026-10-16T15:38:49.883Z",
       "label": "search: Eric Flores (TX-34)",
       "path": "candidates/search/",
       "params": {
@@ -1478,7 +1478,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:22.320Z",
+      "at": "2026-10-16T15:38:52.090Z",
       "label": "totals: Eric Flores (Texas 34th District)",
       "path": "candidate/H6TX34080/totals/",
       "params": {
@@ -1486,7 +1486,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:24.448Z",
+      "at": "2026-10-16T15:38:54.254Z",
       "label": "search: Johnny Garcia (TX-35)",
       "path": "candidates/search/",
       "params": {
@@ -1497,7 +1497,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:26.635Z",
+      "at": "2026-10-16T15:38:56.479Z",
       "label": "totals: Johnny Garcia (Texas 35th District)",
       "path": "candidate/H6TX35095/totals/",
       "params": {
@@ -1505,7 +1505,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:28.797Z",
+      "at": "2026-10-16T15:38:58.625Z",
       "label": "search: Carlos De La Cruz (TX-35)",
       "path": "candidates/search/",
       "params": {
@@ -1516,7 +1516,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:30.950Z",
+      "at": "2026-10-16T15:39:00.806Z",
       "label": "totals: Carlos De La Cruz (Texas 35th District)",
       "path": "candidate/H6TX35087/totals/",
       "params": {
@@ -1524,7 +1524,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:33.092Z",
+      "at": "2026-10-16T15:39:03.024Z",
       "label": "search: Shannon Taylor (VA-01)",
       "path": "candidates/search/",
       "params": {
@@ -1535,7 +1535,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:35.244Z",
+      "at": "2026-10-16T15:39:05.263Z",
       "label": "totals: Shannon Taylor (Virginia 1st District)",
       "path": "candidate/H6VA01299/totals/",
       "params": {
@@ -1543,7 +1543,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:37.373Z",
+      "at": "2026-10-16T15:39:09.461Z",
       "label": "search: Rob Wittman (VA-01)",
       "path": "candidates/search/",
       "params": {
@@ -1554,7 +1554,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:39.508Z",
+      "at": "2026-10-16T15:39:11.635Z",
       "label": "totals: Rob Wittman (Virginia 1st District)",
       "path": "candidate/H8VA01147/totals/",
       "params": {
@@ -1562,7 +1562,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:41.639Z",
+      "at": "2026-10-16T15:39:13.796Z",
       "label": "search: Elaine Luria (VA-02)",
       "path": "candidates/search/",
       "params": {
@@ -1573,7 +1573,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:43.876Z",
+      "at": "2026-10-16T15:39:15.984Z",
       "label": "totals: Elaine Luria (Virginia 2nd District)",
       "path": "candidate/H6VA02198/totals/",
       "params": {
@@ -1581,7 +1581,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:46.000Z",
+      "at": "2026-10-16T15:39:18.172Z",
       "label": "search: Jen Kiggans (VA-02)",
       "path": "candidates/search/",
       "params": {
@@ -1592,7 +1592,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:48.177Z",
+      "at": "2026-10-16T15:39:20.376Z",
       "label": "totals: Jen Kiggans (Virginia 2nd District)",
       "path": "candidate/H2VA02064/totals/",
       "params": {
@@ -1600,7 +1600,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:50.305Z",
+      "at": "2026-10-16T15:39:22.562Z",
       "label": "search: Tom Perriello (VA-05)",
       "path": "candidates/search/",
       "params": {
@@ -1611,7 +1611,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:52.447Z",
+      "at": "2026-10-16T15:39:24.714Z",
       "label": "search: John McGuire (VA-05)",
       "path": "candidates/search/",
       "params": {
@@ -1622,7 +1622,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:54.600Z",
+      "at": "2026-10-16T15:39:26.899Z",
       "label": "totals: John McGuire (Virginia 5th District)",
       "path": "candidate/H0VA07133/totals/",
       "params": {
@@ -1630,7 +1630,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:56.743Z",
+      "at": "2026-10-16T15:39:29.052Z",
       "label": "search: Marie Gluesenkamp Perez (WA-03)",
       "path": "candidates/search/",
       "params": {
@@ -1641,7 +1641,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:18:58.932Z",
+      "at": "2026-10-16T15:39:31.257Z",
       "label": "totals: Marie Gluesenkamp Perez (Washington 3rd District)",
       "path": "candidate/H2WA03217/totals/",
       "params": {
@@ -1649,7 +1649,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:01.045Z",
+      "at": "2026-10-16T15:39:33.420Z",
       "label": "search: John Braun (WA-03)",
       "path": "candidates/search/",
       "params": {
@@ -1660,7 +1660,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:03.192Z",
+      "at": "2026-10-16T15:39:35.609Z",
       "label": "totals: John Braun (Washington 3rd District)",
       "path": "candidate/H6WA03275/totals/",
       "params": {
@@ -1668,7 +1668,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:09.495Z",
+      "at": "2026-10-16T15:39:37.788Z",
       "label": "search: Carmela Conroy (WA-05)",
       "path": "candidates/search/",
       "params": {
@@ -1679,7 +1679,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:11.921Z",
+      "at": "2026-10-16T15:39:39.973Z",
       "label": "totals: Carmela Conroy (Washington 5th District)",
       "path": "candidate/H4WA05168/totals/",
       "params": {
@@ -1687,7 +1687,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:14.069Z",
+      "at": "2026-10-16T15:39:42.145Z",
       "label": "search: Michael Baumgartner (WA-05)",
       "path": "candidates/search/",
       "params": {
@@ -1698,7 +1698,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:16.248Z",
+      "at": "2026-10-16T15:39:44.365Z",
       "label": "totals: Michael Baumgartner (Washington 5th District)",
       "path": "candidate/H4WA05234/totals/",
       "params": {
@@ -1706,7 +1706,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:18.390Z",
+      "at": "2026-10-16T15:39:46.524Z",
       "label": "search: Mitchell Berman (WI-01)",
       "path": "candidates/search/",
       "params": {
@@ -1717,7 +1717,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:20.570Z",
+      "at": "2026-10-16T15:39:48.717Z",
       "label": "totals: Mitchell Berman (Wisconsin 1st District)",
       "path": "candidate/H6WI01283/totals/",
       "params": {
@@ -1725,7 +1725,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:24.634Z",
+      "at": "2026-10-16T15:39:50.870Z",
       "label": "search: Bryan Steil (WI-01)",
       "path": "candidates/search/",
       "params": {
@@ -1736,7 +1736,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:26.780Z",
+      "at": "2026-10-16T15:39:53.047Z",
       "label": "totals: Bryan Steil (Wisconsin 1st District)",
       "path": "candidate/H8WI01156/totals/",
       "params": {
@@ -1744,7 +1744,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:28.904Z",
+      "at": "2026-10-16T15:39:55.204Z",
       "label": "search: Rebecca Cooke (WI-03)",
       "path": "candidates/search/",
       "params": {
@@ -1755,7 +1755,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:31.067Z",
+      "at": "2026-10-16T15:39:57.500Z",
       "label": "totals: Rebecca Cooke (Wisconsin 3rd District)",
       "path": "candidate/H2WI03130/totals/",
       "params": {
@@ -1763,7 +1763,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:33.208Z",
+      "at": "2026-10-16T15:40:02.786Z",
       "label": "search: Derrick Van Orden (WI-03)",
       "path": "candidates/search/",
       "params": {
@@ -1774,7 +1774,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:35.377Z",
+      "at": "2026-10-16T15:40:05.006Z",
       "label": "totals: Derrick Van Orden (Wisconsin 3rd District)",
       "path": "candidate/H0WI03175/totals/",
       "params": {
@@ -1782,7 +1782,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:37.529Z",
+      "at": "2026-10-16T15:40:37.525Z",
       "label": "search: Brad Smith (WI-06)",
       "path": "candidates/search/",
       "params": {
@@ -1793,7 +1793,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:39.699Z",
+      "at": "2026-10-16T15:40:39.727Z",
       "label": "totals: Brad Smith (Wisconsin 6th District)",
       "path": "candidate/H6WI06191/totals/",
       "params": {
@@ -1801,7 +1801,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:41.850Z",
+      "at": "2026-10-16T15:40:41.882Z",
       "label": "search: Glenn Grothman (WI-06)",
       "path": "candidates/search/",
       "params": {
@@ -1812,7 +1812,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:44.002Z",
+      "at": "2026-10-16T15:40:44.069Z",
       "label": "totals: Glenn Grothman (Wisconsin 6th District)",
       "path": "candidate/H4WI06048/totals/",
       "params": {
@@ -1820,7 +1820,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:46.129Z",
+      "at": "2026-10-16T15:40:46.239Z",
       "label": "search: Mary Peltola (AK)",
       "path": "candidates/search/",
       "params": {
@@ -1830,7 +1830,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:48.274Z",
+      "at": "2026-10-16T15:40:48.440Z",
       "label": "totals: Mary Peltola (Alaska Senate)",
       "path": "candidate/S6AK00276/totals/",
       "params": {
@@ -1838,7 +1838,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:50.418Z",
+      "at": "2026-10-16T15:40:50.609Z",
       "label": "search: Dan S. Sullivan (AK)",
       "path": "candidates/search/",
       "params": {
@@ -1848,7 +1848,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:52.602Z",
+      "at": "2026-10-16T15:40:52.809Z",
       "label": "totals: Dan S. Sullivan (Alaska Senate)",
       "path": "candidate/S4AK00214/totals/",
       "params": {
@@ -1856,7 +1856,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:54.739Z",
+      "at": "2026-10-16T15:40:55.061Z",
       "label": "search: Everett Wess (AL)",
       "path": "candidates/search/",
       "params": {
@@ -1866,7 +1866,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:56.896Z",
+      "at": "2026-10-16T15:40:57.265Z",
       "label": "totals: Everett Wess (Alabama Senate)",
       "path": "candidate/S6AL00518/totals/",
       "params": {
@@ -1874,7 +1874,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:19:59.620Z",
+      "at": "2026-10-16T15:40:59.422Z",
       "label": "search: Barry Moore (AL)",
       "path": "candidates/search/",
       "params": {
@@ -1884,7 +1884,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:01.795Z",
+      "at": "2026-10-16T15:41:01.611Z",
       "label": "totals: Barry Moore (Alabama Senate)",
       "path": "candidate/S6AL00476/totals/",
       "params": {
@@ -1892,7 +1892,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:03.937Z",
+      "at": "2026-10-16T15:41:03.771Z",
       "label": "search: Angie Nixon (FL)",
       "path": "candidates/search/",
       "params": {
@@ -1902,7 +1902,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:06.061Z",
+      "at": "2026-10-16T15:41:06.003Z",
       "label": "search: Ashley Moody (FL)",
       "path": "candidates/search/",
       "params": {
@@ -1912,7 +1912,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:08.218Z",
+      "at": "2026-10-16T15:41:08.255Z",
       "label": "totals: Ashley Moody (Florida Senate (special))",
       "path": "candidate/S6FL00640/totals/",
       "params": {
@@ -1920,7 +1920,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:10.360Z",
+      "at": "2026-10-16T15:41:10.429Z",
       "label": "search: Jon Ossoff (GA)",
       "path": "candidates/search/",
       "params": {
@@ -1930,7 +1930,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:12.521Z",
+      "at": "2026-10-16T15:41:12.632Z",
       "label": "totals: Jon Ossoff (Georgia Senate)",
       "path": "candidate/S8GA00180/totals/",
       "params": {
@@ -1938,7 +1938,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:14.629Z",
+      "at": "2026-10-16T15:41:14.789Z",
       "label": "search: Derek Dooley (GA)",
       "path": "candidates/search/",
       "params": {
@@ -1948,7 +1948,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:21.150Z",
+      "at": "2026-10-16T15:41:16.954Z",
       "label": "totals: Derek Dooley (Georgia Senate)",
       "path": "candidate/S6GA00408/totals/",
       "params": {
@@ -1956,7 +1956,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:23.336Z",
+      "at": "2026-10-16T15:41:19.111Z",
       "label": "search: Zach Wahls (IA)",
       "path": "candidates/search/",
       "params": {
@@ -1966,7 +1966,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:25.473Z",
+      "at": "2026-10-16T15:41:21.267Z",
       "label": "totals: Zach Wahls (Iowa Senate)",
       "path": "candidate/S6IA00272/totals/",
       "params": {
@@ -1974,7 +1974,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:27.598Z",
+      "at": "2026-10-16T15:41:23.499Z",
       "label": "search: Joni Ernst (IA)",
       "path": "candidates/search/",
       "params": {
@@ -1984,7 +1984,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:29.784Z",
+      "at": "2026-10-16T15:41:25.700Z",
       "label": "totals: Joni Ernst (Iowa Senate)",
       "path": "candidate/S4IA00129/totals/",
       "params": {
@@ -1992,7 +1992,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:31.923Z",
+      "at": "2026-10-16T15:41:27.873Z",
       "label": "search: Adam Hamilton (KS)",
       "path": "candidates/search/",
       "params": {
@@ -2002,7 +2002,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:34.098Z",
+      "at": "2026-10-16T15:41:30.050Z",
       "label": "totals: Adam Hamilton (Kansas Senate)",
       "path": "candidate/S6KS00312/totals/",
       "params": {
@@ -2010,7 +2010,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:36.235Z",
+      "at": "2026-10-16T15:41:32.219Z",
       "label": "search: Roger Marshall (KS)",
       "path": "candidates/search/",
       "params": {
@@ -2020,7 +2020,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:38.393Z",
+      "at": "2026-10-16T15:41:34.691Z",
       "label": "totals: Roger Marshall (Kansas Senate)",
       "path": "candidate/H6KS01179/totals/",
       "params": {
@@ -2028,7 +2028,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:40.514Z",
+      "at": "2026-10-16T15:41:36.845Z",
       "label": "search: Charles Booker (KY)",
       "path": "candidates/search/",
       "params": {
@@ -2038,7 +2038,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:42.665Z",
+      "at": "2026-10-16T15:41:39.031Z",
       "label": "totals: Charles Booker (Kentucky Senate)",
       "path": "candidate/S0KY00420/totals/",
       "params": {
@@ -2046,7 +2046,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:44.783Z",
+      "at": "2026-10-16T15:41:41.647Z",
       "label": "search: Andy Barr (KY)",
       "path": "candidates/search/",
       "params": {
@@ -2056,7 +2056,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:46.943Z",
+      "at": "2026-10-16T15:41:43.851Z",
       "label": "totals: Andy Barr (Kentucky Senate)",
       "path": "candidate/S6KY00286/totals/",
       "params": {
@@ -2064,7 +2064,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:49.096Z",
+      "at": "2026-10-16T15:41:46.013Z",
       "label": "search: Jamie Davis (LA)",
       "path": "candidates/search/",
       "params": {
@@ -2074,7 +2074,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:51.252Z",
+      "at": "2026-10-16T15:41:48.217Z",
       "label": "totals: Jamie Davis (Louisiana Senate)",
       "path": "candidate/S6LA00615/totals/",
       "params": {
@@ -2082,7 +2082,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:53.409Z",
+      "at": "2026-10-16T15:41:50.389Z",
       "label": "search: Julia Letlow (LA)",
       "path": "candidates/search/",
       "params": {
@@ -2092,7 +2092,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:55.581Z",
+      "at": "2026-10-16T15:41:53.917Z",
       "label": "totals: Julia Letlow (Louisiana Senate)",
       "path": "candidate/S6LA00664/totals/",
       "params": {
@@ -2100,7 +2100,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:57.723Z",
+      "at": "2026-10-16T15:41:56.640Z",
       "label": "search: Markey (MA)",
       "path": "candidates/search/",
       "params": {
@@ -2110,7 +2110,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:20:59.873Z",
+      "at": "2026-10-16T15:41:58.827Z",
       "label": "totals: Markey (Massachusetts Senate)",
       "path": "candidate/S4MA00028/totals/",
       "params": {
@@ -2118,7 +2118,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:02.013Z",
+      "at": "2026-10-16T15:42:00.997Z",
       "label": "search: Deaton (MA)",
       "path": "candidates/search/",
       "params": {
@@ -2128,7 +2128,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:04.152Z",
+      "at": "2026-10-16T15:42:03.435Z",
       "label": "totals: Deaton (Massachusetts Senate)",
       "path": "candidate/S4MA00358/totals/",
       "params": {
@@ -2136,7 +2136,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:06.293Z",
+      "at": "2026-10-16T15:42:05.624Z",
       "label": "search: Graham Platner (ME)",
       "path": "candidates/search/",
       "params": {
@@ -2146,7 +2146,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:08.448Z",
+      "at": "2026-10-16T15:42:07.809Z",
       "label": "totals: Graham Platner (Maine Senate)",
       "path": "candidate/S6ME00373/totals/",
       "params": {
@@ -2154,7 +2154,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:10.589Z",
+      "at": "2026-10-16T15:42:09.966Z",
       "label": "search: Susan Collins (ME)",
       "path": "candidates/search/",
       "params": {
@@ -2164,7 +2164,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:12.845Z",
+      "at": "2026-10-16T15:42:12.170Z",
       "label": "totals: Susan Collins (Maine Senate)",
       "path": "candidate/S6ME00159/totals/",
       "params": {
@@ -2172,7 +2172,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:14.999Z",
+      "at": "2026-10-16T15:42:14.341Z",
       "label": "search: Abdul El-Sayed (MI)",
       "path": "candidates/search/",
       "params": {
@@ -2182,7 +2182,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:17.189Z",
+      "at": "2026-10-16T15:42:16.546Z",
       "label": "totals: Abdul El-Sayed (Michigan Senate)",
       "path": "candidate/S6MI00418/totals/",
       "params": {
@@ -2190,7 +2190,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:19.330Z",
+      "at": "2026-10-16T15:42:18.703Z",
       "label": "search: Mike Rogers (MI)",
       "path": "candidates/search/",
       "params": {
@@ -2200,7 +2200,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:21.457Z",
+      "at": "2026-10-16T15:42:20.842Z",
       "label": "search: Peggy Flanagan (MN)",
       "path": "candidates/search/",
       "params": {
@@ -2210,7 +2210,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:23.599Z",
+      "at": "2026-10-16T15:42:25.109Z",
       "label": "search: Michele Tafoya (MN)",
       "path": "candidates/search/",
       "params": {
@@ -2220,7 +2220,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:25.773Z",
+      "at": "2026-10-16T15:42:28.551Z",
       "label": "totals: Michele Tafoya (Minnesota Senate)",
       "path": "candidate/S6MN00556/totals/",
       "params": {
@@ -2228,7 +2228,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:27.913Z",
+      "at": "2026-10-16T15:42:30.720Z",
       "label": "search: Alani Bankhead (MT)",
       "path": "candidates/search/",
       "params": {
@@ -2238,7 +2238,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:30.072Z",
+      "at": "2026-10-16T15:42:32.921Z",
       "label": "totals: Alani Bankhead (Montana Senate)",
       "path": "candidate/S6MT00253/totals/",
       "params": {
@@ -2246,7 +2246,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:32.199Z",
+      "at": "2026-10-16T15:42:35.091Z",
       "label": "search: Kurt Alme (MT)",
       "path": "candidates/search/",
       "params": {
@@ -2256,7 +2256,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:34.880Z",
+      "at": "2026-10-16T15:42:37.278Z",
       "label": "totals: Kurt Alme (Montana Senate)",
       "path": "candidate/S6MT00295/totals/",
       "params": {
@@ -2264,7 +2264,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:37.012Z",
+      "at": "2026-10-16T15:42:39.433Z",
       "label": "search: Roy Cooper (NC)",
       "path": "candidates/search/",
       "params": {
@@ -2274,7 +2274,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:39.171Z",
+      "at": "2026-10-16T15:42:41.605Z",
       "label": "totals: Roy Cooper (North Carolina Senate)",
       "path": "candidate/S6NC00407/totals/",
       "params": {
@@ -2282,7 +2282,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:41.296Z",
+      "at": "2026-10-16T15:42:43.774Z",
       "label": "search: Michael Whatley (NC)",
       "path": "candidates/search/",
       "params": {
@@ -2292,7 +2292,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:43.455Z",
+      "at": "2026-10-16T15:42:45.959Z",
       "label": "totals: Michael Whatley (North Carolina Senate)",
       "path": "candidate/S6NC00415/totals/",
       "params": {
@@ -2300,7 +2300,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:45.591Z",
+      "at": "2026-10-16T15:42:48.114Z",
       "label": "search: Dan Osborn (NE)",
       "path": "candidates/search/",
       "params": {
@@ -2310,7 +2310,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:47.742Z",
+      "at": "2026-10-16T15:42:50.323Z",
       "label": "totals: Dan Osborn (Nebraska Senate)",
       "path": "candidate/S4NE00207/totals/",
       "params": {
@@ -2318,7 +2318,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:49.941Z",
+      "at": "2026-10-16T15:42:52.488Z",
       "label": "search: Pete Ricketts (NE)",
       "path": "candidates/search/",
       "params": {
@@ -2328,7 +2328,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:52.115Z",
+      "at": "2026-10-16T15:42:54.770Z",
       "label": "totals: Pete Ricketts (Nebraska Senate)",
       "path": "candidate/S6NE00129/totals/",
       "params": {
@@ -2336,7 +2336,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:54.254Z",
+      "at": "2026-10-16T15:42:56.943Z",
       "label": "search: Chris Pappas (NH)",
       "path": "candidates/search/",
       "params": {
@@ -2346,7 +2346,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:56.414Z",
+      "at": "2026-10-16T15:42:59.100Z",
       "label": "totals: Chris Pappas (New Hampshire Senate)",
       "path": "candidate/S6NH00141/totals/",
       "params": {
@@ -2354,7 +2354,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:21:58.561Z",
+      "at": "2026-10-16T15:43:01.275Z",
       "label": "search: John E. Sununu (NH)",
       "path": "candidates/search/",
       "params": {
@@ -2364,7 +2364,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:00.713Z",
+      "at": "2026-10-16T15:43:03.490Z",
       "label": "totals: John E. Sununu (New Hampshire Senate)",
       "path": "candidate/S6NH00208/totals/",
       "params": {
@@ -2372,7 +2372,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:30.584Z",
+      "at": "2026-10-16T15:43:05.658Z",
       "label": "search: Lujan (NM)",
       "path": "candidates/search/",
       "params": {
@@ -2382,7 +2382,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:32.757Z",
+      "at": "2026-10-16T15:43:07.842Z",
       "label": "totals: Lujan (New Mexico Senate)",
       "path": "candidate/S0NM00058/totals/",
       "params": {
@@ -2390,7 +2390,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:34.849Z",
+      "at": "2026-10-16T15:43:10.001Z",
       "label": "search: Marker (NM)",
       "path": "candidates/search/",
       "params": {
@@ -2400,7 +2400,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:37.010Z",
+      "at": "2026-10-16T15:43:12.187Z",
       "label": "totals: Marker (New Mexico Senate)",
       "path": "candidate/S6NM01186/totals/",
       "params": {
@@ -2408,7 +2408,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:39.140Z",
+      "at": "2026-10-16T15:43:14.357Z",
       "label": "search: Sherrod Brown (OH)",
       "path": "candidates/search/",
       "params": {
@@ -2418,7 +2418,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:41.291Z",
+      "at": "2026-10-16T15:43:28.566Z",
       "label": "totals: Sherrod Brown (Ohio Senate (special))",
       "path": "candidate/S6OH00163/totals/",
       "params": {
@@ -2426,7 +2426,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:43.428Z",
+      "at": "2026-10-16T15:43:30.725Z",
       "label": "search: Jon Husted (OH)",
       "path": "candidates/search/",
       "params": {
@@ -2436,7 +2436,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:45.609Z",
+      "at": "2026-10-16T15:43:32.908Z",
       "label": "totals: Jon Husted (Ohio Senate (special))",
       "path": "candidate/S6OH00304/totals/",
       "params": {
@@ -2444,7 +2444,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:47.793Z",
+      "at": "2026-10-16T15:43:35.075Z",
       "label": "search: Reed (RI)",
       "path": "candidates/search/",
       "params": {
@@ -2454,7 +2454,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:49.961Z",
+      "at": "2026-10-16T15:43:37.268Z",
       "label": "totals: Reed (Rhode Island Senate)",
       "path": "candidate/S6RI00163/totals/",
       "params": {
@@ -2462,7 +2462,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:52.085Z",
+      "at": "2026-10-16T15:43:39.422Z",
       "label": "search: McKay (RI)",
       "path": "candidates/search/",
       "params": {
@@ -2472,7 +2472,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:54.243Z",
+      "at": "2026-10-16T15:43:41.596Z",
       "label": "totals: McKay (Rhode Island Senate)",
       "path": "candidate/S4RI00051/totals/",
       "params": {
@@ -2480,7 +2480,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:56.384Z",
+      "at": "2026-10-16T15:43:43.748Z",
       "label": "search: Annie Andrews (SC)",
       "path": "candidates/search/",
       "params": {
@@ -2490,7 +2490,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:22:58.557Z",
+      "at": "2026-10-16T15:43:48.757Z",
       "label": "totals: Annie Andrews (South Carolina Senate)",
       "path": "candidate/S6SC04239/totals/",
       "params": {
@@ -2498,7 +2498,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:00.682Z",
+      "at": "2026-10-16T15:43:50.912Z",
       "label": "search: Darline Graham (SC)",
       "path": "candidates/search/",
       "params": {
@@ -2508,7 +2508,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:02.829Z",
+      "at": "2026-10-16T15:43:53.097Z",
       "label": "totals: Darline Graham (South Carolina Senate)",
       "path": "candidate/S6SC04437/totals/",
       "params": {
@@ -2516,7 +2516,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:04.958Z",
+      "at": "2026-10-16T15:43:55.257Z",
       "label": "search: Bradshaw (TN)",
       "path": "candidates/search/",
       "params": {
@@ -2526,7 +2526,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:07.971Z",
+      "at": "2026-10-16T15:43:57.443Z",
       "label": "totals: Bradshaw (Tennessee Senate)",
       "path": "candidate/S0TN00342/totals/",
       "params": {
@@ -2534,7 +2534,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:10.102Z",
+      "at": "2026-10-16T15:43:59.593Z",
       "label": "search: Hagerty (TN)",
       "path": "candidates/search/",
       "params": {
@@ -2544,7 +2544,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:12.254Z",
+      "at": "2026-10-16T15:44:01.781Z",
       "label": "totals: Hagerty (Tennessee Senate)",
       "path": "candidate/S0TN00169/totals/",
       "params": {
@@ -2552,7 +2552,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:14.400Z",
+      "at": "2026-10-16T15:44:03.952Z",
       "label": "search: James Talarico (TX)",
       "path": "candidates/search/",
       "params": {
@@ -2562,7 +2562,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:16.578Z",
+      "at": "2026-10-16T15:44:06.118Z",
       "label": "totals: James Talarico (Texas Senate)",
       "path": "candidate/S6TX00479/totals/",
       "params": {
@@ -2570,7 +2570,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:18.706Z",
+      "at": "2026-10-16T15:44:08.278Z",
       "label": "search: Ken Paxton (TX)",
       "path": "candidates/search/",
       "params": {
@@ -2580,7 +2580,7 @@
       }
     },
     {
-      "at": "2026-10-15T22:23:20.872Z",
+      "at": "2026-10-16T15:44:10.461Z",
       "label": "totals: Ken Paxton (Texas Senate)",
       "path": "candidate/S6TX00388/totals/",
       "params": {
@@ -2615,11 +2615,11 @@
       "party": "R",
       "candidateId": "H2AZ01354",
       "committeeId": "C00784934",
-      "receipts": 9481427.94,
-      "disbursements": 6957053.15,
-      "cashOnHand": 2841744.86,
-      "individualContributions": 8581510.99,
-      "coverageEnd": "2026-07-01T00:00:00"
+      "receipts": 11551401.2,
+      "disbursements": 9505929.14,
+      "cashOnHand": 2362842.13,
+      "individualContributions": 10574766.75,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:AZ:6|JoAnna Mendoza": {
       "raceKey": "2026:house:AZ:6",
@@ -2647,11 +2647,11 @@
       "party": "R",
       "candidateId": "H2AZ02360",
       "committeeId": "C00786194",
-      "receipts": 6172866.72,
-      "disbursements": 2274264.76,
-      "cashOnHand": 4135162.85,
-      "individualContributions": 2300890.11,
-      "coverageEnd": "2026-07-01T00:00:00"
+      "receipts": 7474803.22,
+      "disbursements": 6784530.2,
+      "cashOnHand": 926833.91,
+      "individualContributions": 2886951.15,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:CO:3|Dwayne Romero": {
       "raceKey": "2026:house:CO:3",
@@ -2695,11 +2695,11 @@
       "party": "D",
       "candidateId": "H6CO05324",
       "committeeId": "C00911941",
-      "receipts": 3143744.12,
-      "disbursements": 1551101.76,
-      "cashOnHand": 1592642.36,
-      "individualContributions": 2221080.26,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 4968409.05,
+      "disbursements": 4265934.05,
+      "cashOnHand": 702475,
+      "individualContributions": 3681204.16,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:CO:5|Jeff Crank": {
       "raceKey": "2026:house:CO:5",
@@ -2711,11 +2711,11 @@
       "party": "R",
       "candidateId": "H6CO05142",
       "committeeId": "C00865592",
-      "receipts": 2177287.76,
-      "disbursements": 778792.52,
-      "cashOnHand": 1465048.38,
-      "individualContributions": 893034.34,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2783882.86,
+      "disbursements": 1843019.26,
+      "cashOnHand": 1007416.74,
+      "individualContributions": 1094307.62,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:IA:1|Christina Bohannan": {
       "raceKey": "2026:house:IA:1",
@@ -2727,11 +2727,11 @@
       "party": "D",
       "candidateId": "H2IA02111",
       "committeeId": "C00787820",
-      "receipts": 7051745.42,
-      "disbursements": 1733644.46,
-      "cashOnHand": 5425318.34,
-      "individualContributions": 5648339.98,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 9468351.73,
+      "disbursements": 6567119.52,
+      "cashOnHand": 3008449.59,
+      "individualContributions": 7831455.39,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:IA:1|Mariannette Miller-Meeks": {
       "raceKey": "2026:house:IA:1",
@@ -2743,11 +2743,11 @@
       "party": "R",
       "candidateId": "H8IA02043",
       "committeeId": "C00558825",
-      "receipts": 7208271.35,
-      "disbursements": 2890534.2,
-      "cashOnHand": 4691480.55,
-      "individualContributions": 2945343.16,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 8924569.55,
+      "disbursements": 6690602.91,
+      "cashOnHand": 2607710.04,
+      "individualContributions": 4044274.55,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:IA:2|Lindsay James": {
       "raceKey": "2026:house:IA:2",
@@ -2759,11 +2759,11 @@
       "party": "D",
       "candidateId": "H6IA02211",
       "committeeId": "C00916452",
-      "receipts": 1628201.37,
-      "disbursements": 872363.17,
-      "cashOnHand": 755838.2,
-      "individualContributions": 1410099.46,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 3524080.36,
+      "disbursements": 2847671.63,
+      "cashOnHand": 676408.73,
+      "individualContributions": 3051973.73,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:IA:2|Joe Mitchell": {
       "raceKey": "2026:house:IA:2",
@@ -2775,11 +2775,11 @@
       "party": "R",
       "candidateId": "H6IA02237",
       "committeeId": "C00918979",
-      "receipts": 1938593,
-      "disbursements": 1043028.92,
-      "cashOnHand": 895564.08,
-      "individualContributions": 1397807.43,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2683807.61,
+      "disbursements": 1814989.44,
+      "cashOnHand": 868818.17,
+      "individualContributions": 1974800.92,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:IA:3|Sarah Trone Garriott": {
       "raceKey": "2026:house:IA:3",
@@ -2791,11 +2791,11 @@
       "party": "D",
       "candidateId": "H6IA03268",
       "committeeId": "C00904086",
-      "receipts": 5293772.59,
-      "disbursements": 1434089.37,
-      "cashOnHand": 3859683.22,
-      "individualContributions": 4755754.76,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 7654893.84,
+      "disbursements": 5678023.61,
+      "cashOnHand": 1976870.23,
+      "individualContributions": 6857610.23,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:IA:3|Zach Nunn": {
       "raceKey": "2026:house:IA:3",
@@ -2839,11 +2839,11 @@
       "party": "R",
       "candidateId": "H0IN05326",
       "committeeId": "C00737767",
-      "receipts": 1327227.97,
-      "disbursements": 1355273.82,
-      "cashOnHand": 230004.33,
-      "individualContributions": 1101195.38,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2078624.84,
+      "disbursements": 1482331.6,
+      "cashOnHand": 854343.42,
+      "individualContributions": 1341631.69,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:ME:2|Matt Dunlap": {
       "raceKey": "2026:house:ME:2",
@@ -2855,11 +2855,11 @@
       "party": "D",
       "candidateId": "H6ME02171",
       "committeeId": "C00922377",
-      "receipts": 1205431.88,
-      "disbursements": 976782.73,
-      "cashOnHand": 228649.15,
-      "individualContributions": 1181075.25,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2671904.48,
+      "disbursements": 1933729.61,
+      "cashOnHand": 738174.87,
+      "individualContributions": 2472092.35,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:ME:2|Paul LePage": {
       "raceKey": "2026:house:ME:2",
@@ -2871,11 +2871,11 @@
       "party": "R",
       "candidateId": "H6ME02148",
       "committeeId": "C00904094",
-      "receipts": 2563901.48,
-      "disbursements": 878190.98,
-      "cashOnHand": 1685710.5,
-      "individualContributions": 1415549.45,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 3233257.17,
+      "disbursements": 2008281.6,
+      "cashOnHand": 1224975.57,
+      "individualContributions": 1645926.41,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:MI:4|Sean McCann": {
       "raceKey": "2026:house:MI:4",
@@ -2887,11 +2887,11 @@
       "party": "D",
       "candidateId": "H6MI04204",
       "committeeId": "C00911784",
-      "receipts": 2620010.89,
-      "disbursements": 933771.32,
-      "cashOnHand": 1686239.57,
-      "individualContributions": 2274399.15,
-      "coverageEnd": "2026-07-15T00:00:00"
+      "receipts": 4310698.84,
+      "disbursements": 2990377.13,
+      "cashOnHand": 1320321.71,
+      "individualContributions": 3720157.9,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:MI:7|William Lawrence": {
       "raceKey": "2026:house:MI:7",
@@ -2919,11 +2919,11 @@
       "party": "D",
       "candidateId": "H6MI10276",
       "committeeId": "C00901678",
-      "receipts": 1211488.64,
-      "disbursements": 1053292.47,
-      "cashOnHand": 158196.17,
-      "individualContributions": 1135198.13,
-      "coverageEnd": "2026-07-15T00:00:00"
+      "receipts": 3518813.9,
+      "disbursements": 2089322.79,
+      "cashOnHand": 1429491.11,
+      "individualContributions": 2920366.45,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:MN:1|Brad Finstad": {
       "raceKey": "2026:house:MN:1",
@@ -2935,11 +2935,11 @@
       "party": "R",
       "candidateId": "H2MN01223",
       "committeeId": "C00807743",
-      "receipts": 2030569.31,
-      "disbursements": 808055.36,
-      "cashOnHand": 1283923.18,
-      "individualContributions": 829373.5,
-      "coverageEnd": "2026-07-22T00:00:00"
+      "receipts": 2608655.25,
+      "disbursements": 1559615.85,
+      "cashOnHand": 1110448.63,
+      "individualContributions": 1007329.82,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:MN:2|Matt Little": {
       "raceKey": "2026:house:MN:2",
@@ -2951,11 +2951,11 @@
       "party": "D",
       "candidateId": "H6MN02230",
       "committeeId": "C00903807",
-      "receipts": 923277.16,
-      "disbursements": 796235.73,
-      "cashOnHand": 127543.41,
-      "individualContributions": 718906.66,
-      "coverageEnd": "2026-07-22T00:00:00"
+      "receipts": 1452272.82,
+      "disbursements": 1124466.87,
+      "cashOnHand": 328307.93,
+      "individualContributions": 1120141.32,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:MN:2|Eric Pratt": {
       "raceKey": "2026:house:MN:2",
@@ -2967,11 +2967,11 @@
       "party": "R",
       "candidateId": "H6MN02263",
       "committeeId": "C00912824",
-      "receipts": 511213.48,
-      "disbursements": 256840.56,
-      "cashOnHand": 254372.92,
-      "individualContributions": 351113.48,
-      "coverageEnd": "2026-07-22T00:00:00"
+      "receipts": 729790.59,
+      "disbursements": 408514.6,
+      "cashOnHand": 321275.99,
+      "individualContributions": 449951.57,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:MT:1|Sam Forstag": {
       "raceKey": "2026:house:MT:1",
@@ -2983,8 +2983,8 @@
       "party": "D",
       "candidateId": "H6MT01137",
       "committeeId": "C00932822",
-      "receipts": 1382873.3,
-      "disbursements": 832794.19,
+      "receipts": 1383098.3,
+      "disbursements": 833019.19,
       "cashOnHand": 550079.11,
       "individualContributions": 1218648.73,
       "coverageEnd": "2026-06-30T00:00:00"
@@ -2999,11 +2999,11 @@
       "party": "R",
       "candidateId": "H6MT01152",
       "committeeId": "C00941575",
-      "receipts": 1303393.72,
-      "disbursements": 801192.61,
-      "cashOnHand": 502201.11,
-      "individualContributions": 824179.47,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2640893.65,
+      "disbursements": 1609409.4,
+      "cashOnHand": 1031484.25,
+      "individualContributions": 1738531.61,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NC:1|Don Davis": {
       "raceKey": "2026:house:NC:1",
@@ -3031,11 +3031,11 @@
       "party": "R",
       "candidateId": "H4NC01137",
       "committeeId": "C00853499",
-      "receipts": 3793076.8,
-      "disbursements": 1989719.52,
-      "cashOnHand": 1829660.83,
-      "individualContributions": 557046.77,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 4726317.66,
+      "disbursements": 2887709.42,
+      "cashOnHand": 1864911.79,
+      "individualContributions": 1032343.19,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NC:3|Raymond Smith Jr.": {
       "raceKey": "2026:house:NC:3",
@@ -3063,11 +3063,11 @@
       "party": "R",
       "candidateId": "H0NC03172",
       "committeeId": "C00697649",
-      "receipts": 2357956.42,
-      "disbursements": 1243598.59,
-      "cashOnHand": 2697820.12,
-      "individualContributions": 1011637.57,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2819076,
+      "disbursements": 1988713.51,
+      "cashOnHand": 2413824.78,
+      "individualContributions": 1147881.83,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NC:7|Kimberly Hardy": {
       "raceKey": "2026:house:NC:7",
@@ -3095,11 +3095,11 @@
       "party": "R",
       "candidateId": "H2NC07096",
       "committeeId": "C00501643",
-      "receipts": 1990422.82,
-      "disbursements": 1124461.26,
-      "cashOnHand": 2301487.27,
-      "individualContributions": 780612.17,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2496824.01,
+      "disbursements": 1827512.72,
+      "cashOnHand": 2104837,
+      "individualContributions": 936253.16,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NC:10|Ashley Bell": {
       "raceKey": "2026:house:NC:10",
@@ -3127,11 +3127,11 @@
       "party": "R",
       "candidateId": "H2NC13243",
       "committeeId": "C00802298",
-      "receipts": 1081820.85,
-      "disbursements": 683387.33,
-      "cashOnHand": 451274.87,
-      "individualContributions": 618528.05,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 1302690.9,
+      "disbursements": 738988.11,
+      "cashOnHand": 616544.14,
+      "individualContributions": 731714.49,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NC:11|Jamie Ager": {
       "raceKey": "2026:house:NC:11",
@@ -3143,11 +3143,11 @@
       "party": "D",
       "candidateId": "H6NC11248",
       "committeeId": "C00914119",
-      "receipts": 3052354.24,
-      "disbursements": 867576.46,
-      "cashOnHand": 2184777.78,
-      "individualContributions": 2799701.44,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 5401765.17,
+      "disbursements": 3760602.42,
+      "cashOnHand": 1641162.75,
+      "individualContributions": 4742228.95,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NC:11|Chuck Edwards": {
       "raceKey": "2026:house:NC:11",
@@ -3191,11 +3191,11 @@
       "party": "R",
       "candidateId": "H4NC14015",
       "committeeId": "C00856005",
-      "receipts": 1538952.2,
-      "disbursements": 880526.27,
-      "cashOnHand": 1581992.49,
-      "individualContributions": 1100993.28,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2060537.85,
+      "disbursements": 1109996.25,
+      "cashOnHand": 1874108.16,
+      "individualContributions": 1265949.79,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NE:1|Chris Backemeyer": {
       "raceKey": "2026:house:NE:1",
@@ -3207,11 +3207,11 @@
       "party": "D",
       "candidateId": "H6NE01143",
       "committeeId": "C00925750",
-      "receipts": 592233.09,
-      "disbursements": 301622.4,
-      "cashOnHand": 290610.69,
-      "individualContributions": 462913.63,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 1033727.42,
+      "disbursements": 487261.26,
+      "cashOnHand": 546466.16,
+      "individualContributions": 871116.17,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NE:1|Mike Flood": {
       "raceKey": "2026:house:NE:1",
@@ -3223,11 +3223,11 @@
       "party": "R",
       "candidateId": "H2NE01118",
       "committeeId": "C00801241",
-      "receipts": 2368910.23,
-      "disbursements": 1028941.19,
-      "cashOnHand": 1560750.81,
-      "individualContributions": 1077618.07,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2732933.48,
+      "disbursements": 1731759.26,
+      "cashOnHand": 1221955.99,
+      "individualContributions": 1165266.34,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NH:2|Maggie Goodlander": {
       "raceKey": "2026:house:NH:2",
@@ -3239,11 +3239,11 @@
       "party": "D",
       "candidateId": "H4NH02399",
       "committeeId": "C00878454",
-      "receipts": 4155360.22,
-      "disbursements": 1512293.54,
-      "cashOnHand": 2701064.53,
-      "individualContributions": 2950045.89,
-      "coverageEnd": "2026-08-19T00:00:00"
+      "receipts": 4812156.05,
+      "disbursements": 2450935.59,
+      "cashOnHand": 2419218.31,
+      "individualContributions": 3345313.7,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:NH:2|Lily Tang Williams": {
       "raceKey": "2026:house:NH:2",
@@ -3303,11 +3303,11 @@
       "party": "R",
       "candidateId": "H4NV04108",
       "committeeId": "C00901710",
-      "receipts": 2275392.31,
-      "disbursements": 2172225.33,
-      "cashOnHand": 117882.89,
-      "individualContributions": 520499.51,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2855277.4,
+      "disbursements": 2568895.55,
+      "cashOnHand": 301097.76,
+      "individualContributions": 824334.77,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:1|Greg Landsman": {
       "raceKey": "2026:house:OH:1",
@@ -3319,11 +3319,11 @@
       "party": "D",
       "candidateId": "H2OH01194",
       "committeeId": "C00800276",
-      "receipts": 4633250.38,
-      "disbursements": 1203151.62,
-      "cashOnHand": 3610213.67,
-      "individualContributions": 2810230.49,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 5546090.33,
+      "disbursements": 4228474.09,
+      "cashOnHand": 1497731.15,
+      "individualContributions": 3462313.67,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:1|Eric Conroy": {
       "raceKey": "2026:house:OH:1",
@@ -3351,11 +3351,11 @@
       "party": "D",
       "candidateId": "H6OH07168",
       "committeeId": "C00933366",
-      "receipts": 603155.59,
-      "disbursements": 290865.42,
-      "cashOnHand": 312290.17,
-      "individualContributions": 439659.22,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 3072898.33,
+      "disbursements": 2006064.96,
+      "cashOnHand": 1066833.37,
+      "individualContributions": 2703344.16,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:7|Max Miller": {
       "raceKey": "2026:house:OH:7",
@@ -3367,11 +3367,11 @@
       "party": "R",
       "candidateId": "H2OH16051",
       "committeeId": "C00770818",
-      "receipts": 2142561.93,
-      "disbursements": 937959.47,
-      "cashOnHand": 1379131.85,
-      "individualContributions": 924384.95,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 3289528,
+      "disbursements": 3341222.17,
+      "cashOnHand": 122835.22,
+      "individualContributions": 992252.3,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:9|Marcy Kaptur": {
       "raceKey": "2026:house:OH:9",
@@ -3383,11 +3383,11 @@
       "party": "D",
       "candidateId": "H2OH09031",
       "committeeId": "C00154625",
-      "receipts": 4303415.64,
-      "disbursements": 1260674.13,
-      "cashOnHand": 3491668,
-      "individualContributions": 2303405.52,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 5584404.87,
+      "disbursements": 4786961.74,
+      "cashOnHand": 1246369.62,
+      "individualContributions": 3218297.61,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:9|Derek Merrin": {
       "raceKey": "2026:house:OH:9",
@@ -3399,11 +3399,11 @@
       "party": "R",
       "candidateId": "H4OH09169",
       "committeeId": "C00909630",
-      "receipts": 1508952.61,
-      "disbursements": 1054389.42,
-      "cashOnHand": 531214.34,
-      "individualContributions": 451830.75,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 2083930.76,
+      "disbursements": 1353754.95,
+      "cashOnHand": 806826.96,
+      "individualContributions": 718888.86,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:10|Kristina Knickerbocker": {
       "raceKey": "2026:house:OH:10",
@@ -3415,11 +3415,11 @@
       "party": "D",
       "candidateId": "H6OH10121",
       "committeeId": "C00934240",
-      "receipts": 362665.53,
-      "disbursements": 237505.91,
-      "cashOnHand": 125159.62,
-      "individualContributions": 321737.5,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 883182.32,
+      "disbursements": 579990.52,
+      "cashOnHand": 303191.8,
+      "individualContributions": 772229.29,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:15|Don Leonard": {
       "raceKey": "2026:house:OH:15",
@@ -3431,11 +3431,11 @@
       "party": "D",
       "candidateId": "H6OH15112",
       "committeeId": "C00913491",
-      "receipts": 606657.6,
-      "disbursements": 354255.88,
-      "cashOnHand": 252401.72,
-      "individualContributions": 583487.97,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 1145777.3,
+      "disbursements": 949716.11,
+      "cashOnHand": 196061.19,
+      "individualContributions": 966716.07,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:OH:15|Mike Carey": {
       "raceKey": "2026:house:OH:15",
@@ -3447,11 +3447,11 @@
       "party": "R",
       "candidateId": "H2OH15228",
       "committeeId": "C00779603",
-      "receipts": 3299678.5,
-      "disbursements": 1404260.15,
-      "cashOnHand": 2056712.66,
-      "individualContributions": 900358.7,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 4002960.6,
+      "disbursements": 3536586.96,
+      "cashOnHand": 627667.95,
+      "individualContributions": 1133770.87,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:PA:1|Brian Fitzpatrick": {
       "raceKey": "2026:house:PA:1",
@@ -3463,11 +3463,11 @@
       "party": "R",
       "candidateId": "H6PA08277",
       "committeeId": "C00607416",
-      "receipts": 6734931.11,
-      "disbursements": 4801926.75,
-      "cashOnHand": 6355534.34,
-      "individualContributions": 1622227.6,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 7774187.39,
+      "disbursements": 9810610.68,
+      "cashOnHand": 2386106.69,
+      "individualContributions": 1868982.7,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:PA:7|Bob Brooks": {
       "raceKey": "2026:house:PA:7",
@@ -3479,11 +3479,11 @@
       "party": "D",
       "candidateId": "H6PA07188",
       "committeeId": "C00917096",
-      "receipts": 2392215.23,
-      "disbursements": 1373792.39,
-      "cashOnHand": 1018422.84,
-      "individualContributions": 1942165.53,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 4991635.39,
+      "disbursements": 3705480.38,
+      "cashOnHand": 1286155.01,
+      "individualContributions": 3916290.29,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:PA:7|Ryan Mackenzie": {
       "raceKey": "2026:house:PA:7",
@@ -3495,11 +3495,11 @@
       "party": "R",
       "candidateId": "H8PA15195",
       "committeeId": "C00846501",
-      "receipts": 4357405.11,
-      "disbursements": 1521927.85,
-      "cashOnHand": 2938717.17,
-      "individualContributions": 1493241.01,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 5167022.85,
+      "disbursements": 3094595.78,
+      "cashOnHand": 2175666.98,
+      "individualContributions": 1840430.27,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:PA:8|Paige Cognetti": {
       "raceKey": "2026:house:PA:8",
@@ -3511,11 +3511,11 @@
       "party": "D",
       "candidateId": "H6PA08293",
       "committeeId": "C00918151",
-      "receipts": 4609588.63,
-      "disbursements": 1202878.9,
-      "cashOnHand": 3406709.73,
-      "individualContributions": 3862341.76,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 7095683.95,
+      "disbursements": 6145341.09,
+      "cashOnHand": 950342.86,
+      "individualContributions": 6020444.21,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:PA:8|Rob Bresnahan": {
       "raceKey": "2026:house:PA:8",
@@ -3527,11 +3527,11 @@
       "party": "R",
       "candidateId": "H4PA08124",
       "committeeId": "C00852137",
-      "receipts": 5234585.93,
-      "disbursements": 2679690.26,
-      "cashOnHand": 2608048.04,
-      "individualContributions": 1891896.85,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 6197786.02,
+      "disbursements": 5341843.71,
+      "cashOnHand": 909094.68,
+      "individualContributions": 2324936.55,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:PA:10|Janelle Stelson": {
       "raceKey": "2026:house:PA:10",
@@ -3559,11 +3559,11 @@
       "party": "R",
       "candidateId": "H2PA04135",
       "committeeId": "C00510164",
-      "receipts": 5194925.35,
-      "disbursements": 2430868.51,
-      "cashOnHand": 2845975.82,
-      "individualContributions": 3100218.61,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 6457001.05,
+      "disbursements": 4893167.14,
+      "cashOnHand": 1645752.89,
+      "individualContributions": 4094965.31,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:SC:1|Nancy Lacore": {
       "raceKey": "2026:house:SC:1",
@@ -3575,11 +3575,11 @@
       "party": "D",
       "candidateId": "H6SC01359",
       "committeeId": "C00935379",
-      "receipts": 2279584.94,
-      "disbursements": 1867564.52,
-      "cashOnHand": 412020.42,
-      "individualContributions": 2199086.81,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 4429294.6,
+      "disbursements": 3876653.14,
+      "cashOnHand": 552641.46,
+      "individualContributions": 4192625.09,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:SC:1|Jenny Costa Honeycutt": {
       "raceKey": "2026:house:SC:1",
@@ -3623,11 +3623,11 @@
       "party": "R",
       "candidateId": "H2SC07280",
       "committeeId": "C00786657",
-      "receipts": 1720802.74,
-      "disbursements": 1243168.82,
-      "cashOnHand": 1038816.61,
-      "individualContributions": 774347.82,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 1954571.78,
+      "disbursements": 2355568.03,
+      "cashOnHand": 160186.44,
+      "individualContributions": 838123.27,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:TX:15|Bobby Pulido": {
       "raceKey": "2026:house:TX:15",
@@ -3655,11 +3655,11 @@
       "party": "R",
       "candidateId": "H0TX15124",
       "committeeId": "C00765719",
-      "receipts": 5273959.93,
-      "disbursements": 3424606.96,
-      "cashOnHand": 2463322.86,
-      "individualContributions": 3312300.74,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 6551097.22,
+      "disbursements": 6362071.97,
+      "cashOnHand": 802995.14,
+      "individualContributions": 4021670,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:TX:23|Katy Padilla Stout": {
       "raceKey": "2026:house:TX:23",
@@ -3687,11 +3687,11 @@
       "party": "R",
       "candidateId": "H4TX23120",
       "committeeId": "C00844324",
-      "receipts": 1937718.78,
-      "disbursements": 1636736.29,
-      "cashOnHand": 309023.45,
-      "individualContributions": 85420.97,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 3108608.38,
+      "disbursements": 2562475.11,
+      "cashOnHand": 554174.23,
+      "individualContributions": 133603.08,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:TX:28|Henry Cuellar": {
       "raceKey": "2026:house:TX:28",
@@ -3719,11 +3719,11 @@
       "party": "R",
       "candidateId": "H6TX28124",
       "committeeId": "C00929174",
-      "receipts": 1399881.03,
-      "disbursements": 631692.9,
-      "cashOnHand": 768188.13,
-      "individualContributions": 603666.24,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 1778797.59,
+      "disbursements": 1564567.91,
+      "cashOnHand": 214229.68,
+      "individualContributions": 809232.27,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:TX:34|Vicente Gonzalez": {
       "raceKey": "2026:house:TX:34",
@@ -3751,11 +3751,11 @@
       "party": "R",
       "candidateId": "H6TX34080",
       "committeeId": "C00912246",
-      "receipts": 2874990.24,
-      "disbursements": 2188633.24,
-      "cashOnHand": 686332,
-      "individualContributions": 1368959.9,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 3830062.99,
+      "disbursements": 3544942.04,
+      "cashOnHand": 285095.95,
+      "individualContributions": 1873251.68,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:TX:35|Johnny Garcia": {
       "raceKey": "2026:house:TX:35",
@@ -3783,11 +3783,11 @@
       "party": "R",
       "candidateId": "H6TX35087",
       "committeeId": "C00922013",
-      "receipts": 1048750.7,
-      "disbursements": 776361.78,
-      "cashOnHand": 272388.92,
-      "individualContributions": 765712.52,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 1892231.45,
+      "disbursements": 1415735.73,
+      "cashOnHand": 476495.72,
+      "individualContributions": 1152505.42,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:VA:1|Shannon Taylor": {
       "raceKey": "2026:house:VA:1",
@@ -3815,11 +3815,11 @@
       "party": "R",
       "candidateId": "H8VA01147",
       "committeeId": "C00441014",
-      "receipts": 4053141.52,
-      "disbursements": 1136232.18,
-      "cashOnHand": 4292789.47,
-      "individualContributions": 1442542.81,
-      "coverageEnd": "2026-07-15T00:00:00"
+      "receipts": 5216106.2,
+      "disbursements": 4401469.57,
+      "cashOnHand": 2190516.76,
+      "individualContributions": 1867234.51,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:VA:2|Elaine Luria": {
       "raceKey": "2026:house:VA:2",
@@ -3831,11 +3831,11 @@
       "party": "D",
       "candidateId": "H6VA02198",
       "committeeId": "C00926303",
-      "receipts": 4659795.3,
-      "disbursements": 1077072.09,
-      "cashOnHand": 3582723.21,
-      "individualContributions": 3378739.76,
-      "coverageEnd": "2026-07-15T00:00:00"
+      "receipts": 7364705.21,
+      "disbursements": 5629532.5,
+      "cashOnHand": 1735172.71,
+      "individualContributions": 5678886.79,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:VA:2|Jen Kiggans": {
       "raceKey": "2026:house:VA:2",
@@ -3847,11 +3847,11 @@
       "party": "R",
       "candidateId": "H2VA02064",
       "committeeId": "C00776120",
-      "receipts": 5954338.07,
-      "disbursements": 2608075.05,
-      "cashOnHand": 3391740.42,
-      "individualContributions": 2987464.21,
-      "coverageEnd": "2026-07-15T00:00:00"
+      "receipts": 7240304.45,
+      "disbursements": 5335749.67,
+      "cashOnHand": 1950032.18,
+      "individualContributions": 3880024.37,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:VA:5|John McGuire": {
       "raceKey": "2026:house:VA:5",
@@ -3863,11 +3863,11 @@
       "party": "R",
       "candidateId": "H0VA07133",
       "committeeId": "C00856831",
-      "receipts": 1781840.34,
-      "disbursements": 1291712.94,
-      "cashOnHand": 524345.91,
-      "individualContributions": 1117597.61,
-      "coverageEnd": "2026-07-15T00:00:00"
+      "receipts": 2249385.51,
+      "disbursements": 1804630.61,
+      "cashOnHand": 478973.41,
+      "individualContributions": 1405269.21,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:WA:3|Marie Gluesenkamp Perez": {
       "raceKey": "2026:house:WA:3",
@@ -3895,10 +3895,10 @@
       "party": "R",
       "candidateId": "H6WA03275",
       "committeeId": "C00915884",
-      "receipts": 2214441.26,
-      "disbursements": 988459.54,
-      "cashOnHand": 1225981.72,
-      "individualContributions": 1531367.75,
+      "receipts": 3203193.13,
+      "disbursements": 1936607.43,
+      "cashOnHand": 1266585.7,
+      "individualContributions": 2046436.06,
       "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:WA:5|Carmela Conroy": {
@@ -3927,11 +3927,11 @@
       "party": "R",
       "candidateId": "H4WA05234",
       "committeeId": "C00870758",
-      "receipts": 1738226.34,
-      "disbursements": 976007.41,
-      "cashOnHand": 953783.6,
-      "individualContributions": 1327829.26,
-      "coverageEnd": "2026-07-15T00:00:00"
+      "receipts": 2125893.52,
+      "disbursements": 1509793.09,
+      "cashOnHand": 807665.1,
+      "individualContributions": 1611932.93,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:WI:1|Mitchell Berman": {
       "raceKey": "2026:house:WI:1",
@@ -3943,11 +3943,11 @@
       "party": "D",
       "candidateId": "H6WI01283",
       "committeeId": "C00915637",
-      "receipts": 712983.95,
-      "disbursements": 561340.28,
-      "cashOnHand": 151643.67,
-      "individualContributions": 693483.95,
-      "coverageEnd": "2026-07-22T00:00:00"
+      "receipts": 1610305.37,
+      "disbursements": 1272236.52,
+      "cashOnHand": 338068.85,
+      "individualContributions": 1476096.27,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:WI:1|Bryan Steil": {
       "raceKey": "2026:house:WI:1",
@@ -3959,11 +3959,11 @@
       "party": "R",
       "candidateId": "H8WI01156",
       "committeeId": "C00677286",
-      "receipts": 5467777.07,
-      "disbursements": 1359848.79,
-      "cashOnHand": 6327098.65,
-      "individualContributions": 1493422.77,
-      "coverageEnd": "2026-07-22T00:00:00"
+      "receipts": 6251359.2,
+      "disbursements": 4267356.48,
+      "cashOnHand": 4203173.09,
+      "individualContributions": 1709059.58,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:house:WI:3|Rebecca Cooke": {
       "raceKey": "2026:house:WI:3",
@@ -4023,11 +4023,11 @@
       "party": "R",
       "candidateId": "H4WI06048",
       "committeeId": "C00561597",
-      "receipts": 929019.7,
-      "disbursements": 621773.56,
-      "cashOnHand": 829735.85,
-      "individualContributions": 650550.52,
-      "coverageEnd": "2026-07-22T00:00:00"
+      "receipts": 1143802.52,
+      "disbursements": 849456,
+      "cashOnHand": 816836.23,
+      "individualContributions": 775083.34,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:AK:|Mary Peltola": {
       "raceKey": "2026:senate:AK:",
@@ -4039,11 +4039,11 @@
       "party": "D",
       "candidateId": "S6AK00276",
       "committeeId": "C00933978",
-      "receipts": 18545132.43,
-      "disbursements": 13908377.35,
-      "cashOnHand": 4636755.08,
-      "individualContributions": 16257753.91,
-      "coverageEnd": "2026-07-29T00:00:00"
+      "receipts": 32623721.76,
+      "disbursements": 29463904.48,
+      "cashOnHand": 3159817.28,
+      "individualContributions": 28810579.02,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:AK:|Dan S. Sullivan": {
       "raceKey": "2026:senate:AK:",
@@ -4055,11 +4055,11 @@
       "party": "R",
       "candidateId": "S4AK00214",
       "committeeId": "C00570994",
-      "receipts": 9136966.96,
-      "disbursements": 3932802.55,
-      "cashOnHand": 7295069.2,
-      "individualContributions": 4093298.45,
-      "coverageEnd": "2026-07-29T00:00:00"
+      "receipts": 11161123.71,
+      "disbursements": 8148311.23,
+      "cashOnHand": 5103717.27,
+      "individualContributions": 5435989.45,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:AL:|Everett Wess": {
       "raceKey": "2026:senate:AL:",
@@ -4087,10 +4087,10 @@
       "party": "R",
       "candidateId": "S6AL00476",
       "committeeId": "C00954974",
-      "receipts": 3787323.72,
-      "disbursements": 3285066.21,
-      "cashOnHand": 627389.17,
-      "individualContributions": 2615604.48,
+      "receipts": 4492066.3,
+      "disbursements": 4121283.59,
+      "cashOnHand": 495914.37,
+      "individualContributions": 2792410.06,
       "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:FL:|Ashley Moody": {
@@ -4103,11 +4103,11 @@
       "party": "R",
       "candidateId": "S6FL00640",
       "committeeId": "C00895763",
-      "receipts": 11270804.54,
-      "disbursements": 2779629.11,
-      "cashOnHand": 8491175.43,
-      "individualContributions": 4953352.8,
-      "coverageEnd": "2026-07-29T00:00:00"
+      "receipts": 13338185.45,
+      "disbursements": 10518105.73,
+      "cashOnHand": 2820079.72,
+      "individualContributions": 6450625.42,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:GA:|Jon Ossoff": {
       "raceKey": "2026:senate:GA:",
@@ -4135,11 +4135,11 @@
       "party": "R",
       "candidateId": "S4IA00129",
       "committeeId": "C00546788",
-      "receipts": 2002592.02,
-      "disbursements": 2307957.08,
-      "cashOnHand": 1934477.68,
+      "receipts": 2006940.15,
+      "disbursements": 2444980.8,
+      "cashOnHand": 1801802.09,
       "individualContributions": 997371.94,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:KS:|Adam Hamilton": {
       "raceKey": "2026:senate:KS:",
@@ -4168,10 +4168,10 @@
       "candidateId": "S0KY00420",
       "committeeId": "C00783274",
       "receipts": 7863.07,
-      "disbursements": 8057.2,
-      "cashOnHand": 5538.56,
+      "disbursements": 8524.84,
+      "cashOnHand": 5070.92,
       "individualContributions": 2863.07,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:KY:|Andy Barr": {
       "raceKey": "2026:senate:KY:",
@@ -4183,10 +4183,10 @@
       "party": "R",
       "candidateId": "S6KY00286",
       "committeeId": "C00467571",
-      "receipts": 9981044.48,
-      "disbursements": 11427585.19,
-      "cashOnHand": 2246536.93,
-      "individualContributions": 5609771.56,
+      "receipts": 12046429.44,
+      "disbursements": 13009755.61,
+      "cashOnHand": 2729751.47,
+      "individualContributions": 6712888.4,
       "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:LA:|Jamie Davis": {
@@ -4279,11 +4279,11 @@
       "party": "R",
       "candidateId": "S6ME00159",
       "committeeId": "C00314575",
-      "receipts": 16169827.43,
-      "disbursements": 7708020.91,
-      "cashOnHand": 11038115.42,
-      "individualContributions": 10501136.6,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 21371159.7,
+      "disbursements": 18558986.22,
+      "cashOnHand": 5388482.38,
+      "individualContributions": 14243558.18,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:MI:|Abdul El-Sayed": {
       "raceKey": "2026:senate:MI:",
@@ -4311,11 +4311,11 @@
       "party": "R",
       "candidateId": "S6MN00556",
       "committeeId": "C00935528",
-      "receipts": 5337941.77,
-      "disbursements": 3965545.21,
-      "cashOnHand": 1372727.66,
-      "individualContributions": 4722985.93,
-      "coverageEnd": "2026-07-22T00:00:00"
+      "receipts": 9661153.52,
+      "disbursements": 7527317.45,
+      "cashOnHand": 2134167.17,
+      "individualContributions": 8274716.74,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:MT:|Alani Bankhead": {
       "raceKey": "2026:senate:MT:",
@@ -4327,11 +4327,11 @@
       "party": "D",
       "candidateId": "S6MT00253",
       "committeeId": "C00937201",
-      "receipts": 58829.06,
-      "disbursements": 37011.39,
-      "cashOnHand": 21484.67,
-      "individualContributions": 45679.62,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 172508.87,
+      "disbursements": 134311.39,
+      "cashOnHand": 38259.48,
+      "individualContributions": 154946.9,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:MT:|Kurt Alme": {
       "raceKey": "2026:senate:MT:",
@@ -4359,11 +4359,11 @@
       "party": "D",
       "candidateId": "S6NC00407",
       "committeeId": "C00913566",
-      "receipts": 34975789.18,
-      "disbursements": 14258221.92,
-      "cashOnHand": 20717567.26,
-      "individualContributions": 13115398.02,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 47190466.06,
+      "disbursements": 34713071.15,
+      "cashOnHand": 12477394.91,
+      "individualContributions": 17412247.52,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:NC:|Michael Whatley": {
       "raceKey": "2026:senate:NC:",
@@ -4375,11 +4375,11 @@
       "party": "R",
       "candidateId": "S6NC00415",
       "committeeId": "C00913996",
-      "receipts": 11272504.49,
-      "disbursements": 7810806.43,
-      "cashOnHand": 3461698.06,
-      "individualContributions": 5465481.76,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 13415721.2,
+      "disbursements": 12499619.7,
+      "cashOnHand": 916101.5,
+      "individualContributions": 7020866.7,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:NE:|Dan Osborn": {
       "raceKey": "2026:senate:NE:",
@@ -4391,11 +4391,11 @@
       "party": "D",
       "candidateId": "S4NE00207",
       "committeeId": "C00901355",
-      "receipts": 5751950.79,
-      "disbursements": 3393629.65,
-      "cashOnHand": 2421487.06,
-      "individualContributions": 5541908.04,
-      "coverageEnd": "2026-09-30T00:00:00"
+      "receipts": 5755450.8,
+      "disbursements": 3393859.91,
+      "cashOnHand": 2424756.81,
+      "individualContributions": 5545408.04,
+      "coverageEnd": "2026-10-14T00:00:00"
     },
     "2026:senate:NE:|Pete Ricketts": {
       "raceKey": "2026:senate:NE:",
@@ -4439,10 +4439,10 @@
       "party": "R",
       "candidateId": "S6NH00208",
       "committeeId": "C00924092",
-      "receipts": 4214010.45,
-      "disbursements": 1110836.6,
-      "cashOnHand": 3103670.21,
-      "individualContributions": 2400602.06,
+      "receipts": 5334886.01,
+      "disbursements": 2799104.85,
+      "cashOnHand": 2502771.03,
+      "individualContributions": 3010829.55,
       "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:NM:|Lujan": {
@@ -4503,11 +4503,11 @@
       "party": "R",
       "candidateId": "S6OH00304",
       "committeeId": "C00896019",
-      "receipts": 14360027.53,
-      "disbursements": 4940716.33,
-      "cashOnHand": 9419311.2,
-      "individualContributions": 6280012.05,
-      "coverageEnd": "2026-06-30T00:00:00"
+      "receipts": 19208763.22,
+      "disbursements": 10325469.94,
+      "cashOnHand": 8883293.28,
+      "individualContributions": 9297757.8,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:RI:|Reed": {
       "raceKey": "2026:senate:RI:",
@@ -4519,11 +4519,11 @@
       "party": "D",
       "candidateId": "S6RI00163",
       "committeeId": "C00238907",
-      "receipts": 3381651.34,
-      "disbursements": 1876159.78,
-      "cashOnHand": 3093683.6,
-      "individualContributions": 2138096.66,
-      "coverageEnd": "2026-08-20T00:00:00"
+      "receipts": 3649513.55,
+      "disbursements": 2239957.76,
+      "cashOnHand": 2997747.83,
+      "individualContributions": 2251745.17,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:RI:|McKay": {
       "raceKey": "2026:senate:RI:",
@@ -4535,11 +4535,11 @@
       "party": "R",
       "candidateId": "S4RI00051",
       "committeeId": "C00827964",
-      "receipts": 180468.45,
-      "disbursements": 173238.14,
-      "cashOnHand": 7568.84,
-      "individualContributions": 178389.89,
-      "coverageEnd": "2026-08-20T00:00:00"
+      "receipts": 196100.52,
+      "disbursements": 189690.69,
+      "cashOnHand": 6748.36,
+      "individualContributions": 193156.96,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:SC:|Annie Andrews": {
       "raceKey": "2026:senate:SC:",
@@ -4599,11 +4599,11 @@
       "party": "R",
       "candidateId": "S0TN00169",
       "committeeId": "C00718627",
-      "receipts": 7162897.1,
-      "disbursements": 3855936.81,
-      "cashOnHand": 5234429.36,
-      "individualContributions": 3781066,
-      "coverageEnd": "2026-07-17T00:00:00"
+      "receipts": 8230660.03,
+      "disbursements": 4872989.56,
+      "cashOnHand": 5285139.54,
+      "individualContributions": 4270889.08,
+      "coverageEnd": "2026-09-30T00:00:00"
     },
     "2026:senate:TX:|James Talarico": {
       "raceKey": "2026:senate:TX:",
@@ -4631,10 +4631,10 @@
       "party": "R",
       "candidateId": "S6TX00388",
       "committeeId": "C00901918",
-      "receipts": 9248692.38,
-      "disbursements": 7493397.91,
-      "cashOnHand": 1755294.47,
-      "individualContributions": 9020171.83,
+      "receipts": 19497809.76,
+      "disbursements": 14572704.29,
+      "cashOnHand": 4925105.47,
+      "individualContributions": 19010028.69,
       "coverageEnd": "2026-09-30T00:00:00"
     }
   },

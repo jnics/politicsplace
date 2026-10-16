@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-15",
+ "generatedAt": "2026-10-16",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -1744,7 +1744,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -1968,8 +1968,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "insideElections": {
@@ -2752,7 +2752,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -3368,7 +3368,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -3592,8 +3592,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {
@@ -3648,7 +3648,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -4656,7 +4656,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -5328,7 +5328,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -5552,7 +5552,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -5664,7 +5664,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -6168,7 +6168,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -10533,7 +10533,7 @@
       "flip": true
      },
      "ddhq": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
