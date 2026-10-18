@@ -84,7 +84,7 @@ const HOUSE = [
 // polling yet).
 const SENATE = [
   // state, D surname, R surname, special (omit/false for a regular-cycle seat)
-  ["ME", "Platner|Mills", "Collins"],
+  ["ME", "Jackson", "Collins"], // Troy Jackson replaced Platner as the D nominee
   ["NC", "Cooper", "Whatley"],
   ["GA", "Ossoff", "Dooley|King|Carter"],
   ["MI", "El-Sayed", "Rogers"], // Whitmer is term-limited, not on this ballot

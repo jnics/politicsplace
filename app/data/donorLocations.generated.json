@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-30T16:34:07.981Z",
+  "generatedAt": "2026-10-18T00:48:28.965Z",
   "source": "FEC (api.open.fec.gov) schedule_a/by_state",
-  "requestsThisRun": 128,
-  "totalRequestsLogged": 262,
+  "requestsThisRun": 1,
+  "totalRequestsLogged": 263,
   "stoppedEarly": false,
   "requestLog": [
     {
@@ -2882,6 +2882,17 @@
       "path": "schedules/schedule_a/by_state/",
       "params": {
         "committee_id": "C00901918",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-18T00:48:25.938Z",
+      "label": "by_state p1: Troy Jackson (Maine Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00955609",
         "cycle": "2026",
         "per_page": "100",
         "page": "1"
@@ -27460,350 +27471,6 @@
       "committeeId": "C00870337",
       "byState": []
     },
-    "S6ME00373": {
-      "name": "Graham Platner",
-      "raceTitle": "Maine Senate",
-      "raceKey": "2026:senate:ME:",
-      "committeeId": "C00916437",
-      "byState": [
-        {
-          "state": "ME",
-          "stateFull": "Maine",
-          "total": 2084480.82,
-          "count": 16153
-        },
-        {
-          "state": "CA",
-          "stateFull": "California",
-          "total": 1233556.6,
-          "count": 6935
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 1127727.8,
-          "count": 4354
-        },
-        {
-          "state": "MA",
-          "stateFull": "Massachusetts",
-          "total": 877175.62,
-          "count": 4628
-        },
-        {
-          "state": "WA",
-          "stateFull": "Washington",
-          "total": 275720.21,
-          "count": 1973
-        },
-        {
-          "state": "FL",
-          "stateFull": "Florida",
-          "total": 248436.04,
-          "count": 2211
-        },
-        {
-          "state": "IL",
-          "stateFull": "Illinois",
-          "total": 246223.67,
-          "count": 1380
-        },
-        {
-          "state": "DC",
-          "stateFull": "District Of Columbia",
-          "total": 243625.4,
-          "count": 768
-        },
-        {
-          "state": "MD",
-          "stateFull": "Maryland",
-          "total": 241607.21,
-          "count": 1380
-        },
-        {
-          "state": "TX",
-          "stateFull": "Texas",
-          "total": 238875.36,
-          "count": 1699
-        },
-        {
-          "state": "CO",
-          "stateFull": "Colorado",
-          "total": 211470.15,
-          "count": 1121
-        },
-        {
-          "state": "VA",
-          "stateFull": "Virginia",
-          "total": 184630.72,
-          "count": 1400
-        },
-        {
-          "state": "CT",
-          "stateFull": "Connecticut",
-          "total": 174977.53,
-          "count": 1053
-        },
-        {
-          "state": "PA",
-          "stateFull": "Pennsylvania",
-          "total": 146523.35,
-          "count": 1457
-        },
-        {
-          "state": "NJ",
-          "stateFull": "New Jersey",
-          "total": 110910.15,
-          "count": 1120
-        },
-        {
-          "state": "NH",
-          "stateFull": "New Hampshire",
-          "total": 99826.95,
-          "count": 897
-        },
-        {
-          "state": "MN",
-          "stateFull": "Minnesota",
-          "total": 89764.12,
-          "count": 489
-        },
-        {
-          "state": "OR",
-          "stateFull": "Oregon",
-          "total": 82918.1,
-          "count": 952
-        },
-        {
-          "state": "NC",
-          "stateFull": "North Carolina",
-          "total": 82459.99,
-          "count": 844
-        },
-        {
-          "state": "VT",
-          "stateFull": "Vermont",
-          "total": 68949,
-          "count": 685
-        },
-        {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 67313.94,
-          "count": 461
-        },
-        {
-          "state": "AZ",
-          "stateFull": "Arizona",
-          "total": 66252.75,
-          "count": 653
-        },
-        {
-          "state": "OH",
-          "stateFull": "Ohio",
-          "total": 62952,
-          "count": 681
-        },
-        {
-          "state": "MI",
-          "stateFull": "Michigan",
-          "total": 59159.17,
-          "count": 786
-        },
-        {
-          "state": "NV",
-          "stateFull": "Nevada",
-          "total": 45048,
-          "count": 323
-        },
-        {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 41674.29,
-          "count": 545
-        },
-        {
-          "state": "WI",
-          "stateFull": "Wisconsin",
-          "total": 40605.65,
-          "count": 492
-        },
-        {
-          "state": "RI",
-          "stateFull": "Rhode Island",
-          "total": 38972,
-          "count": 253
-        },
-        {
-          "state": "SC",
-          "stateFull": "South Carolina",
-          "total": 37815,
-          "count": 308
-        },
-        {
-          "state": "NM",
-          "stateFull": "New Mexico",
-          "total": 34305.79,
-          "count": 392
-        },
-        {
-          "state": "IN",
-          "stateFull": "Indiana",
-          "total": 30248,
-          "count": 362
-        },
-        {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 28692.74,
-          "count": 345
-        },
-        {
-          "state": "UT",
-          "stateFull": "Utah",
-          "total": 26427.5,
-          "count": 160
-        },
-        {
-          "state": "KY",
-          "stateFull": "Kentucky",
-          "total": 24892,
-          "count": 134
-        },
-        {
-          "state": "OK",
-          "stateFull": "Oklahoma",
-          "total": 20135,
-          "count": 147
-        },
-        {
-          "state": "HI",
-          "stateFull": "Hawaii",
-          "total": 19170.8,
-          "count": 152
-        },
-        {
-          "state": "MT",
-          "stateFull": "Montana",
-          "total": 19162.5,
-          "count": 122
-        },
-        {
-          "state": "DE",
-          "stateFull": "Delaware",
-          "total": 15607,
-          "count": 177
-        },
-        {
-          "state": "AR",
-          "stateFull": "Arkansas",
-          "total": 14294,
-          "count": 111
-        },
-        {
-          "state": "LA",
-          "stateFull": "Louisiana",
-          "total": 14206,
-          "count": 146
-        },
-        {
-          "state": "WY",
-          "stateFull": "Wyoming",
-          "total": 13819,
-          "count": 85
-        },
-        {
-          "state": "AK",
-          "stateFull": "Alaska",
-          "total": 13148,
-          "count": 168
-        },
-        {
-          "state": "AL",
-          "stateFull": "Alabama",
-          "total": 12260,
-          "count": 87
-        },
-        {
-          "state": "MS",
-          "stateFull": "Mississippi",
-          "total": 11175,
-          "count": 31
-        },
-        {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 10218.56,
-          "count": 124
-        },
-        {
-          "state": "NE",
-          "stateFull": "Nebraska",
-          "total": 9756,
-          "count": 39
-        },
-        {
-          "state": "KS",
-          "stateFull": "Kansas",
-          "total": 7976,
-          "count": 132
-        },
-        {
-          "state": "IA",
-          "stateFull": "Iowa",
-          "total": 6526,
-          "count": 71
-        },
-        {
-          "state": "WV",
-          "stateFull": "West Virginia",
-          "total": 5927,
-          "count": 99
-        },
-        {
-          "state": "SD",
-          "stateFull": "South Dakota",
-          "total": 3518,
-          "count": 43
-        },
-        {
-          "state": "AE",
-          "stateFull": "Armed Forces Europe",
-          "total": 1350,
-          "count": 6
-        },
-        {
-          "state": "PR",
-          "stateFull": "Puerto Rico",
-          "total": 1100,
-          "count": 4
-        },
-        {
-          "state": "ZZ",
-          "stateFull": "Foreign Countries",
-          "total": 800,
-          "count": 2
-        },
-        {
-          "state": "ND",
-          "stateFull": "North Dakota",
-          "total": 490,
-          "count": 7
-        },
-        {
-          "state": "VI",
-          "stateFull": "U.S. Virgin Islands",
-          "total": 250,
-          "count": 1
-        },
-        {
-          "state": "AP",
-          "stateFull": "Armed Forces Pacific",
-          "total": 75,
-          "count": 5
-        }
-      ]
-    },
     "S6ME00159": {
       "name": "Susan Collins",
       "raceTitle": "Maine Senate",
@@ -34143,6 +33810,13 @@
           "count": 1
         }
       ]
+    },
+    "S6ME00464": {
+      "name": "Troy Jackson",
+      "raceTitle": "Maine Senate",
+      "raceKey": "2026:senate:ME:",
+      "committeeId": "C00955609",
+      "byState": []
     }
   }
 }

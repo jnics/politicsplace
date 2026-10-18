@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-30T19:30:43.667Z",
+  "generatedAt": "2026-10-18T00:48:34.231Z",
   "source": "FEC (api.open.fec.gov) schedule_b/by_purpose + by_recipient",
-  "requestsThisRun": 256,
-  "totalRequestsLogged": 256,
+  "requestsThisRun": 2,
+  "totalRequestsLogged": 258,
   "stoppedEarly": false,
   "requestLog": [
     {
@@ -2560,6 +2560,26 @@
       "path": "schedules/schedule_b/by_recipient/",
       "params": {
         "committee_id": "C00901918",
+        "cycle": "2026",
+        "sort": "-total",
+        "per_page": "20"
+      }
+    },
+    {
+      "at": "2026-10-18T00:48:29.381Z",
+      "label": "spend purpose: Troy Jackson (Maine Senate)",
+      "path": "schedules/schedule_b/by_purpose/",
+      "params": {
+        "committee_id": "C00955609",
+        "cycle": "2026"
+      }
+    },
+    {
+      "at": "2026-10-18T00:48:31.956Z",
+      "label": "spend recipients: Troy Jackson (Maine Senate)",
+      "path": "schedules/schedule_b/by_recipient/",
+      "params": {
+        "committee_id": "C00955609",
         "cycle": "2026",
         "sort": "-total",
         "per_page": "20"
@@ -16947,154 +16967,6 @@
         }
       ]
     },
-    "S6ME00373": {
-      "name": "Graham Platner",
-      "raceTitle": "Maine Senate",
-      "byPurpose": [
-        {
-          "purpose": "OTHER",
-          "total": 9393624.89,
-          "count": 1005
-        },
-        {
-          "purpose": "ADVERTISING",
-          "total": 8713803.37,
-          "count": 100
-        },
-        {
-          "purpose": "FUNDRAISING",
-          "total": 879621.86,
-          "count": 22
-        },
-        {
-          "purpose": "ADMINISTRATIVE",
-          "total": 126824.03,
-          "count": 229
-        },
-        {
-          "purpose": "REFUNDS",
-          "total": 93147,
-          "count": 260
-        },
-        {
-          "purpose": "MATERIALS",
-          "total": 18619.5,
-          "count": 23
-        },
-        {
-          "purpose": "TRAVEL",
-          "total": 10763.55,
-          "count": 26
-        },
-        {
-          "purpose": "EVENTS",
-          "total": 2517.22,
-          "count": 7
-        }
-      ],
-      "topRecipients": [
-        {
-          "name": "LC MEDIA, LLC",
-          "total": 8497148,
-          "count": 35
-        },
-        {
-          "name": "HELIX CAMPAIGNS, LLC",
-          "total": 4412472,
-          "count": 44
-        },
-        {
-          "name": "GUSTO",
-          "total": 1194982.55,
-          "count": 88
-        },
-        {
-          "name": "ACTBLUE TECHNICAL SERVICES",
-          "total": 737512.4,
-          "count": 55
-        },
-        {
-          "name": "HELIX CAMPAIGNS",
-          "total": 635000,
-          "count": 7
-        },
-        {
-          "name": "FDM CONNECTS LLC",
-          "total": 626988.29,
-          "count": 12
-        },
-        {
-          "name": "WORKERS PRODUCTIONS LLC",
-          "total": 529500,
-          "count": 10
-        },
-        {
-          "name": "AMS COMMUNICATIONS, INC.",
-          "total": 239925,
-          "count": 6
-        },
-        {
-          "name": "GRASSROOTS ANALYTICS",
-          "total": 207758.01,
-          "count": 13
-        },
-        {
-          "name": "WORKBENCH STRATEGY",
-          "total": 185300,
-          "count": 6
-        },
-        {
-          "name": "DARK FOREST LLC",
-          "total": 107529.07,
-          "count": 8
-        },
-        {
-          "name": "AMERICAN ROOTS",
-          "total": 100574.34,
-          "count": 8
-        },
-        {
-          "name": "NIELSEN, MERKSAMER, PARRINELLO, GROSS, & LEONI, LLP",
-          "total": 94006.6,
-          "count": 9
-        },
-        {
-          "name": "SUMMIT PRINTING",
-          "total": 92828.09,
-          "count": 8
-        },
-        {
-          "name": "HM CONSULTING",
-          "total": 73772.82,
-          "count": 5
-        },
-        {
-          "name": "NGP VAN",
-          "total": 67486,
-          "count": 7
-        },
-        {
-          "name": "NORTH SIDE VENTURES LLC",
-          "total": 63000,
-          "count": 7
-        },
-        {
-          "name": "STITILIS, OLIVIA",
-          "total": 62118.56,
-          "count": 8
-        },
-        {
-          "name": "ANTHEM",
-          "total": 50548.44,
-          "count": 6
-        },
-        {
-          "name": "SCALE TO WIN",
-          "total": 50309.65,
-          "count": 15
-        }
-      ]
-    },
     "S6ME00159": {
       "name": "Susan Collins",
       "raceTitle": "Maine Senate",
@@ -20011,6 +19883,12 @@
           "count": 1
         }
       ]
+    },
+    "S6ME00464": {
+      "name": "Troy Jackson",
+      "raceTitle": "Maine Senate",
+      "byPurpose": [],
+      "topRecipients": []
     }
   }
 }
