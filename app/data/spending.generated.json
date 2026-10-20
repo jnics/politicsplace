@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-18T00:48:34.231Z",
+  "generatedAt": "2026-10-20T11:09:11.479Z",
   "source": "FEC (api.open.fec.gov) schedule_b/by_purpose + by_recipient",
-  "requestsThisRun": 2,
+  "requestsThisRun": 0,
   "totalRequestsLogged": 258,
   "stoppedEarly": false,
   "requestLog": [

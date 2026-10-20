@@ -1,25 +1,10 @@
 {
-  "generatedAt": "2026-10-18T00:47:39.563Z",
+  "generatedAt": "2026-10-20T11:09:09.364Z",
   "source": "FEC (api.open.fec.gov)",
-  "requestsThisRun": 275,
+  "requestsThisRun": 0,
   "totalRequestsLogged": 275,
   "stoppedEarly": false,
-  "notFound": [
-    "Michigan 4th District — Bill Huizenga",
-    "Michigan 7th District — Tom Barrett",
-    "Michigan 10th District — Mike Bouchard Jr.",
-    "Minnesota 1st District — Jake Johnson",
-    "New Mexico 2nd District — Gabe Vasquez",
-    "Ohio 10th District — Mike Turner",
-    "Pennsylvania 1st District — Bob Harvie",
-    "Virginia 5th District — Tom Perriello",
-    "Florida Senate (special) — Angie Nixon",
-    "Georgia Senate — Derek Dooley (no 2026 totals filed)",
-    "Iowa Senate — Zach Wahls (no 2026 totals filed)",
-    "Kansas Senate — Roger Marshall (no 2026 totals filed)",
-    "Michigan Senate — Mike Rogers",
-    "Minnesota Senate — Peggy Flanagan"
-  ],
+  "notFound": [],
   "requestLog": [
     {
       "at": "2026-10-17T19:43:35.030Z",
