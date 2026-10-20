@@ -131,6 +131,20 @@ export interface Oh7LogEntry {
   after: number | null;
 }
 
+/**
+ * A short stamp that changes whenever anything is saved: the latest row
+ * update plus the latest log id. Cheap enough to poll; open pages compare it
+ * and only reload the full tally when it moves.
+ */
+export async function readOh7Version(db: D1Database): Promise<string> {
+  const row = await db
+    .prepare(
+      "SELECT (SELECT max(updated_at) FROM oh7_rows) AS updated, (SELECT max(id) FROM oh7_log) AS logId"
+    )
+    .first<{ updated: string | null; logId: number | null }>();
+  return `${row?.updated ?? ""}:${row?.logId ?? 0}`;
+}
+
 /** The most recent saves, newest first. */
 export async function readOh7Log(db: D1Database, limit = 300): Promise<Oh7LogEntry[]> {
   const { results } = await db

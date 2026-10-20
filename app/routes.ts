@@ -6,6 +6,7 @@ export default [
   route("polls/submit", "routes/polls.submit.tsx"),
   route("election2026", "routes/election2026.tsx"),
   route("results", "routes/results.tsx"),
+  route("results/version", "routes/results.version.tsx"),
   route("chase", "routes/chase.tsx"),
   route("chase/export", "routes/chase.export.tsx"),
   route("fundraising", "routes/fundraising.tsx"),

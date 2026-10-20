@@ -56,7 +56,7 @@ export const MEDINA_RACE_GROUPS: CountyRaceGroup[] = [
         { key: "brown", name: "Sherrod Brown", party: "D" },
         { key: "husted", name: "Jon Husted", party: "R", incumbent: true },
       ]),
-      race("governor", "Governor & Lt. Governor", [
+      race("governor", "Governor", [
         { key: "acton", name: "Amy Acton", party: "D" },
         { key: "ramaswamy", name: "Vivek Ramaswamy", party: "R" },
       ]),

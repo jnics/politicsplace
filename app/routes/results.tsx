@@ -64,6 +64,8 @@ export async function loader({ request, context }: Route.LoaderArgs) {
     placeRaces: store.placeRaces,
     updatedAt: store.updatedAt,
     log,
+    // Same stamp /results/version serves (see readOh7Version), from data already read.
+    version: `${store.updatedAt ?? ""}:${log[0]?.id ?? 0}`,
     editor: editorFromRequest(request),
   };
 }
@@ -314,7 +316,7 @@ const RACE_BAR: Record<RaceParty, string> = {
 const BAR_ORDER: Record<RaceParty, number> = { D: 0, Y: 0, L: 1, O: 2, N: 3, R: 3 };
 
 export default function Results({ loaderData }: Route.ComponentProps) {
-  const { results, races, placeRaces, updatedAt, log, editor } = loaderData;
+  const { results, races, placeRaces, updatedAt, log, version, editor } = loaderData;
   const [mode, setMode] = useState<EntryMode>("set");
 
   // Live tally: seed from the server, then update as counts are added so the
@@ -334,19 +336,35 @@ export default function Results({ loaderData }: Route.ComponentProps) {
   useEffect(() => setRows(toRows(results)), [results]);
 
   // Watchers see other people's counts (and the history) without saving or
-  // reloading: re-run the loader every few seconds. Skipped while the tab is
-  // hidden, while a count box has focus, and while a save is in flight, so a
-  // refresh never lands on top of what someone is entering.
+  // reloading. Every few seconds the page asks /results/version for a tiny
+  // change stamp and re-runs the loader only when it has moved. Skipped while
+  // the tab is hidden, while a count box has focus, and while a save is in
+  // flight, so a refresh never lands on top of what someone is entering.
   const revalidator = useRevalidator();
   const busy = useFetchers().some((f) => f.state !== "idle");
-  const latest = useRef({ revalidator, busy });
-  latest.current = { revalidator, busy };
+  const latest = useRef({ revalidator, busy, version });
+  latest.current = { revalidator, busy, version };
   useEffect(() => {
-    const tick = () => {
-      const { revalidator, busy } = latest.current;
-      if (document.hidden || busy || revalidator.state !== "idle") return;
-      if (document.activeElement instanceof HTMLInputElement) return;
-      revalidator.revalidate();
+    let checking = false;
+    const idle = () =>
+      !document.hidden &&
+      !latest.current.busy &&
+      latest.current.revalidator.state === "idle" &&
+      !(document.activeElement instanceof HTMLInputElement);
+    const tick = async () => {
+      if (checking || !idle()) return;
+      checking = true;
+      try {
+        const res = await fetch("/results/version", { cache: "no-store" });
+        const { version } = (await res.json()) as { version: string };
+        if (version !== latest.current.version && idle()) {
+          latest.current.revalidator.revalidate();
+        }
+      } catch {
+        // Offline or a blip — try again on the next tick.
+      } finally {
+        checking = false;
+      }
     };
     const id = setInterval(tick, REFRESH_MS);
     // Catch up straight away when coming back to the tab.
