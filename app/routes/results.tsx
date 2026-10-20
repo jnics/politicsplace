@@ -162,7 +162,10 @@ const emptyRow = (): Row => ({
 });
 const rowTotal = (r: Row) =>
   Object.values(r.votes).reduce((s, n) => s + (n || 0), 0);
-const fmt = (n: number) => n.toLocaleString();
+// Locale and time zone pinned so the server render (UTC on Workers) matches the
+// browser's exactly — a mismatch is a React hydration error.
+const fmt = (n: number) => n.toLocaleString("en-US");
+const TZ = "America/New_York";
 
 const [D_KEY, R_KEY, O_KEY] = OH7_CANDIDATES.map((c) => c.key);
 
@@ -410,7 +413,7 @@ export default function Results({ loaderData }: Route.ComponentProps) {
           you press Enter or leave the field, and totals for everyone. Enter 0
           to reset a field.
           {updatedAt
-            ? ` Last edit ${new Date(updatedAt).toLocaleString()}.`
+            ? ` Last edit ${new Date(updatedAt).toLocaleString("en-US", { timeZone: TZ })}.`
             : ""}
         </p>
         <p className="mt-1 text-xs text-gray-400 dark:text-gray-500">
@@ -624,7 +627,8 @@ function HistorySection({ log }: { log: Oh7LogEntry[] }) {
                   return (
                     <tr key={e.id}>
                       <td className="whitespace-nowrap py-1 pr-3 tabular-nums text-gray-500 dark:text-gray-400">
-                        {new Date(e.at).toLocaleTimeString([], {
+                        {new Date(e.at).toLocaleTimeString("en-US", {
+                          timeZone: TZ,
                           hour: "numeric",
                           minute: "2-digit",
                           second: "2-digit",
