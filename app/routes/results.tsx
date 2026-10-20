@@ -1,7 +1,7 @@
 import type { Route } from "./+types/results";
 import { cloudflareContext } from "~/lib/context.server";
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
-import { useFetcher, data } from "react-router";
+import { useFetcher, useFetchers, useRevalidator, data } from "react-router";
 import {
   OH7_CANDIDATES,
   OH7_TITLE,
@@ -44,6 +44,9 @@ const PLACE_IDS = new Set(
   OH7_TOWNS.flatMap((t) => t.pollingPlaces.map((p) => p.id))
 );
 const RACES_BY_ID = new Map(MEDINA_RACES.map((r) => [r.id, r]));
+
+/** How often an open page pulls everyone's latest counts and history. */
+const REFRESH_MS = 10_000;
 
 /** Ceiling for any one vote field — far above a real count, stops a typo. */
 const MAX_VOTES = 10_000_000;
@@ -329,6 +332,31 @@ export default function Results({ loaderData }: Route.ComponentProps) {
   // Every save revalidates the loader, so take the server's totals whenever
   // they come back — that also picks up what other people have added.
   useEffect(() => setRows(toRows(results)), [results]);
+
+  // Watchers see other people's counts (and the history) without saving or
+  // reloading: re-run the loader every few seconds. Skipped while the tab is
+  // hidden, while a count box has focus, and while a save is in flight, so a
+  // refresh never lands on top of what someone is entering.
+  const revalidator = useRevalidator();
+  const busy = useFetchers().some((f) => f.state !== "idle");
+  const latest = useRef({ revalidator, busy });
+  latest.current = { revalidator, busy };
+  useEffect(() => {
+    const tick = () => {
+      const { revalidator, busy } = latest.current;
+      if (document.hidden || busy || revalidator.state !== "idle") return;
+      if (document.activeElement instanceof HTMLInputElement) return;
+      revalidator.revalidate();
+    };
+    const id = setInterval(tick, REFRESH_MS);
+    // Catch up straight away when coming back to the tab.
+    const onVisible = () => !document.hidden && tick();
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      clearInterval(id);
+      document.removeEventListener("visibilitychange", onVisible);
+    };
+  }, []);
   useEffect(() => setRaceRows(toRaceRows(races)), [races]);
 
   const [placeRaceVotes, setPlaceRaceVotes] = useState(placeRaces);
