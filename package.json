@@ -16,6 +16,7 @@
     "polls:pull": "node scripts/pull-polls.mjs",
     "polls:538": "node scripts/import-538-polls.mjs",
     "polls:wikipedia": "node scripts/import-wikipedia-polls.mjs",
+    "polls:generic": "node scripts/import-generic-ballot.mjs",
     "ratings:pull": "node scripts/import-race-ratings.mjs",
     "polls:all": "node scripts/polls-all.mjs",
     "fundraising:pull": "node scripts/pull-fundraising.mjs",
@@ -27,7 +28,8 @@
     "geo:precincts": "node scripts/extract-precincts.mjs",
     "geo:precinct-results": "node scripts/join-precinct-results.mjs",
     "geo:districts": "node scripts/assign-precincts-to-districts.mjs",
-    "oh7:precincts": "node scripts/build-oh7-precincts.mjs"
+    "oh7:precincts": "node scripts/build-oh7-precincts.mjs",
+    "board:governors": "node scripts/build-board-governors.mjs"
   },
   "dependencies": {
     "isbot": "^5.1.36",

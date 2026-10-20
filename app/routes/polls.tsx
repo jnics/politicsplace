@@ -30,7 +30,7 @@ export function meta({}: Route.MetaArgs) {
     {
       name: "description",
       content:
-        "2026 U.S. Senate, House, Governor and President polling by state and race, plus the generic congressional ballot, sourced from RealClearPolling.",
+        "2026 U.S. Senate, House, Governor and President polling by state and race, plus the generic congressional ballot.",
     },
   ];
 }
@@ -52,6 +52,11 @@ const TABS: { id: RaceType; label: string }[] = [
   { id: "governor", label: "Governor" },
   { id: "president", label: "President" },
 ];
+
+function fmtLongDate(iso: string): string {
+  const d = new Date(iso.slice(0, 10) + "T00:00:00");
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
 
 function fmtDate(iso: string): string {
   if (!iso) return "—";
@@ -120,7 +125,7 @@ interface BallotData {
   note?: string;
 }
 
-/** The D-vs-R figure for one tab in one year. House uses the RCP generic
+/** The D-vs-R figure for one tab in one year. House uses the national generic
  *  congressional ballot; the other offices use the mean of that office's polled
  *  races (see officeAverage). */
 function ballotFor(allRaces: RacePolls[], tab: RaceType, year: number): BallotData | null {
@@ -131,7 +136,7 @@ function ballotFor(allRaces: RacePolls[], tab: RaceType, year: number): BallotDa
       d: g.d,
       r: g.r,
       spread: g.spread,
-      sub: year === 2026 ? `RCP average · ${fmtDate(g.asOf)}` : "RCP final average",
+      sub: year === 2026 ? `Polling average · ${fmtDate(g.asOf)}` : "Final polling average",
       note: g.note,
     };
   }
@@ -191,7 +196,7 @@ function BallotCard({
               title={
                 enabled
                   ? undefined
-                  : "No polling pulled for this year yet — run pnpm polls:pull"
+                  : "No polling pulled for this year yet — run pnpm polls:all"
               }
               className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
                 y === year
@@ -234,6 +239,34 @@ function BallotCard({
             <p className="mt-2.5 text-[11px] leading-relaxed text-gray-400 dark:text-gray-500">
               {data.note}
             </p>
+          )}
+          {tab === "house" && (
+            <details className="mt-3 border-t border-gray-100 pt-2.5 dark:border-gray-800">
+              <summary className="cursor-pointer text-xs font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">
+                What is the generic ballot?
+              </summary>
+              <div className="mt-2 space-y-2 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+                <p>
+                  The generic congressional ballot is a national poll question that asks
+                  voters which party they would support for Congress in their district,
+                  without naming any candidates &mdash; for example, &ldquo;If the election
+                  were held today, would you vote for the Democratic or the Republican
+                  candidate for the U.S. House?&rdquo;
+                </p>
+                <p>
+                  Because it leaves out names, it measures the overall mood toward each
+                  party rather than any one race. It is the most common way to track the
+                  national House picture, since most of the 435 districts are rarely or
+                  never polled on their own.
+                </p>
+                <p>
+                  Read it as a rough guide, not a seat count. Districts are drawn
+                  unevenly, so a party can win the national vote and still lose the
+                  House majority, and the average has missed the final national House
+                  vote by several points in some years.
+                </p>
+              </div>
+            </details>
           )}
         </>
       ) : (
@@ -315,8 +348,9 @@ export default function Polls({ loaderData }: Route.ComponentProps) {
             Polls
           </h1>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            2026 polling by state and race, sourced from RealClearPolling
-            {POLLS_GENERATED_AT ? ` · updated ${POLLS_GENERATED_AT}` : ""}.
+            2026 polling by state and race, compiled from Wikipedia&rsquo;s
+            election articles
+            {POLLS_GENERATED_AT ? ` · updated ${fmtLongDate(POLLS_GENERATED_AT)}` : ""}.
           </p>
         </div>
         <a

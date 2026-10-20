@@ -130,7 +130,8 @@ export function GenericBallotChart() {
       <p className="mt-4 text-[11px] text-gray-400 dark:text-gray-500">
         Left of center = Democratic lean, right = Republican &mdash; each year&rsquo;s
         own color, not party color. Polling average is RealClearPolitics&rsquo; final
-        (or running, for 2026) average; the certified bar is the actual national
+        average for past cycles and, for 2026, the running average across several national
+        polling aggregators; the certified bar is the actual national
         U.S. House popular vote once counted.
       </p>
     </div>

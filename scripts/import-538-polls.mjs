@@ -232,7 +232,7 @@ async function main() {
     });
 
   // merge: keep everything that isn't a prior 538 import
-  let prev = { generatedAt: today, source: "RealClearPolling", races: [] };
+  let prev = { generatedAt: today, source: "Wikipedia + FiveThirtyEight", races: [] };
   try { prev = JSON.parse(readFileSync(OUT, "utf8")); } catch {}
   const kept = (prev.races ?? []).filter((r) => r.source !== "FiveThirtyEight");
   const out = {

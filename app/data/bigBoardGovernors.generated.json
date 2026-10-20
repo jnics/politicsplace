@@ -1,0 +1,787 @@
+[
+ {
+  "chamber": "governor",
+  "place": "Alabama",
+  "state": "AL",
+  "incumbent": "Kay Ivey",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Tommy Tuberville",
+    "party": "R"
+   },
+   {
+    "name": "Doug Jones",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Alaska",
+  "state": "AK",
+  "incumbent": "Mike Dunleavy",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Dave Bronson",
+    "party": "R"
+   },
+   {
+    "name": "Jonathan S. “JKT” Kreiss-Tomkins",
+    "party": "D"
+   },
+   {
+    "name": "James W. “JP4” Parkin",
+    "party": "R"
+   },
+   {
+    "name": "Treg Taylor",
+    "party": "R"
+   },
+   {
+    "name": "Bernadette M. Wilson",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Arizona",
+  "state": "AZ",
+  "incumbent": "Katie Hobbs",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Andy Biggs",
+    "party": "R"
+   },
+   {
+    "name": "Katie Hobbs",
+    "party": "D",
+    "incumbent": true
+   },
+   {
+    "name": "Risa Lombardo",
+    "party": "G"
+   },
+   {
+    "name": "Teri Hourihan",
+    "party": "O"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Arkansas",
+  "state": "AR",
+  "incumbent": "Sarah Huckabee Sanders",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Sarah Huckabee Sanders",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Fredrick Love",
+    "party": "D"
+   },
+   {
+    "name": "Colt Shelby",
+    "party": "L"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "California",
+  "state": "CA",
+  "incumbent": "Gavin Newsom",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Steve Hilton",
+    "party": "R"
+   },
+   {
+    "name": "Xavier Becerra",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Colorado",
+  "state": "CO",
+  "incumbent": "Jared Polis",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Phil Weiser",
+    "party": "D"
+   },
+   {
+    "name": "Victor Marx",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Connecticut",
+  "state": "CT",
+  "incumbent": "Ned Lamont",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Ned Lamont",
+    "party": "D",
+    "incumbent": true
+   },
+   {
+    "name": "Ryan Fazio",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Florida",
+  "state": "FL",
+  "incumbent": "Ron DeSantis",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Byron Donalds",
+    "party": "R"
+   },
+   {
+    "name": "David Jolly",
+    "party": "D"
+   },
+   {
+    "name": "Scott Eckhard Jewett",
+    "party": "L"
+   },
+   {
+    "name": "Dean Ocean Abrams",
+    "party": "I"
+   },
+   {
+    "name": "Charles Burkett",
+    "party": "I"
+   },
+   {
+    "name": "Jeffrey Peter \"Dr. Jeff\" Datto",
+    "party": "I"
+   },
+   {
+    "name": "Moliere \"Moe\" Dimanche",
+    "party": "I"
+   },
+   {
+    "name": "Frank J. Russo",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Georgia",
+  "state": "GA",
+  "incumbent": "Brian Kemp",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Rick Jackson",
+    "party": "R"
+   },
+   {
+    "name": "Keisha Lance Bottoms",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Hawaii",
+  "state": "HI",
+  "incumbent": "Josh Green",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Gary Cordery",
+    "party": "R"
+   },
+   {
+    "name": "Josh Green",
+    "party": "D",
+    "incumbent": true
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Idaho",
+  "state": "ID",
+  "incumbent": "Brad Little",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Terri Pickens",
+    "party": "D"
+   },
+   {
+    "name": "Brad Little",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Pro-Life",
+    "party": "O"
+   },
+   {
+    "name": "Paul Sand",
+    "party": "L"
+   },
+   {
+    "name": "John R. Stegner",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Illinois",
+  "state": "IL",
+  "incumbent": "JB Pritzker",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "JB Pritzker",
+    "party": "D",
+    "incumbent": true
+   },
+   {
+    "name": "Darren Bailey",
+    "party": "R"
+   },
+   {
+    "name": "Collin Corbett",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Iowa",
+  "state": "IA",
+  "incumbent": "Kim Reynolds",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Zach Lahn",
+    "party": "R"
+   },
+   {
+    "name": "Rob Sand",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Kansas",
+  "state": "KS",
+  "incumbent": "Laura Kelly",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Cindy Holscher",
+    "party": "D"
+   },
+   {
+    "name": "Ty Masterson",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Maine",
+  "state": "ME",
+  "incumbent": "Janet Mills",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Bobby Charles",
+    "party": "R"
+   },
+   {
+    "name": "Hannah Pingree",
+    "party": "D"
+   },
+   {
+    "name": "Rick Bennett",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Maryland",
+  "state": "MD",
+  "incumbent": "Wes Moore",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Wes Moore",
+    "party": "D",
+    "incumbent": true
+   },
+   {
+    "name": "Dan Cox",
+    "party": "R"
+   },
+   {
+    "name": "Andy Ellis",
+    "party": "G"
+   },
+   {
+    "name": "Cathy White",
+    "party": "O"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Massachusetts",
+  "state": "MA",
+  "incumbent": "Maura Healey",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Maura Healey",
+    "party": "D",
+    "incumbent": true
+   },
+   {
+    "name": "Michael Roger Minogue",
+    "party": "R"
+   },
+   {
+    "name": "James",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Michigan",
+  "state": "MI",
+  "incumbent": "Gretchen Whitmer",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Jocelyn Benson",
+    "party": "D"
+   },
+   {
+    "name": "John James",
+    "party": "R"
+   },
+   {
+    "name": "Anthony Hudson",
+    "party": "L"
+   },
+   {
+    "name": "Donna Brandenburg",
+    "party": "O"
+   },
+   {
+    "name": "Douglas Campbell",
+    "party": "G"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Minnesota",
+  "state": "MN",
+  "incumbent": "Tim Walz",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Amy Klobuchar",
+    "party": "D"
+   },
+   {
+    "name": "Lisa Demuth",
+    "party": "R"
+   },
+   {
+    "name": "Steven Young",
+    "party": "G"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Nebraska",
+  "state": "NE",
+  "incumbent": "Jim Pillen",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Jim Pillen",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Lynne Walz",
+    "party": "D"
+   },
+   {
+    "name": "Rick Beard",
+    "party": "O"
+   },
+   {
+    "name": "Brett Lindstrom",
+    "party": "O"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Nevada",
+  "state": "NV",
+  "incumbent": "Joe Lombardo",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Aaron Ford",
+    "party": "D"
+   },
+   {
+    "name": "Joe Lombardo",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Danielle Ford",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "New Hampshire",
+  "state": "NH",
+  "incumbent": "Kelly Ayotte",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Cinde Warmington",
+    "party": "D"
+   },
+   {
+    "name": "Kelly Ayotte",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Stephen Villee",
+    "party": "L"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "New Mexico",
+  "state": "NM",
+  "incumbent": "Michelle Lujan Grisham",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Gregg Hull",
+    "party": "R"
+   },
+   {
+    "name": "Deb Haaland",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "New York",
+  "state": "NY",
+  "incumbent": "Kathy Hochul",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Kathy Hochul",
+    "party": "D",
+    "incumbent": true
+   },
+   {
+    "name": "Bruce Blakeman",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Ohio",
+  "state": "OH",
+  "incumbent": "Mike DeWine",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Amy Acton",
+    "party": "D"
+   },
+   {
+    "name": "Don Kissick",
+    "party": "L"
+   },
+   {
+    "name": "Vivek Ramaswamy",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Oklahoma",
+  "state": "OK",
+  "incumbent": "Kevin Stitt",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Mike Mazzei",
+    "party": "R"
+   },
+   {
+    "name": "Cyndi Munson",
+    "party": "D"
+   },
+   {
+    "name": "Orlando Lynn Bush",
+    "party": "I"
+   },
+   {
+    "name": "Robert E Brooks Sr",
+    "party": "I"
+   },
+   {
+    "name": "Jerry Griffin",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Oregon",
+  "state": "OR",
+  "incumbent": "Tina Kotek",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Tina Kotek",
+    "party": "D",
+    "incumbent": true
+   },
+   {
+    "name": "Christine Drazan",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Pennsylvania",
+  "state": "PA",
+  "incumbent": "Josh Shapiro",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Ken Krawchuk",
+    "party": "L"
+   },
+   {
+    "name": "Stacy Garrity",
+    "party": "R"
+   },
+   {
+    "name": "Josh Shapiro",
+    "party": "D",
+    "incumbent": true
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Rhode Island",
+  "state": "RI",
+  "incumbent": "Dan McKee",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "Helena Buonanno Foulkes",
+    "party": "D"
+   },
+   {
+    "name": "Aaron C. Guckian",
+    "party": "R"
+   },
+   {
+    "name": "Kenneth Block",
+    "party": "I"
+   },
+   {
+    "name": "Jasjit S. Gotra",
+    "party": "I"
+   },
+   {
+    "name": "C. D. Reynolds",
+    "party": "I"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "South Carolina",
+  "state": "SC",
+  "incumbent": "Henry McMaster",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Jermaine Johnson",
+    "party": "D"
+   },
+   {
+    "name": "Alan Wilson",
+    "party": "R"
+   },
+   {
+    "name": "Michael Addison",
+    "party": "O"
+   },
+   {
+    "name": "Walid Hakim",
+    "party": "G"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "South Dakota",
+  "state": "SD",
+  "incumbent": "Larry Rhoden",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Larry Rhoden",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Dan Ahlers",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Tennessee",
+  "state": "TN",
+  "incumbent": "Bill Lee",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Marsha Blackburn",
+    "party": "R"
+   },
+   {
+    "name": "Jerri Green",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Texas",
+  "state": "TX",
+  "incumbent": "Greg Abbott",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Greg Abbott",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Gina Hinojosa",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Vermont",
+  "state": "VT",
+  "incumbent": "Phil Scott",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Phil Scott",
+    "party": "R",
+    "incumbent": true
+   },
+   {
+    "name": "Amanda Janoo",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Wisconsin",
+  "state": "WI",
+  "incumbent": "Tony Evers",
+  "incumbentParty": "D",
+  "candidates": [
+   {
+    "name": "David Crowley",
+    "party": "D"
+   },
+   {
+    "name": "Tom Tiffany",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "chamber": "governor",
+  "place": "Wyoming",
+  "state": "WY",
+  "incumbent": "Mark Gordon",
+  "incumbentParty": "R",
+  "candidates": [
+   {
+    "name": "Eric Barlow",
+    "party": "R"
+   },
+   {
+    "name": "Kenneth Casner",
+    "party": "D"
+   },
+   {
+    "name": "Rebecca Bextel",
+    "party": "O"
+   }
+  ]
+ }
+]

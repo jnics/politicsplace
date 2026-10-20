@@ -4,14 +4,18 @@
 // the point of showing them side by side.
 //
 // Every row is the POLLING AGGREGATE (RealClearPolitics' final average for
-// completed cycles, the running RCP average for the current one) — consistent
-// with the rest of the Polls page, which is poll-based. `result` carries the
-// certified national U.S. House popular vote for that cycle so the card can show
-// how the polls did. Hand-maintained; the RCP pull script does not touch this.
+// completed cycles; for the current one, the average of the aggregators that
+// Wikipedia's House elections article compiles) — consistent with the rest of
+// the Polls page, which is poll-based. `result` carries the certified national
+// U.S. House popular vote for that cycle so the card can show how the polls did.
+// Completed cycles are hand-maintained. The current cycle's figure comes from
+// genericBallot.generated.json (`pnpm polls:generic`, part of `pnpm polls:all`)
+// and replaces the hand-seeded row below when present.
+import generated from "~/data/genericBallot.generated.json";
 
 export interface GenericBallotYear {
   year: number;
-  /** RCP final polling average, two-party shares as points. */
+  /** Polling average, two-party shares as points. */
   d: number;
   r: number;
   /** Signed party margin of the polling average, e.g. "D+5.8" or "R+2.7". */
@@ -79,13 +83,27 @@ export const GENERIC_BALLOT: GenericBallotYear[] = [
   },
   {
     year: 2026,
-    d: 48.1,
-    r: 42.3,
-    spread: "D+5.8",
+    d: 50.8,
+    r: 42.5,
+    spread: "D+8.3",
     kind: "polling",
-    asOf: "2026-09-06",
-    note: "RealClearPolitics average. Six-aggregator consensus (RCP, Silver Bulletin, DDHQ, VoteHub, FiftyPlusOne, Race to the WH): D 47.8 / R 41.5, D+6.3.",
+    asOf: "2026-10-18",
+    note: "Average of 5 national polling aggregators.",
   },
 ];
+
+// Lay the pulled current-cycle average over its hand-seeded row.
+{
+  const i = GENERIC_BALLOT.findIndex((g) => g.year === generated.year);
+  if (i >= 0)
+    GENERIC_BALLOT[i] = {
+      ...GENERIC_BALLOT[i],
+      d: generated.d,
+      r: generated.r,
+      spread: generated.spread,
+      asOf: generated.asOf,
+      note: `Average of ${generated.aggregators.length} national polling aggregators.`,
+    };
+}
 
 export const GENERIC_BALLOT_YEARS = GENERIC_BALLOT.map((g) => g.year);

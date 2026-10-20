@@ -1,16 +1,19 @@
 import type { Route } from "./+types/election2026";
 import { cloudflareContext } from "~/lib/context.server";
-import { useMemo, useRef, useState } from "react";
-import { useFetcher, data } from "react-router";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useFetcher, useRevalidator, data } from "react-router";
 import {
+  ALL_BOARD_RACES,
   BOARD_SENATE,
   BOARD_HOUSE,
+  BOARD_GOVERNOR,
   type BoardParty,
   type BoardRace,
 } from "~/data/bigBoard2026";
 import { raceId, type BoardResult } from "~/data/boardResults";
 import { STATE_PATHS } from "~/data/statePaths";
 import { readStore, saveResult } from "~/lib/board.server";
+import { FEED_BY, syncBoardFromFeed } from "~/lib/civicFeed.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
 import { LoginForm } from "~/components/LoginForm";
 
@@ -19,16 +22,22 @@ export function meta({}: Route.MetaArgs) {
     { title: "PoliticsPlace — 2026 Election Night" },
     {
       name: "description",
-      content: "The 2026 general-election big board: every Senate and House race.",
+      content: "The 2026 general-election big board: every Senate, House and Governor race.",
     },
   ];
 }
 
 export async function loader({ request, context }: Route.LoaderArgs) {
   const store = await readStore(context.get(cloudflareContext).env.DB);
+  const feedTimes = Object.values(store.log)
+    .filter((l) => l.by === FEED_BY)
+    .map((l) => l.at)
+    .sort();
   return {
     results: store.results as Record<string, BoardResult>,
     editor: editorFromRequest(request),
+    /** When civicAPI last wrote a result, if ever. */
+    lastFeedAt: feedTimes.at(-1) ?? null,
   };
 }
 
@@ -40,6 +49,15 @@ export async function action({ request, context }: Route.ActionArgs) {
 
   const editor = editorFromRequest(request);
   if (!editor) return data({ error: "Sign in first." }, { status: 401 });
+
+  if (form.get("intent") === "feed") {
+    try {
+      const feed = await syncBoardFromFeed(context.get(cloudflareContext).env.DB, ALL_BOARD_RACES);
+      return data({ ok: true, feed });
+    } catch (e) {
+      return data({ error: e instanceof Error ? e.message : "Feed pull failed." }, { status: 502 });
+    }
+  }
 
   if (form.get("intent") !== "result") {
     return data({ error: "Unknown action." }, { status: 400 });
@@ -117,12 +135,24 @@ function tally(races: BoardRace[], results: Record<string, BoardResult>) {
 }
 
 export default function Election2026({ loaderData }: Route.ComponentProps) {
-  const { results, editor } = loaderData;
-  const [chamber, setChamber] = useState<"senate" | "house">("senate");
+  const { results, editor, lastFeedAt } = loaderData;
+  const [chamber, setChamber] = useState<"senate" | "house" | "governor">("senate");
+
+  // Keep the board live for viewers: re-run the loader every 30 s while the
+  // tab is visible. Hand-entered and feed results both arrive this way.
+  const revalidator = useRevalidator();
+  useEffect(() => {
+    const id = setInterval(() => {
+      if (document.visibilityState === "visible" && revalidator.state === "idle")
+        revalidator.revalidate();
+    }, 30_000);
+    return () => clearInterval(id);
+  }, [revalidator]);
   const [houseFilter, setHouseFilter] = useState<"all" | "flippable">("all");
 
   const senT = useMemo(() => tally(BOARD_SENATE, results), [results]);
   const houseT = useMemo(() => tally(BOARD_HOUSE, results), [results]);
+  const govT = useMemo(() => tally(BOARD_GOVERNOR, results), [results]);
 
   const houseByState = useMemo(() => {
     const groups = new Map<string, BoardRace[]>();
@@ -148,8 +178,22 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
           2026 Election Night
         </h1>
         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-          Every Senate and House race. Type counts straight into a row &mdash; it
-          saves as you go and updates for everyone.
+          Every Senate, House and Governor race. Results load automatically from{" "}
+          <a
+            href="https://civicapi.org"
+            target="_blank"
+            rel="noreferrer"
+            className="underline decoration-gray-300 underline-offset-2 hover:text-gray-900 dark:decoration-gray-600 dark:hover:text-gray-100"
+          >
+            civicAPI
+          </a>{" "}
+          as they&rsquo;re released, and editors can type counts straight into a row.
+          The board refreshes every 30 seconds.
+          {lastFeedAt &&
+            ` Last feed update ${new Date(lastFeedAt).toLocaleTimeString("en-US", {
+              hour: "numeric",
+              minute: "2-digit",
+            })}.`}
         </p>
       </header>
 
@@ -161,18 +205,22 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
           </p>
         </div>
       ) : (
-        <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
-          Signed in as <span className="font-medium">{editor}</span>.
-        </p>
+        <div className="mb-3 flex flex-wrap items-center gap-3 text-xs text-gray-400 dark:text-gray-500">
+          <span>
+            Signed in as <span className="font-medium">{editor}</span>.
+          </span>
+          <FeedButton />
+        </div>
       )}
 
-      <div className="mb-5 grid grid-cols-2 gap-3">
+      <div className="mb-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
         <ControlCard title="Senate" t={senT} />
         <ControlCard title="House" t={houseT} />
+        <ControlCard title="Governors" t={govT} />
       </div>
 
       <div className="mb-4 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
-        {(["senate", "house"] as const).map((c) => (
+        {(["senate", "house", "governor"] as const).map((c) => (
           <button
             key={c}
             onClick={() => setChamber(c)}
@@ -182,17 +230,21 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
                 : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             }`}
           >
-            {c}{" "}
+            {c === "governor" ? "Governors" : c}{" "}
             <span className="text-xs text-gray-400 dark:text-gray-500">
-              {c === "senate" ? BOARD_SENATE.length : BOARD_HOUSE.length}
+              {c === "senate"
+                ? BOARD_SENATE.length
+                : c === "house"
+                ? BOARD_HOUSE.length
+                : BOARD_GOVERNOR.length}
             </span>
           </button>
         ))}
       </div>
 
-      {chamber === "senate" ? (
+      {chamber !== "house" ? (
         <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
-          {[...BOARD_SENATE]
+          {[...(chamber === "senate" ? BOARD_SENATE : BOARD_GOVERNOR)]
             .sort((a, b) => a.place.localeCompare(b.place))
             .map((race) => (
               <RaceRow
@@ -265,6 +317,32 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
         </>
       )}
     </div>
+  );
+}
+
+/** Editor-only: pull civicAPI right now instead of waiting for the cron. */
+function FeedButton() {
+  const fetcher = useFetcher<{ ok?: boolean; error?: string; feed?: { updated: number } }>();
+  const busy = fetcher.state !== "idle";
+  return (
+    <fetcher.Form method="post" className="flex items-center gap-2">
+      <input type="hidden" name="intent" value="feed" />
+      <button
+        type="submit"
+        disabled={busy}
+        className="rounded-full border border-gray-300 px-3 py-1 font-medium text-gray-600 hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+      >
+        {busy ? "Pulling…" : "Pull results now"}
+      </button>
+      {!busy && fetcher.data?.feed && (
+        <span>
+          {fetcher.data.feed.updated} race{fetcher.data.feed.updated === 1 ? "" : "s"} updated
+        </span>
+      )}
+      {!busy && fetcher.data?.error && (
+        <span className="text-red-600 dark:text-red-400">{fetcher.data.error}</span>
+      )}
+    </fetcher.Form>
   );
 }
 

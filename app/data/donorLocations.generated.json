@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T11:09:10.014Z",
+  "generatedAt": "2026-10-20T15:11:40.148Z",
   "source": "FEC (api.open.fec.gov) schedule_a/by_state",
-  "requestsThisRun": 0,
-  "totalRequestsLogged": 263,
+  "requestsThisRun": 120,
+  "totalRequestsLogged": 383,
   "stoppedEarly": false,
   "requestLog": [
     {
@@ -2893,6 +2893,1326 @@
       "path": "schedules/schedule_a/by_state/",
       "params": {
         "committee_id": "C00955609",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:05:29.499Z",
+      "label": "by_state p1: Jonathan Nez (Arizona 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00853473",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:05:32.198Z",
+      "label": "by_state p1: Eli Crane (Arizona 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00784934",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:24.706Z",
+      "label": "by_state p1: JoAnna Mendoza (Arizona 6th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00897090",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:26.860Z",
+      "label": "by_state p1: Juan Ciscomani (Arizona 6th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00786194",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:29.004Z",
+      "label": "by_state p1: Dwayne Romero (Colorado 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00941526",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:33.670Z",
+      "label": "by_state p1: Jeff Hurd (Colorado 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00848333",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:35.821Z",
+      "label": "by_state p1: Jessica Killin (Colorado 5th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00911941",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:37.971Z",
+      "label": "by_state p1: Jeff Crank (Colorado 5th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00865592",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:40.108Z",
+      "label": "by_state p1: Christina Bohannan (Iowa 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00787820",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:42.248Z",
+      "label": "by_state p1: Mariannette Miller-Meeks (Iowa 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00558825",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:44.500Z",
+      "label": "by_state p1: Lindsay James (Iowa 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00916452",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:46.769Z",
+      "label": "by_state p1: Joe Mitchell (Iowa 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00918979",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:48.919Z",
+      "label": "by_state p1: Sarah Trone Garriott (Iowa 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00904086",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:51.055Z",
+      "label": "by_state p1: Zach Nunn (Iowa 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00784389",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:53.209Z",
+      "label": "by_state p1: J.D. Ford (Indiana 5th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00934505",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:57.666Z",
+      "label": "by_state p1: Victoria Spartz (Indiana 5th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00737767",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:06:59.798Z",
+      "label": "by_state p1: Matt Dunlap (Maine 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00922377",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:01.945Z",
+      "label": "by_state p1: Paul LePage (Maine 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00904094",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:04.096Z",
+      "label": "by_state p1: Sean McCann (Michigan 4th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00911784",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:06.312Z",
+      "label": "by_state p1: William Lawrence (Michigan 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00916809",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:08.468Z",
+      "label": "by_state p1: Christina Hines (Michigan 10th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00901678",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:10.625Z",
+      "label": "by_state p1: Brad Finstad (Minnesota 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00807743",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:14.021Z",
+      "label": "by_state p1: Matt Little (Minnesota 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00903807",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:16.180Z",
+      "label": "by_state p1: Eric Pratt (Minnesota 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00912824",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:18.314Z",
+      "label": "by_state p1: Sam Forstag (Montana 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00932822",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:41.190Z",
+      "label": "by_state p1: Aaron Flint (Montana 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00941575",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:43.340Z",
+      "label": "by_state p1: Don Davis (North Carolina 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00795211",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:45.485Z",
+      "label": "by_state p1: Laurie Buckhout (North Carolina 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00853499",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:47.633Z",
+      "label": "by_state p1: Raymond Smith Jr. (North Carolina 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00930784",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:49.775Z",
+      "label": "by_state p1: Greg Murphy (North Carolina 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00697649",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:51.925Z",
+      "label": "by_state p1: Kimberly Hardy (North Carolina 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00909804",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:54.078Z",
+      "label": "by_state p1: David Rouzer (North Carolina 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00501643",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:56.230Z",
+      "label": "by_state p1: Ashley Bell (North Carolina 10th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00901934",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:07:58.377Z",
+      "label": "by_state p1: Pat Harrigan (North Carolina 10th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00802298",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:00.786Z",
+      "label": "by_state p1: Jamie Ager (North Carolina 11th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00914119",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:03.774Z",
+      "label": "by_state p1: Chuck Edwards (North Carolina 11th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00796433",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:05.911Z",
+      "label": "by_state p1: LaKesha Womack (North Carolina 14th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00929034",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:08.067Z",
+      "label": "by_state p1: Tim Moore (North Carolina 14th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00856005",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:10.236Z",
+      "label": "by_state p1: Chris Backemeyer (Nebraska 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00925750",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:12.396Z",
+      "label": "by_state p1: Mike Flood (Nebraska 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00801241",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:14.530Z",
+      "label": "by_state p1: Maggie Goodlander (New Hampshire 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00878454",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:16.731Z",
+      "label": "by_state p1: Lily Tang Williams (New Hampshire 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00800458",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:18.875Z",
+      "label": "by_state p1: Greg Cunningham (New Mexico 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00921791",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:21.013Z",
+      "label": "by_state p1: Teresa Benitez-Thompson (Nevada 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00939488",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:23.168Z",
+      "label": "by_state p1: David Flippo (Nevada 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00901710",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:25.306Z",
+      "label": "by_state p1: Greg Landsman (Ohio 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00800276",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:27.445Z",
+      "label": "by_state p1: Eric Conroy (Ohio 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00912311",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:32.078Z",
+      "label": "by_state p1: Brian Poindexter (Ohio 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00933366",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:34.216Z",
+      "label": "by_state p1: Max Miller (Ohio 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00770818",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:37.107Z",
+      "label": "by_state p1: Marcy Kaptur (Ohio 9th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00154625",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:39.248Z",
+      "label": "by_state p1: Derek Merrin (Ohio 9th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00909630",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:41.468Z",
+      "label": "by_state p1: Kristina Knickerbocker (Ohio 10th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00934240",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:43.802Z",
+      "label": "by_state p1: Don Leonard (Ohio 15th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00913491",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:46.434Z",
+      "label": "by_state p1: Mike Carey (Ohio 15th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00779603",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:48.561Z",
+      "label": "by_state p1: Brian Fitzpatrick (Pennsylvania 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00607416",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:50.708Z",
+      "label": "by_state p1: Bob Brooks (Pennsylvania 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00917096",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:52.888Z",
+      "label": "by_state p1: Ryan Mackenzie (Pennsylvania 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00846501",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:55.045Z",
+      "label": "by_state p1: Paige Cognetti (Pennsylvania 8th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00918151",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:57.202Z",
+      "label": "by_state p1: Rob Bresnahan (Pennsylvania 8th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00852137",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:08:59.365Z",
+      "label": "by_state p1: Janelle Stelson (Pennsylvania 10th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00852368",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:01.697Z",
+      "label": "by_state p1: Scott Perry (Pennsylvania 10th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00510164",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:07.586Z",
+      "label": "by_state p1: Nancy Lacore (South Carolina 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00935379",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:09.732Z",
+      "label": "by_state p1: Jenny Costa Honeycutt (South Carolina 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00927004",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:11.874Z",
+      "label": "by_state p1: John Vincent (South Carolina 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00899492",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:14.054Z",
+      "label": "by_state p1: Russell Fry (South Carolina 7th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00786657",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:16.184Z",
+      "label": "by_state p1: Bobby Pulido (Texas 15th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00919985",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:18.330Z",
+      "label": "by_state p1: Monica De La Cruz (Texas 15th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00765719",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:21.079Z",
+      "label": "by_state p1: Katy Padilla Stout (Texas 23th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00926121",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:23.224Z",
+      "label": "by_state p1: Brandon Herrera (Texas 23th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00844324",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:25.371Z",
+      "label": "by_state p1: Henry Cuellar (Texas 28th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00371302",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:27.527Z",
+      "label": "by_state p1: Tano Tijerina (Texas 28th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00929174",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:29.671Z",
+      "label": "by_state p1: Vicente Gonzalez (Texas 34th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00592659",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:31.859Z",
+      "label": "by_state p1: Eric Flores (Texas 34th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00912246",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:34.001Z",
+      "label": "by_state p1: Johnny Garcia (Texas 35th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00922799",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:38.308Z",
+      "label": "by_state p1: Carlos De La Cruz (Texas 35th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00922013",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:40.471Z",
+      "label": "by_state p1: Shannon Taylor (Virginia 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00918029",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:43.853Z",
+      "label": "by_state p1: Rob Wittman (Virginia 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00441014",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:46.011Z",
+      "label": "by_state p1: Elaine Luria (Virginia 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00926303",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:48.171Z",
+      "label": "by_state p1: Jen Kiggans (Virginia 2nd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00776120",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:50.314Z",
+      "label": "by_state p1: John McGuire (Virginia 5th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00856831",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:52.459Z",
+      "label": "by_state p1: Marie Gluesenkamp Perez (Washington 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00806174",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:54.625Z",
+      "label": "by_state p1: John Braun (Washington 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00915884",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:56.770Z",
+      "label": "by_state p1: Carmela Conroy (Washington 5th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00849794",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:09:58.932Z",
+      "label": "by_state p1: Michael Baumgartner (Washington 5th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00870758",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:01.103Z",
+      "label": "by_state p1: Mitchell Berman (Wisconsin 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00915637",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:03.262Z",
+      "label": "by_state p1: Bryan Steil (Wisconsin 1st District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00677286",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:05.424Z",
+      "label": "by_state p1: Rebecca Cooke (Wisconsin 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00844993",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:07.597Z",
+      "label": "by_state p1: Derrick Van Orden (Wisconsin 3rd District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00742007",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:09.759Z",
+      "label": "by_state p1: Brad Smith (Wisconsin 6th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00920231",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:11.886Z",
+      "label": "by_state p1: Glenn Grothman (Wisconsin 6th District)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00561597",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:14.050Z",
+      "label": "by_state p1: Mary Peltola (Alaska Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00933978",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:16.210Z",
+      "label": "by_state p1: Dan S. Sullivan (Alaska Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00570994",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:18.377Z",
+      "label": "by_state p1: Everett Wess (Alabama Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00935783",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:20.522Z",
+      "label": "by_state p1: Barry Moore (Alabama Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00954974",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:30.147Z",
+      "label": "by_state p1: Ashley Moody (Florida Senate (special))",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00895763",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:32.307Z",
+      "label": "by_state p1: Jon Ossoff (Georgia Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00718866",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:34.451Z",
+      "label": "by_state p1: Joni Ernst (Iowa Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00546788",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:36.989Z",
+      "label": "by_state p1: Adam Hamilton (Kansas Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00948901",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:39.134Z",
+      "label": "by_state p1: Charles Booker (Kentucky Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00783274",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:41.299Z",
+      "label": "by_state p1: Andy Barr (Kentucky Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00467571",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:46.694Z",
+      "label": "by_state p1: Jamie Davis (Louisiana Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00929117",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:48.854Z",
+      "label": "by_state p1: Julia Letlow (Louisiana Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00935411",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:10:51.010Z",
+      "label": "by_state p1: Troy Jackson (Maine Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00955609",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:02.487Z",
+      "label": "by_state p1: Susan Collins (Maine Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00314575",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:04.631Z",
+      "label": "by_state p1: Abdul El-Sayed (Michigan Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00902668",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:06.888Z",
+      "label": "by_state p1: Michele Tafoya (Minnesota Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00935528",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:09.033Z",
+      "label": "by_state p1: Alani Bankhead (Montana Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00937201",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:11.179Z",
+      "label": "by_state p1: Kurt Alme (Montana Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00942060",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:14.150Z",
+      "label": "by_state p1: Roy Cooper (North Carolina Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00913566",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:16.306Z",
+      "label": "by_state p1: Michael Whatley (North Carolina Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00913996",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:18.549Z",
+      "label": "by_state p1: Dan Osborn (Nebraska Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00901355",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:20.707Z",
+      "label": "by_state p1: Pete Ricketts (Nebraska Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00832436",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:22.852Z",
+      "label": "by_state p1: Chris Pappas (New Hampshire Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00660464",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:25.024Z",
+      "label": "by_state p1: John E. Sununu (New Hampshire Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00924092",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:27.193Z",
+      "label": "by_state p1: Sherrod Brown (Ohio Senate (special))",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00916288",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:29.355Z",
+      "label": "by_state p1: Jon Husted (Ohio Senate (special))",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00896019",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:31.530Z",
+      "label": "by_state p1: Annie Andrews (South Carolina Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00906024",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:33.692Z",
+      "label": "by_state p1: Darline Graham (South Carolina Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00957308",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:35.836Z",
+      "label": "by_state p1: James Talarico (Texas Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00919084",
+        "cycle": "2026",
+        "per_page": "100",
+        "page": "1"
+      }
+    },
+    {
+      "at": "2026-10-20T15:11:37.982Z",
+      "label": "by_state p1: Ken Paxton (Texas Senate)",
+      "path": "schedules/schedule_a/by_state/",
+      "params": {
+        "committee_id": "C00901918",
         "cycle": "2026",
         "per_page": "100",
         "page": "1"
@@ -8519,8 +9839,8 @@
         {
           "state": "MN",
           "stateFull": "Minnesota",
-          "total": 689854.1,
-          "count": 1015
+          "total": 687772.06,
+          "count": 1011
         },
         {
           "state": "IL",
@@ -8543,8 +9863,8 @@
         {
           "state": "VA",
           "stateFull": "Virginia",
-          "total": 30697.37,
-          "count": 33
+          "total": 31697.37,
+          "count": 34
         },
         {
           "state": "NE",
@@ -8555,19 +9875,13 @@
         {
           "state": "DC",
           "stateFull": "District Of Columbia",
-          "total": 21791.02,
-          "count": 21
+          "total": 20791.02,
+          "count": 20
         },
         {
           "state": "CA",
           "stateFull": "California",
           "total": 16764.71,
-          "count": 10
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 12970.49,
           "count": 10
         },
         {
@@ -8589,6 +9903,18 @@
           "count": 7
         },
         {
+          "state": "IA",
+          "stateFull": "Iowa",
+          "total": 7082.04,
+          "count": 7
+        },
+        {
+          "state": "NY",
+          "stateFull": "New York",
+          "total": 5970.49,
+          "count": 8
+        },
+        {
           "state": "WI",
           "stateFull": "Wisconsin",
           "total": 5520.51,
@@ -8599,12 +9925,6 @@
           "stateFull": "Colorado",
           "total": 5237.98,
           "count": 4
-        },
-        {
-          "state": "IA",
-          "stateFull": "Iowa",
-          "total": 5000,
-          "count": 3
         },
         {
           "state": "CT",
@@ -10397,20 +11717,32 @@
         {
           "state": "NC",
           "stateFull": "North Carolina",
-          "total": 121048.37,
-          "count": 654
+          "total": 168231.27,
+          "count": 1029
         },
         {
           "state": "CA",
           "stateFull": "California",
-          "total": 21555.26,
-          "count": 29
+          "total": 25505.26,
+          "count": 34
+        },
+        {
+          "state": "CT",
+          "stateFull": "Connecticut",
+          "total": 8500,
+          "count": 4
         },
         {
           "state": "MD",
           "stateFull": "Maryland",
-          "total": 7097,
-          "count": 23
+          "total": 7694,
+          "count": 32
+        },
+        {
+          "state": "NY",
+          "stateFull": "New York",
+          "total": 5600,
+          "count": 21
         },
         {
           "state": "WA",
@@ -10419,16 +11751,10 @@
           "count": 4
         },
         {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 5300,
-          "count": 15
-        },
-        {
           "state": "IL",
           "stateFull": "Illinois",
-          "total": 4200,
-          "count": 11
+          "total": 4350,
+          "count": 14
         },
         {
           "state": "NJ",
@@ -10461,8 +11787,14 @@
           "count": 5
         },
         {
-          "state": "CT",
-          "stateFull": "Connecticut",
+          "state": "VA",
+          "stateFull": "Virginia",
+          "total": 1600,
+          "count": 10
+        },
+        {
+          "state": "CO",
+          "stateFull": "Colorado",
           "total": 1500,
           "count": 2
         },
@@ -10473,28 +11805,28 @@
           "count": 1
         },
         {
-          "state": "VA",
-          "stateFull": "Virginia",
-          "total": 1025,
-          "count": 6
-        },
-        {
           "state": "NM",
           "stateFull": "New Mexico",
           "total": 1000,
           "count": 1
         },
         {
-          "state": "FL",
-          "stateFull": "Florida",
-          "total": 300,
+          "state": "MI",
+          "stateFull": "Michigan",
+          "total": 500,
           "count": 1
         },
         {
           "state": "DC",
           "stateFull": "District Of Columbia",
-          "total": 300,
-          "count": 1
+          "total": 370,
+          "count": 2
+        },
+        {
+          "state": "FL",
+          "stateFull": "Florida",
+          "total": 330,
+          "count": 2
         },
         {
           "state": "HI",
@@ -11289,14 +12621,20 @@
         {
           "state": "NC",
           "stateFull": "North Carolina",
-          "total": 280789.06,
-          "count": 291
+          "total": 319779.78,
+          "count": 326
         },
         {
           "state": "FL",
           "stateFull": "Florida",
-          "total": 50050,
-          "count": 31
+          "total": 55730.18,
+          "count": 35
+        },
+        {
+          "state": "NY",
+          "stateFull": "New York",
+          "total": 51899,
+          "count": 26
         },
         {
           "state": "TX",
@@ -11307,14 +12645,8 @@
         {
           "state": "VA",
           "stateFull": "Virginia",
-          "total": 35500,
-          "count": 30
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 35399,
-          "count": 17
+          "total": 36000,
+          "count": 31
         },
         {
           "state": "DC",
@@ -11325,8 +12657,8 @@
         {
           "state": "CA",
           "stateFull": "California",
-          "total": 17665.62,
-          "count": 11
+          "total": 18602.54,
+          "count": 13
         },
         {
           "state": "AZ",
@@ -11337,37 +12669,43 @@
         {
           "state": "MD",
           "stateFull": "Maryland",
-          "total": 7500,
-          "count": 8
+          "total": 8500,
+          "count": 9
         },
         {
           "state": "OH",
           "stateFull": "Ohio",
-          "total": 7050,
-          "count": 8
+          "total": 8050,
+          "count": 9
         },
         {
           "state": "SC",
           "stateFull": "South Carolina",
-          "total": 6250,
-          "count": 5
-        },
-        {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 5484.38,
-          "count": 5
+          "total": 7250,
+          "count": 7
         },
         {
           "state": "NJ",
           "stateFull": "New Jersey",
-          "total": 4000,
-          "count": 2
+          "total": 6500,
+          "count": 3
+        },
+        {
+          "state": "GA",
+          "stateFull": "Georgia",
+          "total": 5734.38,
+          "count": 6
         },
         {
           "state": "MN",
           "stateFull": "Minnesota",
-          "total": 3500,
+          "total": 4000,
+          "count": 4
+        },
+        {
+          "state": "CT",
+          "stateFull": "Connecticut",
+          "total": 3608,
           "count": 3
         },
         {
@@ -11377,14 +12715,14 @@
           "count": 1
         },
         {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 3000,
-          "count": 2
-        },
-        {
           "state": "IL",
           "stateFull": "Illinois",
+          "total": 3265.25,
+          "count": 4
+        },
+        {
+          "state": "MO",
+          "stateFull": "Missouri",
           "total": 3000,
           "count": 2
         },
@@ -11411,12 +12749,6 @@
           "stateFull": "Indiana",
           "total": 2000,
           "count": 2
-        },
-        {
-          "state": "CT",
-          "stateFull": "Connecticut",
-          "total": 1608,
-          "count": 1
         },
         {
           "state": "NH",
@@ -12399,26 +13731,26 @@
         {
           "state": "NH",
           "stateFull": "New Hampshire",
-          "total": 96016.89,
-          "count": 472
+          "total": 97804.01,
+          "count": 498
         },
         {
           "state": "CA",
           "stateFull": "California",
-          "total": 35525.99,
-          "count": 165
+          "total": 32025.99,
+          "count": 164
         },
         {
           "state": "FL",
           "stateFull": "Florida",
-          "total": 31064.02,
-          "count": 129
+          "total": 31264.42,
+          "count": 137
         },
         {
           "state": "TX",
           "stateFull": "Texas",
-          "total": 29571.88,
-          "count": 110
+          "total": 29671.88,
+          "count": 111
         },
         {
           "state": "MA",
@@ -12435,8 +13767,8 @@
         {
           "state": "CO",
           "stateFull": "Colorado",
-          "total": 16620.72,
-          "count": 34
+          "total": 16695.72,
+          "count": 37
         },
         {
           "state": "NY",
@@ -12467,6 +13799,12 @@
           "stateFull": "West Virginia",
           "total": 8456,
           "count": 16
+        },
+        {
+          "state": "ID",
+          "stateFull": "Idaho",
+          "total": 7949,
+          "count": 10
         },
         {
           "state": "MD",
@@ -12523,12 +13861,6 @@
           "count": 15
         },
         {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 4449,
-          "count": 9
-        },
-        {
           "state": "AZ",
           "stateFull": "Arizona",
           "total": 4345.73,
@@ -12553,6 +13885,12 @@
           "count": 16
         },
         {
+          "state": "MO",
+          "stateFull": "Missouri",
+          "total": 3083.99,
+          "count": 37
+        },
+        {
           "state": "CT",
           "stateFull": "Connecticut",
           "total": 3079,
@@ -12565,22 +13903,16 @@
           "count": 5
         },
         {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 2898.99,
-          "count": 35
-        },
-        {
           "state": "UT",
           "stateFull": "Utah",
-          "total": 2424.73,
-          "count": 10
+          "total": 2549.73,
+          "count": 12
         },
         {
           "state": "OR",
           "stateFull": "Oregon",
-          "total": 2369,
-          "count": 17
+          "total": 2444,
+          "count": 18
         },
         {
           "state": "NC",
@@ -12595,16 +13927,16 @@
           "count": 19
         },
         {
+          "state": "AK",
+          "stateFull": "Alaska",
+          "total": 1802.4,
+          "count": 9
+        },
+        {
           "state": "IA",
           "stateFull": "Iowa",
           "total": 1780,
           "count": 19
-        },
-        {
-          "state": "AK",
-          "stateFull": "Alaska",
-          "total": 1750,
-          "count": 8
         },
         {
           "state": "ME",
@@ -14919,8 +16251,8 @@
         {
           "state": "VA",
           "stateFull": "Virginia",
-          "total": 108100.11,
-          "count": 132
+          "total": 106100.11,
+          "count": 130
         },
         {
           "state": "PA",
@@ -14943,8 +16275,8 @@
         {
           "state": "DC",
           "stateFull": "District Of Columbia",
-          "total": 57191.12,
-          "count": 63
+          "total": 59191.12,
+          "count": 65
         },
         {
           "state": "NY",
@@ -16731,194 +18063,218 @@
         {
           "state": "PA",
           "stateFull": "Pennsylvania",
-          "total": 1399469.59,
-          "count": 3210
+          "total": 2016669.33,
+          "count": 5232
         },
         {
           "state": "NY",
           "stateFull": "New York",
-          "total": 955988.26,
-          "count": 597
+          "total": 1147893.78,
+          "count": 833
         },
         {
           "state": "CA",
           "stateFull": "California",
-          "total": 739579.76,
-          "count": 816
+          "total": 972878.79,
+          "count": 1182
         },
         {
           "state": "MA",
           "stateFull": "Massachusetts",
-          "total": 362908.72,
-          "count": 364
+          "total": 441277.21,
+          "count": 540
         },
         {
           "state": "MD",
           "stateFull": "Maryland",
-          "total": 183376.49,
-          "count": 330
+          "total": 251862.15,
+          "count": 501
         },
         {
           "state": "WA",
           "stateFull": "Washington",
-          "total": 136745.65,
-          "count": 127
+          "total": 190536.29,
+          "count": 227
         },
         {
           "state": "DC",
           "stateFull": "District Of Columbia",
-          "total": 123015.65,
-          "count": 201
+          "total": 187724.13,
+          "count": 310
         },
         {
           "state": "CT",
           "stateFull": "Connecticut",
-          "total": 121294.06,
-          "count": 85
+          "total": 138935.66,
+          "count": 118
         },
         {
           "state": "FL",
           "stateFull": "Florida",
-          "total": 98186.73,
-          "count": 110
-        },
-        {
-          "state": "NJ",
-          "stateFull": "New Jersey",
-          "total": 92760.02,
-          "count": 133
+          "total": 129199.23,
+          "count": 185
         },
         {
           "state": "IL",
           "stateFull": "Illinois",
-          "total": 86621.76,
-          "count": 69
+          "total": 120930.05,
+          "count": 112
         },
         {
           "state": "VA",
           "stateFull": "Virginia",
-          "total": 70296.39,
-          "count": 114
+          "total": 114215.16,
+          "count": 196
         },
         {
-          "state": "TX",
-          "stateFull": "Texas",
-          "total": 56215.94,
-          "count": 46
+          "state": "NJ",
+          "stateFull": "New Jersey",
+          "total": 106334.94,
+          "count": 201
         },
         {
           "state": "CO",
           "stateFull": "Colorado",
-          "total": 51999.92,
-          "count": 53
+          "total": 88417.04,
+          "count": 99
+        },
+        {
+          "state": "TX",
+          "stateFull": "Texas",
+          "total": 83887.61,
+          "count": 79
         },
         {
           "state": "OR",
           "stateFull": "Oregon",
-          "total": 30622.53,
-          "count": 65
+          "total": 69072.81,
+          "count": 104
         },
         {
           "state": "MN",
           "stateFull": "Minnesota",
-          "total": 28634.7,
-          "count": 22
-        },
-        {
-          "state": "UT",
-          "stateFull": "Utah",
-          "total": 18606.03,
-          "count": 13
+          "total": 42880.6,
+          "count": 39
         },
         {
           "state": "WY",
           "stateFull": "Wyoming",
-          "total": 17713.88,
-          "count": 16
-        },
-        {
-          "state": "NV",
-          "stateFull": "Nevada",
-          "total": 16150,
-          "count": 8
-        },
-        {
-          "state": "KY",
-          "stateFull": "Kentucky",
-          "total": 15330,
+          "total": 28463.88,
           "count": 21
         },
         {
-          "state": "MT",
-          "stateFull": "Montana",
-          "total": 14183.33,
-          "count": 6
-        },
-        {
-          "state": "OK",
-          "stateFull": "Oklahoma",
-          "total": 14000,
-          "count": 4
-        },
-        {
-          "state": "VT",
-          "stateFull": "Vermont",
-          "total": 13730,
-          "count": 19
-        },
-        {
-          "state": "OH",
-          "stateFull": "Ohio",
-          "total": 13353.88,
-          "count": 19
-        },
-        {
-          "state": "SC",
-          "stateFull": "South Carolina",
-          "total": 12400,
-          "count": 8
+          "state": "UT",
+          "stateFull": "Utah",
+          "total": 25576.03,
+          "count": 20
         },
         {
           "state": "MO",
           "stateFull": "Missouri",
-          "total": 12007.15,
-          "count": 19
+          "total": 24157.16,
+          "count": 28
+        },
+        {
+          "state": "NV",
+          "stateFull": "Nevada",
+          "total": 23663.87,
+          "count": 16
+        },
+        {
+          "state": "KY",
+          "stateFull": "Kentucky",
+          "total": 23136,
+          "count": 37
         },
         {
           "state": "GA",
           "stateFull": "Georgia",
-          "total": 11333.33,
-          "count": 18
+          "total": 22511.1,
+          "count": 24
         },
         {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 10400,
-          "count": 10
-        },
-        {
-          "state": "NH",
-          "stateFull": "New Hampshire",
-          "total": 9250,
-          "count": 8
-        },
-        {
-          "state": "RI",
-          "stateFull": "Rhode Island",
-          "total": 9075,
-          "count": 10
+          "state": "OH",
+          "stateFull": "Ohio",
+          "total": 19876.11,
+          "count": 33
         },
         {
           "state": "DE",
           "stateFull": "Delaware",
-          "total": 8816.68,
-          "count": 42
+          "total": 16844.18,
+          "count": 58
+        },
+        {
+          "state": "NH",
+          "stateFull": "New Hampshire",
+          "total": 16250,
+          "count": 10
+        },
+        {
+          "state": "VT",
+          "stateFull": "Vermont",
+          "total": 15361.67,
+          "count": 23
+        },
+        {
+          "state": "MT",
+          "stateFull": "Montana",
+          "total": 14433.33,
+          "count": 7
+        },
+        {
+          "state": "SC",
+          "stateFull": "South Carolina",
+          "total": 14232.5,
+          "count": 17
+        },
+        {
+          "state": "OK",
+          "stateFull": "Oklahoma",
+          "total": 14100,
+          "count": 6
+        },
+        {
+          "state": "ID",
+          "stateFull": "Idaho",
+          "total": 12525,
+          "count": 13
+        },
+        {
+          "state": "RI",
+          "stateFull": "Rhode Island",
+          "total": 12456.06,
+          "count": 20
+        },
+        {
+          "state": "TN",
+          "stateFull": "Tennessee",
+          "total": 12005.27,
+          "count": 34
+        },
+        {
+          "state": "AZ",
+          "stateFull": "Arizona",
+          "total": 11597.5,
+          "count": 44
         },
         {
           "state": "NM",
           "stateFull": "New Mexico",
-          "total": 8175.94,
-          "count": 22
+          "total": 11276.98,
+          "count": 43
+        },
+        {
+          "state": "NC",
+          "stateFull": "North Carolina",
+          "total": 9124.03,
+          "count": 47
+        },
+        {
+          "state": "MS",
+          "stateFull": "Mississippi",
+          "total": 8600,
+          "count": 5
         },
         {
           "state": "ZZ",
@@ -16927,22 +18283,28 @@
           "count": 3
         },
         {
-          "state": "MS",
-          "stateFull": "Mississippi",
-          "total": 7500,
+          "state": "MI",
+          "stateFull": "Michigan",
+          "total": 5900.71,
+          "count": 23
+        },
+        {
+          "state": "ME",
+          "stateFull": "Maine",
+          "total": 5672.14,
+          "count": 9
+        },
+        {
+          "state": "IN",
+          "stateFull": "Indiana",
+          "total": 4589.28,
+          "count": 17
+        },
+        {
+          "state": "NE",
+          "stateFull": "Nebraska",
+          "total": 4185.71,
           "count": 3
-        },
-        {
-          "state": "AZ",
-          "stateFull": "Arizona",
-          "total": 6175,
-          "count": 29
-        },
-        {
-          "state": "NC",
-          "stateFull": "North Carolina",
-          "total": 5538.02,
-          "count": 28
         },
         {
           "state": "IA",
@@ -16951,40 +18313,28 @@
           "count": 2
         },
         {
-          "state": "ME",
-          "stateFull": "Maine",
-          "total": 3357.14,
-          "count": 4
-        },
-        {
-          "state": "MI",
-          "stateFull": "Michigan",
-          "total": 2910.23,
-          "count": 10
-        },
-        {
           "state": "WI",
           "stateFull": "Wisconsin",
           "total": 2835.71,
           "count": 8
         },
         {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 2658.34,
-          "count": 17
-        },
-        {
           "state": "HI",
           "stateFull": "Hawaii",
-          "total": 2085.71,
-          "count": 6
+          "total": 2653.1,
+          "count": 11
         },
         {
-          "state": "IN",
-          "stateFull": "Indiana",
-          "total": 1864.28,
-          "count": 7
+          "state": "KS",
+          "stateFull": "Kansas",
+          "total": 1594.62,
+          "count": 13
+        },
+        {
+          "state": "AK",
+          "stateFull": "Alaska",
+          "total": 1250,
+          "count": 2
         },
         {
           "state": "AL",
@@ -16993,21 +18343,15 @@
           "count": 10
         },
         {
-          "state": "AK",
-          "stateFull": "Alaska",
-          "total": 1000,
-          "count": 1
+          "state": "LA",
+          "stateFull": "Louisiana",
+          "total": 600,
+          "count": 2
         },
         {
-          "state": "KS",
-          "stateFull": "Kansas",
-          "total": 935,
-          "count": 6
-        },
-        {
-          "state": "NE",
-          "stateFull": "Nebraska",
-          "total": 685.71,
+          "state": "AR",
+          "stateFull": "Arkansas",
+          "total": 600,
           "count": 2
         },
         {
@@ -17019,14 +18363,8 @@
         {
           "state": "AE",
           "stateFull": "Armed Forces Europe",
-          "total": 150,
-          "count": 2
-        },
-        {
-          "state": "AR",
-          "stateFull": "Arkansas",
-          "total": 100,
-          "count": 1
+          "total": 300,
+          "count": 4
         }
       ]
     },
@@ -18141,50 +19479,50 @@
         {
           "state": "TX",
           "stateFull": "Texas",
-          "total": 775268.56,
-          "count": 1140
+          "total": 771815.9,
+          "count": 1063
         },
         {
           "state": "CA",
           "stateFull": "California",
-          "total": 417081.12,
-          "count": 378
+          "total": 416347.78,
+          "count": 356
         },
         {
           "state": "NY",
           "stateFull": "New York",
-          "total": 244258.03,
-          "count": 131
+          "total": 243983.03,
+          "count": 126
         },
         {
           "state": "MA",
           "stateFull": "Massachusetts",
-          "total": 163227.93,
-          "count": 130
+          "total": 162636.26,
+          "count": 124
         },
         {
           "state": "DC",
           "stateFull": "District Of Columbia",
-          "total": 64433.86,
-          "count": 65
+          "total": 63433.86,
+          "count": 64
         },
         {
           "state": "WA",
           "stateFull": "Washington",
-          "total": 57548.49,
-          "count": 64
+          "total": 57398.49,
+          "count": 62
         },
         {
           "state": "CT",
           "stateFull": "Connecticut",
-          "total": 37710,
-          "count": 21
+          "total": 37510,
+          "count": 19
         },
         {
           "state": "MD",
           "stateFull": "Maryland",
-          "total": 32734.16,
-          "count": 37
+          "total": 33467.49,
+          "count": 36
         },
         {
           "state": "FL",
@@ -18207,8 +19545,8 @@
         {
           "state": "CO",
           "stateFull": "Colorado",
-          "total": 20053.94,
-          "count": 33
+          "total": 19798.94,
+          "count": 24
         },
         {
           "state": "VA",
@@ -18231,8 +19569,8 @@
         {
           "state": "OR",
           "stateFull": "Oregon",
-          "total": 10164.29,
-          "count": 18
+          "total": 10021.43,
+          "count": 16
         },
         {
           "state": "NH",
@@ -18271,16 +19609,16 @@
           "count": 3
         },
         {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 4900,
-          "count": 7
-        },
-        {
           "state": "PA",
           "stateFull": "Pennsylvania",
           "total": 4883.33,
           "count": 13
+        },
+        {
+          "state": "GA",
+          "stateFull": "Georgia",
+          "total": 4750,
+          "count": 5
         },
         {
           "state": "AZ",
@@ -18333,8 +19671,8 @@
         {
           "state": "TN",
           "stateFull": "Tennessee",
-          "total": 1925,
-          "count": 10
+          "total": 1875,
+          "count": 9
         },
         {
           "state": "OH",
@@ -18345,8 +19683,8 @@
         {
           "state": "MI",
           "stateFull": "Michigan",
-          "total": 1375,
-          "count": 8
+          "total": 1350,
+          "count": 7
         },
         {
           "state": "NE",
@@ -27168,307 +28506,11 @@
         }
       ]
     },
-    "S4MA00028": {
-      "name": "Markey",
-      "raceTitle": "Massachusetts Senate",
-      "raceKey": "2026:senate:MA:",
-      "committeeId": "C00196774",
-      "byState": [
-        {
-          "state": "MA",
-          "stateFull": "Massachusetts",
-          "total": 1737080.18,
-          "count": 9446
-        },
-        {
-          "state": "CA",
-          "stateFull": "California",
-          "total": 604608.77,
-          "count": 776
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 290566,
-          "count": 344
-        },
-        {
-          "state": "DC",
-          "stateFull": "District Of Columbia",
-          "total": 273609.59,
-          "count": 292
-        },
-        {
-          "state": "MD",
-          "stateFull": "Maryland",
-          "total": 168754.48,
-          "count": 227
-        },
-        {
-          "state": "IL",
-          "stateFull": "Illinois",
-          "total": 133273.87,
-          "count": 131
-        },
-        {
-          "state": "VA",
-          "stateFull": "Virginia",
-          "total": 106335,
-          "count": 157
-        },
-        {
-          "state": "TX",
-          "stateFull": "Texas",
-          "total": 90928,
-          "count": 110
-        },
-        {
-          "state": "FL",
-          "stateFull": "Florida",
-          "total": 90737,
-          "count": 143
-        },
-        {
-          "state": "WA",
-          "stateFull": "Washington",
-          "total": 64893,
-          "count": 129
-        },
-        {
-          "state": "PA",
-          "stateFull": "Pennsylvania",
-          "total": 33828.5,
-          "count": 94
-        },
-        {
-          "state": "NH",
-          "stateFull": "New Hampshire",
-          "total": 33774,
-          "count": 178
-        },
-        {
-          "state": "CT",
-          "stateFull": "Connecticut",
-          "total": 30980,
-          "count": 67
-        },
-        {
-          "state": "CO",
-          "stateFull": "Colorado",
-          "total": 25872.5,
-          "count": 26
-        },
-        {
-          "state": "OH",
-          "stateFull": "Ohio",
-          "total": 20410,
-          "count": 38
-        },
-        {
-          "state": "NJ",
-          "stateFull": "New Jersey",
-          "total": 17727,
-          "count": 75
-        },
-        {
-          "state": "RI",
-          "stateFull": "Rhode Island",
-          "total": 17365,
-          "count": 26
-        },
-        {
-          "state": "NM",
-          "stateFull": "New Mexico",
-          "total": 12258,
-          "count": 28
-        },
-        {
-          "state": "NC",
-          "stateFull": "North Carolina",
-          "total": 10940,
-          "count": 14
-        },
-        {
-          "state": "HI",
-          "stateFull": "Hawaii",
-          "total": 10900,
-          "count": 10
-        },
-        {
-          "state": "VT",
-          "stateFull": "Vermont",
-          "total": 10263,
-          "count": 24
-        },
-        {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 9759,
-          "count": 39
-        },
-        {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 9655,
-          "count": 35
-        },
-        {
-          "state": "SC",
-          "stateFull": "South Carolina",
-          "total": 9185,
-          "count": 23
-        },
-        {
-          "state": "OR",
-          "stateFull": "Oregon",
-          "total": 8677.5,
-          "count": 106
-        },
-        {
-          "state": "KY",
-          "stateFull": "Kentucky",
-          "total": 8000,
-          "count": 5
-        },
-        {
-          "state": "LA",
-          "stateFull": "Louisiana",
-          "total": 7200,
-          "count": 13
-        },
-        {
-          "state": "MI",
-          "stateFull": "Michigan",
-          "total": 6650,
-          "count": 38
-        },
-        {
-          "state": "WV",
-          "stateFull": "West Virginia",
-          "total": 6500,
-          "count": 6
-        },
-        {
-          "state": "MN",
-          "stateFull": "Minnesota",
-          "total": 5771.5,
-          "count": 30
-        },
-        {
-          "state": "NV",
-          "stateFull": "Nevada",
-          "total": 5000,
-          "count": 5
-        },
-        {
-          "state": "PR",
-          "stateFull": "Puerto Rico",
-          "total": 5000,
-          "count": 3
-        },
-        {
-          "state": "OK",
-          "stateFull": "Oklahoma",
-          "total": 4200,
-          "count": 10
-        },
-        {
-          "state": "AZ",
-          "stateFull": "Arizona",
-          "total": 4066.67,
-          "count": 31
-        },
-        {
-          "state": "IN",
-          "stateFull": "Indiana",
-          "total": 4000,
-          "count": 17
-        },
-        {
-          "state": "ME",
-          "stateFull": "Maine",
-          "total": 3272,
-          "count": 40
-        },
-        {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 3196,
-          "count": 18
-        },
-        {
-          "state": "WY",
-          "stateFull": "Wyoming",
-          "total": 2500,
-          "count": 2
-        },
-        {
-          "state": "AL",
-          "stateFull": "Alabama",
-          "total": 2000,
-          "count": 3
-        },
-        {
-          "state": "AR",
-          "stateFull": "Arkansas",
-          "total": 1500,
-          "count": 2
-        },
-        {
-          "state": "WI",
-          "stateFull": "Wisconsin",
-          "total": 1075,
-          "count": 19
-        },
-        {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 1000,
-          "count": 1
-        },
-        {
-          "state": "DE",
-          "stateFull": "Delaware",
-          "total": 750,
-          "count": 2
-        },
-        {
-          "state": "KS",
-          "stateFull": "Kansas",
-          "total": 600,
-          "count": 2
-        },
-        {
-          "state": "UT",
-          "stateFull": "Utah",
-          "total": 475,
-          "count": 6
-        },
-        {
-          "state": "MS",
-          "stateFull": "Mississippi",
-          "total": 250,
-          "count": 1
-        },
-        {
-          "state": "NE",
-          "stateFull": "Nebraska",
-          "total": 150,
-          "count": 20
-        },
-        {
-          "state": "MT",
-          "stateFull": "Montana",
-          "total": 125,
-          "count": 2
-        }
-      ]
-    },
-    "S4MA00358": {
-      "name": "Deaton",
-      "raceTitle": "Massachusetts Senate",
-      "raceKey": "2026:senate:MA:",
-      "committeeId": "C00870337",
+    "S6ME00464": {
+      "name": "Troy Jackson",
+      "raceTitle": "Maine Senate",
+      "raceKey": "2026:senate:ME:",
+      "committeeId": "C00955609",
       "byState": []
     },
     "S6ME00159": {
@@ -30745,346 +31787,6 @@
         }
       ]
     },
-    "S0NM00058": {
-      "name": "Lujan",
-      "raceTitle": "New Mexico Senate",
-      "raceKey": "2026:senate:NM:",
-      "committeeId": "C00443689",
-      "byState": [
-        {
-          "state": "NM",
-          "stateFull": "New Mexico",
-          "total": 511230.84,
-          "count": 5451
-        },
-        {
-          "state": "CA",
-          "stateFull": "California",
-          "total": 460523.54,
-          "count": 3882
-        },
-        {
-          "state": "DC",
-          "stateFull": "District Of Columbia",
-          "total": 265510,
-          "count": 323
-        },
-        {
-          "state": "TX",
-          "stateFull": "Texas",
-          "total": 230879,
-          "count": 1307
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 182965.44,
-          "count": 1587
-        },
-        {
-          "state": "MD",
-          "stateFull": "Maryland",
-          "total": 117712.33,
-          "count": 811
-        },
-        {
-          "state": "VA",
-          "stateFull": "Virginia",
-          "total": 97818.12,
-          "count": 377
-        },
-        {
-          "state": "IL",
-          "stateFull": "Illinois",
-          "total": 84595.5,
-          "count": 549
-        },
-        {
-          "state": "MA",
-          "stateFull": "Massachusetts",
-          "total": 82320.5,
-          "count": 666
-        },
-        {
-          "state": "WA",
-          "stateFull": "Washington",
-          "total": 69554.43,
-          "count": 1001
-        },
-        {
-          "state": "PR",
-          "stateFull": "Puerto Rico",
-          "total": 63542,
-          "count": 33
-        },
-        {
-          "state": "FL",
-          "stateFull": "Florida",
-          "total": 55738.17,
-          "count": 1259
-        },
-        {
-          "state": "CT",
-          "stateFull": "Connecticut",
-          "total": 54002.5,
-          "count": 610
-        },
-        {
-          "state": "AZ",
-          "stateFull": "Arizona",
-          "total": 52090,
-          "count": 427
-        },
-        {
-          "state": "NJ",
-          "stateFull": "New Jersey",
-          "total": 39570.6,
-          "count": 586
-        },
-        {
-          "state": "PA",
-          "stateFull": "Pennsylvania",
-          "total": 30622,
-          "count": 621
-        },
-        {
-          "state": "NV",
-          "stateFull": "Nevada",
-          "total": 25711.09,
-          "count": 124
-        },
-        {
-          "state": "MI",
-          "stateFull": "Michigan",
-          "total": 22550,
-          "count": 415
-        },
-        {
-          "state": "CO",
-          "stateFull": "Colorado",
-          "total": 22150.75,
-          "count": 281
-        },
-        {
-          "state": "NC",
-          "stateFull": "North Carolina",
-          "total": 20362.25,
-          "count": 440
-        },
-        {
-          "state": "OK",
-          "stateFull": "Oklahoma",
-          "total": 19455,
-          "count": 67
-        },
-        {
-          "state": "OH",
-          "stateFull": "Ohio",
-          "total": 12271.5,
-          "count": 375
-        },
-        {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 12074,
-          "count": 334
-        },
-        {
-          "state": "SC",
-          "stateFull": "South Carolina",
-          "total": 10970,
-          "count": 132
-        },
-        {
-          "state": "AL",
-          "stateFull": "Alabama",
-          "total": 10801,
-          "count": 206
-        },
-        {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 10752.5,
-          "count": 396
-        },
-        {
-          "state": "IN",
-          "stateFull": "Indiana",
-          "total": 10707,
-          "count": 244
-        },
-        {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 9941,
-          "count": 154
-        },
-        {
-          "state": "ME",
-          "stateFull": "Maine",
-          "total": 8892,
-          "count": 57
-        },
-        {
-          "state": "OR",
-          "stateFull": "Oregon",
-          "total": 7780,
-          "count": 480
-        },
-        {
-          "state": "LA",
-          "stateFull": "Louisiana",
-          "total": 7176,
-          "count": 99
-        },
-        {
-          "state": "MN",
-          "stateFull": "Minnesota",
-          "total": 6408,
-          "count": 170
-        },
-        {
-          "state": "WI",
-          "stateFull": "Wisconsin",
-          "total": 6008,
-          "count": 280
-        },
-        {
-          "state": "KS",
-          "stateFull": "Kansas",
-          "total": 3600,
-          "count": 59
-        },
-        {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 3479,
-          "count": 89
-        },
-        {
-          "state": "MT",
-          "stateFull": "Montana",
-          "total": 3045,
-          "count": 30
-        },
-        {
-          "state": "HI",
-          "stateFull": "Hawaii",
-          "total": 2805,
-          "count": 127
-        },
-        {
-          "state": "KY",
-          "stateFull": "Kentucky",
-          "total": 2671,
-          "count": 112
-        },
-        {
-          "state": "UT",
-          "stateFull": "Utah",
-          "total": 2645,
-          "count": 83
-        },
-        {
-          "state": "AR",
-          "stateFull": "Arkansas",
-          "total": 2605,
-          "count": 86
-        },
-        {
-          "state": "IA",
-          "stateFull": "Iowa",
-          "total": 2566,
-          "count": 120
-        },
-        {
-          "state": "NE",
-          "stateFull": "Nebraska",
-          "total": 2505,
-          "count": 38
-        },
-        {
-          "state": "NH",
-          "stateFull": "New Hampshire",
-          "total": 2498.67,
-          "count": 63
-        },
-        {
-          "state": "AK",
-          "stateFull": "Alaska",
-          "total": 1842,
-          "count": 76
-        },
-        {
-          "state": "DE",
-          "stateFull": "Delaware",
-          "total": 1809,
-          "count": 24
-        },
-        {
-          "state": "RI",
-          "stateFull": "Rhode Island",
-          "total": 1376,
-          "count": 110
-        },
-        {
-          "state": "ND",
-          "stateFull": "North Dakota",
-          "total": 1351,
-          "count": 55
-        },
-        {
-          "state": "SD",
-          "stateFull": "South Dakota",
-          "total": 1272,
-          "count": 50
-        },
-        {
-          "state": "ZZ",
-          "stateFull": "Foreign Countries",
-          "total": 1000,
-          "count": 1
-        },
-        {
-          "state": "MS",
-          "stateFull": "Mississippi",
-          "total": 894,
-          "count": 13
-        },
-        {
-          "state": "VI",
-          "stateFull": "U.S. Virgin Islands",
-          "total": 500,
-          "count": 1
-        },
-        {
-          "state": "VT",
-          "stateFull": "Vermont",
-          "total": 426,
-          "count": 30
-        },
-        {
-          "state": "WY",
-          "stateFull": "Wyoming",
-          "total": 252,
-          "count": 22
-        }
-      ]
-    },
-    "S6NM01186": {
-      "name": "Marker",
-      "raceTitle": "New Mexico Senate",
-      "raceKey": "2026:senate:NM:",
-      "committeeId": "C00943738",
-      "byState": [
-        {
-          "state": "NM",
-          "stateFull": "New Mexico",
-          "total": 27460,
-          "count": 21
-        }
-      ]
-    },
     "S6OH00163": {
       "name": "Sherrod Brown",
       "raceTitle": "Ohio Senate (special)",
@@ -31761,556 +32463,6 @@
         }
       ]
     },
-    "S6RI00163": {
-      "name": "Reed",
-      "raceTitle": "Rhode Island Senate",
-      "raceKey": "2026:senate:RI:",
-      "committeeId": "C00238907",
-      "byState": [
-        {
-          "state": "RI",
-          "stateFull": "Rhode Island",
-          "total": 575605.8,
-          "count": 920
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 275200,
-          "count": 141
-        },
-        {
-          "state": "MA",
-          "stateFull": "Massachusetts",
-          "total": 203705,
-          "count": 155
-        },
-        {
-          "state": "CA",
-          "stateFull": "California",
-          "total": 203600,
-          "count": 101
-        },
-        {
-          "state": "IL",
-          "stateFull": "Illinois",
-          "total": 113040,
-          "count": 42
-        },
-        {
-          "state": "VA",
-          "stateFull": "Virginia",
-          "total": 108401,
-          "count": 95
-        },
-        {
-          "state": "FL",
-          "stateFull": "Florida",
-          "total": 95900,
-          "count": 76
-        },
-        {
-          "state": "DC",
-          "stateFull": "District Of Columbia",
-          "total": 93540.81,
-          "count": 103
-        },
-        {
-          "state": "TX",
-          "stateFull": "Texas",
-          "total": 76850,
-          "count": 31
-        },
-        {
-          "state": "NJ",
-          "stateFull": "New Jersey",
-          "total": 65014.75,
-          "count": 36
-        },
-        {
-          "state": "MD",
-          "stateFull": "Maryland",
-          "total": 48450,
-          "count": 59
-        },
-        {
-          "state": "CO",
-          "stateFull": "Colorado",
-          "total": 39500,
-          "count": 25
-        },
-        {
-          "state": "CT",
-          "stateFull": "Connecticut",
-          "total": 38800,
-          "count": 17
-        },
-        {
-          "state": "WA",
-          "stateFull": "Washington",
-          "total": 38750,
-          "count": 23
-        },
-        {
-          "state": "NV",
-          "stateFull": "Nevada",
-          "total": 29500,
-          "count": 12
-        },
-        {
-          "state": "PA",
-          "stateFull": "Pennsylvania",
-          "total": 23250,
-          "count": 14
-        },
-        {
-          "state": "NH",
-          "stateFull": "New Hampshire",
-          "total": 21500,
-          "count": 10
-        },
-        {
-          "state": "HI",
-          "stateFull": "Hawaii",
-          "total": 16500,
-          "count": 5
-        },
-        {
-          "state": "NM",
-          "stateFull": "New Mexico",
-          "total": 14500,
-          "count": 5
-        },
-        {
-          "state": "AZ",
-          "stateFull": "Arizona",
-          "total": 13000,
-          "count": 9
-        },
-        {
-          "state": "OH",
-          "stateFull": "Ohio",
-          "total": 5000,
-          "count": 4
-        },
-        {
-          "state": "DE",
-          "stateFull": "Delaware",
-          "total": 5000,
-          "count": 4
-        },
-        {
-          "state": "SC",
-          "stateFull": "South Carolina",
-          "total": 4600,
-          "count": 2
-        },
-        {
-          "state": "NC",
-          "stateFull": "North Carolina",
-          "total": 4000,
-          "count": 6
-        },
-        {
-          "state": "PR",
-          "stateFull": "Puerto Rico",
-          "total": 3500,
-          "count": 1
-        },
-        {
-          "state": "MN",
-          "stateFull": "Minnesota",
-          "total": 2000,
-          "count": 3
-        },
-        {
-          "state": "MI",
-          "stateFull": "Michigan",
-          "total": 2000,
-          "count": 3
-        },
-        {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 2000,
-          "count": 4
-        },
-        {
-          "state": "UT",
-          "stateFull": "Utah",
-          "total": 2000,
-          "count": 1
-        },
-        {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 1750,
-          "count": 4
-        },
-        {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 1500,
-          "count": 2
-        },
-        {
-          "state": "AK",
-          "stateFull": "Alaska",
-          "total": 1000,
-          "count": 1
-        },
-        {
-          "state": "AR",
-          "stateFull": "Arkansas",
-          "total": 1000,
-          "count": 1
-        },
-        {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 1000,
-          "count": 2
-        },
-        {
-          "state": "IN",
-          "stateFull": "Indiana",
-          "total": 1000,
-          "count": 2
-        },
-        {
-          "state": "ME",
-          "stateFull": "Maine",
-          "total": 1000,
-          "count": 1
-        },
-        {
-          "state": "SD",
-          "stateFull": "South Dakota",
-          "total": 500,
-          "count": 1
-        },
-        {
-          "state": "LA",
-          "stateFull": "Louisiana",
-          "total": 500,
-          "count": 1
-        },
-        {
-          "state": "KS",
-          "stateFull": "Kansas",
-          "total": 500,
-          "count": 1
-        },
-        {
-          "state": "WV",
-          "stateFull": "West Virginia",
-          "total": 500,
-          "count": 1
-        }
-      ]
-    },
-    "S4RI00051": {
-      "name": "McKay",
-      "raceTitle": "Rhode Island Senate",
-      "raceKey": "2026:senate:RI:",
-      "committeeId": "C00827964",
-      "byState": [
-        {
-          "state": "TX",
-          "stateFull": "Texas",
-          "total": 19697.84,
-          "count": 387
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 14583.62,
-          "count": 74
-        },
-        {
-          "state": "RI",
-          "stateFull": "Rhode Island",
-          "total": 13664.87,
-          "count": 84
-        },
-        {
-          "state": "FL",
-          "stateFull": "Florida",
-          "total": 7913.5,
-          "count": 236
-        },
-        {
-          "state": "CA",
-          "stateFull": "California",
-          "total": 6618.64,
-          "count": 188
-        },
-        {
-          "state": "KS",
-          "stateFull": "Kansas",
-          "total": 5324.49,
-          "count": 29
-        },
-        {
-          "state": "WA",
-          "stateFull": "Washington",
-          "total": 4774.53,
-          "count": 24
-        },
-        {
-          "state": "NC",
-          "stateFull": "North Carolina",
-          "total": 4255.87,
-          "count": 59
-        },
-        {
-          "state": "MA",
-          "stateFull": "Massachusetts",
-          "total": 3901.91,
-          "count": 33
-        },
-        {
-          "state": "CT",
-          "stateFull": "Connecticut",
-          "total": 3363.6,
-          "count": 12
-        },
-        {
-          "state": "AZ",
-          "stateFull": "Arizona",
-          "total": 2831.37,
-          "count": 45
-        },
-        {
-          "state": "IL",
-          "stateFull": "Illinois",
-          "total": 2433.29,
-          "count": 48
-        },
-        {
-          "state": "SC",
-          "stateFull": "South Carolina",
-          "total": 2318.42,
-          "count": 72
-        },
-        {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 1983.16,
-          "count": 60
-        },
-        {
-          "state": "OH",
-          "stateFull": "Ohio",
-          "total": 1930.55,
-          "count": 39
-        },
-        {
-          "state": "SD",
-          "stateFull": "South Dakota",
-          "total": 1319.91,
-          "count": 11
-        },
-        {
-          "state": "VA",
-          "stateFull": "Virginia",
-          "total": 1148.19,
-          "count": 68
-        },
-        {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 952.91,
-          "count": 58
-        },
-        {
-          "state": "MN",
-          "stateFull": "Minnesota",
-          "total": 911.56,
-          "count": 27
-        },
-        {
-          "state": "IN",
-          "stateFull": "Indiana",
-          "total": 884.36,
-          "count": 55
-        },
-        {
-          "state": "NJ",
-          "stateFull": "New Jersey",
-          "total": 880.46,
-          "count": 34
-        },
-        {
-          "state": "MS",
-          "stateFull": "Mississippi",
-          "total": 749,
-          "count": 52
-        },
-        {
-          "state": "PA",
-          "stateFull": "Pennsylvania",
-          "total": 568.71,
-          "count": 31
-        },
-        {
-          "state": "LA",
-          "stateFull": "Louisiana",
-          "total": 552.01,
-          "count": 30
-        },
-        {
-          "state": "NH",
-          "stateFull": "New Hampshire",
-          "total": 530.41,
-          "count": 4
-        },
-        {
-          "state": "UT",
-          "stateFull": "Utah",
-          "total": 497.69,
-          "count": 33
-        },
-        {
-          "state": "IA",
-          "stateFull": "Iowa",
-          "total": 485.85,
-          "count": 22
-        },
-        {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 434.73,
-          "count": 27
-        },
-        {
-          "state": "CO",
-          "stateFull": "Colorado",
-          "total": 354.94,
-          "count": 22
-        },
-        {
-          "state": "MI",
-          "stateFull": "Michigan",
-          "total": 354.71,
-          "count": 24
-        },
-        {
-          "state": "OR",
-          "stateFull": "Oregon",
-          "total": 335.32,
-          "count": 7
-        },
-        {
-          "state": "AL",
-          "stateFull": "Alabama",
-          "total": 318.41,
-          "count": 13
-        },
-        {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 291.41,
-          "count": 16
-        },
-        {
-          "state": "ND",
-          "stateFull": "North Dakota",
-          "total": 250,
-          "count": 1
-        },
-        {
-          "state": "AR",
-          "stateFull": "Arkansas",
-          "total": 186.76,
-          "count": 11
-        },
-        {
-          "state": "KY",
-          "stateFull": "Kentucky",
-          "total": 183.89,
-          "count": 14
-        },
-        {
-          "state": "NV",
-          "stateFull": "Nevada",
-          "total": 178.46,
-          "count": 14
-        },
-        {
-          "state": "AK",
-          "stateFull": "Alaska",
-          "total": 147.91,
-          "count": 6
-        },
-        {
-          "state": "MD",
-          "stateFull": "Maryland",
-          "total": 146.05,
-          "count": 13
-        },
-        {
-          "state": "WI",
-          "stateFull": "Wisconsin",
-          "total": 129.8,
-          "count": 10
-        },
-        {
-          "state": "ME",
-          "stateFull": "Maine",
-          "total": 94.98,
-          "count": 9
-        },
-        {
-          "state": "DC",
-          "stateFull": "District Of Columbia",
-          "total": 92,
-          "count": 5
-        },
-        {
-          "state": "NM",
-          "stateFull": "New Mexico",
-          "total": 63.75,
-          "count": 4
-        },
-        {
-          "state": "MT",
-          "stateFull": "Montana",
-          "total": 60,
-          "count": 2
-        },
-        {
-          "state": "OK",
-          "stateFull": "Oklahoma",
-          "total": 60,
-          "count": 4
-        },
-        {
-          "state": "NE",
-          "stateFull": "Nebraska",
-          "total": 42.49,
-          "count": 3
-        },
-        {
-          "state": "WY",
-          "stateFull": "Wyoming",
-          "total": 35,
-          "count": 2
-        },
-        {
-          "state": "DE",
-          "stateFull": "Delaware",
-          "total": 10.41,
-          "count": 1
-        },
-        {
-          "state": "HI",
-          "stateFull": "Hawaii",
-          "total": 10.41,
-          "count": 1
-        }
-      ]
-    },
     "S6SC04239": {
       "name": "Annie Andrews",
       "raceTitle": "South Carolina Senate",
@@ -32798,340 +32950,6 @@
           "stateFull": "Kentucky",
           "total": 208.2,
           "count": 2
-        }
-      ]
-    },
-    "S0TN00342": {
-      "name": "Bradshaw",
-      "raceTitle": "Tennessee Senate",
-      "raceKey": "2026:senate:TN:",
-      "committeeId": "C00846048",
-      "byState": [
-        {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 250,
-          "count": 1
-        }
-      ]
-    },
-    "S0TN00169": {
-      "name": "Hagerty",
-      "raceTitle": "Tennessee Senate",
-      "raceKey": "2026:senate:TN:",
-      "committeeId": "C00718627",
-      "byState": [
-        {
-          "state": "TN",
-          "stateFull": "Tennessee",
-          "total": 1760480.3,
-          "count": 5299
-        },
-        {
-          "state": "CA",
-          "stateFull": "California",
-          "total": 475291.83,
-          "count": 5902
-        },
-        {
-          "state": "FL",
-          "stateFull": "Florida",
-          "total": 383679.91,
-          "count": 9027
-        },
-        {
-          "state": "NY",
-          "stateFull": "New York",
-          "total": 366974.93,
-          "count": 2585
-        },
-        {
-          "state": "VA",
-          "stateFull": "Virginia",
-          "total": 256989.14,
-          "count": 2467
-        },
-        {
-          "state": "TX",
-          "stateFull": "Texas",
-          "total": 248476.9,
-          "count": 9560
-        },
-        {
-          "state": "DC",
-          "stateFull": "District Of Columbia",
-          "total": 168311.07,
-          "count": 161
-        },
-        {
-          "state": "MI",
-          "stateFull": "Michigan",
-          "total": 102727.36,
-          "count": 2339
-        },
-        {
-          "state": "NJ",
-          "stateFull": "New Jersey",
-          "total": 81390.55,
-          "count": 1893
-        },
-        {
-          "state": "GA",
-          "stateFull": "Georgia",
-          "total": 71497.61,
-          "count": 2655
-        },
-        {
-          "state": "MD",
-          "stateFull": "Maryland",
-          "total": 69142.67,
-          "count": 833
-        },
-        {
-          "state": "MA",
-          "stateFull": "Massachusetts",
-          "total": 68684.2,
-          "count": 710
-        },
-        {
-          "state": "AL",
-          "stateFull": "Alabama",
-          "total": 66092.98,
-          "count": 1187
-        },
-        {
-          "state": "IL",
-          "stateFull": "Illinois",
-          "total": 63932.8,
-          "count": 1512
-        },
-        {
-          "state": "CT",
-          "stateFull": "Connecticut",
-          "total": 58475.07,
-          "count": 410
-        },
-        {
-          "state": "NC",
-          "stateFull": "North Carolina",
-          "total": 57202.76,
-          "count": 2474
-        },
-        {
-          "state": "AZ",
-          "stateFull": "Arizona",
-          "total": 52561.92,
-          "count": 3745
-        },
-        {
-          "state": "PA",
-          "stateFull": "Pennsylvania",
-          "total": 52102.88,
-          "count": 1856
-        },
-        {
-          "state": "OH",
-          "stateFull": "Ohio",
-          "total": 48088.22,
-          "count": 1843
-        },
-        {
-          "state": "SC",
-          "stateFull": "South Carolina",
-          "total": 34157.21,
-          "count": 1767
-        },
-        {
-          "state": "WA",
-          "stateFull": "Washington",
-          "total": 28786.17,
-          "count": 1072
-        },
-        {
-          "state": "MS",
-          "stateFull": "Mississippi",
-          "total": 27129.24,
-          "count": 840
-        },
-        {
-          "state": "PR",
-          "stateFull": "Puerto Rico",
-          "total": 25000,
-          "count": 13
-        },
-        {
-          "state": "CO",
-          "stateFull": "Colorado",
-          "total": 24845.63,
-          "count": 957
-        },
-        {
-          "state": "ID",
-          "stateFull": "Idaho",
-          "total": 23411.35,
-          "count": 338
-        },
-        {
-          "state": "IN",
-          "stateFull": "Indiana",
-          "total": 22385.5,
-          "count": 1238
-        },
-        {
-          "state": "WI",
-          "stateFull": "Wisconsin",
-          "total": 21523.8,
-          "count": 878
-        },
-        {
-          "state": "MO",
-          "stateFull": "Missouri",
-          "total": 19310.34,
-          "count": 974
-        },
-        {
-          "state": "LA",
-          "stateFull": "Louisiana",
-          "total": 18593.52,
-          "count": 1505
-        },
-        {
-          "state": "OK",
-          "stateFull": "Oklahoma",
-          "total": 16536.98,
-          "count": 771
-        },
-        {
-          "state": "UT",
-          "stateFull": "Utah",
-          "total": 16119.57,
-          "count": 787
-        },
-        {
-          "state": "AR",
-          "stateFull": "Arkansas",
-          "total": 14949.18,
-          "count": 568
-        },
-        {
-          "state": "NV",
-          "stateFull": "Nevada",
-          "total": 13192.52,
-          "count": 689
-        },
-        {
-          "state": "OR",
-          "stateFull": "Oregon",
-          "total": 13149.19,
-          "count": 833
-        },
-        {
-          "state": "KS",
-          "stateFull": "Kansas",
-          "total": 12538.99,
-          "count": 987
-        },
-        {
-          "state": "KY",
-          "stateFull": "Kentucky",
-          "total": 12511.86,
-          "count": 359
-        },
-        {
-          "state": "MN",
-          "stateFull": "Minnesota",
-          "total": 10640.9,
-          "count": 894
-        },
-        {
-          "state": "NH",
-          "stateFull": "New Hampshire",
-          "total": 10106.02,
-          "count": 258
-        },
-        {
-          "state": "NM",
-          "stateFull": "New Mexico",
-          "total": 9098.49,
-          "count": 697
-        },
-        {
-          "state": "NE",
-          "stateFull": "Nebraska",
-          "total": 8801.59,
-          "count": 369
-        },
-        {
-          "state": "WY",
-          "stateFull": "Wyoming",
-          "total": 8713.04,
-          "count": 259
-        },
-        {
-          "state": "ME",
-          "stateFull": "Maine",
-          "total": 4566.21,
-          "count": 228
-        },
-        {
-          "state": "IA",
-          "stateFull": "Iowa",
-          "total": 4388.4,
-          "count": 323
-        },
-        {
-          "state": "MT",
-          "stateFull": "Montana",
-          "total": 4056.6,
-          "count": 199
-        },
-        {
-          "state": "WV",
-          "stateFull": "West Virginia",
-          "total": 3792.88,
-          "count": 273
-        },
-        {
-          "state": "VT",
-          "stateFull": "Vermont",
-          "total": 3695.06,
-          "count": 63
-        },
-        {
-          "state": "SD",
-          "stateFull": "South Dakota",
-          "total": 2483.03,
-          "count": 113
-        },
-        {
-          "state": "AK",
-          "stateFull": "Alaska",
-          "total": 1953.53,
-          "count": 143
-        },
-        {
-          "state": "DE",
-          "stateFull": "Delaware",
-          "total": 1759.3,
-          "count": 44
-        },
-        {
-          "state": "HI",
-          "stateFull": "Hawaii",
-          "total": 1661.76,
-          "count": 72
-        },
-        {
-          "state": "RI",
-          "stateFull": "Rhode Island",
-          "total": 1659.66,
-          "count": 139
-        },
-        {
-          "state": "ND",
-          "stateFull": "North Dakota",
-          "total": 152.8,
-          "count": 17
         }
       ]
     },
@@ -33810,13 +33628,6 @@
           "count": 1
         }
       ]
-    },
-    "S6ME00464": {
-      "name": "Troy Jackson",
-      "raceTitle": "Maine Senate",
-      "raceKey": "2026:senate:ME:",
-      "committeeId": "C00955609",
-      "byState": []
     }
   }
 }

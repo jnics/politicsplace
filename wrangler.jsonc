@@ -10,6 +10,13 @@
   "observability": {
     "enabled": true
   },
+  // Election-night results feed (workers/app.ts `scheduled` -> civicAPI):
+  // every minute from 5 PM ET Nov 3 (an hour before the first polls close;
+  // cron runs in UTC, 22:00 UTC = 5 PM EST) through the end of Nov 10 UTC,
+  // while late counting is still active.
+  "triggers": {
+    "crons": ["* 22-23 3 11 *", "* * 4-10 11 *"]
+  },
   // Static build output — Workers serves these directly and only invokes the
   // Worker (SSR) for anything that isn't a matching file.
   "assets": {

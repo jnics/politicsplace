@@ -2,6 +2,10 @@
 // candidates, for the /election2026 results page. Compiled from the campaign's
 // "2026 General Big Board" spreadsheet (candidate rosters as of research date;
 // reconfirm before Election Day). Vote counts / % reported are entered live.
+// Governor races come from bigBoardGovernors.generated.json
+// (`pnpm board:governors`, built from civicAPI + Wikipedia).
+
+import governors from "~/data/bigBoardGovernors.generated.json";
 
 export type BoardParty = "D" | "R" | "I" | "L" | "G" | "O";
 
@@ -12,7 +16,7 @@ export interface BoardCandidate {
 }
 
 export interface BoardRace {
-  chamber: "senate" | "house";
+  chamber: "senate" | "house" | "governor";
   /** Display label: "Ohio" or "Ohio 7". */
   place: string;
   /** USPS code. */
@@ -9521,3 +9525,7 @@ export const BIG_BOARD_2026: BoardRace[] = [
 
 export const BOARD_SENATE = BIG_BOARD_2026.filter((r) => r.chamber === "senate");
 export const BOARD_HOUSE = BIG_BOARD_2026.filter((r) => r.chamber === "house");
+export const BOARD_GOVERNOR = governors as BoardRace[];
+
+/** Every race on the board, federal and governor. */
+export const ALL_BOARD_RACES: BoardRace[] = [...BIG_BOARD_2026, ...BOARD_GOVERNOR];

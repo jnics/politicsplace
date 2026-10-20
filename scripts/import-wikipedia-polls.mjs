@@ -419,7 +419,7 @@ async function main() {
     }
   }
 
-  let prev = { generatedAt: today, source: "RealClearPolling", races: [] };
+  let prev = { generatedAt: today, source: "Wikipedia + FiveThirtyEight", races: [] };
   try { prev = JSON.parse(readFileSync(OUT, "utf8")); } catch {}
   // Full run: drop every prior Wikipedia race. Subset run (id/state args): keep
   // the Wikipedia races this run didn't touch, so a targeted re-pull of a few
@@ -438,8 +438,11 @@ async function main() {
     const key = `${r.raceType}:${r.state}:${r.district ?? ""}`;
     return touched.has(key) ? !got.has(key) : only.length > 0;
   });
+  // Wikipedia is the only live source, so its run sets the page's "updated" date.
   const out = {
     ...prev,
+    generatedAt: today,
+    source: "Wikipedia + FiveThirtyEight",
     races: [...kept, ...imported].sort(
       (a, b) =>
         (a.year ?? 2026) - (b.year ?? 2026) ||
