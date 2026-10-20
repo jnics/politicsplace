@@ -147,10 +147,18 @@ const fmt = (n: number) => n.toLocaleString();
 
 const [D_KEY, R_KEY, O_KEY] = OH7_CANDIDATES.map((c) => c.key);
 
-function leadLabel(d: number, r: number): string {
+/** Margin in percentage points of all votes cast, e.g. "4.2%". */
+function marginPct(lead: number, trail: number, total: number): string {
+  return `${total ? (((lead - trail) / total) * 100).toFixed(1) : "0.0"}%`;
+}
+
+/** Leader's margin, e.g. "+4.2%"; callers color it by the leading party. */
+function leadLabel(v: Record<string, number>): string {
+  const d = v[D_KEY] || 0;
+  const r = v[R_KEY] || 0;
   if (d === r) return "Tied";
-  const c = d > r ? OH7_CANDIDATES[0] : OH7_CANDIDATES[1];
-  return `${c.short} +${fmt(Math.abs(d - r))}`;
+  const total = Object.values(v).reduce((s, n) => s + (n || 0), 0);
+  return `+${marginPct(Math.max(d, r), Math.min(d, r), total)}`;
 }
 
 function tallyOf(
@@ -413,7 +421,7 @@ export default function Results({ loaderData }: Route.ComponentProps) {
             </span>
           ))}
           <span className={`ml-auto ${dLead >= 0 ? PARTY_TEXT.D : PARTY_TEXT.R}`}>
-            {leadLabel(totals.v[D_KEY], totals.v[R_KEY])}
+            {leadLabel(totals.v)}
           </span>
         </div>
         <div className="mt-2 flex h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-800">
@@ -512,7 +520,7 @@ function CountySection({
                   sub.v[D_KEY] >= sub.v[R_KEY] ? PARTY_TEXT.D : PARTY_TEXT.R
                 }`}
               >
-                {leadLabel(sub.v[D_KEY], sub.v[R_KEY])}
+                {leadLabel(sub.v)}
               </span>
             )}
             <span className="text-gray-400 dark:text-gray-500">
@@ -774,7 +782,13 @@ function RaceCard({
           </span>
         ))}
         <span className={`ml-auto ${RACE_TEXT[first.party]}`}>
-          {margin === 0 ? "Tied" : `${shortName(first)} +${fmt(margin)}`}
+          {margin === 0
+            ? "Tied"
+            : `${first.party === "D" || first.party === "R" ? "" : `${shortName(first)} `}+${marginPct(
+                votes(first.key),
+                second ? votes(second.key) : 0,
+                total
+              )}`}
         </span>
       </div>
       <div className="mt-2 flex h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-800">
@@ -861,6 +875,10 @@ function TownSection({
   // Polling places render only while the town is open — a Medina place is a
   // line per race, so rendering every town up front would be thousands of inputs.
   const [open, setOpen] = useState(false);
+  // One polling place open at a time; "Next" moves down the list.
+  const [openPlace, setOpenPlace] = useState<{ id: string; scroll: boolean } | null>(
+    null
+  );
 
   return (
     <details
@@ -887,7 +905,7 @@ function TownSection({
                 sub.v[D_KEY] >= sub.v[R_KEY] ? PARTY_TEXT.D : PARTY_TEXT.R
               }`}
             >
-              {leadLabel(sub.v[D_KEY], sub.v[R_KEY])}
+              {leadLabel(sub.v)}
             </span>
           )}
           <span className="text-gray-400 dark:text-gray-500">
@@ -898,16 +916,27 @@ function TownSection({
 
       {open && (
         <div className="divide-y divide-gray-100 border-t border-gray-100 dark:divide-gray-800 dark:border-gray-800">
-          {places.map((p) => (
-            <PlaceBlock
-              key={p.id}
-              place={p}
-              row={rows[p.id]}
-              onRow={onRow}
-              withRaces={withRaces}
-              editable={editable}
-            />
-          ))}
+          {places.map((p, i) => {
+            const next = places[i + 1];
+            return (
+              <PlaceBlock
+                key={p.id}
+                place={p}
+                row={rows[p.id]}
+                onRow={onRow}
+                withRaces={withRaces}
+                editable={editable}
+                open={openPlace?.id === p.id}
+                scrollOnOpen={!!openPlace?.scroll}
+                onOpenChange={(o) =>
+                  setOpenPlace((cur) =>
+                    o ? { id: p.id, scroll: false } : cur?.id === p.id ? null : cur
+                  )
+                }
+                onNext={next ? () => setOpenPlace({ id: next.id, scroll: true }) : undefined}
+              />
+            );
+          })}
         </div>
       )}
     </details>
@@ -1020,14 +1049,28 @@ function PlaceBlock({
   onRow,
   withRaces,
   editable,
+  open,
+  scrollOnOpen,
+  onOpenChange,
+  onNext,
 }: {
   place: Oh7PollingPlace;
   row?: Row;
   onRow: (id: string, next: Row) => void;
   withRaces: boolean;
   editable: boolean;
+  open: boolean;
+  /** Bring the place to the top when it opens (set when reached via "Next"). */
+  scrollOnOpen: boolean;
+  onOpenChange: (open: boolean) => void;
+  /** Opens the town's next polling place; absent on the last one. */
+  onNext?: () => void;
 }) {
   const fetcher = useFetcher();
+  const ref = useRef<HTMLDetailsElement>(null);
+  useEffect(() => {
+    if (open && scrollOnOpen) ref.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+  }, [open, scrollOnOpen]);
   const r = row ?? emptyRow();
   const total = rowTotal(r);
   const races = useMemo(
@@ -1054,15 +1097,40 @@ function PlaceBlock({
     `${nP} precinct${nP === 1 ? "" : "s"}`;
 
   return (
-    <div className={`px-3 py-2 ${r.final ? "bg-green-50/50 dark:bg-green-950/20" : ""}`}>
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <div className="text-sm font-medium text-gray-800 dark:text-gray-200">
-            {place.name}
+    <details
+      ref={ref}
+      open={open}
+      onToggle={(e) => {
+        if (e.currentTarget.open !== open) onOpenChange(e.currentTarget.open);
+      }}
+      className={`group/place scroll-mt-2 ${r.final ? "bg-green-50/50 dark:bg-green-950/20" : ""}`}
+    >
+      <summary className="flex cursor-pointer list-none items-start justify-between gap-3 px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-800/50">
+        <div className="flex items-start gap-2">
+          <svg
+            viewBox="0 0 12 12"
+            className="mt-1 h-3 w-3 shrink-0 text-gray-400 transition-transform group-open/place:rotate-90"
+            fill="currentColor"
+          >
+            <path d="M4 2l4 4-4 4z" />
+          </svg>
+          <div>
+            <div className="text-sm font-medium text-gray-800 dark:text-gray-200">
+              {place.name}
+            </div>
+            <div className="text-[11px] text-gray-400 dark:text-gray-500">{sub}</div>
           </div>
-          <div className="text-[11px] text-gray-400 dark:text-gray-500">{sub}</div>
         </div>
         <label className="flex shrink-0 items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400">
+          {total > 0 && (
+            <span
+              className={`font-semibold ${
+                r.votes[D_KEY] >= r.votes[R_KEY] ? PARTY_TEXT.D : PARTY_TEXT.R
+              }`}
+            >
+              {leadLabel(r.votes)}
+            </span>
+          )}
           <span className="mr-2 tabular-nums">
             OH-7 total {total ? fmt(total) : "—"}
           </span>
@@ -1075,21 +1143,37 @@ function PlaceBlock({
           />
           Final
         </label>
-      </div>
-      <div className="mt-1 divide-y divide-gray-100 dark:divide-gray-800/60">
-        <RaceLine
-          title="U.S. House, 7th District"
-          saving={fetcher.state !== "idle"}
-          candidates={OH7_LINE}
-          votes={r.votes}
-          where={place.name}
-          editable={editable}
-          onEdit={(key, e) => send({ field: `v:${key}`, ...e })}
-        />
-        {races.map((race) => (
-          <PlaceRaceLine key={race.id} place={place} race={race} editable={editable} />
-        ))}
-      </div>
-    </div>
+      </summary>
+      {/* Only the open place renders its inputs (a Medina place has a line per race). */}
+      {open && (
+        <div className="px-3 pb-2 pl-8">
+          <div className="divide-y divide-gray-100 dark:divide-gray-800/60">
+            <RaceLine
+              title="U.S. House, 7th District"
+              saving={fetcher.state !== "idle"}
+              candidates={OH7_LINE}
+              votes={r.votes}
+              where={place.name}
+              editable={editable}
+              onEdit={(key, e) => send({ field: `v:${key}`, ...e })}
+            />
+            {races.map((race) => (
+              <PlaceRaceLine key={race.id} place={place} race={race} editable={editable} />
+            ))}
+          </div>
+          {onNext && (
+            <div className="mt-2 flex justify-end">
+              <button
+                type="button"
+                onClick={onNext}
+                className="rounded-md border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+              >
+                Next polling place ›
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+    </details>
   );
 }
