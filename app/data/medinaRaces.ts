@@ -57,8 +57,8 @@ export const MEDINA_RACE_GROUPS: CountyRaceGroup[] = [
         { key: "husted", name: "Jon Husted", party: "R", incumbent: true },
       ]),
       race("governor", "Governor & Lt. Governor", [
-        { key: "acton", name: "Amy Acton / David Pepper", party: "D" },
-        { key: "ramaswamy", name: "Vivek Ramaswamy / Rob McColley", party: "R" },
+        { key: "acton", name: "Amy Acton", party: "D" },
+        { key: "ramaswamy", name: "Vivek Ramaswamy", party: "R" },
       ]),
       race("attorney-general", "Attorney General", [
         { key: "kulewicz", name: "John Kulewicz", party: "D" },
