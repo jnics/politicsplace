@@ -52,3 +52,19 @@ INSERT OR IGNORE INTO oh7_rows (kind, id, value, updated_at)
   FROM kv_store, json_each(kv_store.value, '$.races') AS j
   WHERE kv_store.store = 'oh7';
 DELETE FROM kv_store WHERE store = 'oh7';
+
+-- Change history for the /results tally: one row per save, written in the
+-- same batch as the oh7_rows change it describes. `before`/`after` are the
+-- field's value either side of the save (final is 1/0).
+CREATE TABLE IF NOT EXISTS oh7_log (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  at TEXT NOT NULL,
+  editor TEXT NOT NULL,
+  kind TEXT NOT NULL,
+  row_id TEXT NOT NULL,
+  path TEXT NOT NULL,
+  op TEXT NOT NULL,
+  amount INTEGER,
+  before INTEGER,
+  after INTEGER
+);

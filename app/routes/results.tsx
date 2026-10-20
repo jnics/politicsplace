@@ -19,7 +19,13 @@ import {
   type CountyRace,
   type RaceParty,
 } from "~/data/medinaRaces";
-import { changeOh7, readOh7, type Oh7Change } from "~/lib/oh7.server";
+import {
+  changeOh7,
+  readOh7,
+  readOh7Log,
+  type Oh7Change,
+  type Oh7LogEntry,
+} from "~/lib/oh7.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
 import { LoginForm } from "~/components/LoginForm";
 
@@ -43,12 +49,18 @@ const RACES_BY_ID = new Map(MEDINA_RACES.map((r) => [r.id, r]));
 const MAX_VOTES = 10_000_000;
 
 export async function loader({ request, context }: Route.LoaderArgs) {
-  const store = await readOh7(context.get(cloudflareContext).env.DB);
+  const db = context.get(cloudflareContext).env.DB;
+  const [store, log] = await Promise.all([
+    readOh7(db),
+    // A missing oh7_log table (schema.sql not applied yet) shouldn't take the page down.
+    readOh7Log(db).catch(() => [] as Oh7LogEntry[]),
+  ]);
   return {
     results: store.results,
     races: store.races,
     placeRaces: store.placeRaces,
     updatedAt: store.updatedAt,
+    log,
     editor: editorFromRequest(request),
   };
 }
@@ -59,7 +71,8 @@ export async function action({ request, context }: Route.ActionArgs) {
   const login = await tryLogin(request, context.get(cloudflareContext).env.DB, form);
   if (login) return login;
 
-  if (!editorFromRequest(request)) {
+  const editor = editorFromRequest(request);
+  if (!editor) {
     return data({ error: "Sign in first." }, { status: 401 });
   }
 
@@ -118,6 +131,7 @@ export async function action({ request, context }: Route.ActionArgs) {
 
   await changeOh7(
     context.get(cloudflareContext).env.DB,
+    editor,
     atPlace ? "placeRace" : race ? "race" : "place",
     atPlace ? prKey(placeId, race!.id) : race ? race.id : placeId,
     path,
@@ -297,7 +311,7 @@ const RACE_BAR: Record<RaceParty, string> = {
 const BAR_ORDER: Record<RaceParty, number> = { D: 0, Y: 0, L: 1, O: 2, N: 3, R: 3 };
 
 export default function Results({ loaderData }: Route.ComponentProps) {
-  const { results, races, placeRaces, updatedAt, editor } = loaderData;
+  const { results, races, placeRaces, updatedAt, log, editor } = loaderData;
   const [mode, setMode] = useState<EntryMode>("set");
 
   // Live tally: seed from the server, then update as counts are added so the
@@ -455,7 +469,139 @@ export default function Results({ loaderData }: Route.ComponentProps) {
       </div>
       </PlaceRaceCtx.Provider>
       </EntryModeCtx.Provider>
+
+      <HistorySection log={log} />
     </div>
+  );
+}
+
+const ALL_PLACES = new Map(
+  OH7_TOWNS.flatMap((t) => t.pollingPlaces.map((p) => [p.id, p] as const))
+);
+const OH7_BY_KEY = new Map(OH7_CANDIDATES.map((c) => [c.key, c]));
+
+/** "Where" and "what" for one logged save, in the page's own words. */
+function describeLogEntry(e: Oh7LogEntry): { where: string; field: string; text: string } {
+  let placeId: string | undefined;
+  let race: CountyRace | undefined;
+  if (e.kind === "place") placeId = e.rowId;
+  else if (e.kind === "race") race = RACES_BY_ID.get(e.rowId);
+  else {
+    const [p, r] = e.rowId.split("|");
+    placeId = p;
+    race = RACES_BY_ID.get(r);
+  }
+  const place = placeId ? ALL_PLACES.get(placeId) : undefined;
+  const at = placeId ? (place ? `${place.name} (${place.town})` : placeId) : "county-wide";
+  const what = race ? race.title : e.kind === "place" ? "U.S. House, 7th District" : e.rowId;
+  const where = `${at} · ${what}`;
+
+  let field: string;
+  let text = "";
+  if (e.path === "$.final") field = "Final";
+  else if (e.path === "$.reporting") field = "Precincts reporting";
+  else {
+    const key = e.path.replace("$.votes.", "");
+    const c = race ? race.candidates.find((c) => c.key === key) : OH7_BY_KEY.get(key);
+    field = c?.name ?? key;
+  }
+
+  if (e.path === "$.final") text = e.amount ? "marked final" : "unmarked final";
+  else if (e.op === "add") text = `${(e.amount ?? 0) > 0 ? "+" : "−"}${fmt(Math.abs(e.amount ?? 0))}`;
+  else text = e.amount === 0 ? "reset to 0" : `set to ${fmt(e.amount ?? 0)}`;
+
+  return { where, field, text };
+}
+
+/** Every save, newest first: who changed what, and the field's value before → after. */
+function HistorySection({ log }: { log: Oh7LogEntry[] }) {
+  const [who, setWho] = useState("");
+  const editors = useMemo(() => [...new Set(log.map((e) => e.editor))].sort(), [log]);
+  const shown = who ? log.filter((e) => e.editor === who) : log;
+
+  return (
+    <details className="group mt-6 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800/50">
+        <span className="flex items-center gap-2">
+          <svg
+            viewBox="0 0 12 12"
+            className="h-3 w-3 shrink-0 text-gray-400 transition-transform group-open:rotate-90"
+            fill="currentColor"
+          >
+            <path d="M4 2l4 4-4 4z" />
+          </svg>
+          <span className="text-base font-semibold text-gray-900 dark:text-gray-100">
+            Change history
+          </span>
+        </span>
+        <span className="text-xs text-gray-400 dark:text-gray-500">
+          {log.length ? `last ${log.length} change${log.length === 1 ? "" : "s"}` : "no changes yet"}
+        </span>
+      </summary>
+
+      <div className="border-t border-gray-100 px-4 py-3 dark:border-gray-800">
+        {editors.length > 1 && (
+          <label className="mb-2 flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+            Person
+            <select
+              value={who}
+              onChange={(e) => setWho(e.target.value)}
+              className="rounded-md border border-gray-200 bg-white px-2 py-1 text-xs dark:border-gray-700 dark:bg-gray-900"
+            >
+              <option value="">Everyone</option>
+              {editors.map((n) => (
+                <option key={n} value={n}>
+                  {n}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+        {shown.length === 0 ? (
+          <p className="text-sm text-gray-400 dark:text-gray-500">Nothing logged yet.</p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead className="text-gray-400 dark:text-gray-500">
+                <tr>
+                  <th className="py-1 pr-3 font-medium">Time</th>
+                  <th className="py-1 pr-3 font-medium">Who</th>
+                  <th className="py-1 pr-3 font-medium">Where</th>
+                  <th className="py-1 pr-3 font-medium">Field</th>
+                  <th className="py-1 pr-3 font-medium">Change</th>
+                  <th className="py-1 font-medium">Before → after</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 text-gray-700 dark:divide-gray-800 dark:text-gray-300">
+                {shown.map((e) => {
+                  const d = describeLogEntry(e);
+                  return (
+                    <tr key={e.id}>
+                      <td className="whitespace-nowrap py-1 pr-3 tabular-nums text-gray-500 dark:text-gray-400">
+                        {new Date(e.at).toLocaleTimeString([], {
+                          hour: "numeric",
+                          minute: "2-digit",
+                          second: "2-digit",
+                        })}
+                      </td>
+                      <td className="whitespace-nowrap py-1 pr-3 font-medium">{e.editor}</td>
+                      <td className="py-1 pr-3">{d.where}</td>
+                      <td className="py-1 pr-3">{d.field}</td>
+                      <td className="whitespace-nowrap py-1 pr-3">{d.text}</td>
+                      <td className="whitespace-nowrap py-1 tabular-nums">
+                        {e.path === "$.final"
+                          ? `${e.before ? "final" : "open"} → ${e.after ? "final" : "open"}`
+                          : `${fmt(e.before ?? 0)} → ${e.after == null ? "?" : fmt(e.after)}`}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </details>
   );
 }
 
