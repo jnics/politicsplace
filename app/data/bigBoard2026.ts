@@ -1854,7 +1854,8 @@ export const BIG_BOARD_2026: BoardRace[] = [
       },
       {
         "name": "Ken Calvert",
-        "party": "R"
+        "party": "R",
+        "incumbent": true
       }
     ]
   },
@@ -1868,12 +1869,12 @@ export const BIG_BOARD_2026: BoardRace[] = [
     "candidates": [
       {
         "name": "Linda Sanchez",
-        "party": "R",
-        "incumbent": false
+        "party": "D",
+        "incumbent": true
       },
       {
         "name": "Mitch Clemmons",
-        "party": "D"
+        "party": "R"
       }
     ]
   },
