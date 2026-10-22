@@ -109,11 +109,26 @@ function latestPerPollster(polls: Poll[]): Poll[] {
   return polls.filter((p) => best.get(key(p)) === p);
 }
 
+/** Two generated sources (RealClearPolling + Wikipedia) can cover the same
+ *  race. Prefer RCP when it publishes an average for it; otherwise keep
+ *  whichever has more polls (Wikipedia usually, for thinly-polled House races). */
+function pickRace(a: RacePolls, b: RacePolls): RacePolls {
+  const rcpAvg = (r: RacePolls) => r.source === "RealClearPolling" && !!r.aggregateAverage;
+  if (rcpAvg(a) !== rcpAvg(b)) return rcpAvg(a) ? a : b;
+  return b.polls.length > a.polls.length ? b : a;
+}
+
 /** All races: a pulled race replaces the seeded example with the same key. */
 export const POLLS: RacePolls[] = (() => {
   const byKey = new Map<string, RacePolls>();
   for (const race of SEEDED) byKey.set(raceKey(race), race);
-  for (const race of GENERATED) byKey.set(raceKey(race), race);
+  const pulled = new Map<string, RacePolls>();
+  for (const race of GENERATED) {
+    const key = raceKey(race);
+    const cur = pulled.get(key);
+    pulled.set(key, cur ? pickRace(cur, race) : race);
+  }
+  for (const [key, race] of pulled) byKey.set(key, race);
   return [...byKey.values()].map((race) => ({
     ...race,
     polls: latestPerPollster(race.polls),

@@ -1,0 +1,4041 @@
+{
+ "fetchedAt": "2026-10-22",
+ "races": [
+  {
+   "id": 8881,
+   "title": "2026 Florida Governor - Donalds vs. Jolly",
+   "race_type": "governor",
+   "category": "General",
+   "state": "fl",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Byron Donalds",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "David Jolly",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Donalds",
+      "affiliation": "Republican",
+      "value": 48.6
+     },
+     {
+      "name": "Jolly",
+      "affiliation": "Democrat",
+      "value": 43
+     }
+    ],
+    "spread": {
+     "name": "Donalds",
+     "value": 5.6
+    },
+    "as_of": "2026-10-21T10:39:03+00:00",
+    "date_label": "9/24 - 10/20"
+   },
+   "polls_in_average": 7,
+   "total_polls": 15,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/florida/donalds-vs-jolly"
+  },
+  {
+   "id": 8948,
+   "title": "2026 Florida Senate Special Election - Moody vs. Nixon",
+   "race_type": "senate",
+   "category": "General",
+   "state": "fl",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ashley Moody",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Angie Nixon",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Moody",
+      "affiliation": "Republican",
+      "value": 49.4
+     },
+     {
+      "name": "Nixon",
+      "affiliation": "Democrat",
+      "value": 42.4
+     }
+    ],
+    "spread": {
+     "name": "Moody",
+     "value": 7
+    },
+    "as_of": "2026-10-21T20:52:42+00:00",
+    "date_label": "9/8 - 10/20"
+   },
+   "polls_in_average": 9,
+   "total_polls": 15,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/florida/moody-vs-nixon"
+  },
+  {
+   "id": 9014,
+   "title": "2026 California Governor - Hilton vs. Becerra",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ca",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Xavier Becerra",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Steve Hilton",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Becerra",
+      "affiliation": "Democrat",
+      "value": 57.6
+     },
+     {
+      "name": "Hilton",
+      "affiliation": "Republican",
+      "value": 34.4
+     }
+    ],
+    "spread": {
+     "name": "Becerra",
+     "value": 23.2
+    },
+    "as_of": "2026-10-21T14:57:01+00:00",
+    "date_label": "9/4 - 10/20"
+   },
+   "polls_in_average": 5,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/california/hilton-vs-becerra"
+  },
+  {
+   "id": 8689,
+   "title": "2026 Ohio Senate Special Election - Husted vs. Brown",
+   "race_type": "senate",
+   "category": "Special Election",
+   "state": "oh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Sherrod Brown",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Jon Husted",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Brown",
+      "affiliation": "Democrat",
+      "value": 47.7
+     },
+     {
+      "name": "Husted",
+      "affiliation": "Republican",
+      "value": 44.8
+     }
+    ],
+    "spread": {
+     "name": "Brown",
+     "value": 2.9
+    },
+    "as_of": "2026-10-21T21:04:24+00:00",
+    "date_label": "9/21 - 10/19"
+   },
+   "polls_in_average": 12,
+   "total_polls": 29,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/special-election/2026/ohio/husted-vs-brown"
+  },
+  {
+   "id": 8720,
+   "title": "2026 Ohio Governor - Ramaswamy vs. Acton",
+   "race_type": "governor",
+   "category": "General",
+   "state": "oh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Amy Acton",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Vivek Ramaswamy",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Acton",
+      "affiliation": "Democrat",
+      "value": 48.5
+     },
+     {
+      "name": "Ramaswamy",
+      "affiliation": "Republican",
+      "value": 44.9
+     }
+    ],
+    "spread": {
+     "name": "Acton",
+     "value": 3.6
+    },
+    "as_of": "2026-10-21T21:04:45+00:00",
+    "date_label": "9/22 - 10/19"
+   },
+   "polls_in_average": 8,
+   "total_polls": 22,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/ohio/ramaswamy-vs-acton"
+  },
+  {
+   "id": 8742,
+   "title": "2026 New York Governor - Blakeman vs. Hochul",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ny",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Kathy Hochul",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Bruce Blakeman",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Hochul",
+      "affiliation": "Democrat",
+      "value": 52.5
+     },
+     {
+      "name": "Blakeman",
+      "affiliation": "Republican",
+      "value": 41
+     }
+    ],
+    "spread": {
+     "name": "Hochul",
+     "value": 11.5
+    },
+    "as_of": "2026-10-21T19:07:29+00:00",
+    "date_label": "9/11 - 10/19"
+   },
+   "polls_in_average": 4,
+   "total_polls": 16,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/new-york/hochul-vs-blakeman"
+  },
+  {
+   "id": 8867,
+   "title": "2026 Texas Senate - Paxton vs. Talarico",
+   "race_type": "senate",
+   "category": "General",
+   "state": "tx",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "James Talarico",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Ken Paxton",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Talarico",
+      "affiliation": "Democrat",
+      "value": 48.3
+     },
+     {
+      "name": "Paxton",
+      "affiliation": "Republican",
+      "value": 46.8
+     }
+    ],
+    "spread": {
+     "name": "Talarico",
+     "value": 1.5
+    },
+    "as_of": "2026-10-22T12:42:13+00:00",
+    "date_label": "10/6 - 10/19"
+   },
+   "polls_in_average": 9,
+   "total_polls": 47,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/texas/talarico-vs-paxton"
+  },
+  {
+   "id": 8910,
+   "title": "2026 Texas Governor - Abbott vs. Hinojosa",
+   "race_type": "governor",
+   "category": "General",
+   "state": "tx",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Greg Abbott",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Gina Hinojosa",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Abbott",
+      "affiliation": "Republican",
+      "value": 49.1
+     },
+     {
+      "name": "Hinojosa",
+      "affiliation": "Democrat",
+      "value": 46.8
+     }
+    ],
+    "spread": {
+     "name": "Abbott",
+     "value": 2.3
+    },
+    "as_of": "2026-10-22T10:41:12+00:00",
+    "date_label": "9/21 - 10/19"
+   },
+   "polls_in_average": 12,
+   "total_polls": 39,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/texas/abbott-vs-hinojosa"
+  },
+  {
+   "id": 8930,
+   "title": "2026 Iowa Senate - Hinson vs Turek",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ia",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ashley Hinson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Josh Turek",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Hinson",
+      "affiliation": "Republican",
+      "value": 46
+     },
+     {
+      "name": "Turek",
+      "affiliation": "Democrat",
+      "value": 45.6
+     }
+    ],
+    "spread": {
+     "name": "Hinson",
+     "value": 0.4
+    },
+    "as_of": "2026-10-21T18:02:05+00:00",
+    "date_label": "9/29 - 10/19"
+   },
+   "polls_in_average": 7,
+   "total_polls": 34,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/iowa/hinson-vs-turek"
+  },
+  {
+   "id": 8985,
+   "title": "2026 Texas Senate - Paxton vs. Talarico vs. Brown",
+   "race_type": "senate",
+   "category": "General",
+   "state": "tx",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "James Talarico",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Ken Paxton",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Ted Brown",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Talarico",
+      "affiliation": "Democrat",
+      "value": 47.5
+     },
+     {
+      "name": "Paxton",
+      "affiliation": "Republican",
+      "value": 45.8
+     },
+     {
+      "name": "Brown",
+      "affiliation": "Libertarian",
+      "value": 2.7
+     }
+    ],
+    "spread": {
+     "name": "Talarico",
+     "value": 1.7
+    },
+    "as_of": "2026-10-21T21:04:42+00:00",
+    "date_label": "9/8 - 10/19"
+   },
+   "polls_in_average": 12,
+   "total_polls": 21,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/texas/talarico-vs-paxton-vs-brown"
+  },
+  {
+   "id": 9032,
+   "title": "2026 Iowa Governor - Lahn vs. Sand",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ia",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Rob Sand",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Zach Lahn",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Sand",
+      "affiliation": "Democrat",
+      "value": 50.7
+     },
+     {
+      "name": "Lahn",
+      "affiliation": "Republican",
+      "value": 44
+     }
+    ],
+    "spread": {
+     "name": "Sand",
+     "value": 6.7
+    },
+    "as_of": "2026-10-21T18:02:46+00:00",
+    "date_label": "9/29 - 10/19"
+   },
+   "polls_in_average": 6,
+   "total_polls": 20,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/iowa/lahn-vs-sand"
+  },
+  {
+   "id": 9200,
+   "title": "2026 Texas Governor - Abbott vs. Hinojosa vs. Dixon",
+   "race_type": "governor",
+   "category": "General",
+   "state": "tx",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Greg Abbott",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Gina Hinojosa",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Pat Dixon",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Abbott",
+      "affiliation": "Republican",
+      "value": 48.7
+     },
+     {
+      "name": "Hinojosa",
+      "affiliation": "Democrat",
+      "value": 45.3
+     },
+     {
+      "name": "Dixon",
+      "affiliation": "Libertarian",
+      "value": 1.7
+     }
+    ],
+    "spread": {
+     "name": "Abbott",
+     "value": 3.4
+    },
+    "as_of": "2026-10-21T21:05:01+00:00",
+    "date_label": "9/8 - 10/19"
+   },
+   "polls_in_average": 9,
+   "total_polls": 16,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/texas/abbott-vs-hinojosa-vs-dixon"
+  },
+  {
+   "id": 9215,
+   "title": "2026 Iowa Senate - Hinson vs. Turek vs. Laehn",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ia",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Josh Turek",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Ashley Hinson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Thomas Laehn",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Turek",
+      "affiliation": "Democrat",
+      "value": 45.4
+     },
+     {
+      "name": "Hinson",
+      "affiliation": "Republican",
+      "value": 45.1
+     },
+     {
+      "name": "Laehn",
+      "affiliation": "Libertarian",
+      "value": 3.1
+     }
+    ],
+    "spread": {
+     "name": "Turek",
+     "value": 0.3
+    },
+    "as_of": "2026-10-21T18:02:34+00:00",
+    "date_label": "8/31 - 10/19"
+   },
+   "polls_in_average": 7,
+   "total_polls": 9,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/iowa/turek-vs-hinson-vs-laehn"
+  },
+  {
+   "id": 8802,
+   "title": "2026 Michigan Senate - Rogers vs. El-Sayed",
+   "race_type": "senate",
+   "category": "General",
+   "state": "mi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Abdul El-Sayed",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Mike Rogers",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "El-Sayed",
+      "affiliation": "Democrat",
+      "value": 48
+     },
+     {
+      "name": "Rogers",
+      "affiliation": "Republican",
+      "value": 46
+     }
+    ],
+    "spread": {
+     "name": "El-Sayed",
+     "value": 2
+    },
+    "as_of": "2026-10-20T15:00:33+00:00",
+    "date_label": "9/24 - 10/18"
+   },
+   "polls_in_average": 8,
+   "total_polls": 41,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed"
+  },
+  {
+   "id": 8899,
+   "title": "2026 Massachusetts Senate - Deaton vs. Markey",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ma",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ed Markey",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "John Deaton",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Markey",
+      "affiliation": "Democrat",
+      "value": 55.8
+     },
+     {
+      "name": "Deaton",
+      "affiliation": "Republican",
+      "value": 29.8
+     }
+    ],
+    "spread": {
+     "name": "Markey",
+     "value": 26
+    },
+    "as_of": "2026-10-19T18:17:30+00:00",
+    "date_label": "9/14 - 10/18"
+   },
+   "polls_in_average": 4,
+   "total_polls": 13,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/massachusetts/deaton-vs-markey"
+  },
+  {
+   "id": 8937,
+   "title": "2026 Massachusetts Governor - Minogue vs. Healey",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ma",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Maura Healey",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Michael Minogue",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Healey",
+      "affiliation": "Democrat",
+      "value": 56
+     },
+     {
+      "name": "Minogue",
+      "affiliation": "Republican",
+      "value": 34.5
+     }
+    ],
+    "spread": {
+     "name": "Healey",
+     "value": 21.5
+    },
+    "as_of": "2026-10-19T18:20:40+00:00",
+    "date_label": "9/14 - 10/18"
+   },
+   "polls_in_average": 4,
+   "total_polls": 11,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/massachusetts/minogue-vs-healey"
+  },
+  {
+   "id": 8992,
+   "title": "2026 Michigan Governor - James vs. Benson",
+   "race_type": "governor",
+   "category": "General",
+   "state": "mi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jocelyn Benson",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "John James",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Benson",
+      "affiliation": "Democrat",
+      "value": 48.5
+     },
+     {
+      "name": "James",
+      "affiliation": "Republican",
+      "value": 42.7
+     }
+    ],
+    "spread": {
+     "name": "Benson",
+     "value": 5.8
+    },
+    "as_of": "2026-10-13T12:29:39+00:00",
+    "date_label": "9/18 - 10/18"
+   },
+   "polls_in_average": 6,
+   "total_polls": 23,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/michigan/benson-vs-james"
+  },
+  {
+   "id": 9016,
+   "title": "2026 Alaska Governor - RCV 1st Round ",
+   "race_type": "governor",
+   "category": "Primary: Open",
+   "state": "ak",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jonathan Kreiss-Tomkins",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Bernadette Wilson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Dave Bronson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Treg Taylor",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 9,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/open-primary/2026/alaska"
+  },
+  {
+   "id": 9025,
+   "title": "2026 South Carolina Governor - Wilson vs. Johnson",
+   "race_type": "governor",
+   "category": "General",
+   "state": "sc",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Alan Wilson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Jermaine Johnson",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/south-carolina/wilson-vs-johnson"
+  },
+  {
+   "id": 9034,
+   "title": "2026 Montana Senate - Alme vs. Bankhead vs. Bodnar vs. Austin",
+   "race_type": "senate",
+   "category": "General",
+   "state": "mt",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Kurt Alme",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Seth Bodnar",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Alani Bankhead",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Kyle Austin",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Alme",
+      "affiliation": "Republican",
+      "value": 41
+     },
+     {
+      "name": "Bodnar",
+      "affiliation": "Independent",
+      "value": 29
+     },
+     {
+      "name": "Bankhead",
+      "affiliation": "Democrat",
+      "value": 18.5
+     },
+     {
+      "name": "Austin",
+      "affiliation": "Libertarian",
+      "value": 3.5
+     }
+    ],
+    "spread": {
+     "name": "Alme",
+     "value": 12
+    },
+    "as_of": "2026-10-12T15:17:18+00:00",
+    "date_label": "8/27 - 10/18"
+   },
+   "polls_in_average": 2,
+   "total_polls": 11,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/montana/alme-vs-bodnar-vs-bankhead-vs-austin"
+  },
+  {
+   "id": 9115,
+   "title": "2026 South Carolina Senate - Graham Nordone vs. Andrews",
+   "race_type": "senate",
+   "category": "General",
+   "state": "sc",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Darline Graham Nordone",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Annie Andrews",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Graham Nordone",
+      "affiliation": "Republican",
+      "value": 48
+     },
+     {
+      "name": "Andrews",
+      "affiliation": "Democrat",
+      "value": 45.3
+     }
+    ],
+    "spread": {
+     "name": "Graham Nordone",
+     "value": 2.7
+    },
+    "as_of": "2026-10-19T02:17:26+00:00",
+    "date_label": "9/28 - 10/18"
+   },
+   "polls_in_average": 3,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/south-carolina/graham-nordone-vs-andrews"
+  },
+  {
+   "id": 9190,
+   "title": "2026 Alaska Govenor - Wilson vs. Kreiss-Tompkins",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ak",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jonathan Kreiss-Tomkins",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Bernadette Wilson",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Kreiss-Tomkins",
+      "affiliation": "Democrat",
+      "value": 53.8
+     },
+     {
+      "name": "Wilson",
+      "affiliation": "Republican",
+      "value": 46.3
+     }
+    ],
+    "spread": {
+     "name": "Kreiss-Tomkins",
+     "value": 7.5
+    },
+    "as_of": "2026-10-20T18:39:09+00:00",
+    "date_label": "9/8 - 10/18"
+   },
+   "polls_in_average": 4,
+   "total_polls": 5,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/alaska/wilson-vs-kreiss-tompkins"
+  },
+  {
+   "id": 9230,
+   "title": "2026 South Carolina Senate - Multi-Candidate",
+   "race_type": "senate",
+   "category": "General",
+   "state": "sc",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Darline Graham",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Annie Andrews",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Kasie Whitener",
+     "affiliation": "Libertarian"
+    },
+    {
+     "name": "Mark Hackett",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Graham",
+      "affiliation": "Republican",
+      "value": 48
+     },
+     {
+      "name": "Andrews",
+      "affiliation": "Democrat",
+      "value": 45.3
+     }
+    ],
+    "spread": {
+     "name": "Graham",
+     "value": 2.7
+    },
+    "as_of": "2026-10-19T19:36:26+00:00",
+    "date_label": "9/28 - 10/18"
+   },
+   "polls_in_average": 3,
+   "total_polls": 3,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/south-carolina/multi-candidate"
+  },
+  {
+   "id": 8718,
+   "title": "2026 Georgia Senate - Collins vs. Ossoff",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ga",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jon Ossoff",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Mike Collins",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Ossoff",
+      "affiliation": "Democrat",
+      "value": 51.3
+     },
+     {
+      "name": "Collins",
+      "affiliation": "Republican",
+      "value": 42.8
+     }
+    ],
+    "spread": {
+     "name": "Ossoff",
+     "value": 8.5
+    },
+    "as_of": "2026-10-21T12:37:47+00:00",
+    "date_label": "9/15 - 10/17"
+   },
+   "polls_in_average": 6,
+   "total_polls": 19,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/georgia/ossoff-vs-collins"
+  },
+  {
+   "id": 8891,
+   "title": "2026 Alabama Governor - Tuberville vs. Jones",
+   "race_type": "governor",
+   "category": "General",
+   "state": "al",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Tommy Tuberville",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Doug Jones",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Tuberville",
+      "affiliation": "Republican",
+      "value": 50.7
+     },
+     {
+      "name": "Jones",
+      "affiliation": "Democrat",
+      "value": 38.7
+     }
+    ],
+    "spread": {
+     "name": "Tuberville",
+     "value": 12
+    },
+    "as_of": "2026-10-21T17:31:55+00:00",
+    "date_label": "9/21 - 10/17"
+   },
+   "polls_in_average": 3,
+   "total_polls": 4,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/alabama/tuberville-vs-jones"
+  },
+  {
+   "id": 9028,
+   "title": "2026 Georgia Governor - Jackson vs. Lance Bottoms",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ga",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Rick Jackson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Keisha Lance Bottoms",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Jackson",
+      "affiliation": "Republican",
+      "value": 47.8
+     },
+     {
+      "name": "Lance Bottoms",
+      "affiliation": "Democrat",
+      "value": 46.3
+     }
+    ],
+    "spread": {
+     "name": "Jackson",
+     "value": 1.5
+    },
+    "as_of": "2026-10-19T16:15:46+00:00",
+    "date_label": "9/14 - 10/17"
+   },
+   "polls_in_average": 6,
+   "total_polls": 16,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/georgia/jackson-vs-lance-bottoms"
+  },
+  {
+   "id": 8754,
+   "title": "2026 Alaska Senate - Sullivan vs. Peltola",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ak",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Mary Peltola",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Dan Sullivan",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Peltola",
+      "affiliation": "Democrat",
+      "value": 49.4
+     },
+     {
+      "name": "Sullivan",
+      "affiliation": "Republican",
+      "value": 48.2
+     }
+    ],
+    "spread": {
+     "name": "Peltola",
+     "value": 1.2
+    },
+    "as_of": "2026-10-21T13:06:42+00:00",
+    "date_label": "9/28 - 10/16"
+   },
+   "polls_in_average": 5,
+   "total_polls": 24,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/alaska/peltola-vs-sullivan"
+  },
+  {
+   "id": 9124,
+   "title": "2026 Alaska At-Large District - Begich vs. Hill",
+   "race_type": "house",
+   "category": "General",
+   "state": "ak",
+   "district": "AKAL",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Nick Begich",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Bill Hill",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/alaska/at-large/begich-vs-hill"
+  },
+  {
+   "id": 9171,
+   "title": "2026 Alaska Senate - RCV 1st Round",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ak",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Mary Peltola",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Dan Sullivan",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Gerald Heikes",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Daniel J. Sullivan",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 11,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/alaska/peltola-vs-sullivan-vs-heikes-vs-j-sullivan"
+  },
+  {
+   "id": 9191,
+   "title": "2026 Alaska At-Large District - RCV 1st Round",
+   "race_type": "house",
+   "category": "General",
+   "state": "ak",
+   "district": "AKAL",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Nick Begich",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Bill Hill",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Eric Hafner",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "James McDermott",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 4,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/alaska/at-large/rcv-1st-round"
+  },
+  {
+   "id": 9229,
+   "title": "2026 Alabama Senate- Moore vs. Wess",
+   "race_type": "senate",
+   "category": "General",
+   "state": "al",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Barry Moore",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Everett Wess",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Moore",
+      "affiliation": "Republican",
+      "value": 55
+     },
+     {
+      "name": "Wess",
+      "affiliation": "Democrat",
+      "value": 34
+     }
+    ],
+    "spread": {
+     "name": "Moore",
+     "value": 21
+    },
+    "as_of": "2026-10-20T17:54:26+00:00",
+    "date_label": "9/21 - 10/16"
+   },
+   "polls_in_average": 2,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/alabama/moore-vs-wess"
+  },
+  {
+   "id": 8922,
+   "title": "2026 Minnesota Senate - Tafoya vs. Flanagan",
+   "race_type": "senate",
+   "category": "General",
+   "state": "mn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Peggy Flanagan",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Michele Tafoya",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Flanagan",
+      "affiliation": "Democrat",
+      "value": 46.5
+     },
+     {
+      "name": "Tafoya",
+      "affiliation": "Republican",
+      "value": 43.3
+     }
+    ],
+    "spread": {
+     "name": "Flanagan",
+     "value": 3.2
+    },
+    "as_of": "2026-10-20T15:00:58+00:00",
+    "date_label": "9/29 - 10/15"
+   },
+   "polls_in_average": 6,
+   "total_polls": 14,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/minnesota/tafoya-vs-flanagan"
+  },
+  {
+   "id": 9120,
+   "title": "2026 Arkansas Senate - Cotton vs. Shoffner vs. Wadlin",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ar",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Tom Cotton",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Hallie Shoffner",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Jeff Wadlin",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 3,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/arkansas/cotton-vs-shoffner-vs-wadlin"
+  },
+  {
+   "id": 9220,
+   "title": "2026 Minnesota Senate - Multi-Candidate",
+   "race_type": "senate",
+   "category": "General",
+   "state": "mn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Peggy Flanagan",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Michelle Tafoya",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Rebecca Whiting",
+     "affiliation": "Libertarian"
+    },
+    {
+     "name": "Marisa Simonetti",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Flanagan",
+      "affiliation": "Democrat",
+      "value": 45.6
+     },
+     {
+      "name": "Tafoya",
+      "affiliation": "Republican",
+      "value": 43.6
+     },
+     {
+      "name": "Whiting",
+      "affiliation": "Libertarian",
+      "value": 2.4
+     },
+     {
+      "name": "Simonetti",
+      "affiliation": "Independent",
+      "value": 1.5
+     }
+    ],
+    "spread": {
+     "name": "Flanagan",
+     "value": 2
+    },
+    "as_of": "2026-10-19T20:22:02+00:00",
+    "date_label": "9/14 - 10/15"
+   },
+   "polls_in_average": 5,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/minnesota/tafoya-vs-flanagan-vs-whiting"
+  },
+  {
+   "id": 9100,
+   "title": "2026 Maine Senate - Collins vs. Jackson",
+   "race_type": "senate",
+   "category": "General",
+   "state": "me",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Troy Jackson",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Susan Collins",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Jackson",
+      "affiliation": "Democrat",
+      "value": 48.8
+     },
+     {
+      "name": "Collins",
+      "affiliation": "Republican",
+      "value": 47.2
+     }
+    ],
+    "spread": {
+     "name": "Jackson",
+     "value": 1.6
+    },
+    "as_of": "2026-10-15T23:39:43+00:00",
+    "date_label": "9/23 - 10/14"
+   },
+   "polls_in_average": 9,
+   "total_polls": 25,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/maine---3-electoral/jackson-vs-collins"
+  },
+  {
+   "id": 9106,
+   "title": "2026 Kansas Senate - Marshall vs. Hamilton",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ks",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Roger Marshall",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Adam Hamilton",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Marshall",
+      "affiliation": "Republican",
+      "value": 46
+     },
+     {
+      "name": "Hamilton",
+      "affiliation": "Democrat",
+      "value": 45.7
+     }
+    ],
+    "spread": {
+     "name": "Marshall",
+     "value": 0.3
+    },
+    "as_of": "2026-10-15T23:39:32+00:00",
+    "date_label": "9/8 - 10/14"
+   },
+   "polls_in_average": 6,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/kansas/marshall-vs-hamilton"
+  },
+  {
+   "id": 9216,
+   "title": "2026 Michigan Senate - Multi-Candidate",
+   "race_type": "senate",
+   "category": "General",
+   "state": "mi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Abdul El-Sayed",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Mike Rogers",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Lydia Christiansen",
+     "affiliation": "Libertarian"
+    },
+    {
+     "name": "Tim Long",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Douglas Marsh",
+     "affiliation": "Green"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "El-Sayed",
+      "affiliation": "Democrat",
+      "value": 46.8
+     },
+     {
+      "name": "Rogers",
+      "affiliation": "Republican",
+      "value": 43.5
+     },
+     {
+      "name": "Christiansen",
+      "affiliation": "Libertarian",
+      "value": 1.5
+     },
+     {
+      "name": "Long",
+      "affiliation": "Independent",
+      "value": 1
+     },
+     {
+      "name": "Marsh",
+      "affiliation": "Green",
+      "value": 0.5
+     }
+    ],
+    "spread": {
+     "name": "El-Sayed",
+     "value": 3.3
+    },
+    "as_of": "2026-10-16T13:38:55+00:00",
+    "date_label": "9/16 - 10/14"
+   },
+   "polls_in_average": 4,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/el-sayed-vs-rogers-vs-christiansen-vs-long"
+  },
+  {
+   "id": 9218,
+   "title": "2026 Ohio Senate - Multi-Candidate",
+   "race_type": "senate",
+   "category": "General",
+   "state": "oh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Sherrod Brown",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Jon Husted",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "William B Redpath",
+     "affiliation": "Libertarian"
+    },
+    {
+     "name": "Greg Levy",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Brown",
+      "affiliation": "Democrat",
+      "value": 46.3
+     },
+     {
+      "name": "Husted",
+      "affiliation": "Republican",
+      "value": 44.2
+     },
+     {
+      "name": "Redpath",
+      "affiliation": "Libertarian",
+      "value": 2.3
+     },
+     {
+      "name": "Levy",
+      "affiliation": "Independent",
+      "value": 2.7
+     }
+    ],
+    "spread": {
+     "name": "Brown",
+     "value": 2.1
+    },
+    "as_of": "2026-10-21T18:07:53+00:00",
+    "date_label": "9/23 - 10/14"
+   },
+   "polls_in_average": 6,
+   "total_polls": 8,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/ohio/brown-vs-husted-vs-redpath"
+  },
+  {
+   "id": 9221,
+   "title": "2026 Kansas Senate - Marshall vs. Hamilton vs. Graham",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ks",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Roger Marshall",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Adam Hamilton",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "David Graham",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Marshall",
+      "affiliation": "Republican",
+      "value": 45.5
+     },
+     {
+      "name": "Hamilton",
+      "affiliation": "Democrat",
+      "value": 44.8
+     },
+     {
+      "name": "Graham",
+      "affiliation": "Libertarian",
+      "value": 3.5
+     }
+    ],
+    "spread": {
+     "name": "Marshall",
+     "value": 0.7
+    },
+    "as_of": "2026-10-16T17:52:52+00:00",
+    "date_label": "9/15 - 10/14"
+   },
+   "polls_in_average": 4,
+   "total_polls": 4,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/kansas/marshall-vs-hamilton-vs-graham"
+  },
+  {
+   "id": 9231,
+   "title": "2026 South Dakota Governor - Rhoden vs. Ahlers",
+   "race_type": "governor",
+   "category": "General",
+   "state": "sd",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Larry Rhoden",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Dan Ahlers",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/south-dakota/rhoden-vs-ahlers"
+  },
+  {
+   "id": 9121,
+   "title": "2026 Arkansas Governor - Sanders vs. Love vs. Shelby",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ar",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Sarah Huckabee Sanders",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Frederick Love",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Colt Shelby",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/arkansas/huckabee-sanders-vs-love-shelby"
+  },
+  {
+   "id": 9228,
+   "title": "2026 Ohio Governor - Ramaswamy vs. Acton vs. Kissick",
+   "race_type": "governor",
+   "category": "General",
+   "state": "oh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Amy Acton",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Vivek Ramaswamy",
+     "affiliation": "Republican"
+    },
+    {
+     "name": " Don Kissick",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Acton",
+      "affiliation": "Democrat",
+      "value": 47.8
+     },
+     {
+      "name": "Ramaswamy",
+      "affiliation": "Republican",
+      "value": 44.4
+     },
+     {
+      "name": "Kissick",
+      "affiliation": "Libertarian",
+      "value": 4.2
+     }
+    ],
+    "spread": {
+     "name": "Acton",
+     "value": 3.4
+    },
+    "as_of": "2026-10-21T18:07:29+00:00",
+    "date_label": "9/23 - 10/13"
+   },
+   "polls_in_average": 5,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/ohio/acton-vs-ramaswamy-vs-kissick"
+  },
+  {
+   "id": 8845,
+   "title": "2026 New Hampshire Senate - Sununu vs. Pappas",
+   "race_type": "senate",
+   "category": "General",
+   "state": "nh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Chris Pappas",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "John Sununu",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Pappas",
+      "affiliation": "Democrat",
+      "value": 49.7
+     },
+     {
+      "name": "Sununu",
+      "affiliation": "Republican",
+      "value": 43.2
+     }
+    ],
+    "spread": {
+     "name": "Pappas",
+     "value": 6.5
+    },
+    "as_of": "2026-10-12T17:38:11+00:00",
+    "date_label": "9/15 - 10/5"
+   },
+   "polls_in_average": 6,
+   "total_polls": 22,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/new-hampshire/pappas-vs-sununu"
+  },
+  {
+   "id": 8915,
+   "title": "2026 Minnesota Governor - Demuth vs. Klobuchar",
+   "race_type": "governor",
+   "category": "General",
+   "state": "mn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Amy Klobuchar",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Lisa Demuth",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Klobuchar",
+      "affiliation": "Democrat",
+      "value": 48.7
+     },
+     {
+      "name": "Demuth",
+      "affiliation": "Republican",
+      "value": 40.3
+     }
+    ],
+    "spread": {
+     "name": "Klobuchar",
+     "value": 8.4
+    },
+    "as_of": "2026-10-15T02:31:55+00:00",
+    "date_label": "10/2 - 10/12"
+   },
+   "polls_in_average": 3,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/minnesota/demuth-vs-klobuchar"
+  },
+  {
+   "id": 8953,
+   "title": "2026 New Hampshire Governor - Ayotte vs. Warmington",
+   "race_type": "governor",
+   "category": "General",
+   "state": "nh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Kelly Ayotte",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Cindy Warmington",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Ayotte",
+      "affiliation": "Republican",
+      "value": 51
+     },
+     {
+      "name": "Warmington",
+      "affiliation": "Democrat",
+      "value": 42
+     }
+    ],
+    "spread": {
+     "name": "Ayotte",
+     "value": 9
+    },
+    "as_of": "2026-10-07T15:22:25+00:00",
+    "date_label": "9/15 - 10/5"
+   },
+   "polls_in_average": 3,
+   "total_polls": 12,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/new-hampshire/ayotte-vs-warmington"
+  },
+  {
+   "id": 9118,
+   "title": "2026 Connecticut Governor - Fazio vs. Lamont",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ct",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ned Lamont",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Ryan Fazio",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Lamont",
+      "affiliation": "Democrat",
+      "value": 53.6
+     },
+     {
+      "name": "Fazio",
+      "affiliation": "Republican",
+      "value": 37.6
+     }
+    ],
+    "spread": {
+     "name": "Lamont",
+     "value": 16
+    },
+    "as_of": "2026-10-19T17:12:41+00:00",
+    "date_label": "9/16 - 10/12"
+   },
+   "polls_in_average": 5,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/connecticut/fazio-vs-lamont"
+  },
+  {
+   "id": 9227,
+   "title": "2026 New Hampshire Governor - Ayotte vs. Warmington vs. Villee",
+   "race_type": "governor",
+   "category": "General",
+   "state": "nh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Kelly Ayotte",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Cinde Warmington",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Stephen Villee",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/new-hampshire/ayotte-vs-warmington-vs-villee"
+  },
+  {
+   "id": 8860,
+   "title": "2026 Pennsylvania Governor - Garrity vs. Shapiro",
+   "race_type": "governor",
+   "category": "General",
+   "state": "pa",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Josh Shapiro",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Stacy Garrity",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Shapiro",
+      "affiliation": "Democrat",
+      "value": 56.8
+     },
+     {
+      "name": "Garrity",
+      "affiliation": "Republican",
+      "value": 32.8
+     }
+    ],
+    "spread": {
+     "name": "Shapiro",
+     "value": 24
+    },
+    "as_of": "2026-10-07T18:58:12+00:00",
+    "date_label": "9/15 - 10/11"
+   },
+   "polls_in_average": 4,
+   "total_polls": 18,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/pennsylvania/shapiro-vs-garrity"
+  },
+  {
+   "id": 8954,
+   "title": "2026 Rhode Island Senate - McKay vs. Reed ",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ri",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jack Reed",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Raymond McKay",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Reed",
+      "affiliation": "Democrat",
+      "value": 55.7
+     },
+     {
+      "name": "McKay",
+      "affiliation": "Republican",
+      "value": 30
+     }
+    ],
+    "spread": {
+     "name": "Reed",
+     "value": 25.7
+    },
+    "as_of": "2026-10-20T17:01:26+00:00",
+    "date_label": "9/17 - 10/11"
+   },
+   "polls_in_average": 3,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/rhode-island/mckay-vs-reed"
+  },
+  {
+   "id": 8996,
+   "title": "2026 Pennsylvania 10th District - Perry vs. Stelson",
+   "race_type": "house",
+   "category": "General",
+   "state": "pa",
+   "district": "PA10",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Janelle Stelson",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Scott Perry",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/pennsylvania/district-10/stelson-vs-perry"
+  },
+  {
+   "id": 9030,
+   "title": "2026 Maine Governor - Charles vs. Pingree",
+   "race_type": "governor",
+   "category": "General",
+   "state": "me",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Hannah Pingree",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Bobby Charles",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Pingree",
+      "affiliation": "Democrat",
+      "value": 50
+     },
+     {
+      "name": "Charles",
+      "affiliation": "Republican",
+      "value": 38.6
+     }
+    ],
+    "spread": {
+     "name": "Pingree",
+     "value": 11.4
+    },
+    "as_of": "2026-10-17T01:42:34+00:00",
+    "date_label": "9/15 - 10/11"
+   },
+   "polls_in_average": 8,
+   "total_polls": 16,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/maine/charles-vs-pingree"
+  },
+  {
+   "id": 9101,
+   "title": "2026 Maine Governor - Charles vs. Pingree vs. Bennett",
+   "race_type": "governor",
+   "category": "General",
+   "state": "me",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Hannah Pingree",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Robert Charles",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Rick Bennett",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Pingree",
+      "affiliation": "Democrat",
+      "value": 48.9
+     },
+     {
+      "name": "Charles",
+      "affiliation": "Republican",
+      "value": 37.6
+     },
+     {
+      "name": "Bennett",
+      "affiliation": "Independent",
+      "value": 6.5
+     }
+    ],
+    "spread": {
+     "name": "Pingree",
+     "value": 11.3
+    },
+    "as_of": "2026-10-14T11:03:56+00:00",
+    "date_label": "9/2 - 10/11"
+   },
+   "polls_in_average": 8,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/charles-vs-pingree-vs-bennett"
+  },
+  {
+   "id": 9119,
+   "title": "2026 Rhode Island Governor - Multi-Candidate",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ri",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Helena Foulkes",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Ken Block",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Aaron Guckian",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Jasjit Gotra",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 4,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/rhode-island/foulkes-vs-block-vs-guckian-vs-gotra"
+  },
+  {
+   "id": 8753,
+   "title": "2026 North Carolina Senate - Whatley vs. Cooper",
+   "race_type": "senate",
+   "category": "General",
+   "state": "nc",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Roy Cooper",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Michael Whatley",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Cooper",
+      "affiliation": "Democrat",
+      "value": 50.8
+     },
+     {
+      "name": "Whatley",
+      "affiliation": "Republican",
+      "value": 40.9
+     }
+    ],
+    "spread": {
+     "name": "Cooper",
+     "value": 9.9
+    },
+    "as_of": "2026-10-20T15:08:16+00:00",
+    "date_label": "9/15 - 10/10"
+   },
+   "polls_in_average": 10,
+   "total_polls": 41,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/north-carolina/cooper-vs-whatley"
+  },
+  {
+   "id": 8989,
+   "title": "2026 Virginia 2nd District - Kiggans vs. Luria",
+   "race_type": "house",
+   "category": "General",
+   "state": "va",
+   "district": "VA2",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Elaine Luria",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Jennifer Kiggans",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/virginia/district-2/luria-vs-kiggans"
+  },
+  {
+   "id": 9217,
+   "title": "2026 North Carolina Senate - Whatley vs. Cooper vs. Bray",
+   "race_type": "senate",
+   "category": "General",
+   "state": "nc",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Roy Cooper",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Michael Whatley",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Shannon W. Bray",
+     "affiliation": "Libertarian"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Cooper",
+      "affiliation": "Democrat",
+      "value": 49.5
+     },
+     {
+      "name": "Whatley",
+      "affiliation": "Republican",
+      "value": 41.2
+     },
+     {
+      "name": "Bray",
+      "affiliation": "Libertarian",
+      "value": 2
+     }
+    ],
+    "spread": {
+     "name": "Cooper",
+     "value": 8.3
+    },
+    "as_of": "2026-10-20T13:34:44+00:00",
+    "date_label": "9/16 - 10/10"
+   },
+   "polls_in_average": 6,
+   "total_polls": 11,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/north-carolina/cooper-vs-whatley-vs-bray"
+  },
+  {
+   "id": 9029,
+   "title": "2026 New Mexico Governor - Hull vs. Haaland",
+   "race_type": "governor",
+   "category": "General",
+   "state": "nm",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Deb Haaland",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Gregg Hull",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Haaland",
+      "affiliation": "Democrat",
+      "value": 48
+     },
+     {
+      "name": "Hull",
+      "affiliation": "Republican",
+      "value": 41.5
+     }
+    ],
+    "spread": {
+     "name": "Haaland",
+     "value": 6.5
+    },
+    "as_of": "2026-10-05T16:04:22+00:00",
+    "date_label": "9/25 - 10/9"
+   },
+   "polls_in_average": 2,
+   "total_polls": 4,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/new-mexico/hull-vs-haaland"
+  },
+  {
+   "id": 9140,
+   "title": "2026 Minnesota 1st District - Finstad vs. Johnson",
+   "race_type": "house",
+   "category": "General",
+   "state": "mn",
+   "district": "MN1",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jake Johnson",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Brad Finstad",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/minnesota/district-1/johnson-vs-finstad"
+  },
+  {
+   "id": 8683,
+   "title": "2026 Arizona Governor - Biggs vs. Hobbs",
+   "race_type": "governor",
+   "category": "General",
+   "state": "az",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Katie Hobbs",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Andy Biggs",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Hobbs",
+      "affiliation": "Democrat",
+      "value": 49.4
+     },
+     {
+      "name": "Biggs",
+      "affiliation": "Republican",
+      "value": 38
+     }
+    ],
+    "spread": {
+     "name": "Hobbs",
+     "value": 11.4
+    },
+    "as_of": "2026-10-13T19:16:11+00:00",
+    "date_label": "7/26 - 10/8"
+   },
+   "polls_in_average": 5,
+   "total_polls": 14,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/arizona/hobbs-vs-biggs"
+  },
+  {
+   "id": 9225,
+   "title": "2026 Arizona Governor - Multi-Candidate",
+   "race_type": "governor",
+   "category": "General",
+   "state": "az",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Katie Hobbs",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Andy Biggs",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Teri Ann Hourihan",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Risa Lombardo",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Hobbs",
+      "affiliation": "Democrat",
+      "value": 48.7
+     },
+     {
+      "name": "Biggs",
+      "affiliation": "Republican",
+      "value": 34.3
+     },
+     {
+      "name": "Hourihan",
+      "affiliation": "Independent",
+      "value": 2
+     },
+     {
+      "name": "Lombardo",
+      "affiliation": "Independent",
+      "value": 1.3
+     }
+    ],
+    "spread": {
+     "name": "Hobbs",
+     "value": 14.4
+    },
+    "as_of": "2026-10-19T19:35:55+00:00",
+    "date_label": "8/10 - 10/8"
+   },
+   "polls_in_average": 3,
+   "total_polls": 4,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/arizona/multi-candidate"
+  },
+  {
+   "id": 9213,
+   "title": "2026 Texas 9th District - Mealer vs. Gutierrez",
+   "race_type": "house",
+   "category": "General",
+   "state": "tx",
+   "district": "TX9",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Alex Mealer",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Leticia Gutierrez",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/texas/district-9/mealer-vs-gutierrez"
+  },
+  {
+   "id": 9017,
+   "title": "2026 Kansas Governor - Masterson vs. Holscher",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ks",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ty Masterson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Cindy Holscher",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Masterson",
+      "affiliation": "Republican",
+      "value": 49.5
+     },
+     {
+      "name": "Holscher",
+      "affiliation": "Democrat",
+      "value": 43.8
+     }
+    ],
+    "spread": {
+     "name": "Masterson",
+     "value": 5.7
+    },
+    "as_of": "2026-10-06T20:19:06+00:00",
+    "date_label": "9/8 - 10/4"
+   },
+   "polls_in_average": 4,
+   "total_polls": 5,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/kansas/masterson-vs-holscher"
+  },
+  {
+   "id": 9219,
+   "title": "2026 New Hampshire Senate - Multi-Candidate",
+   "race_type": "senate",
+   "category": "General",
+   "state": "nh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Chris Pappas",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "John Sununu",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Edmond Laplante",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Aaron Day",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Tim Harris",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Christine Lopez",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Jeanne Logan Morrow",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Pappas",
+      "affiliation": "Democrat",
+      "value": 48
+     },
+     {
+      "name": "Sununu",
+      "affiliation": "Republican",
+      "value": 42.5
+     },
+     {
+      "name": "Laplante",
+      "affiliation": "Independent",
+      "value": 2
+     }
+    ],
+    "spread": {
+     "name": "Pappas",
+     "value": 5.5
+    },
+    "as_of": "2026-09-30T17:38:56+00:00",
+    "date_label": "9/26 - 10/4"
+   },
+   "polls_in_average": 2,
+   "total_polls": 3,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/new-hampshire/pappas-vs-sununu-vs-laplante"
+  },
+  {
+   "id": 9035,
+   "title": "2026 Nebraska Senate - Ricketts vs. Osborn",
+   "race_type": "senate",
+   "category": "General",
+   "state": "ne",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Pete Ricketts",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Dan Osborn",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/nebraska/ricketts-vs-osborn"
+  },
+  {
+   "id": 9136,
+   "title": "2026 Nebraska Governor - Pillen vs. Walz",
+   "race_type": "governor",
+   "category": "General",
+   "state": "ne",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jim Pillen",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Lynne Walz",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/nebraska/pillen-vs-walz"
+  },
+  {
+   "id": 8904,
+   "title": "2026 Illinois Governor - Bailey vs. Pritzker",
+   "race_type": "governor",
+   "category": "General",
+   "state": "il",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "JB Pritzker",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Darren Bailey",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/illinois/bailey-vs-pritzker"
+  },
+  {
+   "id": 9027,
+   "title": "2026 Oregon Governor - Drazan vs. Kotek",
+   "race_type": "governor",
+   "category": "General",
+   "state": "or",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Tina Kotek",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Christine Drazan",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/oregon/kotek-vs-drazan"
+  },
+  {
+   "id": 9122,
+   "title": "New Mexico Senate - Marker vs. Lujan",
+   "race_type": "senate",
+   "category": "General",
+   "state": "nm",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ben Ray Lujan",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Larry Marker",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Lujan",
+      "affiliation": "Democrat",
+      "value": 53.5
+     },
+     {
+      "name": "Marker",
+      "affiliation": "Republican",
+      "value": 37
+     }
+    ],
+    "spread": {
+     "name": "Lujan",
+     "value": 16.5
+    },
+    "as_of": "2026-10-06T11:48:56+00:00",
+    "date_label": "8/21 - 9/30"
+   },
+   "polls_in_average": 2,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/new-mexico/marker-vs-lujan"
+  },
+  {
+   "id": 9132,
+   "title": "2026 New York 17th District - Lawler vs. Conley",
+   "race_type": "house",
+   "category": "General",
+   "state": "ny",
+   "district": "NY17",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Cait Conley",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Mike Lawler",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/new-york/district-17/conley-vs-lawler"
+  },
+  {
+   "id": 9167,
+   "title": "2026 Virginia 1st District - Wittman vs. Taylor",
+   "race_type": "house",
+   "category": "General",
+   "state": "va",
+   "district": "VA1",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Shannon Taylor",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Robert Wittman",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/virginia/district-1/taylor-vs-wittman"
+  },
+  {
+   "id": 9168,
+   "title": "2026 Virginia 5th District - McGuire vs. Perriello",
+   "race_type": "house",
+   "category": "General",
+   "state": "va",
+   "district": "VA5",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "John McGuire",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Tom Perriello",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/virginia/district-5/mcguire-vs-perriello"
+  },
+  {
+   "id": 9169,
+   "title": "2026 Washington 3rd District - Braun vs. Gluesenkamp Perez",
+   "race_type": "house",
+   "category": "General",
+   "state": "wa",
+   "district": "WA3",
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "John Braun",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Marie Gluesenkamp Perez",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/house/general/2026/washington/district-3/braun-vs-gluesenkamp-perez"
+  },
+  {
+   "id": 9222,
+   "title": "2026 Maryland Governor - Cox vs. Moore",
+   "race_type": "governor",
+   "category": "General",
+   "state": "md",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Wes Moore",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Dan Cox",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/maryland/cox-vs-moore"
+  },
+  {
+   "id": 8874,
+   "title": "2026 Nevada Governor - Lombardo vs. Ford",
+   "race_type": "governor",
+   "category": "General",
+   "state": "nv",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Joe Lombardo",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Aaron Ford",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Lombardo",
+      "affiliation": "Republican",
+      "value": 42
+     },
+     {
+      "name": "Ford",
+      "affiliation": "Democrat",
+      "value": 42
+     }
+    ],
+    "spread": {
+     "name": "Tie",
+     "value": null
+    },
+    "as_of": "2026-09-21T15:20:16+00:00",
+    "date_label": "9/5 - 9/26"
+   },
+   "polls_in_average": 2,
+   "total_polls": 11,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/nevada/lombardo-vs-ford"
+  },
+  {
+   "id": 9105,
+   "title": "2026 Wisconsin Governor - Tiffany vs. Crowley",
+   "race_type": "governor",
+   "category": "General",
+   "state": "wi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "David Crowley",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Tom Tiffany",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Crowley",
+      "affiliation": "Democrat",
+      "value": 47.5
+     },
+     {
+      "name": "Tiffany",
+      "affiliation": "Republican",
+      "value": 44
+     }
+    ],
+    "spread": {
+     "name": "Crowley",
+     "value": 3.5
+    },
+    "as_of": "2026-09-30T18:17:53+00:00",
+    "date_label": "7/20 - 9/23"
+   },
+   "polls_in_average": 4,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/wisconsin/crowley-vs-tiffany"
+  },
+  {
+   "id": 9209,
+   "title": "2026 Vermont Governor - Scott vs. Janoo",
+   "race_type": "governor",
+   "category": "General",
+   "state": "vt",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Phil Scott",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Amanda Janoo",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/vermont/scott-vs-janoo"
+  },
+  {
+   "id": 9226,
+   "title": "2026 Michigan Governor - Multi-Candidate",
+   "race_type": "governor",
+   "category": "General",
+   "state": "mi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Jocelyn Benson",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "John James",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Anthony Hudson",
+     "affiliation": "Libertarian"
+    },
+    {
+     "name": "Douglas Campbell",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Donna Brandenburg",
+     "affiliation": "Independent"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Benson",
+      "affiliation": "Democrat",
+      "value": 48
+     },
+     {
+      "name": "James",
+      "affiliation": "Republican",
+      "value": 36
+     },
+     {
+      "name": "Hudson",
+      "affiliation": "Libertarian",
+      "value": 2
+     },
+     {
+      "name": "Campbell",
+      "affiliation": "Independent",
+      "value": 1.5
+     },
+     {
+      "name": "Brandenburg",
+      "affiliation": "Independent",
+      "value": 0
+     }
+    ],
+    "spread": {
+     "name": "Benson",
+     "value": 12
+    },
+    "as_of": "1970-01-01T00:00:00+00:00",
+    "date_label": "9/16 - 9/21"
+   },
+   "polls_in_average": 2,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/michigan/multi-candidate"
+  },
+  {
+   "id": 8897,
+   "title": "2026 Massachusetts Senate - Democratic Primary",
+   "race_type": "senate",
+   "category": "Primary: Democrat",
+   "state": "ma",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ed Markey",
+     "affiliation": ""
+    },
+    {
+     "name": "Seth Moulton",
+     "affiliation": ""
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Markey",
+      "affiliation": "",
+      "value": 39
+     },
+     {
+      "name": "Moulton",
+      "affiliation": "",
+      "value": 33.5
+     }
+    ],
+    "spread": {
+     "name": "Markey",
+     "value": 5.5
+    },
+    "as_of": "2026-09-02T01:56:58+00:00",
+    "date_label": "12/31 - 12/31"
+   },
+   "polls_in_average": 0,
+   "total_polls": 11,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/democratic-primary/2026/massachusetts"
+  },
+  {
+   "id": 8761,
+   "title": "2026 Tennessee Governor - Blackburn vs. Green",
+   "race_type": "governor",
+   "category": "General",
+   "state": "tn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Marsha Blackburn",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Jerri Green",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Blackburn",
+      "affiliation": "Republican",
+      "value": 52
+     },
+     {
+      "name": "Green",
+      "affiliation": "Democrat",
+      "value": 31
+     }
+    ],
+    "spread": {
+     "name": "Blackburn",
+     "value": 21
+    },
+    "as_of": "2026-09-03T15:46:17+00:00",
+    "date_label": "8/5 - 8/26"
+   },
+   "polls_in_average": 2,
+   "total_polls": 2,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/tennessee/blackburn-vs-green"
+  },
+  {
+   "id": 9123,
+   "title": "2026 Tennessee Senate - Hagerty vs. Bradshaw",
+   "race_type": "senate",
+   "category": "General",
+   "state": "tn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Bill Hagerty",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Marquita Bradshaw",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/tennessee/hagerty-vs-bradshaw"
+  },
+  {
+   "id": 8856,
+   "title": "2026 New Hampshire Senate - Democratic Primary",
+   "race_type": "senate",
+   "category": "Primary: Democrat",
+   "state": "nh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Chris Pappas",
+     "affiliation": ""
+    },
+    {
+     "name": "Karishma Manzur",
+     "affiliation": ""
+    },
+    {
+     "name": "David Jarvis",
+     "affiliation": ""
+    },
+    {
+     "name": "John Vail",
+     "affiliation": ""
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Pappas",
+      "affiliation": "",
+      "value": 57.5
+     },
+     {
+      "name": "Manzur",
+      "affiliation": "",
+      "value": 24.5
+     }
+    ],
+    "spread": {
+     "name": "Pappas",
+     "value": 33
+    },
+    "as_of": "2026-09-09T01:42:28+00:00",
+    "date_label": "12/31 - 12/31"
+   },
+   "polls_in_average": 0,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/democratic-primary/2026/new-hampshire"
+  },
+  {
+   "id": 8846,
+   "title": "2026 New Hampshire Senate - Republican Primary",
+   "race_type": "senate",
+   "category": "Primary: GOP",
+   "state": "nh",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "John Sununu",
+     "affiliation": ""
+    },
+    {
+     "name": "Scott Brown",
+     "affiliation": ""
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Sununu",
+      "affiliation": "",
+      "value": 54
+     },
+     {
+      "name": "Brown",
+      "affiliation": "",
+      "value": 21
+     }
+    ],
+    "spread": {
+     "name": "Sununu",
+     "value": 33
+    },
+    "as_of": "2026-09-09T01:43:37+00:00",
+    "date_label": "3/21 - 8/24"
+   },
+   "polls_in_average": 3,
+   "total_polls": 12,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/republican-primary/2026/new-hampshire"
+  },
+  {
+   "id": 8853,
+   "title": "2026 Massachusetts Governor - Republican Primary",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "ma",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Michael Minogue",
+     "affiliation": ""
+    },
+    {
+     "name": "Brian Shortsleeve",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/massachusetts"
+  },
+  {
+   "id": 8854,
+   "title": "2026 Rhode Island Governor - Democratic Primary",
+   "race_type": "governor",
+   "category": "Primary: Democrat",
+   "state": "ri",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Helena Foulkes",
+     "affiliation": ""
+    },
+    {
+     "name": "Dan McKee",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 8,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/democratic-primary/2026/rhode-island"
+  },
+  {
+   "id": 9108,
+   "title": "2026 South Carolina Senate - GOP Runoff",
+   "race_type": "senate",
+   "category": "Primary: GOP",
+   "state": "sc",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Darline Graham Nordone",
+     "affiliation": ""
+    },
+    {
+     "name": "Ralph Norman",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 3,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/republican-primary/2026/south-carolina-runoff"
+  },
+  {
+   "id": 9015,
+   "title": "2026 Alabama Senate - GOP Runoff (Moore vs. Hudson)",
+   "race_type": "senate",
+   "category": "Primary: GOP",
+   "state": "al",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Barry Moore",
+     "affiliation": ""
+    },
+    {
+     "name": "Jared Hudson",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/republican-primary/2026/alabama-runoff"
+  },
+  {
+   "id": 9098,
+   "title": "South Carolina Senate Republican Special Primary",
+   "race_type": "senate",
+   "category": "Special Primary: GOP",
+   "state": "sc",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Darline Graham",
+     "affiliation": ""
+    },
+    {
+     "name": "Ralph Norman",
+     "affiliation": ""
+    },
+    {
+     "name": "Russell Fry",
+     "affiliation": ""
+    },
+    {
+     "name": "Mark Sanford",
+     "affiliation": ""
+    },
+    {
+     "name": "Mark Lynch",
+     "affiliation": ""
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Graham Nordone",
+      "affiliation": "",
+      "value": 24.2
+     },
+     {
+      "name": "Norman",
+      "affiliation": "",
+      "value": 18.8
+     },
+     {
+      "name": "Fry",
+      "affiliation": "",
+      "value": 14.2
+     },
+     {
+      "name": "Sanford",
+      "affiliation": "",
+      "value": 11.2
+     },
+     {
+      "name": "Lynch",
+      "affiliation": "",
+      "value": 7.5
+     }
+    ],
+    "spread": {
+     "name": "Graham Nordone",
+     "value": 5.4
+    },
+    "as_of": "2026-08-24T14:03:42+00:00",
+    "date_label": "12/31 - 12/31"
+   },
+   "polls_in_average": 0,
+   "total_polls": 8,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/republican-primary-special/2026/south-carolina"
+  },
+  {
+   "id": 9026,
+   "title": "2026 Oklahoma Governor - GOP Runoff",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "ok",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Mike Mazzei",
+     "affiliation": ""
+    },
+    {
+     "name": "Gentner Drummond",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 4,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/oklahoma-runoff"
+  },
+  {
+   "id": 8903,
+   "title": "2026 Wisconsin Governor - Democratic Primary",
+   "race_type": "governor",
+   "category": "Primary: Democrat",
+   "state": "wi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Francesca Hong",
+     "affiliation": ""
+    },
+    {
+     "name": "David Crowley",
+     "affiliation": ""
+    },
+    {
+     "name": "Mandela Barnes",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 10,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/democratic-primary/2026/wisconsin"
+  },
+  {
+   "id": 8680,
+   "title": "2026 Minnesota Senate - Democratic Primary",
+   "race_type": "senate",
+   "category": "Primary: Democrat",
+   "state": "mn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Angie Craig",
+     "affiliation": ""
+    },
+    {
+     "name": "Peggy Flanagan",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 12,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/democratic-primary/2026/minnesota"
+  },
+  {
+   "id": 8981,
+   "title": "2026 Minnesota Senate - Republican Primary",
+   "race_type": "senate",
+   "category": "Primary: GOP",
+   "state": "mn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Michele Tafoya",
+     "affiliation": ""
+    },
+    {
+     "name": "Royce White",
+     "affiliation": ""
+    },
+    {
+     "name": "Adam Schwarze",
+     "affiliation": ""
+    },
+    {
+     "name": "Tom Weiler",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/republican-primary/2026/minnesota"
+  },
+  {
+   "id": 9012,
+   "title": "2026 Minnesota Governor - Republican Primary",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "mn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Mike Lindell",
+     "affiliation": ""
+    },
+    {
+     "name": "Lisa Demuth",
+     "affiliation": ""
+    },
+    {
+     "name": "Kendall Qualls",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/minnesota"
+  },
+  {
+   "id": 8760,
+   "title": "2026 Tennessee Governor - Republican Primary",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "tn",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Marsha Blackburn",
+     "affiliation": ""
+    },
+    {
+     "name": "John Rose",
+     "affiliation": ""
+    },
+    {
+     "name": "Monty Fritts",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 12,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/tennessee"
+  },
+  {
+   "id": 8803,
+   "title": "2026 Michigan Senate - Democratic Primary",
+   "race_type": "senate",
+   "category": "Primary: Democrat",
+   "state": "mi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Abdul El-Sayed",
+     "affiliation": ""
+    },
+    {
+     "name": "Haley Stevens",
+     "affiliation": ""
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "El-Sayed",
+      "affiliation": "",
+      "value": 50.5
+     },
+     {
+      "name": "Stevens",
+      "affiliation": "",
+      "value": 40.3
+     }
+    ],
+    "spread": {
+     "name": "El-Sayed",
+     "value": 10.2
+    },
+    "as_of": "2026-08-05T16:35:17+00:00",
+    "date_label": "7/8 - 7/29"
+   },
+   "polls_in_average": 6,
+   "total_polls": 23,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/democratic-primary/2026/michigan"
+  },
+  {
+   "id": 8700,
+   "title": "2026 Michigan Governor - Republican Primary",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "mi",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "John James",
+     "affiliation": ""
+    },
+    {
+     "name": "Perry Johnson",
+     "affiliation": ""
+    },
+    {
+     "name": "Mike Cox",
+     "affiliation": ""
+    },
+    {
+     "name": "Aric Nesbitt",
+     "affiliation": ""
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "James",
+      "affiliation": "",
+      "value": 34.3
+     },
+     {
+      "name": "Johnson",
+      "affiliation": "",
+      "value": 21
+     },
+     {
+      "name": "Cox",
+      "affiliation": "",
+      "value": 19
+     },
+     {
+      "name": "Nesbitt",
+      "affiliation": "",
+      "value": 3.3
+     }
+    ],
+    "spread": {
+     "name": "James",
+     "value": 13.3
+    },
+    "as_of": "2026-08-05T11:20:30+00:00",
+    "date_label": "12/31 - 12/31"
+   },
+   "polls_in_average": 0,
+   "total_polls": 16,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/michigan"
+  },
+  {
+   "id": 8747,
+   "title": "2026 Florida Governor - Republican Primary",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "fl",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Byron Donalds",
+     "affiliation": ""
+    },
+    {
+     "name": "Jay Collins",
+     "affiliation": ""
+    },
+    {
+     "name": "James Fishback",
+     "affiliation": ""
+    },
+    {
+     "name": "Paul Renner",
+     "affiliation": ""
+    }
+   ],
+   "current_average": {
+    "results": [
+     {
+      "name": "Donalds",
+      "affiliation": "",
+      "value": 45.4
+     },
+     {
+      "name": "Collins",
+      "affiliation": "",
+      "value": 13.6
+     },
+     {
+      "name": "Fishback",
+      "affiliation": "",
+      "value": 9.6
+     },
+     {
+      "name": "Renner",
+      "affiliation": "",
+      "value": 4
+     }
+    ],
+    "spread": {
+     "name": "Donalds",
+     "value": 31.8
+    },
+    "as_of": "2026-08-19T01:14:05+00:00",
+    "date_label": "7/8 - 7/29"
+   },
+   "polls_in_average": 5,
+   "total_polls": 21,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/florida"
+  },
+  {
+   "id": 8898,
+   "title": "2026 Connecticut Governor - Democratic Primary",
+   "race_type": "governor",
+   "category": "Primary: Democrat",
+   "state": "ct",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Ned Lamont",
+     "affiliation": ""
+    },
+    {
+     "name": "Josh Elliott",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 7,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/democratic-primary/2026/connecticut"
+  },
+  {
+   "id": 8949,
+   "title": "2026 Florida Governor - Democratic Primary",
+   "race_type": "governor",
+   "category": "Primary: Democrat",
+   "state": "fl",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "David Jolly",
+     "affiliation": ""
+    },
+    {
+     "name": "Dayna Marie Foster",
+     "affiliation": ""
+    },
+    {
+     "name": "Thomas Fernandez",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/democratic-primary/2026/florida"
+  },
+  {
+   "id": 9102,
+   "title": "2026 Wyoming Governor - Republican Primary",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "wy",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Eric Barlow",
+     "affiliation": ""
+    },
+    {
+     "name": "Megan Degenfelder",
+     "affiliation": ""
+    },
+    {
+     "name": "Brent Bien",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/wyoming"
+  },
+  {
+   "id": 9037,
+   "title": "2026 Alaska Gubernatorial Nonpartisan Primary",
+   "race_type": "governor",
+   "category": "Primary: Jungle",
+   "state": "ak",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Tom Begich",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Jonathan Kreiss-Tomkins",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Bernadette Wilson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Bill Walker",
+     "affiliation": "Independent"
+    },
+    {
+     "name": "Dave Bronson",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Click Bishop",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Adam Crum",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 8,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/jungle-primary/2026/alaska"
+  },
+  {
+   "id": 9097,
+   "title": "2026 South Dakota Governor - GOP Runoff",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "sd",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Larry Rhoden",
+     "affiliation": ""
+    },
+    {
+     "name": "Toby Doeden",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/republican-primary/2026/south-dakota-runoff"
+  },
+  {
+   "id": 9099,
+   "title": "2026 Florida Senate Special Election - Democratic Primary",
+   "race_type": "senate",
+   "category": "Primary: Democrat",
+   "state": "fl",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Alex Vindman",
+     "affiliation": ""
+    },
+    {
+     "name": "Angie Nixon",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/democratic-primary/2026/florida"
+  },
+  {
+   "id": 8681,
+   "title": "2026 Arizona Governor - Republican Primary",
+   "race_type": "governor",
+   "category": "Primary: GOP",
+   "state": "az",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Andy Biggs",
+     "affiliation": ""
+    },
+    {
+     "name": "David Schweikert",
+     "affiliation": ""
+    },
+    {
+     "name": "Scott Neely",
+     "affiliation": ""
+    },
+    {
+     "name": "Ken Miceli",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 12,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/general/2026/arizona/republican-primary"
+  },
+  {
+   "id": 9039,
+   "title": "2026 New Jersey Senate - Murphy vs. Booker",
+   "race_type": "senate",
+   "category": "General",
+   "state": "nj",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Cory Booker",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Justin Murphy",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/new-jersey/murphy-vs-booker"
+  },
+  {
+   "id": 9040,
+   "title": "2026 Colorado Senate - Baisley vs. Hickenlooper",
+   "race_type": "senate",
+   "category": "General",
+   "state": "co",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "John Hickenlooper",
+     "affiliation": "Democrat"
+    },
+    {
+     "name": "Mark Baisley",
+     "affiliation": "Republican"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/colorado/baisley-vs-hickenlooper"
+  },
+  {
+   "id": 9041,
+   "title": "2026 Louisiana Senate - Letlow vs. Davis",
+   "race_type": "senate",
+   "category": "General",
+   "state": "la",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Julia Letlow",
+     "affiliation": "Republican"
+    },
+    {
+     "name": "Jamie Davis",
+     "affiliation": "Democrat"
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 1,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/general/2026/louisiana/letlow-vs-davis"
+  },
+  {
+   "id": 8973,
+   "title": "2026 Colorado Governor - Democratic Primary",
+   "race_type": "governor",
+   "category": "Primary: Democrat",
+   "state": "co",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Phil Weiser",
+     "affiliation": ""
+    },
+    {
+     "name": "Michael Bennet",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/governor/democratic-primary/2026/colorado"
+  },
+  {
+   "id": 8984,
+   "title": "2026 Louisiana Senate - GOP Runoff (Letlow vs. Fleming)",
+   "race_type": "senate",
+   "category": "Primary: GOP",
+   "state": "la",
+   "district": null,
+   "cycle_year": 2026,
+   "candidates": [
+    {
+     "name": "Julia Letlow",
+     "affiliation": ""
+    },
+    {
+     "name": "John Fleming",
+     "affiliation": ""
+    }
+   ],
+   "current_average": null,
+   "polls_in_average": 0,
+   "total_polls": 6,
+   "rcp_url": "https://www.realclearpolling.com/polls/senate/republican-primary/2026/louisiana-runoff"
+  }
+ ]
+}

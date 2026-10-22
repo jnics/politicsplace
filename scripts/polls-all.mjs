@@ -6,6 +6,8 @@
  *   1. import-538-polls.mjs       source "FiveThirtyEight"  (headless, frozen 1998-2022)
  *   2. import-wikipedia-polls.mjs source "Wikipedia"        (headless, 2026 House/Gov/Senate)
  *   3. import-generic-ballot.mjs  genericBallot.generated.json (headless, 2026 national generic ballot)
+ *   4. import-rcp-polls.mjs       source "RealClearPolling" (offline: normalizes scripts/data/rcp-*.json,
+ *                                 which Claude refreshes via the RealClearPolitics connector -- see that script)
  *
  * pull-polls.mjs (source "RealClearPolling") is DISABLED here — as of 2026-09,
  * RealClearPolling's Cloudflare bot management fingerprints the CDP connection
@@ -34,6 +36,7 @@ const steps = [
   ["538", "import-538-polls.mjs", []],
   ["Wikipedia", "import-wikipedia-polls.mjs", wikiArgs],
   ["Generic ballot", "import-generic-ballot.mjs", []],
+  ["RealClearPolling (connector cache)", "import-rcp-polls.mjs", []],
   // ["RealClearPolling", "pull-polls.mjs", []], // disabled — see header comment
 ];
 

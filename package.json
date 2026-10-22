@@ -17,6 +17,7 @@
     "polls:538": "node scripts/import-538-polls.mjs",
     "polls:wikipedia": "node scripts/import-wikipedia-polls.mjs",
     "polls:generic": "node scripts/import-generic-ballot.mjs",
+    "polls:rcp": "node scripts/import-rcp-polls.mjs",
     "ratings:pull": "node scripts/import-race-ratings.mjs",
     "polls:all": "node scripts/polls-all.mjs",
     "fundraising:pull": "node scripts/pull-fundraising.mjs",
