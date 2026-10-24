@@ -83,11 +83,11 @@ export const GENERIC_BALLOT: GenericBallotYear[] = [
   },
   {
     year: 2026,
-    d: 50.8,
-    r: 42.5,
-    spread: "D+8.3",
+    d: 51.1,
+    r: 42.4,
+    spread: "D+8.7",
     kind: "polling",
-    asOf: "2026-10-18",
+    asOf: "2026-10-22",
     note: "Average of 5 national polling aggregators.",
   },
 ];
