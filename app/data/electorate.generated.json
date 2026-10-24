@@ -1,0 +1,618 @@
+{
+ "generatedAt": "2026-10-24T15:58:28.874Z",
+ "source": "VEP: UF Election Lab 2024; CVAP: Census Bureau 2019-2023 ACS special tabulation; registered: EAC EAVS 2024 (A1a); party: Independent Voter Project (L2-modeled where states don't register by party)",
+ "byState": {
+  "AL": {
+   "vep": 3867406,
+   "cvap": 3824450,
+   "registered": 3868040,
+   "party": {
+    "total": 3575168,
+    "dem": 1312444,
+    "rep": 1958477,
+    "other": 304247,
+    "modeled": true
+   }
+  },
+  "AK": {
+   "vep": 536581,
+   "cvap": 535540,
+   "registered": 611078,
+   "party": {
+    "total": 577464,
+    "dem": 67563,
+    "rep": 133452,
+    "other": 366574,
+    "modeled": false
+   }
+  },
+  "AZ": {
+   "vep": 5366526,
+   "cvap": 5220620,
+   "registered": 5075337,
+   "party": {
+    "total": 4366981,
+    "dem": 1226248,
+    "rep": 1532374,
+    "other": 1467306,
+    "modeled": false
+   }
+  },
+  "AR": {
+   "vep": 2201764,
+   "cvap": 2234095,
+   "registered": 1835723,
+   "party": {
+    "total": 1675798,
+    "dem": 353761,
+    "rep": 643171,
+    "other": 677860,
+    "modeled": true
+   }
+  },
+  "CA": {
+   "vep": 25922868,
+   "cvap": 26040825,
+   "registered": 25720597,
+   "party": {
+    "total": 22683898,
+    "dem": 10103408,
+    "rep": 5702732,
+    "other": 6158678,
+    "modeled": false
+   }
+  },
+  "CO": {
+   "vep": 4415631,
+   "cvap": 4303425,
+   "registered": 4583280,
+   "party": {
+    "total": 3955946,
+    "dem": 975536,
+    "rep": 876242,
+    "other": 2009225,
+    "modeled": false
+   }
+  },
+  "CT": {
+   "vep": 2670153,
+   "cvap": 2641585,
+   "registered": 2520650,
+   "party": {
+    "total": 2342722,
+    "dem": 821593,
+    "rep": 494080,
+    "other": 1022364,
+    "modeled": false
+   }
+  },
+  "DE": {
+   "vep": 776224,
+   "cvap": 751520,
+   "registered": 788441,
+   "party": {
+    "total": 767916,
+    "dem": 316305,
+    "rep": 191518,
+    "other": 252107,
+    "modeled": false
+   }
+  },
+  "DC": {
+   "vep": 506415,
+   "cvap": 504085,
+   "registered": 612904,
+   "party": {
+    "total": 498428,
+    "dem": 375516,
+    "rep": 25569,
+    "other": 89368,
+    "modeled": false
+   }
+  },
+  "FL": {
+   "vep": 16327632,
+   "cvap": 15873205,
+   "registered": 15740083,
+   "party": {
+    "total": 15104130,
+    "dem": 4676239,
+    "rep": 5863423,
+    "other": 4378687,
+    "modeled": false
+   }
+  },
+  "GA": {
+   "vep": 7793977,
+   "cvap": 7737195,
+   "registered": 8234335,
+   "party": {
+    "total": 7528570,
+    "dem": 3299772,
+    "rep": 2077885,
+    "other": 2150912,
+    "modeled": true
+   }
+  },
+  "HI": {
+   "vep": 1038968,
+   "cvap": 1050550,
+   "registered": 861333,
+   "party": {
+    "total": 783635,
+    "dem": 296606,
+    "rep": 105947,
+    "other": 381160,
+    "modeled": true
+   }
+  },
+  "ID": {
+   "vep": 1429619,
+   "cvap": 1376255,
+   "registered": 1178750,
+   "party": {
+    "total": 975769,
+    "dem": 112701,
+    "rep": 617857,
+    "other": 231355,
+    "modeled": false
+   }
+  },
+  "IL": {
+   "vep": 8982526,
+   "cvap": 9079985,
+   "registered": 8970541,
+   "party": {
+    "total": 8414160,
+    "dem": 3386699,
+    "rep": 1708074,
+    "other": 3314338,
+    "modeled": true
+   }
+  },
+  "IN": {
+   "vep": 5041013,
+   "cvap": 5004990,
+   "registered": 4840856,
+   "party": {
+    "total": 4388993,
+    "dem": 1131482,
+    "rep": 1338204,
+    "other": 1902190,
+    "modeled": false
+   }
+  },
+  "IA": {
+   "vep": 2359332,
+   "cvap": 2370440,
+   "registered": 2256774,
+   "party": {
+    "total": 2044995,
+    "dem": 585891,
+    "rep": 759716,
+    "other": 682619,
+    "modeled": false
+   }
+  },
+  "KS": {
+   "vep": 2122704,
+   "cvap": 2122800,
+   "registered": 2031119,
+   "party": {
+    "total": 1866832,
+    "dem": 459801,
+    "rep": 838954,
+    "other": 545115,
+    "modeled": false
+   }
+  },
+  "KY": {
+   "vep": 3327188,
+   "cvap": 3387770,
+   "registered": 3548136,
+   "party": {
+    "total": 3092412,
+    "dem": 1266961,
+    "rep": 1489306,
+    "other": 154930,
+    "modeled": false
+   }
+  },
+  "LA": {
+   "vep": 3305398,
+   "cvap": 3420775,
+   "registered": 3046376,
+   "party": {
+    "total": 2873249,
+    "dem": 1023739,
+    "rep": 1035806,
+    "other": 797614,
+    "modeled": false
+   }
+  },
+  "ME": {
+   "vep": 1130059,
+   "cvap": 1104260,
+   "registered": 1223468,
+   "party": {
+    "total": 970020,
+    "dem": 326606,
+    "rep": 288581,
+    "other": 313122,
+    "modeled": false
+   }
+  },
+  "MD": {
+   "vep": 4411216,
+   "cvap": 4390310,
+   "registered": 4555217,
+   "party": {
+    "total": 4285029,
+    "dem": 2206361,
+    "rep": 1008267,
+    "other": 997555,
+    "modeled": false
+   }
+  },
+  "MA": {
+   "vep": 5132767,
+   "cvap": 5120355,
+   "registered": 5142343,
+   "party": {
+    "total": 4930274,
+    "dem": 1194112,
+    "rep": 389492,
+    "other": 3304270,
+    "modeled": false
+   }
+  },
+  "MI": {
+   "vep": 7624237,
+   "cvap": 7620200,
+   "registered": 8440236,
+   "party": {
+    "total": 7959216,
+    "dem": 4238283,
+    "rep": 2390948,
+    "other": 1330781,
+    "modeled": true
+   }
+  },
+  "MN": {
+   "vep": 4277436,
+   "cvap": 4217850,
+   "registered": 3853668,
+   "party": {
+    "total": 3793362,
+    "dem": 1301882,
+    "rep": 1430097,
+    "other": 1061003,
+    "modeled": true
+   }
+  },
+  "MS": {
+   "vep": 2164463,
+   "cvap": 2222155,
+   "registered": 2131726,
+   "party": {
+    "total": 1960828,
+    "dem": 469422,
+    "rep": 564130,
+    "other": 926883,
+    "modeled": false
+   }
+  },
+  "MO": {
+   "vep": 4642204,
+   "cvap": 4663105,
+   "registered": 4388787,
+   "party": {
+    "total": 4133753,
+    "dem": 1380260,
+    "rep": 2039594,
+    "other": 708939,
+    "modeled": true
+   }
+  },
+  "MT": {
+   "vep": 896053,
+   "cvap": 859625,
+   "registered": 800573,
+   "party": {
+    "total": 738711,
+    "dem": 194576,
+    "rep": 330721,
+    "other": 213414,
+    "modeled": true
+   }
+  },
+  "NE": {
+   "vep": 1406843,
+   "cvap": 1406040,
+   "registered": 1263487,
+   "party": {
+    "total": 1212176,
+    "dem": 314075,
+    "rep": 602936,
+    "other": 268497,
+    "modeled": false
+   }
+  },
+  "NV": {
+   "vep": 2249102,
+   "cvap": 2185250,
+   "registered": 2256275,
+   "party": {
+    "total": 2310637,
+    "dem": 626183,
+    "rep": 607235,
+    "other": 1023612,
+    "modeled": false
+   }
+  },
+  "NH": {
+   "vep": 1127497,
+   "cvap": 1099490,
+   "registered": 1008952,
+   "party": {
+    "total": 1086047,
+    "dem": 304202,
+    "rep": 344603,
+    "other": 437243,
+    "modeled": false
+   }
+  },
+  "NJ": {
+   "vep": 6401643,
+   "cvap": 6395960,
+   "registered": 6630364,
+   "party": {
+    "total": 6235470,
+    "dem": 2396291,
+    "rep": 1570715,
+    "other": 2200497,
+    "modeled": false
+   }
+  },
+  "NM": {
+   "vep": 1554606,
+   "cvap": 1547320,
+   "registered": 1415984,
+   "party": {
+    "total": 1350256,
+    "dem": 544018,
+    "rep": 412908,
+    "other": 370780,
+    "modeled": false
+   }
+  },
+  "NY": {
+   "vep": 13853326,
+   "cvap": 14096920,
+   "registered": 13579416,
+   "party": {
+    "total": 12312515,
+    "dem": 5854601,
+    "rep": 2782628,
+    "other": 3127379,
+    "modeled": false
+   }
+  },
+  "NC": {
+   "vep": 8102246,
+   "cvap": 7783975,
+   "registered": 7854464,
+   "party": {
+    "total": 7309544,
+    "dem": 2162894,
+    "rep": 2186285,
+    "other": 2915046,
+    "modeled": false
+   }
+  },
+  "ND": {
+   "vep": 582216,
+   "cvap": 576715,
+   "registered": null,
+   "party": {
+    "total": 465014,
+    "dem": 133366,
+    "rep": 199631,
+    "other": 132064,
+    "modeled": true
+   }
+  },
+  "OH": {
+   "vep": 8947502,
+   "cvap": 8925465,
+   "registered": 8074098,
+   "party": {
+    "total": 7600999,
+    "dem": 2478686,
+    "rep": 2354789,
+    "other": 2749281,
+    "modeled": true
+   }
+  },
+  "OK": {
+   "vep": 2945902,
+   "cvap": 2893680,
+   "registered": 2442211,
+   "party": {
+    "total": 2263724,
+    "dem": 568647,
+    "rep": 1213356,
+    "other": 459989,
+    "modeled": false
+   }
+  },
+  "OR": {
+   "vep": 3211515,
+   "cvap": 3188945,
+   "registered": 3060374,
+   "party": {
+    "total": 3376787,
+    "dem": 1045116,
+    "rep": 773960,
+    "other": 1481396,
+    "modeled": false
+   }
+  },
+  "PA": {
+   "vep": 9903829,
+   "cvap": 9931725,
+   "registered": 9175133,
+   "party": {
+    "total": 8591054,
+    "dem": 3664085,
+    "rep": 3505150,
+    "other": 1286081,
+    "modeled": false
+   }
+  },
+  "RI": {
+   "vep": 826559,
+   "cvap": 821455,
+   "registered": 792075,
+   "party": {
+    "total": 754029,
+    "dem": 257652,
+    "rep": 106771,
+    "other": 389607,
+    "modeled": false
+   }
+  },
+  "SC": {
+   "vep": 4121955,
+   "cvap": 3939070,
+   "registered": 3851187,
+   "party": {
+    "total": 3524777,
+    "dem": 1434232,
+    "rep": 1729608,
+    "other": 360937,
+    "modeled": true
+   }
+  },
+  "SD": {
+   "vep": 676581,
+   "cvap": 662330,
+   "registered": 690306,
+   "party": {
+    "total": 607181,
+    "dem": 131455,
+    "rep": 319802,
+    "other": 152402,
+    "modeled": false
+   }
+  },
+  "TN": {
+   "vep": 5317723,
+   "cvap": 5213565,
+   "registered": 4825601,
+   "party": {
+    "total": 4346284,
+    "dem": 787981,
+    "rep": 1449920,
+    "other": 2108382,
+    "modeled": true
+   }
+  },
+  "TX": {
+   "vep": 20059077,
+   "cvap": 19470090,
+   "registered": 18623931,
+   "party": {
+    "total": 17729255,
+    "dem": 8605780,
+    "rep": 6485361,
+    "other": 2638113,
+    "modeled": true
+   }
+  },
+  "UT": {
+   "vep": 2357958,
+   "cvap": 2239560,
+   "registered": 2039862,
+   "party": {
+    "total": 1955877,
+    "dem": 274801,
+    "rep": 977939,
+    "other": 668714,
+    "modeled": false
+   }
+  },
+  "VT": {
+   "vep": 527067,
+   "cvap": 518195,
+   "registered": 500986,
+   "party": {
+    "total": 468441,
+    "dem": 248274,
+    "rep": 96077,
+    "other": 124090,
+    "modeled": true
+   }
+  },
+  "VA": {
+   "vep": 6350428,
+   "cvap": 6328385,
+   "registered": 6380686,
+   "party": {
+    "total": 6020520,
+    "dem": 3084312,
+    "rep": 1807360,
+    "other": 1128245,
+    "modeled": true
+   }
+  },
+  "WA": {
+   "vep": 5640909,
+   "cvap": 5516705,
+   "registered": 5597156,
+   "party": {
+    "total": 5315018,
+    "dem": 2778160,
+    "rep": 1435586,
+    "other": 1101272,
+    "modeled": true
+   }
+  },
+  "WV": {
+   "vep": 1387010,
+   "cvap": 1412250,
+   "registered": 1210415,
+   "party": {
+    "total": 1124676,
+    "dem": 305237,
+    "rep": 492496,
+    "other": 311985,
+    "modeled": false
+   }
+  },
+  "WI": {
+   "vep": 4483698,
+   "cvap": 4473805,
+   "registered": 3933068,
+   "party": {
+    "total": 4976455,
+    "dem": 1547180,
+    "rep": 1881598,
+    "other": 1547678,
+    "modeled": true
+   }
+  },
+  "WY": {
+   "vep": 442780,
+   "cvap": 436400,
+   "registered": 296960,
+   "party": {
+    "total": 336568,
+    "dem": 41230,
+    "rep": 253032,
+    "other": 36383,
+    "modeled": false
+   }
+  }
+ }
+}

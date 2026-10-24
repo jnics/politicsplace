@@ -25,6 +25,7 @@ import {
 } from "~/data/districtResults";
 import { HISTORICAL_COLORS, SHADE_COLORS, SHADE_LABELS, type Shade } from "~/lib/shades";
 import { marginToShade, formatMargin, formatVotes } from "~/lib/margin";
+import { MapTooltip } from "~/components/MapTooltip";
 
 type Layer = "county" | "district" | "precinct";
 
@@ -274,7 +275,8 @@ export function StateZoom({
 
   const updatePos = useCallback((e: React.MouseEvent) => {
     const rect = containerRef.current?.getBoundingClientRect();
-    if (rect) setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+    // Window coordinates -- MapTooltip is fixed to the viewport.
+    if (rect) setPos({ x: e.clientX, y: e.clientY });
   }, []);
 
   const districts = geo?.districts ?? [];
@@ -1728,10 +1730,7 @@ function PrecinctTip({
   );
   const pvLabel = RACE_LABEL[raceKey] ?? raceKey.replace("-", " ");
   return (
-    <div
-      className="pointer-events-none absolute z-10 w-52 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
-      style={{ left: x, top: y - 10 }}
-    >
+    <MapTooltip x={x} y={y} className="w-52">
       <div className="font-semibold">{precinct.name}</div>
       {pick && (
         <div className="font-medium text-indigo-300 dark:text-indigo-700">
@@ -1787,7 +1786,7 @@ function PrecinctTip({
           )}
         </div>
       )}
-    </div>
+    </MapTooltip>
   );
 }
 
@@ -1885,10 +1884,7 @@ function DistrictTip({
     ? house
     : hist?.[raceKey];
   return (
-    <div
-      className="pointer-events-none absolute z-10 w-56 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
-      style={{ left: x, top: y - 10 }}
-    >
+    <MapTooltip x={x} y={y} className="w-56">
       <div className="flex items-center gap-1.5 font-semibold">
         <span>
           {usps} {label}
@@ -2010,7 +2006,7 @@ function DistrictTip({
           </span>
         </div>
       )}
-    </div>
+    </MapTooltip>
   );
 }
 
@@ -2072,10 +2068,7 @@ function CountyTip({
   const county = countyResult(raceKey, fips);
   const res = voteToResult(districtVote) ?? county ?? voteToResult(houseVote);
   return (
-    <div
-      className="pointer-events-none absolute z-10 w-52 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
-      style={{ left: x, top: y - 10 }}
-    >
+    <MapTooltip x={x} y={y} className="w-52">
       <div className="font-semibold">{name} County</div>
       {pick && (
         <div className="font-medium text-indigo-300 dark:text-indigo-700">
@@ -2145,6 +2138,6 @@ function CountyTip({
           )}
         </>
       )}
-    </div>
+    </MapTooltip>
   );
 }

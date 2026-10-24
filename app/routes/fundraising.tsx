@@ -24,6 +24,7 @@ interface CandidateEntry {
   name: string;
   party: "D" | "R" | "I" | "O";
   candidateId: string;
+  committeeId: string;
   receipts: number;
   disbursements: number;
   cashOnHand: number;
@@ -215,7 +216,7 @@ export default function Fundraising() {
                         {isOpen && (
                           <tr className="border-t border-gray-100 dark:border-gray-800">
                             <td colSpan={4} className="bg-gray-50 px-2 py-2 dark:bg-gray-800/30">
-                              <div className="mb-2 flex gap-1">
+                              <div className="mb-2 flex items-center gap-1">
                                 {(["donors", "spending"] as const).map((v) => (
                                   <button
                                     key={v}
@@ -232,6 +233,17 @@ export default function Fundraising() {
                                     {v === "donors" ? "Who gave" : "Where it went"}
                                   </button>
                                 ))}
+                                {/* The principal committee's filings tab on fec.gov
+                                    lists every report behind these totals. */}
+                                <a
+                                  href={`https://www.fec.gov/data/committee/${c.committeeId}/?tab=filings`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  onClick={(e) => e.stopPropagation()}
+                                  className="ml-auto text-xs font-medium text-blue-600 hover:underline dark:text-blue-400"
+                                >
+                                  All FEC filings ↗
+                                </a>
                               </div>
                               {candidateView === "donors" ? (
                                 <DonorBreakdown candidateId={c.candidateId} byState={byState} />

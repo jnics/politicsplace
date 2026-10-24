@@ -3,6 +3,7 @@ import { UsMap } from "~/components/UsMap";
 import { DonutChart, type DonutSegment } from "~/components/DonutChart";
 import { StateZoom, type ZoomContext } from "~/components/StateZoom";
 import { EarlyVoteBlock } from "~/components/EarlyVoteBlock";
+import { EarlyVoteMap } from "~/components/EarlyVoteMap";
 import { ShadePalette } from "~/components/Legend";
 import { GenericBallotChart } from "~/components/GenericBallotChart";
 import { hasStateGeo, hasPrecinctRace, precinctRaceKeys } from "~/lib/stateGeo";
@@ -151,6 +152,9 @@ export function ElectionsExplorer() {
   // own flag rather than a third RaceType, which every other piece of state
   // below assumes is either "senate" or "president".
   const [showGenericBallot, setShowGenericBallot] = useState(false);
+  // Same idea for the 2026 early-vote map: its own self-contained view, so
+  // none of the prediction-map state (picks, palette, drill-in) applies.
+  const [showEarlyVote, setShowEarlyVote] = useState(false);
   const [presYear, setPresYear] = useState<PresidentialYear>(2024);
   const [senYear, setSenYear] = useState<SenateCycleYear | 2026>(2026);
   const [selectedShade, setSelectedShade] = useState<Shade>("tossup");
@@ -795,9 +799,10 @@ export function ElectionsExplorer() {
               setRaceType(type);
               setZoomHouse(false);
               setShowGenericBallot(false);
+              setShowEarlyVote(false);
             }}
             className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
-              raceType === type && !zoomHouse && !showGenericBallot
+              raceType === type && !zoomHouse && !showGenericBallot && !showEarlyVote
                 ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
                 : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             }`}
@@ -808,6 +813,7 @@ export function ElectionsExplorer() {
         <button
           onClick={() => {
             setShowGenericBallot(true);
+            setShowEarlyVote(false);
             setZoomState(null);
             setZoomHouse(false);
           }}
@@ -820,7 +826,23 @@ export function ElectionsExplorer() {
         >
           Generic Ballot
         </button>
-        {zoomState && !showGenericBallot && (
+        <button
+          onClick={() => {
+            setShowEarlyVote(true);
+            setShowGenericBallot(false);
+            setZoomState(null);
+            setZoomHouse(false);
+          }}
+          title="2026 early vote so far, by state, against past cycles and the forecast models"
+          className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
+            showEarlyVote
+              ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+              : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          }`}
+        >
+          2026 Early Vote
+        </button>
+        {zoomState && !showGenericBallot && !showEarlyVote && (
           <button
             onClick={() => {
               setZoomHouse((v) => {
@@ -847,6 +869,8 @@ export function ElectionsExplorer() {
 
       {showGenericBallot ? (
         <GenericBallotChart />
+      ) : showEarlyVote ? (
+        <EarlyVoteMap />
       ) : (
         <>
       <div className="mb-3 flex flex-wrap gap-2">

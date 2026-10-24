@@ -2,6 +2,7 @@ import { useState, useRef, useCallback, useMemo } from "react";
 import { STATE_PATHS, US_MAP_VIEWBOX } from "~/data/statePaths";
 import { pathPoints, centroidOf } from "~/lib/svgGeometry";
 import { ShiftMark } from "~/components/ShiftMark";
+import { MapTooltip } from "~/components/MapTooltip";
 
 export interface UsMapProps {
   /** Fill color for each state, keyed by uppercase USPS code. */
@@ -33,6 +34,9 @@ export interface UsMapProps {
    *  colors a zero-swing state's tick by who currently holds it, rather than
    *  a neutral gray — a swing of exactly 0 has no sign of its own. */
   overlayArrows?: Record<string, { pts: number; color: string; winner?: "D" | "R" }>;
+  /** Width class for the hover card -- wider cards with tabular rows stay
+   *  shorter. Defaults to "w-60". */
+  tooltipWidth?: string;
   className?: string;
 }
 
@@ -56,6 +60,7 @@ export function UsMap({
   defs,
   overlayCircles,
   overlayArrows,
+  tooltipWidth = "w-60",
   className,
 }: UsMapProps) {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -66,10 +71,9 @@ export function UsMap({
     ? Math.max(...Object.values(overlayCircles).map((c) => c.votes))
     : 0;
 
+  // Window coordinates -- MapTooltip is fixed to the viewport.
   const updatePos = useCallback((e: React.MouseEvent) => {
-    const rect = containerRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+    setPos({ x: e.clientX, y: e.clientY });
   }, []);
 
   return (
@@ -168,12 +172,9 @@ export function UsMap({
       </svg>
 
       {hovered && tooltip?.(hovered) && (
-        <div
-          className="pointer-events-none absolute z-10 w-60 -translate-x-1/2 -translate-y-full rounded-lg bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg dark:bg-gray-100 dark:text-gray-900"
-          style={{ left: pos.x, top: pos.y - 10 }}
-        >
+        <MapTooltip x={pos.x} y={pos.y} className={tooltipWidth}>
           {tooltip(hovered)}
-        </div>
+        </MapTooltip>
       )}
     </div>
   );
