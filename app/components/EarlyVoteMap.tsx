@@ -7,10 +7,10 @@ import { formatVotes } from "~/lib/margin";
 import { hasStateGeo } from "~/lib/stateGeo";
 import { EarlyVoteCountyMap } from "~/components/EarlyVoteCountyMap";
 import { StatGrid, type Stat } from "~/components/StatGrid";
+import { EvLegend } from "~/components/EvLegend";
 import {
   NO_DATA,
   PARTY_BINS,
-  TURNOUT_BINS,
   partyFill,
   pctOf,
   shares,
@@ -292,6 +292,10 @@ export function EarlyVoteMap() {
             />
           ) : (
             <>
+              <EvLegend
+                metric={metric}
+                title={metric === "turnout" ? "% of 2022 turnout cast early" : "Party lead among early ballots"}
+              />
               <UsMap
                 fills={fills}
                 tooltip={tooltip}
@@ -306,7 +310,6 @@ export function EarlyVoteMap() {
               </p>
             </>
           )}
-          <EvLegend metric={metric} />
         </div>
 
         <div className="flex w-full shrink-0 flex-col items-center gap-3 lg:w-[168px]">
@@ -584,32 +587,3 @@ function ModelTable({
   );
 }
 
-function EvLegend({ metric }: { metric: Metric }) {
-  const items =
-    metric === "turnout"
-      ? TURNOUT_BINS.map((b) => ({ label: b.label, colors: [b.color] }))
-      : PARTY_BINS.map((b) => ({ label: `${b.label} pts`, colors: [b.d, b.r] }));
-  return (
-    <div className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] text-gray-500 dark:text-gray-400">
-      {items.map((it) => (
-        <span key={it.label} className="inline-flex items-center gap-1">
-          {it.colors.map((c) => (
-            <span
-              key={c}
-              className="inline-block h-3 w-3 rounded-sm border border-black/10"
-              style={{ backgroundColor: c }}
-            />
-          ))}
-          {it.label}
-        </span>
-      ))}
-      <span className="inline-flex items-center gap-1">
-        <span
-          className="inline-block h-3 w-3 rounded-sm border border-black/10"
-          style={{ backgroundColor: NO_DATA }}
-        />
-        No data
-      </span>
-    </div>
-  );
-}

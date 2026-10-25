@@ -3,6 +3,7 @@ import { loadStateGeo, type StateGeo } from "~/lib/stateGeo";
 import { countyResult } from "~/data/countyResults";
 import { formatVotes } from "~/lib/margin";
 import { MapTooltip } from "~/components/MapTooltip";
+import { EvLegend } from "~/components/EvLegend";
 import { StatGrid, type Stat } from "~/components/StatGrid";
 import {
   NO_DATA,
@@ -78,9 +79,18 @@ const loadElectorateFile = once<{ byCounty: Record<string, [number | null, numbe
 
 /** The county's "% voted" baseline: its 2022 midterm turnout from EAVS (the
  *  same yardstick as the state view), else its 2024 presidential vote. */
-function baseline(fips: string, hist: HistoryRow | undefined): { n: number; label: string } | null {
-  const t22 = hist?.["2022"]?.[3];
-  if (t22) return { n: t22, label: "2022" };
+type BaseYear = "2022" | "2024";
+
+function baseline(
+  fips: string,
+  hist: HistoryRow | undefined,
+  year: BaseYear = "2022"
+): { n: number; label: string } | null {
+  // The chosen cycle's total ballots from EAVS; 2024 falls back to the
+  // county's presidential vote, and 2022 falls back to 2024.
+  const t = hist?.[year]?.[3];
+  if (t) return { n: t, label: year };
+  if (year === "2022" && hist?.["2024"]?.[3]) return { n: hist["2024"][3]!, label: "2024" };
   const t24 = countyResult("2024-president", fips)?.totalVotes;
   return t24 ? { n: t24, label: "2024" } : null;
 }
@@ -106,6 +116,7 @@ export function EarlyVoteCountyMap({
   const [history, setHistory] = useState<Record<string, HistoryRow> | null>(null);
   const [loaded, setLoaded] = useState(false);
   const [hovered, setHovered] = useState<string | null>(null);
+  const [baseYear, setBaseYear] = useState<BaseYear>("2022");
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [electorate, setElectorate] = useState<Record<string, [number | null, number | null]> | null>(null);
   const [registration, setRegistration] = useState<{
@@ -142,20 +153,23 @@ export function EarlyVoteCountyMap({
     setPos({ x: e.clientX, y: e.clientY });
   }, []);
 
+  const hasParty = !!rows && Object.values(rows).some((c) => c.p);
+  // States with no county party split get turnout shading even on the
+  // party view, rather than a gray map.
+  const shadeTurnout = metric === "turnout" || !hasParty;
+
   function fillFor(fips: string): string {
     const c = rows?.[fips];
     if (!c || c.v <= 0) return NO_DATA;
-    if (metric === "party") {
+    if (!shadeTurnout) {
       return c.p && c.p[0] + c.p[1] > 0
         ? partyFill({ dem: c.p[0], rep: c.p[1], other: c.p[2] })
         : NO_DATA;
     }
-    const base = baseline(fips, history?.[fips]);
+    const base = baseline(fips, history?.[fips], baseYear);
     const pct = base ? pctOf(c.v, base.n) : null;
     return pct == null ? NO_DATA : turnoutFill(pct);
   }
-
-  const hasParty = !!rows && Object.values(rows).some((c) => c.p);
   const hoveredName = hovered ? geo?.counties.find((c) => c.fips === hovered)?.name : null;
 
   return (
@@ -170,6 +184,25 @@ export function EarlyVoteCountyMap({
         <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">
           {stateName} counties
         </span>
+        {loaded && rows && shadeTurnout && (
+          <div className="ml-auto flex items-center gap-1 text-xs">
+            <span className="text-gray-500 dark:text-gray-400">Compare to</span>
+            {(["2022", "2024"] as const).map((y) => (
+              <button
+                key={y}
+                onClick={() => setBaseYear(y)}
+                title={`Shade counties by early ballots as a share of their ${y} turnout`}
+                className={`rounded-full px-2.5 py-0.5 font-medium transition-colors ${
+                  baseYear === y
+                    ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
+                    : "border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+                }`}
+              >
+                {y}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {!loaded ? (
@@ -178,6 +211,12 @@ export function EarlyVoteCountyMap({
         <p className="py-16 text-center text-xs text-gray-400">No county map for {stateName}.</p>
       ) : (
         <div className="relative">
+          {/* Key matches what's actually drawn: turnout colors whenever the
+              counties fall back to turnout shading. */}
+          <EvLegend
+            metric={shadeTurnout ? "turnout" : "party"}
+            title={shadeTurnout ? `% of ${baseYear} turnout cast early` : "Party lead among early ballots"}
+          />
           <svg viewBox={geo.viewBox} className="h-auto max-h-[560px] w-full select-none">
             {geo.counties.map((c) => (
               <path
@@ -198,6 +237,7 @@ export function EarlyVoteCountyMap({
           {hovered && (
             <MapTooltip x={pos.x} y={pos.y} className="w-[32rem]">
               <CountyTip
+                baseYear={baseYear}
                 name={hoveredName ?? hovered}
                 fips={hovered}
                 row={rows?.[hovered] ?? null}
@@ -223,15 +263,10 @@ export function EarlyVoteCountyMap({
           town, which doesn&rsquo;t line up with counties). Hover a county for its past cycles.
         </p>
       )}
-      {loaded && rows && metric === "party" && !hasParty && (
+      {loaded && rows && shadeTurnout && (
         <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
-          No county party data for {stateName} &mdash; counties only carry party where the state
-          reports registration.
-        </p>
-      )}
-      {loaded && rows && metric === "turnout" && (
-        <p className="mt-2 text-center text-[11px] text-gray-400 dark:text-gray-500">
-          County shading is the share of each county&rsquo;s 2022 turnout already cast. Past
+          {metric === "party" && <>No county party split for {stateName}, so counties are shaded by turnout. </>}
+          County shading is the share of each county&rsquo;s {baseYear} turnout already cast. Past
           cycles are final counts from the EAC&rsquo;s Election Administration and Voting Survey.
         </p>
       )}
@@ -246,7 +281,9 @@ function CountyTip({
   hist,
   electorate,
   registration,
+  baseYear,
 }: {
+  baseYear: BaseYear;
   name: string;
   fips: string;
   row: CountyEv | null;
@@ -258,7 +295,7 @@ function CountyTip({
 }) {
   const muted = "text-gray-300 dark:text-gray-600";
   const has2026 = !!row && row.v > 0;
-  const base = baseline(fips, hist);
+  const base = baseline(fips, hist, baseYear);
   const [eligible, registered] = electorate ?? [null, null];
 
   // 2026 so far + who could vote.
