@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24",
+ "generatedAt": "2026-10-25",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -700,7 +700,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -919,8 +919,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "splitTicket": {
@@ -1316,8 +1316,8 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "ddhq": {
@@ -1484,7 +1484,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -1871,7 +1871,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -1932,9 +1932,9 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "ddhq": {
       "label": "Tossup",
@@ -3327,8 +3327,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      },
      "splitTicket": {
@@ -3775,8 +3775,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      },
      "splitTicket": {
@@ -4116,7 +4116,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -4727,8 +4727,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "splitTicket": {
@@ -4956,7 +4956,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5175,7 +5175,7 @@
       "flip": true
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -5236,7 +5236,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5399,9 +5399,9 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "splitTicket": {
       "label": "Lean",
@@ -5847,8 +5847,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "splitTicket": {
@@ -7079,9 +7079,9 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "splitTicket": {
       "label": "Lean",
@@ -7359,7 +7359,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -7695,7 +7695,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
