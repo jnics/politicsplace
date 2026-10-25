@@ -7,8 +7,9 @@ const EDGE = 8; // px kept clear of the window's edges
  * The hover card for every map. It's `position: fixed` against the browser
  * window rather than the map, so it can never add a scrollbar. It measures
  * itself and is placed:
- *   - above the cursor, or below it when there isn't room above;
- *   - centred on the cursor horizontally, slid sideways to stay on screen;
+ *   - beside the cursor (right, or left when the right side is short), so
+ *     the state or county under the cursor stays in view;
+ *   - centred on the cursor vertically, slid up or down to stay on screen;
  *   - capped to the window's height, scrolling inside if it's taller still.
  * Hidden for its first frame until measured, so it never flashes off-screen.
  *
@@ -36,16 +37,19 @@ export function MapTooltip({
     const vh = window.innerHeight;
     const w = el.offsetWidth;
     const h = el.offsetHeight;
-    const left = Math.min(Math.max(x - w / 2, EDGE), Math.max(EDGE, vw - w - EDGE));
-    const above = y - GAP - h;
-    const below = y + GAP;
-    const top =
-      above >= EDGE
-        ? above
-        : below + h <= vh - EDGE
-        ? below
-        : // no clean fit either side -- pin it inside the window
-          Math.max(EDGE, Math.min(above, vh - h - EDGE));
+    // Beside the cursor, not over it, so the shape being hovered stays
+    // visible: to the right, or to the left when the right side is short.
+    const right = x + GAP;
+    const leftSide = x - GAP - w;
+    const left =
+      right + w <= vw - EDGE
+        ? right
+        : leftSide >= EDGE
+        ? leftSide
+        : // too wide for either side -- pin it inside the window
+          Math.max(EDGE, Math.min(right, vw - w - EDGE));
+    // Vertically centred on the cursor, kept inside the window.
+    const top = Math.min(Math.max(y - h / 2, EDGE), Math.max(EDGE, vh - h - EDGE));
     // Only update on a real move -- children are a new object every render,
     // so an unconditional set here would re-render forever.
     setPlace((p) => (p && p.left === left && p.top === top ? p : { left, top }));

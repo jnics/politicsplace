@@ -79,7 +79,7 @@ const loadElectorateFile = once<{ byCounty: Record<string, [number | null, numbe
 
 /** The county's "% voted" baseline: its 2022 midterm turnout from EAVS (the
  *  same yardstick as the state view), else its 2024 presidential vote. */
-type BaseYear = "2022" | "2024";
+export type BaseYear = "2022" | "2024";
 
 function baseline(
   fips: string,
@@ -105,18 +105,27 @@ export function EarlyVoteCountyMap({
   stateName,
   metric,
   onBack,
+  onPartyAvailability,
+  baseYear,
+  onBaseYearChange,
 }: {
+  /** Turnout year counties are compared against; owned by the parent so the
+   *  sidebar donut can follow the same switch. */
+  baseYear: BaseYear;
+  onBaseYearChange: (year: BaseYear) => void;
   usps: string;
   stateName: string;
   metric: Metric;
   onBack: () => void;
+  /** Called once the state's county data loads: whether any county carries
+   *  a party split, so the parent can hide its "Party lead" option. */
+  onPartyAvailability?: (hasParty: boolean) => void;
 }) {
   const [geo, setGeo] = useState<StateGeo | null>(null);
   const [rows, setRows] = useState<Record<string, CountyEv> | null>(null);
   const [history, setHistory] = useState<Record<string, HistoryRow> | null>(null);
   const [loaded, setLoaded] = useState(false);
   const [hovered, setHovered] = useState<string | null>(null);
-  const [baseYear, setBaseYear] = useState<BaseYear>("2022");
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [electorate, setElectorate] = useState<Record<string, [number | null, number | null]> | null>(null);
   const [registration, setRegistration] = useState<{
@@ -154,6 +163,9 @@ export function EarlyVoteCountyMap({
   }, []);
 
   const hasParty = !!rows && Object.values(rows).some((c) => c.p);
+  useEffect(() => {
+    if (loaded) onPartyAvailability?.(hasParty);
+  }, [loaded, hasParty, onPartyAvailability]);
   // States with no county party split get turnout shading even on the
   // party view, rather than a gray map.
   const shadeTurnout = metric === "turnout" || !hasParty;
@@ -190,7 +202,7 @@ export function EarlyVoteCountyMap({
             {(["2022", "2024"] as const).map((y) => (
               <button
                 key={y}
-                onClick={() => setBaseYear(y)}
+                onClick={() => onBaseYearChange(y)}
                 title={`Shade counties by early ballots as a share of their ${y} turnout`}
                 className={`rounded-full px-2.5 py-0.5 font-medium transition-colors ${
                   baseYear === y
@@ -346,8 +358,11 @@ function CountyTip({
   const regItems: Stat[] = reg
     ? (
         [
-          [isPrimary ? "Dem primary" : "Dem", reg[0], "text-blue-300 dark:text-blue-700"],
-          [isPrimary ? "Rep primary" : "Rep", reg[1], "text-red-300 dark:text-red-700"],
+          // "May primary" spelled out: these are votes from the May 2026
+          // primary, a different election, so they don't add up to (and are
+          // usually bigger than) this fall's early ballots.
+          [isPrimary ? "May primary Dem" : "Dem", reg[0], "text-blue-300 dark:text-blue-700"],
+          [isPrimary ? "May primary Rep" : "Rep", reg[1], "text-red-300 dark:text-red-700"],
           ...(isPrimary ? [] : [["Other", reg[2], ""] as const]),
         ] as const
       ).map(([label, n, cls]) => ({ label, value: shortVotes(n), sub: `${pctOf(n, regTotal)!.toFixed(1)}%`, cls }))

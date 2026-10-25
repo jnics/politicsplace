@@ -5,7 +5,7 @@ import { STATE_PATHS } from "~/data/statePaths";
 import { HISTORICAL_COLORS } from "~/lib/shades";
 import { formatVotes } from "~/lib/margin";
 import { hasStateGeo } from "~/lib/stateGeo";
-import { EarlyVoteCountyMap } from "~/components/EarlyVoteCountyMap";
+import { EarlyVoteCountyMap, type BaseYear } from "~/components/EarlyVoteCountyMap";
 import { StatGrid, type Stat } from "~/components/StatGrid";
 import { EvLegend } from "~/components/EvLegend";
 import {
@@ -168,7 +168,14 @@ function ratingText(r: Rating): string {
  */
 export function EarlyVoteMap() {
   const [metric, setMetric] = useState<Metric>("turnout");
+  // Turnout year the county map compares against (its "Compare to" switch);
+  // the sidebar donut follows it while drilled in.
+  const [baseYear, setBaseYear] = useState<BaseYear>("2022");
   const [zoomState, setZoomState] = useState<string | null>(null);
+  // Reported by the county map once it loads: does this state have a
+  // county-level party split? If not, the "Party lead" option is hidden.
+  const [countyHasParty, setCountyHasParty] = useState<boolean | null>(null);
+  const showPartyOption = !(zoomState && countyHasParty === false);
 
   const fills = useMemo(() => {
     const out: Record<string, string> = {};
@@ -192,6 +199,8 @@ export function EarlyVoteMap() {
 
   const national = useMemo(() => {
     let voted = 0;
+    let mail = 0;
+    let inPerson = 0;
     let base2022 = 0;
     let past2024 = 0;
     let reporting = 0;
@@ -201,6 +210,8 @@ export function EarlyVoteMap() {
       if (!current || current.voted <= 0) continue;
       reporting += 1;
       voted += current.voted;
+      mail += current.mailReturned ?? 0;
+      inPerson += current.inPerson ?? 0;
       if (current.turnout2022) base2022 += current.turnout2022;
       if (past["2024"]?.voted) past2024 += past["2024"].voted;
       if (current.party) {
@@ -210,7 +221,7 @@ export function EarlyVoteMap() {
         partyStates += 1;
       }
     }
-    return { voted, base2022, past2024, reporting, party, partyStates };
+    return { voted, mail, inPerson, base2022, past2024, reporting, party, partyStates };
   }, []);
 
   function tooltip(state: string) {
@@ -256,7 +267,66 @@ export function EarlyVoteMap() {
     );
   }
 
-  const nationalShares = national.partyStates ? shares(national.party) : null;
+  // The sidebar follows the map: the whole country, or the drilled-in state.
+  const summary = useMemo(() => {
+    if (!zoomState) {
+      return {
+        title: null as string | null,
+        party: national.partyStates ? national.party : null,
+        partyNote: `D–R, ${national.partyStates} states`,
+        voted: national.voted,
+        mail: national.mail,
+        inPerson: national.inPerson,
+        reportingLine: `early ballots in ${national.reporting} states`,
+        pct2022: national.base2022 ? pctOf(national.voted, national.base2022) : null,
+        pct2024ev: national.past2024 ? pctOf(national.voted, national.past2024) : null,
+        their: "their ",
+        // The national map only compares to 2022.
+        turnoutBase: national.base2022 ? { n: national.base2022, year: "2022" as BaseYear } : null,
+      };
+    }
+    const entry = EV.byState[zoomState];
+    const cur = entry?.current;
+    const ev24 = HISTORY.byState[zoomState]?.["2024"]?.ev || entry?.past["2024"]?.voted || null;
+    const basisNote: Record<PartyBasis, string> = {
+      registration: "D–R by registration",
+      primary: "D–R by past primaries",
+      modeled: "D–R, modeled party",
+    };
+    return {
+      title: STATE_NAMES[zoomState] ?? zoomState,
+      party: cur?.voted && cur.party ? cur.party : null,
+      partyNote: cur?.partyBasis ? basisNote[cur.partyBasis] : "",
+      voted: cur?.voted ?? 0,
+      mail: cur?.mailReturned ?? 0,
+      inPerson: cur?.inPerson ?? 0,
+      reportingLine: cur?.lastUpdate ? `early ballots · as of ${shortDate(cur.lastUpdate)}` : "early ballots",
+      pct2022: cur?.voted && cur.turnout2022 ? pctOf(cur.voted, cur.turnout2022) : null,
+      pct2024ev: cur?.voted && ev24 ? pctOf(cur.voted, ev24) : null,
+      their: "",
+      // Follows the county map's "Compare to" switch: 2022 turnout (UF), or
+      // 2024 total ballots (EAVS).
+      turnoutBase:
+        baseYear === "2024"
+          ? HISTORY.byState[zoomState]?.["2024"]?.t
+            ? { n: HISTORY.byState[zoomState]!["2024"]!.t, year: "2024" as BaseYear }
+            : null
+          : cur?.turnout2022
+          ? { n: cur.turnout2022, year: "2022" as BaseYear }
+          : null,
+    };
+  }, [zoomState, national, baseYear]);
+  const summaryShares = summary.party ? shares(summary.party) : null;
+  // The donut matches what the map is coloring: turnout when the map shades
+  // by turnout (incl. a county map with no party split), party otherwise --
+  // falling back to turnout when there's no party split to show.
+  const mapShowsTurnout = metric === "turnout" || (!!zoomState && countyHasParty === false);
+  const donutMode: "turnout" | "party" | null =
+    (mapShowsTurnout || !summaryShares) && summary.turnoutBase && summary.voted > 0
+      ? "turnout"
+      : summaryShares
+      ? "party"
+      : null;
 
   return (
     <div className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
@@ -266,12 +336,16 @@ export function EarlyVoteMap() {
             ["turnout", "% of 2022 electorate voted"],
             ["party", "Party lead"],
           ] as const
-        ).map(([m, label]) => (
+        )
+          .filter(([m]) => m !== "party" || showPartyOption)
+          .map(([m, label]) => (
           <button
             key={m}
             onClick={() => setMetric(m)}
             className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
-              metric === m
+              // With "Party lead" hidden, the county map is shading by
+              // turnout, so that's the option shown as selected.
+              metric === m || (!showPartyOption && m === "turnout")
                 ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
                 : "border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
             }`}
@@ -288,7 +362,13 @@ export function EarlyVoteMap() {
               usps={zoomState}
               stateName={STATE_NAMES[zoomState] ?? zoomState}
               metric={metric}
-              onBack={() => setZoomState(null)}
+              onBack={() => {
+                setZoomState(null);
+                setCountyHasParty(null);
+              }}
+              onPartyAvailability={setCountyHasParty}
+              baseYear={baseYear}
+              onBaseYearChange={setBaseYear}
             />
           ) : (
             <>
@@ -313,36 +393,68 @@ export function EarlyVoteMap() {
         </div>
 
         <div className="flex w-full shrink-0 flex-col items-center gap-3 lg:w-[168px]">
-          {nationalShares ? (
+          {summary.title && (
+            <div className="text-sm font-semibold text-gray-900 dark:text-gray-100">{summary.title}</div>
+          )}
+          {donutMode === "turnout" && summary.turnoutBase ? (
+            (() => {
+              const { n: base, year } = summary.turnoutBase;
+              const pct = pctOf(summary.voted, base)!;
+              // Early ballots split by how they were cast. Some states only
+              // report a total (or only one kind), so whatever the split
+              // doesn't cover gets its own "not split" slice.
+              const mail = Math.min(summary.mail, summary.voted);
+              const inPerson = Math.min(summary.inPerson, summary.voted - mail);
+              const notSplit = summary.voted - mail - inPerson;
+              return (
+                <DonutChart
+                  segments={[
+                    { label: "Mail returned", value: mail, color: "#0891b2" },
+                    { label: "In person", value: inPerson, color: "#22d3ee" },
+                    ...(notSplit > 0
+                      ? [{ label: "Early (not split)", value: notSplit, color: "#a5f3fc" }]
+                      : []),
+                    { label: `Rest of ${year} turnout`, value: Math.max(0, base - summary.voted), color: NO_DATA },
+                  ]}
+                  centerPrimary={`${pct.toFixed(1)}%`}
+                  centerSecondary={`of ${year} turnout`}
+                  size={158}
+                  thickness={20}
+                />
+              );
+            })()
+          ) : donutMode === "party" && summary.party && summaryShares ? (
             <DonutChart
               segments={[
-                { label: "Republican", value: national.party.rep, color: HISTORICAL_COLORS.R },
-                { label: "Other / none", value: national.party.other, color: "#9ca3af" },
-                { label: "Democratic", value: national.party.dem, color: HISTORICAL_COLORS.D },
+                { label: "Republican", value: summary.party.rep, color: HISTORICAL_COLORS.R },
+                { label: "Other / none", value: summary.party.other, color: "#9ca3af" },
+                { label: "Democratic", value: summary.party.dem, color: HISTORICAL_COLORS.D },
               ]}
-              centerPrimary={`${nationalShares.d.toFixed(0)}–${nationalShares.r.toFixed(0)}`}
-              centerSecondary={`D–R, ${national.partyStates} states`}
+              centerPrimary={`${summaryShares.d.toFixed(0)}–${summaryShares.r.toFixed(0)}`}
+              centerSecondary={summary.partyNote}
               centerBar={[
-                { label: "D", value: national.party.dem, color: HISTORICAL_COLORS.D },
-                { label: "R", value: national.party.rep, color: HISTORICAL_COLORS.R },
+                { label: "D", value: summary.party.dem, color: HISTORICAL_COLORS.D },
+                { label: "R", value: summary.party.rep, color: HISTORICAL_COLORS.R },
               ]}
               size={158}
               thickness={20}
             />
+          ) : summary.title ? (
+            <div className="text-center text-xs text-gray-400 dark:text-gray-500">No early-vote data yet</div>
           ) : null}
           <div className="text-center text-xs text-gray-500 dark:text-gray-400">
             <div className="text-base font-semibold tabular-nums text-gray-900 dark:text-gray-100">
-              {shortVotes(national.voted)}
+              {shortVotes(summary.voted)}
             </div>
-            early ballots in {national.reporting} states
-            {national.base2022 > 0 && (
+            {summary.reportingLine}
+            {summary.pct2022 != null && (
               <div className="mt-1">
-                {pctOf(national.voted, national.base2022)!.toFixed(1)}% of their 2022 turnout
+                {summary.pct2022.toFixed(1)}% of {summary.their}2022 turnout
               </div>
             )}
-            {national.past2024 > 0 && (
+            {summary.pct2024ev != null && (
               <div className="mt-1">
-                {pctOf(national.voted, national.past2024)!.toFixed(0)}% of their 2024 early vote
+                {summary.pct2024ev.toFixed(0)}% of {summary.their}2024 early vote
               </div>
             )}
           </div>
