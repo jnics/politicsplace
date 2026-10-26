@@ -139,7 +139,9 @@ function publish() {
       sh("pnpm build", wt) &&
       // Backup from the main checkout so the dump lands in its backups/.
       sh("pnpm db:backup") &&
-      sh("pnpm exec wrangler deploy", wt)
+      // The asset upload sometimes fails with a transient Cloudflare API
+      // error (code 10013, 2026-10-26) that clears on the next try.
+      [1, 2, 3].some((n) => (n > 1 && log(`  retrying deploy (attempt ${n})`), sh("pnpm exec wrangler deploy", wt)))
     );
   } finally {
     sh(`git worktree remove --force "${wt}"`);
