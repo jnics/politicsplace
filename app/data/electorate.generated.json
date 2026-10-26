@@ -31,11 +31,13 @@
    "cvap": 5220620,
    "registered": 5075337,
    "party": {
-    "total": 4366981,
-    "dem": 1226248,
-    "rep": 1532374,
-    "other": 1467306,
-    "modeled": false
+    "total": 4368996,
+    "dem": 1239489,
+    "rep": 1522522,
+    "other": 1606985,
+    "modeled": false,
+    "asOf": "November 2026",
+    "source": "Arizona Secretary of State registration report"
    }
   },
   "AR": {
@@ -403,11 +405,13 @@
    "cvap": 7783975,
    "registered": 7854464,
    "party": {
-    "total": 7309544,
-    "dem": 2162894,
-    "rep": 2186285,
-    "other": 2915046,
-    "modeled": false
+    "total": 7888353,
+    "dem": 2336176,
+    "rep": 2330303,
+    "other": 3221874,
+    "modeled": false,
+    "asOf": "10/24/2026",
+    "source": "North Carolina State Board of Elections"
    }
   },
   "ND": {
@@ -463,11 +467,13 @@
    "cvap": 9931725,
    "registered": 9175133,
    "party": {
-    "total": 8591054,
-    "dem": 3664085,
-    "rep": 3505150,
-    "other": 1286081,
-    "modeled": false
+    "total": 9052367,
+    "dem": 3887220,
+    "rep": 3639496,
+    "other": 1525651,
+    "modeled": false,
+    "asOf": "10/26/2026",
+    "source": "Pennsylvania Department of State"
    }
   },
   "RI": {

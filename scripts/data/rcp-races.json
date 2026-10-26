@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-10-24",
+  "fetchedAt": "2026-10-26T17:32:04.181Z",
   "races": [
+    {
+      "id": 9233,
+      "title": "2026 Mississippi Senate - Hyde-Smith vs. Colom",
+      "race_type": "senate",
+      "category": "General",
+      "state": "ms",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Cindy Hyde-Smith",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Scott Colom",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 1
+    },
     {
       "id": 8975,
       "title": "2026 Georgia Senate - GOP Runoff (Collins vs. Dooley) ",
@@ -43,6 +65,47 @@
       "total_polls": 6
     },
     {
+      "id": 9100,
+      "title": "2026 Maine Senate - Collins vs. Jackson",
+      "race_type": "senate",
+      "category": "General",
+      "state": "me",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Troy Jackson",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Susan Collins",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Jackson",
+            "affiliation": "Democrat",
+            "value": 48.9
+          },
+          {
+            "name": "Collins",
+            "affiliation": "Republican",
+            "value": 47.5
+          }
+        ],
+        "spread": {
+          "name": "Jackson",
+          "value": 1.4
+        },
+        "as_of": "2026-10-24T16:12:57+00:00",
+        "date_label": "9/23 - 10/23"
+      },
+      "polls_in_average": 10,
+      "total_polls": 27
+    },
+    {
       "id": 8689,
       "title": "2026 Ohio Senate Special Election - Husted vs. Brown",
       "race_type": "senate",
@@ -65,23 +128,23 @@
           {
             "name": "Brown",
             "affiliation": "Democrat",
-            "value": 47.9
+            "value": 48.2
           },
           {
             "name": "Husted",
             "affiliation": "Republican",
-            "value": 44.8
+            "value": 44.9
           }
         ],
         "spread": {
           "name": "Brown",
-          "value": 3.1
+          "value": 3.3
         },
-        "as_of": "2026-10-21T22:15:19+00:00",
-        "date_label": "9/21 - 10/22"
+        "as_of": "2026-10-25T14:58:49+00:00",
+        "date_label": "9/22 - 10/22"
       },
-      "polls_in_average": 12,
-      "total_polls": 31
+      "polls_in_average": 9,
+      "total_polls": 32
     },
     {
       "id": 8802,
@@ -118,7 +181,7 @@
           "name": "El-Sayed",
           "value": 1.9
         },
-        "as_of": "2026-10-21T10:41:29+00:00",
+        "as_of": "2026-10-25T15:07:37+00:00",
         "date_label": "9/24 - 10/22"
       },
       "polls_in_average": 8,
@@ -159,11 +222,326 @@
           "name": "Hinson",
           "value": 0.6
         },
-        "as_of": "2026-10-21T21:04:13+00:00",
+        "as_of": "2026-10-25T14:55:32+00:00",
         "date_label": "9/29 - 10/22"
       },
       "polls_in_average": 8,
-      "total_polls": 35
+      "total_polls": 36
+    },
+    {
+      "id": 8988,
+      "title": "2026 Pennsylvania 8th District - Bresnahan vs. Cognetti",
+      "race_type": "house",
+      "category": "General",
+      "state": "pa",
+      "district": "PA8",
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Paige Cognetti",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Rob Bresnahan",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 3
+    },
+    {
+      "id": 8995,
+      "title": "2026 Pennsylvania 7th District - Mackenzie vs. Brooks",
+      "race_type": "house",
+      "category": "General",
+      "state": "pa",
+      "district": "PA7",
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Bob Brooks",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Ryan Mackenzie",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 2
+    },
+    {
+      "id": 8996,
+      "title": "2026 Pennsylvania 10th District - Perry vs. Stelson",
+      "race_type": "house",
+      "category": "General",
+      "state": "pa",
+      "district": "PA10",
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Janelle Stelson",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Scott Perry",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 3
+    },
+    {
+      "id": 9160,
+      "title": "2026 Pennsylvania 1st District - Fitzpatrick vs. Harvie",
+      "race_type": "house",
+      "category": "General",
+      "state": "pa",
+      "district": "PA1",
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Bob Harvie",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Brian Fitzpatrick",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 1
+    },
+    {
+      "id": 9215,
+      "title": "2026 Iowa Senate - Hinson vs. Turek vs. Laehn",
+      "race_type": "senate",
+      "category": "General",
+      "state": "ia",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Ashley Hinson",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Josh Turek",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Thomas Laehn",
+          "affiliation": "Libertarian"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Hinson",
+            "affiliation": "Republican",
+            "value": 46
+          },
+          {
+            "name": "Turek",
+            "affiliation": "Democrat",
+            "value": 45.7
+          },
+          {
+            "name": "Laehn",
+            "affiliation": "Libertarian",
+            "value": 3.5
+          }
+        ],
+        "spread": {
+          "name": "Hinson",
+          "value": 0.3
+        },
+        "as_of": "2026-10-25T14:46:32+00:00",
+        "date_label": "10/1 - 10/22"
+      },
+      "polls_in_average": 6,
+      "total_polls": 12
+    },
+    {
+      "id": 9216,
+      "title": "2026 Michigan Senate - Multi-Candidate",
+      "race_type": "senate",
+      "category": "General",
+      "state": "mi",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Abdul El-Sayed",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Mike Rogers",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Lydia Christiansen",
+          "affiliation": "Libertarian"
+        },
+        {
+          "name": "Tim Long",
+          "affiliation": "Independent"
+        },
+        {
+          "name": "Walter Kristy",
+          "affiliation": "Independent"
+        },
+        {
+          "name": "Douglas Marsh",
+          "affiliation": "Green"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "El-Sayed",
+            "affiliation": "Democrat",
+            "value": 46.8
+          },
+          {
+            "name": "Rogers",
+            "affiliation": "Republican",
+            "value": 43.8
+          },
+          {
+            "name": "Christiansen",
+            "affiliation": "Libertarian",
+            "value": 1.5
+          },
+          {
+            "name": "Long",
+            "affiliation": "Independent",
+            "value": 1
+          },
+          {
+            "name": "Kristy",
+            "affiliation": "Independent",
+            "value": 0.7
+          },
+          {
+            "name": "Marsh",
+            "affiliation": "Green",
+            "value": 0.5
+          }
+        ],
+        "spread": {
+          "name": "El-Sayed",
+          "value": 3
+        },
+        "as_of": "2026-10-25T15:15:17+00:00",
+        "date_label": "9/16 - 10/22"
+      },
+      "polls_in_average": 4,
+      "total_polls": 7
+    },
+    {
+      "id": 9218,
+      "title": "2026 Ohio Senate - Multi-Candidate",
+      "race_type": "senate",
+      "category": "General",
+      "state": "oh",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Sherrod Brown",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Jon Husted",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "William B Redpath",
+          "affiliation": "Libertarian"
+        },
+        {
+          "name": "Greg Levy",
+          "affiliation": "Independent"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Brown",
+            "affiliation": "Democrat",
+            "value": 46.8
+          },
+          {
+            "name": "Husted",
+            "affiliation": "Republican",
+            "value": 44.3
+          },
+          {
+            "name": "Redpath",
+            "affiliation": "Libertarian",
+            "value": 1.8
+          },
+          {
+            "name": "Levy",
+            "affiliation": "Independent",
+            "value": 2.7
+          }
+        ],
+        "spread": {
+          "name": "Brown",
+          "value": 2.5
+        },
+        "as_of": "2026-10-21T21:04:28+00:00",
+        "date_label": "9/23 - 10/22"
+      },
+      "polls_in_average": 6,
+      "total_polls": 10
+    },
+    {
+      "id": 8867,
+      "title": "2026 Texas Senate - Paxton vs. Talarico",
+      "race_type": "senate",
+      "category": "General",
+      "state": "tx",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "James Talarico",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Ken Paxton",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Talarico",
+            "affiliation": "Democrat",
+            "value": 48.4
+          },
+          {
+            "name": "Paxton",
+            "affiliation": "Republican",
+            "value": 46.9
+          }
+        ],
+        "spread": {
+          "name": "Talarico",
+          "value": 1.5
+        },
+        "as_of": "2026-10-24T13:00:06+00:00",
+        "date_label": "10/8 - 10/21"
+      },
+      "polls_in_average": 10,
+      "total_polls": 50
     },
     {
       "id": 8922,
@@ -188,23 +566,114 @@
           {
             "name": "Flanagan",
             "affiliation": "Democrat",
-            "value": 46.5
+            "value": 46.6
           },
           {
             "name": "Tafoya",
             "affiliation": "Republican",
-            "value": 43.3
+            "value": 43.2
           }
         ],
         "spread": {
           "name": "Flanagan",
-          "value": 3.2
+          "value": 3.4
         },
-        "as_of": "2026-10-20T16:43:38+00:00",
-        "date_label": "9/29 - 10/21"
+        "as_of": "2026-10-23T01:55:37+00:00",
+        "date_label": "10/2 - 10/21"
+      },
+      "polls_in_average": 5,
+      "total_polls": 15
+    },
+    {
+      "id": 8985,
+      "title": "2026 Texas Senate - Paxton vs. Talarico vs. Brown",
+      "race_type": "senate",
+      "category": "General",
+      "state": "tx",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "James Talarico",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Ken Paxton",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Ted Brown",
+          "affiliation": "Libertarian"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Talarico",
+            "affiliation": "Democrat",
+            "value": 48
+          },
+          {
+            "name": "Paxton",
+            "affiliation": "Republican",
+            "value": 46.3
+          },
+          {
+            "name": "Brown",
+            "affiliation": "Libertarian",
+            "value": 2.8
+          }
+        ],
+        "spread": {
+          "name": "Talarico",
+          "value": 1.7
+        },
+        "as_of": "2026-10-24T13:03:06+00:00",
+        "date_label": "10/6 - 10/21"
+      },
+      "polls_in_average": 8,
+      "total_polls": 25
+    },
+    {
+      "id": 8720,
+      "title": "2026 Ohio Governor - Ramaswamy vs. Acton",
+      "race_type": "governor",
+      "category": "General",
+      "state": "oh",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Amy Acton",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Vivek Ramaswamy",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Acton",
+            "affiliation": "Democrat",
+            "value": 48.7
+          },
+          {
+            "name": "Ramaswamy",
+            "affiliation": "Republican",
+            "value": 44.3
+          }
+        ],
+        "spread": {
+          "name": "Acton",
+          "value": 4.4
+        },
+        "as_of": "2026-10-24T17:24:35+00:00",
+        "date_label": "9/29 - 10/19"
       },
       "polls_in_average": 6,
-      "total_polls": 15
+      "total_polls": 23
     },
     {
       "id": 8753,
@@ -229,22 +698,22 @@
           {
             "name": "Cooper",
             "affiliation": "Democrat",
-            "value": 50.6
+            "value": 50.7
           },
           {
             "name": "Whatley",
             "affiliation": "Republican",
-            "value": 40.7
+            "value": 40.1
           }
         ],
         "spread": {
           "name": "Cooper",
-          "value": 9.9
+          "value": 10.6
         },
-        "as_of": "2026-10-20T16:04:21+00:00",
-        "date_label": "9/15 - 10/20"
+        "as_of": "2026-10-22T17:04:08+00:00",
+        "date_label": "9/27 - 10/20"
       },
-      "polls_in_average": 11,
+      "polls_in_average": 7,
       "total_polls": 42
     },
     {
@@ -352,6 +821,47 @@
       "total_polls": 15
     },
     {
+      "id": 8910,
+      "title": "2026 Texas Governor - Abbott vs. Hinojosa",
+      "race_type": "governor",
+      "category": "General",
+      "state": "tx",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Greg Abbott",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Gina Hinojosa",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Abbott",
+            "affiliation": "Republican",
+            "value": 49.8
+          },
+          {
+            "name": "Hinojosa",
+            "affiliation": "Democrat",
+            "value": 46.5
+          }
+        ],
+        "spread": {
+          "name": "Abbott",
+          "value": 3.3
+        },
+        "as_of": "2026-10-23T13:38:49+00:00",
+        "date_label": "10/5 - 10/19"
+      },
+      "polls_in_average": 8,
+      "total_polls": 41
+    },
+    {
       "id": 8948,
       "title": "2026 Florida Senate Special Election - Moody vs. Nixon",
       "race_type": "senate",
@@ -374,22 +884,22 @@
           {
             "name": "Moody",
             "affiliation": "Republican",
-            "value": 49.4
+            "value": 49.5
           },
           {
             "name": "Nixon",
             "affiliation": "Democrat",
-            "value": 42.4
+            "value": 42.2
           }
         ],
         "spread": {
           "name": "Moody",
-          "value": 7
+          "value": 7.3
         },
-        "as_of": "2026-10-21T20:52:42+00:00",
-        "date_label": "9/8 - 10/20"
+        "as_of": "2026-10-21T20:53:03+00:00",
+        "date_label": "9/28 - 10/20"
       },
-      "polls_in_average": 9,
+      "polls_in_average": 6,
       "total_polls": 15
     },
     {
@@ -514,47 +1024,6 @@
       },
       "polls_in_average": 9,
       "total_polls": 17
-    },
-    {
-      "id": 9100,
-      "title": "2026 Maine Senate - Collins vs. Jackson",
-      "race_type": "senate",
-      "category": "General",
-      "state": "me",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Troy Jackson",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Susan Collins",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Jackson",
-            "affiliation": "Democrat",
-            "value": 48.8
-          },
-          {
-            "name": "Collins",
-            "affiliation": "Republican",
-            "value": 47.4
-          }
-        ],
-        "spread": {
-          "name": "Jackson",
-          "value": 1.4
-        },
-        "as_of": "2026-10-22T22:06:40+00:00",
-        "date_label": "9/23 - 10/20"
-      },
-      "polls_in_average": 10,
-      "total_polls": 26
     },
     {
       "id": 9101,
@@ -720,47 +1189,6 @@
       "total_polls": 2
     },
     {
-      "id": 8720,
-      "title": "2026 Ohio Governor - Ramaswamy vs. Acton",
-      "race_type": "governor",
-      "category": "General",
-      "state": "oh",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Amy Acton",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Vivek Ramaswamy",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Acton",
-            "affiliation": "Democrat",
-            "value": 48.5
-          },
-          {
-            "name": "Ramaswamy",
-            "affiliation": "Republican",
-            "value": 44.9
-          }
-        ],
-        "spread": {
-          "name": "Acton",
-          "value": 3.6
-        },
-        "as_of": "2026-10-21T21:04:45+00:00",
-        "date_label": "9/22 - 10/19"
-      },
-      "polls_in_average": 8,
-      "total_polls": 22
-    },
-    {
       "id": 8742,
       "title": "2026 New York Governor - Blakeman vs. Hochul",
       "race_type": "governor",
@@ -802,138 +1230,6 @@
       "total_polls": 16
     },
     {
-      "id": 8867,
-      "title": "2026 Texas Senate - Paxton vs. Talarico",
-      "race_type": "senate",
-      "category": "General",
-      "state": "tx",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "James Talarico",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Ken Paxton",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Talarico",
-            "affiliation": "Democrat",
-            "value": 48.6
-          },
-          {
-            "name": "Paxton",
-            "affiliation": "Republican",
-            "value": 46.8
-          }
-        ],
-        "spread": {
-          "name": "Talarico",
-          "value": 1.8
-        },
-        "as_of": "2026-10-23T13:38:28+00:00",
-        "date_label": "10/6 - 10/19"
-      },
-      "polls_in_average": 10,
-      "total_polls": 48
-    },
-    {
-      "id": 8910,
-      "title": "2026 Texas Governor - Abbott vs. Hinojosa",
-      "race_type": "governor",
-      "category": "General",
-      "state": "tx",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Greg Abbott",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Gina Hinojosa",
-          "affiliation": "Democrat"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Abbott",
-            "affiliation": "Republican",
-            "value": 49.2
-          },
-          {
-            "name": "Hinojosa",
-            "affiliation": "Democrat",
-            "value": 46.8
-          }
-        ],
-        "spread": {
-          "name": "Abbott",
-          "value": 2.4
-        },
-        "as_of": "2026-10-23T13:38:02+00:00",
-        "date_label": "9/21 - 10/19"
-      },
-      "polls_in_average": 13,
-      "total_polls": 40
-    },
-    {
-      "id": 8985,
-      "title": "2026 Texas Senate - Paxton vs. Talarico vs. Brown",
-      "race_type": "senate",
-      "category": "General",
-      "state": "tx",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "James Talarico",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Ken Paxton",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Ted Brown",
-          "affiliation": "Libertarian"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Talarico",
-            "affiliation": "Democrat",
-            "value": 47.5
-          },
-          {
-            "name": "Paxton",
-            "affiliation": "Republican",
-            "value": 45.8
-          },
-          {
-            "name": "Brown",
-            "affiliation": "Libertarian",
-            "value": 2.7
-          }
-        ],
-        "spread": {
-          "name": "Talarico",
-          "value": 1.7
-        },
-        "as_of": "2026-10-21T21:04:42+00:00",
-        "date_label": "9/8 - 10/19"
-      },
-      "polls_in_average": 12,
-      "total_polls": 21
-    },
-    {
       "id": 9032,
       "title": "2026 Iowa Governor - Lahn vs. Sand",
       "race_type": "governor",
@@ -956,22 +1252,22 @@
           {
             "name": "Sand",
             "affiliation": "Democrat",
-            "value": 50.7
+            "value": 50.6
           },
           {
             "name": "Lahn",
             "affiliation": "Republican",
-            "value": 44
+            "value": 44.4
           }
         ],
         "spread": {
           "name": "Sand",
-          "value": 6.7
+          "value": 6.2
         },
-        "as_of": "2026-10-21T18:02:46+00:00",
-        "date_label": "9/29 - 10/19"
+        "as_of": "2026-10-21T21:04:39+00:00",
+        "date_label": "10/5 - 10/19"
       },
-      "polls_in_average": 6,
+      "polls_in_average": 5,
       "total_polls": 20
     },
     {
@@ -1067,56 +1363,6 @@
       },
       "polls_in_average": 9,
       "total_polls": 16
-    },
-    {
-      "id": 9215,
-      "title": "2026 Iowa Senate - Hinson vs. Turek vs. Laehn",
-      "race_type": "senate",
-      "category": "General",
-      "state": "ia",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Josh Turek",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Ashley Hinson",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Thomas Laehn",
-          "affiliation": "Libertarian"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Turek",
-            "affiliation": "Democrat",
-            "value": 45.4
-          },
-          {
-            "name": "Hinson",
-            "affiliation": "Republican",
-            "value": 45.1
-          },
-          {
-            "name": "Laehn",
-            "affiliation": "Libertarian",
-            "value": 3.1
-          }
-        ],
-        "spread": {
-          "name": "Turek",
-          "value": 0.3
-        },
-        "as_of": "2026-10-21T18:02:34+00:00",
-        "date_label": "8/31 - 10/19"
-      },
-      "polls_in_average": 7,
-      "total_polls": 9
     },
     {
       "id": 8860,
@@ -1264,22 +1510,22 @@
           {
             "name": "Benson",
             "affiliation": "Democrat",
-            "value": 48.5
+            "value": 49.8
           },
           {
             "name": "James",
             "affiliation": "Republican",
-            "value": 42.7
+            "value": 43.5
           }
         ],
         "spread": {
           "name": "Benson",
-          "value": 5.8
+          "value": 6.3
         },
-        "as_of": "2026-10-13T12:29:39+00:00",
-        "date_label": "9/18 - 10/18"
+        "as_of": "2026-10-21T10:42:35+00:00",
+        "date_label": "9/24 - 10/18"
       },
-      "polls_in_average": 6,
+      "polls_in_average": 4,
       "total_polls": 23
     },
     {
@@ -1547,22 +1793,22 @@
           {
             "name": "Ossoff",
             "affiliation": "Democrat",
-            "value": 51.3
+            "value": 51.2
           },
           {
             "name": "Collins",
             "affiliation": "Republican",
-            "value": 42.8
+            "value": 43
           }
         ],
         "spread": {
           "name": "Ossoff",
-          "value": 8.5
+          "value": 8.2
         },
-        "as_of": "2026-10-21T12:37:47+00:00",
-        "date_label": "9/15 - 10/17"
+        "as_of": "2026-10-21T12:39:05+00:00",
+        "date_label": "9/21 - 10/17"
       },
-      "polls_in_average": 6,
+      "polls_in_average": 5,
       "total_polls": 19
     },
     {
@@ -1634,17 +1880,17 @@
           {
             "name": "Lance Bottoms",
             "affiliation": "Democrat",
-            "value": 46.3
+            "value": 46.6
           }
         ],
         "spread": {
           "name": "Jackson",
-          "value": 1.5
+          "value": 1.2
         },
-        "as_of": "2026-10-19T16:15:46+00:00",
-        "date_label": "9/14 - 10/17"
+        "as_of": "2026-10-20T10:51:48+00:00",
+        "date_label": "9/15 - 10/17"
       },
-      "polls_in_average": 6,
+      "polls_in_average": 5,
       "total_polls": 16
     },
     {
@@ -1670,7 +1916,7 @@
           {
             "name": "Peltola",
             "affiliation": "Democrat",
-            "value": 49.4
+            "value": 49
           },
           {
             "name": "Sullivan",
@@ -1680,13 +1926,13 @@
         ],
         "spread": {
           "name": "Peltola",
-          "value": 1.2
+          "value": 0.8
         },
-        "as_of": "2026-10-21T13:06:42+00:00",
+        "as_of": "2026-10-26T15:05:49+00:00",
         "date_label": "9/28 - 10/16"
       },
-      "polls_in_average": 5,
-      "total_polls": 24
+      "polls_in_average": 6,
+      "total_polls": 25
     },
     {
       "id": 9124,
@@ -1895,28 +2141,6 @@
       },
       "polls_in_average": 5,
       "total_polls": 7
-    },
-    {
-      "id": 8988,
-      "title": "2026 Pennsylvania 8th District - Bresnahan vs. Cognetti",
-      "race_type": "house",
-      "category": "General",
-      "state": "pa",
-      "district": "PA8",
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Paige Cognetti",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Rob Bresnahan",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": null,
-      "polls_in_average": 0,
-      "total_polls": 2
     },
     {
       "id": 8994,
@@ -2134,133 +2358,6 @@
       "current_average": null,
       "polls_in_average": 0,
       "total_polls": 1
-    },
-    {
-      "id": 9216,
-      "title": "2026 Michigan Senate - Multi-Candidate",
-      "race_type": "senate",
-      "category": "General",
-      "state": "mi",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Abdul El-Sayed",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Mike Rogers",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Lydia Christiansen",
-          "affiliation": "Libertarian"
-        },
-        {
-          "name": "Tim Long",
-          "affiliation": "Independent"
-        },
-        {
-          "name": "Douglas Marsh",
-          "affiliation": "Green"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "El-Sayed",
-            "affiliation": "Democrat",
-            "value": 46.8
-          },
-          {
-            "name": "Rogers",
-            "affiliation": "Republican",
-            "value": 43.5
-          },
-          {
-            "name": "Christiansen",
-            "affiliation": "Libertarian",
-            "value": 1.5
-          },
-          {
-            "name": "Long",
-            "affiliation": "Independent",
-            "value": 1
-          },
-          {
-            "name": "Marsh",
-            "affiliation": "Green",
-            "value": 0.5
-          }
-        ],
-        "spread": {
-          "name": "El-Sayed",
-          "value": 3.3
-        },
-        "as_of": "2026-10-16T13:38:55+00:00",
-        "date_label": "9/16 - 10/14"
-      },
-      "polls_in_average": 4,
-      "total_polls": 6
-    },
-    {
-      "id": 9218,
-      "title": "2026 Ohio Senate - Multi-Candidate",
-      "race_type": "senate",
-      "category": "General",
-      "state": "oh",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Sherrod Brown",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Jon Husted",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "William B Redpath",
-          "affiliation": "Libertarian"
-        },
-        {
-          "name": "Greg Levy",
-          "affiliation": "Independent"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Brown",
-            "affiliation": "Democrat",
-            "value": 46.3
-          },
-          {
-            "name": "Husted",
-            "affiliation": "Republican",
-            "value": 44.2
-          },
-          {
-            "name": "Redpath",
-            "affiliation": "Libertarian",
-            "value": 2.3
-          },
-          {
-            "name": "Levy",
-            "affiliation": "Independent",
-            "value": 2.7
-          }
-        ],
-        "spread": {
-          "name": "Brown",
-          "value": 2.1
-        },
-        "as_of": "2026-10-21T18:07:53+00:00",
-        "date_label": "9/23 - 10/14"
-      },
-      "polls_in_average": 6,
-      "total_polls": 8
     },
     {
       "id": 9221,
@@ -2558,28 +2655,6 @@
       },
       "polls_in_average": 3,
       "total_polls": 6
-    },
-    {
-      "id": 8996,
-      "title": "2026 Pennsylvania 10th District - Perry vs. Stelson",
-      "race_type": "house",
-      "category": "General",
-      "state": "pa",
-      "district": "PA10",
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Janelle Stelson",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Scott Perry",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": null,
-      "polls_in_average": 0,
-      "total_polls": 2
     },
     {
       "id": 9119,
