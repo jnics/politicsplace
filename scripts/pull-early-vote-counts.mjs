@@ -226,7 +226,10 @@ async function pullTexasPrimaryHistory() {
   const rep = grab("Republican primaries only");
   const other = grab("both parties") + grab("no primary");
   const asOf = /as of ([A-Z][a-z]{2} \d{1,2}, \d{4})/.exec(html)?.[1] ?? null;
-  return dem + rep > 0 ? { split: { dem, rep, other }, asOf } : null;
+  // Its totals header: "4,251,983 total 4,036,642 in person 215,341 by mail".
+  const t = /([\d,]+) total ([\d,]+) in person ([\d,]+) by mail/.exec(text);
+  const totals = t ? { voted: num(t[1]), inPerson: num(t[2]), mail: num(t[3]) } : null;
+  return dem + rep > 0 ? { split: { dem, rep, other }, asOf, totals } : null;
 }
 
 /**
@@ -373,9 +376,24 @@ async function main() {
   // history (Texas, theoelections), then On Point's model.
   for (const s of Object.values(y2026)) s.partyBasis = s.party ? "registration" : null;
   if (txPrimary && y2026.TX) {
-    y2026.TX.party = txPrimary.split;
-    y2026.TX.partyBasis = "primary";
-    y2026.TX.partySource = "theoelections.com";
+    const tx = y2026.TX;
+    tx.party = txPrimary.split;
+    tx.partyBasis = "primary";
+    tx.partySource = "theoelections.com";
+    // Texas totals come from theoelections too when its page has them: UF's
+    // copy of the state roster trails the county reports (2026-10-26: 4.17M
+    // vs 4.25M), and taking both from one source keeps the party rows adding
+    // up to the total. UF's numbers stay as the fallback. Its counties (the
+    // county map) still sum to UF's total -- theoelections is statewide only.
+    const t = txPrimary.totals;
+    if (t?.voted > 0) {
+      tx.voted = t.voted;
+      tx.inPerson = t.inPerson;
+      tx.mailReturned = t.mail;
+      tx.mailRequested = null; // Texas doesn't report requests
+      tx.source = "https://theoelections.com/early-vote";
+      if (txPrimary.asOf) tx.lastUpdate = new Date(`${txPrimary.asOf} UTC`).toISOString().slice(0, 10);
+    }
   }
   let modeled = 0;
   for (const [usps, s] of Object.entries(y2026)) {
@@ -456,7 +474,11 @@ async function main() {
   console.log(
     `Past cycles: 2024 ${Object.keys(y2024).length} states, 2020 ${Object.keys(y2020).length}, 2016 ${Object.keys(y2016).length}.`
   );
-  console.log(`TX primary-history split: ${txPrimary ? "read" : "not available"}.`);
+  console.log(
+    `TX: party split ${txPrimary ? "read" : "not available"}; totals from ${
+      txPrimary?.totals?.voted > 0 ? `theoelections (as of ${txPrimary.asOf})` : "UF (theoelections had none)"
+    }.`
+  );
   console.log(`On Point: ${Object.keys(onPoint).length} states read, ${modeled} given modeled party.`);
   console.log(`Counties: ${countyReport.join(", ")}`);
   console.log(`Wrote ${OUT_PATH}`);
