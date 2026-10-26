@@ -34,8 +34,18 @@ const ELECTORATE = electorate as unknown as {
       cvap: number | null;
       registered: number | null;
       /** Registered voters by party (Independent Voter Project); `modeled`
-       *  where the state doesn't register by party (L2's estimate). */
-      party?: { total: number; dem: number; rep: number; other: number; modeled: boolean };
+       *  where the state doesn't register by party (L2's estimate). PA, NC
+       *  and AZ are overwritten with official county sums, with `asOf` and
+       *  `source` (scripts/pull-party-registration.mjs). */
+      party?: {
+        total: number;
+        dem: number;
+        rep: number;
+        other: number;
+        modeled: boolean;
+        asOf?: string | null;
+        source?: string;
+      };
     }
   >;
 };
@@ -559,6 +569,17 @@ function StateTop({ state, cur }: { state: string; cur: CurrentEv }) {
     <div className="space-y-1.5">
       <StatGrid items={items} />
       {partyItems.length > 0 && <StatGrid items={partyItems} />}
+      {p?.asOf && (
+        <div className={MUTED}>
+          Registered by party as of {p.asOf}
+          {p.source ? ` (${p.source})` : ""}
+        </div>
+      )}
+      {e?.party?.modeled && (
+        <div className={MUTED}>
+          No party registration in this state; registered total only.
+        </div>
+      )}
     </div>
   );
 }

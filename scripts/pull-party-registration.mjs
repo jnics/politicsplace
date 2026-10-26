@@ -25,6 +25,8 @@
  *
  * Writes app/data/geo/party-registration-counties.json, fetched at runtime:
  *   { byState: { PA: { asOf, source, counties: { "<fips>": [dem, rep, other] } } } }
+ * and, for the registration states, overwrites the statewide party split in
+ * app/data/electorate.generated.json with the county sums.
  */
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync, mkdtempSync, rmSync } from "node:fs";
@@ -285,3 +287,30 @@ for (const [usps, read] of Object.entries(READERS)) {
 }
 writeFileSync(OUT_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), byState }));
 console.log(`Wrote ${OUT_PATH}`);
+
+// The state card's party split comes from electorate.generated.json, whose
+// Independent Voter Project snapshot lags the official files read here (PA
+// Dems: 3.66M there vs 3.88M summed from the DOS counties). For every state
+// read by registration, replace it with the county sums so the state and
+// county numbers agree. Primary-basis states (GA, OH) are left alone.
+const ELECTORATE_PATH = resolve(root, "app/data/electorate.generated.json");
+const electorate = JSON.parse(readFileSync(ELECTORATE_PATH, "utf8"));
+for (const [usps, s] of Object.entries(byState)) {
+  if (s.basis !== "registration") continue;
+  const [dem, rep, other] = Object.values(s.counties).reduce(
+    (a, c) => a.map((x, i) => x + (c[i] ?? 0)),
+    [0, 0, 0]
+  );
+  (electorate.byState[usps] ??= { vep: null, cvap: null, registered: null }).party = {
+    total: dem + rep + other,
+    dem,
+    rep,
+    other,
+    modeled: false,
+    asOf: s.asOf,
+    source: s.source,
+  };
+  console.log(`${usps} state party: D ${dem} / R ${rep} / other ${other} (county sums)`);
+}
+writeFileSync(ELECTORATE_PATH, JSON.stringify(electorate, null, 1));
+console.log(`Updated ${ELECTORATE_PATH}`);

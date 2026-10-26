@@ -396,6 +396,11 @@ function CountyTip({
       {!has2026 && <div className={muted}>No 2026 early-vote data reported.</div>}
       {hasParty && <StatGrid items={current} />}
       {regItems.length > 0 && <StatGrid items={regItems} />}
+      {isPrimary && (
+        <div className={muted}>
+          No party registration in this state; Registered is the total only.
+        </div>
+      )}
       {n > 0 && (
         <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
           <thead>
