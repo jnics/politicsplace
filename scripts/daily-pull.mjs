@@ -18,7 +18,7 @@
  * FEC pulls (fundraising:*) are deliberately left out -- paused until asked.
  *
  *   pnpm daily              pull only
- *   pnpm daily --publish    pull, then commit the data files and deploy
+ *   pnpm daily --publish    pull, then commit the data files, deploy, push
  *                           (see publish() below)
  *
  * Run by the "PoliticsPlace daily pull" Windows scheduled task (see
@@ -88,7 +88,9 @@ const allOk = results.every(([, ok]) => ok);
 // `--publish`: when every step passed and the data looks sane, commit the
 // data files (only those -- code changes in the working tree are left alone)
 // and deploy that commit. The build runs in a throwaway worktree of HEAD so
-// a half-finished edit in the working tree never ships. Not pushed.
+// a half-finished edit in the working tree never ships. After a successful
+// deploy, main is pushed to origin (which also carries any local commits
+// made since the last push).
 if (process.argv.includes("--publish")) {
   log(`\n=== publish ===`);
   if (!allOk) {
@@ -133,19 +135,22 @@ function publish() {
 
   const wt = join(tmpdir(), `politicsplace-deploy-${Date.now()}`);
   if (!sh(`git worktree add --detach "${wt}" HEAD`)) return false;
+  let deployed;
   try {
-    return (
+    deployed =
       sh("pnpm install --frozen-lockfile --prefer-offline", wt) &&
       sh("pnpm build", wt) &&
       // Backup from the main checkout so the dump lands in its backups/.
       sh("pnpm db:backup") &&
       // The asset upload sometimes fails with a transient Cloudflare API
       // error (code 10013, 2026-10-26) that clears on the next try.
-      [1, 2, 3].some((n) => (n > 1 && log(`  retrying deploy (attempt ${n})`), sh("pnpm exec wrangler deploy", wt)))
-    );
+      [1, 2, 3].some((n) => (n > 1 && log(`  retrying deploy (attempt ${n})`), sh("pnpm exec wrangler deploy", wt)));
   } finally {
     sh(`git worktree remove --force "${wt}"`);
   }
+  // Push only what's live. A rejected push (origin moved ahead) is logged
+  // and fails the run; nothing is forced or rebased.
+  return deployed && sh("git push origin main");
 }
 
 /** Refuse to publish a pull that lost data compared with the last commit. */
