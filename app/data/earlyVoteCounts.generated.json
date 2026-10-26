@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-26T17:41:06.091Z",
+  "generatedAt": "2026-10-26T18:20:26.477Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 30034734,
+  "totalVoted": 30121039,
   "byState": {
     "AK": {
       "current": {
@@ -413,8 +413,8 @@
         "notes": "Some Florida statistics are obtained from county websites that may report more recent and higher numbers than the Florida Division of Elections reports.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 0.940590541720578,
-          "2024": 0.5576668575653417
+          "2022": 0.9593471644342931,
+          "2024": 0.5687874742240658
         }
       },
       "past": {
@@ -781,22 +781,22 @@
     },
     "KY": {
       "current": {
-        "voted": 32505,
-        "mailReturned": 27435,
-        "inPerson": 5070,
-        "mailRequested": 67471,
+        "voted": 38664,
+        "mailReturned": 31303,
+        "inPerson": 7361,
+        "mailRequested": 67480,
         "party": {
-          "dem": 17448,
-          "rep": 12511,
-          "other": 2546
+          "dem": 20445,
+          "rep": 15186,
+          "other": 3033
         },
         "mailRequestedParty": {
-          "dem": 37316,
-          "rep": 22869,
-          "other": 7286
+          "dem": 37302,
+          "rep": 22861,
+          "other": 7317
         },
         "turnout2022": 1502550,
-        "lastUpdate": "2026-10-23",
+        "lastUpdate": "2026-10-26",
         "source": "https://elect.ky.gov/Pages/default.aspx",
         "notes": "Kentucky reports are typically time-stamped one day behind when they are updated to this site. The reported date is as of the upload to this site is so that site vistors can be aware when a new report is available.",
         "partyBasis": "registration",
@@ -1967,10 +1967,10 @@
     },
     "TX": {
       "current": {
-        "voted": 4171837,
-        "mailReturned": 198922,
-        "inPerson": 3972915,
-        "mailRequested": 198922,
+        "voted": 4251983,
+        "mailReturned": 215341,
+        "inPerson": 4036642,
+        "mailRequested": null,
         "party": {
           "dem": 1415564,
           "rep": 1391624,
@@ -1978,8 +1978,8 @@
         },
         "mailRequestedParty": null,
         "turnout2022": 8151590,
-        "lastUpdate": "2026-10-26",
-        "source": "https://goelect.txelections.civixapps.com/ivis-evr-ui/evr",
+        "lastUpdate": "2026-10-25",
+        "source": "https://theoelections.com/early-vote",
         "notes": "Texas does not report mail ballot requests. Requests are equal to mail ballots sent.",
         "partyBasis": "primary",
         "partySource": "theoelections.com",
