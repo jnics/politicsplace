@@ -5,7 +5,7 @@ import { STATE_PATHS } from "~/data/statePaths";
 import { HISTORICAL_COLORS } from "~/lib/shades";
 import { formatVotes } from "~/lib/margin";
 import { hasStateGeo } from "~/lib/stateGeo";
-import { EarlyVoteCountyMap, PastTotals, type BaseYear } from "~/components/EarlyVoteCountyMap";
+import { EarlyVoteCountyMap, type BaseYear } from "~/components/EarlyVoteCountyMap";
 import { StatGrid, type Stat } from "~/components/StatGrid";
 import { EvLegend } from "~/components/EvLegend";
 import {
@@ -258,20 +258,25 @@ export function EarlyVoteMap() {
         ) : (
           <>
             <StateTop state={state} cur={cur} />
-            <PartyPastTable
-              state={state}
-              cur={cur}
-              past={entry.past}
-              // UF's 2024 split is registration, so only compare like with like.
-              past2024Party={
-                cur.partyBasis === "registration" ? entry.past["2024"]?.party ?? null : null
-              }
-            />
+            <PastCyclesTable state={state} cur={cur} past={entry.past} />
           </>
         )}
 
-        {(senate || governor) && (
-          <ModelTable senate={senate} governor={governor} />
+        {/* Party split and the forecast models side by side (either alone
+            takes the full width). */}
+        {(cur?.party || senate || governor) && (
+          <div className={cur?.party && (senate || governor) ? "grid grid-cols-2 gap-3" : undefined}>
+            {cur && cur.voted > 0 && (
+              <PartyTable
+                cur={cur}
+                // UF's 2024 split is registration, so only compare like with like.
+                past2024Party={
+                  cur.partyBasis === "registration" ? entry.past["2024"]?.party ?? null : null
+                }
+              />
+            )}
+            {(senate || governor) && <ModelTable senate={senate} governor={governor} />}
+          </div>
         )}
       </div>
     );
@@ -585,102 +590,131 @@ function StateTop({ state, cur }: { state: string; cur: CurrentEv }) {
 }
 
 /**
- * Party split (left) and early vote in past cycles (right) as ONE table, so
- * each party row sits level with a past-cycle row instead of two columns
- * drifting apart. The shorter side is padded with empty cells.
+ * Past cycles as one table: a row per year with that cycle's early vote and
+ * its total vote (both EAVS), each followed by 2026's early vote so far as a
+ * share of it. The same-day pace sits on a line above.
  */
-function PartyPastTable({
+function PastCyclesTable({
   state,
   cur,
   past,
-  past2024Party,
 }: {
   state: string;
   cur: CurrentEv;
   past: Record<"2024" | "2022" | "2020" | "2016", PastEv | null>;
-  past2024Party: PartySplit | null;
 }) {
-  const party = cur.party;
-  const s = party ? shares(party) : null;
-  const p = past2024Party ? shares(past2024Party) : null;
-  const lead = s ? s.d - s.r : 0;
-  const pastLead = p ? p.d - p.r : null;
-  const fmtLead = (l: number) => `${l >= 0 ? "D" : "R"}+${Math.abs(l).toFixed(1)}`;
-  const left: { label: string; votes?: number; pct: string; past?: string; cls?: string; pastCls?: string }[] =
-    party && s
-      ? [
-          { label: "Dem", votes: party.dem, pct: `${s.d.toFixed(1)}%`, past: p?.d.toFixed(1) },
-          { label: "Rep", votes: party.rep, pct: `${s.r.toFixed(1)}%`, past: p?.r.toFixed(1) },
-          { label: "Other", votes: party.other, pct: `${s.o.toFixed(1)}%`, past: p?.o.toFixed(1) },
-          {
-            label: "Lead",
-            pct: fmtLead(lead),
-            cls: leadClass(lead),
-            past: pastLead != null ? fmtLead(pastLead) : undefined,
-            pastCls: pastLead != null ? leadClass(pastLead) : undefined,
-          },
-        ]
-      : [];
-
-  const right: [label: string, value: string][] = [];
   const sd = cur.sameDay;
   // 2026 so far as a share of that cycle at the same number of days out.
-  if (sd?.[2022]) right.push(["vs same day '22", `${(sd[2022] * 100).toFixed(0)}%`]);
-  if (sd?.[2024]) right.push(["vs same day '24", `${(sd[2024] * 100).toFixed(0)}%`]);
-  // Finals: EAVS (the federal survey, every cycle, same definition) first;
-  // the UF / On Point / US Elections Project numbers only where EAVS has none.
+  const sameDay = [
+    sd?.[2022] ? `'22 ${(sd[2022] * 100).toFixed(0)}%` : null,
+    sd?.[2024] ? `'24 ${(sd[2024] * 100).toFixed(0)}%` : null,
+  ].filter(Boolean);
+  // EAVS (the federal survey, every cycle, same definition) first; the UF /
+  // On Point / US Elections Project early numbers only where EAVS has none.
   const eavs = HISTORY.byState[state];
-  // Total ballots cast each cycle (EAVS), with the same "2026 at" comparison.
-  const totals: [year: string, value: string][] = [];
-  for (const y of ["2024", "2022", "2020", "2018", "2016"] as const) {
-    const v = eavs?.[y]?.ev || (y !== "2018" ? past[y]?.voted : null);
-    if (v) right.push([y, `${shortVotes(v)} · 2026 at ${pctOf(cur.voted, v)!.toFixed(0)}%`]);
-    const t = eavs?.[y]?.t;
-    if (t) totals.push([y, `${shortVotes(t)} · 2026 at ${pctOf(cur.voted, t)!.toFixed(0)}%`]);
-  }
-
-  const partyHead = cur.partyBasis
-    ? `${PARTY_LABEL[cur.partyBasis]}${cur.partySource ? ` (${cur.partySource})` : ""}`
-    : "No party data";
-  const partyCols = p ? 4 : 3;
-  const n = Math.max(left.length, right.length);
+  const rows = (["2024", "2022", "2020", "2018", "2016"] as const)
+    .map((y) => ({
+      y,
+      ev: eavs?.[y]?.ev || (y !== "2018" ? past[y]?.voted : null) || null,
+      t: eavs?.[y]?.t || null,
+    }))
+    .filter((r) => r.ev || r.t);
+  if (!rows.length && !sameDay.length) return null;
+  const cell = (n: number | null) =>
+    n ? (
+      <>
+        <td className="text-right">{shortVotes(n)}</td>
+        <td className={`text-right ${MUTED}`}>{pctOf(cur.voted, n)!.toFixed(0)}%</td>
+      </>
+    ) : (
+      <>
+        <td />
+        <td />
+      </>
+    );
 
   return (
-    <>
-    <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
-      <thead>
-        <tr className={`${MUTED} text-left`}>
-          <th colSpan={partyCols} className="pb-0.5 pt-1 font-normal">
-            {partyHead}
-            {p && <span className="float-right">2024</span>}
-          </th>
-          <th className="w-4" />
-          <th colSpan={2} className="pb-0.5 pt-1 font-normal">Early vote in past cycles</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Array.from({ length: n }, (_, i) => {
-          const l = left[i];
-          const r = right[i];
-          return (
-            <tr key={i}>
-              <td>{l?.label}</td>
-              <td className="text-right">{l?.votes != null ? formatVotes(l.votes) : ""}</td>
-              <td className={`text-right ${l?.cls ?? ""}`}>{l?.pct}</td>
-              {p && <td className={`text-right ${l?.pastCls ?? MUTED}`}>{l?.past}</td>}
-              <td />
-              <td>{r?.[0]}</td>
-              <td className={`text-right ${MUTED}`}>{r?.[1]}</td>
+    <div className="border-t border-white/15 pt-1 dark:border-black/10">
+      {sameDay.length > 0 && (
+        <div className={MUTED}>2026 vs same day: {sameDay.join(" · ")}</div>
+      )}
+      {rows.length > 0 && (
+        <table className="w-full tabular-nums">
+          <thead>
+            <tr className={`${MUTED} text-right`}>
+              <th className="text-left font-normal">Past cycles</th>
+              <th className="font-normal">Early vote</th>
+              <th className="font-normal">2026 at</th>
+              <th className="font-normal">Total vote</th>
+              <th className="font-normal">2026 at</th>
             </tr>
-          );
-        })}
-      </tbody>
-    </table>
-    <PastTotals rows={totals} />
-    </>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.y}>
+                <td>{r.y}</td>
+                {cell(r.ev)}
+                {cell(r.t)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </div>
   );
 }
 
+/** The early-ballot party split, with 2024's beside it when it's like for like. */
+function PartyTable({ cur, past2024Party }: { cur: CurrentEv; past2024Party: PartySplit | null }) {
+  const party = cur.party;
+  const s = party ? shares(party) : null;
+  if (!party || !s) return null;
+  const p = past2024Party ? shares(past2024Party) : null;
+  const lead = s.d - s.r;
+  const pastLead = p ? p.d - p.r : null;
+  const fmtLead = (l: number) => `${l >= 0 ? "D" : "R"}+${Math.abs(l).toFixed(1)}`;
+  const rows: { label: string; votes?: number; pct: string; past?: string; cls?: string; pastCls?: string }[] = [
+    { label: "Dem", votes: party.dem, pct: `${s.d.toFixed(1)}%`, past: p?.d.toFixed(1) },
+    { label: "Rep", votes: party.rep, pct: `${s.r.toFixed(1)}%`, past: p?.r.toFixed(1) },
+    { label: "Other", votes: party.other, pct: `${s.o.toFixed(1)}%`, past: p?.o.toFixed(1) },
+    {
+      label: "Lead",
+      pct: fmtLead(lead),
+      cls: leadClass(lead),
+      past: pastLead != null ? fmtLead(pastLead) : undefined,
+      pastCls: pastLead != null ? leadClass(pastLead) : undefined,
+    },
+  ];
+  const head = cur.partyBasis
+    ? `${PARTY_LABEL[cur.partyBasis]}${cur.partySource ? ` (${cur.partySource})` : ""}`
+    : "Party";
+
+  return (
+    <div className="border-t border-white/15 pt-1 dark:border-black/10">
+      <div className={MUTED}>{head}</div>
+      <table className="w-full tabular-nums">
+        {p && (
+          <thead>
+            <tr className={MUTED}>
+              <th colSpan={3} />
+              <th className="text-right font-normal">2024</th>
+            </tr>
+          </thead>
+        )}
+        <tbody>
+          {rows.map((r) => (
+            <tr key={r.label}>
+              <td>{r.label}</td>
+              <td className="text-right">{r.votes != null ? shortVotes(r.votes) : ""}</td>
+              <td className={`text-right ${r.cls ?? ""}`}>{r.pct}</td>
+              {p && <td className={`text-right ${r.pastCls ?? MUTED}`}>{r.past}</td>}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
 
 /** Forecast models as a grid -- one row per model, Senate / Governor columns. */
 function ModelTable({

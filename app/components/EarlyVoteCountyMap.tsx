@@ -366,98 +366,75 @@ function CountyTip({
       ).map(([label, n, cls]) => ({ label, value: shortVotes(n), sub: `${pctOf(n, regTotal)!.toFixed(1)}%`, cls }))
     : [];
 
-  // Past cycles (EAVS).
-  const past: [string, string][] = [];
-  for (const y of HISTORY_YEARS) {
-    const h = hist?.[y];
-    const ev = h?.[0];
-    if (!ev) continue;
-    const share = h[3] ? ` (${pctOf(ev, h[3])!.toFixed(0)}% of vote)` : "";
-    const vs = has2026 ? ` · 2026 at ${pctOf(row!.v, ev)!.toFixed(0)}%` : "";
-    past.push([y, `${shortVotes(ev)}${share}${vs}`]);
-  }
-  // Total ballots cast each cycle, against 2026's early vote so far.
-  const totals: [string, string][] = [];
-  for (const y of HISTORY_YEARS) {
-    const t = hist?.[y]?.[3];
-    if (t) totals.push([y, `${shortVotes(t)}${has2026 ? ` · 2026 at ${pctOf(row!.v, t)!.toFixed(0)}%` : ""}`]);
-  }
-
-  // With an early-ballot party split: the current numbers sit on top as
-  // tiles and the table pairs the split with the past cycles. Without one
-  // (incl. GA / OH, whose party numbers are primary-vote tiles): the current
-  // numbers become the table's left side, level with the past cycles.
-  const hasParty = partyRows.length > 0;
-  const left: [string, string, string, string?][] = hasParty
-    ? partyRows
-    : current.map((c) => [c.label, String(c.value) + (c.sub ? ` (${c.sub})` : ""), ""]);
-  const leftHead = hasParty ? "Early ballots by party" : "2026 so far";
-  const n = Math.max(left.length, past.length);
+  // Past cycles (EAVS): early vote and total vote per year, each followed by
+  // 2026's early vote so far as a share of it -- same layout as the state card.
+  const past = HISTORY_YEARS.map((y) => ({ y, ev: hist?.[y]?.[0] || null, t: hist?.[y]?.[3] || null })).filter(
+    (r) => r.ev || r.t
+  );
+  const cell = (n: number | null) =>
+    n ? (
+      <>
+        <td className="text-right">{shortVotes(n)}</td>
+        <td className={`text-right ${muted}`}>{has2026 ? `${pctOf(row!.v, n)!.toFixed(0)}%` : ""}</td>
+      </>
+    ) : (
+      <>
+        <td />
+        <td />
+      </>
+    );
 
   return (
     <div className="space-y-1.5">
       <div className="font-semibold">{name}</div>
       {!has2026 && <div className={muted}>No 2026 early-vote data reported.</div>}
-      {hasParty && <StatGrid items={current} />}
+      {current.length > 0 && <StatGrid items={current} />}
       {regItems.length > 0 && <StatGrid items={regItems} />}
       {isPrimary && (
         <div className={muted}>
           No party registration in this state; Registered is the total only.
         </div>
       )}
-      {n > 0 && (
+      {past.length > 0 && (
         <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
           <thead>
-            <tr className={`${muted} text-left`}>
-              <th colSpan={3} className="pb-0.5 pt-1 font-normal">{leftHead}</th>
-              <th className="w-4" />
-              <th colSpan={2} className="pb-0.5 pt-1 font-normal">
-                {past.length ? "Early vote in past cycles" : ""}
-              </th>
+            <tr className={`${muted} text-right`}>
+              <th className="pb-0.5 pt-1 text-left font-normal">Past cycles</th>
+              <th className="pb-0.5 pt-1 font-normal">Early vote</th>
+              <th className="pb-0.5 pt-1 font-normal">{has2026 ? "2026 at" : ""}</th>
+              <th className="pb-0.5 pt-1 font-normal">Total vote</th>
+              <th className="pb-0.5 pt-1 font-normal">{has2026 ? "2026 at" : ""}</th>
             </tr>
           </thead>
           <tbody>
-            {Array.from({ length: n }, (_, i) => {
-              const l = left[i];
-              const r = past[i];
-              return (
-                <tr key={i}>
-                  <td className={hasParty ? undefined : muted}>{l?.[0]}</td>
-                  <td className="text-right">{l?.[1]}</td>
-                  <td className={`text-right ${l?.[3] ?? ""}`}>{l?.[2]}</td>
-                  <td />
-                  <td>{r?.[0]}</td>
-                  <td className={`text-right ${muted}`}>{r?.[1]}</td>
-                </tr>
-              );
-            })}
+            {past.map((r) => (
+              <tr key={r.y}>
+                <td>{r.y}</td>
+                {cell(r.ev)}
+                {cell(r.t)}
+              </tr>
+            ))}
           </tbody>
         </table>
       )}
-      <PastTotals rows={totals} />
+      {partyRows.length > 0 && (
+        <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
+          <thead>
+            <tr className={`${muted} text-left`}>
+              <th colSpan={3} className="pb-0.5 pt-1 font-normal">Early ballots by party</th>
+            </tr>
+          </thead>
+          <tbody>
+            {partyRows.map(([label, votes, pct, cls]) => (
+              <tr key={label}>
+                <td>{label}</td>
+                <td className="text-right">{votes}</td>
+                <td className={`text-right ${cls ?? ""}`}>{pct}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
-  );
-}
-
-/** Total ballots cast in past cycles (EAVS), each against 2026's early vote
- *  so far. Shared by the state and county cards. */
-export function PastTotals({ rows }: { rows: [year: string, value: string][] }) {
-  if (!rows.length) return null;
-  return (
-    <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
-      <thead>
-        <tr className="text-left text-gray-300 dark:text-gray-600">
-          <th colSpan={2} className="pb-0.5 pt-1 font-normal">Total vote in past cycles</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map(([y, v]) => (
-          <tr key={y}>
-            <td>{y}</td>
-            <td className="text-right text-gray-300 dark:text-gray-600">{v}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
   );
 }
