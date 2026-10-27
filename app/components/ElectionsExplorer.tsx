@@ -154,7 +154,8 @@ export function ElectionsExplorer() {
   const [showGenericBallot, setShowGenericBallot] = useState(false);
   // Same idea for the 2026 early-vote map: its own self-contained view, so
   // none of the prediction-map state (picks, palette, drill-in) applies.
-  const [showEarlyVote, setShowEarlyVote] = useState(false);
+  // The early-vote map is the first tab and what the page opens on.
+  const [showEarlyVote, setShowEarlyVote] = useState(true);
   const [presYear, setPresYear] = useState<PresidentialYear>(2024);
   const [senYear, setSenYear] = useState<SenateCycleYear | 2026>(2026);
   const [selectedShade, setSelectedShade] = useState<Shade>("tossup");
@@ -792,6 +793,22 @@ export function ElectionsExplorer() {
       </header>
 
       <div className="mb-3 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
+        <button
+          onClick={() => {
+            setShowEarlyVote(true);
+            setShowGenericBallot(false);
+            setZoomState(null);
+            setZoomHouse(false);
+          }}
+          title="2026 early vote so far, by state, against past cycles and the forecast models"
+          className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
+            showEarlyVote
+              ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+              : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          }`}
+        >
+          2026 Early Vote
+        </button>
         {(["senate", "president"] as RaceType[]).map((type) => (
           <button
             key={type}
@@ -825,22 +842,6 @@ export function ElectionsExplorer() {
           }`}
         >
           Generic Ballot
-        </button>
-        <button
-          onClick={() => {
-            setShowEarlyVote(true);
-            setShowGenericBallot(false);
-            setZoomState(null);
-            setZoomHouse(false);
-          }}
-          title="2026 early vote so far, by state, against past cycles and the forecast models"
-          className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
-            showEarlyVote
-              ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
-              : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-          }`}
-        >
-          2026 Early Vote
         </button>
         {zoomState && !showGenericBallot && !showEarlyVote && (
           <button
