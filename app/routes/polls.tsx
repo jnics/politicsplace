@@ -72,38 +72,32 @@ function officeYears(allRaces: RacePolls[], office: RaceType): number[] {
   return [...ys].sort((a, b) => a - b);
 }
 
-/** This tab's own aggregate: the mean D% and R% across every polled race of
- *  that office in a year. */
-function officeAverage(
+/** This tab's own aggregate: how many of the office's polled races in a year
+ *  each party leads (by the same leader the race card shows), as a share of
+ *  all of them. Tied and third-party leads count toward the total only. */
+function officeLeads(
   allRaces: RacePolls[],
   office: RaceType,
   year: number
-): { d: number; r: number; spread: string; n: number } | null {
+): { d: number; r: number; dCount: number; rCount: number; n: number } | null {
   const races = allRaces.filter(
     (x) => x.raceType === office && raceYear(x) === year && x.polls.length > 0
   );
-  const ds: number[] = [];
-  const rs: number[] = [];
+  let dCount = 0, rCount = 0, n = 0;
   for (const race of races) {
-    let d = 0, nd = 0, r = 0, nr = 0;
-    for (const poll of race.polls) {
-      const pd = poll.results.find((x) => x.party === "D")?.pct;
-      const pr = poll.results.find((x) => x.party === "R")?.pct;
-      if (pd != null) { d += pd; nd += 1; }
-      if (pr != null) { r += pr; nr += 1; }
-    }
-    if (nd) ds.push(d / nd);
-    if (nr) rs.push(r / nr);
+    const s = raceSummary(race);
+    if (!s) continue;
+    n += 1;
+    if (s.party === "D") dCount += 1;
+    else if (s.party === "R") rCount += 1;
   }
-  if (!ds.length || !rs.length) return null;
-  const dAvg = ds.reduce((s, x) => s + x, 0) / ds.length;
-  const rAvg = rs.reduce((s, x) => s + x, 0) / rs.length;
-  const m = dAvg - rAvg;
+  if (!n) return null;
   return {
-    d: Math.round(dAvg * 10) / 10,
-    r: Math.round(rAvg * 10) / 10,
-    spread: `${m >= 0 ? "D" : "R"}+${Math.abs(m).toFixed(1)}`,
-    n: races.length,
+    d: Math.round((dCount / n) * 1000) / 10,
+    r: Math.round((rCount / n) * 1000) / 10,
+    dCount,
+    rCount,
+    n,
   };
 }
 
@@ -123,11 +117,13 @@ interface BallotData {
   /** Right-aligned meta line. */
   sub: string;
   note?: string;
+  /** Race counts behind d/r, for the races-led tabs. */
+  counts?: { d: number; r: number; n: number };
 }
 
 /** The D-vs-R figure for one tab in one year. House uses the national generic
- *  congressional ballot; the other offices use the mean of that office's polled
- *  races (see officeAverage). */
+ *  congressional ballot; the other offices use the share of that office's
+ *  polled races each party leads (see officeLeads). */
 function ballotFor(allRaces: RacePolls[], tab: RaceType, year: number): BallotData | null {
   if (tab === "house") {
     const g = GENERIC_BALLOT.find((x) => x.year === year);
@@ -140,14 +136,17 @@ function ballotFor(allRaces: RacePolls[], tab: RaceType, year: number): BallotDa
       note: g.note,
     };
   }
-  const agg = officeAverage(allRaces, tab, year);
+  const agg = officeLeads(allRaces, tab, year);
   if (!agg) return null;
+  const lead = agg.dCount - agg.rCount;
+  const other = agg.n - agg.dCount - agg.rCount;
   return {
     d: agg.d,
     r: agg.r,
-    spread: agg.spread,
-    sub: `mean of ${agg.n} race${agg.n === 1 ? "" : "s"} · ${year}`,
-    note: `Unweighted mean of the D and R polling average across every ${year} ${OFFICE_LABEL[tab].toLowerCase()} race with polls on this page.`,
+    spread: lead === 0 ? "Even" : `${lead > 0 ? "D" : "R"}+${Math.abs(lead)}`,
+    sub: `leads in ${agg.n} polled race${agg.n === 1 ? "" : "s"} · ${year}`,
+    note: `Share of the ${agg.n} ${year} ${OFFICE_LABEL[tab].toLowerCase()} races with polls on this page that each party leads in its polling average${other ? ` (${other} tied or led by another candidate)` : ""}. Unpolled races are not counted.`,
+    counts: { d: agg.dCount, r: agg.rCount, n: agg.n },
   };
 }
 
@@ -178,7 +177,7 @@ function BallotCard({
         <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
           {tab === "house"
             ? "Generic congressional ballot"
-            : `${OFFICE_LABEL[tab]} polling average`}
+            : `${OFFICE_LABEL[tab]} races led`}
         </h2>
         <span className="text-xs text-gray-400 dark:text-gray-500">
           {data ? data.sub : "—"}
@@ -216,19 +215,21 @@ function BallotCard({
         <>
           <div className="mt-3 flex items-baseline justify-between text-sm">
             <span className="font-semibold text-blue-600 dark:text-blue-400">
-              D {data.d}%
+              D {data.counts ? `${data.counts.d}/${data.counts.n} · ` : ""}{data.d}%
             </span>
             <span
               className={`font-bold ${
                 data.spread.startsWith("D")
                   ? "text-blue-600 dark:text-blue-400"
-                  : "text-red-600 dark:text-red-400"
+                  : data.spread.startsWith("R")
+                  ? "text-red-600 dark:text-red-400"
+                  : "text-gray-500 dark:text-gray-400"
               }`}
             >
               {data.spread}
             </span>
             <span className="font-semibold text-red-600 dark:text-red-400">
-              R {data.r}%
+              R {data.counts ? `${data.counts.r}/${data.counts.n} · ` : ""}{data.r}%
             </span>
           </div>
           <div className="mt-1.5 flex h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-800">
@@ -281,8 +282,9 @@ function BallotCard({
 /** Leader + margin summary for a race, preferring the source's own average. */
 function raceSummary(race: RacePolls): { text: string; party: PartyCode } | null {
   if (race.aggregateAverage) {
-    const top = [...race.aggregateAverage.results].sort((a, b) => b.pct - a.pct)[0];
-    return { text: race.aggregateAverage.spread, party: top?.party ?? "O" };
+    const [top, second] = [...race.aggregateAverage.results].sort((a, b) => b.pct - a.pct);
+    const tied = top && second && top.pct === second.pct;
+    return { text: race.aggregateAverage.spread, party: tied ? "O" : top?.party ?? "O" };
   }
   const margin = averageMargin(race);
   const [a, b] = race.candidates;
