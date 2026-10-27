@@ -61,11 +61,12 @@ const ORD = (n) =>
 const PARTY = { Democrat: "D", Republican: "R", Independent: "I" };
 const party = (affiliation) => PARTY[affiliation] ?? "O";
 
-/** "PA10" -> 10; at-large ("AKAL") is district 1, matching the other sources. */
+/** "PA10" / "MT-1" -> 10 / 1; at-large ("AKAL") is district 1, matching the
+ *  other sources. */
 function parseDistrict(d) {
   if (!d) return undefined;
   if (/AL$/i.test(d)) return 1;
-  const n = Number(String(d).replace(/^[A-Z]{2}/i, ""));
+  const n = Number(String(d).match(/(\d+)$/)?.[1]);
   return Number.isFinite(n) && n > 0 ? n : undefined;
 }
 

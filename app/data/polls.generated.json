@@ -53127,44 +53127,6 @@
   {
    "raceType": "house",
    "state": "MT",
-   "title": "Montana undefinedth District",
-   "candidates": [
-    {
-     "name": "Sam Forstag",
-     "party": "D"
-    },
-    {
-     "name": "Aaron Flint",
-     "party": "R"
-    }
-   ],
-   "polls": [
-    {
-     "pollster": "Poll Vault/Emerson",
-     "startDate": "2026-10-12",
-     "endDate": "2026-10-14",
-     "sampleSize": 329,
-     "population": "LV",
-     "results": [
-      {
-       "candidate": "Sam Forstag",
-       "party": "D",
-       "pct": 50
-      },
-      {
-       "candidate": "Aaron Flint",
-       "party": "R",
-       "pct": 46
-      }
-     ]
-    }
-   ],
-   "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
-  },
-  {
-   "raceType": "house",
-   "state": "MT",
    "district": 1,
    "title": "Montana 1st District",
    "candidates": [
@@ -53298,6 +53260,45 @@
    ],
    "source": "Wikipedia",
    "sourceNote": "Wikipedia",
+   "lastPulled": "2026-10-27"
+  },
+  {
+   "raceType": "house",
+   "state": "MT",
+   "district": 1,
+   "title": "Montana 1st District",
+   "candidates": [
+    {
+     "name": "Sam Forstag",
+     "party": "D"
+    },
+    {
+     "name": "Aaron Flint",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "Poll Vault/Emerson",
+     "startDate": "2026-10-12",
+     "endDate": "2026-10-14",
+     "sampleSize": 329,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Sam Forstag",
+       "party": "D",
+       "pct": 50
+      },
+      {
+       "candidate": "Aaron Flint",
+       "party": "R",
+       "pct": 46
+      }
+     ]
+    }
+   ],
+   "source": "RealClearPolling",
    "lastPulled": "2026-10-27"
   },
   {
