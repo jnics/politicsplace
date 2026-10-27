@@ -330,7 +330,8 @@ function CountyTip({
       sub: row!.r > 0 ? `${pctOf(row!.m, row!.r)!.toFixed(0)}%` : undefined,
     });
   if (has2026 && row!.i > 0) current.push({ label: "In person", value: shortVotes(row!.i) });
-  if (eligible) current.push({ label: "Eligible voters", value: shortVotes(eligible) });
+  // Eligible voters only where there's no registration count (North Dakota).
+  if (eligible && !registered) current.push({ label: "Eligible voters", value: shortVotes(eligible) });
   if (registered) current.push({ label: "Registered", value: shortVotes(registered) });
 
   // Party of early ballots (registration states).

@@ -547,7 +547,8 @@ function StateTop({ state, cur }: { state: string; cur: CurrentEv }) {
       sub: cur.mailRequested ? `${pctOf(cur.mailReturned, cur.mailRequested)!.toFixed(0)}%` : undefined,
     });
   if (cur.inPerson != null) items.push({ label: "In person", value: shortVotes(cur.inPerson) });
-  if (eligible) items.push({ label: "Eligible voters", value: shortVotes(eligible) });
+  // Eligible voters only where there's no registration count (North Dakota).
+  if (eligible && !e?.registered) items.push({ label: "Eligible voters", value: shortVotes(eligible) });
   if (e?.registered) items.push({ label: "Registered", value: shortVotes(e.registered) });
 
   // Official registration only. L2's modeled split for the 18 states without
@@ -693,14 +694,14 @@ function PartyTable({ cur, past2024Party }: { cur: CurrentEv; past2024Party: Par
     <div className="border-t border-white/15 pt-1 dark:border-black/10">
       <div className={MUTED}>{head}</div>
       <table className="w-full tabular-nums">
-        {p && (
-          <thead>
-            <tr className={MUTED}>
-              <th colSpan={3} />
-              <th className="text-right font-normal">2024</th>
-            </tr>
-          </thead>
-        )}
+        {/* Always a header line (blank without a 2024 column), so the rows
+            sit level with the models table's Senate / Governor header. */}
+        <thead>
+          <tr className={MUTED}>
+            <th colSpan={3} className="font-normal">&nbsp;</th>
+            {p && <th className="text-right font-normal">2024</th>}
+          </tr>
+        </thead>
         <tbody>
           {rows.map((r) => (
             <tr key={r.label}>
