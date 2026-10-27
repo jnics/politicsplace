@@ -178,7 +178,7 @@ function ratingText(r: Rating): string {
  * the 2026 prediction map (picks, palette, drill-in) applies here.
  */
 export function EarlyVoteMap() {
-  const [metric, setMetric] = useState<Metric>("turnout");
+  const [metric, setMetric] = useState<Metric>("party");
   // Turnout year the county map compares against (its "Compare to" switch);
   // the sidebar donut follows it while drilled in.
   const [baseYear, setBaseYear] = useState<BaseYear>("2022");
@@ -339,28 +339,53 @@ export function EarlyVoteMap() {
   return (
     <div className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
       <div className="mb-3 flex flex-wrap items-center gap-2">
-        {(
-          [
-            ["turnout", "% of 2022 electorate voted"],
-            ["party", "Party lead"],
-          ] as const
-        )
-          .filter(([m]) => m !== "party" || showPartyOption)
-          .map(([m, label]) => (
-          <button
-            key={m}
-            onClick={() => setMetric(m)}
-            className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
-              // With "Party lead" hidden, the county map is shading by
-              // turnout, so that's the option shown as selected.
-              metric === m || (!showPartyOption && m === "turnout")
-                ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
-                : "border border-gray-300 text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
-            }`}
-          >
-            {label}
-          </button>
-        ))}
+        {/* One pill with a sliding highlight. Without a county party split
+            the map shades by turnout, so that side shows as selected and
+            "Party Lead" is disabled. */}
+        {(() => {
+          const shown: Metric = showPartyOption ? metric : "turnout";
+          const options = [
+            ["party", "Party Lead"],
+            ["turnout", "VS. 2022 %"],
+          ] as const;
+          return (
+            <div
+              role="radiogroup"
+              aria-label="Color the map by"
+              className="relative grid grid-cols-2 rounded-full bg-gray-100 p-0.5 text-xs font-semibold dark:bg-gray-800"
+            >
+              <span
+                aria-hidden
+                className={`absolute inset-y-0.5 left-0.5 w-[calc(50%-2px)] rounded-full bg-gray-900 shadow transition-transform duration-200 dark:bg-gray-100 ${
+                  shown === "turnout" ? "translate-x-full" : ""
+                }`}
+              />
+              {options.map(([m, label]) => {
+                const disabled = m === "party" && !showPartyOption;
+                const on = shown === m;
+                return (
+                  <button
+                    key={m}
+                    role="radio"
+                    aria-checked={on}
+                    disabled={disabled}
+                    title={disabled ? "No county party data for this state" : undefined}
+                    onClick={() => setMetric(m)}
+                    className={`relative z-10 rounded-full px-4 py-1 transition-colors ${
+                      on
+                        ? "text-white dark:text-gray-900"
+                        : disabled
+                        ? "cursor-not-allowed text-gray-300 dark:text-gray-600"
+                        : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+          );
+        })()}
       </div>
 
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-0">

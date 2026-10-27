@@ -46,17 +46,30 @@ export function Section({
   );
 }
 
+/**
+ * Bar color by how far 2026 has got: red, then warm to green, with green
+ * kept for passing the old total. No blue -- that means Democrats.
+ */
+const PCT_TIERS: [min: number, bar: string][] = [
+  // Vivid green with a soft glow, so passing 100% stands out from the lime.
+  [100, "bg-green-400 shadow-[0_0_4px_1px] shadow-green-400/70 dark:bg-green-500 dark:shadow-green-500/60"],
+  [75, "bg-lime-400 dark:bg-lime-600"],
+  [50, "bg-yellow-300 dark:bg-yellow-500"],
+  [25, "bg-amber-500 dark:bg-amber-600"],
+  [0, "bg-red-800 dark:bg-red-900"], // maroon, well clear of the amber
+];
+
 /** A percent with a thin bar under it, capped at full width past 100%. */
 export function PctBar({ pct }: { pct: number }) {
   const over = pct >= 100;
+  const bar = PCT_TIERS.find(([min]) => pct >= min)![1];
   return (
     <div className="ml-auto w-14">
-      <div className={`text-right ${over ? "font-semibold" : SOFT}`}>{pct.toFixed(0)}%</div>
+      <div className={`text-right ${over ? "font-semibold text-green-300 dark:text-green-700" : SOFT}`}>
+        {pct.toFixed(0)}%
+      </div>
       <div className="h-[3px] rounded-full bg-white/10 dark:bg-black/10">
-        <div
-          className={`h-full rounded-full ${over ? "bg-emerald-400 dark:bg-emerald-600" : "bg-sky-400 dark:bg-sky-600"}`}
-          style={{ width: `${Math.min(pct, 100)}%` }}
-        />
+        <div className={`h-full rounded-full ${bar}`} style={{ width: `${Math.min(pct, 100)}%` }} />
       </div>
     </div>
   );
@@ -92,13 +105,13 @@ export function LeadPill({ lead }: { lead: number }) {
   );
 }
 
-/** Year | early vote | 2026 at | total vote | 2026 at. Used by the state and county cards. */
+/** Year | early vote | 2026 % | total vote | 2026 %. Used by the state and county cards. */
 export function CyclesTable({
   rows,
   now,
 }: {
   rows: { y: string; ev: number | null; t: number | null }[];
-  /** 2026's early vote so far; null hides the "2026 at" columns' values. */
+  /** 2026's early vote so far; null hides the "2026" columns' values. */
   now: number | null;
 }) {
   const cell = (n: number | null) =>
@@ -119,9 +132,9 @@ export function CyclesTable({
         <tr className={`${EYEBROW} text-right`}>
           <th className="text-left font-semibold" />
           <th className="font-semibold">Early</th>
-          <th className="font-semibold">{now ? "2026 at" : ""}</th>
+          <th className="font-semibold">{now ? "2026" : ""}</th>
           <th className="font-semibold">Total</th>
-          <th className="font-semibold">{now ? "2026 at" : ""}</th>
+          <th className="font-semibold">{now ? "2026" : ""}</th>
         </tr>
       </thead>
       <tbody>
