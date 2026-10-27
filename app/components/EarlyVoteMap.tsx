@@ -491,8 +491,9 @@ export function EarlyVoteMap() {
           </li>
           <li>
             &ldquo;Same point&rdquo; compares 2026 so far against 2022 and 2024 at the same
-            number of days before Election Day (On Point Politics); the 2022 final totals are
-            also theirs, and a few are rounded.
+            number of days before Election Day (On Point Politics; where it has no 2022
+            point, the state&rsquo;s own 2022 count via ElectIndex); the 2022 final
+            totals are On Point&rsquo;s, and a few are rounded.
           </li>
           <li>
             2024 and 2020 were presidential years with far more early voting, so the 2022

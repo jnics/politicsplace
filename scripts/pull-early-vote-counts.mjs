@@ -42,6 +42,10 @@ const OUT_PATH = resolve(root, "app/data/earlyVoteCounts.generated.json");
 const COUNTY_OUT_PATH = resolve(root, "app/data/geo/earlyvote-2026-counties.json");
 const GEO_DIR = resolve(root, "app/data/geo");
 const THEO_PAGE = "https://theoelections.com/early-vote";
+// ElectIndex's tracker repo: one row per state per day, 2020-2026, mostly
+// from the state election offices (source_tier 1).
+const ELECTINDEX_DAILY = "https://raw.githubusercontent.com/ElectIndex/26_early_vote/HEAD/output/ev_state_daily.csv";
+const ELECTION_DAY_2026 = Date.UTC(2026, 10, 3);
 
 const STATES = [
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID",
@@ -242,6 +246,24 @@ async function pullTexasPrimaryHistory() {
  * same number of days out). Used only where a state has no reported party, and
  * for the 2022 / same-day comparisons UF doesn't publish per state.
  */
+/**
+ * 2022 cumulative early vote by days before Election Day, per state, from
+ * ElectIndex: { OR: { 8: 590337, ... } }. Fills the "vs same day '22" figure
+ * for states On Point has no 2022 pace for.
+ */
+async function pull2022Daily() {
+  const [head, ...lines] = (await fetchText(ELECTINDEX_DAILY)).trim().split(/\r?\n/);
+  const col = Object.fromEntries(head.split(",").map((k, i) => [k, i]));
+  const out = {};
+  for (const line of lines) {
+    const r = line.split(",");
+    const total = num(r[col.ballots_total]);
+    if (r[col.cycle] !== "2022" || !(total > 0)) continue;
+    (out[r[col.state]] ??= {})[Number(r[col.days_to_election])] = total;
+  }
+  return out;
+}
+
 async function pullOnPoint() {
   const html = await fetchText("https://onpointpolitics.us/maps/early-vote");
   let flight = "";
@@ -363,13 +385,14 @@ async function pullCounties(usps) {
 }
 
 async function main() {
-  const [y2026, y2024, y2020, y2016, txPrimary, onPoint] = await Promise.all([
+  const [y2026, y2024, y2020, y2016, txPrimary, onPoint, daily2022] = await Promise.all([
     pull2026(),
     pull2024(),
     pull2020().catch((e) => (console.warn(`2020 skipped: ${e.message}`), {})),
     pull2016().catch((e) => (console.warn(`2016 skipped: ${e.message}`), {})),
     pullTexasPrimaryHistory().catch((e) => (console.warn(`TX primary split skipped: ${e.message}`), null)),
     pullOnPoint().catch((e) => (console.warn(`On Point skipped: ${e.message}`), {})),
+    pull2022Daily().catch((e) => (console.warn(`ElectIndex 2022 daily skipped: ${e.message}`), {})),
   ]);
 
   // Best party source per state: reported registration (UF), then primary
@@ -411,6 +434,19 @@ async function main() {
       s.partySource = "On Point Polling";
       modeled += 1;
     }
+  }
+
+  // No On Point 2022 pace: compare against ElectIndex's 2022 count at the
+  // same number of days out as this state's own 2026 as-of date (exact day
+  // only -- no interpolating).
+  const filled22 = [];
+  for (const [usps, s] of Object.entries(y2026)) {
+    if (s.sameDay?.[2022] || !(s.voted > 0) || !s.lastUpdate) continue;
+    const daysOut = Math.round((ELECTION_DAY_2026 - Date.parse(s.lastUpdate)) / 864e5);
+    const then = daily2022[usps]?.[daysOut];
+    if (!then) continue;
+    s.sameDay = { 2022: s.voted / then, 2024: s.sameDay?.[2024] ?? null, source2022: "ElectIndex" };
+    filled22.push(usps);
   }
 
   // Counties, a few states at a time to stay polite.
@@ -480,6 +516,7 @@ async function main() {
     }.`
   );
   console.log(`On Point: ${Object.keys(onPoint).length} states read, ${modeled} given modeled party.`);
+  console.log(`2022 same-day from ElectIndex: ${filled22.join(", ") || "none"}.`);
   console.log(`Counties: ${countyReport.join(", ")}`);
   console.log(`Wrote ${OUT_PATH}`);
   console.log(`Wrote ${COUNTY_OUT_PATH}`);
