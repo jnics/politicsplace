@@ -118,7 +118,94 @@ function pickRace(a: RacePolls, b: RacePolls): RacePolls {
   return b.polls.length > a.polls.length ? b : a;
 }
 
-/** All races: a pulled race replaces the seeded example with the same key. */
+/** Words too generic to identify a pollster ("Emerson College" vs
+ *  "Poll Vault/Emerson" should match on "emerson", not on "college"). */
+const POLLSTER_STOPWORDS = new Set([
+  "the", "and", "of", "co", "poll", "polls", "polling", "research", "group",
+  "university", "college", "institute", "strategies", "strategy", "insights",
+  "communications", "data", "news", "politics", "public", "policy", "school",
+  "center", "survey", "surveys", "analytics", "associates", "partners", "inc",
+]);
+
+function pollsterTokens(name: string): Set<string> {
+  return new Set(
+    name
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((t) => t.length > 2 && !POLLSTER_STOPWORDS.has(t))
+  );
+}
+
+function samePollster(a: Poll, b: Poll): boolean {
+  if (a.pollster.trim().toLowerCase() === b.pollster.trim().toLowerCase()) return true;
+  const ta = pollsterTokens(a.pollster);
+  for (const t of pollsterTokens(b.pollster)) if (ta.has(t)) return true;
+  return false;
+}
+
+const DAY = 86_400_000;
+const dayOf = (iso: string) => Date.parse(iso.slice(0, 10));
+
+/** Whether two sources list the same poll. Sources disagree on dates
+ *  (Wikipedia often gives only the first field day) and on sample size by a
+ *  few respondents, so: field periods overlap within 2 days, the D and R
+ *  numbers match exactly, and either the samples are within 5% or the
+ *  pollster names share a distinctive word. */
+function samePoll(a: Poll, b: Poll): boolean {
+  const pct = (p: Poll, party: PartyCode) => p.results.find((r) => r.party === party)?.pct;
+  const ad = pct(a, "D"), ar = pct(a, "R");
+  if (ad == null || ar == null || ad !== pct(b, "D") || ar !== pct(b, "R")) return false;
+  const aStart = dayOf(a.startDate || a.endDate), aEnd = dayOf(a.endDate);
+  const bStart = dayOf(b.startDate || b.endDate), bEnd = dayOf(b.endDate);
+  if (aStart > bEnd + 2 * DAY || bStart > aEnd + 2 * DAY) return false;
+  const sizesClose =
+    a.sampleSize != null &&
+    b.sampleSize != null &&
+    Math.abs(a.sampleSize - b.sampleSize) <= 0.05 * Math.max(a.sampleSize, b.sampleSize);
+  return sizesClose || samePollster(a, b);
+}
+
+const SOURCE_SHORT: Record<string, string> = { RealClearPolling: "RCP" };
+const shortSource = (s: string) => SOURCE_SHORT[s] ?? s;
+
+/** Fold another source's polls for the same race into `base`: skip any poll
+ *  `base` already lists (see samePoll) or that is an older wave from a
+ *  pollster `base` has newer numbers for, and label the race with both
+ *  sources when anything was added. A kept duplicate borrows the other
+ *  copy's field dates when its own are a single day and the other's a range,
+ *  and fills in a missing sample size or partisan flag. */
+function combineRaces(base: RacePolls, other: RacePolls): RacePolls {
+  const polls = latestPerPollster(base.polls).map((p) => ({ ...p }));
+  const added: Poll[] = [];
+  for (const p of latestPerPollster(other.polls)) {
+    const dup = polls.find((q) => samePoll(q, p));
+    if (dup) {
+      if (dup.startDate === dup.endDate && p.startDate !== p.endDate) {
+        dup.startDate = p.startDate;
+        dup.endDate = p.endDate;
+      }
+      dup.sampleSize ??= p.sampleSize;
+      dup.partisan ??= p.partisan;
+      continue;
+    }
+    if (polls.some((q) => samePollster(q, p) && q.endDate >= p.endDate)) continue;
+    // Name each result after base's candidate of the same party, so the
+    // poll lines up with base's columns.
+    const results = p.results.map((r) => {
+      const c = base.candidates.find((x) => x.party === r.party);
+      return c ? { ...r, candidate: c.name } : r;
+    });
+    added.push({ ...p, results });
+  }
+  if (added.length === 0) return { ...base, polls };
+  const sources = [base.source, other.source].map(shortSource);
+  return { ...base, polls: [...polls, ...added], sourceNote: sources.join(" + ") };
+}
+
+/** All races: a pulled race replaces the seeded example with the same key.
+ *  When two generated sources cover one race, pickRace chooses the base
+ *  (title, candidates, headline average) and combineRaces adds the other
+ *  source's polls that base doesn't already have. */
 export const POLLS: RacePolls[] = (() => {
   const byKey = new Map<string, RacePolls>();
   for (const race of SEEDED) byKey.set(raceKey(race), race);
@@ -126,7 +213,12 @@ export const POLLS: RacePolls[] = (() => {
   for (const race of GENERATED) {
     const key = raceKey(race);
     const cur = pulled.get(key);
-    pulled.set(key, cur ? pickRace(cur, race) : race);
+    if (!cur) {
+      pulled.set(key, race);
+      continue;
+    }
+    const base = pickRace(cur, race);
+    pulled.set(key, combineRaces(base, base === cur ? race : cur));
   }
   for (const [key, race] of pulled) byKey.set(key, race);
   return [...byKey.values()].map((race) => ({
