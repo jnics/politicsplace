@@ -1,6 +1,47 @@
 {
-  "fetchedAt": "2026-10-26T17:32:04.181Z",
+  "fetchedAt": "2026-10-27T02:20:34.741Z",
   "races": [
+    {
+      "id": 8753,
+      "title": "2026 North Carolina Senate - Whatley vs. Cooper",
+      "race_type": "senate",
+      "category": "General",
+      "state": "nc",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Roy Cooper",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Michael Whatley",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Cooper",
+            "affiliation": "Democrat",
+            "value": 50.8
+          },
+          {
+            "name": "Whatley",
+            "affiliation": "Republican",
+            "value": 40.5
+          }
+        ],
+        "spread": {
+          "name": "Cooper",
+          "value": 10.3
+        },
+        "as_of": "2026-10-24T19:08:39+00:00",
+        "date_label": "9/27 - 10/25"
+      },
+      "polls_in_average": 8,
+      "total_polls": 43
+    },
     {
       "id": 9233,
       "title": "2026 Mississippi Senate - Hyde-Smith vs. Colom",
@@ -22,6 +63,47 @@
       "current_average": null,
       "polls_in_average": 0,
       "total_polls": 1
+    },
+    {
+      "id": 8845,
+      "title": "2026 New Hampshire Senate - Sununu vs. Pappas",
+      "race_type": "senate",
+      "category": "General",
+      "state": "nh",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Chris Pappas",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "John Sununu",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Pappas",
+            "affiliation": "Democrat",
+            "value": 49.7
+          },
+          {
+            "name": "Sununu",
+            "affiliation": "Republican",
+            "value": 43
+          }
+        ],
+        "spread": {
+          "name": "Pappas",
+          "value": 6.7
+        },
+        "as_of": "2026-10-22T21:42:05+00:00",
+        "date_label": "9/15 - 10/23"
+      },
+      "polls_in_average": 6,
+      "total_polls": 24
     },
     {
       "id": 8975,
@@ -106,6 +188,60 @@
       "total_polls": 27
     },
     {
+      "id": 9219,
+      "title": "2026 New Hampshire Senate - Multi-Candidate",
+      "race_type": "senate",
+      "category": "General",
+      "state": "nh",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Chris Pappas",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "John Sununu",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Edmond Laplante",
+          "affiliation": "Independent"
+        },
+        {
+          "name": "Tim Harris",
+          "affiliation": "Independent"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Pappas",
+            "affiliation": "Democrat",
+            "value": 48.5
+          },
+          {
+            "name": "Sununu",
+            "affiliation": "Republican",
+            "value": 42.5
+          },
+          {
+            "name": "Laplante",
+            "affiliation": "Independent",
+            "value": 2.5
+          }
+        ],
+        "spread": {
+          "name": "Pappas",
+          "value": 6
+        },
+        "as_of": "2026-10-05T19:18:21+00:00",
+        "date_label": "9/26 - 10/23"
+      },
+      "polls_in_average": 2,
+      "total_polls": 5
+    },
+    {
       "id": 8689,
       "title": "2026 Ohio Senate Special Election - Husted vs. Brown",
       "race_type": "senate",
@@ -181,11 +317,11 @@
           "name": "El-Sayed",
           "value": 1.9
         },
-        "as_of": "2026-10-25T15:07:37+00:00",
+        "as_of": "2026-10-26T20:18:33+00:00",
         "date_label": "9/24 - 10/22"
       },
-      "polls_in_average": 8,
-      "total_polls": 42
+      "polls_in_average": 9,
+      "total_polls": 43
     },
     {
       "id": 8930,
@@ -676,88 +812,6 @@
       "total_polls": 23
     },
     {
-      "id": 8753,
-      "title": "2026 North Carolina Senate - Whatley vs. Cooper",
-      "race_type": "senate",
-      "category": "General",
-      "state": "nc",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Roy Cooper",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Michael Whatley",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Cooper",
-            "affiliation": "Democrat",
-            "value": 50.7
-          },
-          {
-            "name": "Whatley",
-            "affiliation": "Republican",
-            "value": 40.1
-          }
-        ],
-        "spread": {
-          "name": "Cooper",
-          "value": 10.6
-        },
-        "as_of": "2026-10-22T17:04:08+00:00",
-        "date_label": "9/27 - 10/20"
-      },
-      "polls_in_average": 7,
-      "total_polls": 42
-    },
-    {
-      "id": 8845,
-      "title": "2026 New Hampshire Senate - Sununu vs. Pappas",
-      "race_type": "senate",
-      "category": "General",
-      "state": "nh",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Chris Pappas",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "John Sununu",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Pappas",
-            "affiliation": "Democrat",
-            "value": 49.5
-          },
-          {
-            "name": "Sununu",
-            "affiliation": "Republican",
-            "value": 43
-          }
-        ],
-        "spread": {
-          "name": "Pappas",
-          "value": 6.5
-        },
-        "as_of": "2026-10-17T03:11:38+00:00",
-        "date_label": "9/15 - 10/20"
-      },
-      "polls_in_average": 6,
-      "total_polls": 23
-    },
-    {
       "id": 8857,
       "title": "New Hampshire 2nd District - Tang Williams vs. Goodlander",
       "race_type": "house",
@@ -1170,23 +1224,23 @@
           {
             "name": "Rounds",
             "affiliation": "Republican",
-            "value": 53.5
+            "value": 54.3
           },
           {
             "name": "Bengs",
             "affiliation": "Democrat",
-            "value": 39.5
+            "value": 38.7
           }
         ],
         "spread": {
           "name": "Rounds",
-          "value": 14
+          "value": 15.6
         },
-        "as_of": "2026-10-22T18:24:49+00:00",
-        "date_label": "10/17 - 10/20"
+        "as_of": "2026-10-26T18:35:59+00:00",
+        "date_label": "10/12 - 10/20"
       },
-      "polls_in_average": 2,
-      "total_polls": 2
+      "polls_in_average": 3,
+      "total_polls": 3
     },
     {
       "id": 8742,
@@ -1228,6 +1282,47 @@
       },
       "polls_in_average": 4,
       "total_polls": 16
+    },
+    {
+      "id": 8992,
+      "title": "2026 Michigan Governor - James vs. Benson",
+      "race_type": "governor",
+      "category": "General",
+      "state": "mi",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Jocelyn Benson",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "John James",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Benson",
+            "affiliation": "Democrat",
+            "value": 50.4
+          },
+          {
+            "name": "James",
+            "affiliation": "Republican",
+            "value": 43
+          }
+        ],
+        "spread": {
+          "name": "Benson",
+          "value": 7.4
+        },
+        "as_of": "2026-10-24T15:56:07+00:00",
+        "date_label": "9/24 - 10/19"
+      },
+      "polls_in_average": 5,
+      "total_polls": 24
     },
     {
       "id": 9032,
@@ -1486,47 +1581,6 @@
       },
       "polls_in_average": 4,
       "total_polls": 11
-    },
-    {
-      "id": 8992,
-      "title": "2026 Michigan Governor - James vs. Benson",
-      "race_type": "governor",
-      "category": "General",
-      "state": "mi",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Jocelyn Benson",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "John James",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Benson",
-            "affiliation": "Democrat",
-            "value": 49.8
-          },
-          {
-            "name": "James",
-            "affiliation": "Republican",
-            "value": 43.5
-          }
-        ],
-        "spread": {
-          "name": "Benson",
-          "value": 6.3
-        },
-        "as_of": "2026-10-21T10:42:35+00:00",
-        "date_label": "9/24 - 10/18"
-      },
-      "polls_in_average": 4,
-      "total_polls": 23
     },
     {
       "id": 9016,
@@ -2935,72 +2989,6 @@
       "total_polls": 5
     },
     {
-      "id": 9219,
-      "title": "2026 New Hampshire Senate - Multi-Candidate",
-      "race_type": "senate",
-      "category": "General",
-      "state": "nh",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Chris Pappas",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "John Sununu",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Edmond Laplante",
-          "affiliation": "Independent"
-        },
-        {
-          "name": "Aaron Day",
-          "affiliation": "Independent"
-        },
-        {
-          "name": "Tim Harris",
-          "affiliation": "Independent"
-        },
-        {
-          "name": "Christine Lopez",
-          "affiliation": "Independent"
-        },
-        {
-          "name": "Jeanne Logan Morrow",
-          "affiliation": "Independent"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Pappas",
-            "affiliation": "Democrat",
-            "value": 48
-          },
-          {
-            "name": "Sununu",
-            "affiliation": "Republican",
-            "value": 42.5
-          },
-          {
-            "name": "Laplante",
-            "affiliation": "Independent",
-            "value": 2
-          }
-        ],
-        "spread": {
-          "name": "Pappas",
-          "value": 5.5
-        },
-        "as_of": "2026-09-30T17:38:56+00:00",
-        "date_label": "9/26 - 10/4"
-      },
-      "polls_in_average": 2,
-      "total_polls": 3
-    },
-    {
       "id": 9035,
       "title": "2026 Nebraska Senate - Ricketts vs. Osborn",
       "race_type": "senate",
@@ -3279,6 +3267,28 @@
       },
       "polls_in_average": 2,
       "total_polls": 11
+    },
+    {
+      "id": 8935,
+      "title": "2026 Maine 2nd District - LePage vs. Dunlap",
+      "race_type": "house",
+      "category": "General",
+      "state": "me",
+      "district": "ME2",
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Paul LePage",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Mathew Dunlap",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 2
     },
     {
       "id": 9105,

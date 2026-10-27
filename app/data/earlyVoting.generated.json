@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-26T17:41:01.968Z",
+  "generatedAt": "2026-10-27T02:27:47.556Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
-  "statesPublished": 50,
+  "statesPublished": 49,
   "byState": {
     "AL": {
       "hasData": true,
@@ -33731,6 +33731,28 @@
         },
         {
           "address": {
+            "locationName": "River Road Water & Fire Protection District",
+            "line1": "105 Oakleigh Ln",
+            "addressLine": [
+              "105 Oakleigh Ln"
+            ],
+            "city": "Eugene",
+            "state": "OR",
+            "zip": "97404"
+          },
+          "notes": "Outside 24-hour drop box",
+          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "latitude": 44.078206898073866,
+          "longitude": -123.11981480177265,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
             "locationName": "University of Oregon - Erb Memorial Union",
             "line1": "1395 University St",
             "addressLine": [
@@ -33854,6 +33876,28 @@
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 44.084175077112086,
           "longitude": -123.13842008798258,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Lane County Public Service Building (Inside)",
+            "line1": "125 E 8th Ave",
+            "addressLine": [
+              "125 E 8th Ave"
+            ],
+            "city": "Eugene",
+            "state": "OR",
+            "zip": "97401"
+          },
+          "notes": "Inside the building, at intersection of North, South, and East PSB walkways, and Harris Hall Stairs; open Monday-Friday 7:30am-5pm; Election Day 7:30am-8pm",
+          "pollingHours": "Monday-Friday 7:30am-5pm; Election Day 7:30am-8pm",
+          "latitude": 44.05162458188071,
+          "longitude": -123.09070180507219,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -34115,7 +34159,7 @@
             "zip": "97030"
           },
           "notes": "Outside 24-hour drop box is to the left of the book return at the north entrance",
-          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 45.50506708220106,
           "longitude": -122.43616094802549,
           "sources": [
@@ -34360,6 +34404,28 @@
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 45.457019028859484,
           "longitude": -123.84163312440869,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "McKenzie Fire & Rescue Dept.",
+            "line1": "42870 McKenzie Hwy",
+            "addressLine": [
+              "42870 McKenzie Hwy"
+            ],
+            "city": "Walterville",
+            "state": "OR",
+            "zip": "97489"
+          },
+          "notes": "Outside 24-hour drop box",
+          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "latitude": 44.106758430081435,
+          "longitude": -122.67573337206989,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -34707,8 +34773,8 @@
           },
           "notes": "Outside 24-hour drop box",
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 45.61000152097312,
-          "longitude": -123.94421504365701,
+          "latitude": 45.610009999999996,
+          "longitude": -123.94415999999998,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -34838,6 +34904,28 @@
           "pollingHours": "Wed, Oct 14: 8 am - 5 pm\nThu, Oct 15: 8 am - 5 pm\nFri, Oct 16: 8 am - 5 pm\nMon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm\nMon, Nov 2: 8 am - 5 pm\nTue, Nov 3: 8 am - 8 pm",
           "latitude": 43.65886751234077,
           "longitude": -123.31885935525167,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Mapleton Fire Department",
+            "line1": "10940 Highway 36",
+            "addressLine": [
+              "10940 Highway 36"
+            ],
+            "city": "Mapleton",
+            "state": "OR",
+            "zip": "97453"
+          },
+          "notes": "Outside 24-hour drop box",
+          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "latitude": 44.03642207804946,
+          "longitude": -123.8635874992293,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -35036,6 +35124,28 @@
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 44.586559299301776,
           "longitude": -121.1775058207614,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Glide Community Center",
+            "line1": "20062 N Umpqua Hwy",
+            "addressLine": [
+              "20062 N Umpqua Hwy"
+            ],
+            "city": "Glide",
+            "state": "OR",
+            "zip": "97443"
+          },
+          "notes": "Outside 24-hour drive-up drop box in parking lot",
+          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "latitude": 43.3071602915005,
+          "longitude": -123.07937168158512,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -35410,6 +35520,28 @@
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 45.59979990212064,
           "longitude": -121.18395755277982,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Roseburg - Harvard Ave",
+            "line1": "738 W Harvard Ave",
+            "addressLine": [
+              "738 W Harvard Ave"
+            ],
+            "city": "Roseburg",
+            "state": "OR",
+            "zip": "97471"
+          },
+          "notes": "Outside 24-hour drive-up drop box in Oregon Department of Human Services parking lot",
+          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "latitude": 43.21479,
+          "longitude": -123.35813,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -36067,7 +36199,7 @@
             "zip": "97754"
           },
           "notes": "Outside 24-hour drive-up drop box",
-          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 44.19310198430202,
           "longitude": -120.75358102282514,
           "sources": [
@@ -36243,7 +36375,7 @@
             "zip": "97420"
           },
           "notes": "Outside 24-hour drive-up drop box",
-          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 43.3437069207932,
           "longitude": -124.32761285041546,
           "sources": [
@@ -36431,17 +36563,17 @@
         },
         {
           "address": {
-            "locationName": "Jackson County Elections Office",
-            "line1": "1101 W Main St Ste 201",
+            "locationName": "Jackson County Elections (Outside)",
+            "line1": "1101 W Main St",
             "addressLine": [
-              "1101 W Main St Ste 201"
+              "1101 W Main St"
             ],
             "city": "Medford",
             "state": "OR",
             "zip": "97501"
           },
-          "notes": "Outside 24-hour curbside and walk up ballot drop boxes open 24 hours daily (left lane - W. Main). Closes at 8pm Election Day. Interior ballot drop boxes in Elections office open 8am to 4pm, Monday - Friday, closed from 11:45am to 1pm (Open 7am - 8 pm on Election Day).",
-          "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "notes": "Outside 24-hour curbside and walk up ballot drop boxes open 24 hours daily (left lane - W. Main). Closes at 8pm Election Day.",
+          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
           "latitude": 42.323646499999995,
           "longitude": -122.88421619999998,
           "sources": [
@@ -36453,16 +36585,16 @@
         },
         {
           "address": {
-            "locationName": "Jackson County Elections/Corrections",
-            "line1": "1101 W Main St",
+            "locationName": "Jackson County Elections/Corrections (Inside)",
+            "line1": "1101 W Main St Ste 201",
             "addressLine": [
-              "1101 W Main St"
+              "1101 W Main St Ste 201"
             ],
             "city": "Medford",
             "state": "OR",
             "zip": "97501"
           },
-          "notes": "Inside 1st floor main lobby office during business hours; open Monday-Friday 8am-5pm; Election Day 7am-8pm",
+          "notes": "Inside ballot drop boxes located in Elections office and in 1st floor main lobby during business hours; open Monday-Friday 8am-5pm; Election Day 7am-8pm.",
           "pollingHours": "Monday-Friday 8am-5pm; Election Day 7am-8pm",
           "latitude": 42.3233124,
           "longitude": -122.8843151,
@@ -37079,6 +37211,28 @@
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.20945197855812,
           "longitude": -121.74841502569224,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "South Suburban Sanitary District (behind Walmart)",
+            "line1": "2201 Laverne Ave",
+            "addressLine": [
+              "2201 Laverne Ave"
+            ],
+            "city": "Klamath Falls",
+            "state": "OR",
+            "zip": "97603"
+          },
+          "notes": "Outside 24-hour drive-up drop box",
+          "pollingHours": "24 hours 7 days a week; Election Day until 8pm",
+          "latitude": 42.19235527483494,
+          "longitude": -121.76194041042353,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -40262,26 +40416,8 @@
       "pollingLocations": null
     },
     "VT": {
-      "hasData": true,
-      "admin": {
-        "name": "Secretary of State",
-        "electionInfoUrl": "https://sos.vermont.gov/elections/",
-        "electionRegistrationUrl": "https://olvr.vermont.gov/",
-        "electionRegistrationConfirmationUrl": "https://mvp.vermont.gov/",
-        "absenteeVotingInfoUrl": "https://mvp.vermont.gov/",
-        "votingLocationFinderUrl": "https://mvp.vermont.gov/",
-        "ballotInfoUrl": "https://mvp.vermont.gov/",
-        "electionRulesUrl": "https://sos.vermont.gov/elections/voters/early-absentee-voting/",
-        "correspondenceAddress": {
-          "line1": "128 State St.",
-          "addressLine": [
-            "128 State St."
-          ],
-          "city": "Montpelier",
-          "state": "",
-          "zip": "05633-1101"
-        }
-      },
+      "hasData": false,
+      "admin": null,
       "earlyVoteSites": null,
       "dropOffLocations": null,
       "pollingLocations": null

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-26",
+ "generatedAt": "2026-10-27",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -9056,7 +9056,7 @@
       "flip": false
      },
      "rcp": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
