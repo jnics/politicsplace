@@ -5,6 +5,7 @@ import { formatVotes } from "~/lib/margin";
 import { MapTooltip } from "~/components/MapTooltip";
 import { EvLegend } from "~/components/EvLegend";
 import { StatGrid, type Stat } from "~/components/StatGrid";
+import { CardHeader, CyclesTable, LeadPill, PartyLabel, SOFT, Section } from "~/components/HoverCard";
 import {
   NO_DATA,
   partyFill,
@@ -305,7 +306,6 @@ function CountyTip({
    *  state publishes it (scripts/pull-party-registration.mjs). */
   registration: { counts: [number, number, number]; basis: "registration" | "primary" } | null;
 }) {
-  const muted = "text-gray-300 dark:text-gray-600";
   const has2026 = !!row && row.v > 0;
   const [eligible, registered] = electorate ?? [null, null];
 
@@ -314,6 +314,7 @@ function CountyTip({
   if (has2026)
     current.push({
       label: "Early ballots",
+      big: true,
       value: formatVotes(row!.v),
       // Share of registered voters, shown as a bare percent; North Dakota
       // (no voter registration) falls back to eligible voters, labeled.
@@ -336,15 +337,12 @@ function CountyTip({
 
   // Party of early ballots (registration states).
   const s = row?.p && row.p[0] + row.p[1] > 0 ? shares({ dem: row.p[0], rep: row.p[1], other: row.p[2] }) : null;
-  const lead = s ? s.d - s.r : 0;
-  const leadCls = lead >= 0 ? "text-blue-300 dark:text-blue-700" : "text-red-300 dark:text-red-700";
-  const partyRows: [string, string, string, string?][] =
+  const partyRows =
     row?.p && s
       ? [
-          ["Dem", formatVotes(row.p[0]), `${s.d.toFixed(1)}%`],
-          ["Rep", formatVotes(row.p[1]), `${s.r.toFixed(1)}%`],
-          ["Other", formatVotes(row.p[2]), `${s.o.toFixed(1)}%`],
-          ["Lead", "", `${lead >= 0 ? "D" : "R"}+${Math.abs(lead).toFixed(1)}`, leadCls],
+          { key: "D" as const, label: "Dem", votes: row.p[0], pct: s.d },
+          { key: "R" as const, label: "Rep", votes: row.p[1], pct: s.r },
+          { key: "O" as const, label: "Other", votes: row.p[2], pct: s.o },
         ]
       : [];
 
@@ -372,69 +370,54 @@ function CountyTip({
   const past = HISTORY_YEARS.map((y) => ({ y, ev: hist?.[y]?.[0] || null, t: hist?.[y]?.[3] || null })).filter(
     (r) => r.ev || r.t
   );
-  const cell = (n: number | null) =>
-    n ? (
-      <>
-        <td className="text-right">{shortVotes(n)}</td>
-        <td className={`text-right ${muted}`}>{has2026 ? `${pctOf(row!.v, n)!.toFixed(0)}%` : ""}</td>
-      </>
-    ) : (
-      <>
-        <td />
-        <td />
-      </>
-    );
 
   return (
     <div className="space-y-1.5">
-      <div className="font-semibold">{name}</div>
-      {!has2026 && <div className={muted}>No 2026 early-vote data reported.</div>}
-      {current.length > 0 && <StatGrid items={current} />}
-      {regItems.length > 0 && <StatGrid items={regItems} />}
-      {isPrimary && (
-        <div className={muted}>
-          No party registration in this state; Registered is the total only.
-        </div>
+      <CardHeader title={name} />
+      {!has2026 && <div className={SOFT}>No 2026 early-vote data reported.</div>}
+      {(current.length > 0 || regItems.length > 0) && (
+        <Section>
+          <div className="space-y-1.5">
+            <StatGrid items={current} />
+            {regItems.length > 0 && (
+              <StatGrid items={regItems} title={isPrimary ? "May primary votes" : "Registered by party"} />
+            )}
+            {isPrimary && (
+              <div className={`text-[10px] ${SOFT}`}>
+                No party registration in this state; Registered is the total only.
+              </div>
+            )}
+          </div>
+        </Section>
       )}
       {past.length > 0 && (
-        <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
-          <thead>
-            <tr className={`${muted} text-right`}>
-              <th className="pb-0.5 pt-1 text-left font-normal">Past cycles</th>
-              <th className="pb-0.5 pt-1 font-normal">Early vote</th>
-              <th className="pb-0.5 pt-1 font-normal">{has2026 ? "2026 at" : ""}</th>
-              <th className="pb-0.5 pt-1 font-normal">Total vote</th>
-              <th className="pb-0.5 pt-1 font-normal">{has2026 ? "2026 at" : ""}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {past.map((r) => (
-              <tr key={r.y}>
-                <td>{r.y}</td>
-                {cell(r.ev)}
-                {cell(r.t)}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <Section title="Past cycles">
+          <CyclesTable rows={past} now={has2026 ? row!.v : null} />
+        </Section>
       )}
       {partyRows.length > 0 && (
-        <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
-          <thead>
-            <tr className={`${muted} text-left`}>
-              <th colSpan={3} className="pb-0.5 pt-1 font-normal">Early ballots by party</th>
-            </tr>
-          </thead>
-          <tbody>
-            {partyRows.map(([label, votes, pct, cls]) => (
-              <tr key={label}>
-                <td>{label}</td>
-                <td className="text-right">{votes}</td>
-                <td className={`text-right ${cls ?? ""}`}>{pct}</td>
+        <Section title="Early ballots by party">
+          <table className="w-full tabular-nums">
+            <tbody>
+              {partyRows.map((r) => (
+                <tr key={r.label}>
+                  <td>
+                    <PartyLabel party={r.key}>{r.label}</PartyLabel>
+                  </td>
+                  <td className={`text-right ${SOFT}`}>{formatVotes(r.votes)}</td>
+                  <td className="text-right font-medium">{r.pct.toFixed(1)}%</td>
+                </tr>
+              ))}
+              <tr>
+                <td className={SOFT}>Lead</td>
+                <td />
+                <td className="pt-0.5 text-right">
+                  <LeadPill lead={s!.d - s!.r} />
+                </td>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </Section>
       )}
     </div>
   );

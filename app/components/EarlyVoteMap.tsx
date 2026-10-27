@@ -7,6 +7,7 @@ import { formatVotes } from "~/lib/margin";
 import { hasStateGeo } from "~/lib/stateGeo";
 import { EarlyVoteCountyMap, type BaseYear } from "~/components/EarlyVoteCountyMap";
 import { StatGrid, type Stat } from "~/components/StatGrid";
+import { CardHeader, CyclesTable, EYEBROW, LeadPill, PartyLabel, SOFT, Section } from "~/components/HoverCard";
 import { EvLegend } from "~/components/EvLegend";
 import {
   NO_DATA,
@@ -242,19 +243,11 @@ export function EarlyVoteMap() {
     const governor = modelRatings("governor", name);
 
     return (
-      <div className="space-y-1">
-        <div className="font-semibold">
-          {name}
-          {cur?.lastUpdate && (
-            <span className="font-normal text-gray-400 dark:text-gray-500">
-              {" "}
-              &middot; as of {shortDate(cur.lastUpdate)}
-            </span>
-          )}
-        </div>
+      <div className="space-y-1.5">
+        <CardHeader title={name} asOf={cur?.lastUpdate ? shortDate(cur.lastUpdate) : null} />
 
         {!cur || cur.voted <= 0 ? (
-          <div className="text-gray-300 dark:text-gray-600">No early-vote data reported yet.</div>
+          <div className={SOFT}>No early-vote data reported yet.</div>
         ) : (
           <>
             <StateTop state={state} cur={cur} />
@@ -265,7 +258,7 @@ export function EarlyVoteMap() {
         {/* Party split and the forecast models side by side (either alone
             takes the full width). */}
         {(cur?.party || senate || governor) && (
-          <div className={cur?.party && (senate || governor) ? "grid grid-cols-2 gap-3" : undefined}>
+          <div className={cur?.party && (senate || governor) ? "grid grid-cols-2 gap-1.5" : undefined}>
             {cur && cur.voted > 0 && (
               <PartyTable
                 cur={cur}
@@ -515,7 +508,6 @@ export function EarlyVoteMap() {
   );
 }
 
-const MUTED = "text-gray-300 dark:text-gray-600";
 const leadClass = (lead: number) =>
   lead >= 0 ? "text-blue-300 dark:text-blue-700" : "text-red-300 dark:text-red-700";
 
@@ -529,6 +521,7 @@ function StateTop({ state, cur }: { state: string; cur: CurrentEv }) {
   const items: Stat[] = [
     {
       label: "Early ballots",
+      big: true,
       value: formatVotes(cur.voted),
       // Share of registered voters, shown as a bare percent. North Dakota has
       // no voter registration, so it gets the share of eligible voters,
@@ -572,28 +565,28 @@ function StateTop({ state, cur }: { state: string; cur: CurrentEv }) {
     : [];
 
   return (
-    <div className="space-y-1.5">
-      <StatGrid items={items} />
-      {partyItems.length > 0 && <StatGrid items={partyItems} />}
-      {p?.asOf && (
-        <div className={MUTED}>
-          Registered by party as of {p.asOf}
-          {p.source ? ` (${p.source})` : ""}
-        </div>
-      )}
-      {e?.party?.modeled && (
-        <div className={MUTED}>
-          No party registration in this state; registered total only.
-        </div>
-      )}
-    </div>
+    <Section>
+      <div className="space-y-1.5">
+        <StatGrid items={items} />
+        {partyItems.length > 0 && <StatGrid items={partyItems} title="Registered by party" />}
+        {p?.asOf && (
+          <div className={`text-[10px] ${SOFT}`}>
+            As of {p.asOf}
+            {p.source ? ` · ${p.source}` : ""}
+          </div>
+        )}
+        {e?.party?.modeled && (
+          <div className={`text-[10px] ${SOFT}`}>No party registration in this state; registered total only.</div>
+        )}
+      </div>
+    </Section>
   );
 }
 
 /**
  * Past cycles as one table: a row per year with that cycle's early vote and
  * its total vote (both EAVS), each followed by 2026's early vote so far as a
- * share of it. The same-day pace sits on a line above.
+ * share of it (with a bar). The same-day pace sits in the section's title row.
  */
 function PastCyclesTable({
   state,
@@ -621,47 +614,11 @@ function PastCyclesTable({
     }))
     .filter((r) => r.ev || r.t);
   if (!rows.length && !sameDay.length) return null;
-  const cell = (n: number | null) =>
-    n ? (
-      <>
-        <td className="text-right">{shortVotes(n)}</td>
-        <td className={`text-right ${MUTED}`}>{pctOf(cur.voted, n)!.toFixed(0)}%</td>
-      </>
-    ) : (
-      <>
-        <td />
-        <td />
-      </>
-    );
 
   return (
-    <div className="border-t border-white/15 pt-1 dark:border-black/10">
-      {sameDay.length > 0 && (
-        <div className={MUTED}>2026 vs same day: {sameDay.join(" · ")}</div>
-      )}
-      {rows.length > 0 && (
-        <table className="w-full tabular-nums">
-          <thead>
-            <tr className={`${MUTED} text-right`}>
-              <th className="text-left font-normal">Past cycles</th>
-              <th className="font-normal">Early vote</th>
-              <th className="font-normal">2026 at</th>
-              <th className="font-normal">Total vote</th>
-              <th className="font-normal">2026 at</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => (
-              <tr key={r.y}>
-                <td>{r.y}</td>
-                {cell(r.ev)}
-                {cell(r.t)}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
-    </div>
+    <Section title="Past cycles" aside={sameDay.length > 0 && `2026 vs same day: ${sameDay.join(" · ")}`}>
+      {rows.length > 0 && <CyclesTable rows={rows} now={cur.voted} />}
+    </Section>
   );
 }
 
@@ -673,47 +630,48 @@ function PartyTable({ cur, past2024Party }: { cur: CurrentEv; past2024Party: Par
   const p = past2024Party ? shares(past2024Party) : null;
   const lead = s.d - s.r;
   const pastLead = p ? p.d - p.r : null;
-  const fmtLead = (l: number) => `${l >= 0 ? "D" : "R"}+${Math.abs(l).toFixed(1)}`;
-  const rows: { label: string; votes?: number; pct: string; past?: string; cls?: string; pastCls?: string }[] = [
-    { label: "Dem", votes: party.dem, pct: `${s.d.toFixed(1)}%`, past: p?.d.toFixed(1) },
-    { label: "Rep", votes: party.rep, pct: `${s.r.toFixed(1)}%`, past: p?.r.toFixed(1) },
-    { label: "Other", votes: party.other, pct: `${s.o.toFixed(1)}%`, past: p?.o.toFixed(1) },
-    {
-      label: "Lead",
-      pct: fmtLead(lead),
-      cls: leadClass(lead),
-      past: pastLead != null ? fmtLead(pastLead) : undefined,
-      pastCls: pastLead != null ? leadClass(pastLead) : undefined,
-    },
+  const rows = [
+    { key: "D" as const, label: "Dem", votes: party.dem, pct: s.d, past: p?.d },
+    { key: "R" as const, label: "Rep", votes: party.rep, pct: s.r, past: p?.r },
+    { key: "O" as const, label: "Other", votes: party.other, pct: s.o, past: p?.o },
   ];
-  const head = cur.partyBasis
-    ? `${PARTY_LABEL[cur.partyBasis]}${cur.partySource ? ` (${cur.partySource})` : ""}`
-    : "Party";
+  const title = cur.partyBasis ? PARTY_LABEL[cur.partyBasis] : "Party";
 
   return (
-    <div className="border-t border-white/15 pt-1 dark:border-black/10">
-      <div className={MUTED}>{head}</div>
+    <Section title={title} aside={cur.partySource}>
       <table className="w-full tabular-nums">
         {/* Always a header line (blank without a 2024 column), so the rows
             sit level with the models table's Senate / Governor header. */}
         <thead>
-          <tr className={MUTED}>
-            <th colSpan={3} className="font-normal">&nbsp;</th>
-            {p && <th className="text-right font-normal">2024</th>}
+          <tr className={EYEBROW}>
+            <th colSpan={3} className="font-semibold">&nbsp;</th>
+            {p && <th className="text-right font-semibold">2024</th>}
           </tr>
         </thead>
         <tbody>
           {rows.map((r) => (
             <tr key={r.label}>
-              <td>{r.label}</td>
-              <td className="text-right">{r.votes != null ? shortVotes(r.votes) : ""}</td>
-              <td className={`text-right ${r.cls ?? ""}`}>{r.pct}</td>
-              {p && <td className={`text-right ${r.pastCls ?? MUTED}`}>{r.past}</td>}
+              <td>
+                <PartyLabel party={r.key}>{r.label}</PartyLabel>
+              </td>
+              <td className={`text-right ${SOFT}`}>{shortVotes(r.votes)}</td>
+              <td className="text-right font-medium">{r.pct.toFixed(1)}%</td>
+              {p && <td className={`text-right ${SOFT}`}>{r.past?.toFixed(1)}</td>}
             </tr>
           ))}
+          <tr>
+            <td className={SOFT}>Lead</td>
+            <td />
+            <td className="pt-0.5 text-right">
+              <LeadPill lead={lead} />
+            </td>
+            {p && (
+              <td className="pt-0.5 text-right">{pastLead != null && <LeadPill lead={pastLead} />}</td>
+            )}
+          </tr>
         </tbody>
       </table>
-    </div>
+    </Section>
   );
 }
 
@@ -730,35 +688,34 @@ function ModelTable({
   );
   const cell = (rows: typeof senate, name: string) => {
     const r = rows?.find((x) => x.name === name)?.rating;
-    if (!r) return <td className={`text-right ${MUTED}`}>&ndash;</td>;
+    if (!r) return <td className={`text-right ${SOFT}`}>&ndash;</td>;
     return (
-      <td className={`text-right ${r.party ? leadClass(r.party === "D" ? 1 : -1) : MUTED}`}>
+      <td className={`text-right font-medium ${r.party ? leadClass(r.party === "D" ? 1 : -1) : SOFT}`}>
         {ratingText(r)}
       </td>
     );
   };
   return (
-    <div className="border-t border-white/15 pt-1 dark:border-black/10">
-      <div className={MUTED}>What the models say</div>
+    <Section title="What the models say">
       <table className="w-full">
         <thead>
-          <tr className={MUTED}>
-            <th className="text-left font-normal" />
-            {senate && <th className="text-right font-normal">Senate</th>}
-            {governor && <th className="text-right font-normal">Governor</th>}
+          <tr className={EYEBROW}>
+            <th className="text-left font-semibold" />
+            {senate && <th className="text-right font-semibold">Senate</th>}
+            {governor && <th className="text-right font-semibold">Governor</th>}
           </tr>
         </thead>
         <tbody>
           {names.map((n) => (
             <tr key={n}>
-              <td>{n}</td>
+              <td className={SOFT}>{n}</td>
               {senate && cell(senate, n)}
               {governor && cell(governor, n)}
             </tr>
           ))}
         </tbody>
       </table>
-    </div>
+    </Section>
   );
 }
 
