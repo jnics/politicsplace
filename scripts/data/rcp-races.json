@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-27T02:20:34.741Z",
+  "fetchedAt": "2026-10-27T15:03:59.958Z",
   "races": [
     {
       "id": 8753,
@@ -41,6 +41,209 @@
       },
       "polls_in_average": 8,
       "total_polls": 43
+    },
+    {
+      "id": 9016,
+      "title": "2026 Alaska Governor - RCV 1st Round ",
+      "race_type": "governor",
+      "category": "Primary: Open",
+      "state": "ak",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Jonathan Kreiss-Tomkins",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Bernadette Wilson",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Dave Bronson",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Treg Taylor",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 10
+    },
+    {
+      "id": 9030,
+      "title": "2026 Maine Governor - Charles vs. Pingree",
+      "race_type": "governor",
+      "category": "General",
+      "state": "me",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Hannah Pingree",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Bobby Charles",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Pingree",
+            "affiliation": "Democrat",
+            "value": 49.3
+          },
+          {
+            "name": "Charles",
+            "affiliation": "Republican",
+            "value": 39.8
+          }
+        ],
+        "spread": {
+          "name": "Pingree",
+          "value": 9.5
+        },
+        "as_of": "2026-10-27T10:38:53+00:00",
+        "date_label": "9/17 - 10/25"
+      },
+      "polls_in_average": 8,
+      "total_polls": 19
+    },
+    {
+      "id": 9100,
+      "title": "2026 Maine Senate - Collins vs. Jackson",
+      "race_type": "senate",
+      "category": "General",
+      "state": "me",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Troy Jackson",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Susan Collins",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Jackson",
+            "affiliation": "Democrat",
+            "value": 48.7
+          },
+          {
+            "name": "Collins",
+            "affiliation": "Republican",
+            "value": 47.5
+          }
+        ],
+        "spread": {
+          "name": "Jackson",
+          "value": 1.2
+        },
+        "as_of": "2026-10-27T10:39:34+00:00",
+        "date_label": "9/23 - 10/25"
+      },
+      "polls_in_average": 10,
+      "total_polls": 29
+    },
+    {
+      "id": 9101,
+      "title": "2026 Maine Governor - Charles vs. Pingree vs. Bennett",
+      "race_type": "governor",
+      "category": "General",
+      "state": "me",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Hannah Pingree",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Robert Charles",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Rick Bennett",
+          "affiliation": "Independent"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Pingree",
+            "affiliation": "Democrat",
+            "value": 48.3
+          },
+          {
+            "name": "Charles",
+            "affiliation": "Republican",
+            "value": 39.1
+          },
+          {
+            "name": "Bennett",
+            "affiliation": "Independent",
+            "value": 7.3
+          }
+        ],
+        "spread": {
+          "name": "Pingree",
+          "value": 9.2
+        },
+        "as_of": "2026-10-27T11:04:32+00:00",
+        "date_label": "9/17 - 10/25"
+      },
+      "polls_in_average": 7,
+      "total_polls": 12
+    },
+    {
+      "id": 9190,
+      "title": "2026 Alaska Govenor - Wilson vs. Kreiss-Tompkins",
+      "race_type": "governor",
+      "category": "General",
+      "state": "ak",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Jonathan Kreiss-Tomkins",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Bernadette Wilson",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Kreiss-Tomkins",
+            "affiliation": "Democrat",
+            "value": 53.3
+          },
+          {
+            "name": "Wilson",
+            "affiliation": "Republican",
+            "value": 46.8
+          }
+        ],
+        "spread": {
+          "name": "Kreiss-Tomkins",
+          "value": 6.5
+        },
+        "as_of": "2026-10-20T18:52:46+00:00",
+        "date_label": "9/8 - 10/25"
+      },
+      "polls_in_average": 4,
+      "total_polls": 6
     },
     {
       "id": 9233,
@@ -106,6 +309,47 @@
       "total_polls": 24
     },
     {
+      "id": 8953,
+      "title": "2026 New Hampshire Governor - Ayotte vs. Warmington",
+      "race_type": "governor",
+      "category": "General",
+      "state": "nh",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Kelly Ayotte",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Cindy Warmington",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Ayotte",
+            "affiliation": "Republican",
+            "value": 50.8
+          },
+          {
+            "name": "Warmington",
+            "affiliation": "Democrat",
+            "value": 41.3
+          }
+        ],
+        "spread": {
+          "name": "Ayotte",
+          "value": 9.5
+        },
+        "as_of": "2026-10-27T10:49:01+00:00",
+        "date_label": "9/15 - 10/23"
+      },
+      "polls_in_average": 4,
+      "total_polls": 14
+    },
+    {
       "id": 8975,
       "title": "2026 Georgia Senate - GOP Runoff (Collins vs. Dooley) ",
       "race_type": "senate",
@@ -145,47 +389,6 @@
       },
       "polls_in_average": 0,
       "total_polls": 6
-    },
-    {
-      "id": 9100,
-      "title": "2026 Maine Senate - Collins vs. Jackson",
-      "race_type": "senate",
-      "category": "General",
-      "state": "me",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Troy Jackson",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Susan Collins",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Jackson",
-            "affiliation": "Democrat",
-            "value": 48.9
-          },
-          {
-            "name": "Collins",
-            "affiliation": "Republican",
-            "value": 47.5
-          }
-        ],
-        "spread": {
-          "name": "Jackson",
-          "value": 1.4
-        },
-        "as_of": "2026-10-24T16:12:57+00:00",
-        "date_label": "9/23 - 10/23"
-      },
-      "polls_in_average": 10,
-      "total_polls": 27
     },
     {
       "id": 9219,
@@ -305,23 +508,23 @@
           {
             "name": "El-Sayed",
             "affiliation": "Democrat",
-            "value": 47.9
+            "value": 48.1
           },
           {
             "name": "Rogers",
             "affiliation": "Republican",
-            "value": 46
+            "value": 45.6
           }
         ],
         "spread": {
           "name": "El-Sayed",
-          "value": 1.9
+          "value": 2.5
         },
-        "as_of": "2026-10-26T20:18:33+00:00",
-        "date_label": "9/24 - 10/22"
+        "as_of": "2026-10-26T20:19:07+00:00",
+        "date_label": "9/28 - 10/22"
       },
-      "polls_in_average": 9,
-      "total_polls": 43
+      "polls_in_average": 8,
+      "total_polls": 44
     },
     {
       "id": 8930,
@@ -661,23 +864,64 @@
           {
             "name": "Talarico",
             "affiliation": "Democrat",
-            "value": 48.4
+            "value": 48.5
           },
           {
             "name": "Paxton",
             "affiliation": "Republican",
-            "value": 46.9
+            "value": 46.7
           }
         ],
         "spread": {
           "name": "Talarico",
-          "value": 1.5
+          "value": 1.8
         },
-        "as_of": "2026-10-24T13:00:06+00:00",
+        "as_of": "2026-10-27T13:17:39+00:00",
         "date_label": "10/8 - 10/21"
       },
-      "polls_in_average": 10,
-      "total_polls": 50
+      "polls_in_average": 11,
+      "total_polls": 51
+    },
+    {
+      "id": 8910,
+      "title": "2026 Texas Governor - Abbott vs. Hinojosa",
+      "race_type": "governor",
+      "category": "General",
+      "state": "tx",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Greg Abbott",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Gina Hinojosa",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Abbott",
+            "affiliation": "Republican",
+            "value": 49.6
+          },
+          {
+            "name": "Hinojosa",
+            "affiliation": "Democrat",
+            "value": 46.4
+          }
+        ],
+        "spread": {
+          "name": "Abbott",
+          "value": 3.2
+        },
+        "as_of": "2026-10-24T13:56:10+00:00",
+        "date_label": "10/5 - 10/21"
+      },
+      "polls_in_average": 9,
+      "total_polls": 42
     },
     {
       "id": 8922,
@@ -875,47 +1119,6 @@
       "total_polls": 15
     },
     {
-      "id": 8910,
-      "title": "2026 Texas Governor - Abbott vs. Hinojosa",
-      "race_type": "governor",
-      "category": "General",
-      "state": "tx",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Greg Abbott",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Gina Hinojosa",
-          "affiliation": "Democrat"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Abbott",
-            "affiliation": "Republican",
-            "value": 49.8
-          },
-          {
-            "name": "Hinojosa",
-            "affiliation": "Democrat",
-            "value": 46.5
-          }
-        ],
-        "spread": {
-          "name": "Abbott",
-          "value": 3.3
-        },
-        "as_of": "2026-10-23T13:38:49+00:00",
-        "date_label": "10/5 - 10/19"
-      },
-      "polls_in_average": 8,
-      "total_polls": 41
-    },
-    {
       "id": 8948,
       "title": "2026 Florida Senate Special Election - Moody vs. Nixon",
       "race_type": "senate",
@@ -957,47 +1160,6 @@
       "total_polls": 15
     },
     {
-      "id": 8953,
-      "title": "2026 New Hampshire Governor - Ayotte vs. Warmington",
-      "race_type": "governor",
-      "category": "General",
-      "state": "nh",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Kelly Ayotte",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Cindy Warmington",
-          "affiliation": "Democrat"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Ayotte",
-            "affiliation": "Republican",
-            "value": 50.3
-          },
-          {
-            "name": "Warmington",
-            "affiliation": "Democrat",
-            "value": 41
-          }
-        ],
-        "spread": {
-          "name": "Ayotte",
-          "value": 9.3
-        },
-        "as_of": "2026-10-17T03:15:35+00:00",
-        "date_label": "9/15 - 10/20"
-      },
-      "polls_in_average": 3,
-      "total_polls": 13
-    },
-    {
       "id": 9014,
       "title": "2026 California Governor - Hilton vs. Becerra",
       "race_type": "governor",
@@ -1037,97 +1199,6 @@
       },
       "polls_in_average": 5,
       "total_polls": 10
-    },
-    {
-      "id": 9030,
-      "title": "2026 Maine Governor - Charles vs. Pingree",
-      "race_type": "governor",
-      "category": "General",
-      "state": "me",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Hannah Pingree",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Bobby Charles",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Pingree",
-            "affiliation": "Democrat",
-            "value": 49.9
-          },
-          {
-            "name": "Charles",
-            "affiliation": "Republican",
-            "value": 38.7
-          }
-        ],
-        "spread": {
-          "name": "Pingree",
-          "value": 11.2
-        },
-        "as_of": "2026-10-20T14:58:11+00:00",
-        "date_label": "9/15 - 10/20"
-      },
-      "polls_in_average": 9,
-      "total_polls": 17
-    },
-    {
-      "id": 9101,
-      "title": "2026 Maine Governor - Charles vs. Pingree vs. Bennett",
-      "race_type": "governor",
-      "category": "General",
-      "state": "me",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Hannah Pingree",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Robert Charles",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Rick Bennett",
-          "affiliation": "Independent"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Pingree",
-            "affiliation": "Democrat",
-            "value": 48.9
-          },
-          {
-            "name": "Charles",
-            "affiliation": "Republican",
-            "value": 37.8
-          },
-          {
-            "name": "Bennett",
-            "affiliation": "Independent",
-            "value": 6.8
-          }
-        ],
-        "spread": {
-          "name": "Pingree",
-          "value": 11.1
-        },
-        "as_of": "2026-10-14T11:04:14+00:00",
-        "date_label": "9/2 - 10/20"
-      },
-      "polls_in_average": 9,
-      "total_polls": 11
     },
     {
       "id": 9148,
@@ -1583,36 +1654,6 @@
       "total_polls": 11
     },
     {
-      "id": 9016,
-      "title": "2026 Alaska Governor - RCV 1st Round ",
-      "race_type": "governor",
-      "category": "Primary: Open",
-      "state": "ak",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Jonathan Kreiss-Tomkins",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Bernadette Wilson",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Dave Bronson",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Treg Taylor",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": null,
-      "polls_in_average": 0,
-      "total_polls": 9
-    },
-    {
       "id": 9025,
       "title": "2026 South Carolina Governor - Wilson vs. Johnson",
       "race_type": "governor",
@@ -1733,47 +1774,6 @@
       },
       "polls_in_average": 3,
       "total_polls": 7
-    },
-    {
-      "id": 9190,
-      "title": "2026 Alaska Govenor - Wilson vs. Kreiss-Tompkins",
-      "race_type": "governor",
-      "category": "General",
-      "state": "ak",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Jonathan Kreiss-Tomkins",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Bernadette Wilson",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Kreiss-Tomkins",
-            "affiliation": "Democrat",
-            "value": 53.8
-          },
-          {
-            "name": "Wilson",
-            "affiliation": "Republican",
-            "value": 46.3
-          }
-        ],
-        "spread": {
-          "name": "Kreiss-Tomkins",
-          "value": 7.5
-        },
-        "as_of": "2026-10-20T18:39:09+00:00",
-        "date_label": "9/8 - 10/18"
-      },
-      "polls_in_average": 4,
-      "total_polls": 5
     },
     {
       "id": 9230,

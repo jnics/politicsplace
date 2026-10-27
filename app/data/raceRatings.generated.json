@@ -140,7 +140,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -700,7 +700,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -1316,8 +1316,8 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "ddhq": {
@@ -1886,7 +1886,7 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -1932,9 +1932,9 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "ddhq": {
       "label": "Tossup",
@@ -1988,7 +1988,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -3332,7 +3332,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -3342,7 +3342,7 @@
       "flip": true
      },
      "fiftyPlusOne": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -4172,7 +4172,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -5012,7 +5012,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5292,7 +5292,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5572,7 +5572,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -6132,7 +6132,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -9046,7 +9046,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9438,9 +9438,9 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "insideElections": {
       "label": "Tossup",
@@ -9662,7 +9662,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -9687,7 +9687,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      }
@@ -11030,9 +11030,9 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "insideElections": {
       "label": "Tossup",

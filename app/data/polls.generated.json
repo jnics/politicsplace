@@ -43693,38 +43693,38 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Kreiss-Tomkins +7.5",
-    "period": "9/8 - 10/18",
+    "spread": "Kreiss-Tomkins +6.5",
+    "period": "9/8 - 10/25",
     "results": [
      {
       "candidate": "Jonathan Kreiss-Tomkins",
       "party": "D",
-      "pct": 53.8
+      "pct": 53.3
      },
      {
       "candidate": "Bernadette Wilson",
       "party": "R",
-      "pct": 46.3
+      "pct": 46.8
      }
     ]
    },
    "polls": [
     {
      "pollster": "Alaska Survey Research",
-     "startDate": "2026-10-15",
-     "endDate": "2026-10-18",
-     "sampleSize": 1568,
+     "startDate": "2026-10-23",
+     "endDate": "2026-10-25",
+     "sampleSize": 1068,
      "population": "LV",
      "results": [
       {
        "candidate": "Jonathan Kreiss-Tomkins",
        "party": "D",
-       "pct": 55
+       "pct": 53
       },
       {
        "candidate": "Bernadette Wilson",
        "party": "R",
-       "pct": 45
+       "pct": 47
       }
      ]
     },
@@ -46753,22 +46753,41 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Pingree +11.2",
-    "period": "9/15 - 10/20",
+    "spread": "Pingree +9.5",
+    "period": "9/17 - 10/25",
     "results": [
      {
       "candidate": "Hannah Pingree",
       "party": "D",
-      "pct": 49.9
+      "pct": 49.3
      },
      {
       "candidate": "Bobby Charles",
       "party": "R",
-      "pct": 38.7
+      "pct": 39.8
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "Marist",
+     "startDate": "2026-10-22",
+     "endDate": "2026-10-25",
+     "sampleSize": 1449,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Hannah Pingree",
+       "party": "D",
+       "pct": 44
+      },
+      {
+       "candidate": "Bobby Charles",
+       "party": "R",
+       "pct": 44
+      }
+     ]
+    },
     {
      "pollster": "FOX News",
      "startDate": "2026-10-16",
@@ -46827,25 +46846,6 @@
      ]
     },
     {
-     "pollster": "Marist",
-     "startDate": "2026-10-01",
-     "endDate": "2026-10-04",
-     "sampleSize": 1505,
-     "population": "RV",
-     "results": [
-      {
-       "candidate": "Hannah Pingree",
-       "party": "D",
-       "pct": 52
-      },
-      {
-       "candidate": "Bobby Charles",
-       "party": "R",
-       "pct": 40
-      }
-     ]
-    },
-    {
      "pollster": "CBS News",
      "startDate": "2026-09-23",
      "endDate": "2026-10-01",
@@ -46899,25 +46899,6 @@
        "candidate": "Bobby Charles",
        "party": "R",
        "pct": 39
-      }
-     ]
-    },
-    {
-     "pollster": "NY Times/Siena",
-     "startDate": "2026-09-15",
-     "endDate": "2026-09-22",
-     "sampleSize": 619,
-     "population": "LV",
-     "results": [
-      {
-       "candidate": "Hannah Pingree",
-       "party": "D",
-       "pct": 47
-      },
-      {
-       "candidate": "Bobby Charles",
-       "party": "R",
-       "pct": 34
       }
      ]
     },
@@ -46992,6 +46973,25 @@
        "candidate": "John James",
        "party": "R",
        "pct": 45
+      }
+     ]
+    },
+    {
+     "pollster": "Michigan State University / YouGov",
+     "startDate": "2026-10-02",
+     "endDate": "2026-10-02",
+     "sampleSize": 836,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Jocelyn Benson",
+       "party": "D",
+       "pct": 52
+      },
+      {
+       "candidate": "John James",
+       "party": "R",
+       "pct": 40
       }
      ]
     },
@@ -48164,22 +48164,41 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Ayotte +9.3",
-    "period": "9/15 - 10/20",
+    "spread": "Ayotte +9.5",
+    "period": "9/15 - 10/23",
     "results": [
      {
       "candidate": "Kelly Ayotte",
       "party": "R",
-      "pct": 50.3
+      "pct": 50.8
      },
      {
       "candidate": "Cindy Warmington",
       "party": "D",
-      "pct": 41
+      "pct": 41.3
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "Rasmussen Reports",
+     "startDate": "2026-10-20",
+     "endDate": "2026-10-23",
+     "sampleSize": 970,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Kelly Ayotte",
+       "party": "R",
+       "pct": 52
+      },
+      {
+       "candidate": "Cindy Warmington",
+       "party": "D",
+       "pct": 42
+      }
+     ]
+    },
     {
      "pollster": "St. Anselm",
      "startDate": "2026-10-19",
@@ -50055,6 +50074,25 @@
    ],
    "polls": [
     {
+     "pollster": "Targoz Media Research",
+     "startDate": "2026-10-16",
+     "endDate": "2026-10-16",
+     "sampleSize": 895,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Jermaine Johnson",
+       "party": "D",
+       "pct": 41
+      },
+      {
+       "candidate": "Alan Wilson",
+       "party": "R",
+       "pct": 51
+      }
+     ]
+    },
+    {
      "pollster": "Trafalgar Group",
      "startDate": "2026-10-16",
      "endDate": "2026-10-16",
@@ -50508,6 +50546,25 @@
        "candidate": "Greg Abbott",
        "party": "R",
        "pct": 51
+      }
+     ]
+    },
+    {
+     "pollster": "Univision / YouGov",
+     "startDate": "2026-10-13",
+     "endDate": "2026-10-13",
+     "sampleSize": 1000,
+     "population": "RV",
+     "results": [
+      {
+       "candidate": "Gina Hinojosa",
+       "party": "D",
+       "pct": 46
+      },
+      {
+       "candidate": "Greg Abbott",
+       "party": "R",
+       "pct": 48
       }
      ]
     },
@@ -51185,22 +51242,41 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Abbott +3.3",
-    "period": "10/5 - 10/19",
+    "spread": "Abbott +3.2",
+    "period": "10/5 - 10/21",
     "results": [
      {
       "candidate": "Greg Abbott",
       "party": "R",
-      "pct": 49.8
+      "pct": 49.6
      },
      {
       "candidate": "Gina Hinojosa",
       "party": "D",
-      "pct": 46.5
+      "pct": 46.4
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "Univision/YouGov",
+     "startDate": "2026-10-13",
+     "endDate": "2026-10-21",
+     "sampleSize": 1000,
+     "population": "RV",
+     "results": [
+      {
+       "candidate": "Greg Abbott",
+       "party": "R",
+       "pct": 48
+      },
+      {
+       "candidate": "Gina Hinojosa",
+       "party": "D",
+       "pct": 46
+      }
+     ]
+    },
     {
      "pollster": "Emerson",
      "startDate": "2026-10-17",
@@ -51344,12 +51420,12 @@
       {
        "candidate": "Greg Abbott",
        "party": "R",
-       "pct": 48
+       "pct": 49
       },
       {
        "candidate": "Gina Hinojosa",
        "party": "D",
-       "pct": 47
+       "pct": 45
       }
      ]
     }
@@ -56908,6 +56984,7 @@
      "endDate": "2026-10-20",
      "sampleSize": 4832,
      "population": "LV",
+     "partisan": "D",
      "results": [
       {
        "candidate": "Angie Nixon",
@@ -58412,6 +58489,23 @@
    ],
    "polls": [
     {
+     "pollster": "Marist University",
+     "startDate": "2026-10-22",
+     "endDate": "2026-10-22",
+     "results": [
+      {
+       "candidate": "Troy Jackson",
+       "party": "D",
+       "pct": 49
+      },
+      {
+       "candidate": "Susan Collins",
+       "party": "R",
+       "pct": 47
+      }
+     ]
+    },
+    {
      "pollster": "Trafalgar Group",
      "startDate": "2026-10-21",
      "endDate": "2026-10-21",
@@ -58939,13 +59033,13 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Jackson +1.4",
-    "period": "9/23 - 10/23",
+    "spread": "Jackson +1.2",
+    "period": "9/23 - 10/25",
     "results": [
      {
       "candidate": "Troy Jackson",
       "party": "D",
-      "pct": 48.9
+      "pct": 48.7
      },
      {
       "candidate": "Susan Collins",
@@ -58955,6 +59049,25 @@
     ]
    },
    "polls": [
+    {
+     "pollster": "Marist",
+     "startDate": "2026-10-22",
+     "endDate": "2026-10-25",
+     "sampleSize": 1449,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Troy Jackson",
+       "party": "D",
+       "pct": 49
+      },
+      {
+       "candidate": "Susan Collins",
+       "party": "R",
+       "pct": 47
+      }
+     ]
+    },
     {
      "pollster": "Trafalgar Group",
      "startDate": "2026-10-21",
@@ -59070,25 +59183,6 @@
      ]
     },
     {
-     "pollster": "Marist",
-     "startDate": "2026-10-01",
-     "endDate": "2026-10-04",
-     "sampleSize": 1505,
-     "population": "RV",
-     "results": [
-      {
-       "candidate": "Troy Jackson",
-       "party": "D",
-       "pct": 51
-      },
-      {
-       "candidate": "Susan Collins",
-       "party": "R",
-       "pct": 47
-      }
-     ]
-    },
-    {
      "pollster": "CBS News",
      "startDate": "2026-09-23",
      "endDate": "2026-10-01",
@@ -59190,6 +59284,7 @@
      "endDate": "2026-10-20",
      "sampleSize": 2696,
      "population": "LV",
+     "partisan": "D",
      "results": [
       {
        "candidate": "Abdul El-Sayed",
@@ -59200,6 +59295,25 @@
        "candidate": "Mike Rogers",
        "party": "R",
        "pct": 44
+      }
+     ]
+    },
+    {
+     "pollster": "Glengariff Group",
+     "startDate": "2026-10-19",
+     "endDate": "2026-10-19",
+     "sampleSize": 600,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Abdul El-Sayed",
+       "party": "D",
+       "pct": 51
+      },
+      {
+       "candidate": "Mike Rogers",
+       "party": "R",
+       "pct": 45
       }
      ]
     },
@@ -59316,6 +59430,25 @@
        "candidate": "Mike Rogers",
        "party": "R",
        "pct": 48
+      }
+     ]
+    },
+    {
+     "pollster": "Michigan State University / YouGov",
+     "startDate": "2026-10-02",
+     "endDate": "2026-10-02",
+     "sampleSize": 836,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Abdul El-Sayed",
+       "party": "D",
+       "pct": 48
+      },
+      {
+       "candidate": "Mike Rogers",
+       "party": "R",
+       "pct": 46
       }
      ]
     },
@@ -59964,18 +60097,18 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "El-Sayed +1.9",
-    "period": "9/24 - 10/22",
+    "spread": "El-Sayed +2.5",
+    "period": "9/28 - 10/22",
     "results": [
      {
       "candidate": "Abdul El-Sayed",
       "party": "D",
-      "pct": 47.9
+      "pct": 48.1
      },
      {
       "candidate": "Mike Rogers",
       "party": "R",
-      "pct": 46
+      "pct": 45.6
      }
     ]
    },
@@ -59996,6 +60129,25 @@
        "candidate": "Mike Rogers",
        "party": "R",
        "pct": 46
+      }
+     ]
+    },
+    {
+     "pollster": "Detroit News/Glengariff",
+     "startDate": "2026-10-19",
+     "endDate": "2026-10-22",
+     "sampleSize": 600,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Abdul El-Sayed",
+       "party": "D",
+       "pct": 51
+      },
+      {
+       "candidate": "Mike Rogers",
+       "party": "R",
+       "pct": 45
       }
      ]
     },
@@ -60110,44 +60262,6 @@
        "candidate": "Mike Rogers",
        "party": "R",
        "pct": 41
-      }
-     ]
-    },
-    {
-     "pollster": "Trafalgar Group",
-     "startDate": "2026-09-28",
-     "endDate": "2026-09-30",
-     "sampleSize": 1085,
-     "population": "LV",
-     "results": [
-      {
-       "candidate": "Abdul El-Sayed",
-       "party": "D",
-       "pct": 47
-      },
-      {
-       "candidate": "Mike Rogers",
-       "party": "R",
-       "pct": 45
-      }
-     ]
-    },
-    {
-     "pollster": "FOX News",
-     "startDate": "2026-09-24",
-     "endDate": "2026-09-28",
-     "sampleSize": 1028,
-     "population": "LV",
-     "results": [
-      {
-       "candidate": "Abdul El-Sayed",
-       "party": "D",
-       "pct": 50
-      },
-      {
-       "candidate": "Mike Rogers",
-       "party": "R",
-       "pct": 49
       }
      ]
     }
@@ -60826,6 +60940,26 @@
     }
    ],
    "polls": [
+    {
+     "pollster": "Quantus Insights",
+     "startDate": "2026-10-24",
+     "endDate": "2026-10-24",
+     "sampleSize": 722,
+     "population": "LV",
+     "partisan": "R",
+     "results": [
+      {
+       "candidate": "Roy Cooper",
+       "party": "D",
+       "pct": 51
+      },
+      {
+       "candidate": "Michael Whatley",
+       "party": "R",
+       "pct": 43
+      }
+     ]
+    },
     {
      "pollster": "Harper Polling",
      "startDate": "2026-10-18",
@@ -63308,6 +63442,25 @@
    ],
    "polls": [
     {
+     "pollster": "Targoz Media Research",
+     "startDate": "2026-10-16",
+     "endDate": "2026-10-16",
+     "sampleSize": 895,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Annie Andrews",
+       "party": "D",
+       "pct": 46
+      },
+      {
+       "candidate": "Darline Graham",
+       "party": "R",
+       "pct": 47
+      }
+     ]
+    },
+    {
      "pollster": "Trafalgar Group",
      "startDate": "2026-10-16",
      "endDate": "2026-10-16",
@@ -63879,6 +64032,25 @@
        "candidate": "Ken Paxton",
        "party": "R",
        "pct": 48
+      }
+     ]
+    },
+    {
+     "pollster": "Univision / YouGov",
+     "startDate": "2026-10-13",
+     "endDate": "2026-10-13",
+     "sampleSize": 1000,
+     "population": "RV",
+     "results": [
+      {
+       "candidate": "James Talarico",
+       "party": "D",
+       "pct": 50
+      },
+      {
+       "candidate": "Ken Paxton",
+       "party": "R",
+       "pct": 45
       }
      ]
     },
@@ -64655,18 +64827,18 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Talarico +1.5",
+    "spread": "Talarico +1.8",
     "period": "10/8 - 10/21",
     "results": [
      {
       "candidate": "James Talarico",
       "party": "D",
-      "pct": 48.4
+      "pct": 48.5
      },
      {
       "candidate": "Ken Paxton",
       "party": "R",
-      "pct": 46.9
+      "pct": 46.7
      }
     ]
    },
@@ -64682,6 +64854,25 @@
        "candidate": "James Talarico",
        "party": "D",
        "pct": 45
+      },
+      {
+       "candidate": "Ken Paxton",
+       "party": "R",
+       "pct": 45
+      }
+     ]
+    },
+    {
+     "pollster": "Univision/YouGov",
+     "startDate": "2026-10-13",
+     "endDate": "2026-10-21",
+     "sampleSize": 1000,
+     "population": "RV",
+     "results": [
+      {
+       "candidate": "James Talarico",
+       "party": "D",
+       "pct": 50
       },
       {
        "candidate": "Ken Paxton",

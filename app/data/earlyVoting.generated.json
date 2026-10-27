@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T02:27:47.556Z",
+  "generatedAt": "2026-10-27T15:11:05.426Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 49,
@@ -27969,21 +27969,7 @@
     "IA": {
       "hasData": true,
       "admin": {
-        "name": "Secretary of State",
-        "electionInfoUrl": "https://voterready.iowa.gov/",
-        "electionRegistrationUrl": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
-        "electionRegistrationConfirmationUrl": "https://sos.iowa.gov/elections/voterreg/regtovote/search.aspx",
-        "votingLocationFinderUrl": "https://sos.iowa.gov/elections/voterreg/pollingplace/search.aspx",
-        "electionRulesUrl": "https://sos.iowa.gov/elections/electioninfo/absenteeinfo.html",
-        "correspondenceAddress": {
-          "line1": "First Floor, Lucas Building 321 E. 12th St.",
-          "addressLine": [
-            "First Floor, Lucas Building 321 E. 12th St."
-          ],
-          "city": "Des Moines",
-          "state": "",
-          "zip": "50319"
-        }
+        "electionInfoUrl": "https://sos.iowa.gov/auditors"
       },
       "earlyVoteSites": null,
       "dropOffLocations": null,
@@ -39974,9 +39960,9 @@
         {
           "address": {
             "locationName": "Murray Post Office",
-            "line1": "5025 S. State St",
+            "line1": "4989 S. State St",
             "addressLine": [
-              "5025 S. State St"
+              "4989 S. State St"
             ],
             "city": "Murray",
             "state": "UT",

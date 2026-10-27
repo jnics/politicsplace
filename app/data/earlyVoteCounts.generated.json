@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-27T02:27:51.105Z",
+  "generatedAt": "2026-10-27T15:11:09.142Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 31482230,
+  "totalVoted": 32976593,
   "byState": {
     "AK": {
       "current": {
@@ -11,9 +11,9 @@
         "inPerson": 30536,
         "mailRequested": 48346,
         "party": {
-          "dem": 10072,
-          "rep": 13372,
-          "other": 22760
+          "dem": 10001,
+          "rep": 13253,
+          "other": 22950
         },
         "mailRequestedParty": null,
         "turnout2022": 267047,
@@ -103,28 +103,28 @@
     },
     "AZ": {
       "current": {
-        "voted": 956224,
-        "mailReturned": 956224,
+        "voted": 971184,
+        "mailReturned": 971184,
         "inPerson": null,
-        "mailRequested": 3278043,
+        "mailRequested": 3278545,
         "party": {
-          "dem": 365685,
-          "rep": 369635,
-          "other": 220904
+          "dem": 369713,
+          "rep": 376890,
+          "other": 224581
         },
         "mailRequestedParty": {
-          "dem": 1050880,
-          "rep": 1158279,
-          "other": 1068884
+          "dem": 1050964,
+          "rep": 1158598,
+          "other": 1068983
         },
         "turnout2022": 2592313,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://www.stealth-analytics.com/early-ballots",
         "notes": "Arizona's request_* figures are mail ballots issued (sent out), not applications received - this state's early voting is run through a permanent early-voting list rather than a one-off per-election request.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0799542857142856,
-          "2024": 0.6749714285714286
+          "2022": 0.9904315515571865,
+          "2024": 0.6353540186915888
         }
       },
       "past": {
@@ -155,14 +155,14 @@
     },
     "CA": {
       "current": {
-        "voted": 3249374,
-        "mailReturned": 3209626,
+        "voted": 3421226,
+        "mailReturned": 3381478,
         "inPerson": 39748,
         "mailRequested": 23444011,
         "party": {
-          "dem": 1417378,
-          "rep": 826206,
-          "other": 591303
+          "dem": 1703845,
+          "rep": 972587,
+          "other": 706213
         },
         "mailRequestedParty": {
           "dem": 10436895,
@@ -170,13 +170,13 @@
           "other": 7044316
         },
         "turnout2022": 11146610,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
         "notes": "Some statistics provided by [PDI](https://politicaldata.com/). The higher value provided by the California Secretary of State or PDI is used where reporting differences exist. Because PDI, the source for party registration data, does not report by method of voting, all party registration calculations include in-person early and mail ballots.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.066233079126216,
-          "2024": 0.6506933071110149
+          "2022": 1.0184012635340718,
+          "2024": 0.6308523282713678
         }
       },
       "past": {
@@ -207,28 +207,28 @@
     },
     "CO": {
       "current": {
-        "voted": 982522,
-        "mailReturned": 975374,
+        "voted": 982530,
+        "mailReturned": 975382,
         "inPerson": 7148,
-        "mailRequested": 4050945,
+        "mailRequested": 4050877,
         "party": {
-          "dem": 317344,
-          "rep": 240043,
-          "other": 425135
+          "dem": 317345,
+          "rep": 240045,
+          "other": 425140
         },
         "mailRequestedParty": {
-          "dem": 1000673,
-          "rep": 886931,
-          "other": 2163341
+          "dem": 1000632,
+          "rep": 886866,
+          "other": 2163379
         },
         "turnout2022": 2540666,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Colorado Secretary of State",
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.1779070132793286,
-          "2024": 0.6665522638556262
+          "2022": 1.1389750265754888,
+          "2024": 0.6944473959924863
         }
       },
       "past": {
@@ -393,28 +393,28 @@
     },
     "FL": {
       "current": {
-        "voted": 3152810,
-        "mailReturned": 1492246,
-        "inPerson": 1660564,
-        "mailRequested": 2478778,
+        "voted": 3175047,
+        "mailReturned": 1505782,
+        "inPerson": 1669265,
+        "mailRequested": 2480511,
         "party": {
-          "dem": 1244521,
-          "rep": 1257291,
-          "other": 650998
+          "dem": 1254472,
+          "rep": 1264762,
+          "other": 655813
         },
         "mailRequestedParty": {
-          "dem": 1046382,
-          "rep": 854187,
-          "other": 578209
+          "dem": 1047186,
+          "rep": 854744,
+          "other": 578581
         },
         "turnout2022": 7796916,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://countyfilesvbm-ev.floridados.gov/VoteByMailEarlyVotingReports/PublicStats",
         "notes": "Some Florida statistics are obtained from county websites that may report more recent and higher numbers than the Florida Division of Elections reports.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0295765541888475,
-          "2024": 0.6104257869180378
+          "2022": 0.9567530630644966,
+          "2024": 0.5592657547305742
         }
       },
       "past": {
@@ -445,24 +445,24 @@
     },
     "GA": {
       "current": {
-        "voted": 1940019,
-        "mailReturned": 90357,
-        "inPerson": 1849662,
-        "mailRequested": 157598,
+        "voted": 1954867,
+        "mailReturned": 91216,
+        "inPerson": 1863651,
+        "mailRequested": 157510,
         "party": {
-          "dem": 831565,
-          "rep": 667192,
-          "other": 441263
+          "dem": 837742,
+          "rep": 671969,
+          "other": 445156
         },
         "mailRequestedParty": null,
         "turnout2022": 3964926,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://mvp.sos.ga.gov/s/voter-absentee-files",
         "notes": "Georgia's county-level \"Ballots Issued and Accepted\" and \"Ballots to Date\" downloads (from the state's election-data-hub dashboard, https://sos.ga.gov/page/election-data-hub-unofficial-turnout) are compared against the statewide absentee file, county by county, using whichever is higher - this is how same-day in-person early-voting activity (which the statewide absentee file doesn't carry until the next overnight refresh) gets folded in. No district or demographic breakdown is available from these county-level downloads.",
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 0.9833700206314266,
-          "2024": 0.6103023024848654
+          "2022": 0.9080097126994122,
+          "2024": 0.5555146776606361
         },
         "partySource": "On Point Polling"
       },
@@ -495,9 +495,9 @@
         "inPerson": 1245,
         "mailRequested": 726230,
         "party": {
-          "dem": 69492,
-          "rep": 32014,
-          "other": 23613
+          "dem": 69496,
+          "rep": 32016,
+          "other": 23607
         },
         "mailRequestedParty": null,
         "turnout2022": 423443,
@@ -535,28 +535,28 @@
     },
     "IA": {
       "current": {
-        "voted": 265710,
-        "mailReturned": 91467,
-        "inPerson": 174243,
-        "mailRequested": 160961,
+        "voted": 306956,
+        "mailReturned": 112635,
+        "inPerson": 194321,
+        "mailRequested": 161209,
         "party": {
-          "dem": 134366,
-          "rep": 83845,
-          "other": 47499
+          "dem": 151784,
+          "rep": 99582,
+          "other": 55590
         },
         "mailRequestedParty": {
-          "dem": 74462,
-          "rep": 60421,
-          "other": 26078
+          "dem": 74527,
+          "rep": 60547,
+          "other": 26135
         },
         "turnout2022": 1230417,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Iowa Secretary of State",
-        "notes": "Iowa's BALLOT_STATUS field is not fully documented - this site infers whether a mail ballot was accepted from whether it has a RECEIVED_DATE rather than from BALLOT_STATUS directly. Figures may be revised once the Iowa Secretary of State's office provides official field documentation.",
+        "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.332828379096901,
-          "2024": 0.6613649940262843
+          "2022": 1.3720032479867696,
+          "2024": 0.6970754213520357
         }
       },
       "past": {
@@ -644,9 +644,9 @@
         "inPerson": 334802,
         "mailRequested": 1138809,
         "party": {
-          "dem": 459372,
-          "rep": 138415,
-          "other": 179396
+          "dem": 457594,
+          "rep": 137367,
+          "other": 182224
         },
         "mailRequestedParty": null,
         "turnout2022": 4144125,
@@ -684,18 +684,18 @@
     },
     "IN": {
       "current": {
-        "voted": 374767,
-        "mailReturned": 374767,
+        "voted": 432007,
+        "mailReturned": 432007,
         "inPerson": null,
-        "mailRequested": 426777,
+        "mailRequested": 477874,
         "party": {
-          "dem": 137063,
-          "rep": 139220,
-          "other": 98484
+          "dem": 160519,
+          "rep": 160993,
+          "other": 110495
         },
         "mailRequestedParty": null,
         "turnout2022": 1880755,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Indiana Secretary of State",
         "notes": null,
         "partyBasis": "modeled",
@@ -729,22 +729,22 @@
     },
     "KS": {
       "current": {
-        "voted": 204155,
-        "mailReturned": 42317,
-        "inPerson": 161838,
-        "mailRequested": 103679,
+        "voted": 245079,
+        "mailReturned": 52353,
+        "inPerson": 192726,
+        "mailRequested": 105750,
         "party": {
-          "dem": 95698,
-          "rep": 80382,
-          "other": 28075
+          "dem": 111886,
+          "rep": 98915,
+          "other": 34278
         },
         "mailRequestedParty": {
-          "dem": 48623,
-          "rep": 37727,
-          "other": 17329
+          "dem": 49414,
+          "rep": 38562,
+          "other": 17774
         },
         "turnout2022": 1008998,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Kansas Secretary of State",
         "notes": null,
         "partyBasis": "registration",
@@ -833,18 +833,18 @@
     },
     "LA": {
       "current": {
-        "voted": 363685,
-        "mailReturned": 65161,
-        "inPerson": 298524,
-        "mailRequested": 65161,
+        "voted": 433702,
+        "mailReturned": 69383,
+        "inPerson": 364319,
+        "mailRequested": 69383,
         "party": {
-          "dem": 156793,
-          "rep": 143388,
-          "other": 63504
+          "dem": 186367,
+          "rep": 170358,
+          "other": 76977
         },
         "mailRequestedParty": null,
         "turnout2022": 1410466,
-        "lastUpdate": "2026-10-25",
+        "lastUpdate": "2026-10-27",
         "source": "https://www.sos.la.gov/elections-voting/early-voting-statistics-statewide",
         "notes": "Louisiana does not publish mail ballot request data - the ballots requested figures shown for Louisiana equal ballots returned. Louisiana rreports statistics for Whites, Blacks, and other only.",
         "partyBasis": "registration",
@@ -934,8 +934,8 @@
         "notes": "Maryland reports are typically time-stamped one day behind when they are updated to this site. The reported date is as of the upload to this site is so that site vistors can be aware when a new report is available.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 0.6122367396747249,
-          "2024": 0.2695361988671217
+          "2022": 0.5612646769914348,
+          "2024": 0.2463776584491079
         }
       },
       "past": {
@@ -986,8 +986,8 @@
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.3632987038138582,
-          "2024": 0.8111234567901234
+          "2022": 1.2338505598722975,
+          "2024": 0.7581201193016852
         }
       },
       "past": {
@@ -1018,24 +1018,24 @@
     },
     "MI": {
       "current": {
-        "voted": 1213453,
-        "mailReturned": 1082646,
-        "inPerson": 130807,
-        "mailRequested": 2150935,
+        "voted": 1392217,
+        "mailReturned": 1197558,
+        "inPerson": 194659,
+        "mailRequested": 2163582,
         "party": {
-          "dem": 665673,
-          "rep": 237958,
-          "other": 309822
+          "dem": 757630,
+          "rep": 268878,
+          "other": 365709
         },
         "mailRequestedParty": null,
         "turnout2022": 4500400,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Data provided by Michigan Secretary of State",
         "notes": "Michigan does not identify how voters cast their ballots. The in-person numbers differ from the state's dashboard in that in-person reported here is estimated from mail ballot application data.",
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 0.9842236363636364,
-          "2024": 0.5782045627406016
+          "2022": 0.9117018947368422,
+          "2024": 0.5433674199174394
         },
         "partySource": "On Point Polling"
       },
@@ -1068,9 +1068,9 @@
         "inPerson": 241348,
         "mailRequested": 447340,
         "party": {
-          "dem": 214824,
-          "rep": 82201,
-          "other": 122164
+          "dem": 213972,
+          "rep": 81600,
+          "other": 123617
         },
         "mailRequestedParty": null,
         "turnout2022": 2526646,
@@ -1079,8 +1079,8 @@
         "notes": null,
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 1.1684084476843912,
-          "2024": 0.5458138324952647
+          "2022": 1.1148643617021277,
+          "2024": 0.5121230118803299
         },
         "partySource": "On Point Polling"
       },
@@ -1113,9 +1113,9 @@
         "inPerson": 50086,
         "mailRequested": 12165,
         "party": {
-          "dem": 15552,
-          "rep": 25671,
-          "other": 13384
+          "dem": 15475,
+          "rep": 25645,
+          "other": 13488
         },
         "mailRequestedParty": null,
         "turnout2022": 2304250,
@@ -1158,9 +1158,9 @@
         "inPerson": null,
         "mailRequested": 64537,
         "party": {
-          "dem": 19078,
-          "rep": 20294,
-          "other": 16677
+          "dem": 19421,
+          "rep": 20398,
+          "other": 16230
         },
         "mailRequestedParty": null,
         "turnout2022": 709100,
@@ -1195,18 +1195,18 @@
     },
     "MT": {
       "current": {
-        "voted": 180137,
-        "mailReturned": 180137,
+        "voted": 209134,
+        "mailReturned": 209134,
         "inPerson": null,
-        "mailRequested": 523737,
+        "mailRequested": 524860,
         "party": {
-          "dem": 79289,
-          "rep": 52697,
-          "other": 48152
+          "dem": 91223,
+          "rep": 60115,
+          "other": 57796
         },
         "mailRequestedParty": null,
         "turnout2022": 468326,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://sosmt.gov/elections/absentee-ballot-count/",
         "notes": null,
         "partyBasis": "modeled",
@@ -1237,28 +1237,28 @@
     },
     "NC": {
       "current": {
-        "voted": 1583182,
-        "mailReturned": 60046,
-        "inPerson": 1523136,
-        "mailRequested": 163809,
+        "voted": 1773890,
+        "mailReturned": 65841,
+        "inPerson": 1708049,
+        "mailRequested": 164597,
         "party": {
-          "dem": 658507,
-          "rep": 373431,
-          "other": 551244
+          "dem": 726638,
+          "rep": 430032,
+          "other": 617220
         },
         "mailRequestedParty": {
-          "dem": 65425,
-          "rep": 30604,
-          "other": 67780
+          "dem": 65728,
+          "rep": 30749,
+          "other": 68120
         },
         "turnout2022": 3790202,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
         "notes": "North Carolina provides summary ballot request statistics available for counties only. No mail ballot request statistics by district are available.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.210800050017227,
-          "2024": 0.5138684392397727
+          "2022": 1.2197109090509037,
+          "2024": 0.5309217680920892
         }
       },
       "past": {
@@ -1294,9 +1294,9 @@
         "inPerson": 4289,
         "mailRequested": 54942,
         "party": {
-          "dem": 10996,
-          "rep": 17794,
-          "other": 10609
+          "dem": 10944,
+          "rep": 17625,
+          "other": 10831
         },
         "mailRequestedParty": null,
         "turnout2022": 242566,
@@ -1334,28 +1334,28 @@
     },
     "NE": {
       "current": {
-        "voted": 151915,
-        "mailReturned": 127818,
-        "inPerson": 24097,
-        "mailRequested": 241715,
+        "voted": 169652,
+        "mailReturned": 141705,
+        "inPerson": 27947,
+        "mailRequested": 243269,
         "party": {
-          "dem": 62277,
-          "rep": 64052,
-          "other": 25586
+          "dem": 68388,
+          "rep": 72620,
+          "other": 28644
         },
         "mailRequestedParty": {
-          "dem": 87815,
-          "rep": 111128,
-          "other": 42759
+          "dem": 88216,
+          "rep": 111998,
+          "other": 43042
         },
         "turnout2022": 682716,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Data file provided by Nebraska Secretary of State",
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": null,
-          "2024": null
+          "2022": 1.1040023524030451,
+          "2024": 0.6778783076213213
         }
       },
       "past": {
@@ -1386,28 +1386,28 @@
     },
     "NJ": {
       "current": {
-        "voted": 526267,
-        "mailReturned": 463416,
-        "inPerson": 62851,
-        "mailRequested": 922398,
+        "voted": 624376,
+        "mailReturned": 486670,
+        "inPerson": 137706,
+        "mailRequested": 925697,
         "party": {
-          "dem": 337052,
-          "rep": 103650,
-          "other": 85565
+          "dem": 389443,
+          "rep": 130454,
+          "other": 104479
         },
         "mailRequestedParty": {
-          "dem": 532355,
-          "rep": 175429,
-          "other": 214614
+          "dem": 533971,
+          "rep": 175947,
+          "other": 215779
         },
         "turnout2022": 2645539,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "New Jersey Secretary of State",
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0665830316934664,
-          "2024": 0.5221665306679706
+          "2022": 0.993685931749907,
+          "2024": 0.45458974395741253
         }
       },
       "past": {
@@ -1438,28 +1438,29 @@
     },
     "NM": {
       "current": {
-        "voted": 257548,
-        "mailReturned": 48601,
-        "inPerson": 208947,
-        "mailRequested": 89130,
+        "voted": 283293,
+        "mailReturned": 53742,
+        "inPerson": 229551,
+        "mailRequested": 89147,
         "party": {
-          "dem": 141995,
-          "rep": 74196,
-          "other": 41357
+          "dem": 154507,
+          "rep": 82876,
+          "other": 45910
         },
         "mailRequestedParty": {
-          "dem": 52726,
-          "rep": 19234,
-          "other": 17170
+          "dem": 52735,
+          "rep": 19240,
+          "other": 17172
         },
         "turnout2022": 714754,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "New Mexico Secretary of State",
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": null,
-          "2024": null
+          "2022": 1.0917467609042493,
+          "2024": null,
+          "source2022": "ElectIndex"
         }
       },
       "past": {
@@ -1490,28 +1491,28 @@
     },
     "NV": {
       "current": {
-        "voted": 410049,
-        "mailReturned": 252842,
-        "inPerson": 157207,
-        "mailRequested": 2088247,
+        "voted": 444249,
+        "mailReturned": 263414,
+        "inPerson": 180835,
+        "mailRequested": 2088277,
         "party": {
-          "dem": 164249,
-          "rep": 142688,
-          "other": 103112
+          "dem": 178521,
+          "rep": 154127,
+          "other": 111601
         },
         "mailRequestedParty": {
-          "dem": 583688,
-          "rep": 563681,
-          "other": 940878
+          "dem": 583721,
+          "rep": 563682,
+          "other": 940874
         },
         "turnout2022": 1023617,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://www.nvsos.gov/elections/election-information/vivid-project",
         "notes": "Statewide and county totals, method of voting (mail vs. in-person), and party registration all come from two public JSON files the state's own Vivid dashboard uses. District (congressional/legislative), age, and district-level party breakdowns come from a separate individual-level file and may not sum to exactly the same statewide total.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.1522917251051894,
-          "2024": 0.5908550880978065
+          "2022": 1.1415759162303665,
+          "2024": 0.5772097948378557
         }
       },
       "past": {
@@ -1542,14 +1543,14 @@
     },
     "NY": {
       "current": {
-        "voted": 485205,
+        "voted": 703055,
         "mailReturned": null,
-        "inPerson": 485205,
+        "inPerson": 703055,
         "mailRequested": null,
         "party": null,
         "mailRequestedParty": null,
         "turnout2022": 5962278,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Data provided by the New York State Board of Elections",
         "notes": "New York's daily turnout report provides a cumulative county-level total for in-person early voters only. No mail-ballot figures or demographic data are available for New York at this time.",
         "partyBasis": null
@@ -1580,9 +1581,9 @@
         "inPerson": 636295,
         "mailRequested": 720703,
         "party": {
-          "dem": 452367,
-          "rep": 355300,
-          "other": 275869
+          "dem": 451145,
+          "rep": 353774,
+          "other": 278615
         },
         "mailRequestedParty": null,
         "turnout2022": 4201368,
@@ -1591,8 +1592,8 @@
         "notes": "In-person early votes may be different than reported by the Ohio Secretary of State. They are approximated by counting a ballot sent and received on the same day as an in-person early vote.",
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": null,
-          "2024": 0.6611615853658537
+          "2022": 1.326133378340696,
+          "2024": 0.6258614718614719
         },
         "partySource": "On Point Polling"
       },
@@ -1620,28 +1621,29 @@
     },
     "OK": {
       "current": {
-        "voted": 27098,
-        "mailReturned": 27098,
+        "voted": 31600,
+        "mailReturned": 31600,
         "inPerson": null,
-        "mailRequested": 64914,
+        "mailRequested": 64915,
         "party": {
-          "dem": 11545,
-          "rep": 12201,
-          "other": 3352
+          "dem": 13291,
+          "rep": 14297,
+          "other": 4012
         },
         "mailRequestedParty": {
-          "dem": 26663,
-          "rep": 28338,
-          "other": 9913
+          "dem": 26661,
+          "rep": 28340,
+          "other": 9914
         },
         "turnout2022": 1153284,
-        "lastUpdate": "2026-10-24",
+        "lastUpdate": "2026-10-27",
         "source": "Oklahoma State Board of Elections",
         "notes": "These data are obtained from the Oklahoma State Board of Elections Election Data Warehouse. A link is provided to the state public reporting site for when it becomes available.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": null,
-          "2024": null
+          "2022": 0.6365962247426419,
+          "2024": null,
+          "source2022": "ElectIndex"
         }
       },
       "past": {
@@ -1725,28 +1727,28 @@
     },
     "PA": {
       "current": {
-        "voted": 832250,
-        "mailReturned": 832250,
+        "voted": 893224,
+        "mailReturned": 893224,
         "inPerson": null,
-        "mailRequested": 1260101,
+        "mailRequested": 1277342,
         "party": {
-          "dem": 552124,
-          "rep": 203897,
-          "other": 76229
+          "dem": 587377,
+          "rep": 221946,
+          "other": 83901
         },
         "mailRequestedParty": {
-          "dem": 812711,
-          "rep": 307364,
-          "other": 140026
+          "dem": 820932,
+          "rep": 313506,
+          "other": 142904
         },
         "turnout2022": 5410022,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://data.pa.gov/Government-Efficiency-Citizen-Engagement/2026-General-Election-Mail-Ballot-Requests-Departm/nbwd-pfn4/about_data",
         "notes": "The statewide and county statistics are compiled from the state dashobard. The district and age statistics are from an individual level file which may have slightly different statistics than the state's summary report, which the state did not update on Friday",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 0.9509660875746158,
-          "2024": 0.5847364401005676
+          "2022": 0.9816753479320701,
+          "2024": 0.6041056434787033
         }
       },
       "past": {
@@ -1831,9 +1833,9 @@
         "inPerson": 501944,
         "mailRequested": 56715,
         "party": {
-          "dem": 146731,
-          "rep": 257656,
-          "other": 126171
+          "dem": 146662,
+          "rep": 257499,
+          "other": 126396
         },
         "mailRequestedParty": null,
         "turnout2022": 1718626,
@@ -1985,8 +1987,8 @@
         "partyBasis": "primary",
         "partySource": "theoelections.com",
         "sameDay": {
-          "2022": 1.297122215876642,
-          "2024": 0.8054117021276596
+          "2022": 1.1344965034965035,
+          "2024": 0.7010067901234568
         }
       },
       "past": {
@@ -2013,22 +2015,22 @@
     },
     "UT": {
       "current": {
-        "voted": 194399,
-        "mailReturned": 193151,
-        "inPerson": 1248,
-        "mailRequested": 1787566,
+        "voted": 236983,
+        "mailReturned": 235114,
+        "inPerson": 1869,
+        "mailRequested": 1786661,
         "party": {
-          "dem": 43179,
-          "rep": 100589,
-          "other": 50631
+          "dem": 51863,
+          "rep": 122785,
+          "other": 62335
         },
         "mailRequestedParty": {
-          "dem": 253483,
-          "rep": 914277,
-          "other": 619806
+          "dem": 255388,
+          "rep": 912507,
+          "other": 618766
         },
         "turnout2022": 1084634,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Utah Lt. Governor",
         "notes": "Utah is a universal vote-by-mail state - every \"Active\" registered voter is automatically mailed a ballot each election, and a 2025 law phasing this out does not take effect until 2029. Statewide and county \"ballots requested\" figures are therefore the number of Active registered voters by party, scraped from the Lt. Governor's current voter registration statistics page. Congressional district figures instead use accepted ballots as a stand-in, since Utah does not publish district-level registration or request data.",
         "partyBasis": "registration",
@@ -2065,24 +2067,24 @@
     },
     "VA": {
       "current": {
-        "voted": 1106910,
-        "mailReturned": 262676,
-        "inPerson": 844234,
-        "mailRequested": 463681,
+        "voted": 1183390,
+        "mailReturned": 274346,
+        "inPerson": 909044,
+        "mailRequested": 463391,
         "party": {
-          "dem": 534188,
-          "rep": 275545,
-          "other": 297177
+          "dem": 570195,
+          "rep": 293845,
+          "other": 319349
         },
         "mailRequestedParty": null,
         "turnout2022": 3021956,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://www.vpap.org/elections/early-voting/",
         "notes": null,
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 1.6318414518713786,
-          "2024": 0.5988669055453152
+          "2022": 1.644806869398961,
+          "2024": 0.6096439673633749
         },
         "partySource": "On Point Polling"
       },
@@ -2110,18 +2112,18 @@
     },
     "VT": {
       "current": {
-        "voted": 102202,
-        "mailReturned": 102202,
+        "voted": 114122,
+        "mailReturned": 114122,
         "inPerson": null,
-        "mailRequested": 457959,
+        "mailRequested": 458005,
         "party": {
-          "dem": 64287,
-          "rep": 21013,
-          "other": 16902
+          "dem": 71785,
+          "rep": 23465,
+          "other": 18871
         },
         "mailRequestedParty": null,
         "turnout2022": 291955,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "Data provided Vermont Secretary of State",
         "notes": null,
         "partyBasis": "modeled",
@@ -2160,9 +2162,9 @@
         "inPerson": null,
         "mailRequested": 5131622,
         "party": {
-          "dem": 626168,
-          "rep": 176986,
-          "other": 152117
+          "dem": 626166,
+          "rep": 177010,
+          "other": 152093
         },
         "mailRequestedParty": null,
         "turnout2022": 3067686,
@@ -2201,24 +2203,24 @@
     },
     "WI": {
       "current": {
-        "voted": 441141,
-        "mailReturned": 240803,
-        "inPerson": 200338,
-        "mailRequested": 588504,
+        "voted": 513602,
+        "mailReturned": 262510,
+        "inPerson": 251092,
+        "mailRequested": 641771,
         "party": {
-          "dem": 206469,
-          "rep": 97827,
-          "other": 136846
+          "dem": 241590,
+          "rep": 113575,
+          "other": 158436
         },
         "mailRequestedParty": null,
         "turnout2022": 2673154,
-        "lastUpdate": "2026-10-26",
+        "lastUpdate": "2026-10-27",
         "source": "https://elections.wi.gov/resources/statistics/absentee-ballot-report-november-3-2026-general-election-0",
         "notes": null,
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 1.2483641645157169,
-          "2024": 0.7476445221445222
+          "2022": 1.38071948923631,
+          "2024": 0.8038805347471674
         },
         "partySource": "On Point Polling"
       },
