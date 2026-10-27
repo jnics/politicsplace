@@ -5,7 +5,7 @@ import { STATE_PATHS } from "~/data/statePaths";
 import { HISTORICAL_COLORS } from "~/lib/shades";
 import { formatVotes } from "~/lib/margin";
 import { hasStateGeo } from "~/lib/stateGeo";
-import { EarlyVoteCountyMap, type BaseYear } from "~/components/EarlyVoteCountyMap";
+import { EarlyVoteCountyMap, PastTotals, type BaseYear } from "~/components/EarlyVoteCountyMap";
 import { StatGrid, type Stat } from "~/components/StatGrid";
 import { EvLegend } from "~/components/EvLegend";
 import {
@@ -535,7 +535,6 @@ function StateTop({ state, cur }: { state: string; cur: CurrentEv }) {
         : undefined,
     },
   ];
-  if (cur.turnout2022) items.push({ label: "% of 2022", value: `${pctOf(cur.voted, cur.turnout2022)!.toFixed(1)}%` });
   if (cur.mailReturned != null)
     items.push({
       label: "Mail returned",
@@ -631,9 +630,13 @@ function PartyPastTable({
   // Finals: EAVS (the federal survey, every cycle, same definition) first;
   // the UF / On Point / US Elections Project numbers only where EAVS has none.
   const eavs = HISTORY.byState[state];
+  // Total ballots cast each cycle (EAVS), with the same "2026 at" comparison.
+  const totals: [year: string, value: string][] = [];
   for (const y of ["2024", "2022", "2020", "2018", "2016"] as const) {
     const v = eavs?.[y]?.ev || (y !== "2018" ? past[y]?.voted : null);
-    if (v) right.push([`${y} final`, `${shortVotes(v)} · 2026 at ${pctOf(cur.voted, v)!.toFixed(0)}%`]);
+    if (v) right.push([y, `${shortVotes(v)} · 2026 at ${pctOf(cur.voted, v)!.toFixed(0)}%`]);
+    const t = eavs?.[y]?.t;
+    if (t) totals.push([y, `${shortVotes(t)} · 2026 at ${pctOf(cur.voted, t)!.toFixed(0)}%`]);
   }
 
   const partyHead = cur.partyBasis
@@ -643,6 +646,7 @@ function PartyPastTable({
   const n = Math.max(left.length, right.length);
 
   return (
+    <>
     <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
       <thead>
         <tr className={`${MUTED} text-left`}>
@@ -672,6 +676,8 @@ function PartyPastTable({
         })}
       </tbody>
     </table>
+    <PastTotals rows={totals} />
+    </>
   );
 }
 

@@ -307,7 +307,6 @@ function CountyTip({
 }) {
   const muted = "text-gray-300 dark:text-gray-600";
   const has2026 = !!row && row.v > 0;
-  const base = baseline(fips, hist, baseYear);
   const [eligible, registered] = electorate ?? [null, null];
 
   // 2026 so far + who could vote.
@@ -324,7 +323,6 @@ function CountyTip({
         ? `${pctOf(row!.v, eligible)!.toFixed(1)}% of elig.`
         : undefined,
     });
-  if (has2026 && base) current.push({ label: `% of ${base.label}`, value: `${pctOf(row!.v, base.n)!.toFixed(1)}%` });
   if (has2026 && row!.m > 0)
     current.push({
       label: "Mail returned",
@@ -376,7 +374,13 @@ function CountyTip({
     if (!ev) continue;
     const share = h[3] ? ` (${pctOf(ev, h[3])!.toFixed(0)}% of vote)` : "";
     const vs = has2026 ? ` · 2026 at ${pctOf(row!.v, ev)!.toFixed(0)}%` : "";
-    past.push([`${y} final`, `${shortVotes(ev)}${share}${vs}`]);
+    past.push([y, `${shortVotes(ev)}${share}${vs}`]);
+  }
+  // Total ballots cast each cycle, against 2026's early vote so far.
+  const totals: [string, string][] = [];
+  for (const y of HISTORY_YEARS) {
+    const t = hist?.[y]?.[3];
+    if (t) totals.push([y, `${shortVotes(t)}${has2026 ? ` · 2026 at ${pctOf(row!.v, t)!.toFixed(0)}%` : ""}`]);
   }
 
   // With an early-ballot party split: the current numbers sit on top as
@@ -430,6 +434,30 @@ function CountyTip({
           </tbody>
         </table>
       )}
+      <PastTotals rows={totals} />
     </div>
+  );
+}
+
+/** Total ballots cast in past cycles (EAVS), each against 2026's early vote
+ *  so far. Shared by the state and county cards. */
+export function PastTotals({ rows }: { rows: [year: string, value: string][] }) {
+  if (!rows.length) return null;
+  return (
+    <table className="w-full border-t border-white/15 tabular-nums dark:border-black/10">
+      <thead>
+        <tr className="text-left text-gray-300 dark:text-gray-600">
+          <th colSpan={2} className="pb-0.5 pt-1 font-normal">Total vote in past cycles</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map(([y, v]) => (
+          <tr key={y}>
+            <td>{y}</td>
+            <td className="text-right text-gray-300 dark:text-gray-600">{v}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 }
