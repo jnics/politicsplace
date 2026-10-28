@@ -1,46 +1,46 @@
 {
- "generatedAt": "2026-10-27",
+ "generatedAt": "2026-10-28",
  "source": "Wikipedia (\"2026 United States House of Representatives elections\", generic ballot aggregate table)",
  "year": 2026,
- "d": 51.4,
- "r": 42.7,
- "spread": "D+8.7",
- "asOf": "2026-10-25",
+ "d": 51.5,
+ "r": 43,
+ "spread": "D+8.5",
+ "asOf": "2026-10-27",
  "aggregators": [
   {
    "name": "Decision Desk HQ",
-   "d": 51.1,
-   "r": 43.1,
-   "spread": "D+8.0",
-   "updated": "2026-10-25"
+   "d": 50.8,
+   "r": 43,
+   "spread": "D+7.8",
+   "updated": "2026-10-27"
   },
   {
    "name": "FiftyPlusOne",
    "d": 52.2,
-   "r": 43,
-   "spread": "D+9.2",
-   "updated": "2026-10-25"
+   "r": 43.4,
+   "spread": "D+8.8",
+   "updated": "2026-10-27"
   },
   {
    "name": "NBC News",
    "d": 52,
    "r": 43,
    "spread": "D+9.0",
-   "updated": "2026-10-25"
+   "updated": "2026-10-27"
   },
   {
    "name": "RealClearPolitics",
-   "d": 51.1,
-   "r": 42.8,
+   "d": 51.6,
+   "r": 43.3,
    "spread": "D+8.3",
-   "updated": "2026-10-25"
+   "updated": "2026-10-27"
   },
   {
    "name": "Silver Bulletin",
-   "d": 50.6,
-   "r": 41.6,
-   "spread": "D+9.0",
-   "updated": "2026-10-25"
+   "d": 51,
+   "r": 42.2,
+   "spread": "D+8.8",
+   "updated": "2026-10-27"
   }
  ]
 }

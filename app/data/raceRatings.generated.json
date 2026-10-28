@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27",
+ "generatedAt": "2026-10-28",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -18,9 +18,9 @@
       "flip": true
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "economist": {
       "label": "Likely",
@@ -74,7 +74,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -109,8 +109,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      }
     }
@@ -186,7 +186,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -603,7 +603,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -827,7 +827,7 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -873,8 +873,8 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "fiftyPlusOne": {
@@ -970,8 +970,8 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "economist": {
@@ -1586,7 +1586,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -1667,8 +1667,8 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "silverBulletin": {
@@ -1790,6 +1790,62 @@
      },
      "rcp": {
       "label": "Likely",
+      "party": "R",
+      "flip": false
+     }
+    }
+   },
+   {
+    "label": "Florida 17",
+    "raceType": "house",
+    "ratings": {
+     "cook": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "economist": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "splitTicket": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "ddhq": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "fiftyPlusOne": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
+      "label": "Solid",
       "party": "R",
       "flip": false
      }
@@ -2874,8 +2930,8 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "economist": {
@@ -2899,8 +2955,8 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "silverBulletin": {
@@ -3235,9 +3291,9 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "silverBulletin": {
       "label": "Likely",
@@ -3403,7 +3459,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -3459,7 +3515,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "D",
       "flip": false
      },
@@ -3546,8 +3602,8 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "economist": {
@@ -3602,8 +3658,8 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "economist": {
@@ -3739,7 +3795,7 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -4121,7 +4177,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -4803,8 +4859,8 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "silverBulletin": {
@@ -5027,7 +5083,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5251,9 +5307,9 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "silverBulletin": {
       "label": "Likely",
@@ -5307,7 +5363,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5419,7 +5475,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -5618,7 +5674,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -5730,7 +5786,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -5867,74 +5923,18 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "silverBulletin": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     }
-    }
-   },
-   {
-    "label": "Oregon 5",
-    "raceType": "house",
-    "ratings": {
-     "cook": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "insideElections": {
-      "label": "Solid",
-      "party": "D",
-      "flip": false
-     },
-     "sabato": {
       "label": "Likely",
-      "party": "D",
-      "flip": false
-     },
-     "economist": {
-      "label": "Safe",
-      "party": "D",
-      "flip": false
-     },
-     "splitTicket": {
-      "label": "Safe",
-      "party": "D",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Safe",
-      "party": "D",
-      "flip": false
-     },
-     "fiftyPlusOne": {
-      "label": "Safe",
-      "party": "D",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "D",
+      "party": "R",
       "flip": false
      },
      "silverBulletin": {
       "label": "Solid",
-      "party": "D",
+      "party": "R",
       "flip": false
      },
      "rcp": {
       "label": "Solid",
-      "party": "D",
+      "party": "R",
       "flip": false
      }
     }
@@ -5954,8 +5954,8 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "economist": {
@@ -5969,8 +5969,8 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      },
      "fiftyPlusOne": {
@@ -6066,9 +6066,9 @@
       "flip": true
      },
      "sabato": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "economist": {
       "label": "Tossup",
@@ -6259,7 +6259,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -6682,9 +6682,9 @@
       "flip": false
      },
      "sabato": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "economist": {
       "label": "Tossup",
@@ -6809,7 +6809,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -6875,7 +6875,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -7267,9 +7267,9 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "silverBulletin": {
       "label": "Tossup",
@@ -7466,8 +7466,8 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "economist": {
@@ -7522,7 +7522,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": false
      },
@@ -7705,7 +7705,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -7715,7 +7715,7 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -7771,8 +7771,8 @@
       "flip": true
      },
      "foxNews": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "silverBulletin": {
@@ -8389,7 +8389,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9397,7 +9397,7 @@
       "flip": true
      },
      "sabato": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -9428,9 +9428,9 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "fiftyPlusOne": {
       "label": "Lean",
@@ -9677,7 +9677,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -10143,7 +10143,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -10569,9 +10569,9 @@
     "raceType": "governor",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "ddhq": {
       "label": "Lean",
@@ -10815,7 +10815,7 @@
     "raceType": "governor",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -11414,7 +11414,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
