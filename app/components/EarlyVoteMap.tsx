@@ -57,9 +57,9 @@ const HISTORY = earlyVoteHistory as unknown as {
   byState: Record<string, Partial<Record<"2016" | "2018" | "2020" | "2022" | "2024", { ev: number; t: number }>>>;
 };
 
-/** Where a state's party split comes from, best first: reported registration,
- *  past primary voting (Texas, Ohio), or On Point Polling's model. */
-export type PartyBasis = "registration" | "primary" | "modeled";
+/** Where a state's party split comes from: reported registration, else On
+ *  Point Polling's model. */
+export type PartyBasis = "registration" | "modeled";
 
 interface CurrentEv {
   voted: number;
@@ -69,6 +69,9 @@ interface CurrentEv {
   party: PartySplit | null;
   partyBasis: PartyBasis | null;
   partySource?: string;
+  /** No party registration and no model used: the state's own counts only
+   *  (Georgia, Ohio, Texas). */
+  noParty?: boolean;
   /** 2026 so far ÷ the same number of days out in that cycle. */
   sameDay?: { 2022: number | null; 2024: number | null };
   turnout2022: number | null;
@@ -78,7 +81,6 @@ interface CurrentEv {
 
 const PARTY_LABEL: Record<PartyBasis, string> = {
   registration: "By party registration",
-  primary: "By past primary voting",
   modeled: "Modeled party",
 };
 
@@ -298,13 +300,12 @@ export function EarlyVoteMap() {
     const ev24 = HISTORY.byState[zoomState]?.["2024"]?.ev || entry?.past["2024"]?.voted || null;
     const basisNote: Record<PartyBasis, string> = {
       registration: "D–R by registration",
-      primary: "D–R by past primaries",
       modeled: "D–R, modeled party",
     };
     return {
       title: STATE_NAMES[zoomState] ?? zoomState,
       party: cur?.voted && cur.party ? cur.party : null,
-      partyNote: cur?.partyBasis ? basisNote[cur.partyBasis] : "",
+      partyNote: cur?.partyBasis ? basisNote[cur.partyBasis] : cur?.noParty ? "No party registration" : "",
       voted: cur?.voted ?? 0,
       mail: cur?.mailReturned ?? 0,
       inPerson: cur?.inPerson ?? 0,
@@ -651,6 +652,14 @@ function PastCyclesTable({
 function PartyTable({ cur, past2024Party }: { cur: CurrentEv; past2024Party: PartySplit | null }) {
   const party = cur.party;
   const s = party ? shares(party) : null;
+  if ((!party || !s) && cur.noParty)
+    return (
+      <Section title="Party">
+        <div className={`text-[11px] ${SOFT}`}>
+          No party registration in this state, so there are no party totals for early voters.
+        </div>
+      </Section>
+    );
   if (!party || !s) return null;
   const p = past2024Party ? shares(past2024Party) : null;
   const lead = s.d - s.r;

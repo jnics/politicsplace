@@ -14,8 +14,9 @@
  *       published weekly on Saturdays.
  *
  *   AZ  Secretary of State registration PDF (see readAZ).
- *   GA, OH  no party registration: 2026 governor-primary votes per county
- *       from the results sites (see readGA / readOH).
+ *
+ * Not covered: GA and OH (no party registration; a primary vote count is not
+ * a registration count, so they show the registered total only).
  *
  * Tried and blocked to scripts by bot protection (checked 2026-10-24), so
  * not covered: Nevada (nvsos.gov, Incapsula), Michigan results
@@ -136,83 +137,6 @@ async function readNC() {
 }
 
 /**
- * Georgia doesn't register by party, so the stand-in is the 2026 primary:
- * votes in the Democratic vs Republican governor primary per county, from
- * the SOS results site's public API (results.sos.ga.gov -- reachable, unlike
- * sos.ga.gov). The governor race is on every party ballot statewide.
- */
-async function readGA() {
-  const api = "https://results.sos.ga.gov/results/public/api";
-  const get = async (path) => {
-    const res = await fetch(`${api}/${path}`, { headers: UA });
-    if (!res.ok) throw new Error(`GA HTTP ${res.status} ${path}`);
-    return res.json();
-  };
-  const juris = await get("jurisdictions/Georgia");
-  const election = juris.elections
-    .filter((e) => /general primary$/i.test(e.name?.[0]?.text?.trim() ?? "") && e.electionDate.startsWith("2026"))
-    .sort((a, b) => (a.electionDate < b.electionDate ? 1 : -1))[0];
-  if (!election) throw new Error("GA: no 2026 general primary listed");
-  const id = election.publicElectionId;
-  const { ballotItems } = await get(`elections/Georgia/${id}/data`);
-  const item = (party) =>
-    ballotItems.find((b) => new RegExp(`^Governor - ${party}$`).test(b.name?.[0]?.text ?? ""));
-  const fipsOf = countyFips("GA");
-  const counties = {};
-  for (const [i, party] of ["Dem", "Rep"].entries()) {
-    const b = item(party);
-    if (!b) throw new Error(`GA: no Governor - ${party} contest`);
-    const { ballotItemWithBreakdown } = await get(`elections/Georgia/${id}/data/ballot-item/${b.id}`);
-    for (const r of ballotItemWithBreakdown.breakdownResults ?? []) {
-      const fips = fipsOf(r.locality?.name?.[0]?.text ?? "");
-      if (!fips) continue;
-      (counties[fips] ??= [0, 0, 0])[i] = num(r.voteTotal) + num(r.underVoteCount);
-    }
-  }
-  return {
-    asOf: election.electionDate,
-    source: "Georgia SOS results (May 2026 governor primaries)",
-    basis: "primary",
-    counties,
-  };
-}
-
-/**
- * Ohio doesn't register by party either; same stand-in from the SOS's
- * election-night site (liveresults.ohiosos.gov, reachable unlike
- * ohiosos.gov), which still carries the May 2026 primary. Only works while
- * that primary is the site's current election -- it switches to the
- * general on election night, so the last good file is kept if this fails.
- */
-async function readOH() {
-  const base = "https://liveresults.ohiosos.gov/Api/v1/Contest";
-  const list = await (await fetch(`${base}/getContestList`, { headers: UA })).json();
-  const gov = list.find((g) => /^Governor/.test(g.displayName));
-  const pick = (code) => gov?.contestGroupings.find((c) => c.displayName.endsWith(`(${code})`));
-  const fipsOf = countyFips("OH");
-  const counties = {};
-  for (const [i, code] of ["D", "R"].entries()) {
-    const c = pick(code);
-    if (!c) throw new Error(`OH: no governor (${code}) primary -- site has moved past the primary`);
-    const url = new URL(`${base}/GetContestDetailsObject`);
-    url.searchParams.set("contestName", c.contestName);
-    url.searchParams.set("contestObjectId", c.contestObjectId);
-    url.searchParams.set("resultsLevel", "County");
-    const detail = await (await fetch(url, { headers: UA })).json();
-    for (const r of detail.contestList ?? []) {
-      const fips = fipsOf(r.name ?? "");
-      if (fips) (counties[fips] ??= [0, 0, 0])[i] = num(r.tcVotes);
-    }
-  }
-  return {
-    asOf: "2026-05-05",
-    source: "Ohio SOS results (May 2026 governor primaries; the D primary was uncontested)",
-    basis: "primary",
-    counties,
-  };
-}
-
-/**
  * Arizona publishes registration only as a PDF report per election
  * (State-Voter-Registration-<Month>-<Year>.pdf on azsos.gov). Its text is
  * extracted with `pdftotext -layout` (poppler; ships with Git for Windows)
@@ -270,10 +194,9 @@ async function readAZ() {
   }
 }
 
-const READERS = { PA: readPA, NC: readNC, GA: readGA, OH: readOH, AZ: readAZ };
+const READERS = { PA: readPA, NC: readNC, AZ: readAZ };
 
-// A state that fails keeps its last good entry (the OH reader stops working
-// once the results site moves on from the primary).
+// A state that fails keeps its last good entry.
 const previous = existsSync(OUT_PATH) ? JSON.parse(readFileSync(OUT_PATH, "utf8")).byState ?? {} : {};
 const byState = {};
 for (const [usps, read] of Object.entries(READERS)) {
@@ -292,7 +215,7 @@ console.log(`Wrote ${OUT_PATH}`);
 // Independent Voter Project snapshot lags the official files read here (PA
 // Dems: 3.66M there vs 3.88M summed from the DOS counties). For every state
 // read by registration, replace it with the county sums so the state and
-// county numbers agree. Primary-basis states (GA, OH) are left alone.
+// county numbers agree.
 const ELECTORATE_PATH = resolve(root, "app/data/electorate.generated.json");
 const electorate = JSON.parse(readFileSync(ELECTORATE_PATH, "utf8"));
 for (const [usps, s] of Object.entries(byState)) {

@@ -59,15 +59,13 @@ function once<T>(url: string) {
 }
 const loadCountyFile = once<CountyFile>("/geo/earlyvote-2026-counties.json");
 const loadHistoryFile = once<HistoryFile>("/geo/earlyvote-history-counties.json");
-/** County party numbers (scripts/pull-party-registration.mjs): registered
- *  voters by party where the state registers by party ("registration"), or
- *  each party's 2026 governor-primary votes where it doesn't ("primary"). */
+/** County registered voters by party (scripts/pull-party-registration.mjs),
+ *  for states that register by party. */
 const loadRegistrationFile = once<{
   byState: Record<
     string,
     {
       asOf: string | null;
-      basis?: "registration" | "primary";
       counties: Record<string, [number, number, number]>;
     }
   >;
@@ -131,7 +129,6 @@ export function EarlyVoteCountyMap({
   const [electorate, setElectorate] = useState<Record<string, [number | null, number | null]> | null>(null);
   const [registration, setRegistration] = useState<{
     asOf: string | null;
-    basis?: "registration" | "primary";
     counties: Record<string, [number, number, number]>;
   } | null>(null);
 
@@ -256,14 +253,7 @@ export function EarlyVoteCountyMap({
                 row={rows?.[hovered] ?? null}
                 hist={history?.[hovered]}
                 electorate={electorate?.[hovered] ?? null}
-                registration={
-                  registration?.counties[hovered]
-                    ? {
-                        counts: registration.counties[hovered],
-                        basis: registration.basis ?? "registration",
-                      }
-                    : null
-                }
+                registration={registration?.counties[hovered] ?? null}
               />
             </MapTooltip>
           )}
@@ -302,9 +292,9 @@ function CountyTip({
   row: CountyEv | null;
   hist: HistoryRow | undefined;
   electorate: [number | null, number | null] | null;
-  /** Registered voters by party [dem, rep, other] and as-of date, where the
-   *  state publishes it (scripts/pull-party-registration.mjs). */
-  registration: { counts: [number, number, number]; basis: "registration" | "primary" } | null;
+  /** Registered voters by party [dem, rep, other], where the state publishes
+   *  it (scripts/pull-party-registration.mjs). */
+  registration: [number, number, number] | null;
 }) {
   const has2026 = !!row && row.v > 0;
   const [eligible, registered] = electorate ?? [null, null];
@@ -347,20 +337,14 @@ function CountyTip({
       : [];
 
   // Registered voters by party, as tiles.
-  const reg = registration?.counts;
+  const reg = registration;
   const regTotal = reg ? reg[0] + reg[1] + reg[2] : 0;
-  // GA and OH have no party registration: their numbers are each party's
-  // governor-primary votes, so there's no "other" and the tiles say "primary".
-  const isPrimary = registration?.basis === "primary";
   const regItems: Stat[] = reg
     ? (
         [
-          // "May primary" spelled out: these are votes from the May 2026
-          // primary, a different election, so they don't add up to (and are
-          // usually bigger than) this fall's early ballots.
-          [isPrimary ? "May primary Dem" : "Dem", reg[0], "text-blue-300 dark:text-blue-700"],
-          [isPrimary ? "May primary Rep" : "Rep", reg[1], "text-red-300 dark:text-red-700"],
-          ...(isPrimary ? [] : [["Other", reg[2], ""] as const]),
+          ["Dem", reg[0], "text-blue-300 dark:text-blue-700"],
+          ["Rep", reg[1], "text-red-300 dark:text-red-700"],
+          ["Other", reg[2], ""],
         ] as const
       ).map(([label, n, cls]) => ({ label, value: shortVotes(n), sub: `${pctOf(n, regTotal)!.toFixed(1)}%`, cls }))
     : [];
@@ -379,14 +363,7 @@ function CountyTip({
         <Section>
           <div className="space-y-1.5">
             <StatGrid items={current} />
-            {regItems.length > 0 && (
-              <StatGrid items={regItems} title={isPrimary ? "May primary votes" : "Registered by party"} />
-            )}
-            {isPrimary && (
-              <div className={`text-[10px] ${SOFT}`}>
-                No party registration in this state; Registered is the total only.
-              </div>
-            )}
+            {regItems.length > 0 && <StatGrid items={regItems} title="Registered by party" />}
           </div>
         </Section>
       )}

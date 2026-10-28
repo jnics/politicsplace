@@ -210,41 +210,31 @@ async function pull2016() {
 }
 
 /**
- * Texas has no party registration, so UF reports no party split for it.
- * theoelections.com splits Texas early voters by which party's primaries they
- * voted in (2020-2026). Its data files sit behind Cloudflare and refuse
- * scripted requests, but the statewide figures are printed in the page's own
- * HTML (the "by primary voter" summary), so read those -- statewide only.
- * Returns null when the page can't be read or its wording changes.
+ * Texas statewide totals from theoelections.com. Its data files sit behind
+ * Cloudflare and refuse scripted requests, but the statewide figures are
+ * printed in the page's own HTML, so read those -- statewide only. (The page
+ * also splits voters by past primary; that isn't party registration, so it's
+ * not used.) Returns null when the page can't be read or its wording changes.
  */
-async function pullTexasPrimaryHistory() {
+async function pullTexasTotals() {
   const html = await fetchText(THEO_PAGE);
   const tpl = /<template data-big="0">([\s\S]*?)<\/template>/.exec(html);
   if (!tpl) return null;
   const text = tpl[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-  const grab = (label) =>
-    [...text.matchAll(new RegExp(`[\\d.]+% ${label} · ([\\d,]+)`, "g"))].reduce(
-      (a, m) => a + num(m[1]),
-      0
-    ); // in-person + mail sections each list every label once
-  const dem = grab("Democratic primaries only");
-  const rep = grab("Republican primaries only");
-  const other = grab("both parties") + grab("no primary");
   const asOf = /as of ([A-Z][a-z]{2} \d{1,2}, \d{4})/.exec(html)?.[1] ?? null;
   // Its totals header: "4,251,983 total 4,036,642 in person 215,341 by mail".
   const t = /([\d,]+) total ([\d,]+) in person ([\d,]+) by mail/.exec(text);
-  const totals = t ? { voted: num(t[1]), inPerson: num(t[2]), mail: num(t[3]) } : null;
-  return dem + rep > 0 ? { split: { dem, rep, other }, asOf, totals } : null;
+  return t ? { asOf, totals: { voted: num(t[1]), inPerson: num(t[2]), mail: num(t[3]) } } : null;
 }
 
 /**
- * Ohio has no party registration either; the Secretary of State tags each
- * voter with the party of the primaries they've voted in ("voter-affiliated
- * party") and reports early ballots by it on its Absentee and Early Voting
- * dashboard (data.ohiosos.gov/portal/election-dashboards). The portal page is
- * behind Cloudflare, but the dashboard is a public Power BI report whose data
- * API (Microsoft's, not the state's) answers plain requests, so query it
- * directly: one query for every county x party. Refreshed daily around noon.
+ * Ohio's early ballots by county from the Secretary of State's Absentee and
+ * Early Voting dashboard (data.ohiosos.gov/portal/election-dashboards). The
+ * portal page is behind Cloudflare, but the dashboard is a public Power BI
+ * report whose data API (Microsoft's, not the state's) answers plain
+ * requests, so query it directly: one query for every county. Refreshed daily
+ * around noon. (The dashboard also has a "voter-affiliated party" from past
+ * primaries; Ohio has no party registration, so that isn't used.)
  *
  * Model, dataset and report ids come from the report's own
  * modelsAndExploration response each run, so a republished report still
@@ -300,7 +290,7 @@ async function pullOhioSos() {
   ).json();
   const model = meta.models[0];
   const ref = (p) => ({ Column: { Expression: { SourceRef: { Source: "a" } }, Property: p } });
-  const groups = ["County_Name", "Voter_Party_Bucketed", "REFRESH_DATE"];
+  const groups = ["County_Name", "REFRESH_DATE"];
   const sums = ["BALLOTS_RECEIVED_INCL_EIP", "BALLOTS_RECEIVED_EIP", "BALLOTS_RECEIVED_NO_EIP", "BALLOTS_SENT_NO_EIP"];
   const select = [
     ...groups.map((p) => ({ ...ref(p), Name: `a.${p}` })),
@@ -348,33 +338,25 @@ async function pullOhioSos() {
 
   const counties = {};
   const totals = { voted: 0, inPerson: 0, mailReturned: 0, mailRequested: 0 };
-  const party = { dem: 0, rep: 0, other: 0 };
   let refreshed = 0;
   for (const r of pbiRows(json)) {
     if (!r.County_Name) continue;
     refreshed = Math.max(refreshed, r.REFRESH_DATE ?? 0);
-    const c = (counties[r.County_Name] ??= { v: 0, i: 0, m: 0, r: 0, p: [0, 0, 0] });
-    const voted = r.BALLOTS_RECEIVED_INCL_EIP ?? 0;
-    c.v += voted;
+    const c = (counties[r.County_Name] ??= { v: 0, i: 0, m: 0, r: 0 });
+    c.v += r.BALLOTS_RECEIVED_INCL_EIP ?? 0;
     c.i += r.BALLOTS_RECEIVED_EIP ?? 0;
     c.m += r.BALLOTS_RECEIVED_NO_EIP ?? 0;
     c.r += r.BALLOTS_SENT_NO_EIP ?? 0;
-    // Unaffiliated, minor-party and unmatched voters all count as "other".
-    const slot = r.Voter_Party_Bucketed === "Democratic" ? 0 : r.Voter_Party_Bucketed === "Republican" ? 1 : 2;
-    c.p[slot] += voted;
   }
   for (const c of Object.values(counties)) {
     totals.voted += c.v;
     totals.inPerson += c.i;
     totals.mailReturned += c.m;
     totals.mailRequested += c.r;
-    party.dem += c.p[0];
-    party.rep += c.p[1];
-    party.other += c.p[2];
   }
-  if (!(totals.voted > 0) || party.dem + party.rep === 0) return null;
+  if (!(totals.voted > 0)) return null;
   const asOf = refreshed ? new Date(refreshed).toISOString().slice(0, 10) : null;
-  return { totals, party, counties, asOf };
+  return { totals, counties, asOf };
 }
 
 /** Ohio SOS county rows -> the county map's shape, keyed by FIPS. */
@@ -495,22 +477,10 @@ const COUNTY_ALIASES = { IL: { cityofchicago: "cook", chicago: "cook" } };
  *  counties (built by scripts/build-town-county.mjs from Census data). */
 const TOWN_COUNTY = JSON.parse(readFileSync(resolve(root, "scripts/data/town-county.json"), "utf8"));
 
-/** Georgia's party split by past primary, built by hand from the SOS voter
- *  files (scripts/build-ga-early-party.mjs) since mvp.sos.ga.gov refuses
- *  scripts. Its shares are applied to UF's current counts, so a file a day
- *  or two old still lines up with the totals. */
-const GA_PARTY_PATH = resolve(root, "scripts/data/ga-early-party.json");
-const GA_PARTY = existsSync(GA_PARTY_PATH) ? JSON.parse(readFileSync(GA_PARTY_PATH, "utf8")) : null;
-
-/** { dem, rep, other } counts -> the same shares of `voted`. */
-function scaleSplit(split, voted) {
-  const n = split.dem + split.rep + split.other;
-  return {
-    dem: Math.round((split.dem / n) * voted),
-    rep: Math.round((split.rep / n) * voted),
-    other: Math.round((split.other / n) * voted),
-  };
-}
+/** States with no party registration whose own counts are in hand. A
+ *  past-primary split isn't party, and a model isn't needed with real
+ *  counts, so these show counts only, with a note. */
+const NO_PARTY = ["GA", "OH", "TX"];
 
 async function pullCounties(usps) {
   const index = countyIndex(usps);
@@ -571,60 +541,46 @@ async function pullCounties(usps) {
 }
 
 async function main() {
-  const [y2026, y2024, y2020, y2016, txPrimary, onPoint, daily2022, ohio] = await Promise.all([
+  const [y2026, y2024, y2020, y2016, txTotals, onPoint, daily2022, ohio] = await Promise.all([
     pull2026(),
     pull2024(),
     pull2020().catch((e) => (console.warn(`2020 skipped: ${e.message}`), {})),
     pull2016().catch((e) => (console.warn(`2016 skipped: ${e.message}`), {})),
-    pullTexasPrimaryHistory().catch((e) => (console.warn(`TX primary split skipped: ${e.message}`), null)),
+    pullTexasTotals().catch((e) => (console.warn(`TX theoelections totals skipped: ${e.message}`), null)),
     pullOnPoint().catch((e) => (console.warn(`On Point skipped: ${e.message}`), {})),
     pull2022Daily().catch((e) => (console.warn(`ElectIndex 2022 daily skipped: ${e.message}`), {})),
     pullOhioSos().catch((e) => (console.warn(`Ohio SOS skipped: ${e.message}`), null)),
   ]);
 
-  // Best party source per state: reported registration (UF), then primary
-  // history (Texas, theoelections; Ohio, the Secretary of State), then On
-  // Point's model.
+  // Party where the state reports registration (UF), else On Point's model --
+  // except NO_PARTY states, which show counts only.
   for (const s of Object.values(y2026)) s.partyBasis = s.party ? "registration" : null;
-  if (txPrimary && y2026.TX) {
-    const tx = y2026.TX;
-    tx.party = txPrimary.split;
-    tx.partyBasis = "primary";
-    tx.partySource = "theoelections.com";
-    // Texas totals come from theoelections too when its page has them: UF's
-    // copy of the state roster trails the county reports (2026-10-26: 4.17M
-    // vs 4.25M), and taking both from one source keeps the party rows adding
-    // up to the total. UF's numbers stay as the fallback. Its counties (the
-    // county map) still sum to UF's total -- theoelections is statewide only.
-    const t = txPrimary.totals;
-    if (t?.voted > 0) {
-      tx.voted = t.voted;
-      tx.inPerson = t.inPerson;
-      tx.mailReturned = t.mail;
-      tx.mailRequested = null; // Texas doesn't report requests
-      tx.source = "https://theoelections.com/early-vote";
-      if (txPrimary.asOf) tx.lastUpdate = new Date(`${txPrimary.asOf} UTC`).toISOString().slice(0, 10);
-    }
+  // Texas totals from theoelections when its page has them: UF's copy of the
+  // state roster trails the county reports (2026-10-26: 4.17M vs 4.25M). UF's
+  // numbers stay as the fallback. Its counties (the county map) still sum to
+  // UF's total -- theoelections is statewide only.
+  const tx = txTotals?.totals;
+  if (tx?.voted > 0 && y2026.TX) {
+    Object.assign(y2026.TX, {
+      voted: tx.voted,
+      inPerson: tx.inPerson,
+      mailReturned: tx.mail,
+      mailRequested: null, // Texas doesn't report requests
+      source: "https://theoelections.com/early-vote",
+    });
+    if (txTotals.asOf) y2026.TX.lastUpdate = new Date(`${txTotals.asOf} UTC`).toISOString().slice(0, 10);
   }
-  // Ohio's totals come from the SOS along with its party split, same reason
-  // as Texas: UF's copy trails the state (2026-10-28: 1.19M vs 1.29M), and
-  // one source keeps the party rows adding up to the total.
+  // Ohio's totals come from the SOS, same reason: UF's copy trails the state
+  // (2026-10-28: 1.19M vs 1.29M), and its county rows add up to them.
   if (ohio && y2026.OH) {
     Object.assign(y2026.OH, ohio.totals, {
-      party: ohio.party,
-      partyBasis: "primary",
-      partySource: "Ohio Secretary of State",
       source: "https://data.ohiosos.gov/portal/election-dashboards",
       notes: null,
     });
     if (ohio.asOf) y2026.OH.lastUpdate = ohio.asOf;
   }
-  if (GA_PARTY?.state?.voted > 0 && y2026.GA?.voted > 0) {
-    Object.assign(y2026.GA, {
-      party: scaleSplit(GA_PARTY.state, y2026.GA.voted),
-      partyBasis: "primary",
-      partySource: `Georgia SOS voter files (primary ${GA_PARTY.primaries.join(", ")}; through ${GA_PARTY.asOf})`,
-    });
+  for (const usps of NO_PARTY) {
+    if (y2026[usps]) Object.assign(y2026[usps], { party: null, partyBasis: null, partySource: null, noParty: true });
   }
   let modeled = 0;
   for (const [usps, s] of Object.entries(y2026)) {
@@ -632,7 +588,7 @@ async function main() {
     if (!op) continue;
     // 2026 so far as a share of the same point in 2022 / 2024.
     s.sameDay = { 2022: op.pace22 ?? null, 2024: op.pace24 ?? null };
-    if (!s.party && s.voted > 0 && op.pm?.est === 1) {
+    if (!s.party && !s.noParty && s.voted > 0 && op.pm?.est === 1) {
       s.party = {
         dem: Math.round(op.pm.d * s.voted),
         rep: Math.round(op.pm.r * s.voted),
@@ -674,23 +630,11 @@ async function main() {
       );
     }
   }
-  // Ohio's counties from the SOS too, so they carry party and sum to the
-  // statewide total above.
+  // Ohio's counties from the SOS too, so they sum to the statewide total.
   const ohCounties = ohio && ohioCountyRows(ohio);
   if (ohCounties) countyByState.OH = ohCounties;
-  // Georgia's county party shares from the voter-file build, on UF's counts.
-  let gaCounties = 0;
-  if (GA_PARTY && countyByState.GA) {
-    const names = countyNames("GA");
-    const byKey = Object.fromEntries(Object.entries(GA_PARTY.counties).map(([n, c]) => [countyKey(n), c]));
-    for (const [fips, row] of Object.entries(countyByState.GA)) {
-      const c = byKey[countyKey(names[fips] ?? row.n)];
-      if (!c || !(row.v > 0)) continue;
-      const s = scaleSplit(c, row.v);
-      row.p = [s.dem, s.rep, s.other];
-      gaCounties += 1;
-    }
-  }
+  // No party in the NO_PARTY states' county rows either.
+  for (const usps of NO_PARTY) for (const row of Object.values(countyByState[usps] ?? {})) row.p = null;
   // Drop a state whose county rows cover well under its statewide total --
   // Connecticut's town file has mail ballots only (2026-10-28: 39K of 238K),
   // which would make every county look far behind.
@@ -747,21 +691,16 @@ async function main() {
     `Past cycles: 2024 ${Object.keys(y2024).length} states, 2020 ${Object.keys(y2020).length}, 2016 ${Object.keys(y2016).length}.`
   );
   console.log(
-    `TX: party split ${txPrimary ? "read" : "not available"}; totals from ${
-      txPrimary?.totals?.voted > 0 ? `theoelections (as of ${txPrimary.asOf})` : "UF (theoelections had none)"
-    }.`
+    `TX: totals from ${
+      tx?.voted > 0 ? `theoelections (as of ${txTotals.asOf})` : "UF (theoelections had none)"
+    }; no party.`
   );
   console.log(
     ohio
-      ? `OH: party split and totals from the Secretary of State (as of ${ohio.asOf}), ${
+      ? `OH: totals from the Secretary of State (as of ${ohio.asOf}), ${
           ohCounties ? Object.keys(ohCounties).length : "no"
-        } counties.`
+        } counties; no party.`
       : "OH: Secretary of State not available; UF totals."
-  );
-  console.log(
-    GA_PARTY
-      ? `GA: party by primary from voter files through ${GA_PARTY.asOf}, ${gaCounties} counties.`
-      : "GA: no voter-file party build (scripts/data/ga-early-party.json); modeled."
   );
   console.log(`On Point: ${Object.keys(onPoint).length} states read, ${modeled} given modeled party.`);
   console.log(`2022 same-day from ElectIndex: ${filled22.join(", ") || "none"}.`);
