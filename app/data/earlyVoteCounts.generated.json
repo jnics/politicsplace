@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T15:55:46.538Z",
+  "generatedAt": "2026-10-28T16:02:09.452Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 37344008,
+  "totalVoted": 37364628,
   "byState": {
     "AK": {
       "current": {
@@ -450,9 +450,9 @@
         "inPerson": 2029896,
         "mailRequested": 157374,
         "party": {
-          "dem": 736816,
-          "rep": 528677,
-          "other": 862788
+          "dem": 831058,
+          "rep": 682315,
+          "other": 614908
         },
         "mailRequestedParty": null,
         "turnout2022": 3964926,
@@ -460,7 +460,7 @@
         "source": "https://mvp.sos.ga.gov/s/voter-absentee-files",
         "notes": "Georgia's county-level \"Ballots Issued and Accepted\" and \"Ballots to Date\" downloads (from the state's election-data-hub dashboard, https://sos.ga.gov/page/election-data-hub-unofficial-turnout) are compared against the statewide absentee file, county by county, using whichever is higher - this is how same-day in-person early-voting activity (which the statewide absentee file doesn't carry until the next overnight refresh) gets folded in. No district or demographic breakdown is available from these county-level downloads.",
         "partyBasis": "primary",
-        "partySource": "Georgia SOS voter files (primary 05/19/2026; through 2026-10-27)",
+        "partySource": "Georgia SOS voter files (primary 05/24/2022, 05/21/2024, 05/19/2026; through 2026-10-27)",
         "sameDay": {
           "2022": 1.0082605175527706,
           "2024": 0.6206711316230872
@@ -587,22 +587,22 @@
     },
     "ID": {
       "current": {
-        "voted": 172189,
-        "mailReturned": 91337,
-        "inPerson": 80852,
-        "mailRequested": 163055,
+        "voted": 192809,
+        "mailReturned": 98512,
+        "inPerson": 94297,
+        "mailRequested": 163323,
         "party": {
-          "dem": 18216,
-          "rep": 55045,
-          "other": 18076
+          "dem": 19403,
+          "rep": 59528,
+          "other": 19581
         },
         "mailRequestedParty": {
-          "dem": 30724,
-          "rep": 97112,
-          "other": 35219
+          "dem": 30759,
+          "rep": 97291,
+          "other": 35273
         },
         "turnout2022": 595350,
-        "lastUpdate": "2026-10-27",
+        "lastUpdate": "2026-10-28",
         "source": "Idaho Secretary of State",
         "notes": "Idaho's daily absentee file covers mail ballots only - in-person early voting counts are scraped separately from the state's own dashboard (https://voteidaho.gov/data-and-dashboards/absentee-tracker/) and added in as a single statewide/county total, with no party, age, or gender breakdown available for it (the dashboard's own party breakdown mixes mail and in-person together, so it can't be used to split out the in-person-only portion). Congressional and state-legislative district totals are mail ballots only and do not include in-person early voting, so they will run lower than the statewide/county totals.",
         "partyBasis": "registration",
