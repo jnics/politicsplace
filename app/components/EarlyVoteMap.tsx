@@ -58,7 +58,7 @@ const HISTORY = earlyVoteHistory as unknown as {
 };
 
 /** Where a state's party split comes from, best first: reported registration,
- *  past primary voting (Texas), or On Point Polling's model. */
+ *  past primary voting (Texas, Ohio), or On Point Polling's model. */
 export type PartyBasis = "registration" | "primary" | "modeled";
 
 interface CurrentEv {

@@ -237,6 +237,158 @@ async function pullTexasPrimaryHistory() {
 }
 
 /**
+ * Ohio has no party registration either; the Secretary of State tags each
+ * voter with the party of the primaries they've voted in ("voter-affiliated
+ * party") and reports early ballots by it on its Absentee and Early Voting
+ * dashboard (data.ohiosos.gov/portal/election-dashboards). The portal page is
+ * behind Cloudflare, but the dashboard is a public Power BI report whose data
+ * API (Microsoft's, not the state's) answers plain requests, so query it
+ * directly: one query for every county x party. Refreshed daily around noon.
+ *
+ * Model, dataset and report ids come from the report's own
+ * modelsAndExploration response each run, so a republished report still
+ * works as long as the table and column names hold.
+ */
+const OH_PBI_KEY = "69e1004e-3cb9-41b1-b23c-b3d80f4afdb4"; // the `k` in the dashboard's public link
+const OH_PBI_API = "https://wabi-us-gov-iowa-api.analysis.usgovcloudapi.net/public/reports";
+const OH_PBI_TABLE = "absentee v_detailed_grouped";
+const OH_ELECTION = "2026 NOV GENERAL";
+
+async function pbiPost(path, body) {
+  const res = await fetch(`${OH_PBI_API}/${path}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "X-PowerBI-ResourceKey": OH_PBI_KEY },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) throw new Error(`Ohio SOS Power BI ${path}: HTTP ${res.status}`);
+  return res.json();
+}
+
+/** Decode a Power BI data-shape result: rows repeat earlier values (bitmask
+ *  `R`), mark nulls (bitmask `Ø`), and store strings in value dictionaries. */
+function pbiRows(json) {
+  const data = json.results[0].result.data;
+  const ds = data.dsr.DS[0];
+  const names = data.descriptor.Select.map((s) => s.Name.replace(/^(Sum\()?a\.|\)$/g, ""));
+  let schema = null;
+  let prev = [];
+  const out = [];
+  for (const row of ds.PH[0].DM0) {
+    if (row.S) schema = row.S;
+    const vals = [];
+    let ci = 0;
+    for (let i = 0; i < schema.length; i++) {
+      if (row.R & (1 << i)) vals.push(prev[i]);
+      else if (row["Ø"] & (1 << i)) vals.push(null);
+      else {
+        const v = row.C[ci++];
+        vals.push(schema[i].DN && typeof v === "number" ? ds.ValueDicts[schema[i].DN][v] : v);
+      }
+    }
+    prev = vals;
+    out.push(Object.fromEntries(names.map((n, i) => [n, vals[i]])));
+  }
+  return out;
+}
+
+async function pullOhioSos() {
+  const meta = await (
+    await fetch(`${OH_PBI_API}/${OH_PBI_KEY}/modelsAndExploration?preferReadOnlySession=true`, {
+      headers: { "X-PowerBI-ResourceKey": OH_PBI_KEY },
+    })
+  ).json();
+  const model = meta.models[0];
+  const ref = (p) => ({ Column: { Expression: { SourceRef: { Source: "a" } }, Property: p } });
+  const groups = ["County_Name", "Voter_Party_Bucketed", "REFRESH_DATE"];
+  const sums = ["BALLOTS_RECEIVED_INCL_EIP", "BALLOTS_RECEIVED_EIP", "BALLOTS_RECEIVED_NO_EIP", "BALLOTS_SENT_NO_EIP"];
+  const select = [
+    ...groups.map((p) => ({ ...ref(p), Name: `a.${p}` })),
+    ...sums.map((p) => ({ Aggregation: { Expression: ref(p), Function: 0 }, Name: `Sum(a.${p})` })),
+  ];
+  const json = await pbiPost("querydata?synchronous=true", {
+    version: "1.0.0",
+    queries: [
+      {
+        Query: {
+          Commands: [
+            {
+              SemanticQueryDataShapeCommand: {
+                Query: {
+                  Version: 2,
+                  From: [{ Name: "a", Entity: OH_PBI_TABLE, Type: 0 }],
+                  Select: select,
+                  Where: [
+                    {
+                      Condition: {
+                        In: {
+                          Expressions: [ref("Election_Description")],
+                          Values: [[{ Literal: { Value: `'${OH_ELECTION}'` } }]],
+                        },
+                      },
+                    },
+                  ],
+                },
+                Binding: {
+                  Primary: { Groupings: [{ Projections: select.map((_, i) => i) }] },
+                  DataReduction: { DataVolume: 4, Primary: { Window: { Count: 30000 } } },
+                  Version: 1,
+                },
+              },
+            },
+          ],
+        },
+        QueryId: "",
+        ApplicationContext: { DatasetId: model.dbName, Sources: [{ ReportId: meta.exploration.report.objectId }] },
+      },
+    ],
+    cancelQueries: [],
+    modelId: model.id,
+  });
+
+  const counties = {};
+  const totals = { voted: 0, inPerson: 0, mailReturned: 0, mailRequested: 0 };
+  const party = { dem: 0, rep: 0, other: 0 };
+  let refreshed = 0;
+  for (const r of pbiRows(json)) {
+    if (!r.County_Name) continue;
+    refreshed = Math.max(refreshed, r.REFRESH_DATE ?? 0);
+    const c = (counties[r.County_Name] ??= { v: 0, i: 0, m: 0, r: 0, p: [0, 0, 0] });
+    const voted = r.BALLOTS_RECEIVED_INCL_EIP ?? 0;
+    c.v += voted;
+    c.i += r.BALLOTS_RECEIVED_EIP ?? 0;
+    c.m += r.BALLOTS_RECEIVED_NO_EIP ?? 0;
+    c.r += r.BALLOTS_SENT_NO_EIP ?? 0;
+    // Unaffiliated, minor-party and unmatched voters all count as "other".
+    const slot = r.Voter_Party_Bucketed === "Democratic" ? 0 : r.Voter_Party_Bucketed === "Republican" ? 1 : 2;
+    c.p[slot] += voted;
+  }
+  for (const c of Object.values(counties)) {
+    totals.voted += c.v;
+    totals.inPerson += c.i;
+    totals.mailReturned += c.m;
+    totals.mailRequested += c.r;
+    party.dem += c.p[0];
+    party.rep += c.p[1];
+    party.other += c.p[2];
+  }
+  if (!(totals.voted > 0) || party.dem + party.rep === 0) return null;
+  const asOf = refreshed ? new Date(refreshed).toISOString().slice(0, 10) : null;
+  return { totals, party, counties, asOf };
+}
+
+/** Ohio SOS county rows -> the county map's shape, keyed by FIPS. */
+function ohioCountyRows(ohio) {
+  const index = countyIndex("OH");
+  if (!index) return null;
+  const out = {};
+  for (const [name, c] of Object.entries(ohio.counties)) {
+    const fips = index.get(countyKey(name))?.[0];
+    if (fips) out[fips] = { n: name, ...c };
+  }
+  return Object.keys(out).length >= 80 ? out : null;
+}
+
+/**
  * On Point Politics' early-vote map (onpointpolitics.us/maps/early-vote) is a
  * Next.js page whose server-rendered flight payload carries one record per
  * state: `pm` is its party model -- reported party shares where a state
@@ -385,7 +537,7 @@ async function pullCounties(usps) {
 }
 
 async function main() {
-  const [y2026, y2024, y2020, y2016, txPrimary, onPoint, daily2022] = await Promise.all([
+  const [y2026, y2024, y2020, y2016, txPrimary, onPoint, daily2022, ohio] = await Promise.all([
     pull2026(),
     pull2024(),
     pull2020().catch((e) => (console.warn(`2020 skipped: ${e.message}`), {})),
@@ -393,10 +545,12 @@ async function main() {
     pullTexasPrimaryHistory().catch((e) => (console.warn(`TX primary split skipped: ${e.message}`), null)),
     pullOnPoint().catch((e) => (console.warn(`On Point skipped: ${e.message}`), {})),
     pull2022Daily().catch((e) => (console.warn(`ElectIndex 2022 daily skipped: ${e.message}`), {})),
+    pullOhioSos().catch((e) => (console.warn(`Ohio SOS skipped: ${e.message}`), null)),
   ]);
 
   // Best party source per state: reported registration (UF), then primary
-  // history (Texas, theoelections), then On Point's model.
+  // history (Texas, theoelections; Ohio, the Secretary of State), then On
+  // Point's model.
   for (const s of Object.values(y2026)) s.partyBasis = s.party ? "registration" : null;
   if (txPrimary && y2026.TX) {
     const tx = y2026.TX;
@@ -417,6 +571,19 @@ async function main() {
       tx.source = "https://theoelections.com/early-vote";
       if (txPrimary.asOf) tx.lastUpdate = new Date(`${txPrimary.asOf} UTC`).toISOString().slice(0, 10);
     }
+  }
+  // Ohio's totals come from the SOS along with its party split, same reason
+  // as Texas: UF's copy trails the state (2026-10-28: 1.19M vs 1.29M), and
+  // one source keeps the party rows adding up to the total.
+  if (ohio && y2026.OH) {
+    Object.assign(y2026.OH, ohio.totals, {
+      party: ohio.party,
+      partyBasis: "primary",
+      partySource: "Ohio Secretary of State",
+      source: "https://data.ohiosos.gov/portal/election-dashboards",
+      notes: null,
+    });
+    if (ohio.asOf) y2026.OH.lastUpdate = ohio.asOf;
   }
   let modeled = 0;
   for (const [usps, s] of Object.entries(y2026)) {
@@ -466,6 +633,10 @@ async function main() {
       );
     }
   }
+  // Ohio's counties from the SOS too, so they carry party and sum to the
+  // statewide total above.
+  const ohCounties = ohio && ohioCountyRows(ohio);
+  if (ohCounties) countyByState.OH = ohCounties;
   writeFileSync(
     COUNTY_OUT_PATH,
     JSON.stringify({ generatedAt: new Date().toISOString(), byState: countyByState })
@@ -514,6 +685,13 @@ async function main() {
     `TX: party split ${txPrimary ? "read" : "not available"}; totals from ${
       txPrimary?.totals?.voted > 0 ? `theoelections (as of ${txPrimary.asOf})` : "UF (theoelections had none)"
     }.`
+  );
+  console.log(
+    ohio
+      ? `OH: party split and totals from the Secretary of State (as of ${ohio.asOf}), ${
+          ohCounties ? Object.keys(ohCounties).length : "no"
+        } counties.`
+      : "OH: Secretary of State not available; UF totals."
   );
   console.log(`On Point: ${Object.keys(onPoint).length} states read, ${modeled} given modeled party.`);
   console.log(`2022 same-day from ElectIndex: ${filled22.join(", ") || "none"}.`);
