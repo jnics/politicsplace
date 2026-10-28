@@ -34,6 +34,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { townKey } from "./lib/town-key.mjs";
 
 const root = resolve(fileURLToPath(new URL(".", import.meta.url)), "..");
 const OUT_PATH = resolve(root, "app/data/earlyVoteCounts.generated.json");
@@ -473,6 +474,12 @@ function countyIndex(usps) {
   return byKey;
 }
 
+/** FIPS -> county name for one state, from the same geometry file. */
+function countyNames(usps) {
+  const { counties } = JSON.parse(readFileSync(resolve(GEO_DIR, `${usps}.json`), "utf8"));
+  return Object.fromEntries(counties.map((c) => [c.fips, c.name]));
+}
+
 /** Independent cities (VA, MO's St. Louis, MD's Baltimore) share a name with a
  *  county; their FIPS county codes are 500+, so "X city" takes the 500+ one. */
 function pickFips(candidates, rawName) {
@@ -483,6 +490,10 @@ function pickFips(candidates, rawName) {
 
 /** Chicago reports apart from suburban Cook; fold it in so Cook is whole. */
 const COUNTY_ALIASES = { IL: { cityofchicago: "cook", chicago: "cook" } };
+
+/** UF reports CT, ME, MA, RI and VT by town; this rolls towns up into their
+ *  counties (built by scripts/build-town-county.mjs from Census data). */
+const TOWN_COUNTY = JSON.parse(readFileSync(resolve(root, "scripts/data/town-county.json"), "utf8"));
 
 async function pullCounties(usps) {
   const index = countyIndex(usps);
@@ -495,18 +506,24 @@ async function pullCounties(usps) {
   }
   if (text.trimStart().startsWith("<")) return null;
   const rows = csvObjects(text);
+  const towns = TOWN_COUNTY[usps];
   const out = {};
   let unmatched = 0;
   for (const r of rows) {
     const raw = r.county ?? "";
-    let key = countyKey(raw.replace(/\bcity\b/i, ""));
-    key = COUNTY_ALIASES[usps]?.[key] ?? key;
-    const candidates = index.get(key) ?? index.get(countyKey(raw));
-    if (!candidates) {
+    let fips;
+    if (towns) {
+      fips = towns[townKey(raw)];
+    } else {
+      let key = countyKey(raw.replace(/\bcity\b/i, ""));
+      key = COUNTY_ALIASES[usps]?.[key] ?? key;
+      const candidates = index.get(key) ?? index.get(countyKey(raw));
+      if (candidates) fips = pickFips(candidates, raw);
+    }
+    if (!fips) {
       unmatched += 1;
       continue;
     }
-    const fips = pickFips(candidates, raw);
     const voted = num(r.voted_all) || num(r.accept_all) + num(r.inperson_all);
     // Party: the voted_* split when present, else mail + in-person added up.
     let dem = num(r.voted_dem), rep = num(r.voted_rep), none = num(r.voted_none);
@@ -518,7 +535,7 @@ async function pullCounties(usps) {
     const prev = out[fips];
     const add = (a, b) => (a ?? 0) + b;
     out[fips] = {
-      n: prev?.n ?? raw,
+      n: prev?.n ?? (towns ? countyNames(usps)[fips] : raw),
       v: add(prev?.v, voted),
       m: add(prev?.m, num(r.accept_all)),
       i: add(prev?.i, num(r.inperson_all)),
@@ -529,10 +546,10 @@ async function pullCounties(usps) {
           : null,
     };
   }
-  const matched = Object.keys(out).length;
-  // Town-level states (most of New England) don't line up with county shapes;
-  // keep a state only when most of its rows matched a county.
-  if (matched === 0 || unmatched > matched) return { usps, skipped: true, rows: rows.length, unmatched };
+  // Keep a state only when most of its rows matched a county.
+  const matched = rows.length - unmatched;
+  if (Object.keys(out).length === 0 || unmatched > matched)
+    return { usps, skipped: true, rows: rows.length, unmatched };
   return { usps, counties: out, unmatched };
 }
 
@@ -637,6 +654,17 @@ async function main() {
   // statewide total above.
   const ohCounties = ohio && ohioCountyRows(ohio);
   if (ohCounties) countyByState.OH = ohCounties;
+  // Drop a state whose county rows cover well under its statewide total --
+  // Connecticut's town file has mail ballots only (2026-10-28: 39K of 238K),
+  // which would make every county look far behind.
+  for (const [usps, rows] of Object.entries(countyByState)) {
+    const total = y2026[usps]?.voted;
+    const sum = Object.values(rows).reduce((a, r) => a + r.v, 0);
+    if (total > 0 && sum < 0.5 * total) {
+      delete countyByState[usps];
+      countyReport.push(`${usps} dropped (counties sum to ${Math.round((100 * sum) / total)}% of state)`);
+    }
+  }
   writeFileSync(
     COUNTY_OUT_PATH,
     JSON.stringify({ generatedAt: new Date().toISOString(), byState: countyByState })

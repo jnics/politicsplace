@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T15:19:46.618Z",
+  "generatedAt": "2026-10-28T15:36:56.393Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 36709586,
+  "totalVoted": 37071029,
   "byState": {
     "AK": {
       "current": {
@@ -1543,16 +1543,16 @@
     },
     "NY": {
       "current": {
-        "voted": 703055,
-        "mailReturned": null,
-        "inPerson": 703055,
-        "mailRequested": null,
+        "voted": 1064498,
+        "mailReturned": 145865,
+        "inPerson": 918633,
+        "mailRequested": 279463,
         "party": null,
         "mailRequestedParty": null,
         "turnout2022": 5962278,
         "lastUpdate": "2026-10-27",
-        "source": "Data provided by the New York State Board of Elections",
-        "notes": "New York's daily turnout report provides a cumulative county-level total for in-person early voters only. No mail-ballot figures or demographic data are available for New York at this time.",
+        "source": "New York State Board of Elections (in-person early voting); Associated Press county callouts (mail ballots, partial coverage)",
+        "notes": "New York early vote statistics provided by the State Board of elections. Mail ballot statistics are provided courtesy of the Associated Press who contacted county offices for statistics. Coverage is not complete and may vary on day of reporting.",
         "partyBasis": null
       },
       "past": {
