@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T21:23:56.343Z",
+  "generatedAt": "2026-10-28T22:16:00.044Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 39684618,
+  "totalVoted": 39822505,
   "byState": {
     "AK": {
       "current": {
@@ -227,8 +227,8 @@
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.001312622166601,
-          "2024": 0.6170477068506847
+          "2022": 1.1967700118828994,
+          "2024": 0.7374961376819058
         }
       },
       "past": {
@@ -393,19 +393,19 @@
     },
     "FL": {
       "current": {
-        "voted": 3718694,
-        "mailReturned": 1656837,
-        "inPerson": 2061857,
-        "mailRequested": 2480361,
+        "voted": 3856581,
+        "mailReturned": 1680733,
+        "inPerson": 2175848,
+        "mailRequested": 2480035,
         "party": {
-          "dem": 1448934,
-          "rep": 1495823,
-          "other": 773937
+          "dem": 1498882,
+          "rep": 1553231,
+          "other": 804468
         },
         "mailRequestedParty": {
-          "dem": 1046895,
-          "rep": 854998,
-          "other": 578468
+          "dem": 1046705,
+          "rep": 854939,
+          "other": 578391
         },
         "turnout2022": 7796916,
         "lastUpdate": "2026-10-28",
@@ -413,8 +413,8 @@
         "notes": "Some Florida statistics are obtained from county websites that may report more recent and higher numbers than the Florida Division of Elections reports.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0503858758561069,
-          "2024": 0.6231992903161517
+          "2022": 1.0602215712258043,
+          "2024": 0.629034858477391
         }
       },
       "past": {
@@ -449,15 +449,18 @@
         "mailReturned": 100705,
         "inPerson": 2075211,
         "mailRequested": 157374,
-        "party": null,
+        "party": {
+          "dem": 849659,
+          "rep": 697587,
+          "other": 628671
+        },
         "mailRequestedParty": null,
         "turnout2022": 3964926,
         "lastUpdate": "2026-10-28",
         "source": "https://mvp.sos.ga.gov/s/voter-absentee-files",
         "notes": "Georgia's county-level \"Ballots Issued and Accepted\" and \"Ballots to Date\" downloads (from the state's election-data-hub dashboard, https://sos.ga.gov/page/election-data-hub-unofficial-turnout) are compared against the statewide absentee file, county by county, using whichever is higher - this is how same-day in-person early-voting activity (which the statewide absentee file doesn't carry until the next overnight refresh) gets folded in. No district or demographic breakdown is available from these county-level downloads.",
-        "partyBasis": null,
-        "partySource": null,
-        "noParty": true,
+        "partyBasis": "primary",
+        "partySource": "Georgia SOS voter files (primary 05/24/2022, 05/21/2024, 05/19/2026; through 2026-10-27)",
         "sameDay": {
           "2022": 1.0082605175527706,
           "2024": 0.6206711316230872
@@ -549,7 +552,7 @@
         "turnout2022": 1230417,
         "lastUpdate": "2026-10-28",
         "source": "Iowa Secretary of State",
-        "notes": "Arizona's request_* figures are mail ballots issued (sent out), not applications received - this state's early voting is run through a permanent early-voting list rather than a one-off per-election request.",
+        "notes": "Statewide and county totals, method of voting (mail vs. in-person), and party registration all come from two public JSON files the state's own Vivid dashboard uses. District (congressional/legislative), age, and district-level party breakdowns come from a separate individual-level file and may not sum to exactly the same statewide total.",
         "partyBasis": "registration",
         "sameDay": {
           "2022": 1.3653398647849782,
@@ -1507,8 +1510,8 @@
         "notes": "Statewide and county totals, method of voting (mail vs. in-person), and party registration all come from two public JSON files the state's own Vivid dashboard uses. District (congressional/legislative), age, and district-level party breakdowns come from a separate individual-level file and may not sum to exactly the same statewide total.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.1473906976744186,
-          "2024": 0.6048152007355194
+          "2022": 1.1955651162790697,
+          "2024": 0.6302090101133926
         }
       },
       "past": {
@@ -1576,15 +1579,18 @@
         "mailReturned": 521626,
         "inPerson": 770601,
         "mailRequested": 737408,
-        "party": null,
+        "party": {
+          "dem": 388406,
+          "rep": 335079,
+          "other": 568742
+        },
         "mailRequestedParty": null,
         "turnout2022": 4201368,
         "lastUpdate": "2026-10-28",
         "source": "https://data.ohiosos.gov/portal/election-dashboards",
         "notes": null,
-        "partyBasis": null,
-        "partySource": null,
-        "noParty": true,
+        "partyBasis": "primary",
+        "partySource": "Ohio Secretary of State",
         "sameDay": {
           "2022": 1.414592298795819,
           "2024": 0.7080695890410958
@@ -1968,15 +1974,18 @@
         "mailReturned": 244939,
         "inPerson": 5470313,
         "mailRequested": null,
-        "party": null,
+        "party": {
+          "dem": 1784949,
+          "rep": 1822432,
+          "other": 2107871
+        },
         "mailRequestedParty": null,
         "turnout2022": 8151590,
         "lastUpdate": "2026-10-28",
         "source": "https://theoelections.com/early-vote",
         "notes": "Texas does not report mail ballot requests. Requests are equal to mail ballots sent. For some counties, I may scrape directly from a county website. These do not always provide breakdowns of early voting by mail and in-person voting.",
-        "partyBasis": null,
-        "partySource": null,
-        "noParty": true,
+        "partyBasis": "primary",
+        "partySource": "theoelections.com",
         "sameDay": {
           "2022": 1.2396311584553927,
           "2024": 0.7630844262295082
