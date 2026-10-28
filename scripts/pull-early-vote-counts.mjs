@@ -495,6 +495,23 @@ const COUNTY_ALIASES = { IL: { cityofchicago: "cook", chicago: "cook" } };
  *  counties (built by scripts/build-town-county.mjs from Census data). */
 const TOWN_COUNTY = JSON.parse(readFileSync(resolve(root, "scripts/data/town-county.json"), "utf8"));
 
+/** Georgia's party split by past primary, built by hand from the SOS voter
+ *  files (scripts/build-ga-early-party.mjs) since mvp.sos.ga.gov refuses
+ *  scripts. Its shares are applied to UF's current counts, so a file a day
+ *  or two old still lines up with the totals. */
+const GA_PARTY_PATH = resolve(root, "scripts/data/ga-early-party.json");
+const GA_PARTY = existsSync(GA_PARTY_PATH) ? JSON.parse(readFileSync(GA_PARTY_PATH, "utf8")) : null;
+
+/** { dem, rep, other } counts -> the same shares of `voted`. */
+function scaleSplit(split, voted) {
+  const n = split.dem + split.rep + split.other;
+  return {
+    dem: Math.round((split.dem / n) * voted),
+    rep: Math.round((split.rep / n) * voted),
+    other: Math.round((split.other / n) * voted),
+  };
+}
+
 async function pullCounties(usps) {
   const index = countyIndex(usps);
   if (!index) return null;
@@ -602,6 +619,13 @@ async function main() {
     });
     if (ohio.asOf) y2026.OH.lastUpdate = ohio.asOf;
   }
+  if (GA_PARTY?.state?.voted > 0 && y2026.GA?.voted > 0) {
+    Object.assign(y2026.GA, {
+      party: scaleSplit(GA_PARTY.state, y2026.GA.voted),
+      partyBasis: "primary",
+      partySource: `Georgia SOS voter files (primary ${GA_PARTY.primaries.join(", ")}; through ${GA_PARTY.asOf})`,
+    });
+  }
   let modeled = 0;
   for (const [usps, s] of Object.entries(y2026)) {
     const op = onPoint[usps];
@@ -654,6 +678,19 @@ async function main() {
   // statewide total above.
   const ohCounties = ohio && ohioCountyRows(ohio);
   if (ohCounties) countyByState.OH = ohCounties;
+  // Georgia's county party shares from the voter-file build, on UF's counts.
+  let gaCounties = 0;
+  if (GA_PARTY && countyByState.GA) {
+    const names = countyNames("GA");
+    const byKey = Object.fromEntries(Object.entries(GA_PARTY.counties).map(([n, c]) => [countyKey(n), c]));
+    for (const [fips, row] of Object.entries(countyByState.GA)) {
+      const c = byKey[countyKey(names[fips] ?? row.n)];
+      if (!c || !(row.v > 0)) continue;
+      const s = scaleSplit(c, row.v);
+      row.p = [s.dem, s.rep, s.other];
+      gaCounties += 1;
+    }
+  }
   // Drop a state whose county rows cover well under its statewide total --
   // Connecticut's town file has mail ballots only (2026-10-28: 39K of 238K),
   // which would make every county look far behind.
@@ -720,6 +757,11 @@ async function main() {
           ohCounties ? Object.keys(ohCounties).length : "no"
         } counties.`
       : "OH: Secretary of State not available; UF totals."
+  );
+  console.log(
+    GA_PARTY
+      ? `GA: party by primary from voter files through ${GA_PARTY.asOf}, ${gaCounties} counties.`
+      : "GA: no voter-file party build (scripts/data/ga-early-party.json); modeled."
   );
   console.log(`On Point: ${Object.keys(onPoint).length} states read, ${modeled} given modeled party.`);
   console.log(`2022 same-day from ElectIndex: ${filled22.join(", ") || "none"}.`);

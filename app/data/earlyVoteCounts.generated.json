@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T15:36:56.393Z",
+  "generatedAt": "2026-10-28T15:55:46.538Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 37071029,
+  "totalVoted": 37344008,
   "byState": {
     "AK": {
       "current": {
@@ -51,22 +51,22 @@
     },
     "AR": {
       "current": {
-        "voted": 325307,
-        "mailReturned": 6084,
-        "inPerson": 319223,
-        "mailRequested": 11746,
+        "voted": 368915,
+        "mailReturned": 6622,
+        "inPerson": 362293,
+        "mailRequested": 12255,
         "party": {
-          "dem": 22151,
-          "rep": 28524,
-          "other": 274632
+          "dem": 24624,
+          "rep": 32398,
+          "other": 311893
         },
         "mailRequestedParty": {
-          "dem": 1270,
-          "rep": 1007,
-          "other": 9469
+          "dem": 1310,
+          "rep": 1030,
+          "other": 9915
         },
         "turnout2022": 914227,
-        "lastUpdate": "2026-10-27",
+        "lastUpdate": "2026-10-28",
         "source": "Arkansas Secretary of State",
         "notes": null,
         "partyBasis": "registration",
@@ -413,8 +413,8 @@
         "notes": "Some Florida statistics are obtained from county websites that may report more recent and higher numbers than the Florida Division of Elections reports.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 0.9859452659637475,
-          "2024": 0.5849663482369117
+          "2022": 0.9984382089486069,
+          "2024": 0.5923784749429939
         }
       },
       "past": {
@@ -450,21 +450,21 @@
         "inPerson": 2029896,
         "mailRequested": 157374,
         "party": {
-          "dem": 911877,
-          "rep": 731669,
-          "other": 484735
+          "dem": 736816,
+          "rep": 528677,
+          "other": 862788
         },
         "mailRequestedParty": null,
         "turnout2022": 3964926,
         "lastUpdate": "2026-10-28",
         "source": "https://mvp.sos.ga.gov/s/voter-absentee-files",
         "notes": "Georgia's county-level \"Ballots Issued and Accepted\" and \"Ballots to Date\" downloads (from the state's election-data-hub dashboard, https://sos.ga.gov/page/election-data-hub-unofficial-turnout) are compared against the statewide absentee file, county by county, using whichever is higher - this is how same-day in-person early-voting activity (which the statewide absentee file doesn't carry until the next overnight refresh) gets folded in. No district or demographic breakdown is available from these county-level downloads.",
-        "partyBasis": "modeled",
+        "partyBasis": "primary",
+        "partySource": "Georgia SOS voter files (primary 05/19/2026; through 2026-10-27)",
         "sameDay": {
           "2022": 1.0082605175527706,
           "2024": 0.6206711316230872
-        },
-        "partySource": "On Point Polling"
+        }
       },
       "past": {
         "2016": {
@@ -555,8 +555,8 @@
         "notes": "Arizona's request_* figures are mail ballots issued (sent out), not applications received - this state's early voting is run through a permanent early-voting list rather than a one-off per-election request.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.23723357373948,
-          "2024": 0.6409114635894795
+          "2022": 1.3653398647849782,
+          "2024": 0.7072730562844078
         }
       },
       "past": {
@@ -1354,8 +1354,8 @@
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0447677551460286,
-          "2024": 0.6448072062484559
+          "2022": 1.140480039413114,
+          "2024": 0.7038786796146025
         }
       },
       "past": {
@@ -1386,14 +1386,14 @@
     },
     "NJ": {
       "current": {
-        "voted": 624376,
+        "voted": 777031,
         "mailReturned": 486670,
-        "inPerson": 137706,
+        "inPerson": 290361,
         "mailRequested": 925697,
         "party": {
-          "dem": 389443,
-          "rep": 130454,
-          "other": 104479
+          "dem": 470953,
+          "rep": 173063,
+          "other": 133015
         },
         "mailRequestedParty": {
           "dem": 533971,
@@ -1401,7 +1401,7 @@
           "other": 215779
         },
         "turnout2022": 2645539,
-        "lastUpdate": "2026-10-27",
+        "lastUpdate": "2026-10-28",
         "source": "New Jersey Secretary of State",
         "notes": null,
         "partyBasis": "registration",
@@ -1511,8 +1511,8 @@
         "notes": "Statewide and county totals, method of voting (mail vs. in-person), and party registration all come from two public JSON files the state's own Vivid dashboard uses. District (congressional/legislative), age, and district-level party breakdowns come from a separate individual-level file and may not sum to exactly the same statewide total.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.133613953488372,
-          "2024": 0.5975531719276739
+          "2022": 1.1473906976744186,
+          "2024": 0.6048152007355194
         }
       },
       "past": {
@@ -1550,7 +1550,7 @@
         "party": null,
         "mailRequestedParty": null,
         "turnout2022": 5962278,
-        "lastUpdate": "2026-10-27",
+        "lastUpdate": "2026-10-28",
         "source": "New York State Board of Elections (in-person early voting); Associated Press county callouts (mail ballots, partial coverage)",
         "notes": "New York early vote statistics provided by the State Board of elections. Mail ballot statistics are provided courtesy of the Associated Press who contacted county offices for statistics. Coverage is not complete and may vary on day of reporting.",
         "partyBasis": null
@@ -1593,8 +1593,8 @@
         "partyBasis": "primary",
         "partySource": "Ohio Secretary of State",
         "sameDay": {
-          "2022": 1.3031930197973467,
-          "2024": 0.6523090410958904
+          "2022": 1.414592298795819,
+          "2024": 0.7080695890410958
         }
       },
       "past": {
@@ -1674,14 +1674,14 @@
     },
     "OR": {
       "current": {
-        "voted": 730011,
-        "mailReturned": 730011,
+        "voted": 806727,
+        "mailReturned": 806727,
         "inPerson": null,
         "mailRequested": 3117439,
         "party": {
-          "dem": 321446,
-          "rep": 221992,
-          "other": 186573
+          "dem": 350508,
+          "rep": 247436,
+          "other": 208783
         },
         "mailRequestedParty": {
           "dem": 988951,
@@ -1689,12 +1689,12 @@
           "other": 1390929
         },
         "turnout2022": 1997689,
-        "lastUpdate": "2026-10-27",
+        "lastUpdate": "2026-10-28",
         "source": "https://sos.oregon.gov/elections/Documents/2026-general-election-unofficial-ballot-returns.pdf",
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0949404016420858,
+          "2022": 1.0416369693213512,
           "2024": null,
           "source2022": "ElectIndex"
         }
@@ -1747,8 +1747,8 @@
         "notes": "The statewide and county statistics are compiled from the state dashobard. The district and age statistics are from an individual level file which may have slightly different statistics than the state's summary report, which the state did not update on Friday",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 0.9454817693814811,
-          "2024": 0.5743693424026919
+          "2022": 0.9893977285397983,
+          "2024": 0.6010477844410268
         }
       },
       "past": {
@@ -1844,7 +1844,7 @@
         "notes": "South Carolina's in-person early-voting total (by county) comes from a separate report with no race or Hispanic ethnicity breakdown; the race/ethnicity figures shown reflect mail ballots only.",
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 0.9041113689095127,
+          "2022": 1.6311252900232018,
           "2024": null
         },
         "partySource": "On Point Polling"
@@ -2084,8 +2084,8 @@
         "notes": null,
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 1.6566996279118527,
-          "2024": 0.6195985488101957
+          "2022": 1.656700944851569,
+          "2024": 0.6195990413399963
         },
         "partySource": "On Point Polling"
       },
@@ -2220,8 +2220,8 @@
         "notes": null,
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 1.287756033404118,
-          "2024": 0.7321102814644126
+          "2022": 1.470916221946418,
+          "2024": 0.8362398321777639
         },
         "partySource": "On Point Polling"
       },
