@@ -43787,7 +43787,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -43977,7 +43977,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -44048,7 +44048,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -44419,38 +44419,38 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Hobbs +11.4",
-    "period": "7/26 - 10/8",
+    "spread": "Hobbs +12",
+    "period": "7/26 - 10/25",
     "results": [
      {
       "candidate": "Katie Hobbs",
       "party": "D",
-      "pct": 49.4
+      "pct": 51
      },
      {
       "candidate": "Andy Biggs",
       "party": "R",
-      "pct": 38
+      "pct": 39
      }
     ]
    },
    "polls": [
     {
      "pollster": "Highground Public Affairs",
-     "startDate": "2026-10-06",
-     "endDate": "2026-10-08",
+     "startDate": "2026-10-21",
+     "endDate": "2026-10-25",
      "sampleSize": 400,
      "population": "LV",
      "results": [
       {
        "candidate": "Katie Hobbs",
        "party": "D",
-       "pct": 51
+       "pct": 59
       },
       {
        "candidate": "Andy Biggs",
        "party": "R",
-       "pct": 34
+       "pct": 39
       }
      ]
     },
@@ -44532,7 +44532,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -44550,21 +44550,40 @@
    ],
    "aggregateAverage": {
     "spread": "Becerra +23.2",
-    "period": "9/4 - 10/20",
+    "period": "9/4 - 10/24",
     "results": [
      {
       "candidate": "Xavier Becerra",
       "party": "D",
-      "pct": 57.6
+      "pct": 57.4
      },
      {
       "candidate": "Steve Hilton",
       "party": "R",
-      "pct": 34.4
+      "pct": 34.2
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "KGTV-TV/SurveyUSA",
+     "startDate": "2026-10-19",
+     "endDate": "2026-10-24",
+     "sampleSize": 799,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Xavier Becerra",
+       "party": "D",
+       "pct": 54
+      },
+      {
+       "candidate": "Steve Hilton",
+       "party": "R",
+       "pct": 32
+      }
+     ]
+    },
     {
      "pollster": "Emerson",
      "startDate": "2026-10-18",
@@ -44623,25 +44642,6 @@
      ]
     },
     {
-     "pollster": "KGTV-TV/SurveyUSA",
-     "startDate": "2026-09-15",
-     "endDate": "2026-09-20",
-     "sampleSize": 742,
-     "population": "LV",
-     "results": [
-      {
-       "candidate": "Xavier Becerra",
-       "party": "D",
-       "pct": 55
-      },
-      {
-       "candidate": "Steve Hilton",
-       "party": "R",
-       "pct": 33
-      }
-     ]
-    },
-    {
      "pollster": "PPIC",
      "startDate": "2026-09-04",
      "endDate": "2026-09-10",
@@ -44662,7 +44662,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -44792,7 +44792,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -45406,7 +45406,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -45555,7 +45555,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -46051,7 +46051,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -46108,7 +46108,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -46376,7 +46376,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -46487,7 +46487,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -46525,7 +46525,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -47039,7 +47039,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -47576,22 +47576,41 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Benson +7.4",
-    "period": "9/24 - 10/19",
+    "spread": "Benson +7.2",
+    "period": "9/24 - 10/22",
     "results": [
      {
       "candidate": "Jocelyn Benson",
       "party": "D",
-      "pct": 50.4
+      "pct": 50.5
      },
      {
       "candidate": "John James",
       "party": "R",
-      "pct": 43
+      "pct": 43.3
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "Detroit News/Glengariff",
+     "startDate": "2026-10-19",
+     "endDate": "2026-10-22",
+     "sampleSize": 600,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Jocelyn Benson",
+       "party": "D",
+       "pct": 51
+      },
+      {
+       "candidate": "John James",
+       "party": "R",
+       "pct": 45
+      }
+     ]
+    },
     {
      "pollster": "Michigan State/YouGov",
      "startDate": "2026-10-02",
@@ -47689,7 +47708,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -47937,7 +47956,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -48089,7 +48108,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -48393,7 +48412,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -48583,7 +48602,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -48850,7 +48869,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -48961,7 +48980,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -49346,13 +49365,13 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Acton +4.4",
-    "period": "9/29 - 10/19",
+    "spread": "Acton +4.3",
+    "period": "9/29 - 10/26",
     "results": [
      {
       "candidate": "Amy Acton",
       "party": "D",
-      "pct": 48.7
+      "pct": 48.6
      },
      {
       "candidate": "Vivek Ramaswamy",
@@ -49362,6 +49381,25 @@
     ]
    },
    "polls": [
+    {
+     "pollster": "Suffolk University",
+     "startDate": "2026-10-21",
+     "endDate": "2026-10-26",
+     "sampleSize": 500,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Amy Acton",
+       "party": "D",
+       "pct": 48
+      },
+      {
+       "candidate": "Vivek Ramaswamy",
+       "party": "R",
+       "pct": 44
+      }
+     ]
+    },
     {
      "pollster": "FOX News",
      "startDate": "2026-10-15",
@@ -49478,7 +49516,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -49689,7 +49727,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -50089,7 +50127,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -50232,7 +50270,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -50402,7 +50440,42 @@
      "party": "D"
     }
    ],
+   "aggregateAverage": {
+    "spread": "Wilson +13.5",
+    "period": "10/14 - 10/25",
+    "results": [
+     {
+      "candidate": "Alan Wilson",
+      "party": "R",
+      "pct": 47.5
+     },
+     {
+      "candidate": "Jermaine Johnson",
+      "party": "D",
+      "pct": 34
+     }
+    ]
+   },
    "polls": [
+    {
+     "pollster": "The Citadel",
+     "startDate": "2026-10-14",
+     "endDate": "2026-10-25",
+     "sampleSize": 890,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Alan Wilson",
+       "party": "R",
+       "pct": 42
+      },
+      {
+       "candidate": "Jermaine Johnson",
+       "party": "D",
+       "pct": 31
+      }
+     ]
+    },
     {
      "pollster": "Trafalgar Group",
      "startDate": "2026-10-16",
@@ -50424,7 +50497,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -50462,7 +50535,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -50612,7 +50685,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -51626,7 +51699,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -51683,7 +51756,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "governor",
@@ -51970,7 +52043,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -52085,7 +52158,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -52124,7 +52197,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -52243,7 +52316,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -52284,6 +52357,45 @@
    ],
    "source": "Wikipedia",
    "sourceNote": "Wikipedia",
+   "lastPulled": "2026-10-28"
+  },
+  {
+   "raceType": "house",
+   "state": "CA",
+   "district": 34,
+   "title": "California 34th District",
+   "candidates": [
+    {
+     "name": "Jimmy Gomez",
+     "party": "D"
+    },
+    {
+     "name": "Angela Gonzales-Torres",
+     "party": "D"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "USC/Dornsife",
+     "startDate": "2026-10-16",
+     "endDate": "2026-10-24",
+     "sampleSize": 423,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Jimmy Gomez",
+       "party": "D",
+       "pct": 45
+      },
+      {
+       "candidate": "Angela Gonzales-Torres",
+       "party": "D",
+       "pct": 51
+      }
+     ]
+    }
+   ],
+   "source": "RealClearPolling",
    "lastPulled": "2026-10-28"
   },
   {
@@ -52464,7 +52576,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -52620,7 +52732,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -52721,6 +52833,45 @@
    ],
    "source": "Wikipedia",
    "sourceNote": "Wikipedia",
+   "lastPulled": "2026-10-28"
+  },
+  {
+   "raceType": "house",
+   "state": "IN",
+   "district": 5,
+   "title": "Indiana 5th District",
+   "candidates": [
+    {
+     "name": "J.D. Ford",
+     "party": "D"
+    },
+    {
+     "name": "Victoria Spartz",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "Quantus Insights",
+     "startDate": "2026-10-21",
+     "endDate": "2026-10-22",
+     "sampleSize": 601,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "J.D. Ford",
+       "party": "D",
+       "pct": 42
+      },
+      {
+       "candidate": "Victoria Spartz",
+       "party": "R",
+       "pct": 45
+      }
+     ]
+    }
+   ],
+   "source": "RealClearPolling",
    "lastPulled": "2026-10-28"
   },
   {
@@ -52919,7 +53070,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -53078,7 +53229,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -53257,7 +53408,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -53337,7 +53488,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -53534,7 +53685,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -53816,7 +53967,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -53955,7 +54106,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -54186,7 +54337,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -54344,7 +54495,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -54964,7 +55115,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -55102,7 +55253,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -55239,7 +55390,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -55396,7 +55547,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -55597,7 +55748,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -55893,7 +56044,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -56050,7 +56201,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -56169,7 +56320,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -56268,7 +56419,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -56387,7 +56538,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -56505,7 +56656,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "house",
@@ -56958,13 +57109,13 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Peltola +0.8",
-    "period": "9/28 - 10/16",
+    "spread": "Peltola +1.2",
+    "period": "10/1 - 10/16",
     "results": [
      {
       "candidate": "Mary Peltola",
       "party": "D",
-      "pct": 49
+      "pct": 49.4
      },
      {
       "candidate": "Dan Sullivan",
@@ -57068,29 +57219,10 @@
        "pct": 49
       }
      ]
-    },
-    {
-     "pollster": "Quantus Insights",
-     "startDate": "2026-09-28",
-     "endDate": "2026-09-30",
-     "sampleSize": 737,
-     "population": "LV",
-     "results": [
-      {
-       "candidate": "Mary Peltola",
-       "party": "D",
-       "pct": 47
-      },
-      {
-       "candidate": "Dan Sullivan",
-       "party": "R",
-       "pct": 48
-      }
-     ]
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -57261,7 +57393,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -57356,7 +57488,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -57782,22 +57914,41 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Moody +7.3",
-    "period": "9/28 - 10/20",
+    "spread": "Moody +7.2",
+    "period": "9/28 - 10/26",
     "results": [
      {
       "candidate": "Ashley Moody",
       "party": "R",
-      "pct": 49.5
+      "pct": 49.6
      },
      {
       "candidate": "Angie Nixon",
       "party": "D",
-      "pct": 42.2
+      "pct": 42.4
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "NY Times/Siena",
+     "startDate": "2026-10-19",
+     "endDate": "2026-10-26",
+     "sampleSize": 813,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Ashley Moody",
+       "party": "R",
+       "pct": 50
+      },
+      {
+       "candidate": "Angie Nixon",
+       "party": "D",
+       "pct": 44
+      }
+     ]
+    },
     {
      "pollster": "co/efficient",
      "startDate": "2026-10-18",
@@ -57914,7 +58065,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -58063,7 +58214,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -58269,7 +58420,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -58695,7 +58846,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -58906,7 +59057,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -59696,7 +59847,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -60722,7 +60873,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -61054,22 +61205,41 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Flanagan +3.4",
-    "period": "10/2 - 10/21",
+    "spread": "Flanagan +5.1",
+    "period": "10/2 - 10/26",
     "results": [
      {
       "candidate": "Peggy Flanagan",
       "party": "D",
-      "pct": 46.6
+      "pct": 47.8
      },
      {
       "candidate": "Michele Tafoya",
       "party": "R",
-      "pct": 43.2
+      "pct": 42.7
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "NY Times/Siena",
+     "startDate": "2026-10-19",
+     "endDate": "2026-10-26",
+     "sampleSize": 752,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Peggy Flanagan",
+       "party": "D",
+       "pct": 54
+      },
+      {
+       "candidate": "Michele Tafoya",
+       "party": "R",
+       "pct": 40
+      }
+     ]
+    },
     {
      "pollster": "Rasmussen Reports",
      "startDate": "2026-10-20",
@@ -61167,7 +61337,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -61378,7 +61548,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -62111,7 +62281,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -62557,7 +62727,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -63019,7 +63189,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -63092,7 +63262,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -63639,21 +63809,40 @@
    ],
    "aggregateAverage": {
     "spread": "Brown +3.3",
-    "period": "9/22 - 10/22",
+    "period": "9/22 - 10/26",
     "results": [
      {
       "candidate": "Sherrod Brown",
       "party": "D",
-      "pct": 48.2
+      "pct": 48.1
      },
      {
       "candidate": "Jon Husted",
       "party": "R",
-      "pct": 44.9
+      "pct": 44.8
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "Suffolk University",
+     "startDate": "2026-10-21",
+     "endDate": "2026-10-26",
+     "sampleSize": 500,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Sherrod Brown",
+       "party": "D",
+       "pct": 47
+      },
+      {
+       "candidate": "Jon Husted",
+       "party": "R",
+       "pct": 44
+      }
+     ]
+    },
     {
      "pollster": "InsiderAdvantage",
      "startDate": "2026-10-21",
@@ -63827,7 +64016,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -63919,7 +64108,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -64193,22 +64382,60 @@
     }
    ],
    "aggregateAverage": {
-    "spread": "Graham Nordone +2.7",
-    "period": "9/28 - 10/18",
+    "spread": "Graham Nordone +2.4",
+    "period": "9/28 - 10/26",
     "results": [
      {
       "candidate": "Darline Graham Nordone",
       "party": "R",
-      "pct": 48
+      "pct": 47
      },
      {
       "candidate": "Annie Andrews",
       "party": "D",
-      "pct": 45.3
+      "pct": 44.6
      }
     ]
    },
    "polls": [
+    {
+     "pollster": "NY Times/Siena",
+     "startDate": "2026-10-19",
+     "endDate": "2026-10-26",
+     "sampleSize": 707,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Darline Graham Nordone",
+       "party": "R",
+       "pct": 48
+      },
+      {
+       "candidate": "Annie Andrews",
+       "party": "D",
+       "pct": 48
+      }
+     ]
+    },
+    {
+     "pollster": "The Citadel",
+     "startDate": "2026-10-14",
+     "endDate": "2026-10-25",
+     "sampleSize": 890,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Darline Graham Nordone",
+       "party": "R",
+       "pct": 43
+      },
+      {
+       "candidate": "Annie Andrews",
+       "party": "D",
+       "pct": 39
+      }
+     ]
+    },
     {
      "pollster": "Trafalgar Group",
      "startDate": "2026-10-16",
@@ -64268,7 +64495,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -64360,7 +64587,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -64397,7 +64624,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   },
   {
    "raceType": "senate",
@@ -65568,7 +65795,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-27"
+   "lastPulled": "2026-10-28"
   }
  ]
 }

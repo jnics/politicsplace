@@ -190,9 +190,15 @@ function combineRaces(base: RacePolls, other: RacePolls): RacePolls {
     }
     if (polls.some((q) => samePollster(q, p) && q.endDate >= p.endDate)) continue;
     // Name each result after base's candidate of the same party, so the
-    // poll lines up with base's columns.
+    // poll lines up with base's columns. Same-party races (California's
+    // top-two D vs D) match on surname instead.
+    const surname = (n: string) => n.trim().split(/\s+/).pop()!.toLowerCase();
     const results = p.results.map((r) => {
-      const c = base.candidates.find((x) => x.party === r.party);
+      const sameParty = base.candidates.filter((x) => x.party === r.party);
+      const c =
+        sameParty.length === 1
+          ? sameParty[0]
+          : sameParty.find((x) => surname(x.name) === surname(r.candidate));
       return c ? { ...r, candidate: c.name } : r;
     });
     added.push({ ...p, results });
