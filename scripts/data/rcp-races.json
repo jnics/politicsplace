@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T11:35:27.692Z",
+  "fetchedAt": "2026-10-29T14:12:27.920Z",
   "races": [
     {
       "id": 8802,
@@ -70,18 +70,18 @@
           {
             "name": "Paxton",
             "affiliation": "Republican",
-            "value": 46.4
+            "value": 46.5
           }
         ],
         "spread": {
           "name": "Talarico",
-          "value": 2.2
+          "value": 2.1
         },
-        "as_of": "2026-10-27T13:18:12+00:00",
+        "as_of": "2026-10-29T10:41:01+00:00",
         "date_label": "10/8 - 10/27"
       },
-      "polls_in_average": 12,
-      "total_polls": 54
+      "polls_in_average": 13,
+      "total_polls": 55
     },
     {
       "id": 8881,
@@ -147,23 +147,23 @@
           {
             "name": "Abbott",
             "affiliation": "Republican",
-            "value": 49.4
+            "value": 49.5
           },
           {
             "name": "Hinojosa",
             "affiliation": "Democrat",
-            "value": 46.4
+            "value": 46.5
           }
         ],
         "spread": {
           "name": "Abbott",
           "value": 3
         },
-        "as_of": "2026-10-27T13:20:04+00:00",
+        "as_of": "2026-10-29T12:05:26+00:00",
         "date_label": "10/5 - 10/27"
       },
-      "polls_in_average": 10,
-      "total_polls": 44
+      "polls_in_average": 11,
+      "total_polls": 45
     },
     {
       "id": 8948,
@@ -528,7 +528,7 @@
           "name": "Pingree",
           "value": 10
         },
-        "as_of": "2026-10-29T10:46:32+00:00",
+        "as_of": "2026-10-29T12:22:38+00:00",
         "date_label": "9/17 - 10/26"
       },
       "polls_in_average": 9,
@@ -574,6 +574,56 @@
       },
       "polls_in_average": 11,
       "total_polls": 30
+    },
+    {
+      "id": 9101,
+      "title": "2026 Maine Governor - Charles vs. Pingree vs. Bennett",
+      "race_type": "governor",
+      "category": "General",
+      "state": "me",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Hannah Pingree",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Robert Charles",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Rick Bennett",
+          "affiliation": "Independent"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Pingree",
+            "affiliation": "Democrat",
+            "value": 49.1
+          },
+          {
+            "name": "Charles",
+            "affiliation": "Republican",
+            "value": 39.3
+          },
+          {
+            "name": "Bennett",
+            "affiliation": "Independent",
+            "value": 7.5
+          }
+        ],
+        "spread": {
+          "name": "Pingree",
+          "value": 9.8
+        },
+        "as_of": "2026-10-27T17:21:30+00:00",
+        "date_label": "9/17 - 10/26"
+      },
+      "polls_in_average": 7,
+      "total_polls": 13
     },
     {
       "id": 9106,
@@ -822,6 +872,56 @@
       "total_polls": 11
     },
     {
+      "id": 8985,
+      "title": "2026 Texas Senate - Paxton vs. Talarico vs. Brown",
+      "race_type": "senate",
+      "category": "General",
+      "state": "tx",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "James Talarico",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Ken Paxton",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Ted Brown",
+          "affiliation": "Libertarian"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Talarico",
+            "affiliation": "Democrat",
+            "value": 48.1
+          },
+          {
+            "name": "Paxton",
+            "affiliation": "Republican",
+            "value": 46.3
+          },
+          {
+            "name": "Brown",
+            "affiliation": "Libertarian",
+            "value": 2.8
+          }
+        ],
+        "spread": {
+          "name": "Talarico",
+          "value": 1.8
+        },
+        "as_of": "2026-10-24T13:04:45+00:00",
+        "date_label": "10/6 - 10/25"
+      },
+      "polls_in_average": 9,
+      "total_polls": 26
+    },
+    {
       "id": 9016,
       "title": "2026 Alaska Governor - RCV 1st Round ",
       "race_type": "governor",
@@ -850,56 +950,6 @@
       "current_average": null,
       "polls_in_average": 0,
       "total_polls": 10
-    },
-    {
-      "id": 9101,
-      "title": "2026 Maine Governor - Charles vs. Pingree vs. Bennett",
-      "race_type": "governor",
-      "category": "General",
-      "state": "me",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Hannah Pingree",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Robert Charles",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Rick Bennett",
-          "affiliation": "Independent"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Pingree",
-            "affiliation": "Democrat",
-            "value": 48.5
-          },
-          {
-            "name": "Charles",
-            "affiliation": "Republican",
-            "value": 39.3
-          },
-          {
-            "name": "Bennett",
-            "affiliation": "Independent",
-            "value": 7.5
-          }
-        ],
-        "spread": {
-          "name": "Pingree",
-          "value": 9.2
-        },
-        "as_of": "2026-10-27T17:19:42+00:00",
-        "date_label": "9/17 - 10/25"
-      },
-      "polls_in_average": 6,
-      "total_polls": 12
     },
     {
       "id": 9190,
@@ -941,6 +991,56 @@
       },
       "polls_in_average": 4,
       "total_polls": 6
+    },
+    {
+      "id": 9200,
+      "title": "2026 Texas Governor - Abbott vs. Hinojosa vs. Dixon",
+      "race_type": "governor",
+      "category": "General",
+      "state": "tx",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Greg Abbott",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Gina Hinojosa",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Pat Dixon",
+          "affiliation": "Libertarian"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Abbott",
+            "affiliation": "Republican",
+            "value": 48.8
+          },
+          {
+            "name": "Hinojosa",
+            "affiliation": "Democrat",
+            "value": 45.6
+          },
+          {
+            "name": "Dixon",
+            "affiliation": "Libertarian",
+            "value": 1.7
+          }
+        ],
+        "spread": {
+          "name": "Abbott",
+          "value": 3.2
+        },
+        "as_of": "2026-10-22T10:41:45+00:00",
+        "date_label": "9/8 - 10/25"
+      },
+      "polls_in_average": 9,
+      "total_polls": 18
     },
     {
       "id": 9233,
@@ -1050,23 +1150,23 @@
           {
             "name": "Pappas",
             "affiliation": "Democrat",
-            "value": 49.7
+            "value": 49.4
           },
           {
             "name": "Sununu",
             "affiliation": "Republican",
-            "value": 43
+            "value": 42.7
           }
         ],
         "spread": {
           "name": "Pappas",
           "value": 6.7
         },
-        "as_of": "2026-10-22T21:42:05+00:00",
+        "as_of": "2026-10-26T19:25:47+00:00",
         "date_label": "9/15 - 10/23"
       },
-      "polls_in_average": 6,
-      "total_polls": 24
+      "polls_in_average": 7,
+      "total_polls": 25
     },
     {
       "id": 8953,
@@ -1091,23 +1191,23 @@
           {
             "name": "Ayotte",
             "affiliation": "Republican",
-            "value": 50.8
+            "value": 50.2
           },
           {
             "name": "Warmington",
             "affiliation": "Democrat",
-            "value": 41.3
+            "value": 41.4
           }
         ],
         "spread": {
           "name": "Ayotte",
-          "value": 9.5
+          "value": 8.8
         },
-        "as_of": "2026-10-27T10:49:01+00:00",
+        "as_of": "2026-10-27T10:50:53+00:00",
         "date_label": "9/15 - 10/23"
       },
-      "polls_in_average": 4,
-      "total_polls": 14
+      "polls_in_average": 5,
+      "total_polls": 15
     },
     {
       "id": 8975,
@@ -1173,6 +1273,47 @@
       "total_polls": 14
     },
     {
+      "id": 9105,
+      "title": "2026 Wisconsin Governor - Tiffany vs. Crowley",
+      "race_type": "governor",
+      "category": "General",
+      "state": "wi",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "David Crowley",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Tom Tiffany",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Crowley",
+            "affiliation": "Democrat",
+            "value": 48.5
+          },
+          {
+            "name": "Tiffany",
+            "affiliation": "Republican",
+            "value": 44
+          }
+        ],
+        "spread": {
+          "name": "Crowley",
+          "value": 4.5
+        },
+        "as_of": "2026-10-28T17:35:06+00:00",
+        "date_label": "8/12 - 10/23"
+      },
+      "polls_in_average": 4,
+      "total_polls": 9
+    },
+    {
       "id": 9136,
       "title": "2026 Nebraska Governor - Pillen vs. Walz",
       "race_type": "governor",
@@ -1225,28 +1366,28 @@
           {
             "name": "Pappas",
             "affiliation": "Democrat",
-            "value": 48.5
+            "value": 48.3
           },
           {
             "name": "Sununu",
             "affiliation": "Republican",
-            "value": 42.5
+            "value": 42
           },
           {
             "name": "Laplante",
             "affiliation": "Independent",
-            "value": 2.5
+            "value": 3
           }
         ],
         "spread": {
           "name": "Pappas",
-          "value": 6
+          "value": 6.3
         },
-        "as_of": "2026-10-05T19:18:21+00:00",
+        "as_of": "2026-10-26T19:27:40+00:00",
         "date_label": "9/26 - 10/23"
       },
-      "polls_in_average": 2,
-      "total_polls": 5
+      "polls_in_average": 3,
+      "total_polls": 6
     },
     {
       "id": 8930,
@@ -1354,47 +1495,6 @@
       "current_average": null,
       "polls_in_average": 0,
       "total_polls": 3
-    },
-    {
-      "id": 9105,
-      "title": "2026 Wisconsin Governor - Tiffany vs. Crowley",
-      "race_type": "governor",
-      "category": "General",
-      "state": "wi",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "David Crowley",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Tom Tiffany",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Crowley",
-            "affiliation": "Democrat",
-            "value": 48.7
-          },
-          {
-            "name": "Tiffany",
-            "affiliation": "Republican",
-            "value": 43.7
-          }
-        ],
-        "spread": {
-          "name": "Crowley",
-          "value": 5
-        },
-        "as_of": "2026-10-28T17:33:27+00:00",
-        "date_label": "8/12 - 10/22"
-      },
-      "polls_in_average": 3,
-      "total_polls": 8
     },
     {
       "id": 9160,
@@ -1627,56 +1727,6 @@
       "total_polls": 10
     },
     {
-      "id": 8985,
-      "title": "2026 Texas Senate - Paxton vs. Talarico vs. Brown",
-      "race_type": "senate",
-      "category": "General",
-      "state": "tx",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "James Talarico",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Ken Paxton",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Ted Brown",
-          "affiliation": "Libertarian"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Talarico",
-            "affiliation": "Democrat",
-            "value": 48
-          },
-          {
-            "name": "Paxton",
-            "affiliation": "Republican",
-            "value": 46.3
-          },
-          {
-            "name": "Brown",
-            "affiliation": "Libertarian",
-            "value": 2.8
-          }
-        ],
-        "spread": {
-          "name": "Talarico",
-          "value": 1.7
-        },
-        "as_of": "2026-10-24T13:03:06+00:00",
-        "date_label": "10/6 - 10/21"
-      },
-      "polls_in_average": 8,
-      "total_polls": 25
-    },
-    {
       "id": 8857,
       "title": "New Hampshire 2nd District - Tang Williams vs. Goodlander",
       "race_type": "house",
@@ -1897,56 +1947,6 @@
       "total_polls": 2
     },
     {
-      "id": 9200,
-      "title": "2026 Texas Governor - Abbott vs. Hinojosa vs. Dixon",
-      "race_type": "governor",
-      "category": "General",
-      "state": "tx",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Greg Abbott",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Gina Hinojosa",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Pat Dixon",
-          "affiliation": "Libertarian"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Abbott",
-            "affiliation": "Republican",
-            "value": 48.7
-          },
-          {
-            "name": "Hinojosa",
-            "affiliation": "Democrat",
-            "value": 45.3
-          },
-          {
-            "name": "Dixon",
-            "affiliation": "Libertarian",
-            "value": 1.7
-          }
-        ],
-        "spread": {
-          "name": "Abbott",
-          "value": 3.4
-        },
-        "as_of": "2026-10-21T21:05:01+00:00",
-        "date_label": "9/8 - 10/19"
-      },
-      "polls_in_average": 9,
-      "total_polls": 16
-    },
-    {
       "id": 8860,
       "title": "2026 Pennsylvania Governor - Garrity vs. Shapiro",
       "race_type": "governor",
@@ -2010,23 +2010,23 @@
           {
             "name": "Markey",
             "affiliation": "Democrat",
-            "value": 55.8
+            "value": 55.6
           },
           {
             "name": "Deaton",
             "affiliation": "Republican",
-            "value": 29.8
+            "value": 29
           }
         ],
         "spread": {
           "name": "Markey",
-          "value": 26
+          "value": 26.6
         },
-        "as_of": "2026-10-19T18:17:30+00:00",
+        "as_of": "2026-10-20T10:55:32+00:00",
         "date_label": "9/14 - 10/18"
       },
-      "polls_in_average": 4,
-      "total_polls": 13
+      "polls_in_average": 5,
+      "total_polls": 14
     },
     {
       "id": 8937,
@@ -2051,23 +2051,23 @@
           {
             "name": "Healey",
             "affiliation": "Democrat",
-            "value": 56
+            "value": 56.2
           },
           {
             "name": "Minogue",
             "affiliation": "Republican",
-            "value": 34.5
+            "value": 33.4
           }
         ],
         "spread": {
           "name": "Healey",
-          "value": 21.5
+          "value": 22.8
         },
-        "as_of": "2026-10-19T18:20:40+00:00",
+        "as_of": "2026-10-20T10:56:19+00:00",
         "date_label": "9/14 - 10/18"
       },
-      "polls_in_average": 4,
-      "total_polls": 11
+      "polls_in_average": 5,
+      "total_polls": 12
     },
     {
       "id": 9034,

@@ -9718,8 +9718,8 @@
       "flip": false
      },
      "foxNews": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {

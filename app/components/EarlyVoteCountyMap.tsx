@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { loadStateGeo, type StateGeo } from "~/lib/stateGeo";
 import { countyResult } from "~/data/countyResults";
 import { formatVotes } from "~/lib/margin";
 import { MapTooltip } from "~/components/MapTooltip";
+import { useTapToPin } from "~/lib/useTapToPin";
 import { EvLegend } from "~/components/EvLegend";
 import { StatGrid, type Stat } from "~/components/StatGrid";
 import { CardHeader, CyclesTable, LeadPill, PartyLabel, SOFT, Section } from "~/components/HoverCard";
@@ -155,6 +156,11 @@ export function EarlyVoteCountyMap({
     };
   }, [usps]);
 
+  // Touch screens: a tap pins a county's card until a tap elsewhere.
+  const mapRef = useRef<HTMLDivElement>(null);
+  const tap = useTapToPin(mapRef);
+  const shown = tap.pinned ?? hovered;
+
   // Window coordinates -- MapTooltip is fixed to the viewport.
   const updatePos = useCallback((e: React.MouseEvent) => {
     setPos({ x: e.clientX, y: e.clientY });
@@ -180,7 +186,6 @@ export function EarlyVoteCountyMap({
     const pct = base ? pctOf(c.v, base.n) : null;
     return pct == null ? NO_DATA : turnoutFill(pct);
   }
-  const hoveredName = hovered ? geo?.counties.find((c) => c.fips === hovered)?.name : null;
 
   return (
     <div>
@@ -220,7 +225,7 @@ export function EarlyVoteCountyMap({
       ) : !geo ? (
         <p className="py-16 text-center text-xs text-gray-400">No county map for {stateName}.</p>
       ) : (
-        <div className="relative">
+        <div ref={mapRef} className="relative" onPointerDownCapture={tap.onPointerDownCapture}>
           {/* Key matches what's actually drawn: turnout colors whenever the
               counties fall back to turnout shading. */}
           <EvLegend
@@ -233,27 +238,32 @@ export function EarlyVoteCountyMap({
                 key={c.fips}
                 d={c.d}
                 fill={fillFor(c.fips)}
-                stroke={hovered === c.fips ? "#000" : "none"}
-                strokeWidth={hovered === c.fips ? 1.5 : 0}
+                stroke={shown === c.fips ? "#000" : "none"}
+                strokeWidth={shown === c.fips ? 1.5 : 0}
                 onMouseEnter={() => setHovered(c.fips)}
                 onMouseMove={updatePos}
                 onMouseLeave={() => setHovered((h) => (h === c.fips ? null : h))}
+                onClick={(e) => {
+                  if (!tap.touch.current) return;
+                  tap.setPinned(c.fips);
+                  setPos({ x: e.clientX, y: e.clientY });
+                }}
               />
             ))}
             <path d={geo.bordersD} fill="none" stroke="#ffffff" strokeWidth={0.6} className="pointer-events-none" />
             <path d={geo.outlineD} fill="none" stroke="#000000" strokeWidth={1} className="pointer-events-none" />
           </svg>
 
-          {hovered && (
+          {shown && (
             <MapTooltip x={pos.x} y={pos.y} className="w-[32rem]">
               <CountyTip
                 baseYear={baseYear}
-                name={hoveredName ?? hovered}
-                fips={hovered}
-                row={rows?.[hovered] ?? null}
-                hist={history?.[hovered]}
-                electorate={electorate?.[hovered] ?? null}
-                registration={registration?.counties[hovered] ?? null}
+                name={geo.counties.find((c) => c.fips === shown)?.name ?? shown}
+                fips={shown}
+                row={rows?.[shown] ?? null}
+                hist={history?.[shown]}
+                electorate={electorate?.[shown] ?? null}
+                registration={registration?.counties[shown] ?? null}
               />
             </MapTooltip>
           )}

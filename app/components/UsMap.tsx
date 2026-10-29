@@ -2,7 +2,8 @@ import { useState, useRef, useCallback, useMemo } from "react";
 import { STATE_PATHS, US_MAP_VIEWBOX } from "~/data/statePaths";
 import { pathPoints, centroidOf } from "~/lib/svgGeometry";
 import { ShiftMark } from "~/components/ShiftMark";
-import { MapTooltip } from "~/components/MapTooltip";
+import { MapTooltip, TooltipActionContext } from "~/components/MapTooltip";
+import { useTapToPin } from "~/lib/useTapToPin";
 
 export interface UsMapProps {
   /** Fill color for each state, keyed by uppercase USPS code. */
@@ -66,6 +67,9 @@ export function UsMap({
   const [hovered, setHovered] = useState<string | null>(null);
   const [pos, setPos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
+  const tap = useTapToPin(containerRef);
+  // A tap-pinned state's card stays up after the finger lifts.
+  const shown = tap.pinned ?? hovered;
   const unit = useOverlayScale();
   const circleMax = overlayCircles
     ? Math.max(...Object.values(overlayCircles).map((c) => c.votes))
@@ -77,7 +81,11 @@ export function UsMap({
   }, []);
 
   return (
-    <div ref={containerRef} className={`relative ${className ?? ""}`}>
+    <div
+      ref={containerRef}
+      className={`relative ${className ?? ""}`}
+      onPointerDownCapture={tap.onPointerDownCapture}
+    >
       <svg
         viewBox={US_MAP_VIEWBOX}
         role="img"
@@ -89,7 +97,7 @@ export function UsMap({
           const isInteractive = interactiveStates?.has(state.id) ?? false;
           const isSelectable = !isInteractive && onStateSelect != null;
           const fill = fills[state.id] ?? "#ffffff";
-          const isHovered = hovered === state.id;
+          const isHovered = shown === state.id;
           const spotlit = highlightStates?.has(state.id) ?? false;
           const dimmed = highlightStates != null && !spotlit;
           return (
@@ -113,11 +121,24 @@ export function UsMap({
               onMouseEnter={() => setHovered(state.id)}
               onMouseMove={updatePos}
               onMouseLeave={() => setHovered((h) => (h === state.id ? null : h))}
-              onClick={() => {
+              onClick={(e) => {
+                // Touch: a tap pins the state's card. A paintable state is
+                // painted on every tap (opened from the card's button); any
+                // other state opens on a second tap. Mouse clicks skip this.
+                if (tap.touch.current && (isInteractive || tap.pinned !== state.id)) {
+                  tap.setPinned(state.id);
+                  setPos({ x: e.clientX, y: e.clientY });
+                  if (isInteractive) onStateClick?.(state.id, 1);
+                  return;
+                }
+                tap.setPinned(null);
                 if (isInteractive) onStateClick?.(state.id, 1);
                 else onStateSelect?.(state.id);
               }}
-              onDoubleClick={() => onStateSelect?.(state.id)}
+              onDoubleClick={() => {
+                // On touch, taps already open the state.
+                if (!tap.touch.current) onStateSelect?.(state.id);
+              }}
               onContextMenu={(e) => {
                 if (isInteractive) {
                   e.preventDefault();
@@ -171,10 +192,25 @@ export function UsMap({
           )}
       </svg>
 
-      {hovered && tooltip?.(hovered) && (
-        <MapTooltip x={pos.x} y={pos.y} className={tooltipWidth}>
-          {tooltip(hovered)}
-        </MapTooltip>
+      {shown && tooltip?.(shown) && (
+        <TooltipActionContext.Provider
+          value={
+            tap.pinned && onStateSelect
+              ? {
+                  label: `Open ${STATE_PATHS.find((s) => s.id === tap.pinned)?.name ?? tap.pinned} →`,
+                  onClick: () => {
+                    const id = tap.pinned!;
+                    tap.setPinned(null);
+                    onStateSelect(id);
+                  },
+                }
+              : null
+          }
+        >
+          <MapTooltip x={pos.x} y={pos.y} className={tooltipWidth}>
+            {tooltip(shown)}
+          </MapTooltip>
+        </TooltipActionContext.Provider>
       )}
     </div>
   );

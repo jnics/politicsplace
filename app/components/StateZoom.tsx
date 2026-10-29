@@ -25,7 +25,8 @@ import {
 } from "~/data/districtResults";
 import { HISTORICAL_COLORS, SHADE_COLORS, SHADE_LABELS, type Shade } from "~/lib/shades";
 import { marginToShade, formatMargin, formatVotes } from "~/lib/margin";
-import { MapTooltip } from "~/components/MapTooltip";
+import { MapTooltip, TooltipActionContext } from "~/components/MapTooltip";
+import { useTapToPin } from "~/lib/useTapToPin";
 
 type Layer = "county" | "district" | "precinct";
 
@@ -218,6 +219,9 @@ export function StateZoom({
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState({ k: 1, x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
+  const tap = useTapToPin(containerRef);
+  // A tap-pinned shape (touch screens) keeps its card up after the finger lifts.
+  const shown = tap.pinned ?? hovered;
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number; zx: number; zy: number } | null>(null);
   /** True once the pointer moved far enough that the gesture is a pan, not a
@@ -702,15 +706,40 @@ export function StateZoom({
   }
 
   const hoveredCounty =
-    hovered && showCounties ? geo?.counties.find((c) => c.fips === hovered) : null;
+    shown && showCounties ? geo?.counties.find((c) => c.fips === shown) : null;
   const hoveredDistrict =
-    hovered && showDistricts
-      ? districts.find((d) => d.id === hovered)
+    shown && showDistricts
+      ? districts.find((d) => d.id === shown)
       : null;
   const hoveredPrecinct =
-    hovered && (showPrecincts || showDistrictCountyPx)
-      ? precincts?.precincts.find((p) => p.id === hovered)
+    shown && (showPrecincts || showDistrictCountyPx)
+      ? precincts?.precincts.find((p) => p.id === shown)
       : null;
+
+  // The pinned card's button on touch screens: does what a second tap does.
+  const pinAction = (() => {
+    if (!tap.pinned || painting) return null;
+    const id = tap.pinned;
+    if (hoveredCounty && hoveredCounty.fips === id)
+      return {
+        label: `Zoom into ${hoveredCounty.name} →`,
+        onClick: () => {
+          tap.setPinned(null);
+          setFocusCounty(id);
+          setHovered(null);
+        },
+      };
+    if (hoveredDistrict && hoveredDistrict.id === id)
+      return {
+        label: focusDistrict === id ? "Back to all districts" : `Zoom into ${hoveredDistrict.label} →`,
+        onClick: () => {
+          tap.setPinned(null);
+          setFocusDistrict((cur) => (cur === id ? null : id));
+          setHovered(null);
+        },
+      };
+    return null;
+  })();
 
   // Counties in the focused district. Prefer the exact precinct-derived set;
   // fall back to a geometry test only while that map is still loading.
@@ -977,7 +1006,7 @@ export function StateZoom({
         </div>
       </div>
 
-      <div ref={containerRef} className="relative">
+      <div ref={containerRef} className="relative" onPointerDownCapture={tap.onPointerDownCapture}>
         {overlaySlot !== undefined ? (
           overlaySlot && createPortal(overlayPills, overlaySlot)
         ) : (
@@ -1077,15 +1106,24 @@ export function StateZoom({
                       " transition-[filter,opacity] duration-100"
                     }
                     stroke={focusedDistrict || flattenFill || painting ? "#111827" : "#ffffff"}
-                    strokeWidth={hovered === c.fips ? 2 : focusedDistrict ? 0.9 : 0.6}
+                    strokeWidth={shown === c.fips ? 2 : focusedDistrict ? 0.9 : 0.6}
                     opacity={!inDistrict ? 0.1 : muted ? 0.2 : 1}
                     pointerEvents={inDistrict ? undefined : "none"}
-                    style={{ filter: hovered === c.fips ? "brightness(1.12)" : undefined }}
+                    style={{ filter: shown === c.fips ? "brightness(1.12)" : undefined }}
                     onMouseEnter={() => setHovered(c.fips)}
                     onMouseMove={updatePos}
                     onMouseLeave={() => setHovered((h) => (h === c.fips ? null : h))}
-                    onClick={() => {
+                    onClick={(e) => {
                       if (panned.current) return;
+                      // Touch: a tap pins the card; a second tap (or the
+                      // card's button) zooms in. Painting paints every tap.
+                      if (tap.touch.current && (canPaintCounty || tap.pinned !== c.fips)) {
+                        tap.setPinned(c.fips);
+                        setPos({ x: e.clientX, y: e.clientY });
+                        if (canPaintCounty) onPaintCounty?.(c.fips, selectedShade);
+                        return;
+                      }
+                      tap.setPinned(null);
                       if (canPaintCounty) {
                         onPaintCounty?.(c.fips, selectedShade);
                         return;
@@ -1260,16 +1298,23 @@ export function StateZoom({
                       " cursor-pointer transition-[filter,opacity] duration-100"
                     }
                     stroke={flattenFill || painting ? "#111827" : "#ffffff"}
-                    strokeWidth={hovered === d.id || isFocus ? 2 : 1.1}
+                    strokeWidth={shown === d.id || isFocus ? 2 : 1.1}
                     opacity={faded ? 0.15 : muted ? 0.2 : 1}
                     style={{
-                      filter: hovered === d.id ? "brightness(1.1)" : undefined,
+                      filter: shown === d.id ? "brightness(1.1)" : undefined,
                     }}
                     onMouseEnter={() => setHovered(d.id)}
                     onMouseMove={updatePos}
                     onMouseLeave={() => setHovered((h) => (h === d.id ? null : h))}
-                    onClick={() => {
+                    onClick={(e) => {
                       if (panned.current) return;
+                      if (tap.touch.current && (canPaintDistrict || tap.pinned !== d.id)) {
+                        tap.setPinned(d.id);
+                        setPos({ x: e.clientX, y: e.clientY });
+                        if (canPaintDistrict) onPaintDistrict?.(key, selectedShade);
+                        return;
+                      }
+                      tap.setPinned(null);
                       if (canPaintDistrict) {
                         onPaintDistrict?.(key, selectedShade);
                         return;
@@ -1397,9 +1442,9 @@ export function StateZoom({
                       " transition-[filter,opacity] duration-100"
                     }
                     stroke="#111827"
-                    strokeWidth={hovered === p.id ? 0.9 : 0.2}
+                    strokeWidth={shown === p.id ? 0.9 : 0.2}
                     opacity={muted ? 0.18 : 1}
-                    style={{ filter: hovered === p.id ? "brightness(1.2)" : undefined }}
+                    style={{ filter: shown === p.id ? "brightness(1.2)" : undefined }}
                     onMouseEnter={() => setHovered(p.id)}
                     onMouseMove={updatePos}
                     onMouseLeave={() => setHovered((h) => (h === p.id ? null : h))}
@@ -1650,6 +1695,7 @@ export function StateZoom({
           </p>
         )}
 
+        <TooltipActionContext.Provider value={pinAction}>
         {hoveredCounty && (
           <CountyTip
             name={hoveredCounty.name}
@@ -1698,6 +1744,7 @@ export function StateZoom({
             y={pos.y}
           />
         )}
+        </TooltipActionContext.Provider>
       </div>
     </div>
   );

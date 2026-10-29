@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T11:48:09.146Z",
+  "generatedAt": "2026-10-29T14:19:04.733Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 50,
@@ -44910,7 +44910,29 @@
         }
       ],
       "dropOffLocations": null,
-      "pollingLocations": null
+      "pollingLocations": [
+        {
+          "address": {
+            "locationName": "Montpelier City Hall",
+            "line1": "39 Main Street",
+            "addressLine": [
+              "39 Main Street"
+            ],
+            "city": "Montpelier",
+            "state": "VT",
+            "zip": "05602"
+          },
+          "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
+          "latitude": 44.25918168879415,
+          "longitude": -72.57552223883782,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ]
     },
     "VA": {
       "hasData": true,
