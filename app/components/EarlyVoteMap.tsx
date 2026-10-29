@@ -507,10 +507,15 @@ export function EarlyVoteMap() {
           </li>
           <li>
             Party splits come from the best source each state has: voter{" "}
-            <em>registration</em> where a state registers by party; Texas by which party&rsquo;s
-            primaries a voter has cast (theoelections.com); everywhere else On Point
-            Polling&rsquo;s modeled party, drawn striped on the map. None of these is vote
-            choice. Gray means no party data at all.
+            <em>registration</em> where a state registers by party; in Georgia, Ohio and Texas
+            (no party registration), the party of the primary ballots each early voter has taken
+            (Secretary of State data for Georgia and Ohio, theoelections.com for Texas). None of
+            these is vote choice. Gray means no party data at all.
+          </li>
+          <li>
+            <strong className="font-semibold text-gray-700 dark:text-gray-300">Striped states</strong>{" "}
+            have no party data from the state itself, so their split is On Point Polling&rsquo;s
+            modeled estimate. Solid colors are real counts.
           </li>
           <li>
             &ldquo;Same point&rdquo; compares 2026 so far against 2022 and 2024 at the same

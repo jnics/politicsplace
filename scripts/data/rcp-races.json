@@ -1,6 +1,129 @@
 {
-  "fetchedAt": "2026-10-28T11:33:21.657Z",
+  "fetchedAt": "2026-10-29T00:09:39.821Z",
   "races": [
+    {
+      "id": 8802,
+      "title": "2026 Michigan Senate - Rogers vs. El-Sayed",
+      "race_type": "senate",
+      "category": "General",
+      "state": "mi",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Abdul El-Sayed",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Mike Rogers",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "El-Sayed",
+            "affiliation": "Democrat",
+            "value": 48.8
+          },
+          {
+            "name": "Rogers",
+            "affiliation": "Republican",
+            "value": 46
+          }
+        ],
+        "spread": {
+          "name": "El-Sayed",
+          "value": 2.8
+        },
+        "as_of": "2026-10-28T22:40:21+00:00",
+        "date_label": "9/28 - 10/27"
+      },
+      "polls_in_average": 8,
+      "total_polls": 45
+    },
+    {
+      "id": 8881,
+      "title": "2026 Florida Governor - Donalds vs. Jolly",
+      "race_type": "governor",
+      "category": "General",
+      "state": "fl",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Byron Donalds",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "David Jolly",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Donalds",
+            "affiliation": "Republican",
+            "value": 48.8
+          },
+          {
+            "name": "Jolly",
+            "affiliation": "Democrat",
+            "value": 43.8
+          }
+        ],
+        "spread": {
+          "name": "Donalds",
+          "value": 5
+        },
+        "as_of": "2026-10-28T14:25:19+00:00",
+        "date_label": "10/2 - 10/27"
+      },
+      "polls_in_average": 5,
+      "total_polls": 17
+    },
+    {
+      "id": 8948,
+      "title": "2026 Florida Senate Special Election - Moody vs. Nixon",
+      "race_type": "senate",
+      "category": "General",
+      "state": "fl",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Angie Nixon",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Moody",
+            "affiliation": "Republican",
+            "value": 49.4
+          },
+          {
+            "name": "Nixon",
+            "affiliation": "Democrat",
+            "value": 43.2
+          }
+        ],
+        "spread": {
+          "name": "Moody",
+          "value": 6.2
+        },
+        "as_of": "2026-10-28T13:27:05+00:00",
+        "date_label": "10/2 - 10/27"
+      },
+      "polls_in_average": 5,
+      "total_polls": 17
+    },
     {
       "id": 8670,
       "title": "2026 Generic Congressional Vote",
@@ -24,23 +147,23 @@
           {
             "name": "Democrats",
             "affiliation": "Democrat",
-            "value": 51.6
+            "value": 51.4
           },
           {
             "name": "Republicans",
             "affiliation": "Republican",
-            "value": 43.6
+            "value": 43.2
           }
         ],
         "spread": {
           "name": "Democrats",
-          "value": 8
+          "value": 8.2
         },
-        "as_of": "2026-10-27T22:50:51+00:00",
-        "date_label": "10/9 - 10/26"
+        "as_of": "2026-10-28T18:47:23+00:00",
+        "date_label": "10/8 - 10/26"
       },
-      "polls_in_average": 15,
-      "total_polls": 384
+      "polls_in_average": 17,
+      "total_polls": 386
     },
     {
       "id": 8689,
@@ -159,52 +282,52 @@
           "name": "Flanagan",
           "value": 5.1
         },
-        "as_of": "2026-10-28T10:42:09+00:00",
+        "as_of": "2026-10-28T13:23:22+00:00",
         "date_label": "10/2 - 10/26"
       },
       "polls_in_average": 6,
       "total_polls": 16
     },
     {
-      "id": 8948,
-      "title": "2026 Florida Senate Special Election - Moody vs. Nixon",
-      "race_type": "senate",
+      "id": 9025,
+      "title": "2026 South Carolina Governor - Wilson vs. Johnson",
+      "race_type": "governor",
       "category": "General",
-      "state": "fl",
+      "state": "sc",
       "district": null,
       "cycle_year": 2026,
       "candidates": [
         {
-          "name": "Ashley Moody",
+          "name": "Alan Wilson",
           "affiliation": "Republican"
         },
         {
-          "name": "Angie Nixon",
+          "name": "Jermaine Johnson",
           "affiliation": "Democrat"
         }
       ],
       "current_average": {
         "results": [
           {
-            "name": "Moody",
+            "name": "Wilson",
             "affiliation": "Republican",
-            "value": 49.6
+            "value": 48.7
           },
           {
-            "name": "Nixon",
+            "name": "Johnson",
             "affiliation": "Democrat",
-            "value": 42.4
+            "value": 37.3
           }
         ],
         "spread": {
-          "name": "Moody",
-          "value": 7.2
+          "name": "Wilson",
+          "value": 11.4
         },
-        "as_of": "2026-10-24T18:38:26+00:00",
-        "date_label": "9/28 - 10/26"
+        "as_of": "2026-10-28T14:49:22+00:00",
+        "date_label": "10/14 - 10/26"
       },
-      "polls_in_average": 7,
-      "total_polls": 16
+      "polls_in_average": 3,
+      "total_polls": 4
     },
     {
       "id": 9115,
@@ -241,7 +364,7 @@
           "name": "Graham Nordone",
           "value": 2.4
         },
-        "as_of": "2026-10-28T10:39:50+00:00",
+        "as_of": "2026-10-28T14:42:56+00:00",
         "date_label": "9/28 - 10/26"
       },
       "polls_in_average": 5,
@@ -270,7 +393,7 @@
           {
             "name": "Hobbs",
             "affiliation": "Democrat",
-            "value": 51
+            "value": 49.6
           },
           {
             "name": "Biggs",
@@ -280,13 +403,54 @@
         ],
         "spread": {
           "name": "Hobbs",
-          "value": 12
+          "value": 10.6
         },
-        "as_of": "2026-10-20T15:02:37+00:00",
+        "as_of": "2026-10-27T18:15:01+00:00",
         "date_label": "7/26 - 10/25"
       },
       "polls_in_average": 5,
       "total_polls": 15
+    },
+    {
+      "id": 8742,
+      "title": "2026 New York Governor - Blakeman vs. Hochul",
+      "race_type": "governor",
+      "category": "General",
+      "state": "ny",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Kathy Hochul",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Bruce Blakeman",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Hochul",
+            "affiliation": "Democrat",
+            "value": 52.5
+          },
+          {
+            "name": "Blakeman",
+            "affiliation": "Republican",
+            "value": 41
+          }
+        ],
+        "spread": {
+          "name": "Hochul",
+          "value": 11.5
+        },
+        "as_of": "2026-10-28T15:44:46+00:00",
+        "date_label": "9/11 - 10/25"
+      },
+      "polls_in_average": 4,
+      "total_polls": 17
     },
     {
       "id": 8753,
@@ -311,23 +475,64 @@
           {
             "name": "Cooper",
             "affiliation": "Democrat",
-            "value": 50.8
+            "value": 51.1
           },
           {
             "name": "Whatley",
             "affiliation": "Republican",
-            "value": 40.5
+            "value": 40.4
           }
         ],
         "spread": {
           "name": "Cooper",
-          "value": 10.3
+          "value": 10.7
         },
-        "as_of": "2026-10-24T19:08:39+00:00",
+        "as_of": "2026-10-26T22:07:05+00:00",
         "date_label": "9/27 - 10/25"
       },
-      "polls_in_average": 8,
-      "total_polls": 43
+      "polls_in_average": 9,
+      "total_polls": 44
+    },
+    {
+      "id": 8915,
+      "title": "2026 Minnesota Governor - Demuth vs. Klobuchar",
+      "race_type": "governor",
+      "category": "General",
+      "state": "mn",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Amy Klobuchar",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Lisa Demuth",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Klobuchar",
+            "affiliation": "Democrat",
+            "value": 50.5
+          },
+          {
+            "name": "Demuth",
+            "affiliation": "Republican",
+            "value": 39.8
+          }
+        ],
+        "spread": {
+          "name": "Klobuchar",
+          "value": 10.7
+        },
+        "as_of": "2026-10-17T02:53:06+00:00",
+        "date_label": "10/2 - 10/25"
+      },
+      "polls_in_average": 4,
+      "total_polls": 11
     },
     {
       "id": 9016,
@@ -358,47 +563,6 @@
       "current_average": null,
       "polls_in_average": 0,
       "total_polls": 10
-    },
-    {
-      "id": 9025,
-      "title": "2026 South Carolina Governor - Wilson vs. Johnson",
-      "race_type": "governor",
-      "category": "General",
-      "state": "sc",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Alan Wilson",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Jermaine Johnson",
-          "affiliation": "Democrat"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Wilson",
-            "affiliation": "Republican",
-            "value": 47.5
-          },
-          {
-            "name": "Johnson",
-            "affiliation": "Democrat",
-            "value": 34
-          }
-        ],
-        "spread": {
-          "name": "Wilson",
-          "value": 13.5
-        },
-        "as_of": "2026-10-20T22:12:03+00:00",
-        "date_label": "10/14 - 10/25"
-      },
-      "polls_in_average": 2,
-      "total_polls": 3
     },
     {
       "id": 9030,
@@ -618,23 +782,23 @@
           {
             "name": "Becerra",
             "affiliation": "Democrat",
-            "value": 57.4
+            "value": 57.6
           },
           {
             "name": "Hilton",
             "affiliation": "Republican",
-            "value": 34.2
+            "value": 34
           }
         ],
         "spread": {
           "name": "Becerra",
-          "value": 23.2
+          "value": 23.6
         },
-        "as_of": "2026-10-21T14:58:01+00:00",
-        "date_label": "9/4 - 10/24"
+        "as_of": "2026-10-28T15:46:17+00:00",
+        "date_label": "9/15 - 10/24"
       },
       "polls_in_average": 5,
-      "total_polls": 11
+      "total_polls": 12
     },
     {
       "id": 9234,
@@ -782,6 +946,50 @@
       "total_polls": 6
     },
     {
+      "id": 9035,
+      "title": "2026 Nebraska Senate - Ricketts vs. Osborn",
+      "race_type": "senate",
+      "category": "General",
+      "state": "ne",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Pete Ricketts",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Dan Osborn",
+          "affiliation": "Independent"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 14
+    },
+    {
+      "id": 9136,
+      "title": "2026 Nebraska Governor - Pillen vs. Walz",
+      "race_type": "governor",
+      "category": "General",
+      "state": "ne",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "Jim Pillen",
+          "affiliation": "Republican"
+        },
+        {
+          "name": "Lynne Walz",
+          "affiliation": "Democrat"
+        }
+      ],
+      "current_average": null,
+      "polls_in_average": 0,
+      "total_polls": 10
+    },
+    {
       "id": 9219,
       "title": "2026 New Hampshire Senate - Multi-Candidate",
       "race_type": "senate",
@@ -834,47 +1042,6 @@
       },
       "polls_in_average": 2,
       "total_polls": 5
-    },
-    {
-      "id": 8802,
-      "title": "2026 Michigan Senate - Rogers vs. El-Sayed",
-      "race_type": "senate",
-      "category": "General",
-      "state": "mi",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Abdul El-Sayed",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Mike Rogers",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "El-Sayed",
-            "affiliation": "Democrat",
-            "value": 48.1
-          },
-          {
-            "name": "Rogers",
-            "affiliation": "Republican",
-            "value": 45.6
-          }
-        ],
-        "spread": {
-          "name": "El-Sayed",
-          "value": 2.5
-        },
-        "as_of": "2026-10-26T20:19:07+00:00",
-        "date_label": "9/28 - 10/22"
-      },
-      "polls_in_average": 8,
-      "total_polls": 44
     },
     {
       "id": 8930,
@@ -1023,6 +1190,47 @@
       "current_average": null,
       "polls_in_average": 0,
       "total_polls": 3
+    },
+    {
+      "id": 9105,
+      "title": "2026 Wisconsin Governor - Tiffany vs. Crowley",
+      "race_type": "governor",
+      "category": "General",
+      "state": "wi",
+      "district": null,
+      "cycle_year": 2026,
+      "candidates": [
+        {
+          "name": "David Crowley",
+          "affiliation": "Democrat"
+        },
+        {
+          "name": "Tom Tiffany",
+          "affiliation": "Republican"
+        }
+      ],
+      "current_average": {
+        "results": [
+          {
+            "name": "Crowley",
+            "affiliation": "Democrat",
+            "value": 48.7
+          },
+          {
+            "name": "Tiffany",
+            "affiliation": "Republican",
+            "value": 43.7
+          }
+        ],
+        "spread": {
+          "name": "Crowley",
+          "value": 5
+        },
+        "as_of": "2026-10-28T17:33:27+00:00",
+        "date_label": "8/12 - 10/22"
+      },
+      "polls_in_average": 3,
+      "total_polls": 8
     },
     {
       "id": 9160,
@@ -1409,47 +1617,6 @@
       "total_polls": 7
     },
     {
-      "id": 8881,
-      "title": "2026 Florida Governor - Donalds vs. Jolly",
-      "race_type": "governor",
-      "category": "General",
-      "state": "fl",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Byron Donalds",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "David Jolly",
-          "affiliation": "Democrat"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Donalds",
-            "affiliation": "Republican",
-            "value": 48.6
-          },
-          {
-            "name": "Jolly",
-            "affiliation": "Democrat",
-            "value": 43
-          }
-        ],
-        "spread": {
-          "name": "Donalds",
-          "value": 5.6
-        },
-        "as_of": "2026-10-21T10:39:03+00:00",
-        "date_label": "9/24 - 10/20"
-      },
-      "polls_in_average": 7,
-      "total_polls": 15
-    },
-    {
       "id": 9148,
       "title": "2026 New Hampshire 1st District - DiLorenzo vs. Shaheen",
       "race_type": "house",
@@ -1498,12 +1665,12 @@
           {
             "name": "Cooper",
             "affiliation": "Democrat",
-            "value": 49.4
+            "value": 50
           },
           {
             "name": "Whatley",
             "affiliation": "Republican",
-            "value": 40.9
+            "value": 40.8
           },
           {
             "name": "Bray",
@@ -1513,13 +1680,13 @@
         ],
         "spread": {
           "name": "Cooper",
-          "value": 8.5
+          "value": 9.2
         },
-        "as_of": "2026-10-20T18:26:30+00:00",
+        "as_of": "2026-10-22T17:04:50+00:00",
         "date_label": "9/16 - 10/20"
       },
-      "polls_in_average": 7,
-      "total_polls": 12
+      "polls_in_average": 8,
+      "total_polls": 13
     },
     {
       "id": 9232,
@@ -1561,47 +1728,6 @@
       },
       "polls_in_average": 3,
       "total_polls": 3
-    },
-    {
-      "id": 8742,
-      "title": "2026 New York Governor - Blakeman vs. Hochul",
-      "race_type": "governor",
-      "category": "General",
-      "state": "ny",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Kathy Hochul",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Bruce Blakeman",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Hochul",
-            "affiliation": "Democrat",
-            "value": 52.5
-          },
-          {
-            "name": "Blakeman",
-            "affiliation": "Republican",
-            "value": 41
-          }
-        ],
-        "spread": {
-          "name": "Hochul",
-          "value": 11.5
-        },
-        "as_of": "2026-10-21T19:07:29+00:00",
-        "date_label": "9/11 - 10/19"
-      },
-      "polls_in_average": 4,
-      "total_polls": 16
     },
     {
       "id": 9032,
@@ -2707,47 +2833,6 @@
       "total_polls": 6
     },
     {
-      "id": 8915,
-      "title": "2026 Minnesota Governor - Demuth vs. Klobuchar",
-      "race_type": "governor",
-      "category": "General",
-      "state": "mn",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Amy Klobuchar",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Lisa Demuth",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Klobuchar",
-            "affiliation": "Democrat",
-            "value": 48.7
-          },
-          {
-            "name": "Demuth",
-            "affiliation": "Republican",
-            "value": 40.3
-          }
-        ],
-        "spread": {
-          "name": "Klobuchar",
-          "value": 8.4
-        },
-        "as_of": "2026-10-15T02:31:55+00:00",
-        "date_label": "10/2 - 10/12"
-      },
-      "polls_in_average": 3,
-      "total_polls": 10
-    },
-    {
       "id": 9118,
       "title": "2026 Connecticut Governor - Fazio vs. Lamont",
       "race_type": "governor",
@@ -2949,47 +3034,6 @@
       "total_polls": 4
     },
     {
-      "id": 9105,
-      "title": "2026 Wisconsin Governor - Tiffany vs. Crowley",
-      "race_type": "governor",
-      "category": "General",
-      "state": "wi",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "David Crowley",
-          "affiliation": "Democrat"
-        },
-        {
-          "name": "Tom Tiffany",
-          "affiliation": "Republican"
-        }
-      ],
-      "current_average": {
-        "results": [
-          {
-            "name": "Crowley",
-            "affiliation": "Democrat",
-            "value": 47.5
-          },
-          {
-            "name": "Tiffany",
-            "affiliation": "Republican",
-            "value": 44
-          }
-        ],
-        "spread": {
-          "name": "Crowley",
-          "value": 3.5
-        },
-        "as_of": "2026-10-27T18:00:34+00:00",
-        "date_label": "7/20 - 9/23"
-      },
-      "polls_in_average": 4,
-      "total_polls": 7
-    },
-    {
       "id": 9140,
       "title": "2026 Minnesota 1st District - Finstad vs. Johnson",
       "race_type": "house",
@@ -3132,50 +3176,6 @@
       },
       "polls_in_average": 4,
       "total_polls": 5
-    },
-    {
-      "id": 9035,
-      "title": "2026 Nebraska Senate - Ricketts vs. Osborn",
-      "race_type": "senate",
-      "category": "General",
-      "state": "ne",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Pete Ricketts",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Dan Osborn",
-          "affiliation": "Independent"
-        }
-      ],
-      "current_average": null,
-      "polls_in_average": 0,
-      "total_polls": 10
-    },
-    {
-      "id": 9136,
-      "title": "2026 Nebraska Governor - Pillen vs. Walz",
-      "race_type": "governor",
-      "category": "General",
-      "state": "ne",
-      "district": null,
-      "cycle_year": 2026,
-      "candidates": [
-        {
-          "name": "Jim Pillen",
-          "affiliation": "Republican"
-        },
-        {
-          "name": "Lynne Walz",
-          "affiliation": "Democrat"
-        }
-      ],
-      "current_average": null,
-      "polls_in_average": 0,
-      "total_polls": 7
     },
     {
       "id": 8904,

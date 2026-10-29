@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router";
+import { Form, Link, NavLink, useLocation, useRouteLoaderData } from "react-router";
 import { ThemeToggle } from "~/components/ThemeToggle";
 
 const LINKS = [
@@ -25,9 +25,12 @@ export function SiteNav() {
   // Below `lg` the nine links don't fit on one line, so they fold into a
   // menu behind a button; from `lg` up it's the plain single row.
   const [open, setOpen] = useState(false);
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
   useEffect(() => setOpen(false), [pathname]);
   const current = LINKS.find((l) => (l.end ? pathname === l.to : pathname.startsWith(l.to)));
+  const editor = useRouteLoaderData<{ editor: string | null }>("root")?.editor ?? null;
+  const authClass =
+    "rounded-md border border-gray-300 px-2.5 py-1 text-xs font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800";
 
   return (
     <nav className="border-b border-gray-200 bg-white/80 backdrop-blur dark:border-gray-800 dark:bg-gray-950/80">
@@ -50,6 +53,20 @@ export function SiteNav() {
           </div>
         </div>
         <div className="flex items-center gap-1">
+          {editor ? (
+            <Form method="post" action="/login">
+              <input type="hidden" name="intent" value="logout" />
+              <button type="submit" className={authClass} title={`Signed in as ${editor}`}>
+                Log out
+              </button>
+            </Form>
+          ) : (
+            pathname !== "/login" && (
+              <Link to={`/login?next=${encodeURIComponent(pathname + search)}`} className={authClass}>
+                Log in
+              </Link>
+            )
+          )}
           <ThemeToggle />
           <button
             type="button"

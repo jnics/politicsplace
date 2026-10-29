@@ -14,4 +14,5 @@ export default [
   route("ratings", "routes/ratings.tsx"),
   route("calendar", "routes/calendar.tsx"),
   route("about", "routes/about.tsx"),
+  route("login", "routes/login.tsx"),
 ] satisfies RouteConfig;

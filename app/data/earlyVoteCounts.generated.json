@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T22:16:00.044Z",
+  "generatedAt": "2026-10-29T00:23:03.058Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 39822505,
+  "totalVoted": 40048789,
   "byState": {
     "AK": {
       "current": {
@@ -259,22 +259,22 @@
     },
     "CT": {
       "current": {
-        "voted": 238323,
-        "mailReturned": 38511,
-        "inPerson": 199812,
-        "mailRequested": 65351,
+        "voted": 314180,
+        "mailReturned": 41374,
+        "inPerson": 272806,
+        "mailRequested": 66740,
         "party": {
-          "dem": 125725,
-          "rep": 41773,
-          "other": 70825
+          "dem": 159663,
+          "rep": 58067,
+          "other": 96450
         },
         "mailRequestedParty": {
-          "dem": 34108,
-          "rep": 11194,
-          "other": 20049
+          "dem": 34765,
+          "rep": 11431,
+          "other": 20544
         },
         "turnout2022": 1297811,
-        "lastUpdate": "2026-10-27",
+        "lastUpdate": "2026-10-28",
         "source": "Connecticut Secretary of the State",
         "notes": null,
         "partyBasis": "registration",
@@ -393,19 +393,19 @@
     },
     "FL": {
       "current": {
-        "voted": 3856581,
-        "mailReturned": 1680733,
-        "inPerson": 2175848,
-        "mailRequested": 2480035,
+        "voted": 3886449,
+        "mailReturned": 1682903,
+        "inPerson": 2203546,
+        "mailRequested": 2479902,
         "party": {
-          "dem": 1498882,
-          "rep": 1553231,
-          "other": 804468
+          "dem": 1511611,
+          "rep": 1563352,
+          "other": 811486
         },
         "mailRequestedParty": {
-          "dem": 1046705,
-          "rep": 854939,
-          "other": 578391
+          "dem": 1046620,
+          "rep": 854924,
+          "other": 578358
         },
         "turnout2022": 7796916,
         "lastUpdate": "2026-10-28",
@@ -413,8 +413,8 @@
         "notes": "Some Florida statistics are obtained from county websites that may report more recent and higher numbers than the Florida Division of Elections reports.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0602215712258043,
-          "2024": 0.629034858477391
+          "2022": 1.0726142093476096,
+          "2024": 0.6363874737973174
         }
       },
       "past": {
@@ -445,14 +445,14 @@
     },
     "GA": {
       "current": {
-        "voted": 2175916,
-        "mailReturned": 100705,
-        "inPerson": 2075211,
+        "voted": 2291186,
+        "mailReturned": 104492,
+        "inPerson": 2186694,
         "mailRequested": 157374,
         "party": {
-          "dem": 849659,
-          "rep": 697587,
-          "other": 628671
+          "dem": 894670,
+          "rep": 734541,
+          "other": 661975
         },
         "mailRequestedParty": null,
         "turnout2022": 3964926,
@@ -1406,8 +1406,8 @@
         "notes": null,
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.3662467867227914,
-          "2024": 0.5942892079855823
+          "2022": 1.3982019713961185,
+          "2024": 0.6081890550520828
         }
       },
       "past": {
@@ -1510,8 +1510,8 @@
         "notes": "Statewide and county totals, method of voting (mail vs. in-person), and party registration all come from two public JSON files the state's own Vivid dashboard uses. District (congressional/legislative), age, and district-level party breakdowns come from a separate individual-level file and may not sum to exactly the same statewide total.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.1955651162790697,
-          "2024": 0.6302090101133926
+          "2022": 1.2387209302325581,
+          "2024": 0.6529574011645725
         }
       },
       "past": {
@@ -1872,22 +1872,22 @@
     },
     "SD": {
       "current": {
-        "voted": 55763,
-        "mailReturned": 55763,
+        "voted": 61052,
+        "mailReturned": 61052,
         "inPerson": null,
-        "mailRequested": 65674,
+        "mailRequested": 70869,
         "party": {
-          "dem": 16803,
-          "rep": 29649,
-          "other": 9311
+          "dem": 18358,
+          "rep": 32525,
+          "other": 10169
         },
         "mailRequestedParty": {
-          "dem": 19448,
-          "rep": 34669,
-          "other": 11557
+          "dem": 20952,
+          "rep": 37519,
+          "other": 12398
         },
         "turnout2022": 354670,
-        "lastUpdate": "2026-10-27",
+        "lastUpdate": "2026-10-28",
         "source": "South Dakota Secretary of State",
         "notes": null,
         "partyBasis": "registration",
@@ -1987,8 +1987,8 @@
         "partyBasis": "primary",
         "partySource": "theoelections.com",
         "sameDay": {
-          "2022": 1.2396311584553927,
-          "2024": 0.7630844262295082
+          "2022": 1.2534003550821127,
+          "2024": 0.7715603825136612
         }
       },
       "past": {
@@ -2083,8 +2083,8 @@
         "notes": null,
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 1.656700944851569,
-          "2024": 0.6195990413399963
+          "2022": 1.6614669496857914,
+          "2024": 0.6213815066880621
         },
         "partySource": "On Point Polling"
       },

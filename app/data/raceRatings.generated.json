@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-28",
+ "generatedAt": "2026-10-29",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -9000,8 +9000,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "sabato": {
@@ -9148,7 +9148,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9433,9 +9433,9 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "foxNews": {
       "label": "Lean",
@@ -10123,7 +10123,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -10394,9 +10394,9 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      }
     }
    },
@@ -11025,9 +11025,9 @@
       "flip": true
      },
      "ddhq": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "foxNews": {
       "label": "Lean",
@@ -11450,8 +11450,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "sabato": {

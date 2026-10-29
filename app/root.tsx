@@ -11,6 +11,12 @@ import { useEffect } from "react";
 import type { Route } from "./+types/root";
 import "./app.css";
 import { SiteNav } from "~/components/SiteNav";
+import { editorFromRequest } from "~/lib/auth.server";
+
+/** Who's signed in, for the nav's Log in / Log out button. */
+export function loader({ request }: Route.LoaderArgs) {
+  return { editor: editorFromRequest(request) };
+}
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },

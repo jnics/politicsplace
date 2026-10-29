@@ -38,11 +38,12 @@ export function checkPassword(pw: string): boolean {
 
 export function sessionCookie(name: string): string {
   const v = encodeURIComponent(sign(name || "anon"));
-  return `${COOKIE}=${v}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${60 * 60 * 24}`;
+  // 30 days, so a login carries across the whole site until it's logged out.
+  return `${COOKIE}=${v}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${60 * 60 * 24 * 30}`;
 }
 
 export function clearCookie(): string {
-  return `${COOKIE}=; Path=/; HttpOnly; Max-Age=0`;
+  return `${COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`;
 }
 
 /** The signed-in editor's name from the request cookie, or null if not
@@ -138,27 +139,40 @@ export async function tryLogin(
   form: FormData
 ) {
   if (form.get("intent") !== "login") return null;
+  const r = await checkLogin(request, db, form);
+  if ("error" in r) return data({ error: r.error }, { status: r.status });
+  return data(
+    { ok: true, editor: r.name },
+    { headers: { "Set-Cookie": sessionCookie(r.name) } }
+  );
+}
+
+/** The rate-limited password check behind tryLogin and the /login page:
+ *  the signed-in name, or an error with its HTTP status. */
+export async function checkLogin(
+  request: Request,
+  db: D1Database,
+  form: FormData
+): Promise<{ name: string } | { error: string; status: number }> {
   const ip = clientIp(request);
 
   const lockedFor = await lockoutSecondsRemaining(db, ip);
   if (lockedFor > 0) {
     const minutes = Math.ceil(lockedFor / 60);
-    return data(
-      { error: `Too many attempts. Try again in ${minutes} minute${minutes === 1 ? "" : "s"}.` },
-      { status: 429 }
-    );
+    return { error: `Too many attempts. Try again in ${minutes} minute${minutes === 1 ? "" : "s"}.`, status: 429 };
   }
 
   const password = String(form.get("password") ?? "");
   if (!checkPassword(password)) {
     await recordFailedAttempt(db, ip);
-    return data({ error: "Wrong password." }, { status: 401 });
+    return { error: "Wrong password.", status: 401 };
   }
 
   await clearAttempts(db, ip);
-  const name = String(form.get("name") ?? "").trim() || "anon";
-  return data(
-    { ok: true, editor: name },
-    { headers: { "Set-Cookie": sessionCookie(name) } }
-  );
+  return { name: String(form.get("name") ?? "").trim() || "anon" };
+}
+
+/** A same-site path to go back to after logging in, or "/". */
+export function safeNext(next: string | null): string {
+  return next && next.startsWith("/") && !next.startsWith("//") && !next.startsWith("/login") ? next : "/";
 }
