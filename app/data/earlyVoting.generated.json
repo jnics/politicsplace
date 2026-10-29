@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T00:22:46.401Z",
+  "generatedAt": "2026-10-29T11:45:30.090Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 50,
@@ -26291,27 +26291,6 @@
         },
         {
           "address": {
-            "locationName": "FRIENDSHIP BAPTIST CHURCH",
-            "line1": "80 WALNUT ST",
-            "addressLine": [
-              "80 WALNUT ST"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30314"
-          },
-          "pollingHours": "Tue, Oct 27: 9 am - 5 pm\nWed, Oct 28: 9 am - 5 pm",
-          "latitude": 33.75261401177776,
-          "longitude": -84.40582500527856,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
             "locationName": "BEULAH HEIGHTS UNIVERSITY",
             "line1": "892 BERNE ST SE",
             "addressLine": [
@@ -44642,8 +44621,8 @@
             "zip": "84118"
           },
           "pollingHours": "Tue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 40.64826448026402,
-          "longitude": -112.00623409141043,
+          "latitude": 40.64828883235031,
+          "longitude": -112.00625037483012,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -45144,7 +45123,52 @@
         "votingLocationFinderUrl": "https://voter.votewa.gov/",
         "electionRulesUrl": "https://voter.votewa.gov/"
       },
-      "earlyVoteSites": null,
+      "earlyVoteSites": [
+        {
+          "address": {
+            "locationName": "Thurston County Atrium Voting Center",
+            "line1": "3000 Pacific Ave SE",
+            "addressLine": [
+              "3000 Pacific Ave SE"
+            ],
+            "city": "Olympia",
+            "state": "WA",
+            "zip": "98501"
+          },
+          "notes": "Register to vote or get a ballot. Open 8 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
+          "pollingHours": "Monday through Friday 8:00am - 4:30pm Saturday, Oct 31 10:00am - 4:00pm Monday, Nov 2 8:00am - 6:00pm On Election Day 8:00am - 8:00pm",
+          "latitude": 47.04319480204704,
+          "longitude": -122.85863765986066,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Thurston County Auditor Elections Center",
+            "line1": "2915 29th Ave SW",
+            "addressLine": [
+              "2915 29th Ave SW"
+            ],
+            "city": "Tumwater",
+            "state": "WA",
+            "zip": "98512"
+          },
+          "notes": "Register to vote, get a ballot and deposit in a drop box. Open 20 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
+          "pollingHours": "Wed, Oct 14: 8:00 am - 4:30 pm\nThu, Oct 15: 8:00 am - 4:30 pm\nFri, Oct 16: 8:00 am - 4:30 pm\nMon, Oct 19: 8:00 am - 4:30 pm\nTue, Oct 20: 8:00 am - 4:30 pm\nWed, Oct 21: 8:00 am - 4:30 pm\nThu, Oct 22: 8:00 am - 4:30 pm\nFri, Oct 23: 8:00 am - 4:30 pm\nMon, Oct 26: 8:00 am - 4:30 pm\nTue, Oct 27: 8:00 am - 4:30 pm\nWed, Oct 28: 8:00 am - 4:30 pm\nThu, Oct 29: 8:00 am - 4:30 pm\nFri, Oct 30: 8:00 am - 4:30 pm\nSat, Oct 31: 10 am - 4 pm\nMon, Nov 2: 8 am - 6 pm",
+          "latitude": 47.02137180463269,
+          "longitude": -122.94449556813287,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
       "dropOffLocations": null,
       "pollingLocations": null
     },
