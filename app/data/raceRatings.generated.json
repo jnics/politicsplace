@@ -8191,9 +8191,9 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "economist": {
       "label": "Tossup",
@@ -8695,8 +8695,8 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "economist": {
@@ -11081,9 +11081,9 @@
       "flip": true
      },
      "ddhq": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "foxNews": {
       "label": "Lean",

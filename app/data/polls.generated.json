@@ -43787,7 +43787,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -43997,7 +43997,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -44068,7 +44068,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -44552,7 +44552,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -44682,7 +44682,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -44812,7 +44812,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -45426,7 +45426,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -45575,7 +45575,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -46071,7 +46071,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -46128,7 +46128,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -46145,6 +46145,25 @@
     }
    ],
    "polls": [
+    {
+     "pollster": "SSRS",
+     "startDate": "2026-10-20",
+     "endDate": "2026-10-20",
+     "sampleSize": 838,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Cindy Holscher",
+       "party": "D",
+       "pct": 45
+      },
+      {
+       "candidate": "Ty Masterson",
+       "party": "R",
+       "pct": 50
+      }
+     ]
+    },
     {
      "pollster": "Global Strategy Group",
      "startDate": "2026-10-18",
@@ -46415,7 +46434,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -46545,7 +46564,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -46583,7 +46602,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -47135,7 +47154,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -47842,7 +47861,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -48167,7 +48186,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -48376,7 +48395,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -48468,6 +48487,25 @@
        "candidate": "Kelly Ayotte",
        "party": "R",
        "pct": 49
+      }
+     ]
+    },
+    {
+     "pollster": "UMass Lowell / YouGov",
+     "startDate": "2026-10-02",
+     "endDate": "2026-10-02",
+     "sampleSize": 600,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Cinde Warmington",
+       "party": "D",
+       "pct": 42
+      },
+      {
+       "candidate": "Kelly Ayotte",
+       "party": "R",
+       "pct": 48
       }
      ]
     },
@@ -48719,7 +48757,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -48909,7 +48947,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -49176,7 +49214,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -49287,7 +49325,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -49862,7 +49900,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -50073,7 +50111,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -50473,7 +50511,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -50616,7 +50654,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -50881,7 +50919,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -50919,7 +50957,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -51087,7 +51125,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -52197,7 +52235,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -52254,7 +52292,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "governor",
@@ -52581,7 +52619,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -52696,7 +52734,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -52735,7 +52773,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -52854,7 +52892,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -52934,7 +52972,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -53114,7 +53152,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -53270,7 +53308,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -53410,7 +53448,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -53608,7 +53646,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -53767,7 +53805,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -53946,7 +53984,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -54026,7 +54064,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -54223,7 +54261,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -54505,7 +54543,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -54644,7 +54682,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -54875,7 +54913,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -55033,7 +55071,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -55653,7 +55691,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -55788,10 +55826,29 @@
        "pct": 44
       }
      ]
+    },
+    {
+     "pollster": "Muhlenberg College",
+     "startDate": "2026-10-06",
+     "endDate": "2026-10-15",
+     "sampleSize": 529,
+     "population": "LV",
+     "results": [
+      {
+       "candidate": "Bob Brooks",
+       "party": "D",
+       "pct": 49
+      },
+      {
+       "candidate": "Ryan Mackenzie",
+       "party": "R",
+       "pct": 43
+      }
+     ]
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -55928,7 +55985,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -56085,7 +56142,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -56286,7 +56343,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -56582,7 +56639,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -56739,7 +56796,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -56878,7 +56935,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -56977,7 +57034,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -57096,7 +57153,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -57214,7 +57271,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "house",
@@ -57800,7 +57857,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -57991,7 +58048,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -58086,7 +58143,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -58663,7 +58720,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -58812,7 +58869,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -59018,7 +59075,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -59482,7 +59539,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -59712,7 +59769,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -60540,7 +60597,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -61623,7 +61680,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -62126,7 +62183,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -62337,7 +62394,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -63108,7 +63165,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -63630,7 +63687,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -64111,7 +64168,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -64184,7 +64241,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -64920,7 +64977,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -65012,7 +65069,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -65418,7 +65475,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -65510,7 +65567,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -65547,7 +65604,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   },
   {
    "raceType": "senate",
@@ -66834,7 +66891,7 @@
     }
    ],
    "source": "RealClearPolling",
-   "lastPulled": "2026-10-29T14:12:27.920Z"
+   "lastPulled": "2026-10-29T16:13:36.941Z"
   }
  ]
 }

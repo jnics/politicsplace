@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T14:19:04.733Z",
+  "generatedAt": "2026-10-29T16:19:55.652Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 50,
@@ -27257,9 +27257,9 @@
         {
           "address": {
             "locationName": "Salt Lake District Park",
-            "line1": "1159 Ala Lilikoi Street",
+            "line1": "1159 Ala Lilikoi Place",
             "addressLine": [
-              "1159 Ala Lilikoi Street"
+              "1159 Ala Lilikoi Place"
             ],
             "city": "Honolulu",
             "state": "HI",

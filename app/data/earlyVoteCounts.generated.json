@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-29T16:05:37.337Z",
+  "generatedAt": "2026-10-29T16:19:59.730Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 42268774,
+  "totalVoted": 42371696,
   "byState": {
     "AK": {
       "current": {
@@ -11,9 +11,9 @@
         "inPerson": 41030,
         "mailRequested": 49248,
         "party": {
-          "dem": 13168,
-          "rep": 17811,
-          "other": 30670
+          "dem": 13148,
+          "rep": 17569,
+          "other": 30932
         },
         "mailRequestedParty": null,
         "turnout2022": 267047,
@@ -123,8 +123,8 @@
         "notes": "Arizona's request_* figures are mail ballots issued (sent out), not applications received - this state's early voting is run through a permanent early-voting list rather than a one-off per-election request.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.087484722448906,
-          "2024": 0.7257348
+          "2022": 1.2093535324970766,
+          "2024": 0.80706416
         }
       },
       "past": {
@@ -413,8 +413,8 @@
         "notes": "Some Florida statistics are obtained from county websites that may report more recent and higher numbers than the Florida Division of Elections reports.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.024845250976137,
-          "2024": 0.6159546488496279
+          "2022": 1.032538583712649,
+          "2024": 0.6205785118764491
         }
       },
       "past": {
@@ -495,9 +495,9 @@
         "inPerson": 2270,
         "mailRequested": 727412,
         "party": {
-          "dem": 92073,
-          "rep": 43309,
-          "other": 32809
+          "dem": 91119,
+          "rep": 43548,
+          "other": 33524
         },
         "mailRequestedParty": null,
         "turnout2022": 423443,
@@ -639,18 +639,18 @@
     },
     "IL": {
       "current": {
-        "voted": 1164397,
-        "mailReturned": 555827,
-        "inPerson": 608570,
-        "mailRequested": 1168268,
+        "voted": 1267319,
+        "mailReturned": 583691,
+        "inPerson": 683628,
+        "mailRequested": 1175326,
         "party": {
-          "dem": 663761,
-          "rep": 212100,
-          "other": 288537
+          "dem": 727263,
+          "rep": 227677,
+          "other": 312378
         },
         "mailRequestedParty": null,
         "turnout2022": 4144125,
-        "lastUpdate": "2026-10-28",
+        "lastUpdate": "2026-10-29",
         "source": "https://www.elections.il.gov/VotingAndRegistrationSystems/PreElectionCounts.aspx",
         "notes": null,
         "partyBasis": "modeled",
@@ -689,9 +689,9 @@
         "inPerson": null,
         "mailRequested": 588569,
         "party": {
-          "dem": 204604,
-          "rep": 205913,
-          "other": 142417
+          "dem": 202192,
+          "rep": 205360,
+          "other": 145381
         },
         "mailRequestedParty": null,
         "turnout2022": 1880755,
@@ -1024,9 +1024,9 @@
         "inPerson": 328746,
         "mailRequested": 2170628,
         "party": {
-          "dem": 920076,
-          "rep": 329295,
-          "other": 455382
+          "dem": 913631,
+          "rep": 326987,
+          "other": 464135
         },
         "mailRequestedParty": null,
         "turnout2022": 4500400,
@@ -1069,9 +1069,9 @@
         "inPerson": 241348,
         "mailRequested": 447340,
         "party": {
-          "dem": 213572,
-          "rep": 81610,
-          "other": 124007
+          "dem": 213168,
+          "rep": 81254,
+          "other": 124767
         },
         "mailRequestedParty": null,
         "turnout2022": 2526646,
@@ -1114,9 +1114,9 @@
         "inPerson": 50086,
         "mailRequested": 12165,
         "party": {
-          "dem": 15468,
-          "rep": 25645,
-          "other": 13495
+          "dem": 15465,
+          "rep": 25632,
+          "other": 13510
         },
         "mailRequestedParty": null,
         "turnout2022": 2304250,
@@ -1159,9 +1159,9 @@
         "inPerson": null,
         "mailRequested": 64537,
         "party": {
-          "dem": 19404,
-          "rep": 20396,
-          "other": 16249
+          "dem": 19391,
+          "rep": 20359,
+          "other": 16299
         },
         "mailRequestedParty": null,
         "turnout2022": 709100,
@@ -1201,9 +1201,9 @@
         "inPerson": null,
         "mailRequested": 527595,
         "party": {
-          "dem": 110699,
-          "rep": 73933,
-          "other": 72934
+          "dem": 109752,
+          "rep": 73288,
+          "other": 74526
         },
         "mailRequestedParty": null,
         "turnout2022": 468326,
@@ -1295,9 +1295,9 @@
         "inPerson": 23409,
         "mailRequested": 56122,
         "party": {
-          "dem": 16737,
-          "rep": 29829,
-          "other": 17241
+          "dem": 16675,
+          "rep": 29659,
+          "other": 17473
         },
         "mailRequestedParty": null,
         "turnout2022": 242566,
@@ -1845,9 +1845,9 @@
         "inPerson": 753108,
         "mailRequested": 56910,
         "party": {
-          "dem": 215371,
-          "rep": 385147,
-          "other": 188722
+          "dem": 216120,
+          "rep": 384290,
+          "other": 188830
         },
         "mailRequestedParty": null,
         "turnout2022": 1718626,
@@ -2085,9 +2085,9 @@
         "inPerson": 1037444,
         "mailRequested": 462844,
         "party": {
-          "dem": 636154,
-          "rep": 331544,
-          "other": 361967
+          "dem": 636350,
+          "rep": 330932,
+          "other": 362383
         },
         "mailRequestedParty": null,
         "turnout2022": 3021956,
@@ -2130,9 +2130,9 @@
         "inPerson": null,
         "mailRequested": 458003,
         "party": {
-          "dem": 82338,
-          "rep": 27150,
-          "other": 22123
+          "dem": 82048,
+          "rep": 27226,
+          "other": 22336
         },
         "mailRequestedParty": null,
         "turnout2022": 291955,
@@ -2175,9 +2175,9 @@
         "inPerson": null,
         "mailRequested": 5131622,
         "party": {
-          "dem": 891050,
-          "rep": 250442,
-          "other": 214566
+          "dem": 893965,
+          "rep": 249780,
+          "other": 212312
         },
         "mailRequestedParty": null,
         "turnout2022": 3067686,
@@ -2221,9 +2221,9 @@
         "inPerson": 344182,
         "mailRequested": 737687,
         "party": {
-          "dem": 294222,
-          "rep": 144234,
-          "other": 194617
+          "dem": 292004,
+          "rep": 142841,
+          "other": 198228
         },
         "mailRequestedParty": null,
         "turnout2022": 2673154,
