@@ -15,7 +15,6 @@ import { STATE_PATHS } from "~/data/statePaths";
 import { readStore, saveResult } from "~/lib/board.server";
 import { FEED_BY, syncBoardFromFeed } from "~/lib/civicFeed.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
-import { LoginForm } from "~/components/LoginForm";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -197,14 +196,8 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
         </p>
       </header>
 
-      {!editor ? (
-        <div className="mb-5">
-          <LoginForm title="Sign in to enter results" />
-          <p className="mt-2 text-center text-xs text-gray-400 dark:text-gray-500">
-            Everyone can watch the board update live below — just not edit it.
-          </p>
-        </div>
-      ) : (
+      {/* No sign-in prompt here: editors know to use /login. */}
+      {editor && (
         <div className="mb-3 flex flex-wrap items-center gap-3 text-xs text-gray-400 dark:text-gray-500">
           <span>
             Signed in as <span className="font-medium">{editor}</span>.

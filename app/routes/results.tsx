@@ -27,7 +27,6 @@ import {
   type Oh7LogEntry,
 } from "~/lib/oh7.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
-import { LoginForm } from "~/components/LoginForm";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -425,11 +424,8 @@ export default function Results({ loaderData }: Route.ComponentProps) {
         </p>
       </header>
 
-      {!editor ? (
-        <div className="mb-4">
-          <LoginForm title="Sign in to enter counts" />
-        </div>
-      ) : (
+      {/* No sign-in prompt here: editors know to use /login. */}
+      {editor && (
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-400 dark:text-gray-500">
           <span>
             Signed in as <span className="font-medium">{editor}</span>.
@@ -870,7 +866,7 @@ function CountInput({
       aria-label={label}
       title={
         disabled
-          ? "Sign in at the top of the page to enter counts."
+          ? undefined
           : mode === "add"
           ? "Type a count and press Enter to add it to this total. 0 resets."
           : "Type this field's total. 0 resets."
