@@ -29,8 +29,9 @@ const CHAMBER_RACE: Record<BoardRace["chamber"], number> = {
 /** No writes before this. civicAPI serves placeholder test numbers ahead of
  *  election night (seen 2026-10-20: PA governor "76% reporting", 8.6M votes
  *  each, a House seat "called"), so pulling early would fill the board with
- *  junk. 22:00 UTC = 5 PM EST, an hour before the first polls close. */
-export const FEED_OPENS_AT = "2026-11-03T22:00:00Z";
+ *  junk. 23:30 UTC = 6:30 PM EST, half an hour after the first polls close
+ *  (counts are cumulative, so nothing reported before then is missed). */
+export const FEED_OPENS_AT = "2026-11-03T23:30:00Z";
 
 /** The audit-log `by` for feed writes, so the page can tell them from hand entry. */
 export const FEED_BY = "civicAPI";
@@ -142,7 +143,7 @@ async function fetchRegions(id: number): Promise<Record<string, CivicRegion>> {
  *  started counting are left alone, so hand entry still works for them. */
 export async function syncBoardFromFeed(db: D1Database, races: BoardRace[]) {
   if (Date.now() < Date.parse(FEED_OPENS_AT))
-    throw new Error("The results feed opens at 5 PM ET on Nov 3.");
+    throw new Error("The results feed opens at 6:30 PM ET on Nov 3.");
 
   const regions = Object.fromEntries(
     await Promise.all(
