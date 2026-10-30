@@ -17,10 +17,11 @@
  *     (a later primary overrides an earlier one for the same voter).
  *
  * Writes scripts/data/ga-early-party.json -- totals only, no voter rows:
- * { asOf, primaries, state: { voted, dem, rep, other }, counties: { NAME:
- * { voted, dem, rep, other } } }. Counts accepted ballots (status "A");
- * "other" is voters with no D or R primary ballot on file. The early-vote
- * pull reads it.
+ * { asOf, primaries, state: { voted, inPerson, mail, requested, dem, rep,
+ * other }, counties: { NAME: { same } } }. Counts accepted ballots (status
+ * "A"); "mail" includes electronic ballots for overseas voters; "requested"
+ * is accepted mail applications; "other" is voters with no D or R primary
+ * ballot on file. The early-vote pull reads it.
  */
 import { spawn } from "node:child_process";
 import { writeFileSync } from "node:fs";
@@ -83,18 +84,25 @@ for (const zip of histZips) {
   primaries.push(date);
 }
 
-const state = { voted: 0, dem: 0, rep: 0, other: 0 };
+const blank = () => ({ voted: 0, inPerson: 0, mail: 0, requested: 0, dem: 0, rep: 0, other: 0 });
+const state = blank();
 const counties = {};
 let asOf = "";
 const today = new Date().toISOString().slice(0, 10); // a few rows carry typo dates (2029)
 for await (const get of rows(absZip, "STATEWIDE.csv")) {
-  if (get("Ballot Status") !== "A") continue;
   const county = get("County");
-  const c = (counties[county] ??= { voted: 0, dem: 0, rep: 0, other: 0 });
+  const c = (counties[county] ??= blank());
+  const inPerson = get("Ballot Style") === "EARLY IN-PERSON";
+  if (!inPerson && get("Application Status") === "A") {
+    state.requested += 1;
+    c.requested += 1;
+  }
+  if (get("Ballot Status") !== "A") continue;
   const p = party.get(get("Voter Registration #"));
   const slot = p === "D" ? "dem" : p === "R" ? "rep" : "other";
   for (const t of [state, c]) {
     t.voted += 1;
+    t[inPerson ? "inPerson" : "mail"] += 1;
     t[slot] += 1;
   }
   const returned = get("Ballot Return Date"); // MM/DD/YYYY
@@ -105,7 +113,7 @@ for await (const get of rows(absZip, "STATEWIDE.csv")) {
 writeFileSync(OUT, JSON.stringify({ asOf, primaries, state, counties }, null, 1) + "\n");
 const pct = (n) => ((100 * n) / state.voted).toFixed(1);
 console.log(
-  `GA through ${asOf}: ${state.voted} accepted -- D ${pct(state.dem)}%, R ${pct(state.rep)}%, other ${pct(
+  `GA through ${asOf}: ${state.voted} accepted (${state.inPerson} in person, ${state.mail} mail) -- D ${pct(state.dem)}%, R ${pct(state.rep)}%, other ${pct(
     state.other
   )}% (primaries ${primaries.join(", ")}); ${Object.keys(counties).length} counties`
 );

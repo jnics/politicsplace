@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-30T11:53:14.353Z",
+  "generatedAt": "2026-10-30T12:29:17.153Z",
   "source": "University of Florida Election Lab (2026, 2024), US Elections Project (2020), Election Lab 2016 advance-turnout sheet",
   "statesReporting": 49,
-  "totalVoted": 45116365,
+  "totalVoted": 45332115,
   "byState": {
     "AK": {
       "current": {
@@ -103,22 +103,22 @@
     },
     "AZ": {
       "current": {
-        "voted": 1295955,
-        "mailReturned": 1295955,
+        "voted": 1457053,
+        "mailReturned": 1457053,
         "inPerson": null,
-        "mailRequested": 3298281,
+        "mailRequested": 3307786,
         "party": {
-          "dem": 486459,
-          "rep": 500567,
-          "other": 308929
+          "dem": 542920,
+          "rep": 559386,
+          "other": 354747
         },
         "mailRequestedParty": {
-          "dem": 1055563,
-          "rep": 1168386,
-          "other": 1074332
+          "dem": 1057948,
+          "rep": 1172826,
+          "other": 1077012
         },
         "turnout2022": 2592313,
-        "lastUpdate": "2026-10-29",
+        "lastUpdate": "2026-10-30",
         "source": "https://www.stealth-analytics.com/early-ballots",
         "notes": "Arizona's request_* figures are mail ballots issued (sent out), not applications received - this state's early voting is run through a permanent early-voting list rather than a one-off per-election request.",
         "partyBasis": "registration",
@@ -413,8 +413,8 @@
         "notes": "Some Florida statistics are obtained from county websites that may report more recent and higher numbers than the Florida Division of Elections reports.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 1.0191676971109829,
-          "2024": 0.6227938855551346
+          "2022": 1.019772829416212,
+          "2024": 0.6231636703321807
         }
       },
       "past": {
@@ -448,22 +448,22 @@
         "voted": 2513648,
         "mailReturned": 111365,
         "inPerson": 2402283,
-        "mailRequested": 156771,
+        "mailRequested": 165791,
         "party": {
-          "dem": 981537,
-          "rep": 805862,
-          "other": 726249
+          "dem": 932509,
+          "rep": 788939,
+          "other": 792200
         },
         "mailRequestedParty": null,
         "turnout2022": 3964926,
         "lastUpdate": "2026-10-30",
         "source": "https://mvp.sos.ga.gov/s/voter-absentee-files",
-        "notes": "Georgia's county-level \"Ballots Issued and Accepted\" and \"Ballots to Date\" downloads (from the state's election-data-hub dashboard, https://sos.ga.gov/page/election-data-hub-unofficial-turnout) are compared against the statewide absentee file, county by county, using whichever is higher - this is how same-day in-person early-voting activity (which the statewide absentee file doesn't carry until the next overnight refresh) gets folded in. No district or demographic breakdown is available from these county-level downloads.",
+        "notes": null,
         "partyBasis": "primary",
-        "partySource": "Georgia SOS voter files (primary 05/24/2022, 05/21/2024, 05/19/2026; through 2026-10-27)",
+        "partySource": "Georgia SOS voter files (primary 05/24/2022, 05/21/2024, 05/19/2026; through 2026-10-30)",
         "sameDay": {
-          "2022": 0.9216844527408865,
-          "2024": 0.6029780145290086
+          "2022": 1.0022108172758324,
+          "2024": 0.6556594146113547
         }
       },
       "past": {
@@ -1633,27 +1633,27 @@
     },
     "OK": {
       "current": {
-        "voted": 35712,
-        "mailReturned": 35712,
+        "voted": 38904,
+        "mailReturned": 38904,
         "inPerson": null,
-        "mailRequested": 64918,
+        "mailRequested": 64929,
         "party": {
-          "dem": 15024,
-          "rep": 16091,
-          "other": 4597
+          "dem": 16319,
+          "rep": 17530,
+          "other": 5055
         },
         "mailRequestedParty": {
-          "dem": 26664,
-          "rep": 28341,
+          "dem": 26669,
+          "rep": 28347,
           "other": 9913
         },
         "turnout2022": 1153284,
-        "lastUpdate": "2026-10-29",
+        "lastUpdate": "2026-10-30",
         "source": "Oklahoma State Board of Elections",
         "notes": "These data are obtained from the Oklahoma State Board of Elections Election Data Warehouse. A link is provided to the state public reporting site for when it becomes available.",
         "partyBasis": "registration",
         "sameDay": {
-          "2022": 0.2705147142370185,
+          "2022": 0.2247019683947879,
           "2024": null,
           "source2022": "ElectIndex"
         }
@@ -2028,14 +2028,14 @@
     },
     "UT": {
       "current": {
-        "voted": 357431,
-        "mailReturned": 350893,
-        "inPerson": 6538,
+        "voted": 408891,
+        "mailReturned": 399956,
+        "inPerson": 8935,
         "mailRequested": 1786661,
         "party": {
-          "dem": 75598,
-          "rep": 186083,
-          "other": 95750
+          "dem": 85240,
+          "rep": 213216,
+          "other": 110435
         },
         "mailRequestedParty": {
           "dem": 255388,
@@ -2043,7 +2043,7 @@
           "other": 618766
         },
         "turnout2022": 1084634,
-        "lastUpdate": "2026-10-29",
+        "lastUpdate": "2026-10-30",
         "source": "Utah Lt. Governor",
         "notes": "Utah is a universal vote-by-mail state - every \"Active\" registered voter is automatically mailed a ballot each election, and a 2025 law phasing this out does not take effect until 2029. Statewide and county \"ballots requested\" figures are therefore the number of Active registered voters by party, scraped from the Lt. Governor's current voter registration statistics page. Congressional district figures instead use accepted ballots as a stand-in, since Utah does not publish district-level registration or request data.",
         "partyBasis": "registration",
@@ -2096,8 +2096,8 @@
         "notes": null,
         "partyBasis": "modeled",
         "sameDay": {
-          "2022": 1.5965884575065017,
-          "2024": 0.6065503154645726
+          "2022": 1.6855979972753987,
+          "2024": 0.6403653942172394
         },
         "partySource": "On Point Polling"
       },

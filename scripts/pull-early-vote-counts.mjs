@@ -495,12 +495,15 @@ const COUNTY_ALIASES = { IL: { cityofchicago: "cook", chicago: "cook" } };
  *  counties (built by scripts/build-town-county.mjs from Census data). */
 const TOWN_COUNTY = JSON.parse(readFileSync(resolve(root, "scripts/data/town-county.json"), "utf8"));
 
-/** Georgia's party split by past primary, built by hand from the SOS voter
- *  files (scripts/build-ga-early-party.mjs) since mvp.sos.ga.gov refuses
- *  scripts. Its shares are applied to UF's current counts, so a file a day
- *  or two old still lines up with the totals. */
+/** Georgia's counts and party split by past primary, built by hand from the
+ *  SOS voter files (scripts/build-ga-early-party.mjs) since mvp.sos.ga.gov
+ *  refuses scripts. When the file is at least as far along as UF, its own
+ *  counts are used (statewide and by county); when UF is ahead, the file's
+ *  party shares are applied to UF's counts instead. */
 const GA_PARTY_PATH = resolve(root, "scripts/data/ga-early-party.json");
 const GA_PARTY = existsSync(GA_PARTY_PATH) ? JSON.parse(readFileSync(GA_PARTY_PATH, "utf8")) : null;
+/** Set in main(): whether the SOS file's own counts replace UF's. */
+let gaUseSos = false;
 
 /** { dem, rep, other } counts -> the same shares of `voted`. */
 function scaleSplit(split, voted) {
@@ -620,11 +623,23 @@ async function main() {
     if (ohio.asOf) y2026.OH.lastUpdate = ohio.asOf;
   }
   if (GA_PARTY?.state?.voted > 0 && y2026.GA?.voted > 0) {
+    const ga = GA_PARTY.state;
+    // Older builds have no in-person / mail counts; those only lend shares.
+    gaUseSos = ga.inPerson != null && ga.voted >= y2026.GA.voted;
     Object.assign(y2026.GA, {
-      party: scaleSplit(GA_PARTY.state, y2026.GA.voted),
+      party: gaUseSos ? { dem: ga.dem, rep: ga.rep, other: ga.other } : scaleSplit(ga, y2026.GA.voted),
       partyBasis: "primary",
       partySource: `Georgia SOS voter files (primary ${GA_PARTY.primaries.join(", ")}; through ${GA_PARTY.asOf})`,
     });
+    if (gaUseSos)
+      Object.assign(y2026.GA, {
+        voted: ga.voted,
+        inPerson: ga.inPerson,
+        mailReturned: ga.mail,
+        mailRequested: ga.requested,
+        lastUpdate: GA_PARTY.asOf,
+        notes: null, // UF's note describes its own method
+      });
   }
   let modeled = 0;
   for (const [usps, s] of Object.entries(y2026)) {
@@ -678,9 +693,20 @@ async function main() {
   // statewide total above.
   const ohCounties = ohio && ohioCountyRows(ohio);
   if (ohCounties) countyByState.OH = ohCounties;
-  // Georgia's county party shares from the voter-file build, on UF's counts.
+  // Georgia's counties: the voter-file build's own rows when its counts are
+  // in use, else its party shares on UF's counts.
   let gaCounties = 0;
-  if (GA_PARTY && countyByState.GA) {
+  if (gaUseSos) {
+    const index = countyIndex("GA");
+    const out = {};
+    for (const [name, c] of Object.entries(GA_PARTY.counties)) {
+      const fips = index?.get(countyKey(name))?.[0];
+      if (!fips) continue;
+      out[fips] = { n: name, v: c.voted, m: c.mail, i: c.inPerson, r: c.requested, p: [c.dem, c.rep, c.other] };
+    }
+    gaCounties = Object.keys(out).length;
+    if (gaCounties >= 150) countyByState.GA = out;
+  } else if (GA_PARTY && countyByState.GA) {
     const names = countyNames("GA");
     const byKey = Object.fromEntries(Object.entries(GA_PARTY.counties).map(([n, c]) => [countyKey(n), c]));
     for (const [fips, row] of Object.entries(countyByState.GA)) {
@@ -760,7 +786,7 @@ async function main() {
   );
   console.log(
     GA_PARTY
-      ? `GA: party by primary from voter files through ${GA_PARTY.asOf}, ${gaCounties} counties.`
+      ? `GA: ${gaUseSos ? "totals and party" : "party"} by primary from voter files through ${GA_PARTY.asOf}, ${gaCounties} counties.`
       : "GA: no voter-file party build (scripts/data/ga-early-party.json); modeled."
   );
   console.log(`On Point: ${Object.keys(onPoint).length} states read, ${modeled} given modeled party.`);
