@@ -15,6 +15,7 @@ import { STATE_PATHS } from "~/data/statePaths";
 import { readStore, saveResult } from "~/lib/board.server";
 import { FEED_BY, syncBoardFromFeed } from "~/lib/civicFeed.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
+import { StarButton, useFavorites } from "~/lib/useFavorites";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -83,6 +84,14 @@ const STATE_NAME: Record<string, string> = Object.fromEntries(
   STATE_PATHS.map((s) => [s.id, s.name])
 );
 
+const RACE_BY_ID = new Map(ALL_BOARD_RACES.map((r) => [raceId(r), r]));
+
+/** A race's name outside its own tab, e.g. in Favorites. */
+function fullLabel(race: BoardRace) {
+  if (race.chamber === "house") return `${race.state}-${race.district || "AL"}`;
+  return `${race.place} ${race.chamber === "senate" ? "Sen." : "Gov."}`;
+}
+
 const PARTY_DOT: Record<BoardParty, string> = {
   D: "bg-blue-500", R: "bg-red-500", I: "bg-green-500",
   L: "bg-yellow-500", G: "bg-emerald-500", O: "bg-gray-400",
@@ -148,6 +157,9 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
     return () => clearInterval(id);
   }, [revalidator]);
   const [houseFilter, setHouseFilter] = useState<"all" | "flippable">("all");
+  // Starred races sit in Favorites at the top instead of in their tab.
+  const fav = useFavorites("politicsplace:e26-favorites:v1");
+  const favRaces = fav.ids.map((id) => RACE_BY_ID.get(id)).filter((r): r is BoardRace => !!r);
 
   const senT = useMemo(() => tally(BOARD_SENATE, results), [results]);
   const houseT = useMemo(() => tally(BOARD_HOUSE, results), [results]);
@@ -212,6 +224,30 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
         <ControlCard title="Governors" t={govT} />
       </div>
 
+      {favRaces.length > 0 && (
+        <section className="mb-5">
+          <h2 className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-gray-900 dark:text-gray-100">
+            <span className="text-amber-500">★</span> Favorites
+            <span className="text-xs font-normal text-gray-400 dark:text-gray-500">
+              tap the star again to put a race back
+            </span>
+          </h2>
+          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-amber-200 bg-gray-200 dark:border-amber-900/60 dark:bg-gray-800 sm:grid-cols-2">
+            {favRaces.map((race) => (
+              <RaceRow
+                key={raceId(race)}
+                race={race}
+                res={results[raceId(race)]}
+                editable={!!editor}
+                label={fullLabel(race)}
+                starred
+                onStar={() => fav.toggle(raceId(race))}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
       <div className="mb-4 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
         {(["senate", "house", "governor"] as const).map((c) => (
           <button
@@ -238,6 +274,7 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
       {chamber !== "house" ? (
         <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
           {[...(chamber === "senate" ? BOARD_SENATE : BOARD_GOVERNOR)]
+            .filter((race) => !fav.has(raceId(race)))
             .sort((a, b) => a.place.localeCompare(b.place))
             .map((race) => (
               <RaceRow
@@ -245,6 +282,7 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
                 race={race}
                 res={results[raceId(race)]}
                 editable={!!editor}
+                onStar={() => fav.toggle(raceId(race))}
               />
             ))}
         </div>
@@ -267,10 +305,10 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
           </div>
           <div className="space-y-2">
             {houseByState.map(({ state, races }) => {
-              const shown =
-                houseFilter === "all"
-                  ? races
-                  : races.filter((r) => r.candidates.length >= 2);
+              const shown = races.filter(
+                (r) =>
+                  !fav.has(raceId(r)) && (houseFilter === "all" || r.candidates.length >= 2)
+              );
               if (shown.length === 0) return null;
               return (
                 <details
@@ -300,6 +338,7 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
                         res={results[raceId(race)]}
                         compact
                         editable={!!editor}
+                        onStar={() => fav.toggle(raceId(race))}
                       />
                     ))}
                   </div>
@@ -380,11 +419,18 @@ function RaceRow({
   res,
   compact,
   editable,
+  label,
+  starred = false,
+  onStar,
 }: {
   race: BoardRace;
   res?: BoardResult;
   compact?: boolean;
   editable: boolean;
+  /** Overrides the place name (Favorites mixes chambers). */
+  label?: string;
+  starred?: boolean;
+  onStar?: () => void;
 }) {
   const fetcher = useFetcher();
   const formRef = useRef<HTMLFormElement>(null);
@@ -410,8 +456,16 @@ function RaceRow({
       <div className="flex items-start gap-3">
         <div className={compact ? "w-12 shrink-0 pt-0.5" : "w-24 shrink-0 pt-0.5"}>
           <div className="text-sm font-medium text-gray-900 dark:text-gray-100">
-            {compact ? race.district || "AL" : race.place}
+            {label ?? (compact ? race.district || "AL" : race.place)}
           </div>
+          {onStar && (
+            <StarButton
+              on={starred}
+              label={label ?? fullLabel(race)}
+              onToggle={onStar}
+              className="mt-1"
+            />
+          )}
         </div>
 
         <fetcher.Form

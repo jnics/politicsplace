@@ -27,6 +27,7 @@ import {
   type Oh7LogEntry,
 } from "~/lib/oh7.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
+import { StarButton, useFavorites } from "~/lib/useFavorites";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -213,6 +214,10 @@ COUNTIES.sort((a, b) => a.county.localeCompare(b.county));
 
 /** The county whose full ballot (MEDINA_RACE_GROUPS) is tracked. */
 const RACES_COUNTY = "Medina";
+/** Polling places in the county whose other races the page carries. */
+const RACES_COUNTY_PLACES = OH7_TOWNS.filter((t) => t.county === RACES_COUNTY).flatMap(
+  (t) => t.pollingPlaces
+);
 
 /** That county's polling places — the only ones that carry its other races. */
 const RACE_PLACES = new Map(
@@ -225,6 +230,23 @@ const RACE_PLACES = new Map(
 const prKey = (placeId: string, raceId: string) => `${placeId}|${raceId}`;
 
 type VoteMap = Record<string, number>;
+
+/** Each county race's votes summed over the given polling places. */
+function racePlaceSums(
+  places: Oh7PollingPlace[],
+  placeRaceVotes: Record<string, VoteMap>
+): Record<string, VoteMap> {
+  const sums: Record<string, VoteMap> = {};
+  for (const p of places) {
+    for (const r of MEDINA_RACES) {
+      const v = placeRaceVotes[prKey(p.id, r.id)];
+      if (!v) continue;
+      const t = (sums[r.id] ??= {});
+      for (const [k, n] of Object.entries(v)) t[k] = (t[k] || 0) + (n || 0);
+    }
+  }
+  return sums;
+}
 
 /** Race-at-polling-place counts, shared by the race cards (which sum them)
  *  and the polling-place rows (which enter them). */
@@ -394,6 +416,16 @@ export default function Results({ loaderData }: Route.ComponentProps) {
     () => OH7_TOWNS.flatMap((t) => t.pollingPlaces),
     []
   );
+
+  // Starred county races sit in Favorites at the top instead of their group.
+  const fav = useFavorites("politicsplace:oh7-favorites:v1");
+  const favRaces = fav.ids
+    .map((id) => RACES_BY_ID.get(id))
+    .filter((r): r is CountyRace => !!r);
+  const favPlaceSums = useMemo(
+    () => racePlaceSums(RACES_COUNTY_PLACES, placeRaceVotes),
+    [placeRaceVotes]
+  );
   const totals = useMemo(() => tallyOf(allPlaces, rows), [allPlaces, rows]);
 
   const grand = totals.v[D_KEY] + totals.v[R_KEY] + totals.v[O_KEY];
@@ -498,6 +530,30 @@ export default function Results({ loaderData }: Route.ComponentProps) {
 
       <EntryModeCtx.Provider value={mode}>
       <PlaceRaceCtx.Provider value={placeRaceCtx}>
+      {favRaces.length > 0 && (
+        <section className="mb-4">
+          <h2 className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-gray-900 dark:text-gray-100">
+            <span className="text-amber-500">★</span> Favorites
+            <span className="text-xs font-normal text-gray-400 dark:text-gray-500">
+              tap the star again to put a race back
+            </span>
+          </h2>
+          <div className="space-y-2">
+            {favRaces.map((r) => (
+              <RaceCard
+                key={r.id}
+                race={r}
+                row={raceRows[r.id]}
+                placeVotes={favPlaceSums[r.id]}
+                onRow={setRaceRow}
+                editable={!!editor}
+                starred
+                onStar={() => fav.toggle(r.id)}
+              />
+            ))}
+          </div>
+        </section>
+      )}
       <div className="space-y-3">
         {COUNTIES.map((c) => (
           <CountySection
@@ -509,6 +565,8 @@ export default function Results({ loaderData }: Route.ComponentProps) {
             raceRows={raceRows}
             onRaceRow={setRaceRow}
             editable={!!editor}
+            isFav={fav.has}
+            onStar={fav.toggle}
           />
         ))}
       </div>
@@ -659,6 +717,8 @@ function CountySection({
   raceRows,
   onRaceRow,
   editable,
+  isFav,
+  onStar,
 }: {
   county: string;
   towns: Oh7Town[];
@@ -667,6 +727,9 @@ function CountySection({
   raceRows: Record<string, RaceRow>;
   onRaceRow: (id: string, next: RaceRow) => void;
   editable: boolean;
+  /** Starred races show in Favorites at the top, not here. */
+  isFav: (raceId: string) => boolean;
+  onStar: (raceId: string) => void;
 }) {
   const places = useMemo(() => towns.flatMap((t) => t.pollingPlaces), [towns]);
   const sub = useMemo(() => tallyOf(places, rows), [places, rows]);
@@ -675,19 +738,10 @@ function CountySection({
   const hasRaces = county === RACES_COUNTY;
 
   const { votes: placeRaceVotes } = useContext(PlaceRaceCtx);
-  const placeSums = useMemo(() => {
-    const sums: Record<string, VoteMap> = {};
-    if (!hasRaces) return sums;
-    for (const p of places) {
-      for (const r of MEDINA_RACES) {
-        const v = placeRaceVotes[prKey(p.id, r.id)];
-        if (!v) continue;
-        const t = (sums[r.id] ??= {});
-        for (const [k, n] of Object.entries(v)) t[k] = (t[k] || 0) + (n || 0);
-      }
-    }
-    return sums;
-  }, [hasRaces, places, placeRaceVotes]);
+  const placeSums = useMemo(
+    () => (hasRaces ? racePlaceSums(places, placeRaceVotes) : {}),
+    [hasRaces, places, placeRaceVotes]
+  );
 
   return (
     <details className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900">
@@ -762,7 +816,10 @@ function CountySection({
                 Each total is what was entered at the polling places below plus
                 the county-wide count (early and absentee votes).
               </p>
-              {MEDINA_RACE_GROUPS.map((g) => (
+              {MEDINA_RACE_GROUPS.map((g) => {
+                const groupRaces = g.races.filter((r) => !isFav(r.id));
+                if (groupRaces.length === 0) return null;
+                return (
                 <details key={g.label} open className="group/set">
                   <summary className="mb-1 flex cursor-pointer list-none items-center gap-1.5 text-[10px] font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">
                     <svg
@@ -775,7 +832,7 @@ function CountySection({
                     {g.label}
                   </summary>
                   <div className="space-y-2">
-                    {g.races.map((r) => (
+                    {groupRaces.map((r) => (
                       <RaceCard
                         key={r.id}
                         race={r}
@@ -783,11 +840,13 @@ function CountySection({
                         placeVotes={placeSums[r.id]}
                         onRow={onRaceRow}
                         editable={editable}
+                        onStar={() => onStar(r.id)}
                       />
                     ))}
                   </div>
                 </details>
-              ))}
+                );
+              })}
             </div>
           </details>
         )}
@@ -898,6 +957,8 @@ function RaceCard({
   placeVotes,
   onRow,
   editable,
+  starred = false,
+  onStar,
 }: {
   race: CountyRace;
   row?: RaceRow;
@@ -905,6 +966,8 @@ function RaceCard({
   placeVotes?: VoteMap;
   onRow: (id: string, next: RaceRow) => void;
   editable: boolean;
+  starred?: boolean;
+  onStar?: () => void;
 }) {
   const fetcher = useFetcher();
   const r = row ?? emptyRaceRow();
@@ -944,7 +1007,8 @@ function RaceCard({
       }`}
     >
       <div className="flex items-baseline justify-between gap-3">
-        <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+        <span className="flex items-center gap-1.5 text-sm font-semibold text-gray-900 dark:text-gray-100">
+          {onStar && <StarButton on={starred} label={race.title} onToggle={onStar} />}
           {race.title}
           {saving && (
             <span className="ml-1.5 text-[10px] font-normal text-gray-400 dark:text-gray-500">
