@@ -140,7 +140,7 @@
       "flip": true
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": true
      },
@@ -247,7 +247,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -919,8 +919,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      },
      "splitTicket": {
@@ -960,8 +960,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {
@@ -1296,7 +1296,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -1311,9 +1311,9 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "splitTicket": {
       "label": "Tossup",
@@ -1408,7 +1408,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": true
      },
@@ -1647,7 +1647,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -1983,8 +1983,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "D",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "splitTicket": {
@@ -2044,7 +2044,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -2584,7 +2584,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -2991,8 +2991,8 @@
       "flip": true
      },
      "economist": {
-      "label": "Lean",
-      "party": "D",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "splitTicket": {
@@ -3719,7 +3719,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -4152,7 +4152,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -4340,7 +4340,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "D",
       "flip": false
      },
@@ -4839,8 +4839,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "D",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "splitTicket": {
@@ -4936,7 +4936,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5160,7 +5160,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5511,9 +5511,9 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "splitTicket": {
       "label": "Lean",
@@ -5608,8 +5608,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "D",
       "flip": false
      },
      "insideElections": {
@@ -5791,7 +5791,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5903,7 +5903,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -5944,8 +5944,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {
@@ -6056,9 +6056,9 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "insideElections": {
       "label": "Tilt",
@@ -6127,7 +6127,7 @@
       "flip": true
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -6224,8 +6224,8 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "insideElections": {
@@ -6295,7 +6295,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -6351,7 +6351,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -6855,7 +6855,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -7303,9 +7303,9 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "R",
+      "flip": true
      },
      "splitTicket": {
       "label": "Lean",
@@ -7736,7 +7736,7 @@
     "raceType": "house",
     "ratings": {
      "cook": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -7807,8 +7807,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      },
      "splitTicket": {
@@ -7975,7 +7975,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -8837,7 +8837,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9061,7 +9061,7 @@
       "flip": false
      },
      "sabato": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
