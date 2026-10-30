@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T16:19:55.652Z",
+  "generatedAt": "2026-10-30T02:46:40.253Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 50,
@@ -15571,6 +15571,27 @@
         },
         {
           "address": {
+            "locationName": "Harvey Park Recreation Center",
+            "line1": "2120 S Tennyson Way",
+            "addressLine": [
+              "2120 S Tennyson Way"
+            ],
+            "city": "Denver",
+            "state": "CO",
+            "zip": "80219"
+          },
+          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 6 pm\nTue, Oct 27: 8 am - 6 pm\nWed, Oct 28: 8 am - 6 pm\nThu, Oct 29: 8 am - 6 pm\nFri, Oct 30: 8 am - 6 pm\nSat, Oct 31: 8 am - 5 pm\nMon, Nov 2: 8 am - 6 pm",
+          "latitude": 39.678141266246335,
+          "longitude": -105.04183891936262,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
             "locationName": "Central Park Recreation Center",
             "line1": "9651 E Martin Luther King Blvd",
             "addressLine": [
@@ -15583,27 +15604,6 @@
           "pollingHours": "Mon, Oct 26: 8 am - 6 pm\nTue, Oct 27: 8 am - 6 pm\nWed, Oct 28: 8 am - 6 pm\nThu, Oct 29: 8 am - 6 pm\nFri, Oct 30: 8 am - 6 pm\nSat, Oct 31: 8 am - 5 pm\nMon, Nov 2: 8 am - 6 pm",
           "latitude": 39.76112379824654,
           "longitude": -104.8751035130855,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "Harvey Park Recreation Center",
-            "line1": "2210 S Tennyson Way",
-            "addressLine": [
-              "2210 S Tennyson Way"
-            ],
-            "city": "Denver",
-            "state": "CO",
-            "zip": "80219"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 6 pm\nTue, Oct 27: 8 am - 6 pm\nWed, Oct 28: 8 am - 6 pm\nThu, Oct 29: 8 am - 6 pm\nFri, Oct 30: 8 am - 6 pm\nSat, Oct 31: 8 am - 5 pm\nMon, Nov 2: 8 am - 6 pm",
-          "latitude": 39.678141266246335,
-          "longitude": -105.04183891936262,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -21485,8 +21485,8 @@
             "zip": "80904"
           },
           "pollingHours": "Fri, Oct 2: 12:00 am - 11:59 pm\nSat, Oct 3: 12:00 am - 11:59 pm\nSun, Oct 4: 12:00 am - 11:59 pm\nMon, Oct 5: 12:00 am - 11:59 pm\nTue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
-          "latitude": 38.85370088631859,
-          "longitude": -104.87371217491369,
+          "latitude": 38.8536504,
+          "longitude": -104.87396659999999,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -22794,8 +22794,8 @@
             "zip": "81631"
           },
           "pollingHours": "Wed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
-          "latitude": 39.65157917974913,
-          "longitude": -106.82697829456446,
+          "latitude": 39.65166,
+          "longitude": -106.82728,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -25932,6 +25932,27 @@
         },
         {
           "address": {
+            "locationName": "Harvey Park Recreation Center",
+            "line1": "2120 S Tennyson Way",
+            "addressLine": [
+              "2120 S Tennyson Way"
+            ],
+            "city": "Denver",
+            "state": "CO",
+            "zip": "80219"
+          },
+          "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
+          "latitude": 39.678141266246335,
+          "longitude": -105.04183891936262,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
             "locationName": "Central Park Recreation Center",
             "line1": "9651 E Martin Luther King Blvd",
             "addressLine": [
@@ -25944,27 +25965,6 @@
           "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
           "latitude": 39.76112379824654,
           "longitude": -104.8751035130855,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "Harvey Park Recreation Center",
-            "line1": "2210 S Tennyson Way",
-            "addressLine": [
-              "2210 S Tennyson Way"
-            ],
-            "city": "Denver",
-            "state": "CO",
-            "zip": "80219"
-          },
-          "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
-          "latitude": 39.678141266246335,
-          "longitude": -105.04183891936262,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -28439,8 +28439,8 @@
             "zip": "21401"
           },
           "pollingHours": "Sun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 38.97502901283841,
-          "longitude": -76.56177587921722,
+          "latitude": 38.97531,
+          "longitude": -76.56121999999999,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -29594,7 +29594,31 @@
           ]
         }
       ],
-      "dropOffLocations": null,
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "COLE COUNTY CLERK'S OFFICE",
+            "line1": "311 E HIGH ST",
+            "line2": "ROOM 201",
+            "addressLine": [
+              "311 E HIGH ST",
+              "ROOM 201"
+            ],
+            "city": "JEFFERSON CITY",
+            "state": "MO",
+            "zip": "65101"
+          },
+          "pollingHours": "Tue, Oct 20: 8:00 am - 4:30 pm\nWed, Oct 21: 8:00 am - 4:30 pm\nThu, Oct 22: 8:00 am - 4:30 pm\nFri, Oct 23: 8:00 am - 4:30 pm\nMon, Oct 26: 8:00 am - 4:30 pm\nTue, Oct 27: 8:00 am - 4:30 pm\nWed, Oct 28: 8:00 am - 4:30 pm\nThu, Oct 29: 8:00 am - 4:30 pm\nFri, Oct 30: 8:00 am - 4:30 pm\nSat, Oct 31: 8 am - 12 pm\nMon, Nov 2: 8 am - 5 pm\nTue, Nov 3: 6 am - 7 pm",
+          "latitude": 38.57486380459564,
+          "longitude": -92.16906420255494,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        }
+      ],
       "pollingLocations": null
     },
     "MT": {
@@ -31101,8 +31125,8 @@
           },
           "notes": "Outside 24-hour drive through drop box that is located in the parking lot",
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 44.63428560727674,
-          "longitude": -123.10695921183462,
+          "latitude": 44.63912,
+          "longitude": -123.10060000000001,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -31123,8 +31147,8 @@
           },
           "notes": "Inside County Clerk's office during business hours; open Monday-Friday 8:30am-5pm; Election Day 7am-8pm",
           "pollingHours": "Wed, Oct 14: 8:30 am - 5:00 pm\nThu, Oct 15: 8:30 am - 5:00 pm\nFri, Oct 16: 8:30 am - 5:00 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nMon, Nov 2: 8:30 am - 5:00 pm\nTue, Nov 3: 7 am - 5 pm",
-          "latitude": 44.63428560727674,
-          "longitude": -123.10695921183462,
+          "latitude": 44.63912,
+          "longitude": -123.10060000000001,
           "sources": [
             {
               "name": "Voting Information Project",

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-29",
+ "generatedAt": "2026-10-30",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -13,7 +13,7 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": true
      },
@@ -181,7 +181,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -293,9 +293,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -517,7 +517,7 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": true
      },
@@ -741,7 +741,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "D",
       "flip": false
      },
@@ -909,7 +909,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -965,8 +965,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "sabato": {
@@ -1021,9 +1021,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -1637,8 +1637,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Tilt",
+      "party": "D",
       "flip": false
      },
      "sabato": {
@@ -1973,9 +1973,9 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "sabato": {
       "label": "Tossup",
@@ -2029,8 +2029,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Tilt",
+      "party": "D",
       "flip": false
      },
      "sabato": {
@@ -2813,7 +2813,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -2925,8 +2925,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "sabato": {
@@ -3205,8 +3205,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "sabato": {
@@ -3429,7 +3429,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -3653,8 +3653,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "sabato": {
@@ -3724,7 +3724,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -3877,7 +3877,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -4101,7 +4101,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "D",
       "flip": false
      },
@@ -4157,7 +4157,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -4829,8 +4829,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Tilt",
+      "party": "D",
       "flip": false
      },
      "sabato": {
@@ -4885,7 +4885,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5165,7 +5165,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5277,9 +5277,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -5333,7 +5333,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5445,7 +5445,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -5501,9 +5501,9 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Tossup",
@@ -5613,8 +5613,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Tilt",
+      "party": "D",
       "flip": false
      },
      "sabato": {
@@ -5669,7 +5669,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -5781,7 +5781,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -5893,7 +5893,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -5949,8 +5949,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "sabato": {
@@ -6117,9 +6117,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -6229,7 +6229,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -6453,7 +6453,7 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": true
      },
@@ -6565,7 +6565,7 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": true
      },
@@ -6677,9 +6677,9 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -7069,7 +7069,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -7293,9 +7293,9 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "sabato": {
       "label": "Tossup",
@@ -7405,7 +7405,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -7461,9 +7461,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -7517,7 +7517,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -7573,7 +7573,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "D",
       "flip": false
      },
@@ -7741,7 +7741,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -7797,7 +7797,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -7853,9 +7853,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "sabato": {
       "label": "Lean",
@@ -8491,7 +8491,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -8659,8 +8659,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "rcp": {
@@ -8715,8 +8715,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "rcp": {
@@ -8827,7 +8827,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9036,7 +9036,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -9107,7 +9107,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9178,7 +9178,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -9219,7 +9219,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -9499,9 +9499,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "rcp": {
       "label": "Tossup",
@@ -9723,7 +9723,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -9881,9 +9881,9 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "foxNews": {
       "label": "Tossup",
@@ -9891,9 +9891,9 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "rcp": {
       "label": "Tossup",
@@ -10148,9 +10148,9 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "rcp": {
       "label": "Lean",
@@ -10435,9 +10435,9 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "rcp": {
       "label": "Tossup",
@@ -10599,7 +10599,7 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tilt",
+      "label": "Lean",
       "party": "D",
       "flip": true
      },
@@ -10804,7 +10804,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -10927,8 +10927,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tilt",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "rcp": {
@@ -11091,9 +11091,9 @@
       "flip": true
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Tilt",
+      "party": "D",
+      "flip": true
      },
      "rcp": {
       "label": "Tossup",
@@ -11173,7 +11173,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "D",
       "flip": false
      },
@@ -11378,7 +11378,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -11419,7 +11419,7 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Lean",
+      "label": "Tilt",
       "party": "R",
       "flip": false
      },
@@ -11501,8 +11501,8 @@
       "flip": false
      },
      "insideElections": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Tilt",
+      "party": "D",
       "flip": false
      },
      "rcp": {
