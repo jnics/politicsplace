@@ -65,23 +65,23 @@
           {
             "name": "Talarico",
             "affiliation": "Democrat",
-            "value": 48.6
+            "value": 48.8
           },
           {
             "name": "Paxton",
             "affiliation": "Republican",
-            "value": 46.5
+            "value": 47
           }
         ],
         "spread": {
           "name": "Talarico",
-          "value": 2.1
+          "value": 1.8
         },
-        "as_of": "2026-10-29T10:41:01+00:00",
-        "date_label": "10/8 - 10/27"
+        "as_of": "2026-10-30T12:38:00+00:00",
+        "date_label": "10/8 - 10/28"
       },
-      "polls_in_average": 13,
-      "total_polls": 55
+      "polls_in_average": 11,
+      "total_polls": 56
     },
     {
       "id": 8881,
@@ -106,22 +106,22 @@
           {
             "name": "Donalds",
             "affiliation": "Republican",
-            "value": 48.8
+            "value": 48.2
           },
           {
             "name": "Jolly",
             "affiliation": "Democrat",
-            "value": 43.8
+            "value": 44
           }
         ],
         "spread": {
           "name": "Donalds",
-          "value": 5
+          "value": 4.2
         },
-        "as_of": "2026-10-28T14:25:19+00:00",
+        "as_of": "2026-10-28T14:28:05+00:00",
         "date_label": "10/2 - 10/27"
       },
-      "polls_in_average": 5,
+      "polls_in_average": 6,
       "total_polls": 17
     },
     {
@@ -147,23 +147,23 @@
           {
             "name": "Abbott",
             "affiliation": "Republican",
-            "value": 49.5
+            "value": 50.3
           },
           {
             "name": "Hinojosa",
             "affiliation": "Democrat",
-            "value": 46.5
+            "value": 46.6
           }
         ],
         "spread": {
           "name": "Abbott",
-          "value": 3
+          "value": 3.7
         },
-        "as_of": "2026-10-29T12:05:26+00:00",
-        "date_label": "10/5 - 10/27"
+        "as_of": "2026-10-30T12:56:49+00:00",
+        "date_label": "10/8 - 10/28"
       },
-      "polls_in_average": 11,
-      "total_polls": 45
+      "polls_in_average": 8,
+      "total_polls": 46
     },
     {
       "id": 8948,
@@ -282,11 +282,11 @@
           "name": "Democrats",
           "value": 8.2
         },
-        "as_of": "2026-10-28T18:47:23+00:00",
+        "as_of": "2026-10-30T15:53:50+00:00",
         "date_label": "10/8 - 10/26"
       },
-      "polls_in_average": 17,
-      "total_polls": 386
+      "polls_in_average": 18,
+      "total_polls": 389
     },
     {
       "id": 8689,
@@ -434,23 +434,23 @@
           {
             "name": "Masterson",
             "affiliation": "Republican",
-            "value": 49.6
+            "value": 48.7
           },
           {
             "name": "Holscher",
             "affiliation": "Democrat",
-            "value": 44
+            "value": 45.5
           }
         ],
         "spread": {
           "name": "Masterson",
-          "value": 5.6
+          "value": 3.2
         },
-        "as_of": "2026-10-07T15:17:29+00:00",
-        "date_label": "9/8 - 10/26"
+        "as_of": "2026-10-30T12:49:12+00:00",
+        "date_label": "9/8 - 10/28"
       },
-      "polls_in_average": 5,
-      "total_polls": 6
+      "polls_in_average": 6,
+      "total_polls": 8
     },
     {
       "id": 9025,
@@ -648,23 +648,23 @@
           {
             "name": "Hamilton",
             "affiliation": "Democrat",
-            "value": 46.1
+            "value": 48.3
           },
           {
             "name": "Marshall",
             "affiliation": "Republican",
-            "value": 45.9
+            "value": 45.7
           }
         ],
         "spread": {
           "name": "Hamilton",
-          "value": 0.2
+          "value": 2.6
         },
-        "as_of": "2026-10-20T15:06:16+00:00",
-        "date_label": "9/8 - 10/26"
+        "as_of": "2026-10-30T12:32:10+00:00",
+        "date_label": "9/22 - 10/28"
       },
       "polls_in_average": 7,
-      "total_polls": 11
+      "total_polls": 13
     },
     {
       "id": 9115,
@@ -701,7 +701,7 @@
           "name": "Graham Nordone",
           "value": 2.7
         },
-        "as_of": "2026-10-28T16:16:15+00:00",
+        "as_of": "2026-10-29T17:17:15+00:00",
         "date_label": "9/28 - 10/26"
       },
       "polls_in_average": 6,
@@ -730,23 +730,23 @@
           {
             "name": "Hobbs",
             "affiliation": "Democrat",
-            "value": 49.6
+            "value": 50.2
           },
           {
             "name": "Biggs",
             "affiliation": "Republican",
-            "value": 39
+            "value": 41
           }
         ],
         "spread": {
           "name": "Hobbs",
-          "value": 10.6
+          "value": 9.2
         },
-        "as_of": "2026-10-27T18:15:01+00:00",
-        "date_label": "7/26 - 10/25"
+        "as_of": "2026-10-28T11:44:09+00:00",
+        "date_label": "7/26 - 10/28"
       },
       "polls_in_average": 5,
-      "total_polls": 15
+      "total_polls": 16
     },
     {
       "id": 8742,
@@ -898,28 +898,28 @@
           {
             "name": "Talarico",
             "affiliation": "Democrat",
-            "value": 48.1
+            "value": 48.3
           },
           {
             "name": "Paxton",
             "affiliation": "Republican",
-            "value": 46.3
+            "value": 47.3
           },
           {
             "name": "Brown",
             "affiliation": "Libertarian",
-            "value": 2.8
+            "value": 2.7
           }
         ],
         "spread": {
           "name": "Talarico",
-          "value": 1.8
+          "value": 1
         },
-        "as_of": "2026-10-24T13:04:45+00:00",
-        "date_label": "10/6 - 10/25"
+        "as_of": "2026-10-30T12:43:44+00:00",
+        "date_label": "10/10 - 10/28"
       },
-      "polls_in_average": 9,
-      "total_polls": 26
+      "polls_in_average": 7,
+      "total_polls": 27
     },
     {
       "id": 9016,
@@ -1019,7 +1019,7 @@
           {
             "name": "Abbott",
             "affiliation": "Republican",
-            "value": 48.8
+            "value": 49.1
           },
           {
             "name": "Hinojosa",
@@ -1029,18 +1029,18 @@
           {
             "name": "Dixon",
             "affiliation": "Libertarian",
-            "value": 1.7
+            "value": 1.6
           }
         ],
         "spread": {
           "name": "Abbott",
-          "value": 3.2
+          "value": 3.5
         },
-        "as_of": "2026-10-22T10:41:45+00:00",
-        "date_label": "9/8 - 10/25"
+        "as_of": "2026-10-29T12:07:57+00:00",
+        "date_label": "9/8 - 10/28"
       },
-      "polls_in_average": 9,
-      "total_polls": 18
+      "polls_in_average": 10,
+      "total_polls": 19
     },
     {
       "id": 9233,
@@ -1087,23 +1087,23 @@
           {
             "name": "Becerra",
             "affiliation": "Democrat",
-            "value": 57.6
+            "value": 58.2
           },
           {
             "name": "Hilton",
             "affiliation": "Republican",
-            "value": 34
+            "value": 34.2
           }
         ],
         "spread": {
           "name": "Becerra",
-          "value": 23.6
+          "value": 24
         },
-        "as_of": "2026-10-28T15:46:17+00:00",
-        "date_label": "9/15 - 10/24"
+        "as_of": "2026-10-28T15:46:43+00:00",
+        "date_label": "10/9 - 10/25"
       },
       "polls_in_average": 5,
-      "total_polls": 12
+      "total_polls": 13
     },
     {
       "id": 9234,
@@ -2282,23 +2282,23 @@
           {
             "name": "Jackson",
             "affiliation": "Republican",
-            "value": 47.8
+            "value": 48.3
           },
           {
             "name": "Lance Bottoms",
             "affiliation": "Democrat",
-            "value": 46.6
+            "value": 47.3
           }
         ],
         "spread": {
           "name": "Jackson",
-          "value": 1.2
+          "value": 1
         },
-        "as_of": "2026-10-20T10:51:48+00:00",
-        "date_label": "9/15 - 10/17"
+        "as_of": "2026-10-24T19:20:15+00:00",
+        "date_label": "9/21 - 10/17"
       },
-      "polls_in_average": 5,
-      "total_polls": 16
+      "polls_in_average": 4,
+      "total_polls": 17
     },
     {
       "id": 8754,
@@ -2750,30 +2750,30 @@
       "current_average": {
         "results": [
           {
-            "name": "Marshall",
-            "affiliation": "Republican",
-            "value": 45.5
-          },
-          {
             "name": "Hamilton",
             "affiliation": "Democrat",
-            "value": 44.8
+            "value": 47.6
+          },
+          {
+            "name": "Marshall",
+            "affiliation": "Republican",
+            "value": 45.4
           },
           {
             "name": "Graham",
             "affiliation": "Libertarian",
-            "value": 3.5
+            "value": 3.4
           }
         ],
         "spread": {
-          "name": "Marshall",
-          "value": 0.7
+          "name": "Hamilton",
+          "value": 2.2
         },
-        "as_of": "2026-10-16T17:52:52+00:00",
-        "date_label": "9/15 - 10/14"
+        "as_of": "2026-10-30T12:33:20+00:00",
+        "date_label": "9/22 - 10/28"
       },
-      "polls_in_average": 4,
-      "total_polls": 4
+      "polls_in_average": 5,
+      "total_polls": 6
     },
     {
       "id": 9231,
@@ -3407,10 +3407,10 @@
           "name": "Tie",
           "value": null
         },
-        "as_of": "2026-09-21T15:20:16+00:00",
-        "date_label": "9/5 - 9/26"
+        "as_of": "2026-10-30T14:22:58+00:00",
+        "date_label": "12/31 - 12/31"
       },
-      "polls_in_average": 2,
+      "polls_in_average": 0,
       "total_polls": 11
     },
     {
