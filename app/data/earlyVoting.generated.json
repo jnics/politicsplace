@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T16:20:50.165Z",
+  "generatedAt": "2026-10-31T17:58:45.457Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 50,
@@ -8598,6 +8598,7 @@
             "state": "AZ",
             "zip": "85297"
           },
+          "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
           "latitude": 33.26258671310041,
           "longitude": -111.74777189725155,
           "sources": [
@@ -22773,8 +22774,8 @@
             "zip": "81631"
           },
           "pollingHours": "Wed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
-          "latitude": 39.65166,
-          "longitude": -106.82728,
+          "latitude": 39.651745288174205,
+          "longitude": -106.82723117348912,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -22794,8 +22795,8 @@
             "zip": "80545"
           },
           "pollingHours": "Fri, Oct 2: 12:00 am - 11:59 pm\nSat, Oct 3: 12:00 am - 11:59 pm\nSun, Oct 4: 12:00 am - 11:59 pm\nMon, Oct 5: 12:00 am - 11:59 pm\nTue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
-          "latitude": 40.80206,
-          "longitude": -105.58986999999999,
+          "latitude": 40.80214007515482,
+          "longitude": -105.58979860944574,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -26246,7 +26247,9 @@
         "absenteeVotingInfoUrl": "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting",
         "votingLocationFinderUrl": "https://sos.ga.gov/how-to-guide/how-guide-voting"
       },
-      "earlyVoteSites": [
+      "earlyVoteSites": null,
+      "dropOffLocations": null,
+      "pollingLocations": [
         {
           "address": {
             "locationName": "MECHANICSVILLE LIBRARY",
@@ -26258,818 +26261,17 @@
             "state": "GA",
             "zip": "30312"
           },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+          "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
           "latitude": 33.74348483893197,
           "longitude": -84.39534271458044,
           "sources": [
             {
               "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "BEULAH HEIGHTS UNIVERSITY",
-            "line1": "892 BERNE ST SE",
-            "addressLine": [
-              "892 BERNE ST SE"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30316"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.73689826527946,
-          "longitude": -84.35780943120736,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "HIGH MUSEUM OF ARTS",
-            "line1": "1280 PEACHTREE STREET NE",
-            "addressLine": [
-              "1280 PEACHTREE STREET NE"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30309"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.790063202143294,
-          "longitude": -84.38555201989539,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "METROPOLITAN LIBRARY",
-            "line1": "1332 METROPOLITAN PARKWAY",
-            "addressLine": [
-              "1332 METROPOLITAN PARKWAY"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30310"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.718757657577605,
-          "longitude": -84.40738457094265,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "JOAN P. GARNER LIBRARY AT PONCE DE LEON",
-            "line1": "980 PONCE DE LEON AVENUE NE",
-            "addressLine": [
-              "980 PONCE DE LEON AVENUE NE"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30306"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.77407236624293,
-          "longitude": -84.35519082824563,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "C.T. MARTIN NATATORIUM AND RECREATION CENTER",
-            "line1": "3201 MARTIN LUTHER KING JR. DR., S.W.",
-            "addressLine": [
-              "3201 MARTIN LUTHER KING JR. DR., S.W."
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30311"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.75433389255677,
-          "longitude": -84.49186352640268,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "BUCKHEAD LIBRARY",
-            "line1": "269 BUCKHEAD AVENUE NE",
-            "addressLine": [
-              "269 BUCKHEAD AVENUE NE"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30305"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.83784332770048,
-          "longitude": -84.37925698172724,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "ADAMS PARK LIBRARY",
-            "line1": "2231 CAMPBELLTON ROAD SW",
-            "addressLine": [
-              "2231 CAMPBELLTON ROAD SW"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30311"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.70570511481729,
-          "longitude": -84.46169758611532,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "EAST POINT LIBRARY",
-            "line1": "2757 MAIN STREET",
-            "addressLine": [
-              "2757 MAIN STREET"
-            ],
-            "city": "EAST POINT",
-            "state": "GA",
-            "zip": "30344"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.68035070116892,
-          "longitude": -84.44069468601191,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "EVELYN G. LOWERY LIBRARY AT CASCADE",
-            "line1": "3665 CASCADE ROAD",
-            "addressLine": [
-              "3665 CASCADE ROAD"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30331"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.724604883921415,
-          "longitude": -84.50653586662372,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "NORTHWEST BRANCH LIBRARY AT SCOTTS CROSSING",
-            "line1": "2489 PERRY BOULEVARD",
-            "addressLine": [
-              "2489 PERRY BOULEVARD"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30318"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.80535461585247,
-          "longitude": -84.47010036825088,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "NORTHSIDE LIBRARY",
-            "line1": "3295 NORTHSIDE PARKWAY NW",
-            "addressLine": [
-              "3295 NORTHSIDE PARKWAY NW"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30327"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.84515590697061,
-          "longitude": -84.42541869093108,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "HUGH C. CONLEY RECREATION CENTER",
-            "line1": "3636 COLLEGE STREET",
-            "addressLine": [
-              "3636 COLLEGE STREET"
-            ],
-            "city": "COLLEGE PARK",
-            "state": "GA",
-            "zip": "30337"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.65592732238978,
-          "longitude": -84.45105266107262,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "SOUTHWEST ARTS CENTER",
-            "line1": "915 NEW HOPE ROAD, SW",
-            "addressLine": [
-              "915 NEW HOPE ROAD, SW"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30331"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.72972221245299,
-          "longitude": -84.54166673029358,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "NORTH FULTON TRAINING CENTER",
-            "line1": "5025 ROSWELL RD",
-            "addressLine": [
-              "5025 ROSWELL RD"
-            ],
-            "city": "SANDY SPRINGS",
-            "state": "GA",
-            "zip": "30342"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.892255933841746,
-          "longitude": -84.38078926398138,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "SANDY SPRINGS BRANCH LIBRARY",
-            "line1": "395 MOUNT VERNON HIGHWAY NE",
-            "addressLine": [
-              "395 MOUNT VERNON HIGHWAY NE"
-            ],
-            "city": "SANDY SPRINGS",
-            "state": "GA",
-            "zip": "30328"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.92400968149862,
-          "longitude": -84.37442819151852,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "WELCOME ALL RECREATION CENTER",
-            "line1": "4255 WILL LEE ROAD",
-            "addressLine": [
-              "4255 WILL LEE ROAD"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30349"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.632024872406696,
-          "longitude": -84.52630640500257,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "WOLF CREEK LIBRARY",
-            "line1": "3100 ENON ROAD",
-            "addressLine": [
-              "3100 ENON ROAD"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30331"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.67253072210325,
-          "longitude": -84.57419361855744,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "NORTH FULTON SERVICE CENTER",
-            "line1": "7741 ROSWELL ROAD",
-            "addressLine": [
-              "7741 ROSWELL ROAD"
-            ],
-            "city": "SANDY SPRINGS",
-            "state": "GA",
-            "zip": "30350"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.96581844097307,
-          "longitude": -84.36281822863907,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "CREEL PARK",
-            "line1": "2775 CREEL RD",
-            "addressLine": [
-              "2775 CREEL RD"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30349"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.56695959726076,
-          "longitude": -84.48317800046958,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "GLADYS S. DENNARD LIBRARY AT SOUTH FULTON",
-            "line1": "4055 FLAT SHOALS ROAD",
-            "addressLine": [
-              "4055 FLAT SHOALS ROAD"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30291"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.58779856982332,
-          "longitude": -84.51952269471687,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "SOUTH FULTON SERVICE CENTER",
-            "line1": "5600 STONEWALL TELL ROAD",
-            "addressLine": [
-              "5600 STONEWALL TELL ROAD"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30349"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.60142232009563,
-          "longitude": -84.5498795228299,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "ROSWELL BRANCH LIBRARY",
-            "line1": "115 NORCROSS STREET",
-            "addressLine": [
-              "115 NORCROSS STREET"
-            ],
-            "city": "ROSWELL",
-            "state": "GA",
-            "zip": "30075"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.025093191400416,
-          "longitude": -84.35803799186631,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "FULTON COUNTY ELECTIONS HUB",
-            "line1": "5600 CAMPBELLTON FAIRBURN ROAD",
-            "addressLine": [
-              "5600 CAMPBELLTON FAIRBURN ROAD"
-            ],
-            "city": "UNION CITY",
-            "state": "GA",
-            "zip": "30213"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.60142232361227,
-          "longitude": -84.54987960279223,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "JOHNS CREEK ENVIROMNMENTAL CAMPUS",
-            "line1": "8100 HOLCOMB BRIDGE ROAD",
-            "addressLine": [
-              "8100 HOLCOMB BRIDGE ROAD"
-            ],
-            "city": "ROSWELL",
-            "state": "GA",
-            "zip": "30022"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.97664605671236,
-          "longitude": -84.26586456879323,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "EAST ROSWELL LIBRARY",
-            "line1": "2301 HOLCOMB BRIDGE ROAD",
-            "addressLine": [
-              "2301 HOLCOMB BRIDGE ROAD"
-            ],
-            "city": "ROSWELL",
-            "state": "GA",
-            "zip": "30076"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.00290150540583,
-          "longitude": -84.29433863733566,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "MILTON LIBRARY",
-            "line1": "855 MAYFIELD ROAD",
-            "addressLine": [
-              "855 MAYFIELD ROAD"
-            ],
-            "city": "MILTON",
-            "state": "GA",
-            "zip": "30009"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.09015952233289,
-          "longitude": -84.33637358581666,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "NORTHEAST SPRUILL OAKS LIBRARY",
-            "line1": "9560 SPRUILL ROAD",
-            "addressLine": [
-              "9560 SPRUILL ROAD"
-            ],
-            "city": "JOHNS CREEK",
-            "state": "GA",
-            "zip": "30022"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.01416998978464,
-          "longitude": -84.22421547382524,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "ALPHARETTA BRANCH LIBRARY",
-            "line1": "10 PARK PLAZA",
-            "addressLine": [
-              "10 PARK PLAZA"
-            ],
-            "city": "ALPHARETTA",
-            "state": "GA",
-            "zip": "30009"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.07388255906233,
-          "longitude": -84.29226842136538,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "FULTON COUNTY HEALTH AND HUMAN SERVICES-NORTH",
-            "line1": "4700 NORTH POINT PARKWAY",
-            "addressLine": [
-              "4700 NORTH POINT PARKWAY"
-            ],
-            "city": "ALPHARETTA",
-            "state": "GA",
-            "zip": "30005"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.05591480650556,
-          "longitude": -84.26859470635328,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "PALMETTO LIBRARY",
-            "line1": "9111 CASCADE PALMETTO HWY.",
-            "addressLine": [
-              "9111 CASCADE PALMETTO HWY."
-            ],
-            "city": "PALMETTO",
-            "state": "GA",
-            "zip": "30268"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.53063963827269,
-          "longitude": -84.66440201976467,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "ROBERT E. FULTON OCEE LIBRARY",
-            "line1": "5090 ABBOTTS BRIDGE ROAD",
-            "addressLine": [
-              "5090 ABBOTTS BRIDGE ROAD"
-            ],
-            "city": "JOHNS CREEK",
-            "state": "GA",
-            "zip": "30005"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.064622761447175,
-          "longitude": -84.20960676000465,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
+              "official": true
             }
           ]
         }
-      ],
-      "dropOffLocations": [
-        {
-          "address": {
-            "locationName": "C.T. MARTIN NATATORIUM AND RECREATION CENTER",
-            "line1": "3201 MARTIN LUTHER KING JR. DR., S.W.",
-            "addressLine": [
-              "3201 MARTIN LUTHER KING JR. DR., S.W."
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30311"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.75433389255677,
-          "longitude": -84.49186352640268,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "BUCKHEAD LIBRARY",
-            "line1": "269 BUCKHEAD AVENUE NE",
-            "addressLine": [
-              "269 BUCKHEAD AVENUE NE"
-            ],
-            "city": "ATLANTA",
-            "state": "GA",
-            "zip": "30305"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.83784332770048,
-          "longitude": -84.37925698172724,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "EAST POINT LIBRARY",
-            "line1": "2757 MAIN STREET",
-            "addressLine": [
-              "2757 MAIN STREET"
-            ],
-            "city": "EAST POINT",
-            "state": "GA",
-            "zip": "30344"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.68035070116892,
-          "longitude": -84.44069468601191,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "SANDY SPRINGS BRANCH LIBRARY",
-            "line1": "395 MOUNT VERNON HIGHWAY NE",
-            "addressLine": [
-              "395 MOUNT VERNON HIGHWAY NE"
-            ],
-            "city": "SANDY SPRINGS",
-            "state": "GA",
-            "zip": "30328"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.92400968149862,
-          "longitude": -84.37442819151852,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "WOLF CREEK LIBRARY",
-            "line1": "3100 ENON ROAD",
-            "addressLine": [
-              "3100 ENON ROAD"
-            ],
-            "city": "SOUTH FULTON",
-            "state": "GA",
-            "zip": "30331"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 33.67253072210325,
-          "longitude": -84.57419361855744,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "EAST ROSWELL LIBRARY",
-            "line1": "2301 HOLCOMB BRIDGE ROAD",
-            "addressLine": [
-              "2301 HOLCOMB BRIDGE ROAD"
-            ],
-            "city": "ROSWELL",
-            "state": "GA",
-            "zip": "30076"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.00290150540583,
-          "longitude": -84.29433863733566,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "ALPHARETTA BRANCH LIBRARY",
-            "line1": "10 PARK PLAZA",
-            "addressLine": [
-              "10 PARK PLAZA"
-            ],
-            "city": "ALPHARETTA",
-            "state": "GA",
-            "zip": "30009"
-          },
-          "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 34.07388255906233,
-          "longitude": -84.29226842136538,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": false
-            }
-          ]
-        }
-      ],
-      "pollingLocations": null
+      ]
     },
     "HI": {
       "hasData": true,
@@ -27598,241 +26800,7 @@
           "zip": "83720-0080"
         }
       },
-      "earlyVoteSites": [
-        {
-          "address": {
-            "locationName": "BOISE CITY HALL",
-            "line1": "150 N CAPITOL BLVD",
-            "addressLine": [
-              "150 N CAPITOL BLVD"
-            ],
-            "city": "BOISE",
-            "state": "ID",
-            "zip": "83702"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.61510360817729,
-          "longitude": -116.20137555835868,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "Ada County Elections Office",
-            "line1": "400 N. BENJAMIN LN",
-            "line2": "SUITE #100",
-            "addressLine": [
-              "400 N. BENJAMIN LN",
-              "SUITE #100"
-            ],
-            "city": "Boise",
-            "state": "ID",
-            "zip": "83704"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.60894451265834,
-          "longitude": -116.28735232867244,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "ADA COUNTY ELECTIONS OFFICE",
-            "line1": "400 N BENJAMIN LN, STE 100",
-            "addressLine": [
-              "400 N BENJAMIN LN, STE 100"
-            ],
-            "city": "BOISE",
-            "state": "ID",
-            "zip": "83704"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.60894451265834,
-          "longitude": -116.28735232867244,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "LIBRARY! AT BOWN CROSSING",
-            "line1": "2153 E RIVERWALK DR",
-            "addressLine": [
-              "2153 E RIVERWALK DR"
-            ],
-            "city": "BOISE",
-            "state": "ID",
-            "zip": "83706"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.57481911760845,
-          "longitude": -116.15625121787676,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "EXPO IDAHO - WESTERN TOWN BUILDING",
-            "line1": "5610 N GLENWOOD ST",
-            "addressLine": [
-              "5610 N GLENWOOD ST"
-            ],
-            "city": "GARDEN CITY",
-            "state": "ID",
-            "zip": "83714"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.65142841410264,
-          "longitude": -116.27558532052609,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "MERIDIAN CITY HALL",
-            "line1": "33 E BROADWAY AVE",
-            "addressLine": [
-              "33 E BROADWAY AVE"
-            ],
-            "city": "MERIDIAN",
-            "state": "ID",
-            "zip": "83642"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.60966938094792,
-          "longitude": -116.39317556382748,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "ADA COMMUNITY LIBRARY - LAKE HAZEL BRANCH",
-            "line1": "10489 W LAKE HAZEL RD",
-            "addressLine": [
-              "10489 W LAKE HAZEL RD"
-            ],
-            "city": "BOISE",
-            "state": "ID",
-            "zip": "83709"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.54537240032803,
-          "longitude": -116.31246437503705,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "EAGLE LIBRARY",
-            "line1": "100 N STIERMAN WAY",
-            "addressLine": [
-              "100 N STIERMAN WAY"
-            ],
-            "city": "EAGLE",
-            "state": "ID",
-            "zip": "83616"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.696185181726904,
-          "longitude": -116.34691445599623,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "MERIDIAN LIBRARY - ORCHARD PARK",
-            "line1": "1268 W ORCHARD PARK DR",
-            "addressLine": [
-              "1268 W ORCHARD PARK DR"
-            ],
-            "city": "MERIDIAN",
-            "state": "ID",
-            "zip": "83646"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.66053270132554,
-          "longitude": -116.40951833014475,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "STAR CITY HALL",
-            "line1": "10769 W STATE ST",
-            "addressLine": [
-              "10769 W STATE ST"
-            ],
-            "city": "STAR",
-            "state": "ID",
-            "zip": "83669"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.69161810773586,
-          "longitude": -116.4880669390866,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "KUNA CITY HALL - COUNCIL CHAMBERS BUILDING",
-            "line1": "757 W 4TH ST",
-            "addressLine": [
-              "757 W 4TH ST"
-            ],
-            "city": "KUNA",
-            "state": "ID",
-            "zip": "83634"
-          },
-          "pollingHours": "Mon, Oct 19: 8 am - 5 pm\nTue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm",
-          "latitude": 43.49099477555105,
-          "longitude": -116.42260730365497,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        }
-      ],
+      "earlyVoteSites": null,
       "dropOffLocations": null,
       "pollingLocations": [
         {
@@ -28056,9 +27024,326 @@
           "zip": "40601"
         }
       },
-      "earlyVoteSites": null,
+      "earlyVoteSites": [
+        {
+          "address": {
+            "locationName": "YES ARTS",
+            "line1": "317 W 2ND ST",
+            "addressLine": [
+              "317 W 2ND ST"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Thu, Oct 29: 8 am - 4 pm\nFri, Oct 30: 8 am - 6 pm\nSat, Oct 31: 7 am - 3 pm",
+          "latitude": 38.194781806090646,
+          "longitude": -84.87901831569675,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "CAPITAL CITY CHRISTIAN CHURCH",
+            "line1": "15 LOCUST DR",
+            "addressLine": [
+              "15 LOCUST DR"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Thu, Oct 29: 8 am - 4 pm\nFri, Oct 30: 8 am - 6 pm\nSat, Oct 31: 7 am - 3 pm",
+          "latitude": 38.18459596367382,
+          "longitude": -84.81751901932084,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "CAPITAL CITY ACTIVITY CENTER",
+            "line1": "202 MEDICAL HEIGHTS DR",
+            "addressLine": [
+              "202 MEDICAL HEIGHTS DR"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Thu, Oct 29: 8 am - 4 pm\nFri, Oct 30: 8 am - 6 pm\nSat, Oct 31: 7 am - 3 pm",
+          "latitude": 38.159315325687786,
+          "longitude": -84.90279173889448,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        }
+      ],
       "dropOffLocations": null,
-      "pollingLocations": null
+      "pollingLocations": [
+        {
+          "address": {
+            "locationName": "FRANKFORT HIGH GYM",
+            "line1": "315 EWING STREET",
+            "addressLine": [
+              "315 EWING STREET"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.193696472357495,
+          "longitude": -84.88089721874682,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "COLLINS LANE ELEMENTARY SCHOOL",
+            "line1": "1 COUGAR LANE",
+            "addressLine": [
+              "1 COUGAR LANE"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.17786679483564,
+          "longitude": -84.88805242740642,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "KSU EXUM CENTER",
+            "line1": "400 E MAIN STREET",
+            "addressLine": [
+              "400 E MAIN STREET"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.200201203925154,
+          "longitude": -84.86000507630591,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "WESTRIDGE ELEMENTARY SCHOOL",
+            "line1": "200 OAK RIDGE DRIVE",
+            "addressLine": [
+              "200 OAK RIDGE DRIVE"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.198047508962254,
+          "longitude": -84.9073888848595,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "CAPITAL CITY CHRISTIAN CHURCH",
+            "line1": "15 LOCUST DRIVE",
+            "addressLine": [
+              "15 LOCUST DRIVE"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.18459596367382,
+          "longitude": -84.81751901932084,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "CAPITAL CITY ACTIVITY CENTER",
+            "line1": "202 MEDICAL HEIGHTS DRIVE",
+            "addressLine": [
+              "202 MEDICAL HEIGHTS DRIVE"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.159315325687786,
+          "longitude": -84.90279173889448,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "WESTERN HILLS HIGH SCHOOL",
+            "line1": "100 DOCTORS DRIVE",
+            "addressLine": [
+              "100 DOCTORS DRIVE"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.16234452058631,
+          "longitude": -84.90787918050769,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "HEARN ELEMENTARY SCHOOL",
+            "line1": "300 COPPERLEAF BLVD.",
+            "addressLine": [
+              "300 COPPERLEAF BLVD."
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.192437512964766,
+          "longitude": -84.81421868611963,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "FRANKLIN COUNTY HIGH SCHOOL",
+            "line1": "1100 E MAIN STREET",
+            "addressLine": [
+              "1100 E MAIN STREET"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.21177508517079,
+          "longitude": -84.8271618352573,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "PEAKS MILL ELEMENTARY SCHOOL",
+            "line1": "100 PEAKS MILL ROAD",
+            "addressLine": [
+              "100 PEAKS MILL ROAD"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.22683473537847,
+          "longitude": -84.84884310028711,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "SWITZER FIRE STATION",
+            "line1": "911 SWITZER ROAD",
+            "addressLine": [
+              "911 SWITZER ROAD"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.22938213608593,
+          "longitude": -84.79041217552052,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "BALD KNOB FIRE STATION",
+            "line1": "355 FLAT CREEK ROAD",
+            "addressLine": [
+              "355 FLAT CREEK ROAD"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Tue, Nov 3: 6 am - 6 pm",
+          "latitude": 38.27288827521326,
+          "longitude": -84.93760196979899,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        }
+      ]
     },
     "LA": {
       "hasData": true,
@@ -28207,8 +27492,8 @@
             "zip": "21401"
           },
           "pollingHours": "Sun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 38.97531,
-          "longitude": -76.56121999999999,
+          "latitude": 38.97538571121211,
+          "longitude": -76.56114930017051,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -28582,7 +27867,7 @@
             ],
             "city": "Odenton",
             "state": "MD",
-            "zip": "2113"
+            "zip": "21113"
           },
           "pollingHours": "Sun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 39.09044308659959,
@@ -28645,7 +27930,7 @@
             ],
             "city": "Glen Burnie",
             "state": "MD",
-            "zip": "21060"
+            "zip": "21061"
           },
           "pollingHours": "Sun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 39.16789129359868,
@@ -28913,7 +28198,7 @@
             "state": "MI",
             "zip": "48912"
           },
-          "pollingHours": "Business Hours: 10/24/2026 12:00:00 AM=10:00AM - 6:00PM;|10/25/2026 12:00:00 AM=10:00AM - 6:00PM;|10/26/2026 12:00:00 AM=10:00AM - 6:00PM;|10/27/2026 12:00:00 AM=10:00AM - 6:00PM;|10/28/2026 12:00:00 AM=10:00AM - 6:00PM;|10/29/2026 12:00:00 AM=10:00AM - 6:00PM;|10/30/2026 12:00:00 AM=10:00AM - 6:00PM;|10/31/2026 12:00:00 AM=10:00AM - 6:00PM;|11/1/2026 12:00:00 AM=10:00AM - 6:00PM;|11/2/2026 12:00:00 AM=10:00AM - 4:00PM;|11/3/2026 12:00:00 AM=7:00AM - 8:00PM;",
+          "pollingHours": "Sat, Oct 24: 10 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 10 am - 6 pm\nTue, Oct 27: 10 am - 6 pm\nWed, Oct 28: 10 am - 6 pm\nThu, Oct 29: 10 am - 6 pm\nFri, Oct 30: 10 am - 6 pm\nSat, Oct 31: 10 am - 6 pm\nSun, Nov 1: 10 am - 6 pm\nMon, Nov 2: 10 am - 4 pm",
           "latitude": 42.734873880655364,
           "longitude": -84.51739862786394,
           "sources": [
@@ -28959,7 +28244,7 @@
             "state": "MI",
             "zip": "48933"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.734190871112396,
           "longitude": -84.55365530182357,
           "sources": [
@@ -28982,7 +28267,7 @@
             "state": "MI",
             "zip": "48933"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.73692,
           "longitude": -84.55121,
           "sources": [
@@ -29005,7 +28290,7 @@
             "state": "MI",
             "zip": "48906"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "sources": [
             {
               "name": "Voting Information Project",
@@ -29026,7 +28311,7 @@
             "state": "MI",
             "zip": "48915"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.73090159682872,
           "longitude": -84.56987697994326,
           "sources": [
@@ -29049,7 +28334,7 @@
             "state": "MI",
             "zip": "48912"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.734873880655364,
           "longitude": -84.51739862786394,
           "sources": [
@@ -29072,7 +28357,7 @@
             "state": "MI",
             "zip": "48906"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.75963129127043,
           "longitude": -84.5448906981824,
           "sources": [
@@ -29095,7 +28380,7 @@
             "state": "MI",
             "zip": "48910"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.712203304018026,
           "longitude": -84.52724033626566,
           "sources": [
@@ -29118,7 +28403,7 @@
             "state": "MI",
             "zip": "48910"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.69529098920612,
           "longitude": -84.54695698572655,
           "sources": [
@@ -29141,7 +28426,7 @@
             "state": "MI",
             "zip": "48910"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.68264840546311,
           "longitude": -84.56186999758442,
           "sources": [
@@ -29164,7 +28449,7 @@
             "state": "MI",
             "zip": "48910"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.687302809394474,
           "longitude": -84.53381806767051,
           "sources": [
@@ -29187,7 +28472,7 @@
             "state": "MI",
             "zip": "48911"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.68244280337085,
           "longitude": -84.58174576427423,
           "sources": [
@@ -29210,7 +28495,7 @@
             "state": "MI",
             "zip": "48911"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.66955202672106,
           "longitude": -84.53164469013335,
           "sources": [
@@ -29233,7 +28518,7 @@
             "state": "MI",
             "zip": "48911"
           },
-          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 10:59 pm",
+          "pollingHours": "Sat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 42.6736083173373,
           "longitude": -84.5906120375462,
           "sources": [
@@ -29290,7 +28575,95 @@
           "zip": "55155"
         }
       },
-      "earlyVoteSites": null,
+      "earlyVoteSites": [
+        {
+          "address": {
+            "locationName": "Ramsey County Elections - Plato Building",
+            "line1": "90 Plato Blvd W",
+            "addressLine": [
+              "90 Plato Blvd W"
+            ],
+            "city": "Saint Paul",
+            "state": "MN",
+            "zip": "55107"
+          },
+          "pollingHours": "Fri, Sep 18: 8:00 am - 4:30 pm\nMon, Sep 21: 8:00 am - 4:30 pm\nTue, Sep 22: 8:00 am - 4:30 pm\nWed, Sep 23: 8:00 am - 4:30 pm\nThu, Sep 24: 8:00 am - 4:30 pm\nFri, Sep 25: 8:00 am - 4:30 pm\nMon, Sep 28: 8:00 am - 4:30 pm\nTue, Sep 29: 8:00 am - 4:30 pm\nWed, Sep 30: 8:00 am - 4:30 pm\nThu, Oct 1: 8:00 am - 4:30 pm\nFri, Oct 2: 8:00 am - 4:30 pm\nMon, Oct 5: 8:00 am - 4:30 pm\nTue, Oct 6: 8:00 am - 4:30 pm\nWed, Oct 7: 8:00 am - 4:30 pm\nThu, Oct 8: 8:00 am - 4:30 pm\nFri, Oct 9: 8:00 am - 4:30 pm\nTue, Oct 13: 8:00 am - 4:30 pm\nWed, Oct 14: 8:00 am - 4:30 pm\nThu, Oct 15: 8:00 am - 4:30 pm\nFri, Oct 16: 8:00 am - 4:30 pm\nMon, Oct 19: 8:00 am - 4:30 pm\nTue, Oct 20: 8:00 am - 4:30 pm\nWed, Oct 21: 8:00 am - 4:30 pm\nThu, Oct 22: 8:00 am - 4:30 pm\nFri, Oct 23: 8:00 am - 4:30 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 8:00 am - 4:30 pm\nTue, Oct 27: 8 am - 7 pm\nWed, Oct 28: 8:00 am - 4:30 pm\nThu, Oct 29: 8:00 am - 4:30 pm\nFri, Oct 30: 8:00 am - 4:30 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 8 am - 5 pm",
+          "latitude": 44.936092327872906,
+          "longitude": -93.09034720707697,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Arlington Hills Community Center",
+            "line1": "1200 Payne Ave",
+            "addressLine": [
+              "1200 Payne Ave"
+            ],
+            "city": "Saint Paul",
+            "state": "MN",
+            "zip": "55130"
+          },
+          "notes": "Not open extended hours 11/2 (Mon)",
+          "pollingHours": "Fri, Oct 16: 10 am - 4 pm\nMon, Oct 19: 10 am - 4 pm\nTue, Oct 20: 10 am - 4 pm\nWed, Oct 21: 10 am - 4 pm\nThu, Oct 22: 10 am - 4 pm\nFri, Oct 23: 10 am - 4 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 10 am - 4 pm\nTue, Oct 27: 10 am - 7 pm\nWed, Oct 28: 10 am - 4 pm\nThu, Oct 29: 10 am - 4 pm\nFri, Oct 30: 10 am - 4 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 10 am - 4 pm",
+          "latitude": 44.97697923354645,
+          "longitude": -93.07331672905651,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Ramsey County Library - Roseville",
+            "line1": "2180 Hamline Ave N",
+            "addressLine": [
+              "2180 Hamline Ave N"
+            ],
+            "city": "Roseville",
+            "state": "MN",
+            "zip": "55113"
+          },
+          "notes": "Not open extended hours 11/2 (Mon)",
+          "pollingHours": "Fri, Oct 16: 10 am - 4 pm\nMon, Oct 19: 10 am - 4 pm\nTue, Oct 20: 10 am - 4 pm\nWed, Oct 21: 10 am - 4 pm\nThu, Oct 22: 10 am - 4 pm\nFri, Oct 23: 10 am - 4 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 10 am - 4 pm\nTue, Oct 27: 10 am - 7 pm\nWed, Oct 28: 10 am - 4 pm\nThu, Oct 29: 10 am - 4 pm\nFri, Oct 30: 10 am - 4 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 10 am - 4 pm",
+          "latitude": 45.00736706713655,
+          "longitude": -93.15576320175876,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Ramsey County Library - Shoreview",
+            "line1": "4560 Victoria St N",
+            "addressLine": [
+              "4560 Victoria St N"
+            ],
+            "city": "Shoreview",
+            "state": "MN",
+            "zip": "55126"
+          },
+          "notes": "Not open extended hours 11/2 (Mon)",
+          "pollingHours": "Fri, Oct 16: 10 am - 4 pm\nMon, Oct 19: 10 am - 4 pm\nTue, Oct 20: 10 am - 4 pm\nWed, Oct 21: 10 am - 4 pm\nThu, Oct 22: 10 am - 4 pm\nFri, Oct 23: 10 am - 4 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 10 am - 4 pm\nTue, Oct 27: 10 am - 7 pm\nWed, Oct 28: 10 am - 4 pm\nThu, Oct 29: 10 am - 4 pm\nFri, Oct 30: 10 am - 4 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 10 am - 4 pm",
+          "latitude": 45.07975108889217,
+          "longitude": -93.13469126718017,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
       "dropOffLocations": null,
       "pollingLocations": null
     },
@@ -29525,31 +28898,7 @@
           "zip": "89701-3714"
         }
       },
-      "earlyVoteSites": [
-        {
-          "address": {
-            "locationName": "Carson City Community Center",
-            "line1": "851 E William St",
-            "line2": "Main Gym",
-            "addressLine": [
-              "851 E William St",
-              "Main Gym"
-            ],
-            "city": "Carson City",
-            "state": "NV",
-            "zip": "89701"
-          },
-          "pollingHours": "Sat, Oct 17: 10 am - 2 pm\nMon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 10 am - 2 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 7 am - 4 pm\nFri, Oct 30: 9 am - 6 pm",
-          "latitude": 39.16948741328123,
-          "longitude": -119.76032036306196,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        }
-      ],
+      "earlyVoteSites": null,
       "dropOffLocations": null,
       "pollingLocations": [
         {
@@ -36098,8 +35447,8 @@
           },
           "notes": "Outside 24-hour drive-up drop box",
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 43.3437069207932,
-          "longitude": -124.32761285041546,
+          "latitude": 43.34197971290435,
+          "longitude": -124.32612143395107,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -38263,950 +37612,7 @@
           "zip": "78711-2060"
         }
       },
-      "earlyVoteSites": [
-        {
-          "address": {
-            "locationName": "TRAVIS COUNTY CIVIL AND FAMILY COURTS FACILITY",
-            "line1": "1700 Guadalupe St",
-            "addressLine": [
-              "1700 Guadalupe St"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78701"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.279946233055718,
-          "longitude": -97.74250323374359,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "AUSTIN RECREATION CENTER",
-            "line1": "1301 Shoal Creek Blvd",
-            "addressLine": [
-              "1301 Shoal Creek Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78701"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.278143784327764,
-          "longitude": -97.74897042594513,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "UT TEXAS UNION",
-            "line1": "2308 Whitis Ave",
-            "addressLine": [
-              "2308 Whitis Ave"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78712"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 10 pm\nFri, Oct 30: 7 am - 10 pm",
-          "latitude": 30.286660830971535,
-          "longitude": -97.74116353318603,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "AUSTIN CITY HALL",
-            "line1": "301 W 2nd St",
-            "addressLine": [
-              "301 W 2nd St"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78701"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.265057840879933,
-          "longitude": -97.74746332316514,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "CARVER BRANCH LIBRARY",
-            "line1": "1161 Angelina St",
-            "addressLine": [
-              "1161 Angelina St"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78702"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.26957296963884,
-          "longitude": -97.72421801999447,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "LBJ SCHOOL OF PUBLIC AFFAIRS",
-            "line1": "2315 Red River St",
-            "addressLine": [
-              "2315 Red River St"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78712"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.285521999583406,
-          "longitude": -97.72867246447612,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "MILLENNIUM YOUTH ENTERTAINMENT COMPLEX",
-            "line1": "1156 Hargrave St",
-            "addressLine": [
-              "1156 Hargrave St"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78702"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 10 pm\nFri, Oct 30: 7 am - 10 pm",
-          "latitude": 30.27170267718951,
-          "longitude": -97.71073873172507,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "CEPEDA BRANCH LIBRARY",
-            "line1": "651 N Pleasant Valley Rd",
-            "addressLine": [
-              "651 N Pleasant Valley Rd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78702"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.25912458208871,
-          "longitude": -97.70883552155223,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "RANDALLS FLAGSHIP WEST LAKE HILLS",
-            "line1": "3300 Bee Caves Rd",
-            "addressLine": [
-              "3300 Bee Caves Rd"
-            ],
-            "city": "West Lake Hills",
-            "state": "TX",
-            "zip": "78746"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.275357740462542,
-          "longitude": -97.79878832620626,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "SOUTH AUSTIN RECREATION CENTER",
-            "line1": "1100 Cumberland Rd",
-            "addressLine": [
-              "1100 Cumberland Rd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78704"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.241666712918462,
-          "longitude": -97.76861113228446,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "AUSTIN ENERGY HEADQUARTERS",
-            "line1": "4815 Mueller Blvd",
-            "addressLine": [
-              "4815 Mueller Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78723"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.302260803870695,
-          "longitude": -97.70470906643496,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "TRAVIS COUNTY CLERK",
-            "line1": "5501 Airport Blvd",
-            "addressLine": [
-              "5501 Airport Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78751"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 10 pm\nFri, Oct 30: 7 am - 10 pm",
-          "latitude": 30.31617311316093,
-          "longitude": -97.71264870450564,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "NORTHWEST RECREATION CENTER",
-            "line1": "2913 Northland Dr",
-            "addressLine": [
-              "2913 Northland Dr"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78757"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.333701819281753,
-          "longitude": -97.75191202594024,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "DAN RUIZ BRANCH LIBRARY",
-            "line1": "1600 Grove Blvd",
-            "addressLine": [
-              "1600 Grove Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78741"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.229762942058105,
-          "longitude": -97.70715828369505,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "AUSTIN PERMITTING AND DEVELOPMENT CENTER",
-            "line1": "6310 Wilhelmina",
-            "addressLine": [
-              "6310 Wilhelmina"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78752"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.325375298866536,
-          "longitude": -97.70983981225916,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "WHEATSVILLE FOOD COOP SOUTH LAMAR",
-            "line1": "4001 S Lamar Blvd",
-            "addressLine": [
-              "4001 S Lamar Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78704"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.235580090268435,
-          "longitude": -97.79099898371831,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "BEN HUR SHRINE CENTER",
-            "line1": "7811 Rockwood Ln",
-            "addressLine": [
-              "7811 Rockwood Ln"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78757"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 10 pm\nFri, Oct 30: 7 am - 10 pm",
-          "latitude": 30.358235634994923,
-          "longitude": -97.73814181993319,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "GEORGE MORALES DOVE SPRINGS RECREATION CENTER",
-            "line1": "5801 Ainez Dr",
-            "addressLine": [
-              "5801 Ainez Dr"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78744"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.18750002655284,
-          "longitude": -97.73833327884036,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "MENCHACA ROAD BRANCH PUBLIC LIBRARY",
-            "line1": "5500 Menchaca Rd",
-            "addressLine": [
-              "5500 Menchaca Rd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78745"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.216457562354957,
-          "longitude": -97.79729749726859,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "FORMER VERIZON",
-            "line1": "9705 Research Blvd",
-            "addressLine": [
-              "9705 Research Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78759"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.390863237902412,
-          "longitude": -97.74397657735511,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "BEDICHEK MIDDLE SCHOOL",
-            "line1": "6800 Bill Hughes Rd",
-            "addressLine": [
-              "6800 Bill Hughes Rd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78745"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.194121494988373,
-          "longitude": -97.78644887152683,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "SHOPS AT ARBOR WALK",
-            "line1": "10515 N Mopac Expy",
-            "addressLine": [
-              "10515 N Mopac Expy"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78759"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.38774376646312,
-          "longitude": -97.73309826700077,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "RIVERBEND CENTRE",
-            "line1": "4214 N Capital of Texas Hwy",
-            "addressLine": [
-              "4214 N Capital of Texas Hwy"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78746"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.342141987448702,
-          "longitude": -97.80459499430742,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "AUSTIN OAKS CHURCH",
-            "line1": "4220 Monterey Oaks Blvd",
-            "addressLine": [
-              "4220 Monterey Oaks Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78749"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.23036311795225,
-          "longitude": -97.8326026950298,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "GUS GARCIA RECREATION CENTER",
-            "line1": "1201 E Rundberg Ln",
-            "addressLine": [
-              "1201 E Rundberg Ln"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78753"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.35250004041264,
-          "longitude": -97.68194439945408,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "DISABILITY RIGHTS TEXAS",
-            "line1": "2222 W Braker Ln",
-            "addressLine": [
-              "2222 W Braker Ln"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78758"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.39273627987799,
-          "longitude": -97.71284978781672,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "CHINATOWN CENTER",
-            "line1": "10901 N Lamar Blvd",
-            "addressLine": [
-              "10901 N Lamar Blvd"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78753"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.37819872115623,
-          "longitude": -97.68669399009428,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "TCC COMPLEX",
-            "line1": "3614 Bill Price Rd",
-            "addressLine": [
-              "3614 Bill Price Rd"
-            ],
-            "city": "Del Valle",
-            "state": "TX",
-            "zip": "78617"
-          },
-          "pollingHours": "Fri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.197922506522296,
-          "longitude": -97.64627756629297,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "COMMUNITY CENTER AT OAK HILL",
-            "line1": "8656 W Highway 71",
-            "addressLine": [
-              "8656 W Highway 71"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78735"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.251392393278515,
-          "longitude": -97.89378402231526,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "COMMUNITY CENTER AT DEL VALLE",
-            "line1": "3518 FM 973",
-            "addressLine": [
-              "3518 FM 973"
-            ],
-            "city": "Del Valle",
-            "state": "TX",
-            "zip": "78617"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.199177224184705,
-          "longitude": -97.64259322456581,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "RIATA TRACE",
-            "line1": "12221 Riata Trace Pkwy",
-            "addressLine": [
-              "12221 Riata Trace Pkwy"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78727"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.428571868089445,
-          "longitude": -97.74988219690775,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "RRISD HARTFIELD PAC",
-            "line1": "5800 McNeil Dr",
-            "addressLine": [
-              "5800 McNeil Dr"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78729"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.447713931888753,
-          "longitude": -97.73599842741255,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "WESTOAK WOODS BAPTIST CHURCH",
-            "line1": "2900 W Slaughter Ln",
-            "addressLine": [
-              "2900 W Slaughter Ln"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78748"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.17971119542567,
-          "longitude": -97.83942590246313,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "RANDALLS BRODIE",
-            "line1": "9911 Brodie Ln",
-            "addressLine": [
-              "9911 Brodie Ln"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78748"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 10 pm\nFri, Oct 30: 7 am - 10 pm",
-          "latitude": 30.184068196251545,
-          "longitude": -97.84763669713439,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "BALCONES BINGO",
-            "line1": "13096 N US Highway 183",
-            "addressLine": [
-              "13096 N US Highway 183"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78750"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.438991564691595,
-          "longitude": -97.780442332345,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "BEE CAVE CITY HALL",
-            "line1": "4000 Galleria Pkwy",
-            "addressLine": [
-              "4000 Galleria Pkwy"
-            ],
-            "city": "Bee Cave",
-            "state": "TX",
-            "zip": "78738"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.308234264168824,
-          "longitude": -97.94002710406394,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "MANOR ISD ADMIN BUILDING",
-            "line1": "10335 US Highway 290 E",
-            "addressLine": [
-              "10335 US Highway 290 E"
-            ],
-            "city": "Manor",
-            "state": "TX",
-            "zip": "78653"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.344778639686854,
-          "longitude": -97.57223998968173,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "CIRCLE C COMMUNITY CENTER",
-            "line1": "7817 La Crosse Ave",
-            "addressLine": [
-              "7817 La Crosse Ave"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78739"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.193122519503504,
-          "longitude": -97.90866876321036,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "RANDALLS STEINER RANCH",
-            "line1": "5145 FM 620 N",
-            "addressLine": [
-              "5145 FM 620 N"
-            ],
-            "city": "Austin",
-            "state": "TX",
-            "zip": "78732"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.389167560733554,
-          "longitude": -97.88382069856529,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "PFLUGERVILLE ISD ROCK GYM",
-            "line1": "702 W Pecan St",
-            "addressLine": [
-              "702 W Pecan St"
-            ],
-            "city": "Pflugerville",
-            "state": "TX",
-            "zip": "78660"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 10 pm\nFri, Oct 30: 7 am - 10 pm",
-          "latitude": 30.442888214243542,
-          "longitude": -97.62600980345677,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "PFLUGER HALL AND CONFERENCE CENTER",
-            "line1": "203 E Pecan St Ste B",
-            "addressLine": [
-              "203 E Pecan St Ste B"
-            ],
-            "city": "Pflugerville",
-            "state": "TX",
-            "zip": "78660"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.438886131823285,
-          "longitude": -97.61944340145183,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "LAKEWAY ACTIVITY CENTER",
-            "line1": "105 Cross Crk",
-            "addressLine": [
-              "105 Cross Crk"
-            ],
-            "city": "Lakeway",
-            "state": "TX",
-            "zip": "78734"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 10 pm\nFri, Oct 30: 7 am - 10 pm",
-          "latitude": 30.362484420843256,
-          "longitude": -97.98128161368784,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "TYPHOON TEXAS WATERPARK",
-            "line1": "18500 TX 130 SERVICE RD PFLUGERVILLE TX 78660",
-            "addressLine": [
-              "18500 TX 130 SERVICE RD PFLUGERVILLE TX 78660"
-            ]
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.46221541415428,
-          "longitude": -97.59749948060951,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "CHRIST EPISCOPAL CHURCH",
-            "line1": "3520 W Whitestone Blvd",
-            "addressLine": [
-              "3520 W Whitestone Blvd"
-            ],
-            "city": "Cedar Park",
-            "state": "TX",
-            "zip": "78613"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.51124970121137,
-          "longitude": -97.88142316349375,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "LAGO VISTA PUBLIC LIBRARY",
-            "line1": "5803 Thunderbird",
-            "addressLine": [
-              "5803 Thunderbird"
-            ],
-            "city": "Lago Vista",
-            "state": "TX",
-            "zip": "78645"
-          },
-          "pollingHours": "Mon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 7 am - 7 pm\nSun, Oct 25: 7 am - 7 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
-          "latitude": 30.452685278723585,
-          "longitude": -97.98669360141298,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        }
-      ],
+      "earlyVoteSites": null,
       "dropOffLocations": null,
       "pollingLocations": [
         {
@@ -40355,8 +38761,8 @@
             "zip": "78746"
           },
           "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
-          "latitude": 30.282682201501448,
-          "longitude": -97.82109121182957,
+          "latitude": 30.282719959127675,
+          "longitude": -97.82103603025188,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -41234,8 +39640,8 @@
             "zip": "78745"
           },
           "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
-          "latitude": 30.194121494988373,
-          "longitude": -97.78644887152683,
+          "latitude": 30.194205709835376,
+          "longitude": -97.78654566173061,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -41861,8 +40267,8 @@
             "zip": "78748"
           },
           "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
-          "latitude": 30.166871557218983,
-          "longitude": -97.81077150995762,
+          "latitude": 30.16690688919017,
+          "longitude": -97.8107881864821,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -41903,8 +40309,8 @@
             "zip": "78727"
           },
           "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
-          "latitude": 30.428571868089445,
-          "longitude": -97.74988219690775,
+          "latitude": 30.42859838920737,
+          "longitude": -97.74995340490092,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -43446,27 +41852,6 @@
       "earlyVoteSites": [
         {
           "address": {
-            "locationName": "U Of U Marriott Library",
-            "line1": "295 S 1500 E",
-            "addressLine": [
-              "295 S 1500 E"
-            ],
-            "city": "Salt Lake City",
-            "state": "UT",
-            "zip": "84112"
-          },
-          "pollingHours": "Tue, Oct 27: 3 pm - 7 pm\nWed, Oct 28: 3 pm - 7 pm\nThu, Oct 29: 3 pm - 7 pm\nFri, Oct 30: 3 pm - 7 pm",
-          "latitude": 40.762517036556424,
-          "longitude": -111.84612136791021,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
             "locationName": "Salt Lake County Government Center",
             "line1": "2001 S State Street (100 E)",
             "addressLine": [
@@ -43479,132 +41864,6 @@
           "pollingHours": "Tue, Oct 20: 8 am - 5 pm\nWed, Oct 21: 8 am - 5 pm\nThu, Oct 22: 8 am - 5 pm\nFri, Oct 23: 8 am - 5 pm\nMon, Oct 26: 8 am - 5 pm\nTue, Oct 27: 8 am - 5 pm\nWed, Oct 28: 8 am - 5 pm\nThu, Oct 29: 8 am - 5 pm\nFri, Oct 30: 8 am - 5 pm\nSat, Oct 31: 10 am - 3 pm",
           "latitude": 40.72687952901985,
           "longitude": -111.88767699754239,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "Murray City Hall",
-            "line1": "10 E 4800 S",
-            "addressLine": [
-              "10 E 4800 S"
-            ],
-            "city": "Murray",
-            "state": "UT",
-            "zip": "84107"
-          },
-          "pollingHours": "Tue, Oct 27: 3 pm - 7 pm\nWed, Oct 28: 3 pm - 7 pm\nThu, Oct 29: 3 pm - 7 pm\nFri, Oct 30: 3 pm - 7 pm",
-          "latitude": 40.66643667049211,
-          "longitude": -111.89112956322454,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "Hunter Library",
-            "line1": "4740 W 4100 S",
-            "addressLine": [
-              "4740 W 4100 S"
-            ],
-            "city": "West Valley City",
-            "state": "UT",
-            "zip": "84120"
-          },
-          "pollingHours": "Tue, Oct 27: 3 pm - 7 pm\nWed, Oct 28: 3 pm - 7 pm\nThu, Oct 29: 3 pm - 7 pm\nFri, Oct 30: 3 pm - 7 pm",
-          "latitude": 40.68268941831963,
-          "longitude": -112.00378302635552,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "Whitmore Library",
-            "line1": "2197 E Fort Union Blvd (7000 S)",
-            "addressLine": [
-              "2197 E Fort Union Blvd (7000 S)"
-            ],
-            "city": "Cottonwood Heights",
-            "state": "UT",
-            "zip": "84121"
-          },
-          "pollingHours": "Tue, Oct 27: 3 pm - 7 pm\nWed, Oct 28: 3 pm - 7 pm\nThu, Oct 29: 3 pm - 7 pm\nFri, Oct 30: 3 pm - 7 pm",
-          "latitude": 40.624599917798356,
-          "longitude": -111.82808980726017,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "West Jordan City Hall",
-            "line1": "8000 S Redwood Rd",
-            "addressLine": [
-              "8000 S Redwood Rd"
-            ],
-            "city": "West Jordan",
-            "state": "UT",
-            "zip": "84088"
-          },
-          "pollingHours": "Tue, Oct 27: 3 pm - 7 pm\nWed, Oct 28: 3 pm - 7 pm\nThu, Oct 29: 3 pm - 7 pm\nFri, Oct 30: 3 pm - 7 pm",
-          "latitude": 40.606115388038,
-          "longitude": -111.93948699993943,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "South Jordan Library",
-            "line1": "10673 S Redwood Rd (1700 W)",
-            "addressLine": [
-              "10673 S Redwood Rd (1700 W)"
-            ],
-            "city": "South Jordan",
-            "state": "UT",
-            "zip": "84095"
-          },
-          "pollingHours": "Tue, Oct 27: 3 pm - 7 pm\nWed, Oct 28: 3 pm - 7 pm\nThu, Oct 29: 3 pm - 7 pm\nFri, Oct 30: 3 pm - 7 pm",
-          "latitude": 40.55728551635087,
-          "longitude": -111.93656028873419,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
-            "locationName": "Draper City Hall",
-            "line1": "1020 E Pioneer Rd (12400 S)",
-            "addressLine": [
-              "1020 E Pioneer Rd (12400 S)"
-            ],
-            "city": "Draper",
-            "state": "UT",
-            "zip": "84020"
-          },
-          "pollingHours": "Tue, Oct 27: 3 pm - 7 pm\nWed, Oct 28: 3 pm - 7 pm\nThu, Oct 29: 3 pm - 7 pm\nFri, Oct 30: 3 pm - 7 pm",
-          "latitude": 40.524899936242555,
-          "longitude": -111.86284759145566,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -44753,28 +43012,6 @@
         },
         {
           "address": {
-            "locationName": "Thurston County Atrium Drop Box",
-            "line1": "3000 Pacific Ave SE",
-            "addressLine": [
-              "3000 Pacific Ave SE"
-            ],
-            "city": "Olympia",
-            "state": "WA",
-            "zip": "98501"
-          },
-          "notes": "Open 26 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
-          "pollingHours": "Thu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 47.04319480204704,
-          "longitude": -122.85863765986066,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
             "locationName": "Thurston County Atrium Voting Center Drop Box",
             "line1": "3000 Pacific Ave SE",
             "addressLine": [
@@ -44786,6 +43023,28 @@
           },
           "notes": "Register to vote or get a ballot. Open 8 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
           "pollingHours": "Monday through Friday 8:00am - 4:30pm Saturday, Oct 31 10:00am - 4:00pm Monday, Nov 2 8:00am - 6:00pm On Election Day 8:00am - 8:00pm",
+          "latitude": 47.04319480204704,
+          "longitude": -122.85863765986066,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Thurston County Atrium Drop Box",
+            "line1": "3000 Pacific Ave SE",
+            "addressLine": [
+              "3000 Pacific Ave SE"
+            ],
+            "city": "Olympia",
+            "state": "WA",
+            "zip": "98501"
+          },
+          "notes": "Open 26 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
+          "pollingHours": "Thu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
           "latitude": 47.04319480204704,
           "longitude": -122.85863765986066,
           "sources": [

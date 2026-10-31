@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-30",
+ "generatedAt": "2026-10-31",
  "source": "Wikipedia (compiled from Cook Political Report, Sabato's Crystal Ball, Inside Elections, and other public forecasters)",
  "byRace": {
   "house": [
@@ -415,7 +415,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -720,7 +720,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "D",
       "flip": true
      },
@@ -1433,9 +1433,9 @@
       "flip": true
      },
      "ddhq": {
-      "label": "Lean",
-      "party": "R",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "fiftyPlusOne": {
       "label": "Likely",
@@ -3113,8 +3113,8 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "fiftyPlusOne": {
@@ -3271,9 +3271,9 @@
       "flip": false
      },
      "economist": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "splitTicket": {
       "label": "Lean",
@@ -3464,7 +3464,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "R",
       "flip": false
      },
@@ -3561,8 +3561,8 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      },
      "fiftyPlusOne": {
@@ -3576,9 +3576,9 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "rcp": {
       "label": "Tossup",
@@ -3800,7 +3800,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": false
      },
@@ -4864,7 +4864,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -6127,8 +6127,8 @@
       "flip": false
      },
      "economist": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      },
      "splitTicket": {
@@ -6199,6 +6199,62 @@
      },
      "fiftyPlusOne": {
       "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     }
+    }
+   },
+   {
+    "label": "South Carolina 5",
+    "raceType": "house",
+    "ratings": {
+     "cook": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "economist": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "splitTicket": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "ddhq": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "fiftyPlusOne": {
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -6328,6 +6384,62 @@
       "label": "Likely",
       "party": "R",
       "flip": true
+     }
+    }
+   },
+   {
+    "label": "Texas 2",
+    "raceType": "house",
+    "ratings": {
+     "cook": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "insideElections": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "sabato": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "economist": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "splitTicket": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "ddhq": {
+      "label": "Likely",
+      "party": "R",
+      "flip": false
+     },
+     "fiftyPlusOne": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "foxNews": {
+      "label": "Safe",
+      "party": "R",
+      "flip": false
+     },
+     "silverBulletin": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
+     },
+     "rcp": {
+      "label": "Solid",
+      "party": "R",
+      "flip": false
      }
     }
    },
@@ -6552,62 +6664,6 @@
       "label": "Lean",
       "party": "D",
       "flip": true
-     }
-    }
-   },
-   {
-    "label": "Texas 17",
-    "raceType": "house",
-    "ratings": {
-     "cook": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "insideElections": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "sabato": {
-      "label": "Safe",
-      "party": "R",
-      "flip": false
-     },
-     "economist": {
-      "label": "Safe",
-      "party": "R",
-      "flip": false
-     },
-     "splitTicket": {
-      "label": "Safe",
-      "party": "R",
-      "flip": false
-     },
-     "ddhq": {
-      "label": "Likely",
-      "party": "R",
-      "flip": false
-     },
-     "fiftyPlusOne": {
-      "label": "Safe",
-      "party": "R",
-      "flip": false
-     },
-     "foxNews": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "silverBulletin": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
-     },
-     "rcp": {
-      "label": "Solid",
-      "party": "R",
-      "flip": false
      }
     }
    },
@@ -7048,7 +7104,7 @@
       "flip": true
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Solid",
       "party": "R",
       "flip": true
      },
@@ -7089,7 +7145,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      },
@@ -7817,7 +7873,7 @@
       "flip": false
      },
      "ddhq": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -8033,9 +8089,9 @@
       "flip": false
      },
      "fiftyPlusOne": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "foxNews": {
       "label": "Tossup",
@@ -8058,9 +8114,9 @@
       "flip": true
      },
      "silverBulletin": {
-      "label": "Lean",
-      "party": "D",
-      "flip": true
+      "label": "Tossup",
+      "party": null,
+      "flip": false
      },
      "splitTicket": {
       "label": "Lean",
@@ -8084,7 +8140,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Safe",
       "party": "R",
       "flip": false
      },
@@ -8562,13 +8618,13 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Tossup",
-      "party": null,
-      "flip": false
+      "label": "Lean",
+      "party": "D",
+      "flip": true
      },
      "splitTicket": {
-      "label": "Lean",
-      "party": "R",
+      "label": "Tossup",
+      "party": null,
       "flip": false
      }
     }
@@ -8674,7 +8730,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Solid",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -8847,7 +8903,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "D",
       "flip": false
      }
@@ -8868,7 +8924,7 @@
       "flip": false
      },
      "economist": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "D",
       "flip": false
      },
@@ -9010,7 +9066,7 @@
       "flip": false
      },
      "silverBulletin": {
-      "label": "Lean",
+      "label": "Likely",
       "party": "R",
       "flip": false
      },
@@ -9056,8 +9112,8 @@
       "flip": false
      },
      "rcp": {
-      "label": "Tossup",
-      "party": null,
+      "label": "Lean",
+      "party": "R",
       "flip": false
      },
      "sabato": {
@@ -9631,7 +9687,7 @@
       "flip": false
      },
      "splitTicket": {
-      "label": "Safe",
+      "label": "Likely",
       "party": "R",
       "flip": false
      }
@@ -10487,7 +10543,7 @@
       "flip": true
      },
      "silverBulletin": {
-      "label": "Likely",
+      "label": "Lean",
       "party": "R",
       "flip": true
      }

@@ -24,7 +24,7 @@
           {
             "name": "El-Sayed",
             "affiliation": "Democrat",
-            "value": 48.8
+            "value": 49.1
           },
           {
             "name": "Rogers",
@@ -34,13 +34,13 @@
         ],
         "spread": {
           "name": "El-Sayed",
-          "value": 3.2
+          "value": 3.5
         },
-        "as_of": "2026-10-28T22:42:22+00:00",
-        "date_label": "9/28 - 10/27"
+        "as_of": "2026-10-31T01:50:55+00:00",
+        "date_label": "9/28 - 10/29"
       },
       "polls_in_average": 9,
-      "total_polls": 46
+      "total_polls": 49
     },
     {
       "id": 8867,
@@ -65,23 +65,23 @@
           {
             "name": "Talarico",
             "affiliation": "Democrat",
-            "value": 48.8
+            "value": 48.2
           },
           {
             "name": "Paxton",
             "affiliation": "Republican",
-            "value": 47
+            "value": 46.8
           }
         ],
         "spread": {
           "name": "Talarico",
-          "value": 1.8
+          "value": 1.4
         },
-        "as_of": "2026-10-30T12:38:00+00:00",
-        "date_label": "10/8 - 10/28"
+        "as_of": "2026-10-31T02:35:58+00:00",
+        "date_label": "10/15 - 10/28"
       },
-      "polls_in_average": 11,
-      "total_polls": 56
+      "polls_in_average": 6,
+      "total_polls": 57
     },
     {
       "id": 8881,
@@ -106,7 +106,7 @@
           {
             "name": "Donalds",
             "affiliation": "Republican",
-            "value": 48.2
+            "value": 48.6
           },
           {
             "name": "Jolly",
@@ -116,13 +116,13 @@
         ],
         "spread": {
           "name": "Donalds",
-          "value": 4.2
+          "value": 4.6
         },
-        "as_of": "2026-10-28T14:28:05+00:00",
-        "date_label": "10/2 - 10/27"
+        "as_of": "2026-10-30T22:56:08+00:00",
+        "date_label": "10/2 - 10/30"
       },
-      "polls_in_average": 6,
-      "total_polls": 17
+      "polls_in_average": 7,
+      "total_polls": 19
     },
     {
       "id": 8910,
@@ -159,11 +159,11 @@
           "name": "Abbott",
           "value": 3.7
         },
-        "as_of": "2026-10-30T12:56:49+00:00",
+        "as_of": "2026-10-31T01:42:43+00:00",
         "date_label": "10/8 - 10/28"
       },
       "polls_in_average": 8,
-      "total_polls": 46
+      "total_polls": 47
     },
     {
       "id": 8948,
@@ -188,23 +188,23 @@
           {
             "name": "Moody",
             "affiliation": "Republican",
-            "value": 49.4
+            "value": 49.7
           },
           {
             "name": "Nixon",
             "affiliation": "Democrat",
-            "value": 43.2
+            "value": 43.4
           }
         ],
         "spread": {
           "name": "Moody",
-          "value": 6.2
+          "value": 6.3
         },
-        "as_of": "2026-10-28T14:27:51+00:00",
-        "date_label": "10/2 - 10/27"
+        "as_of": "2026-10-30T23:27:38+00:00",
+        "date_label": "10/2 - 10/30"
       },
-      "polls_in_average": 5,
-      "total_polls": 17
+      "polls_in_average": 7,
+      "total_polls": 19
     },
     {
       "id": 8992,
@@ -241,11 +241,11 @@
           "name": "Benson",
           "value": 7.6
         },
-        "as_of": "2026-10-29T21:44:30+00:00",
+        "as_of": "2026-10-31T01:51:04+00:00",
         "date_label": "9/24 - 10/27"
       },
       "polls_in_average": 7,
-      "total_polls": 28
+      "total_polls": 29
     },
     {
       "id": 8670,
@@ -270,23 +270,23 @@
           {
             "name": "Democrats",
             "affiliation": "Democrat",
-            "value": 51.4
+            "value": 51.5
           },
           {
             "name": "Republicans",
             "affiliation": "Republican",
-            "value": 43.2
+            "value": 43.1
           }
         ],
         "spread": {
           "name": "Democrats",
-          "value": 8.2
+          "value": 8.4
         },
-        "as_of": "2026-10-30T15:53:50+00:00",
-        "date_label": "10/8 - 10/26"
+        "as_of": "2026-10-31T13:42:17+00:00",
+        "date_label": "10/8 - 10/29"
       },
-      "polls_in_average": 18,
-      "total_polls": 389
+      "polls_in_average": 19,
+      "total_polls": 390
     },
     {
       "id": 8689,
@@ -393,23 +393,23 @@
           {
             "name": "Flanagan",
             "affiliation": "Democrat",
-            "value": 47.8
+            "value": 48.3
           },
           {
             "name": "Tafoya",
             "affiliation": "Republican",
-            "value": 42.7
+            "value": 42.5
           }
         ],
         "spread": {
           "name": "Flanagan",
-          "value": 5.1
+          "value": 5.8
         },
-        "as_of": "2026-10-28T14:01:13+00:00",
-        "date_label": "10/2 - 10/26"
+        "as_of": "2026-10-30T22:52:34+00:00",
+        "date_label": "10/2 - 10/28"
       },
       "polls_in_average": 6,
-      "total_polls": 17
+      "total_polls": 18
     },
     {
       "id": 9017,
@@ -487,7 +487,7 @@
           "name": "Wilson",
           "value": 11.4
         },
-        "as_of": "2026-10-28T14:49:22+00:00",
+        "as_of": "2026-10-30T17:21:46+00:00",
         "date_label": "10/14 - 10/26"
       },
       "polls_in_average": 3,
@@ -562,18 +562,18 @@
           {
             "name": "Collins",
             "affiliation": "Republican",
-            "value": 47.3
+            "value": 47
           }
         ],
         "spread": {
           "name": "Jackson",
-          "value": 1.4
+          "value": 1.7
         },
-        "as_of": "2026-10-27T10:41:48+00:00",
-        "date_label": "9/23 - 10/26"
+        "as_of": "2026-10-31T02:34:42+00:00",
+        "date_label": "10/5 - 10/26"
       },
-      "polls_in_average": 11,
-      "total_polls": 30
+      "polls_in_average": 7,
+      "total_polls": 31
     },
     {
       "id": 9101,
@@ -602,28 +602,28 @@
           {
             "name": "Pingree",
             "affiliation": "Democrat",
-            "value": 49.1
+            "value": 49.3
           },
           {
             "name": "Charles",
             "affiliation": "Republican",
-            "value": 39.3
+            "value": 39.2
           },
           {
             "name": "Bennett",
             "affiliation": "Independent",
-            "value": 7.5
+            "value": 8
           }
         ],
         "spread": {
           "name": "Pingree",
-          "value": 9.8
+          "value": 10.1
         },
-        "as_of": "2026-10-27T17:21:30+00:00",
-        "date_label": "9/17 - 10/26"
+        "as_of": "2026-10-31T15:58:20+00:00",
+        "date_label": "9/20 - 10/26"
       },
-      "polls_in_average": 7,
-      "total_polls": 13
+      "polls_in_average": 6,
+      "total_polls": 14
     },
     {
       "id": 9106,
@@ -771,23 +771,23 @@
           {
             "name": "Hochul",
             "affiliation": "Democrat",
-            "value": 52.5
+            "value": 53.5
           },
           {
             "name": "Blakeman",
             "affiliation": "Republican",
-            "value": 41
+            "value": 40.8
           }
         ],
         "spread": {
           "name": "Hochul",
-          "value": 11.5
+          "value": 12.7
         },
-        "as_of": "2026-10-28T15:44:46+00:00",
-        "date_label": "9/11 - 10/25"
+        "as_of": "2026-10-28T15:46:54+00:00",
+        "date_label": "10/3 - 10/25"
       },
       "polls_in_average": 4,
-      "total_polls": 17
+      "total_polls": 18
     },
     {
       "id": 8753,
@@ -853,23 +853,23 @@
           {
             "name": "Klobuchar",
             "affiliation": "Democrat",
-            "value": 50.5
+            "value": 51.3
           },
           {
             "name": "Demuth",
             "affiliation": "Republican",
-            "value": 39.8
+            "value": 39.3
           }
         ],
         "spread": {
           "name": "Klobuchar",
-          "value": 10.7
+          "value": 12
         },
-        "as_of": "2026-10-17T02:53:06+00:00",
-        "date_label": "10/2 - 10/25"
+        "as_of": "2026-10-30T22:46:17+00:00",
+        "date_label": "10/2 - 10/28"
       },
       "polls_in_average": 4,
-      "total_polls": 11
+      "total_polls": 13
     },
     {
       "id": 8985,
@@ -915,11 +915,11 @@
           "name": "Talarico",
           "value": 1
         },
-        "as_of": "2026-10-30T12:43:44+00:00",
+        "as_of": "2026-10-31T01:41:55+00:00",
         "date_label": "10/10 - 10/28"
       },
       "polls_in_average": 7,
-      "total_polls": 27
+      "total_polls": 28
     },
     {
       "id": 9016,
@@ -1036,11 +1036,11 @@
           "name": "Abbott",
           "value": 3.5
         },
-        "as_of": "2026-10-29T12:07:57+00:00",
+        "as_of": "2026-10-31T01:43:13+00:00",
         "date_label": "9/8 - 10/28"
       },
       "polls_in_average": 10,
-      "total_polls": 19
+      "total_polls": 20
     },
     {
       "id": 9233,
@@ -1270,7 +1270,7 @@
       ],
       "current_average": null,
       "polls_in_average": 0,
-      "total_polls": 14
+      "total_polls": 15
     },
     {
       "id": 9105,
@@ -1333,7 +1333,7 @@
       ],
       "current_average": null,
       "polls_in_average": 0,
-      "total_polls": 10
+      "total_polls": 11
     },
     {
       "id": 9219,
@@ -1629,7 +1629,7 @@
           {
             "name": "El-Sayed",
             "affiliation": "Democrat",
-            "value": 46.8
+            "value": 47.5
           },
           {
             "name": "Rogers",
@@ -1644,28 +1644,28 @@
           {
             "name": "Long",
             "affiliation": "Independent",
-            "value": 1
+            "value": 0.8
           },
           {
             "name": "Kristy",
             "affiliation": "Independent",
-            "value": 0.7
+            "value": 1
           },
           {
             "name": "Marsh",
             "affiliation": "Green",
-            "value": 0.5
+            "value": 0.3
           }
         ],
         "spread": {
           "name": "El-Sayed",
-          "value": 3
+          "value": 3.7
         },
-        "as_of": "2026-10-25T15:15:17+00:00",
-        "date_label": "9/16 - 10/22"
+        "as_of": "2026-10-31T01:51:35+00:00",
+        "date_label": "9/16 - 10/29"
       },
       "polls_in_average": 4,
-      "total_polls": 7
+      "total_polls": 9
     },
     {
       "id": 9218,
@@ -2010,7 +2010,7 @@
           {
             "name": "Markey",
             "affiliation": "Democrat",
-            "value": 55.6
+            "value": 57
           },
           {
             "name": "Deaton",
@@ -2020,12 +2020,12 @@
         ],
         "spread": {
           "name": "Markey",
-          "value": 26.6
+          "value": 28
         },
-        "as_of": "2026-10-20T10:55:32+00:00",
-        "date_label": "9/14 - 10/18"
+        "as_of": "2026-10-29T12:18:46+00:00",
+        "date_label": "10/5 - 10/18"
       },
-      "polls_in_average": 5,
+      "polls_in_average": 3,
       "total_polls": 14
     },
     {
@@ -2051,22 +2051,22 @@
           {
             "name": "Healey",
             "affiliation": "Democrat",
-            "value": 56.2
+            "value": 57.7
           },
           {
             "name": "Minogue",
             "affiliation": "Republican",
-            "value": 33.4
+            "value": 32.3
           }
         ],
         "spread": {
           "name": "Healey",
-          "value": 22.8
+          "value": 25.4
         },
-        "as_of": "2026-10-20T10:56:19+00:00",
-        "date_label": "9/14 - 10/18"
+        "as_of": "2026-10-29T12:20:04+00:00",
+        "date_label": "10/6 - 10/18"
       },
-      "polls_in_average": 5,
+      "polls_in_average": 3,
       "total_polls": 12
     },
     {
@@ -2335,11 +2335,11 @@
           "name": "Peltola",
           "value": 1.2
         },
-        "as_of": "2026-10-27T23:30:33+00:00",
-        "date_label": "10/1 - 10/16"
+        "as_of": "2026-10-31T02:56:07+00:00",
+        "date_label": "10/8 - 10/29"
       },
       "polls_in_average": 5,
-      "total_polls": 25
+      "total_polls": 26
     },
     {
       "id": 9124,
@@ -2391,7 +2391,7 @@
       ],
       "current_average": null,
       "polls_in_average": 0,
-      "total_polls": 11
+      "total_polls": 12
     },
     {
       "id": 9191,
@@ -2521,12 +2521,12 @@
           {
             "name": "Flanagan",
             "affiliation": "Democrat",
-            "value": 45.6
+            "value": 46.2
           },
           {
             "name": "Tafoya",
             "affiliation": "Republican",
-            "value": 43.6
+            "value": 43.4
           },
           {
             "name": "Whiting",
@@ -2541,13 +2541,13 @@
         ],
         "spread": {
           "name": "Flanagan",
-          "value": 2
+          "value": 2.8
         },
-        "as_of": "2026-10-19T20:22:02+00:00",
-        "date_label": "9/14 - 10/15"
+        "as_of": "2026-10-20T18:37:01+00:00",
+        "date_label": "9/14 - 10/28"
       },
       "polls_in_average": 5,
-      "total_polls": 7
+      "total_polls": 8
     },
     {
       "id": 8994,
@@ -2896,22 +2896,22 @@
           {
             "name": "Lamont",
             "affiliation": "Democrat",
-            "value": 53.6
+            "value": 55
           },
           {
             "name": "Fazio",
             "affiliation": "Republican",
-            "value": 37.6
+            "value": 36.3
           }
         ],
         "spread": {
           "name": "Lamont",
-          "value": 16
+          "value": 18.7
         },
-        "as_of": "2026-10-19T17:12:41+00:00",
-        "date_label": "9/16 - 10/12"
+        "as_of": "2026-10-19T17:13:03+00:00",
+        "date_label": "10/6 - 10/12"
       },
-      "polls_in_average": 5,
+      "polls_in_average": 3,
       "total_polls": 10
     },
     {
@@ -3068,10 +3068,10 @@
           "name": "Haaland",
           "value": 6.5
         },
-        "as_of": "2026-10-05T16:04:22+00:00",
-        "date_label": "9/25 - 10/9"
+        "as_of": "2026-10-11T20:54:14+00:00",
+        "date_label": "12/31 - 12/31"
       },
-      "polls_in_average": 2,
+      "polls_in_average": 0,
       "total_polls": 4
     },
     {
@@ -3407,11 +3407,11 @@
           "name": "Tie",
           "value": null
         },
-        "as_of": "2026-10-30T14:22:58+00:00",
+        "as_of": "2026-10-30T22:38:24+00:00",
         "date_label": "12/31 - 12/31"
       },
       "polls_in_average": 0,
-      "total_polls": 11
+      "total_polls": 12
     },
     {
       "id": 8935,

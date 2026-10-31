@@ -405,12 +405,12 @@
    "cvap": 7783975,
    "registered": 7854464,
    "party": {
-    "total": 7888353,
-    "dem": 2336176,
-    "rep": 2330303,
-    "other": 3221874,
+    "total": 7896829,
+    "dem": 2343565,
+    "rep": 2330937,
+    "other": 3222327,
     "modeled": false,
-    "asOf": "10/24/2026",
+    "asOf": "10/31/2026",
     "source": "North Carolina State Board of Elections"
    }
   },
