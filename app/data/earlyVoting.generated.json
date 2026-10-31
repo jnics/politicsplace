@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:58:45.457Z",
+  "generatedAt": "2026-10-31T18:04:42.209Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 50,
@@ -43012,28 +43012,6 @@
         },
         {
           "address": {
-            "locationName": "Thurston County Atrium Voting Center Drop Box",
-            "line1": "3000 Pacific Ave SE",
-            "addressLine": [
-              "3000 Pacific Ave SE"
-            ],
-            "city": "Olympia",
-            "state": "WA",
-            "zip": "98501"
-          },
-          "notes": "Register to vote or get a ballot. Open 8 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
-          "pollingHours": "Monday through Friday 8:00am - 4:30pm Saturday, Oct 31 10:00am - 4:00pm Monday, Nov 2 8:00am - 6:00pm On Election Day 8:00am - 8:00pm",
-          "latitude": 47.04319480204704,
-          "longitude": -122.85863765986066,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
             "locationName": "Thurston County Atrium Drop Box",
             "line1": "3000 Pacific Ave SE",
             "addressLine": [
@@ -43045,6 +43023,28 @@
           },
           "notes": "Open 26 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
           "pollingHours": "Thu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "latitude": 47.04319480204704,
+          "longitude": -122.85863765986066,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "Thurston County Atrium Voting Center Drop Box",
+            "line1": "3000 Pacific Ave SE",
+            "addressLine": [
+              "3000 Pacific Ave SE"
+            ],
+            "city": "Olympia",
+            "state": "WA",
+            "zip": "98501"
+          },
+          "notes": "Register to vote or get a ballot. Open 8 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
+          "pollingHours": "Monday through Friday 8:00am - 4:30pm Saturday, Oct 31 10:00am - 4:00pm Monday, Nov 2 8:00am - 6:00pm On Election Day 8:00am - 8:00pm",
           "latitude": 47.04319480204704,
           "longitude": -122.85863765986066,
           "sources": [
