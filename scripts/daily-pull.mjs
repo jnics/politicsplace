@@ -41,6 +41,7 @@ const DATA_PATHS = [
   "public/geo",
   "scripts/data/rcp-polls.json",
   "scripts/data/rcp-races.json",
+  "scripts/data/ga-early-party.json",
 ];
 const quoted = DATA_PATHS.map((p) => `"${p}"`).join(" ");
 
