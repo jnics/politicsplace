@@ -1,1450 +1,1459 @@
 {
- "asOf": "2026-10-30",
+ "asOf": "2026-10-31",
  "primaries": [
   "05/24/2022",
   "05/21/2024",
   "05/19/2026"
  ],
  "state": {
-  "voted": 2513648,
-  "inPerson": 2402283,
-  "mail": 111365,
-  "requested": 165791,
-  "dem": 932509,
-  "rep": 788939,
-  "other": 792200
+  "voted": 2826146,
+  "inPerson": 2705112,
+  "mail": 121034,
+  "requested": 166008,
+  "dem": 1009090,
+  "rep": 859414,
+  "other": 957642
  },
  "counties": {
+  "": {
+   "voted": 1,
+   "inPerson": 1,
+   "mail": 0,
+   "requested": 0,
+   "dem": 0,
+   "rep": 0,
+   "other": 1
+  },
   "APPLING": {
-   "voted": 3335,
-   "inPerson": 3137,
-   "mail": 198,
+   "voted": 3786,
+   "inPerson": 3577,
+   "mail": 209,
    "requested": 238,
-   "dem": 569,
-   "rep": 2225,
-   "other": 541
+   "dem": 619,
+   "rep": 2488,
+   "other": 679
   },
   "ATKINSON": {
-   "voted": 991,
-   "inPerson": 947,
-   "mail": 44,
+   "voted": 1159,
+   "inPerson": 1113,
+   "mail": 46,
    "requested": 62,
-   "dem": 191,
-   "rep": 502,
-   "other": 298
+   "dem": 212,
+   "rep": 569,
+   "other": 378
   },
   "BACON": {
-   "voted": 2236,
-   "inPerson": 2160,
-   "mail": 76,
+   "voted": 2550,
+   "inPerson": 2468,
+   "mail": 82,
    "requested": 98,
-   "dem": 195,
-   "rep": 1629,
-   "other": 412
+   "dem": 223,
+   "rep": 1826,
+   "other": 501
   },
   "BAKER": {
-   "voted": 598,
-   "inPerson": 537,
-   "mail": 61,
+   "voted": 667,
+   "inPerson": 605,
+   "mail": 62,
    "requested": 68,
-   "dem": 348,
-   "rep": 154,
-   "other": 96
+   "dem": 384,
+   "rep": 167,
+   "other": 116
   },
   "BALDWIN": {
-   "voted": 9400,
-   "inPerson": 8849,
-   "mail": 551,
+   "voted": 10364,
+   "inPerson": 9761,
+   "mail": 603,
    "requested": 845,
-   "dem": 3438,
-   "rep": 3535,
-   "other": 2427
+   "dem": 3713,
+   "rep": 3767,
+   "other": 2884
   },
   "BANKS": {
-   "voted": 4200,
-   "inPerson": 3990,
-   "mail": 210,
+   "voted": 4813,
+   "inPerson": 4590,
+   "mail": 223,
    "requested": 262,
-   "dem": 255,
-   "rep": 2857,
-   "other": 1088
+   "dem": 273,
+   "rep": 3190,
+   "other": 1350
   },
   "BARROW": {
-   "voted": 17511,
-   "inPerson": 16676,
-   "mail": 835,
+   "voted": 19683,
+   "inPerson": 18820,
+   "mail": 863,
    "requested": 1073,
-   "dem": 3483,
-   "rep": 7751,
-   "other": 6277
+   "dem": 3767,
+   "rep": 8358,
+   "other": 7558
   },
   "BARTOW": {
-   "voted": 22053,
-   "inPerson": 20976,
-   "mail": 1077,
-   "requested": 1364,
-   "dem": 3709,
-   "rep": 10673,
-   "other": 7671
+   "voted": 25180,
+   "inPerson": 24070,
+   "mail": 1110,
+   "requested": 1365,
+   "dem": 4069,
+   "rep": 11673,
+   "other": 9438
   },
   "BENHILL": {
-   "voted": 3164,
-   "inPerson": 3048,
-   "mail": 116,
+   "voted": 3570,
+   "inPerson": 3448,
+   "mail": 122,
    "requested": 150,
-   "dem": 928,
-   "rep": 1526,
-   "other": 710
+   "dem": 996,
+   "rep": 1714,
+   "other": 860
   },
   "BERRIEN": {
-   "voted": 2897,
-   "inPerson": 2762,
-   "mail": 135,
+   "voted": 3299,
+   "inPerson": 3154,
+   "mail": 145,
    "requested": 183,
-   "dem": 288,
-   "rep": 1925,
-   "other": 684
+   "dem": 322,
+   "rep": 2107,
+   "other": 870
   },
   "BIBB": {
-   "voted": 30653,
-   "inPerson": 29050,
-   "mail": 1603,
-   "requested": 2635,
-   "dem": 15256,
-   "rep": 6856,
-   "other": 8541
+   "voted": 34249,
+   "inPerson": 32497,
+   "mail": 1752,
+   "requested": 2636,
+   "dem": 16490,
+   "rep": 7469,
+   "other": 10290
   },
   "BLECKLEY": {
-   "voted": 2798,
-   "inPerson": 2666,
-   "mail": 132,
+   "voted": 3137,
+   "inPerson": 2997,
+   "mail": 140,
    "requested": 172,
-   "dem": 391,
-   "rep": 1847,
-   "other": 560
+   "dem": 421,
+   "rep": 2032,
+   "other": 684
   },
   "BRANTLEY": {
-   "voted": 2623,
-   "inPerson": 2547,
-   "mail": 76,
+   "voted": 2966,
+   "inPerson": 2888,
+   "mail": 78,
    "requested": 102,
-   "dem": 165,
-   "rep": 1845,
-   "other": 613
+   "dem": 177,
+   "rep": 2063,
+   "other": 726
   },
   "BROOKS": {
-   "voted": 2661,
-   "inPerson": 2497,
-   "mail": 164,
-   "requested": 263,
-   "dem": 804,
-   "rep": 986,
-   "other": 871
+   "voted": 3029,
+   "inPerson": 2845,
+   "mail": 184,
+   "requested": 264,
+   "dem": 872,
+   "rep": 1114,
+   "other": 1043
   },
   "BRYAN": {
-   "voted": 10823,
-   "inPerson": 10503,
-   "mail": 320,
-   "requested": 549,
-   "dem": 2403,
-   "rep": 4842,
-   "other": 3578
+   "voted": 12304,
+   "inPerson": 11954,
+   "mail": 350,
+   "requested": 550,
+   "dem": 2600,
+   "rep": 5350,
+   "other": 4354
   },
   "BULLOCH": {
-   "voted": 12257,
-   "inPerson": 11622,
-   "mail": 635,
-   "requested": 916,
-   "dem": 3139,
-   "rep": 5081,
-   "other": 4037
+   "voted": 13817,
+   "inPerson": 13122,
+   "mail": 695,
+   "requested": 917,
+   "dem": 3381,
+   "rep": 5607,
+   "other": 4829
   },
   "BURKE": {
-   "voted": 4194,
-   "inPerson": 3831,
-   "mail": 363,
-   "requested": 490,
-   "dem": 1769,
-   "rep": 1325,
-   "other": 1100
+   "voted": 4691,
+   "inPerson": 4317,
+   "mail": 374,
+   "requested": 491,
+   "dem": 1927,
+   "rep": 1449,
+   "other": 1315
   },
   "BUTTS": {
-   "voted": 6883,
-   "inPerson": 6679,
-   "mail": 204,
+   "voted": 7658,
+   "inPerson": 7446,
+   "mail": 212,
    "requested": 245,
-   "dem": 1423,
-   "rep": 3776,
-   "other": 1684
+   "dem": 1547,
+   "rep": 4067,
+   "other": 2044
   },
   "CALHOUN": {
-   "voted": 822,
-   "inPerson": 732,
-   "mail": 90,
+   "voted": 913,
+   "inPerson": 820,
+   "mail": 93,
    "requested": 112,
-   "dem": 438,
-   "rep": 242,
-   "other": 142
+   "dem": 474,
+   "rep": 263,
+   "other": 176
   },
   "CAMDEN": {
-   "voted": 11464,
-   "inPerson": 10735,
-   "mail": 729,
-   "requested": 911,
-   "dem": 2462,
-   "rep": 4969,
-   "other": 4033
+   "voted": 12839,
+   "inPerson": 12084,
+   "mail": 755,
+   "requested": 912,
+   "dem": 2597,
+   "rep": 5442,
+   "other": 4800
   },
   "CANDLER": {
-   "voted": 1989,
-   "inPerson": 1927,
-   "mail": 62,
+   "voted": 2280,
+   "inPerson": 2212,
+   "mail": 68,
    "requested": 76,
-   "dem": 379,
-   "rep": 1142,
-   "other": 468
+   "dem": 415,
+   "rep": 1296,
+   "other": 569
   },
   "CARROLL": {
-   "voted": 21637,
-   "inPerson": 20759,
-   "mail": 878,
+   "voted": 24587,
+   "inPerson": 23676,
+   "mail": 911,
    "requested": 1145,
-   "dem": 5062,
-   "rep": 9851,
-   "other": 6724
+   "dem": 5538,
+   "rep": 10766,
+   "other": 8283
   },
   "CATOOSA": {
-   "voted": 13838,
-   "inPerson": 13291,
-   "mail": 547,
+   "voted": 15222,
+   "inPerson": 14654,
+   "mail": 568,
    "requested": 700,
-   "dem": 2008,
-   "rep": 7589,
-   "other": 4241
+   "dem": 2106,
+   "rep": 8162,
+   "other": 4954
   },
   "CHARLTON": {
-   "voted": 1590,
-   "inPerson": 1516,
-   "mail": 74,
-   "requested": 102,
-   "dem": 305,
-   "rep": 921,
-   "other": 364
-  },
-  "CHATHAM": {
-   "voted": 59171,
-   "inPerson": 55538,
-   "mail": 3633,
-   "requested": 5555,
-   "dem": 25814,
-   "rep": 14532,
-   "other": 18825
-  },
-  "CHATTAHOOCHEE": {
-   "voted": 547,
-   "inPerson": 528,
-   "mail": 19,
-   "requested": 47,
-   "dem": 230,
-   "rep": 185,
-   "other": 132
-  },
-  "CHATTOOGA": {
-   "voted": 3510,
-   "inPerson": 3340,
-   "mail": 170,
-   "requested": 208,
-   "dem": 514,
-   "rep": 2083,
-   "other": 913
-  },
-  "CHEROKEE": {
-   "voted": 77544,
-   "inPerson": 73192,
-   "mail": 4352,
-   "requested": 5721,
-   "dem": 14574,
-   "rep": 37856,
-   "other": 25114
-  },
-  "CLARKE": {
-   "voted": 26218,
-   "inPerson": 24875,
-   "mail": 1343,
-   "requested": 2225,
-   "dem": 14139,
-   "rep": 5208,
-   "other": 6871
-  },
-  "CLAY": {
-   "voted": 648,
-   "inPerson": 585,
-   "mail": 63,
-   "requested": 88,
-   "dem": 243,
-   "rep": 242,
-   "other": 163
-  },
-  "CLAYTON": {
-   "voted": 62307,
-   "inPerson": 60295,
-   "mail": 2012,
-   "requested": 2758,
-   "dem": 37618,
-   "rep": 3505,
-   "other": 21184
-  },
-  "CLINCH": {
-   "voted": 925,
-   "inPerson": 894,
-   "mail": 31,
-   "requested": 40,
-   "dem": 131,
-   "rep": 634,
-   "other": 160
-  },
-  "COBB": {
-   "voted": 212053,
-   "inPerson": 204177,
-   "mail": 7876,
-   "requested": 14627,
-   "dem": 85528,
-   "rep": 58306,
-   "other": 68219
-  },
-  "COFFEE": {
-   "voted": 6439,
-   "inPerson": 6273,
-   "mail": 166,
-   "requested": 276,
-   "dem": 1363,
-   "rep": 3375,
-   "other": 1701
-  },
-  "COLQUITT": {
-   "voted": 5761,
-   "inPerson": 5521,
-   "mail": 240,
-   "requested": 343,
-   "dem": 1073,
-   "rep": 2725,
-   "other": 1963
-  },
-  "COLUMBIA": {
-   "voted": 37808,
-   "inPerson": 35713,
-   "mail": 2095,
-   "requested": 2921,
-   "dem": 9785,
-   "rep": 15532,
-   "other": 12491
-  },
-  "COOK": {
-   "voted": 2924,
-   "inPerson": 2795,
-   "mail": 129,
-   "requested": 158,
-   "dem": 619,
-   "rep": 1471,
-   "other": 834
-  },
-  "COWETA": {
-   "voted": 37655,
-   "inPerson": 35604,
-   "mail": 2051,
-   "requested": 2624,
-   "dem": 9005,
-   "rep": 16029,
-   "other": 12621
-  },
-  "CRAWFORD": {
-   "voted": 2486,
-   "inPerson": 2376,
-   "mail": 110,
-   "requested": 150,
-   "dem": 627,
-   "rep": 1256,
-   "other": 603
-  },
-  "CRISP": {
-   "voted": 3830,
-   "inPerson": 3610,
-   "mail": 220,
-   "requested": 290,
-   "dem": 1009,
-   "rep": 1946,
-   "other": 875
-  },
-  "DADE": {
-   "voted": 2504,
-   "inPerson": 2411,
-   "mail": 93,
-   "requested": 119,
-   "dem": 348,
-   "rep": 1545,
-   "other": 611
-  },
-  "DAWSON": {
-   "voted": 9367,
-   "inPerson": 8947,
-   "mail": 420,
-   "requested": 536,
-   "dem": 956,
-   "rep": 5583,
-   "other": 2828
-  },
-  "DECATUR": {
-   "voted": 4472,
-   "inPerson": 4214,
-   "mail": 258,
-   "requested": 362,
-   "dem": 1335,
-   "rep": 1789,
-   "other": 1348
-  },
-  "DEKALB": {
-   "voted": 212043,
-   "inPerson": 204312,
-   "mail": 7731,
-   "requested": 13387,
-   "dem": 128169,
-   "rep": 17689,
-   "other": 66185
-  },
-  "DODGE": {
-   "voted": 3299,
-   "inPerson": 3099,
-   "mail": 200,
-   "requested": 255,
-   "dem": 688,
-   "rep": 1857,
-   "other": 754
-  },
-  "DOOLY": {
-   "voted": 1701,
-   "inPerson": 1599,
-   "mail": 102,
-   "requested": 133,
-   "dem": 612,
-   "rep": 691,
-   "other": 398
-  },
-  "DOUGHERTY": {
-   "voted": 14181,
-   "inPerson": 13391,
-   "mail": 790,
-   "requested": 1238,
-   "dem": 8437,
-   "rep": 1981,
-   "other": 3763
-  },
-  "DOUGLAS": {
-   "voted": 37839,
-   "inPerson": 36464,
-   "mail": 1375,
-   "requested": 1924,
-   "dem": 19353,
-   "rep": 6567,
-   "other": 11919
-  },
-  "EARLY": {
-   "voted": 1792,
-   "inPerson": 1664,
-   "mail": 128,
-   "requested": 155,
-   "dem": 639,
-   "rep": 795,
-   "other": 358
-  },
-  "ECHOLS": {
-   "voted": 470,
-   "inPerson": 467,
-   "mail": 3,
-   "requested": 8,
-   "dem": 30,
-   "rep": 336,
-   "other": 104
-  },
-  "EFFINGHAM": {
-   "voted": 12351,
-   "inPerson": 11883,
-   "mail": 468,
-   "requested": 670,
-   "dem": 2310,
-   "rep": 5883,
-   "other": 4158
-  },
-  "ELBERT": {
-   "voted": 3566,
-   "inPerson": 3353,
-   "mail": 213,
-   "requested": 266,
-   "dem": 946,
-   "rep": 1660,
-   "other": 960
-  },
-  "EMANUEL": {
-   "voted": 3355,
-   "inPerson": 3195,
-   "mail": 160,
-   "requested": 215,
-   "dem": 872,
-   "rep": 1621,
-   "other": 862
-  },
-  "EVANS": {
-   "voted": 1856,
-   "inPerson": 1699,
-   "mail": 157,
-   "requested": 193,
-   "dem": 435,
-   "rep": 983,
+   "voted": 1814,
+   "inPerson": 1733,
+   "mail": 81,
+   "requested": 104,
+   "dem": 333,
+   "rep": 1043,
    "other": 438
   },
+  "CHATHAM": {
+   "voted": 66716,
+   "inPerson": 62754,
+   "mail": 3962,
+   "requested": 5569,
+   "dem": 28007,
+   "rep": 15838,
+   "other": 22871
+  },
+  "CHATTAHOOCHEE": {
+   "voted": 620,
+   "inPerson": 597,
+   "mail": 23,
+   "requested": 47,
+   "dem": 254,
+   "rep": 201,
+   "other": 165
+  },
+  "CHATTOOGA": {
+   "voted": 3930,
+   "inPerson": 3754,
+   "mail": 176,
+   "requested": 208,
+   "dem": 559,
+   "rep": 2287,
+   "other": 1084
+  },
+  "CHEROKEE": {
+   "voted": 86423,
+   "inPerson": 81700,
+   "mail": 4723,
+   "requested": 5722,
+   "dem": 15691,
+   "rep": 40837,
+   "other": 29895
+  },
+  "CLARKE": {
+   "voted": 29564,
+   "inPerson": 28126,
+   "mail": 1438,
+   "requested": 2225,
+   "dem": 15510,
+   "rep": 5761,
+   "other": 8293
+  },
+  "CLAY": {
+   "voted": 724,
+   "inPerson": 657,
+   "mail": 67,
+   "requested": 88,
+   "dem": 269,
+   "rep": 269,
+   "other": 186
+  },
+  "CLAYTON": {
+   "voted": 70878,
+   "inPerson": 68730,
+   "mail": 2148,
+   "requested": 2762,
+   "dem": 40731,
+   "rep": 3768,
+   "other": 26379
+  },
+  "CLINCH": {
+   "voted": 1081,
+   "inPerson": 1049,
+   "mail": 32,
+   "requested": 40,
+   "dem": 145,
+   "rep": 736,
+   "other": 200
+  },
+  "COBB": {
+   "voted": 236618,
+   "inPerson": 227324,
+   "mail": 9294,
+   "requested": 14668,
+   "dem": 92352,
+   "rep": 62560,
+   "other": 81706
+  },
+  "COFFEE": {
+   "voted": 7410,
+   "inPerson": 7230,
+   "mail": 180,
+   "requested": 277,
+   "dem": 1496,
+   "rep": 3852,
+   "other": 2062
+  },
+  "COLQUITT": {
+   "voted": 6503,
+   "inPerson": 6244,
+   "mail": 259,
+   "requested": 343,
+   "dem": 1159,
+   "rep": 3011,
+   "other": 2333
+  },
+  "COLUMBIA": {
+   "voted": 42529,
+   "inPerson": 40263,
+   "mail": 2266,
+   "requested": 2924,
+   "dem": 10558,
+   "rep": 16946,
+   "other": 15025
+  },
+  "COOK": {
+   "voted": 3344,
+   "inPerson": 3212,
+   "mail": 132,
+   "requested": 158,
+   "dem": 670,
+   "rep": 1641,
+   "other": 1033
+  },
+  "COWETA": {
+   "voted": 41419,
+   "inPerson": 39272,
+   "mail": 2147,
+   "requested": 2623,
+   "dem": 9546,
+   "rep": 17165,
+   "other": 14708
+  },
+  "CRAWFORD": {
+   "voted": 2820,
+   "inPerson": 2701,
+   "mail": 119,
+   "requested": 150,
+   "dem": 680,
+   "rep": 1395,
+   "other": 745
+  },
+  "CRISP": {
+   "voted": 4258,
+   "inPerson": 4030,
+   "mail": 228,
+   "requested": 290,
+   "dem": 1093,
+   "rep": 2101,
+   "other": 1064
+  },
+  "DADE": {
+   "voted": 2759,
+   "inPerson": 2664,
+   "mail": 95,
+   "requested": 119,
+   "dem": 357,
+   "rep": 1686,
+   "other": 716
+  },
+  "DAWSON": {
+   "voted": 10560,
+   "inPerson": 10117,
+   "mail": 443,
+   "requested": 536,
+   "dem": 1012,
+   "rep": 6110,
+   "other": 3438
+  },
+  "DECATUR": {
+   "voted": 5057,
+   "inPerson": 4769,
+   "mail": 288,
+   "requested": 363,
+   "dem": 1456,
+   "rep": 1947,
+   "other": 1654
+  },
+  "DEKALB": {
+   "voted": 239655,
+   "inPerson": 230600,
+   "mail": 9055,
+   "requested": 13418,
+   "dem": 139137,
+   "rep": 19420,
+   "other": 81098
+  },
+  "DODGE": {
+   "voted": 3719,
+   "inPerson": 3504,
+   "mail": 215,
+   "requested": 255,
+   "dem": 740,
+   "rep": 2063,
+   "other": 916
+  },
+  "DOOLY": {
+   "voted": 1908,
+   "inPerson": 1799,
+   "mail": 109,
+   "requested": 133,
+   "dem": 656,
+   "rep": 772,
+   "other": 480
+  },
+  "DOUGHERTY": {
+   "voted": 15494,
+   "inPerson": 14638,
+   "mail": 856,
+   "requested": 1243,
+   "dem": 8975,
+   "rep": 2127,
+   "other": 4392
+  },
+  "DOUGLAS": {
+   "voted": 43033,
+   "inPerson": 41572,
+   "mail": 1461,
+   "requested": 1925,
+   "dem": 21146,
+   "rep": 7096,
+   "other": 14791
+  },
+  "EARLY": {
+   "voted": 2035,
+   "inPerson": 1902,
+   "mail": 133,
+   "requested": 155,
+   "dem": 696,
+   "rep": 901,
+   "other": 438
+  },
+  "ECHOLS": {
+   "voted": 592,
+   "inPerson": 588,
+   "mail": 4,
+   "requested": 8,
+   "dem": 35,
+   "rep": 426,
+   "other": 131
+  },
+  "EFFINGHAM": {
+   "voted": 13999,
+   "inPerson": 13482,
+   "mail": 517,
+   "requested": 671,
+   "dem": 2527,
+   "rep": 6430,
+   "other": 5042
+  },
+  "ELBERT": {
+   "voted": 4041,
+   "inPerson": 3821,
+   "mail": 220,
+   "requested": 266,
+   "dem": 1030,
+   "rep": 1846,
+   "other": 1165
+  },
+  "EMANUEL": {
+   "voted": 3802,
+   "inPerson": 3631,
+   "mail": 171,
+   "requested": 215,
+   "dem": 931,
+   "rep": 1806,
+   "other": 1065
+  },
+  "EVANS": {
+   "voted": 2077,
+   "inPerson": 1917,
+   "mail": 160,
+   "requested": 193,
+   "dem": 464,
+   "rep": 1089,
+   "other": 524
+  },
   "FANNIN": {
-   "voted": 6214,
-   "inPerson": 5704,
-   "mail": 510,
+   "voted": 6718,
+   "inPerson": 6190,
+   "mail": 528,
    "requested": 664,
-   "dem": 779,
-   "rep": 3795,
-   "other": 1640
+   "dem": 805,
+   "rep": 4072,
+   "other": 1841
   },
   "FAYETTE": {
-   "voted": 41458,
-   "inPerson": 39808,
-   "mail": 1650,
-   "requested": 2343,
-   "dem": 15233,
-   "rep": 14441,
-   "other": 11784
+   "voted": 45898,
+   "inPerson": 44113,
+   "mail": 1785,
+   "requested": 2349,
+   "dem": 16329,
+   "rep": 15480,
+   "other": 14089
   },
   "FLOYD": {
-   "voted": 16641,
-   "inPerson": 15821,
-   "mail": 820,
+   "voted": 18567,
+   "inPerson": 17716,
+   "mail": 851,
    "requested": 1074,
-   "dem": 3824,
-   "rep": 8055,
-   "other": 4762
+   "dem": 4065,
+   "rep": 8756,
+   "other": 5746
   },
   "FORSYTH": {
-   "voted": 65774,
-   "inPerson": 62728,
-   "mail": 3046,
-   "requested": 4337,
-   "dem": 11390,
-   "rep": 29665,
-   "other": 24719
+   "voted": 74866,
+   "inPerson": 71684,
+   "mail": 3182,
+   "requested": 4339,
+   "dem": 12305,
+   "rep": 32390,
+   "other": 30171
   },
   "FRANKLIN": {
-   "voted": 4274,
-   "inPerson": 4077,
-   "mail": 197,
+   "voted": 4891,
+   "inPerson": 4685,
+   "mail": 206,
    "requested": 270,
-   "dem": 301,
-   "rep": 2868,
-   "other": 1105
+   "dem": 324,
+   "rep": 3255,
+   "other": 1312
   },
   "FULTON": {
-   "voted": 301706,
-   "inPerson": 291949,
-   "mail": 9757,
-   "requested": 16776,
-   "dem": 149780,
-   "rep": 48869,
-   "other": 103057
+   "voted": 339039,
+   "inPerson": 328681,
+   "mail": 10358,
+   "requested": 16792,
+   "dem": 162273,
+   "rep": 52645,
+   "other": 124121
   },
   "GILMER": {
-   "voted": 7662,
-   "inPerson": 7130,
-   "mail": 532,
+   "voted": 8292,
+   "inPerson": 7745,
+   "mail": 547,
    "requested": 618,
-   "dem": 896,
-   "rep": 4701,
-   "other": 2065
+   "dem": 932,
+   "rep": 5008,
+   "other": 2352
   },
   "GLASCOCK": {
-   "voted": 666,
-   "inPerson": 640,
-   "mail": 26,
+   "voted": 767,
+   "inPerson": 740,
+   "mail": 27,
    "requested": 42,
-   "dem": 43,
-   "rep": 556,
-   "other": 67
+   "dem": 50,
+   "rep": 628,
+   "other": 89
   },
   "GLYNN": {
-   "voted": 22232,
-   "inPerson": 20948,
-   "mail": 1284,
-   "requested": 1683,
-   "dem": 5218,
-   "rep": 9944,
-   "other": 7070
+   "voted": 24499,
+   "inPerson": 23133,
+   "mail": 1366,
+   "requested": 1684,
+   "dem": 5574,
+   "rep": 10656,
+   "other": 8269
   },
   "GORDON": {
-   "voted": 8666,
-   "inPerson": 8235,
-   "mail": 431,
+   "voted": 9833,
+   "inPerson": 9384,
+   "mail": 449,
    "requested": 536,
-   "dem": 1106,
-   "rep": 4793,
-   "other": 2767
+   "dem": 1181,
+   "rep": 5307,
+   "other": 3345
   },
   "GRADY": {
-   "voted": 4041,
-   "inPerson": 3803,
-   "mail": 238,
+   "voted": 4577,
+   "inPerson": 4313,
+   "mail": 264,
    "requested": 332,
-   "dem": 1015,
-   "rep": 1885,
-   "other": 1141
+   "dem": 1088,
+   "rep": 2080,
+   "other": 1409
   },
   "GREENE": {
-   "voted": 7528,
-   "inPerson": 7133,
-   "mail": 395,
+   "voted": 8302,
+   "inPerson": 7895,
+   "mail": 407,
    "requested": 498,
-   "dem": 1404,
-   "rep": 4379,
-   "other": 1745
+   "dem": 1496,
+   "rep": 4759,
+   "other": 2047
   },
   "GWINNETT": {
-   "voted": 210890,
-   "inPerson": 203212,
-   "mail": 7678,
-   "requested": 13390,
-   "dem": 83929,
-   "rep": 44674,
-   "other": 82287
+   "voted": 238117,
+   "inPerson": 229137,
+   "mail": 8980,
+   "requested": 13428,
+   "dem": 90997,
+   "rep": 48167,
+   "other": 98953
   },
   "HABERSHAM": {
-   "voted": 11683,
-   "inPerson": 11243,
-   "mail": 440,
+   "voted": 13216,
+   "inPerson": 12738,
+   "mail": 478,
    "requested": 565,
-   "dem": 1194,
-   "rep": 7493,
-   "other": 2996
+   "dem": 1297,
+   "rep": 8248,
+   "other": 3671
   },
   "HALL": {
-   "voted": 47820,
-   "inPerson": 45395,
-   "mail": 2425,
+   "voted": 53995,
+   "inPerson": 51437,
+   "mail": 2558,
    "requested": 3279,
-   "dem": 7844,
-   "rep": 24625,
-   "other": 15351
+   "dem": 8468,
+   "rep": 26846,
+   "other": 18681
   },
   "HANCOCK": {
-   "voted": 2035,
-   "inPerson": 1790,
-   "mail": 245,
+   "voted": 2264,
+   "inPerson": 2002,
+   "mail": 262,
    "requested": 316,
-   "dem": 1253,
-   "rep": 453,
-   "other": 329
+   "dem": 1378,
+   "rep": 495,
+   "other": 391
   },
   "HARALSON": {
-   "voted": 4893,
-   "inPerson": 4622,
-   "mail": 271,
-   "requested": 347,
-   "dem": 447,
-   "rep": 3234,
-   "other": 1212
+   "voted": 5581,
+   "inPerson": 5289,
+   "mail": 292,
+   "requested": 348,
+   "dem": 483,
+   "rep": 3610,
+   "other": 1488
   },
   "HARRIS": {
-   "voted": 8362,
-   "inPerson": 7941,
+   "voted": 9375,
+   "inPerson": 8954,
    "mail": 421,
    "requested": 629,
-   "dem": 1966,
-   "rep": 3993,
-   "other": 2403
+   "dem": 2103,
+   "rep": 4367,
+   "other": 2905
   },
   "HART": {
-   "voted": 6066,
-   "inPerson": 5773,
-   "mail": 293,
+   "voted": 6821,
+   "inPerson": 6520,
+   "mail": 301,
    "requested": 348,
-   "dem": 817,
-   "rep": 3518,
-   "other": 1731
+   "dem": 888,
+   "rep": 3865,
+   "other": 2068
   },
   "HEARD": {
-   "voted": 1827,
-   "inPerson": 1630,
-   "mail": 197,
+   "voted": 2101,
+   "inPerson": 1893,
+   "mail": 208,
    "requested": 231,
-   "dem": 230,
-   "rep": 1171,
-   "other": 426
+   "dem": 254,
+   "rep": 1326,
+   "other": 521
   },
   "HENRY": {
-   "voted": 72240,
-   "inPerson": 69890,
-   "mail": 2350,
-   "requested": 3426,
-   "dem": 36061,
-   "rep": 12601,
-   "other": 23578
+   "voted": 81119,
+   "inPerson": 78610,
+   "mail": 2509,
+   "requested": 3433,
+   "dem": 38967,
+   "rep": 13588,
+   "other": 28564
   },
   "HOUSTON": {
-   "voted": 41212,
-   "inPerson": 39171,
-   "mail": 2041,
+   "voted": 45669,
+   "inPerson": 43520,
+   "mail": 2149,
    "requested": 2644,
-   "dem": 13385,
-   "rep": 14119,
-   "other": 13708
+   "dem": 14318,
+   "rep": 15182,
+   "other": 16169
   },
   "IRWIN": {
-   "voted": 1782,
-   "inPerson": 1725,
-   "mail": 57,
-   "requested": 77,
-   "dem": 338,
-   "rep": 1115,
-   "other": 329
+   "voted": 2056,
+   "inPerson": 1997,
+   "mail": 59,
+   "requested": 78,
+   "dem": 357,
+   "rep": 1281,
+   "other": 418
   },
   "JACKSON": {
-   "voted": 21612,
-   "inPerson": 20742,
-   "mail": 870,
-   "requested": 1157,
-   "dem": 3007,
-   "rep": 11720,
-   "other": 6885
+   "voted": 24964,
+   "inPerson": 24031,
+   "mail": 933,
+   "requested": 1160,
+   "dem": 3303,
+   "rep": 12958,
+   "other": 8703
   },
   "JASPER": {
-   "voted": 3474,
-   "inPerson": 3297,
-   "mail": 177,
+   "voted": 3976,
+   "inPerson": 3785,
+   "mail": 191,
    "requested": 243,
-   "dem": 626,
-   "rep": 1952,
-   "other": 896
+   "dem": 694,
+   "rep": 2191,
+   "other": 1091
   },
   "JEFFDAVIS": {
-   "voted": 2017,
-   "inPerson": 1937,
-   "mail": 80,
+   "voted": 2288,
+   "inPerson": 2204,
+   "mail": 84,
    "requested": 100,
-   "dem": 288,
-   "rep": 1189,
-   "other": 540
+   "dem": 322,
+   "rep": 1326,
+   "other": 640
   },
   "JEFFERSON": {
-   "voted": 2634,
-   "inPerson": 2418,
-   "mail": 216,
+   "voted": 2960,
+   "inPerson": 2727,
+   "mail": 233,
    "requested": 333,
-   "dem": 1539,
-   "rep": 691,
-   "other": 404
+   "dem": 1702,
+   "rep": 751,
+   "other": 507
   },
   "JENKINS": {
-   "voted": 1294,
-   "inPerson": 1217,
-   "mail": 77,
+   "voted": 1442,
+   "inPerson": 1363,
+   "mail": 79,
    "requested": 91,
-   "dem": 377,
-   "rep": 548,
-   "other": 369
+   "dem": 399,
+   "rep": 597,
+   "other": 446
   },
   "JOHNSON": {
-   "voted": 1615,
-   "inPerson": 1535,
-   "mail": 80,
+   "voted": 1820,
+   "inPerson": 1732,
+   "mail": 88,
    "requested": 113,
-   "dem": 378,
-   "rep": 971,
-   "other": 266
+   "dem": 409,
+   "rep": 1078,
+   "other": 333
   },
   "JONES": {
-   "voted": 6641,
-   "inPerson": 6246,
-   "mail": 395,
-   "requested": 542,
-   "dem": 1843,
-   "rep": 2967,
-   "other": 1831
+   "voted": 7390,
+   "inPerson": 6934,
+   "mail": 456,
+   "requested": 545,
+   "dem": 1987,
+   "rep": 3206,
+   "other": 2197
   },
   "LAMAR": {
-   "voted": 4601,
-   "inPerson": 4371,
-   "mail": 230,
+   "voted": 5183,
+   "inPerson": 4938,
+   "mail": 245,
    "requested": 294,
-   "dem": 1024,
-   "rep": 2338,
-   "other": 1239
+   "dem": 1106,
+   "rep": 2571,
+   "other": 1506
   },
   "LANIER": {
-   "voted": 1403,
-   "inPerson": 1367,
-   "mail": 36,
+   "voted": 1661,
+   "inPerson": 1623,
+   "mail": 38,
    "requested": 50,
-   "dem": 316,
-   "rep": 705,
-   "other": 382
+   "dem": 344,
+   "rep": 840,
+   "other": 477
   },
   "LAURENS": {
-   "voted": 8718,
-   "inPerson": 8065,
-   "mail": 653,
+   "voted": 9727,
+   "inPerson": 9031,
+   "mail": 696,
    "requested": 867,
-   "dem": 2532,
-   "rep": 3977,
-   "other": 2209
+   "dem": 2734,
+   "rep": 4316,
+   "other": 2677
   },
   "LEE": {
-   "voted": 6663,
-   "inPerson": 6409,
-   "mail": 254,
-   "requested": 364,
-   "dem": 1671,
-   "rep": 3301,
-   "other": 1691
+   "voted": 7427,
+   "inPerson": 7162,
+   "mail": 265,
+   "requested": 365,
+   "dem": 1811,
+   "rep": 3602,
+   "other": 2014
   },
   "LIBERTY": {
-   "voted": 10667,
-   "inPerson": 10091,
-   "mail": 576,
-   "requested": 874,
-   "dem": 5622,
-   "rep": 2015,
-   "other": 3030
+   "voted": 11758,
+   "inPerson": 11156,
+   "mail": 602,
+   "requested": 875,
+   "dem": 5985,
+   "rep": 2190,
+   "other": 3583
   },
   "LINCOLN": {
-   "voted": 2216,
-   "inPerson": 2023,
-   "mail": 193,
+   "voted": 2521,
+   "inPerson": 2312,
+   "mail": 209,
    "requested": 258,
-   "dem": 547,
-   "rep": 1229,
-   "other": 440
+   "dem": 603,
+   "rep": 1377,
+   "other": 541
   },
   "LONG": {
-   "voted": 2515,
-   "inPerson": 2435,
+   "voted": 2855,
+   "inPerson": 2775,
    "mail": 80,
    "requested": 123,
-   "dem": 750,
-   "rep": 902,
-   "other": 863
+   "dem": 819,
+   "rep": 1013,
+   "other": 1023
   },
   "LOWNDES": {
-   "voted": 21047,
-   "inPerson": 20247,
-   "mail": 800,
+   "voted": 23431,
+   "inPerson": 22575,
+   "mail": 856,
    "requested": 1188,
-   "dem": 6442,
-   "rep": 7161,
-   "other": 7444
+   "dem": 6881,
+   "rep": 7742,
+   "other": 8808
   },
   "LUMPKIN": {
-   "voted": 8281,
-   "inPerson": 7913,
-   "mail": 368,
-   "requested": 469,
-   "dem": 1014,
-   "rep": 5276,
-   "other": 1991
+   "voted": 9282,
+   "inPerson": 8885,
+   "mail": 397,
+   "requested": 470,
+   "dem": 1065,
+   "rep": 5851,
+   "other": 2366
   },
   "MACON": {
-   "voted": 2031,
-   "inPerson": 1877,
-   "mail": 154,
+   "voted": 2300,
+   "inPerson": 2137,
+   "mail": 163,
    "requested": 193,
-   "dem": 1064,
-   "rep": 541,
-   "other": 426
+   "dem": 1170,
+   "rep": 597,
+   "other": 533
   },
   "MADISON": {
-   "voted": 6145,
-   "inPerson": 5808,
-   "mail": 337,
+   "voted": 7120,
+   "inPerson": 6761,
+   "mail": 359,
    "requested": 443,
-   "dem": 1026,
-   "rep": 3487,
-   "other": 1632
+   "dem": 1117,
+   "rep": 3953,
+   "other": 2050
   },
   "MARION": {
-   "voted": 1444,
-   "inPerson": 1352,
-   "mail": 92,
+   "voted": 1618,
+   "inPerson": 1517,
+   "mail": 101,
    "requested": 125,
-   "dem": 496,
-   "rep": 564,
-   "other": 384
+   "dem": 528,
+   "rep": 636,
+   "other": 454
   },
   "MCDUFFIE": {
-   "voted": 5237,
-   "inPerson": 4868,
-   "mail": 369,
+   "voted": 5930,
+   "inPerson": 5540,
+   "mail": 390,
    "requested": 473,
-   "dem": 1497,
-   "rep": 2373,
-   "other": 1367
+   "dem": 1601,
+   "rep": 2657,
+   "other": 1672
   },
   "MCINTOSH": {
-   "voted": 3366,
-   "inPerson": 3235,
-   "mail": 131,
-   "requested": 231,
-   "dem": 979,
-   "rep": 1772,
-   "other": 615
+   "voted": 3737,
+   "inPerson": 3594,
+   "mail": 143,
+   "requested": 233,
+   "dem": 1083,
+   "rep": 1907,
+   "other": 747
   },
   "MERIWETHER": {
-   "voted": 3766,
-   "inPerson": 3477,
-   "mail": 289,
+   "voted": 4193,
+   "inPerson": 3892,
+   "mail": 301,
    "requested": 357,
-   "dem": 1079,
-   "rep": 1663,
-   "other": 1024
+   "dem": 1169,
+   "rep": 1802,
+   "other": 1222
   },
   "MILLER": {
-   "voted": 1026,
-   "inPerson": 961,
+   "voted": 1173,
+   "inPerson": 1108,
    "mail": 65,
    "requested": 82,
-   "dem": 154,
-   "rep": 630,
-   "other": 242
+   "dem": 170,
+   "rep": 707,
+   "other": 296
   },
   "MITCHELL": {
-   "voted": 3340,
-   "inPerson": 3026,
-   "mail": 314,
+   "voted": 3771,
+   "inPerson": 3443,
+   "mail": 328,
    "requested": 411,
-   "dem": 1413,
-   "rep": 1145,
-   "other": 782
+   "dem": 1528,
+   "rep": 1279,
+   "other": 964
   },
   "MONROE": {
-   "voted": 7458,
-   "inPerson": 7135,
-   "mail": 323,
-   "requested": 448,
-   "dem": 1737,
-   "rep": 4012,
-   "other": 1709
+   "voted": 8359,
+   "inPerson": 8009,
+   "mail": 350,
+   "requested": 450,
+   "dem": 1870,
+   "rep": 4414,
+   "other": 2075
   },
   "MONTGOMERY": {
-   "voted": 1258,
-   "inPerson": 1198,
-   "mail": 60,
+   "voted": 1489,
+   "inPerson": 1426,
+   "mail": 63,
    "requested": 105,
-   "dem": 304,
-   "rep": 750,
-   "other": 204
+   "dem": 338,
+   "rep": 882,
+   "other": 269
   },
   "MORGAN": {
-   "voted": 6128,
-   "inPerson": 5862,
-   "mail": 266,
-   "requested": 344,
-   "dem": 1334,
-   "rep": 3469,
-   "other": 1325
+   "voted": 6938,
+   "inPerson": 6659,
+   "mail": 279,
+   "requested": 345,
+   "dem": 1438,
+   "rep": 3850,
+   "other": 1650
   },
   "MURRAY": {
-   "voted": 5649,
-   "inPerson": 5467,
-   "mail": 182,
+   "voted": 6365,
+   "inPerson": 6176,
+   "mail": 189,
    "requested": 226,
-   "dem": 460,
-   "rep": 3498,
-   "other": 1691
+   "dem": 493,
+   "rep": 3841,
+   "other": 2031
   },
   "MUSCOGEE": {
-   "voted": 37854,
-   "inPerson": 35131,
-   "mail": 2723,
-   "requested": 3680,
-   "dem": 19173,
-   "rep": 8101,
-   "other": 10580
+   "voted": 42895,
+   "inPerson": 39994,
+   "mail": 2901,
+   "requested": 3686,
+   "dem": 20890,
+   "rep": 8904,
+   "other": 13101
   },
   "NEWTON": {
-   "voted": 27946,
-   "inPerson": 26774,
-   "mail": 1172,
-   "requested": 2142,
-   "dem": 13450,
-   "rep": 5597,
-   "other": 8899
+   "voted": 31531,
+   "inPerson": 30090,
+   "mail": 1441,
+   "requested": 2144,
+   "dem": 14566,
+   "rep": 6088,
+   "other": 10877
   },
   "OCONEE": {
-   "voted": 14881,
-   "inPerson": 14207,
-   "mail": 674,
+   "voted": 16399,
+   "inPerson": 15671,
+   "mail": 728,
    "requested": 921,
-   "dem": 2951,
-   "rep": 8135,
-   "other": 3795
+   "dem": 3122,
+   "rep": 8797,
+   "other": 4480
   },
   "OGLETHORPE": {
-   "voted": 3919,
-   "inPerson": 3663,
-   "mail": 256,
+   "voted": 4432,
+   "inPerson": 4173,
+   "mail": 259,
    "requested": 312,
-   "dem": 887,
-   "rep": 2177,
-   "other": 855
+   "dem": 957,
+   "rep": 2410,
+   "other": 1065
   },
   "PAULDING": {
-   "voted": 45123,
-   "inPerson": 43053,
-   "mail": 2070,
+   "voted": 52209,
+   "inPerson": 50065,
+   "mail": 2144,
    "requested": 2776,
-   "dem": 12374,
-   "rep": 17436,
-   "other": 15313
+   "dem": 13524,
+   "rep": 19379,
+   "other": 19306
   },
   "PEACH": {
-   "voted": 7038,
-   "inPerson": 6733,
-   "mail": 305,
+   "voted": 7915,
+   "inPerson": 7602,
+   "mail": 313,
    "requested": 402,
-   "dem": 2429,
-   "rep": 2418,
-   "other": 2191
+   "dem": 2638,
+   "rep": 2655,
+   "other": 2622
   },
   "PICKENS": {
-   "voted": 8794,
-   "inPerson": 8359,
-   "mail": 435,
+   "voted": 9668,
+   "inPerson": 9221,
+   "mail": 447,
    "requested": 554,
-   "dem": 918,
-   "rep": 5300,
-   "other": 2576
+   "dem": 957,
+   "rep": 5730,
+   "other": 2981
   },
   "PIERCE": {
-   "voted": 4301,
-   "inPerson": 4169,
-   "mail": 132,
+   "voted": 4893,
+   "inPerson": 4747,
+   "mail": 146,
    "requested": 227,
-   "dem": 298,
-   "rep": 2964,
-   "other": 1039
+   "dem": 331,
+   "rep": 3271,
+   "other": 1291
   },
   "PIKE": {
-   "voted": 4821,
-   "inPerson": 4597,
-   "mail": 224,
+   "voted": 5458,
+   "inPerson": 5225,
+   "mail": 233,
    "requested": 283,
-   "dem": 541,
-   "rep": 3212,
-   "other": 1068
+   "dem": 585,
+   "rep": 3549,
+   "other": 1324
   },
   "POLK": {
-   "voted": 7846,
-   "inPerson": 7537,
-   "mail": 309,
-   "requested": 421,
-   "dem": 1220,
-   "rep": 4658,
-   "other": 1968
+   "voted": 8923,
+   "inPerson": 8589,
+   "mail": 334,
+   "requested": 422,
+   "dem": 1326,
+   "rep": 5166,
+   "other": 2431
   },
   "PULASKI": {
-   "voted": 2149,
-   "inPerson": 2014,
-   "mail": 135,
-   "requested": 159,
-   "dem": 427,
-   "rep": 1266,
-   "other": 456
+   "voted": 2380,
+   "inPerson": 2242,
+   "mail": 138,
+   "requested": 160,
+   "dem": 460,
+   "rep": 1378,
+   "other": 542
   },
   "PUTNAM": {
-   "voted": 6801,
-   "inPerson": 6381,
-   "mail": 420,
+   "voted": 7512,
+   "inPerson": 7074,
+   "mail": 438,
    "requested": 508,
-   "dem": 1193,
-   "rep": 3901,
-   "other": 1707
+   "dem": 1279,
+   "rep": 4181,
+   "other": 2052
   },
   "QUITMAN": {
-   "voted": 483,
-   "inPerson": 464,
+   "voted": 543,
+   "inPerson": 524,
    "mail": 19,
    "requested": 23,
-   "dem": 181,
-   "rep": 194,
-   "other": 108
+   "dem": 204,
+   "rep": 212,
+   "other": 127
   },
   "RABUN": {
-   "voted": 5478,
-   "inPerson": 5131,
-   "mail": 347,
+   "voted": 5971,
+   "inPerson": 5616,
+   "mail": 355,
    "requested": 442,
-   "dem": 747,
-   "rep": 3539,
-   "other": 1192
+   "dem": 770,
+   "rep": 3848,
+   "other": 1353
   },
   "RANDOLPH": {
-   "voted": 1247,
-   "inPerson": 1169,
-   "mail": 78,
+   "voted": 1399,
+   "inPerson": 1318,
+   "mail": 81,
    "requested": 100,
-   "dem": 542,
-   "rep": 413,
-   "other": 292
+   "dem": 581,
+   "rep": 461,
+   "other": 357
   },
   "RICHMOND": {
-   "voted": 35777,
-   "inPerson": 33575,
-   "mail": 2202,
-   "requested": 3085,
-   "dem": 20930,
-   "rep": 5685,
-   "other": 9162
+   "voted": 40355,
+   "inPerson": 38009,
+   "mail": 2346,
+   "requested": 3086,
+   "dem": 22848,
+   "rep": 6258,
+   "other": 11249
   },
   "ROCKDALE": {
-   "voted": 25803,
-   "inPerson": 24675,
-   "mail": 1128,
+   "voted": 28993,
+   "inPerson": 27795,
+   "mail": 1198,
    "requested": 1481,
-   "dem": 15393,
-   "rep": 3253,
-   "other": 7157
+   "dem": 16719,
+   "rep": 3467,
+   "other": 8807
   },
   "SCHLEY": {
-   "voted": 1001,
-   "inPerson": 958,
-   "mail": 43,
+   "voted": 1172,
+   "inPerson": 1125,
+   "mail": 47,
    "requested": 59,
-   "dem": 142,
-   "rep": 664,
-   "other": 195
+   "dem": 154,
+   "rep": 782,
+   "other": 236
   },
   "SCREVEN": {
-   "voted": 2992,
-   "inPerson": 2915,
+   "voted": 3325,
+   "inPerson": 3248,
    "mail": 77,
    "requested": 143,
-   "dem": 908,
-   "rep": 1362,
-   "other": 722
+   "dem": 970,
+   "rep": 1525,
+   "other": 830
   },
   "SEMINOLE": {
-   "voted": 1090,
-   "inPerson": 1036,
-   "mail": 54,
+   "voted": 1244,
+   "inPerson": 1185,
+   "mail": 59,
    "requested": 67,
-   "dem": 269,
-   "rep": 512,
-   "other": 309
+   "dem": 297,
+   "rep": 591,
+   "other": 356
   },
   "SPALDING": {
-   "voted": 15763,
-   "inPerson": 14811,
-   "mail": 952,
+   "voted": 17298,
+   "inPerson": 16307,
+   "mail": 991,
    "requested": 1178,
-   "dem": 5107,
-   "rep": 6425,
-   "other": 4231
+   "dem": 5461,
+   "rep": 6845,
+   "other": 4992
   },
   "STEPHENS": {
-   "voted": 6306,
-   "inPerson": 5957,
-   "mail": 349,
+   "voted": 7173,
+   "inPerson": 6808,
+   "mail": 365,
    "requested": 441,
-   "dem": 680,
-   "rep": 3914,
-   "other": 1712
+   "dem": 732,
+   "rep": 4348,
+   "other": 2093
   },
   "STEWART": {
-   "voted": 658,
-   "inPerson": 629,
+   "voted": 748,
+   "inPerson": 719,
    "mail": 29,
    "requested": 66,
-   "dem": 379,
-   "rep": 146,
-   "other": 133
+   "dem": 418,
+   "rep": 167,
+   "other": 163
   },
   "SUMTER": {
-   "voted": 5663,
-   "inPerson": 5219,
-   "mail": 444,
+   "voted": 6223,
+   "inPerson": 5766,
+   "mail": 457,
    "requested": 588,
-   "dem": 2282,
-   "rep": 1673,
-   "other": 1708
+   "dem": 2403,
+   "rep": 1845,
+   "other": 1975
   },
   "TALBOT": {
-   "voted": 1294,
-   "inPerson": 1192,
-   "mail": 102,
+   "voted": 1457,
+   "inPerson": 1343,
+   "mail": 114,
    "requested": 136,
-   "dem": 658,
-   "rep": 348,
-   "other": 288
+   "dem": 727,
+   "rep": 381,
+   "other": 349
   },
   "TALIAFERRO": {
-   "voted": 444,
-   "inPerson": 389,
-   "mail": 55,
+   "voted": 498,
+   "inPerson": 442,
+   "mail": 56,
    "requested": 70,
-   "dem": 282,
-   "rep": 87,
-   "other": 75
+   "dem": 309,
+   "rep": 101,
+   "other": 88
   },
   "TATTNALL": {
-   "voted": 3163,
-   "inPerson": 3039,
-   "mail": 124,
+   "voted": 3712,
+   "inPerson": 3581,
+   "mail": 131,
    "requested": 204,
-   "dem": 641,
-   "rep": 1935,
-   "other": 587
+   "dem": 695,
+   "rep": 2290,
+   "other": 727
   },
   "TAYLOR": {
-   "voted": 1743,
-   "inPerson": 1638,
-   "mail": 105,
-   "requested": 170,
-   "dem": 464,
-   "rep": 910,
-   "other": 369
+   "voted": 2019,
+   "inPerson": 1885,
+   "mail": 134,
+   "requested": 173,
+   "dem": 528,
+   "rep": 1026,
+   "other": 465
   },
   "TELFAIR": {
-   "voted": 1589,
-   "inPerson": 1489,
-   "mail": 100,
+   "voted": 1779,
+   "inPerson": 1677,
+   "mail": 102,
    "requested": 116,
-   "dem": 352,
-   "rep": 960,
-   "other": 277
+   "dem": 394,
+   "rep": 1068,
+   "other": 317
   },
   "TERRELL": {
-   "voted": 1795,
-   "inPerson": 1635,
-   "mail": 160,
+   "voted": 2011,
+   "inPerson": 1834,
+   "mail": 177,
    "requested": 216,
-   "dem": 925,
-   "rep": 495,
-   "other": 375
+   "dem": 1002,
+   "rep": 551,
+   "other": 458
   },
   "THOMAS": {
-   "voted": 10452,
-   "inPerson": 10025,
-   "mail": 427,
+   "voted": 11483,
+   "inPerson": 11033,
+   "mail": 450,
    "requested": 585,
-   "dem": 2968,
-   "rep": 4516,
-   "other": 2968
+   "dem": 3144,
+   "rep": 4852,
+   "other": 3487
   },
   "TIFT": {
-   "voted": 7513,
-   "inPerson": 7265,
-   "mail": 248,
+   "voted": 8332,
+   "inPerson": 8071,
+   "mail": 261,
    "requested": 385,
-   "dem": 1629,
-   "rep": 3308,
-   "other": 2576
+   "dem": 1729,
+   "rep": 3571,
+   "other": 3032
   },
   "TOOMBS": {
-   "voted": 4432,
-   "inPerson": 4212,
-   "mail": 220,
-   "requested": 292,
-   "dem": 784,
-   "rep": 2614,
-   "other": 1034
+   "voted": 4938,
+   "inPerson": 4700,
+   "mail": 238,
+   "requested": 295,
+   "dem": 828,
+   "rep": 2860,
+   "other": 1250
   },
   "TOWNS": {
-   "voted": 5289,
-   "inPerson": 4959,
-   "mail": 330,
+   "voted": 5693,
+   "inPerson": 5339,
+   "mail": 354,
    "requested": 415,
-   "dem": 618,
-   "rep": 3340,
-   "other": 1331
+   "dem": 634,
+   "rep": 3557,
+   "other": 1502
   },
   "TREUTLEN": {
-   "voted": 1254,
-   "inPerson": 1179,
-   "mail": 75,
+   "voted": 1435,
+   "inPerson": 1357,
+   "mail": 78,
    "requested": 98,
-   "dem": 341,
-   "rep": 669,
-   "other": 244
+   "dem": 388,
+   "rep": 750,
+   "other": 297
   },
   "TROUP": {
-   "voted": 11399,
-   "inPerson": 10651,
-   "mail": 748,
+   "voted": 13003,
+   "inPerson": 12221,
+   "mail": 782,
    "requested": 930,
-   "dem": 3224,
-   "rep": 4957,
-   "other": 3218
+   "dem": 3541,
+   "rep": 5450,
+   "other": 4012
   },
   "TURNER": {
-   "voted": 1887,
-   "inPerson": 1827,
-   "mail": 60,
-   "requested": 75,
-   "dem": 532,
-   "rep": 898,
-   "other": 457
+   "voted": 2110,
+   "inPerson": 2046,
+   "mail": 64,
+   "requested": 76,
+   "dem": 571,
+   "rep": 1000,
+   "other": 539
   },
   "TWIGGS": {
-   "voted": 1655,
-   "inPerson": 1463,
-   "mail": 192,
+   "voted": 1853,
+   "inPerson": 1642,
+   "mail": 211,
    "requested": 256,
-   "dem": 773,
-   "rep": 524,
-   "other": 358
+   "dem": 841,
+   "rep": 570,
+   "other": 442
   },
   "UNION": {
-   "voted": 8856,
-   "inPerson": 8361,
-   "mail": 495,
+   "voted": 9586,
+   "inPerson": 9080,
+   "mail": 506,
    "requested": 596,
-   "dem": 1054,
-   "rep": 5662,
-   "other": 2140
+   "dem": 1094,
+   "rep": 6097,
+   "other": 2395
   },
   "UPSON": {
-   "voted": 6229,
-   "inPerson": 5908,
-   "mail": 321,
+   "voted": 6967,
+   "inPerson": 6638,
+   "mail": 329,
    "requested": 391,
-   "dem": 1428,
-   "rep": 3212,
-   "other": 1589
+   "dem": 1534,
+   "rep": 3503,
+   "other": 1930
   },
   "WALKER": {
-   "voted": 10844,
-   "inPerson": 10246,
-   "mail": 598,
+   "voted": 12417,
+   "inPerson": 11814,
+   "mail": 603,
    "requested": 764,
-   "dem": 1507,
-   "rep": 6332,
-   "other": 3005
+   "dem": 1633,
+   "rep": 7084,
+   "other": 3700
   },
   "WALTON": {
-   "voted": 26385,
-   "inPerson": 25395,
-   "mail": 990,
+   "voted": 29868,
+   "inPerson": 28814,
+   "mail": 1054,
    "requested": 1302,
-   "dem": 5030,
-   "rep": 13386,
-   "other": 7969
+   "dem": 5418,
+   "rep": 14605,
+   "other": 9845
   },
   "WARE": {
-   "voted": 5366,
-   "inPerson": 4989,
-   "mail": 377,
+   "voted": 5987,
+   "inPerson": 5590,
+   "mail": 397,
    "requested": 485,
-   "dem": 1292,
-   "rep": 2514,
-   "other": 1560
+   "dem": 1373,
+   "rep": 2762,
+   "other": 1852
   },
   "WARREN": {
-   "voted": 1298,
-   "inPerson": 1222,
-   "mail": 76,
+   "voted": 1442,
+   "inPerson": 1361,
+   "mail": 81,
    "requested": 92,
-   "dem": 590,
-   "rep": 416,
-   "other": 292
+   "dem": 640,
+   "rep": 453,
+   "other": 349
   },
   "WASHINGTON": {
-   "voted": 4671,
-   "inPerson": 4310,
-   "mail": 361,
+   "voted": 5105,
+   "inPerson": 4727,
+   "mail": 378,
    "requested": 564,
-   "dem": 2497,
-   "rep": 1257,
-   "other": 917
+   "dem": 2680,
+   "rep": 1336,
+   "other": 1089
   },
   "WAYNE": {
-   "voted": 5608,
-   "inPerson": 5388,
-   "mail": 220,
+   "voted": 6234,
+   "inPerson": 6003,
+   "mail": 231,
    "requested": 279,
-   "dem": 921,
-   "rep": 3265,
-   "other": 1422
+   "dem": 990,
+   "rep": 3562,
+   "other": 1682
   },
   "WEBSTER": {
-   "voted": 585,
-   "inPerson": 516,
-   "mail": 69,
+   "voted": 654,
+   "inPerson": 577,
+   "mail": 77,
    "requested": 90,
-   "dem": 167,
-   "rep": 283,
-   "other": 135
+   "dem": 191,
+   "rep": 308,
+   "other": 155
   },
   "WHEELER": {
-   "voted": 949,
-   "inPerson": 897,
-   "mail": 52,
+   "voted": 1089,
+   "inPerson": 1036,
+   "mail": 53,
    "requested": 65,
-   "dem": 205,
-   "rep": 559,
-   "other": 185
+   "dem": 226,
+   "rep": 627,
+   "other": 236
   },
   "WHITE": {
-   "voted": 7367,
-   "inPerson": 6988,
-   "mail": 379,
+   "voted": 8106,
+   "inPerson": 7712,
+   "mail": 394,
    "requested": 446,
-   "dem": 777,
-   "rep": 4643,
-   "other": 1947
+   "dem": 811,
+   "rep": 5032,
+   "other": 2263
   },
   "WHITFIELD": {
-   "voted": 12546,
-   "inPerson": 11928,
-   "mail": 618,
-   "requested": 827,
-   "dem": 2088,
-   "rep": 5439,
-   "other": 5019
+   "voted": 14146,
+   "inPerson": 13486,
+   "mail": 660,
+   "requested": 828,
+   "dem": 2231,
+   "rep": 5786,
+   "other": 6129
   },
   "WILCOX": {
-   "voted": 1058,
-   "inPerson": 1011,
-   "mail": 47,
-   "requested": 67,
-   "dem": 182,
-   "rep": 653,
-   "other": 223
+   "voted": 1217,
+   "inPerson": 1165,
+   "mail": 52,
+   "requested": 68,
+   "dem": 197,
+   "rep": 743,
+   "other": 277
   },
   "WILKES": {
-   "voted": 2447,
-   "inPerson": 2234,
-   "mail": 213,
+   "voted": 2735,
+   "inPerson": 2518,
+   "mail": 217,
    "requested": 255,
-   "dem": 982,
-   "rep": 893,
-   "other": 572
+   "dem": 1066,
+   "rep": 997,
+   "other": 672
   },
   "WILKINSON": {
-   "voted": 1485,
-   "inPerson": 1367,
-   "mail": 118,
+   "voted": 1679,
+   "inPerson": 1549,
+   "mail": 130,
    "requested": 161,
-   "dem": 710,
-   "rep": 519,
-   "other": 256
+   "dem": 791,
+   "rep": 576,
+   "other": 312
   },
   "WORTH": {
-   "voted": 3154,
-   "inPerson": 3005,
-   "mail": 149,
+   "voted": 3545,
+   "inPerson": 3388,
+   "mail": 157,
    "requested": 219,
-   "dem": 685,
-   "rep": 1693,
-   "other": 776
+   "dem": 753,
+   "rep": 1845,
+   "other": 947
   }
  }
 }
