@@ -14,6 +14,7 @@ import { raceId, type BoardResult } from "~/data/boardResults";
 import { STATE_PATHS } from "~/data/statePaths";
 import { readStore, saveResult } from "~/lib/board.server";
 import { FEED_BY, syncBoardFromFeed } from "~/lib/civicFeed.server";
+import { readOhio, syncOhioFromFeed, type OhioContest } from "~/lib/ohioFeed.server";
 import { editorFromRequest, tryLogin } from "~/lib/auth.server";
 import { StarButton, useFavorites } from "~/lib/useFavorites";
 
@@ -38,6 +39,8 @@ export async function loader({ request, context }: Route.LoaderArgs) {
     editor: editorFromRequest(request),
     /** When civicAPI last wrote a result, if ever. */
     lastFeedAt: feedTimes.at(-1) ?? null,
+    /** Every Ohio state-level contest from the Ohio SOS feed (OH-State tab). */
+    ohio: await readOhio(context.get(cloudflareContext).env.DB),
   };
 }
 
@@ -59,6 +62,14 @@ export async function action({ request, context }: Route.ActionArgs) {
     }
   }
 
+  if (form.get("intent") === "ohio") {
+    try {
+      const ohio = await syncOhioFromFeed(context.get(cloudflareContext).env.DB);
+      return data({ ok: true, ohio });
+    } catch (e) {
+      return data({ error: e instanceof Error ? e.message : "Ohio pull failed." }, { status: 502 });
+    }
+  }
   if (form.get("intent") !== "result") {
     return data({ error: "Unknown action." }, { status: 400 });
   }
@@ -143,8 +154,8 @@ function tally(races: BoardRace[], results: Record<string, BoardResult>) {
 }
 
 export default function Election2026({ loaderData }: Route.ComponentProps) {
-  const { results, editor, lastFeedAt } = loaderData;
-  const [chamber, setChamber] = useState<"senate" | "house" | "governor">("senate");
+  const { results, editor, lastFeedAt, ohio } = loaderData;
+  const [chamber, setChamber] = useState<"senate" | "house" | "governor" | "ohio">("senate");
 
   // Keep the board live for viewers: re-run the loader every 30 s while the
   // tab is visible. Hand-entered and feed results both arrive this way.
@@ -215,6 +226,7 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
             Signed in as <span className="font-medium">{editor}</span>.
           </span>
           <FeedButton />
+          <FeedButton intent="ohio" label="Pull Ohio now" />
         </div>
       )}
 
@@ -249,7 +261,7 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
       )}
 
       <div className="mb-4 inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1 dark:border-gray-800 dark:bg-gray-900">
-        {(["senate", "house", "governor"] as const).map((c) => (
+        {(["senate", "house", "governor", "ohio"] as const).map((c) => (
           <button
             key={c}
             onClick={() => setChamber(c)}
@@ -259,19 +271,23 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
                 : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             }`}
           >
-            {c === "governor" ? "Governors" : c}{" "}
+            {c === "governor" ? "Governors" : c === "ohio" ? <span className="normal-case">OH-State</span> : c}{" "}
             <span className="text-xs text-gray-400 dark:text-gray-500">
               {c === "senate"
                 ? BOARD_SENATE.length
                 : c === "house"
                 ? BOARD_HOUSE.length
-                : BOARD_GOVERNOR.length}
+                : c === "governor"
+                ? BOARD_GOVERNOR.length
+                : ohio.contests.length || ""}
             </span>
           </button>
         ))}
       </div>
 
-      {chamber !== "house" ? (
+      {chamber === "ohio" ? (
+        <OhioBoard ohio={ohio} />
+      ) : chamber !== "house" ? (
         <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
           {[...(chamber === "senate" ? BOARD_SENATE : BOARD_GOVERNOR)]
             .filter((race) => !fav.has(raceId(race)))
@@ -352,25 +368,177 @@ export default function Election2026({ loaderData }: Route.ComponentProps) {
   );
 }
 
-/** Editor-only: pull civicAPI right now instead of waiting for the cron. */
-function FeedButton() {
-  const fetcher = useFetcher<{ ok?: boolean; error?: string; feed?: { updated: number } }>();
+const OHIO_PARTY = (p: string): BoardParty =>
+  (["D", "R", "I", "L", "G"].includes(p) ? p : "O") as BoardParty;
+
+/** The OH-State tab: every Ohio state-level contest from the Ohio SOS feed,
+ *  grouped as the SOS groups them, with a name/district search and stars. */
+function OhioBoard({ ohio }: { ohio: Route.ComponentProps["loaderData"]["ohio"] }) {
+  const [q, setQ] = useState("");
+  const fav = useFavorites("politicsplace:e26-ohio-favorites:v1");
+  const needle = q.trim().toLowerCase();
+  const match = (c: OhioContest) =>
+    !needle ||
+    c.name.toLowerCase().includes(needle) ||
+    c.candidates.some((x) => x.name.toLowerCase().includes(needle)) ||
+    c.counties.some((x) => x.toLowerCase() === needle);
+  const sorted = [...ohio.contests].sort((a, b) => a.seq.localeCompare(b.seq));
+  const starred = sorted.filter((c) => fav.has(c.id));
+  const groups = new Map<string, OhioContest[]>();
+  for (const c of sorted)
+    if (!fav.has(c.id) && match(c)) groups.set(c.group, [...(groups.get(c.group) ?? []), c]);
+
+  if (ohio.contests.length === 0)
+    return (
+      <p className="rounded-xl border border-gray-200 p-4 text-sm text-gray-500 dark:border-gray-800 dark:text-gray-400">
+        Ohio results load from the Secretary of State at 8:15 PM ET on election night.
+      </p>
+    );
+
+  const row = (c: OhioContest) => (
+    <OhioRow key={c.id} c={c} starred={fav.has(c.id)} onStar={() => fav.toggle(c.id)} />
+  );
+  return (
+    <div>
+      <p className="mb-3 text-xs text-gray-400 dark:text-gray-500">
+        From the{" "}
+        <a
+          href="https://liveresults.ohiosos.gov/"
+          target="_blank"
+          rel="noreferrer"
+          className="underline decoration-gray-300 underline-offset-2 dark:decoration-gray-600"
+        >
+          Ohio Secretary of State
+        </a>
+        . {ohio.reported.toLocaleString()} of {ohio.precincts.toLocaleString()} election-day
+        precincts reporting statewide.
+        {ohio.at &&
+          ` Updated ${new Date(ohio.at).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}.`}
+        {ohio.at && Date.parse(ohio.at) < Date.parse("2026-11-04T01:15:00Z") &&
+          " Candidate list only until 8:15 PM ET."}
+      </p>
+      <input
+        type="search"
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        placeholder="Search a candidate, district or county"
+        className="mb-3 w-full rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm dark:border-gray-700 dark:bg-gray-900"
+      />
+      {starred.length > 0 && (
+        <section className="mb-3">
+          <h3 className="mb-2 text-sm font-semibold text-gray-900 dark:text-gray-100">
+            <span className="text-amber-500">★</span> Starred
+          </h3>
+          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-amber-200 bg-gray-200 dark:border-amber-900/60 dark:bg-gray-800 sm:grid-cols-2">
+            {starred.map(row)}
+          </div>
+        </section>
+      )}
+      <div className="space-y-2">
+        {[...groups.entries()].map(([group, list]) => (
+          <details
+            key={group}
+            open={!!needle || list.length <= 2}
+            className="group overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800"
+          >
+            <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800/50">
+              <span>
+                <svg
+                  viewBox="0 0 12 12"
+                  className="mr-2 inline h-3 w-3 text-gray-400 transition-transform group-open:rotate-90"
+                  fill="currentColor"
+                >
+                  <path d="M4 2l4 4-4 4z" />
+                </svg>
+                {group}
+              </span>
+              <span className="text-xs font-normal text-gray-400 dark:text-gray-500">
+                {list.length} contest{list.length === 1 ? "" : "s"}
+              </span>
+            </summary>
+            <div className="grid grid-cols-1 gap-px border-t border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
+              {list.map(row)}
+            </div>
+          </details>
+        ))}
+        {groups.size === 0 && (
+          <p className="text-sm text-gray-500 dark:text-gray-400">No contest matches “{q}”.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function OhioRow({ c, starred, onStar }: { c: OhioContest; starred: boolean; onStar: () => void }) {
+  const total = c.candidates.reduce((s, x) => s + x.votes, 0);
+  const lead = total > 0 ? Math.max(...c.candidates.map((x) => x.votes)) : -1;
+  const pct = c.precincts ? Math.round((100 * c.reported) / c.precincts) : 0;
+  return (
+    <div className="bg-white px-4 py-3 dark:bg-gray-900">
+      <div className="mb-1.5 flex items-start gap-2">
+        <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
+          {c.name.replace(/^(State Representative|State Senator|Representative to Congress) - /, "")}
+        </span>
+        <button
+          onClick={onStar}
+          aria-label={starred ? "Unstar contest" : "Star contest"}
+          className={`ml-auto text-sm ${starred ? "text-amber-500" : "text-gray-300 hover:text-amber-500 dark:text-gray-600"}`}
+        >
+          ★
+        </button>
+      </div>
+      <ul className="space-y-0.5 text-sm">
+        {c.candidates.map((x) => (
+          <li key={x.name} className="flex items-baseline gap-2">
+            <span
+              className={`truncate ${x.votes === lead ? "font-semibold" : ""} ${x.party ? PARTY_TEXT[OHIO_PARTY(x.party)] : "text-gray-700 dark:text-gray-300"}`}
+            >
+              {x.name}
+              {x.party && x.party !== "O" && <span className="text-xs opacity-70"> ({x.party})</span>}
+            </span>
+            <span className="ml-auto tabular-nums text-gray-600 dark:text-gray-400">
+              {x.votes.toLocaleString()}
+            </span>
+            <span className="w-12 text-right tabular-nums text-gray-400 dark:text-gray-500">
+              {total > 0 ? `${((100 * x.votes) / total).toFixed(1)}%` : "—"}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <div className="mt-1.5 text-xs text-gray-400 dark:text-gray-500">
+        {c.counties.length === 1 ? c.counties[0] : `${c.counties.length} counties`} · {pct}% of precincts in
+        {c.counties.length < 88 && " (whole counties)"}
+      </div>
+    </div>
+  );
+}
+
+/** Editor-only: pull a feed right now instead of waiting for the cron —
+ *  civicAPI by default, or the Ohio SOS file with intent "ohio". */
+function FeedButton({ intent = "feed", label = "Pull results now" }: { intent?: string; label?: string }) {
+  const fetcher = useFetcher<{
+    ok?: boolean;
+    error?: string;
+    feed?: { updated: number };
+    ohio?: { contests: number };
+  }>();
   const busy = fetcher.state !== "idle";
   return (
     <fetcher.Form method="post" className="flex items-center gap-2">
-      <input type="hidden" name="intent" value="feed" />
+      <input type="hidden" name="intent" value={intent} />
       <button
         type="submit"
         disabled={busy}
         className="rounded-full border border-gray-300 px-3 py-1 font-medium text-gray-600 hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
       >
-        {busy ? "Pulling…" : "Pull results now"}
+        {busy ? "Pulling…" : label}
       </button>
       {!busy && fetcher.data?.feed && (
         <span>
           {fetcher.data.feed.updated} race{fetcher.data.feed.updated === 1 ? "" : "s"} updated
         </span>
       )}
+      {!busy && fetcher.data?.ohio && <span>{fetcher.data.ohio.contests} Ohio contests updated</span>}
       {!busy && fetcher.data?.error && (
         <span className="text-red-600 dark:text-red-400">{fetcher.data.error}</span>
       )}

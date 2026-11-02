@@ -2,6 +2,7 @@ import { createRequestHandler, RouterContextProvider } from "react-router";
 import { cloudflareContext } from "~/lib/context.server";
 import { ALL_BOARD_RACES } from "~/data/bigBoard2026";
 import { syncBoardFromFeed } from "~/lib/civicFeed.server";
+import { OHIO_FEED_OPENS_AT, syncOhioFromFeed } from "~/lib/ohioFeed.server";
 
 const requestHandler = createRequestHandler(
   () => import("virtual:react-router/server-build"),
@@ -23,5 +24,13 @@ export default {
         (e) => console.error("civicAPI sync failed:", e)
       )
     );
+    // Ohio SOS feed for the OH-State tab, from 8:15 PM ET.
+    if (Date.now() >= Date.parse(OHIO_FEED_OPENS_AT))
+      ctx.waitUntil(
+        syncOhioFromFeed(env.DB).then(
+          (r) => console.log(`Ohio SOS sync: ${r.contests} contests${r.isTest ? " (test file)" : ""}`),
+          (e) => console.error("Ohio SOS sync failed:", e)
+        )
+      );
   },
 } satisfies ExportedHandler<Env>;
