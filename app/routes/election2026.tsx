@@ -434,32 +434,19 @@ function OhioBoard({ ohio }: { ohio: Route.ComponentProps["loaderData"]["ohio"] 
           </div>
         </section>
       )}
-      <div className="space-y-2">
+      <div className="space-y-4">
         {[...groups.entries()].map(([group, list]) => (
-          <details
-            key={group}
-            open={!!needle || list.length <= 2}
-            className="group overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800"
-          >
-            <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800/50">
-              <span>
-                <svg
-                  viewBox="0 0 12 12"
-                  className="mr-2 inline h-3 w-3 text-gray-400 transition-transform group-open:rotate-90"
-                  fill="currentColor"
-                >
-                  <path d="M4 2l4 4-4 4z" />
-                </svg>
-                {group}
-              </span>
+          <section key={group}>
+            <h3 className="mb-2 flex items-baseline justify-between text-sm font-semibold text-gray-900 dark:text-gray-100">
+              {group}
               <span className="text-xs font-normal text-gray-400 dark:text-gray-500">
                 {list.length} contest{list.length === 1 ? "" : "s"}
               </span>
-            </summary>
-            <div className="grid grid-cols-1 gap-px border-t border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
+            </h3>
+            <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 dark:border-gray-800 dark:bg-gray-800 sm:grid-cols-2">
               {list.map(row)}
             </div>
-          </details>
+          </section>
         ))}
         {groups.size === 0 && (
           <p className="text-sm text-gray-500 dark:text-gray-400">No contest matches “{q}”.</p>
