@@ -1,18 +1,18 @@
 {
- "asOf": "2026-10-31",
+ "asOf": "2026-11-01",
  "primaries": [
   "05/24/2022",
   "05/21/2024",
   "05/19/2026"
  ],
  "state": {
-  "voted": 2826146,
-  "inPerson": 2705112,
-  "mail": 121034,
-  "requested": 166008,
-  "dem": 1009090,
-  "rep": 859414,
-  "other": 957642
+  "voted": 2826388,
+  "inPerson": 2705113,
+  "mail": 121275,
+  "requested": 166031,
+  "dem": 1009169,
+  "rep": 859437,
+  "other": 957782
  },
  "counties": {
   "": {
@@ -268,13 +268,13 @@
    "other": 1084
   },
   "CHEROKEE": {
-   "voted": 86423,
+   "voted": 86428,
    "inPerson": 81700,
-   "mail": 4723,
-   "requested": 5722,
+   "mail": 4728,
+   "requested": 5725,
    "dem": 15691,
-   "rep": 40837,
-   "other": 29895
+   "rep": 40840,
+   "other": 29897
   },
   "CLARKE": {
    "voted": 29564,
@@ -412,13 +412,13 @@
    "other": 1654
   },
   "DEKALB": {
-   "voted": 239655,
+   "voted": 239836,
    "inPerson": 230600,
-   "mail": 9055,
-   "requested": 13418,
-   "dem": 139137,
-   "rep": 19420,
-   "other": 81098
+   "mail": 9236,
+   "requested": 13419,
+   "dem": 139202,
+   "rep": 19430,
+   "other": 81204
   },
   "DODGE": {
    "voted": 3719,
@@ -529,13 +529,13 @@
    "other": 14089
   },
   "FLOYD": {
-   "voted": 18567,
+   "voted": 18574,
    "inPerson": 17716,
-   "mail": 851,
+   "mail": 858,
    "requested": 1074,
-   "dem": 4065,
-   "rep": 8756,
-   "other": 5746
+   "dem": 4068,
+   "rep": 8758,
+   "other": 5748
   },
   "FORSYTH": {
    "voted": 74866,
@@ -559,7 +559,7 @@
    "voted": 339039,
    "inPerson": 328681,
    "mail": 10358,
-   "requested": 16792,
+   "requested": 16807,
    "dem": 162273,
    "rep": 52645,
    "other": 124121
@@ -619,13 +619,13 @@
    "other": 2047
   },
   "GWINNETT": {
-   "voted": 238117,
+   "voted": 238151,
    "inPerson": 229137,
-   "mail": 8980,
-   "requested": 13428,
-   "dem": 90997,
-   "rep": 48167,
-   "other": 98953
+   "mail": 9014,
+   "requested": 13430,
+   "dem": 91004,
+   "rep": 48174,
+   "other": 98973
   },
   "HABERSHAM": {
    "voted": 13216,
@@ -685,7 +685,7 @@
    "voted": 2101,
    "inPerson": 1893,
    "mail": 208,
-   "requested": 231,
+   "requested": 232,
    "dem": 254,
    "rep": 1326,
    "other": 521
@@ -979,13 +979,13 @@
    "other": 13101
   },
   "NEWTON": {
-   "voted": 31531,
-   "inPerson": 30090,
-   "mail": 1441,
-   "requested": 2144,
-   "dem": 14566,
-   "rep": 6088,
-   "other": 10877
+   "voted": 31546,
+   "inPerson": 30091,
+   "mail": 1455,
+   "requested": 2145,
+   "dem": 14570,
+   "rep": 6089,
+   "other": 10887
   },
   "OCONEE": {
    "voted": 16399,

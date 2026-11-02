@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:18:49.592Z",
+  "generatedAt": "2026-11-02T23:11:34.877Z",
   "source": "Google Civic Information API (Voting Information Project)",
   "electionId": "12000",
   "statesPublished": 50,
@@ -3617,8 +3617,8 @@
             "zip": "85390"
           },
           "pollingHours": "Fri, Oct 23: 9 am - 5 pm\nSat, Oct 24: 9 am - 5 pm\nMon, Oct 26: 9 am - 5 pm\nTue, Oct 27: 9 am - 5 pm\nWed, Oct 28: 9 am - 5 pm\nThu, Oct 29: 9 am - 5 pm\nFri, Oct 30: 9 am - 5 pm\nSat, Oct 31: 9 am - 5 pm\nMon, Nov 2: 9 am - 5 pm",
-          "latitude": 33.9727325,
-          "longitude": -112.73235319999999,
+          "latitude": 33.97249247198003,
+          "longitude": -112.73227272447507,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -8991,6 +8991,7 @@
             "state": "AZ",
             "zip": "85142"
           },
+          "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
           "latitude": 33.250260431767074,
           "longitude": -111.6354276198293,
           "sources": [
@@ -9220,8 +9221,8 @@
             "zip": "85390"
           },
           "pollingHours": "Fri, Oct 23: 9 am - 5 pm\nSat, Oct 24: 9 am - 5 pm\nMon, Oct 26: 9 am - 5 pm\nTue, Oct 27: 9 am - 5 pm\nWed, Oct 28: 9 am - 5 pm\nThu, Oct 29: 9 am - 5 pm\nFri, Oct 30: 9 am - 5 pm\nSat, Oct 31: 9 am - 5 pm\nMon, Nov 2: 9 am - 5 pm",
-          "latitude": 33.9727325,
-          "longitude": -112.73235319999999,
+          "latitude": 33.97249247198003,
+          "longitude": -112.73227272447507,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -14554,8 +14555,8 @@
             "zip": "85390"
           },
           "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
-          "latitude": 33.9727325,
-          "longitude": -112.73235319999999,
+          "latitude": 33.97249247198003,
+          "longitude": -112.73227272447507,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -21213,8 +21214,8 @@
             "zip": "80904"
           },
           "pollingHours": "Fri, Oct 2: 12:00 am - 11:59 pm\nSat, Oct 3: 12:00 am - 11:59 pm\nSun, Oct 4: 12:00 am - 11:59 pm\nMon, Oct 5: 12:00 am - 11:59 pm\nTue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
-          "latitude": 38.8536504,
-          "longitude": -104.87396659999999,
+          "latitude": 38.85374729253491,
+          "longitude": -104.87379769669158,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -23429,8 +23430,8 @@
             "zip": "81131"
           },
           "pollingHours": "Mon, Oct 5: 12:00 am - 11:59 pm\nTue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
-          "latitude": 37.99514,
-          "longitude": -105.6993,
+          "latitude": 37.99515500960391,
+          "longitude": -105.69923189894996,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -24692,27 +24693,6 @@
         },
         {
           "address": {
-            "locationName": "Pagosa Springs Town Hall - Drop Box",
-            "line1": "551 Hot Springs Blvd",
-            "addressLine": [
-              "551 Hot Springs Blvd"
-            ],
-            "city": "Pagosa Springs",
-            "state": "CO",
-            "zip": "81147"
-          },
-          "pollingHours": "Mon, Oct 5: 12:00 am - 11:59 pm\nTue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
-          "latitude": 37.259643512122686,
-          "longitude": -107.01024621304472,
-          "sources": [
-            {
-              "name": "Voting Information Project",
-              "official": true
-            }
-          ]
-        },
-        {
-          "address": {
             "locationName": "Baca County Courthouse - Drop Box",
             "line1": "741 Main Street",
             "addressLine": [
@@ -25959,7 +25939,31 @@
         }
       },
       "earlyVoteSites": null,
-      "dropOffLocations": null,
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "Kent County Elections Office",
+            "line1": "100 Enterprise Pl",
+            "line2": "Ste 5",
+            "addressLine": [
+              "100 Enterprise Pl",
+              "Ste 5"
+            ],
+            "city": "Dover",
+            "state": "DE",
+            "zip": "19904"
+          },
+          "pollingHours": "Thu, Oct 22: 8:00 am - 4:30 pm\nFri, Oct 23: 8:00 am - 4:30 pm\nMon, Oct 26: 8:00 am - 4:30 pm\nTue, Oct 27: 8:00 am - 4:30 pm\nWed, Oct 28: 8:00 am - 4:30 pm\nThu, Oct 29: 8:00 am - 4:30 pm\nFri, Oct 30: 8:00 am - 4:30 pm\nMon, Nov 2: 8:00 am - 4:30 pm\nTue, Nov 3: 8 am - 8 pm",
+          "latitude": 39.1530287,
+          "longitude": -75.5479909,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
       "pollingLocations": null
     },
     "FL": {
@@ -26505,7 +26509,136 @@
         }
       },
       "earlyVoteSites": null,
-      "dropOffLocations": null,
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "BOISE CITY HALL",
+            "line1": "150 N CAPITOL BLVD",
+            "addressLine": [
+              "150 N CAPITOL BLVD"
+            ],
+            "city": "BOISE",
+            "state": "ID",
+            "zip": "83702"
+          },
+          "pollingHours": "Tue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "latitude": 43.61510360817729,
+          "longitude": -116.20137555835868,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "ADA COUNTY ELECTIONS",
+            "line1": "400 N BENJAMIN LN",
+            "line2": "SUITE 100",
+            "addressLine": [
+              "400 N BENJAMIN LN",
+              "SUITE 100"
+            ],
+            "city": "BOISE",
+            "state": "ID",
+            "zip": "83704"
+          },
+          "pollingHours": "Tue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "latitude": 43.60894451265834,
+          "longitude": -116.28735232867244,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "MERIDIAN CITY HALL",
+            "line1": "33 E BROADWAY AVE",
+            "addressLine": [
+              "33 E BROADWAY AVE"
+            ],
+            "city": "MERIDIAN",
+            "state": "ID",
+            "zip": "83642"
+          },
+          "pollingHours": "Tue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "latitude": 43.60966938094792,
+          "longitude": -116.39317556382748,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "EAGLE CITY HALL",
+            "line1": " 660 E CIVIC LN",
+            "addressLine": [
+              " 660 E CIVIC LN"
+            ],
+            "city": "EAGLE",
+            "state": "ID",
+            "zip": "83616"
+          },
+          "pollingHours": "Tue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "latitude": 43.69598309341244,
+          "longitude": -116.34546723983996,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "STAR CITY HALL",
+            "line1": "10769 W STATE ST",
+            "addressLine": [
+              "10769 W STATE ST"
+            ],
+            "city": "STAR",
+            "state": "ID",
+            "zip": "83669"
+          },
+          "pollingHours": "Tue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "latitude": 43.69161810773586,
+          "longitude": -116.4880669390866,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "KUNA CITY HALL",
+            "line1": "751 W 4TH ST",
+            "addressLine": [
+              "751 W 4TH ST"
+            ],
+            "city": "KUNA",
+            "state": "ID",
+            "zip": "83634"
+          },
+          "pollingHours": "Tue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+          "latitude": 43.49099477555105,
+          "longitude": -116.42260730365497,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        }
+      ],
       "pollingLocations": [
         {
           "address": {
@@ -26729,7 +26862,29 @@
         }
       },
       "earlyVoteSites": null,
-      "dropOffLocations": null,
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "FRANKLIN COUNTY CLERKS OFFICE",
+            "line1": "315 W MAIN",
+            "addressLine": [
+              "315 W MAIN"
+            ],
+            "city": "FRANKFORT",
+            "state": "KY",
+            "zip": "40601"
+          },
+          "pollingHours": "Mon, Sep 21: 8:00 am - 4:30 pm\nTue, Sep 22: 8:00 am - 4:30 pm\nWed, Sep 23: 8:00 am - 4:30 pm\nThu, Sep 24: 8:00 am - 4:30 pm\nFri, Sep 25: 8:00 am - 4:30 pm\nMon, Sep 28: 8:00 am - 4:30 pm\nTue, Sep 29: 8:00 am - 4:30 pm\nWed, Sep 30: 8:00 am - 4:30 pm\nThu, Oct 1: 8:00 am - 4:30 pm\nFri, Oct 2: 8:00 am - 4:30 pm\nMon, Oct 5: 8:00 am - 4:30 pm\nTue, Oct 6: 8:00 am - 4:30 pm\nWed, Oct 7: 8:00 am - 4:30 pm\nThu, Oct 8: 8:00 am - 4:30 pm\nFri, Oct 9: 8:00 am - 4:30 pm\nMon, Oct 12: 8:00 am - 4:30 pm\nTue, Oct 13: 8:00 am - 4:30 pm\nWed, Oct 14: 8:00 am - 4:30 pm\nThu, Oct 15: 8:00 am - 4:30 pm\nFri, Oct 16: 8:00 am - 4:30 pm\nMon, Oct 19: 8:00 am - 4:30 pm\nTue, Oct 20: 8:00 am - 4:30 pm\nWed, Oct 21: 8:00 am - 4:30 pm\nThu, Oct 22: 8:00 am - 4:30 pm\nFri, Oct 23: 8:00 am - 4:30 pm\nMon, Oct 26: 8:00 am - 4:30 pm\nTue, Oct 27: 8:00 am - 4:30 pm\nWed, Oct 28: 8:00 am - 4:30 pm\nThu, Oct 29: 8:00 am - 4:30 pm\nFri, Oct 30: 8:00 am - 4:30 pm\nSat, Oct 31: 7 am - 3 pm\nMon, Nov 2: 8:00 am - 4:30 pm\nTue, Nov 3: 8 am - 6 pm",
+          "latitude": 38.198622397125824,
+          "longitude": -84.87861959829227,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        }
+      ],
       "pollingLocations": [
         {
           "address": {
@@ -28304,7 +28459,92 @@
           ]
         }
       ],
-      "dropOffLocations": null,
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "RAMSEY COUNTY ELECTIONS - PLATO BUILDING",
+            "line1": "90 PLATO BLVD W.",
+            "addressLine": [
+              "90 PLATO BLVD W."
+            ],
+            "city": "ST. PAUL",
+            "state": "MN",
+            "zip": "55107"
+          },
+          "pollingHours": "Fri, Sep 18: 8:00 am - 4:30 pm\nMon, Sep 21: 8:00 am - 4:30 pm\nTue, Sep 22: 8:00 am - 4:30 pm\nWed, Sep 23: 8:00 am - 4:30 pm\nThu, Sep 24: 8:00 am - 4:30 pm\nFri, Sep 25: 8:00 am - 4:30 pm\nMon, Sep 28: 8:00 am - 4:30 pm\nTue, Sep 29: 8:00 am - 4:30 pm\nWed, Sep 30: 8:00 am - 4:30 pm\nThu, Oct 1: 8:00 am - 4:30 pm\nFri, Oct 2: 8:00 am - 4:30 pm\nMon, Oct 5: 8:00 am - 4:30 pm\nTue, Oct 6: 8:00 am - 4:30 pm\nWed, Oct 7: 8:00 am - 4:30 pm\nThu, Oct 8: 8:00 am - 4:30 pm\nFri, Oct 9: 8:00 am - 4:30 pm\nTue, Oct 13: 8:00 am - 4:30 pm\nWed, Oct 14: 8:00 am - 4:30 pm\nThu, Oct 15: 8:00 am - 4:30 pm\nFri, Oct 16: 8:00 am - 4:30 pm\nMon, Oct 19: 8:00 am - 4:30 pm\nTue, Oct 20: 8:00 am - 4:30 pm\nWed, Oct 21: 8:00 am - 4:30 pm\nThu, Oct 22: 8:00 am - 4:30 pm\nFri, Oct 23: 8:00 am - 4:30 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 8:00 am - 4:30 pm\nTue, Oct 27: 8 am - 7 pm\nWed, Oct 28: 8:00 am - 4:30 pm\nThu, Oct 29: 8:00 am - 4:30 pm\nFri, Oct 30: 8:00 am - 4:30 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 8 am - 5 pm\nTue, Nov 3: 8 am - 8 pm",
+          "latitude": 44.936092327872906,
+          "longitude": -93.09034720707697,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "ARLINGTON HILLS COMMUNITY CENTER",
+            "line1": "1200 PAYNE AVE.",
+            "addressLine": [
+              "1200 PAYNE AVE."
+            ],
+            "city": "ST. PAUL",
+            "state": "MN",
+            "zip": "55130"
+          },
+          "pollingHours": "Fri, Oct 16: 10 am - 4 pm\nMon, Oct 19: 10 am - 4 pm\nTue, Oct 20: 10 am - 4 pm\nWed, Oct 21: 10 am - 4 pm\nThu, Oct 22: 10 am - 4 pm\nFri, Oct 23: 10 am - 4 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 10 am - 4 pm\nTue, Oct 27: 10 am - 7 pm\nWed, Oct 28: 10 am - 4 pm\nThu, Oct 29: 10 am - 4 pm\nFri, Oct 30: 10 am - 4 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 10 am - 4 pm",
+          "latitude": 44.97697923354645,
+          "longitude": -93.07331672905651,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "RAMSEY COUNTY LIBRARY - ROSEVILLE",
+            "line1": "2180 HAMLINE AVE N",
+            "addressLine": [
+              "2180 HAMLINE AVE N"
+            ],
+            "city": "ROSEVILLE",
+            "state": "MN",
+            "zip": "55113"
+          },
+          "pollingHours": "Fri, Oct 16: 10 am - 4 pm\nMon, Oct 19: 10 am - 4 pm\nTue, Oct 20: 10 am - 4 pm\nWed, Oct 21: 10 am - 4 pm\nThu, Oct 22: 10 am - 4 pm\nFri, Oct 23: 10 am - 4 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 10 am - 4 pm\nTue, Oct 27: 10 am - 7 pm\nWed, Oct 28: 10 am - 4 pm\nThu, Oct 29: 10 am - 4 pm\nFri, Oct 30: 10 am - 4 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 10 am - 4 pm",
+          "latitude": 45.00736706713655,
+          "longitude": -93.15576320175876,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        },
+        {
+          "address": {
+            "locationName": "RAMSEY COUNTY LIBRARY - SHOREVIEW",
+            "line1": "4560 VICTORIA ST N",
+            "addressLine": [
+              "4560 VICTORIA ST N"
+            ],
+            "city": "SHOREVIEW",
+            "state": "MN",
+            "zip": "55126"
+          },
+          "pollingHours": "Fri, Oct 16: 10 am - 4 pm\nMon, Oct 19: 10 am - 4 pm\nTue, Oct 20: 10 am - 4 pm\nWed, Oct 21: 10 am - 4 pm\nThu, Oct 22: 10 am - 4 pm\nFri, Oct 23: 10 am - 4 pm\nSat, Oct 24: 9 am - 3 pm\nMon, Oct 26: 10 am - 4 pm\nTue, Oct 27: 10 am - 7 pm\nWed, Oct 28: 10 am - 4 pm\nThu, Oct 29: 10 am - 4 pm\nFri, Oct 30: 10 am - 4 pm\nSat, Oct 31: 9 am - 3 pm\nSun, Nov 1: 9 am - 3 pm\nMon, Nov 2: 10 am - 4 pm",
+          "latitude": 45.07975108889217,
+          "longitude": -93.13469126718017,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": false
+            }
+          ]
+        }
+      ],
       "pollingLocations": null
     },
     "MS": {
@@ -29102,7 +29342,29 @@
         }
       },
       "earlyVoteSites": null,
-      "dropOffLocations": null,
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "Franklin County Board of Elections",
+            "line1": "1700 Morse Rd",
+            "addressLine": [
+              "1700 Morse Rd"
+            ],
+            "city": "Columbus",
+            "state": "OH",
+            "zip": "43229"
+          },
+          "pollingHours": "Tue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12:00 am - 7:30 pm",
+          "latitude": 40.0612599012566,
+          "longitude": -82.97350220155627,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
       "pollingLocations": null
     },
     "OK": {
@@ -29725,8 +29987,8 @@
           },
           "notes": "Outside 24-hour drive through drop box that is located in the parking lot",
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 44.63912,
-          "longitude": -123.10060000000001,
+          "latitude": 44.6389597330487,
+          "longitude": -123.10104108656752,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -29747,8 +30009,8 @@
           },
           "notes": "Inside County Clerk's office during business hours; open Monday-Friday 8:30am-5pm; Election Day 7am-8pm",
           "pollingHours": "Wed, Oct 14: 8:30 am - 5:00 pm\nThu, Oct 15: 8:30 am - 5:00 pm\nFri, Oct 16: 8:30 am - 5:00 pm\nMon, Oct 19: 8:30 am - 5:00 pm\nTue, Oct 20: 8:30 am - 5:00 pm\nWed, Oct 21: 8:30 am - 5:00 pm\nThu, Oct 22: 8:30 am - 5:00 pm\nFri, Oct 23: 8:30 am - 5:00 pm\nMon, Oct 26: 8:30 am - 5:00 pm\nTue, Oct 27: 8:30 am - 5:00 pm\nWed, Oct 28: 8:30 am - 5:00 pm\nThu, Oct 29: 8:30 am - 5:00 pm\nFri, Oct 30: 8:30 am - 5:00 pm\nMon, Nov 2: 8:30 am - 5:00 pm\nTue, Nov 3: 7 am - 5 pm",
-          "latitude": 44.63912,
-          "longitude": -123.10060000000001,
+          "latitude": 44.6389597330487,
+          "longitude": -123.10104108656752,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -31553,8 +31815,8 @@
           },
           "notes": "Outside 24-hour drop box",
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 45.4461602895779,
-          "longitude": -122.62870553943019,
+          "latitude": 45.446266975587484,
+          "longitude": -122.62914736426347,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -33049,8 +33311,8 @@
           },
           "notes": "Outside 24 drive-up drop box located at NW corner of 3rd and Laurel",
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 45.457019028859484,
-          "longitude": -123.84163312440869,
+          "latitude": 45.457028312063606,
+          "longitude": -123.84149158600412,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -35548,8 +35810,8 @@
           },
           "notes": "Outside 24-hour drop box in Morrow County Health Department parking lot",
           "pollingHours": "Wed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 45.83965,
-          "longitude": -119.7033,
+          "latitude": 45.83963200252516,
+          "longitude": -119.70278999164343,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -41034,8 +41296,8 @@
             ]
           },
           "pollingHours": "Tue, Nov 3: 7 am - 7 pm",
-          "latitude": 30.46221541415428,
-          "longitude": -97.59749948060951,
+          "latitude": 30.462190327525846,
+          "longitude": -97.59750419543101,
           "sources": [
             {
               "name": "Voting Information Project",
@@ -41997,7 +42259,30 @@
           ]
         }
       ],
-      "dropOffLocations": null,
+      "dropOffLocations": [
+        {
+          "address": {
+            "locationName": "Montpelier Drop Box",
+            "line1": "39 Main St",
+            "addressLine": [
+              "39 Main St"
+            ],
+            "city": "Montpelier",
+            "state": "VT",
+            "zip": "05602"
+          },
+          "notes": "Rear of building",
+          "pollingHours": "Sat, Sep 19: 12:00 am - 11:59 pm\nSun, Sep 20: 12:00 am - 11:59 pm\nMon, Sep 21: 12:00 am - 11:59 pm\nTue, Sep 22: 12:00 am - 11:59 pm\nWed, Sep 23: 12:00 am - 11:59 pm\nThu, Sep 24: 12:00 am - 11:59 pm\nFri, Sep 25: 12:00 am - 11:59 pm\nSat, Sep 26: 12:00 am - 11:59 pm\nSun, Sep 27: 12:00 am - 11:59 pm\nMon, Sep 28: 12:00 am - 11:59 pm\nTue, Sep 29: 12:00 am - 11:59 pm\nWed, Sep 30: 12:00 am - 11:59 pm\nThu, Oct 1: 12:00 am - 11:59 pm\nFri, Oct 2: 12:00 am - 11:59 pm\nSat, Oct 3: 12:00 am - 11:59 pm\nSun, Oct 4: 12:00 am - 11:59 pm\nMon, Oct 5: 12:00 am - 11:59 pm\nTue, Oct 6: 12:00 am - 11:59 pm\nWed, Oct 7: 12:00 am - 11:59 pm\nThu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 7 pm",
+          "latitude": 44.25918168879415,
+          "longitude": -72.57552223883782,
+          "sources": [
+            {
+              "name": "Voting Information Project",
+              "official": true
+            }
+          ]
+        }
+      ],
       "pollingLocations": [
         {
           "address": {
@@ -42539,8 +42824,8 @@
           },
           "notes": "Open 26 days prior to Election Day; locked promptly at 8 p.m. on Election Day.",
           "pollingHours": "Thu, Oct 8: 12:00 am - 11:59 pm\nFri, Oct 9: 12:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
-          "latitude": 47.0721741,
-          "longitude": -122.9770279,
+          "latitude": 47.07307148283507,
+          "longitude": -122.97399468553031,
           "sources": [
             {
               "name": "Voting Information Project",

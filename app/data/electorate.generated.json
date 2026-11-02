@@ -467,12 +467,12 @@
    "cvap": 9931725,
    "registered": 9175133,
    "party": {
-    "total": 9052367,
-    "dem": 3887220,
-    "rep": 3639496,
-    "other": 1525651,
+    "total": 9050559,
+    "dem": 3886474,
+    "rep": 3638526,
+    "other": 1525559,
     "modeled": false,
-    "asOf": "10/26/2026",
+    "asOf": "11/02/2026",
     "source": "Pennsylvania Department of State"
    }
   },
